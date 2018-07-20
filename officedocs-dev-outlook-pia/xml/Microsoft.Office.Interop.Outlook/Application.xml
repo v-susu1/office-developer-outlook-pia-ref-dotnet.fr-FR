@@ -1,0 +1,84 @@
+<Type Name="Application" FullName="Microsoft.Office.Interop.Outlook.Application">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="da09d35d132ed58e324bfd41c114fa38d39760a8" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20634370" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Application : Microsoft.Office.Interop.Outlook._Application, Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Application implements class Microsoft.Office.Interop.Outlook._Application, class Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.Application" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Application&#xA;Implements _Application, ApplicationEvents_11_Event" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Application : Microsoft::Office::Interop::Outlook::_Application, Microsoft::Office::Interop::Outlook::ApplicationEvents_11_Event" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Outlook._Application</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.Outlook.ApplicationClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00063001-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="f82ec-101">Représente l’ensemble de l’application Outlook.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="f82ec-101">Represents the entire Outlook application.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="f82ec-102">
+        <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._Application" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event" />.</para>
+        <para>Il s’agit du seul objet de la hiérarchie qui peut être renvoyé à l’aide de la <see cref="M:Microsoft.Office.Interop.Outlook._Application.CreateObject(System.String)" /> méthode ou la fonction Visual Basic <b>GetObject</b> intrinsèque.</para>
+        <para>Objet Outlook de l' <b>Application</b> a plusieurs buts :</para>
+        <list type="bullet">
+          <item>
+            <para>En tant qu’objet racine, il permet d’accéder à d’autres objets dans la hiérarchie Outlook.</para>
+          </item>
+          <item>
+            <para>Il permet d’accéder directement à un nouvel élément créé à l’aide de <see cref="M:Microsoft.Office.Interop.Outlook._Application.CreateItem(Microsoft.Office.Interop.Outlook.OlItemType)" />, sans avoir à parcourir la hiérarchie d’objets.</para>
+          </item>
+          <item>
+            <para>Il permet d’accéder aux objets actifs de l’interface (l’Explorateur et l’inspecteur).</para>
+          </item>
+        </list>
+        <para>Lorsque vous utilisez Automation pour contrôler Microsoft Outlook à partir d’une autre application, vous utilisez la méthode <b>CreateObject</b> pour créer un objet Outlook <b>Application</b> .</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="f82ec-102">
+          <para>This is a .NET interface derived from a COM coclass that is required by managed code for interoperability with the corresponding COM object. Use this derived interface to access all method, property, and event members of the COM object. However, if a method or event you want to use shares the same name under the same COM object, cast to the corresponding primary interface to call the method, and cast to the latest events interface to connect to the event. Refer to this topic for information about the COM object. For information about the method and property members of the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook._Application" />. For information about the event members of the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event" />.</para>
+          <para>This is the only object in the hierarchy that can be returned by using the <see cref="M:Microsoft.Office.Interop.Outlook._Application.CreateObject(System.String)" />  method or the intrinsic Visual Basic <b>GetObject</b> function.</para>
+          <para>The Outlook <b>Application</b> object has several purposes:</para>
+          <list type="bullet">
+            <item>
+              <para>As the root object, it allows access to other objects in the Outlook hierarchy.</para>
+            </item>
+            <item>
+              <para>It allows direct access to a new item created by using <see cref="M:Microsoft.Office.Interop.Outlook._Application.CreateItem(Microsoft.Office.Interop.Outlook.OlItemType)" />, without having to traverse the object hierarchy.</para>
+            </item>
+            <item>
+              <para>It allows access to the active interface objects (the explorer and the inspector).</para>
+            </item>
+          </list>
+          <para>When you use Automation to control Microsoft Outlook from another application, you use the <b>CreateObject</b> method to create an Outlook <b>Application</b> object.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

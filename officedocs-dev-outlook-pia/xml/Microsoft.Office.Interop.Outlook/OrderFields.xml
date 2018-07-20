@@ -1,0 +1,77 @@
+<Type Name="OrderFields" FullName="Microsoft.Office.Interop.Outlook.OrderFields">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="9183d5dc750fff2bfc66cdfd12a98a8b39d02306" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20633953" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface OrderFields : Microsoft.Office.Interop.Outlook._OrderFields" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OrderFields implements class Microsoft.Office.Interop.Outlook._OrderFields" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.OrderFields" />
+  <TypeSignature Language="VB.NET" Value="Public Interface OrderFields&#xA;Implements _OrderFields" />
+  <TypeSignature Language="C++ CLI" Value="public interface class OrderFields : Microsoft::Office::Interop::Outlook::_OrderFields" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Outlook._OrderFields</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.Outlook.OrderFieldsClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0006309A-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="9d294-101">Représente la collection de <see cref="T:Microsoft.Office.Interop.Outlook.OrderField" /> objets dans un affichage.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="9d294-101">Represents the collection of <see cref="T:Microsoft.Office.Interop.Outlook.OrderField" /> objects in a view.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="9d294-102">
+        <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._OrderFields" />. </para>Collection 
+      <para><b>OrderFields</b> représente les propriétés d’élément Outlook permet de trier les éléments Outlook affichés dans l’affichage. Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._OrderFields.Add(System.String,System.Object)" /> méthode ou la collection <b>OrderFields</b> pour créer un nouveau champ de commande pour les objets ci-dessous dérivés de le <see cref="T:Microsoft.Office.Interop.Outlook.View" /> objet :</para><list type="bullet"><item><para><see cref="T:Microsoft.Office.Interop.Outlook.BusinessCardView" /></para></item><item><para><see cref="T:Microsoft.Office.Interop.Outlook.CardView" /></para></item><item><para><see cref="T:Microsoft.Office.Interop.Outlook.IconView" /></para></item></list><para><b>OrderField</b> objets contenus dans un Collection <b>OrderFields</b> sont appliqués aux éléments Outlook affichés dans l’affichage dans l’ordre dans lequel les objets contenus dans la collection.</para><para /></span>
+      <span class="sxs-lookup">
+        <span data-stu-id="9d294-102">
+          <para>This is a .NET interface derived from a COM coclass that is required by managed code for interoperability with the corresponding COM object. Use this derived interface to access all method, property, and event members of the COM object. However, if a method or event you want to use shares the same name under the same COM object, cast to the corresponding primary interface to call the method, and cast to the latest events interface to connect to the event. Refer to this topic for information about the COM object. For information about the method and property members of the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook._OrderFields" />. </para>
+          <para>The <b>OrderFields</b> collection represents the Outlook item properties used to sort Outlook items displayed in the view. Use the <see cref="M:Microsoft.Office.Interop.Outlook._OrderFields.Add(System.String,System.Object)" /> method or the <b>OrderFields</b> collection to create a new order field for the following objects derived from the <see cref="T:Microsoft.Office.Interop.Outlook.View" /> object:</para>
+          <list type="bullet">
+            <item>
+              <para>
+                <see cref="T:Microsoft.Office.Interop.Outlook.BusinessCardView" />
+              </para>
+            </item>
+            <item>
+              <para>
+                <see cref="T:Microsoft.Office.Interop.Outlook.CardView" />
+              </para>
+            </item>
+            <item>
+              <para>
+                <see cref="T:Microsoft.Office.Interop.Outlook.IconView" />
+              </para>
+            </item>
+            <item>
+              <para>
+                <see cref="T:Microsoft.Office.Interop.Outlook.TableView" />
+              </para>
+            </item>
+          </list>
+          <para>
+            <b>OrderField</b> objects contained in an <b>OrderFields</b> collection are applied to Outlook items displayed in the view in the order in which the objects are contained in the collection.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

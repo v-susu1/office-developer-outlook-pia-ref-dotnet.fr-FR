@@ -1,0 +1,166 @@
+<Type Name="OlSearchScope" FullName="Microsoft.Office.Interop.Outlook.OlSearchScope">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="5bf874a2f107891f654d5c42c74f87e291457f1b" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20633496" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public enum OlSearchScope" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OlSearchScope extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.OlSearchScope" />
+  <TypeSignature Language="VB.NET" Value="Public Enum OlSearchScope" />
+  <TypeSignature Language="C++ CLI" Value="public enum class OlSearchScope" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>
+      <span data-ttu-id="1723f-101">Spécifie l’étendue en termes de dossiers pour la recherche.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="1723f-101">Specifies the scope in terms of folders for the search.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="1723f-102">
+        <para>Vous pouvez sélectionner les magasins à rechercher dans les emplacements au menu de recherche en cliquant sur Outils de recherche dans le groupe d’Options de l’onglet contextuel de la recherche dans le ruban Microsoft Office Fluent.</para>
+        <para>Par défaut, recherche n’inclut pas le dossier éléments supprimés. Pour rechercher le dossier éléments supprimés, définir ce dossier comme votre dossier actif et rechercher par <see cref="F:Microsoft.Office.Interop.Outlook.OlSearchScope.olSearchScopeCurrentFolder" />.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="1723f-102">
+          <para>You can select stores to search in the Locations to Search menu by clicking Search Tools in the Options group of the Search contextual tab in the Microsoft Office Fluent ribbon.</para>
+          <para>By default, search does not include the Deleted Items folder. To search the Deleted Items folder, set that folder as your current folder and search by <see cref="F:Microsoft.Office.Interop.Outlook.OlSearchScope.olSearchScopeCurrentFolder" />.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="olSearchScopeAllFolders">
+      <MemberSignature Language="C#" Value="olSearchScopeAllFolders" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.Outlook.OlSearchScope olSearchScopeAllFolders = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.Outlook.OlSearchScope.olSearchScopeAllFolders" />
+      <MemberSignature Language="VB.NET" Value="olSearchScopeAllFolders" />
+      <MemberSignature Language="C++ CLI" Value="olSearchScopeAllFolders" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlSearchScope</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1723f-103">L’étendue de recherche sera sur tous les dossiers dont le type de dossier du dossier actif (<see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.DefaultItemType" />) et toutes les banques sélectionnées pour la recherche dans le dossier de menu déroulant.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1723f-103">The search scope will be across all folders that have the folder type of the current folder (<see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.DefaultItemType" />) and all stores that have been selected for search in the In Folder drop down menu.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="olSearchScopeAllOutlookItems">
+      <MemberSignature Language="C#" Value="olSearchScopeAllOutlookItems" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.Outlook.OlSearchScope olSearchScopeAllOutlookItems = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.Outlook.OlSearchScope.olSearchScopeAllOutlookItems" />
+      <MemberSignature Language="VB.NET" Value="olSearchScopeAllOutlookItems" />
+      <MemberSignature Language="C++ CLI" Value="olSearchScopeAllOutlookItems" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlSearchScope</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1723f-104">La recherche porte sur tous les éléments Outlook de tous les dossiers des banques ayant été sélectionnées pour la recherche.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1723f-104">The search scope is all Outlook items in all folders in stores that have been selected for search.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="olSearchScopeCurrentFolder">
+      <MemberSignature Language="C#" Value="olSearchScopeCurrentFolder" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.Outlook.OlSearchScope olSearchScopeCurrentFolder = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.Outlook.OlSearchScope.olSearchScopeCurrentFolder" />
+      <MemberSignature Language="VB.NET" Value="olSearchScopeCurrentFolder" />
+      <MemberSignature Language="C++ CLI" Value="olSearchScopeCurrentFolder" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlSearchScope</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1723f-105">L’étendue de recherche sera uniquement le dossier représenté par <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1723f-105">The search scope will be only the folder represented by <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" />.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="olSearchScopeCurrentStore">
+      <MemberSignature Language="C#" Value="olSearchScopeCurrentStore" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.Outlook.OlSearchScope olSearchScopeCurrentStore = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.Outlook.OlSearchScope.olSearchScopeCurrentStore" />
+      <MemberSignature Language="VB.NET" Value="olSearchScopeCurrentStore" />
+      <MemberSignature Language="C++ CLI" Value="olSearchScopeCurrentStore" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlSearchScope</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1723f-106">L’étendue de recherche est la banque pour le dossier actif, qui contient l’élément affiché dans l’Explorateur actif.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1723f-106">The search scope is the store for the current folder, which contains the item displayed in the active explorer.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="olSearchScopeSubfolders">
+      <MemberSignature Language="C#" Value="olSearchScopeSubfolders" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.Outlook.OlSearchScope olSearchScopeSubfolders = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.Outlook.OlSearchScope.olSearchScopeSubfolders" />
+      <MemberSignature Language="VB.NET" Value="olSearchScopeSubfolders" />
+      <MemberSignature Language="C++ CLI" Value="olSearchScopeSubfolders" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlSearchScope</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="1723f-107">La recherche porte sur le dossier représenté par <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" /> et ses sous-dossiers.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="1723f-107">The search scope is the folder represented by <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" /> and its subfolders.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

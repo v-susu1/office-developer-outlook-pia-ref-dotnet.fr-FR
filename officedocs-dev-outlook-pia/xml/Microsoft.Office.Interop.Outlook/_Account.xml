@@ -1,0 +1,898 @@
+<Type Name="_Account" FullName="Microsoft.Office.Interop.Outlook._Account">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="cdae52cef0897987594724efe1193410fea403d7" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20635070" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface _Account" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Account" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._Account" />
+  <TypeSignature Language="VB.NET" Value="Public Interface _Account" />
+  <TypeSignature Language="C++ CLI" Value="public interface class _Account" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000630C5-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4160)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="210b2-101">Il s’agit d’une interface principale dans une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="210b2-101">This is a primary interface in a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span>
+      </span>
+      <span data-ttu-id="210b2-102">Utilisez cette interface principale uniquement lorsque la méthode que vous souhaitez utiliser partageant le même nom qu’un événement de l’objet COM ; Dans ce cas, effectuez un cast à cette interface pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="210b2-102">Use this primary interface only when the method you want to use shares the same name as an event of the COM object; in this case, cast to this interface to call the method, and cast to the latest events interface to connect to the event.</span>
+      </span>
+      <span data-ttu-id="210b2-103">Sinon, utilisez l’interface .NET est dérivé de la coclasse COM pour accéder aux méthodes, propriétés et événements de l’objet COM.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="210b2-103">Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span>
+      </span>
+      <span data-ttu-id="210b2-104">Pour plus d’informations sur l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.Account" />.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="210b2-104">For information about the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook.Account" />.</span>
+      </span>
+    </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AccountType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.OlAccountType AccountType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Outlook.OlAccountType AccountType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Account.AccountType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AccountType As OlAccountType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::OlAccountType AccountType { Microsoft::Office::Interop::Outlook::OlAccountType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64210)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64210)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlAccountType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="210b2-105">Renvoie une constante dans la <see cref="T:Microsoft.Office.Interop.Outlook.OlAccountType" /> énumération qui indique le type de le <see cref="T:Microsoft.Office.Interop.Outlook.Account" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-105">Returns a constant in the <see cref="T:Microsoft.Office.Interop.Outlook.OlAccountType" /> enumeration that indicates the type of the <see cref="T:Microsoft.Office.Interop.Outlook.Account" />.</span>
+          </span>
+          <span data-ttu-id="210b2-106">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-106">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Account.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::Application ^ Application { Microsoft::Office::Interop::Outlook::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61440)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61440)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="210b2-107">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> object qui représente l’application Outlook de l’objet parent.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-107">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object that represents the parent Outlook application for the  object.</span>
+          </span>
+          <span data-ttu-id="210b2-108">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-108">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoDiscoverConnectionMode">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.OlAutoDiscoverConnectionMode AutoDiscoverConnectionMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Outlook.OlAutoDiscoverConnectionMode AutoDiscoverConnectionMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Account.AutoDiscoverConnectionMode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AutoDiscoverConnectionMode As OlAutoDiscoverConnectionMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::OlAutoDiscoverConnectionMode AutoDiscoverConnectionMode { Microsoft::Office::Interop::Outlook::OlAutoDiscoverConnectionMode get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64623)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64623)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlAutoDiscoverConnectionMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="210b2-109">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlAutoDiscoverConnectionMode" /> constante qui spécifie le type de connexion à utiliser pour le service de découverte automatique du serveur Microsoft Exchange qui héberge la boîte aux lettres du compte.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-109">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlAutoDiscoverConnectionMode" /> constant that specifies the type of connection to use for the auto-discovery service of the Microsoft Exchange server that hosts the account mailbox.</span>
+          </span>
+          <span data-ttu-id="210b2-110">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-110">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="210b2-111">
+            <para>Cette propriété équivaut à la <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.AutoDiscoverConnectionMode" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet, sauf que cette propriété s’applique au compte pour la découverte automatique est terminée et n’est pas nécessairement pour le compte Exchange principal.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-111">
+              <para>This property is similar to the <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.AutoDiscoverConnectionMode" /> property of the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> object, except that this property applies to the account for which auto-discovery is completed and not necessarily to the primary Exchange account.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoDiscoverXml">
+      <MemberSignature Language="C#" Value="public string AutoDiscoverXml { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AutoDiscoverXml" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Account.AutoDiscoverXml" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AutoDiscoverXml As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AutoDiscoverXml { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64624)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64624)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="210b2-112">Renvoie une <b>chaîne</b> (<b>string</b> en c#) qui représente les informations contenues dans le XML récupéré à partir du service de découverte automatique de Microsoft Exchange Server qui est associée au compte.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-112">Returns a <b>String</b> (<b>string</b> in C#) that represents information in XML retrieved from the auto-discovery service of the Microsoft Exchange Server that is associated with the account.</span>
+          </span>
+          <span data-ttu-id="210b2-113">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-113">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="210b2-114">
+            <para>Cette propriété équivaut à la <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.AutoDiscoverXml" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet, sauf que cette propriété s’applique au compte pour la découverte automatique est terminée et n’est pas nécessairement pour le compte Exchange principal.</para>
+            <para>La chaîne XML renvoyée contient des informations sur les différents services Web (par exemple, service de disponibilité et service de messagerie unifié) et les serveurs disponibles.</para>
+            <para>Une erreur est renvoyée si le compte n’est pas associé à un serveur Exchange qui exécute Microsoft Exchange Server 2007 ou version ultérieure.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-114">
+              <para>This property is similar to the <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.AutoDiscoverXml" /> property of the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> object, except that this property applies to the account for which auto-discovery is completed and not necessarily to the primary Exchange account.</para>
+              <para>The returned string of XML contains information about various Web services (for example, availability service and unified messaging service) and available servers.</para>
+              <para>An error is returned if the account is not associated with an Exchange Server that is running Microsoft Exchange Server 2007 or later.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Class">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.OlObjectClass Class { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Outlook.OlObjectClass Class" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Account.Class" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Class As OlObjectClass" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::OlObjectClass Class { Microsoft::Office::Interop::Outlook::OlObjectClass get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61450)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61450)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="210b2-115">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constante indiquant la classe de l’objet.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-115">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constant indicating the object's class.</span>
+          </span>
+          <span data-ttu-id="210b2-116">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-116">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentUser">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.Recipient CurrentUser { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.Recipient CurrentUser" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Account.CurrentUser" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentUser As Recipient" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::Recipient ^ CurrentUser { Microsoft::Office::Interop::Outlook::Recipient ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64622)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64622)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.Recipient</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="210b2-117">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> object qui représente l’identité de l’utilisateur actuel pour le compte.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-117">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> object that represents the current user identity for the account.</span>
+          </span>
+          <span data-ttu-id="210b2-118">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-118">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeliveryStore">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.Store DeliveryStore { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.Store DeliveryStore" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Account.DeliveryStore" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeliveryStore As Store" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::Store ^ DeliveryStore { Microsoft::Office::Interop::Outlook::Store ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64614)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64614)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.Store</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="210b2-119">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> object qui représente la banque de remise par défaut pour le compte.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-119">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> object that represents the default delivery store for the account.</span>
+          </span>
+          <span data-ttu-id="210b2-120">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-120">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="210b2-121">
+            <para>Renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) si le compte ne dispose pas d’une banque de remise par défaut.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-121">
+              <para>Returns <b>Nothing</b> (a null reference (Nothing in Visual Basic) in C#) if the account does not have a default delivery store.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayName">
+      <MemberSignature Language="C#" Value="public string DisplayName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Account.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12289)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(12289)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="210b2-122">Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant le nom complet de la messagerie <see cref="T:Microsoft.Office.Interop.Outlook.Account" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-122">Returns a <b>String</b> (<b>string</b> in C#) representing the display name of the e-mail  <see cref="T:Microsoft.Office.Interop.Outlook.Account" />.</span>
+          </span>
+          <span data-ttu-id="210b2-123">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-123">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="210b2-124">
+            <para>
+              <b>DisplayName</b> est la propriété par défaut de l’objet <b>Account</b> .</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-124">
+              <para>
+                <b>DisplayName</b> is the default property of the <b>Account</b> object. </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExchangeConnectionMode">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode ExchangeConnectionMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode ExchangeConnectionMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Account.ExchangeConnectionMode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExchangeConnectionMode As OlExchangeConnectionMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::OlExchangeConnectionMode ExchangeConnectionMode { Microsoft::Office::Interop::Outlook::OlExchangeConnectionMode get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64615)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64615)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="210b2-125">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode" /> constante qui indique le mode de connexion actuel pour le serveur Microsoft Exchange qui héberge la boîte aux lettres du compte.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-125">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode" /> constant that indicates the current connection mode for the Microsoft Exchange Server that hosts the account mailbox.</span>
+          </span>
+          <span data-ttu-id="210b2-126">Lecture seule</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-126">Read-only</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="210b2-127">
+            <para>Cette propriété équivaut à la <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.ExchangeConnectionMode" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet, sauf que cette propriété s’applique au serveur Exchange qui héberge la boîte aux lettres du compte et pas nécessairement pour le compte Exchange principal.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-127">
+              <para>This property is similar to the <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.ExchangeConnectionMode" /> property of the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> object, except that this property applies to the Exchange Server that hosts the account mailbox, and not necessarily to the primary Exchange account.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExchangeMailboxServerName">
+      <MemberSignature Language="C#" Value="public string ExchangeMailboxServerName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ExchangeMailboxServerName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Account.ExchangeMailboxServerName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExchangeMailboxServerName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExchangeMailboxServerName { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64616)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64616)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="210b2-128">Renvoie une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le nom du serveur Microsoft Exchange qui héberge la boîte aux lettres du compte.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-128">Returns a <b>String</b> (<b>string</b> in C#) value that represents the name of the Microsoft Exchange Server that hosts the account mailbox.</span>
+          </span>
+          <span data-ttu-id="210b2-129">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-129">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="210b2-130">
+            <para>Cette propriété équivaut à la <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.ExchangeMailboxServerName" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet, sauf que cette propriété s’applique au serveur Exchange qui héberge la boîte aux lettres du compte et pas nécessairement pour le compte Exchange principal.</para>
+            <para>Si une boîte aux lettres Exchange n’est pas associé à ce compte, cette propriété renvoie une chaîne vide.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-130">
+              <para>This property is similar to the <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.ExchangeMailboxServerName" /> property of the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> object, except that this property applies to the Exchange Server that hosts the account mailbox, and not necessarily to the primary Exchange account.</para>
+              <para>If an Exchange mailbox is not associated with this account, this property returns an empty string.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExchangeMailboxServerVersion">
+      <MemberSignature Language="C#" Value="public string ExchangeMailboxServerVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ExchangeMailboxServerVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Account.ExchangeMailboxServerVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExchangeMailboxServerVersion As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExchangeMailboxServerVersion { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64617)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64617)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="210b2-131">Renvoie une <b>chaîne</b> (<b>string</b> en c#) qui représente le numéro de version complète de Microsoft Exchange Server qui héberge la boîte aux lettres du compte.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-131">Returns a <b>String</b> (<b>string</b> in C#) that represents the full version number of the Microsoft Exchange Server that hosts the account mailbox.</span>
+          </span>
+          <span data-ttu-id="210b2-132">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-132">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="210b2-133">
+            <para>Cette propriété équivaut à la <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.ExchangeMailboxServerVersion" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet, sauf que cette propriété s’applique au serveur Exchange qui héberge la boîte aux lettres du compte et pas nécessairement pour le compte Exchange principal.</para>
+            <para>Cette propriété renvoie une chaîne qui contient le numéro de version du serveur Exchange pour le compte. Le numéro de version comporte les quatre composants suivants :</para>
+            <para>&lt;version principale&gt;.&lt; version secondaire&gt;. &lt;numéro de build&gt;. &lt;révision&gt;</para>
+            <para>pas tous les composants peuvent être présents dans le numéro de version, selon les informations de version qui sont fournis par le serveur Exchange. Par exemple, cette propriété renvoie « 6.5.7638 » pour Microsoft Exchange Server 2003 Service Pack 2.</para>
+            <para>Si une boîte aux lettres Exchange n’est pas associé à ce compte, cette propriété renvoie une chaîne vide.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-133">
+              <para>This property is similar to the <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.ExchangeMailboxServerVersion" /> property of the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> object, except that this property applies to the Exchange Server that hosts the account mailbox, and not necessarily to the primary Exchange account.</para>
+              <para>This property returns a string that contains the version number of the Exchange server for the account. The version number has the following four parts:</para>
+              <para>&lt;major version&gt;.&lt;minor version&gt;.&lt;build number&gt;.&lt;revision&gt;</para>
+              <para>Not all parts may be present in the version number, depending on the version information that is supplied by the Exchange Server. For example, this property returns "6.5.7638" for Microsoft Exchange Server 2003 Service Pack 2.</para>
+              <para>If an Exchange mailbox is not associated with this account, this property returns an empty string.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAddressEntryFromID">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.AddressEntry GetAddressEntryFromID (string ID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Outlook.AddressEntry GetAddressEntryFromID([in]string ID) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._Account.GetAddressEntryFromID(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAddressEntryFromID (ID As String) As AddressEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Outlook::AddressEntry ^ GetAddressEntryFromID(System::String ^ ID);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64618)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.AddressEntry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ID">
+          <span data-ttu-id="210b2-134">Utilisé pour identifier une entrée d’adresse maintenue pour la session.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-134">Used to identify an address entry that is maintained for the session.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="210b2-135">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> object qui représente l’entrée d’adresse spécifiée par l’ID d’entrée donné.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-135">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> object that represents the address entry specified by the given entry ID.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="210b2-136">Renvoie un <b>objet AddressEntry</b> qui possède la <see cref="P:Microsoft.Office.Interop.Outlook.AddressEntry.ID" /> propriété qui correspond à l’élément spécifié <paramref name="ID" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-136">Returns an <b>AddressEntry</b> that has the <see cref="P:Microsoft.Office.Interop.Outlook.AddressEntry.ID" /> property that matches the specified <paramref name="ID" />.</span>
+          </span>
+        </returns>
+        <remarks>
+          <span data-ttu-id="210b2-137">
+            <para>Cette méthode est similaire à la <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.GetAddressEntryFromID(System.String)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet, mais contient des informations contextuelles supplémentaires sur le compte à utiliser pour la recherche. S’il existe plusieurs comptes Microsoft Exchange dans le profil actuel, utilisez la méthode <b>GetAddressEntryFromID</b> pour le compte correspondant. </para>
+            <para>La propriété <b>ID</b> pour un <b>objet AddressEntry</b> est un identificateur de chaîne permanent et unique que le fournisseur de transport affecte lors de la création d’un <b>objet AddressEntry</b> . Outlook conserve une hiérarchie de carnets d’adresses pendant une session et l’entrée d’adresse renvoyée doit correspondre à l’ID fourni et se trouver dans un des carnets d’adresses. </para>
+            <para>
+              <b>GetAddressEntryFromID</b> renvoie une erreur si aucun élément avec l’ID donné ne peut être trouvé, si aucune connexion n’est disponible ou si l’utilisateur est défini sur travailler hors connexion.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-137">
+              <para>This method is similar to the <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.GetAddressEntryFromID(System.String)" /> method of the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> object, but has some additional contextual information about which account to use for the look-up. If there are multiple Microsoft Exchange accounts in the current profile, use the <b>GetAddressEntryFromID</b> method for the corresponding account. </para>
+              <para>The <b>ID</b> property for an <b>AddressEntry</b> is a permanent, unique string identifier that the transport provider assigns when an <b>AddressEntry</b> is created. Outlook maintains a hierarchy of address books for a session, and the address entry that is returned must match the given ID and be in one of the address books. </para>
+              <para>
+                <b>GetAddressEntryFromID</b> returns an error if no item with the given ID can be found, if no connection is available, or if the user is set to work offline.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRecipientFromID">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.Recipient GetRecipientFromID (string EntryID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Outlook.Recipient GetRecipientFromID([in]string EntryID) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._Account.GetRecipientFromID(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRecipientFromID (EntryID As String) As Recipient" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Outlook::Recipient ^ GetRecipientFromID(System::String ^ EntryID);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64619)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.Recipient</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="EntryID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="EntryID">
+          <span data-ttu-id="210b2-138">La <see cref="P:Microsoft.Office.Interop.Outlook.Recipient.EntryID" /> du destinataire.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-138">The <see cref="P:Microsoft.Office.Interop.Outlook.Recipient.EntryID" /> of the recipient.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="210b2-139">Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> objet identifié par l’ID d’entrée donné.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-139">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> object that is identified by the given entry ID.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="210b2-140">Renvoie un objet <b>Recipient</b> qui représente le destinataire associé à l’ID d’entrée spécifié.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-140">Returns a <b>Recipient</b> object that represents the recipient associated with the specified entry ID.</span>
+          </span>
+        </returns>
+        <remarks>
+          <span data-ttu-id="210b2-141">
+            <para>Cette méthode est similaire à la <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.GetRecipientFromID(System.String)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet. S’il existe plusieurs comptes Microsoft Exchange dans le profil actuel, utilisez la méthode <b>GetRecipientFromID</b> pour le compte correspondant.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-141">
+              <para>This method is similar to the <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.GetRecipientFromID(System.String)" /> method of the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> object. If there are multiple Microsoft Exchange accounts in the current profile, use the <b>GetRecipientFromID</b> method for the corresponding account.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IOlkAccount">
+      <MemberSignature Language="C#" Value="public object IOlkAccount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object IOlkAccount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Account.IOlkAccount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IOlkAccount As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ IOlkAccount { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(100)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(100)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Account.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61441)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61441)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="210b2-p113">Renvoie la valeur de type <b>Object</b> parent de l’objet spécifié. En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-p113">Returns the parent <b>Object</b> of the specified object. Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="210b2-144">
+            <para>Le parent de le <see cref="T:Microsoft.Office.Interop.Outlook.Account" /> objet est la <see cref="T:Microsoft.Office.Interop.Outlook.Accounts" /> objet.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-144">
+              <para>The parent of the <see cref="T:Microsoft.Office.Interop.Outlook.Account" /> object is the <see cref="T:Microsoft.Office.Interop.Outlook.Accounts" /> object.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Session">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.NameSpace Session { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.NameSpace Session" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Account.Session" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Session As NameSpace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::NameSpace ^ Session { Microsoft::Office::Interop::Outlook::NameSpace ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61451)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61451)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="210b2-145">Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-145">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  object for the current session.</span>
+          </span>
+          <span data-ttu-id="210b2-146">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-146">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="210b2-147">
+            <para>Renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) s’il n’existe aucune session active.</para> Propriété 
+          <para>la <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para><code>Dim objNamespace As Outlook.NameSpace = _
+    Application.GetNamespace("MAPI")</code><code>Dim objSession As Outlook.NameSpace = Application.Session</code><code>Outlook.NameSpace objNamespace = 
+    Application.GetNamespace("MAPI");</code><code>Outlook.NameSpace objSession = Application.Session;</code><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-147">
+              <para>Returns <b>Nothing</b> (a null reference (Nothing in Visual Basic) in C#) if there is no logged-on session.</para>
+              <para>The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session. Both members serve the same purpose. For example,  the following pairs of statements perform the same function:</para>
+              <code>Dim objNamespace As Outlook.NameSpace = _
+    Application.GetNamespace("MAPI")</code>
+              <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
+              <code>Outlook.NameSpace objNamespace = 
+    Application.GetNamespace("MAPI");</code>
+              <code>Outlook.NameSpace objSession = Application.Session;</code>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SmtpAddress">
+      <MemberSignature Language="C#" Value="public string SmtpAddress { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SmtpAddress" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Account.SmtpAddress" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SmtpAddress As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SmtpAddress { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64212)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64212)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="210b2-148">Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant l’adresse SMTP Simple Mail Transfer Protocol () pour le <see cref="T:Microsoft.Office.Interop.Outlook.Account" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-148">Returns a <b>String</b> (<b>string</b> in C#) representing the Simple Mail Transfer Protocol (SMTP) address for the <see cref="T:Microsoft.Office.Interop.Outlook.Account" />.</span>
+          </span>
+          <span data-ttu-id="210b2-149">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-149">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="210b2-150">
+            <para>Le but de <b>SmtpAddress</b> et <see cref="P:Microsoft.Office.Interop.Outlook._Account.UserName" /> est de fournir un contexte basé sur le compte pour l’identification.</para>
+            <para>Si le compte ne dispose pas d’une adresse SMTP, <b>SmtpAddress</b> renvoie une chaîne vide.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-150">
+              <para>The purpose of <b>SmtpAddress</b> and <see cref="P:Microsoft.Office.Interop.Outlook._Account.UserName" /> is to provide an account-based context to determine identity.</para>
+              <para>If the account does not have an SMTP address, <b>SmtpAddress</b> returns an empty string.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserName">
+      <MemberSignature Language="C#" Value="public string UserName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UserName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._Account.UserName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserName { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64211)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64211)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="210b2-151">Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant le nom d’utilisateur pour le <see cref="T:Microsoft.Office.Interop.Outlook.Account" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-151">Returns a <b>String</b> (<b>string</b> in C#) representing the user name for the <see cref="T:Microsoft.Office.Interop.Outlook.Account" />.</span>
+          </span>
+          <span data-ttu-id="210b2-152">En lecture seule.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-152">Read-only.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="210b2-153">
+            <para>L’objectif de <see cref="P:Microsoft.Office.Interop.Outlook._Account.SmtpAddress" /> et <b>UserName</b> est de fournir un contexte basé sur le compte pour l’identification.</para>
+            <para>Si le compte ne dispose pas d’un nom d’utilisateur défini, <b>UserName</b> renvoie une chaîne vide.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="210b2-153">
+              <para>The purpose of <see cref="P:Microsoft.Office.Interop.Outlook._Account.SmtpAddress" /> and <b>UserName</b> is to provide an account-based context to determine identity.</para>
+              <para>If the account does not have a user name defined, <b>UserName</b> returns an empty string.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

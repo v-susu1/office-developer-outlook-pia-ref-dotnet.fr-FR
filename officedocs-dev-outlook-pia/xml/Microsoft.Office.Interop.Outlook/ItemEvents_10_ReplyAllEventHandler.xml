@@ -1,0 +1,59 @@
+<Type Name="ItemEvents_10_ReplyAllEventHandler" FullName="Microsoft.Office.Interop.Outlook.ItemEvents_10_ReplyAllEventHandler">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="8eb1088040eb4548c42e4e0248adf37a4af4bb1b" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20633889" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public delegate void ItemEvents_10_ReplyAllEventHandler(object Response, out bool Cancel);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ItemEvents_10_ReplyAllEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.ItemEvents_10_ReplyAllEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ItemEvents_10_ReplyAllEventHandler(Response As Object, ByRef Cancel As Boolean)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void ItemEvents_10_ReplyAllEventHandler(System::Object ^ Response, [Runtime::InteropServices::Out] bool % Cancel);" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(16)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="Response" Type="System.Object" />
+    <Parameter Name="Cancel" Type="System.Boolean&amp;" RefType="out" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="Response">
+      <span data-ttu-id="080de-101">Nouvel élément envoyé en réponse au message d'origine.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="080de-101">The new item being sent in response to the original message.</span>
+      </span>
+    </param>
+    <param name="Cancel">
+      <span data-ttu-id="080de-p101">						Cet argument a la valeur <b>False</b> si l'événement survient. Si la procédure événementielle affecte à cet argument la valeur <b>True</b>, l'opération de réponse à toutes les personnes n'est pas achevée et le nouvel élément ne s'affiche pas.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="080de-p101">
+          <b>False</b> when the event occurs. If the event procedure sets this argument to <b>True</b>, the reply all operation is not completed and the new item is not displayed.</span>
+      </span>
+    </param>
+    <summary>
+      <span data-ttu-id="080de-p102">Il s’agit d’un délégué pour un événement dans l’objet correspondant. Après avoir implémenté une méthode de rappel pour l’événement, utilisez ce délégué pour connecter la méthode de rappel à l’événement. S’il existe plusieurs versions de l’interface d’événement, ce délégué connecte la méthode de rappel pour l’événement dans la version spécifiée d’Outlook.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="080de-p102">This is a delegate for an event in the corresponding object. After implementing a callback method for the event, use this delegate to connect the callback method to the event. If there are multiple versions of the event interface, this delegate connects the callback method for the event in the specified version of Outlook.</span>
+      </span>
+    </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

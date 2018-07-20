@@ -1,0 +1,125 @@
+<Type Name="OlTimeStyle" FullName="Microsoft.Office.Interop.Outlook.OlTimeStyle">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="f0e5b8b037c6560b38e2cf451d02456b1d07b151" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20633718" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public enum OlTimeStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OlTimeStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.OlTimeStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum OlTimeStyle" />
+  <TypeSignature Language="C++ CLI" Value="public enum class OlTimeStyle" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("4FD8B708-E730-49B5-BDD3-B807F48E5B83")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="c1616-101">Spécifie le mode d'affichage des valeurs horaires et comment le contrôle d'heure interprète les entrées de ces valeurs.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="c1616-101">Specifies  how time values are displayed and how entries of time values are interpreted by  a time control.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="c1616-102">
+        <para>Utiliser le contrôle d’heure avec le style <b>olTimeStyleShortDuration</b> pour les champs de durée, tels que les <see cref="P:Microsoft.Office.Interop.Outlook._JournalItem.Duration" /> d’un <see cref="T:Microsoft.Office.Interop.Outlook.JournalItem" />. Utilisez le contrôle d’heure avec le style <b>olTimeStyleTimeDuration</b> pour l’heure de fin d’un élément de rendez-vous. Utilisez le contrôle d’heure avec le style <b>olTimeStyleTimeOnly</b> pour l’heure de début d’un élément de rendez-vous.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="c1616-102">
+          <para>Use the time control with the <b>olTimeStyleShortDuration</b> style for duration fields, such as the <see cref="P:Microsoft.Office.Interop.Outlook._JournalItem.Duration" />  of a <see cref="T:Microsoft.Office.Interop.Outlook.JournalItem" />. Use the time control with the <b>olTimeStyleTimeDuration</b> style for the end time of an appointment item. Use the time control with the <b>olTimeStyleTimeOnly</b> style for the start time of an appointment item.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="olTimeStyleShortDuration">
+      <MemberSignature Language="C#" Value="olTimeStyleShortDuration" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.Outlook.OlTimeStyle olTimeStyleShortDuration = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.Outlook.OlTimeStyle.olTimeStyleShortDuration" />
+      <MemberSignature Language="VB.NET" Value="olTimeStyleShortDuration" />
+      <MemberSignature Language="C++ CLI" Value="olTimeStyleShortDuration" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlTimeStyle</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="c1616-103">La partie déroulante du contrôle d’heure affiche uniquement les valeurs de durée en utilisant l’intervalle défini par le <see cref="P:Microsoft.Office.Interop.Outlook._OlkTimeControl.IntervalTime" /> propriété.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c1616-103">The drop-down portion of the time control displays only duration values with the interval set by the <see cref="P:Microsoft.Office.Interop.Outlook._OlkTimeControl.IntervalTime" /> property.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="olTimeStyleTimeDuration">
+      <MemberSignature Language="C#" Value="olTimeStyleTimeDuration" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.Outlook.OlTimeStyle olTimeStyleTimeDuration = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.Outlook.OlTimeStyle.olTimeStyleTimeDuration" />
+      <MemberSignature Language="VB.NET" Value="olTimeStyleTimeDuration" />
+      <MemberSignature Language="C++ CLI" Value="olTimeStyleTimeDuration" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlTimeStyle</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="c1616-104">La partie déroulante du contrôle d’heure affiche les valeurs horaires commençant par la <see cref="P:Microsoft.Office.Interop.Outlook._OlkTimeControl.ReferenceTime" /> et utilise la propriété <b>OlkTimeControl.IntervalTime</b> comme incrément.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c1616-104">The drop-down portion of the time control displays time values starting from the <see cref="P:Microsoft.Office.Interop.Outlook._OlkTimeControl.ReferenceTime" /> and uses the <b>OlkTimeControl.IntervalTime</b> property as the increment.</span>
+          </span>
+          <span data-ttu-id="c1616-105">La zone d’édition du contrôle d’heure affiche la durée de la <b>liste</b> et l’heure sélectionnée.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c1616-105">The edit box of the time control displays the duration from the <b>ReferenceTime</b> to the selected time.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="olTimeStyleTimeOnly">
+      <MemberSignature Language="C#" Value="olTimeStyleTimeOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.Outlook.OlTimeStyle olTimeStyleTimeOnly = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.Outlook.OlTimeStyle.olTimeStyleTimeOnly" />
+      <MemberSignature Language="VB.NET" Value="olTimeStyleTimeOnly" />
+      <MemberSignature Language="C++ CLI" Value="olTimeStyleTimeOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlTimeStyle</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="c1616-106">La liste déroulante du contrôle d'heure affiche uniquement les valeurs horaires en utilisant l'intervalle défini par la propriété <b>OlkTimeControl.IntervalTime</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c1616-106">The drop-down portion of the time control displays only time values with the interval set by the <b>OlkTimeControl.IntervalTime</b> property.</span>
+          </span>
+        </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

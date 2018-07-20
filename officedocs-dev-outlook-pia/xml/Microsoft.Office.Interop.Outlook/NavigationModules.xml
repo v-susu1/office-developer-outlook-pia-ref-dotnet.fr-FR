@@ -1,0 +1,59 @@
+<Type Name="NavigationModules" FullName="Microsoft.Office.Interop.Outlook.NavigationModules">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="f92cc2b8365c96a8eb75c73cceedd7c2e6ba750b" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20633470" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface NavigationModules : Microsoft.Office.Interop.Outlook._NavigationModules" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract NavigationModules implements class Microsoft.Office.Interop.Outlook._NavigationModules" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.NavigationModules" />
+  <TypeSignature Language="VB.NET" Value="Public Interface NavigationModules&#xA;Implements _NavigationModules" />
+  <TypeSignature Language="C++ CLI" Value="public interface class NavigationModules : Microsoft::Office::Interop::Outlook::_NavigationModules" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Outlook._NavigationModules</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.Outlook.NavigationModulesClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000630E7-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="3425a-101">Contient un jeu en lecture seule de <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModule" /> objets qui représentent les modules de navigation affichés par le volet de Navigation.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="3425a-101">Contains a read-only set of <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModule" /> objects that represent the navigation modules displayed by the Navigation Pane.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="3425a-102">
+        <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._NavigationModules" />. </para>
+        <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._NavigationPane.Modules" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPane" /> object pour renvoyer un objet <b>NavigationModules</b> .</para>
+        <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._NavigationModules.Item(System.Object)" /> propriété (<b>cette</b> en c#) pour récupérer un objet <b>NavigationModule</b> par le nom ou la position ordinale du module de navigation dans la collection, ou utilisez le <see cref="M:Microsoft.Office.Interop.Outlook._NavigationModules.GetNavigationModule(Microsoft.Office.Interop.Outlook.OlNavigationModuleType)" /> méthode permettant de retourner un <b>NavigationModule</b> objet par type de module de navigation.</para>
+        <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._NavigationModules.Count" /> propriété pour renvoyer le nombre de modules de navigation contenus dans le volet de Navigation.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="3425a-102">
+          <para>This is a .NET interface derived from a COM coclass that is required by managed code for interoperability with the corresponding COM object. Use this derived interface to access all method, property, and event members of the COM object. However, if a method or event you want to use shares the same name under the same COM object, cast to the corresponding primary interface to call the method, and cast to the latest events interface to connect to the event. Refer to this topic for information about the COM object. For information about the method and property members of the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook._NavigationModules" />. </para>
+          <para>Use the <see cref="P:Microsoft.Office.Interop.Outlook._NavigationPane.Modules" /> property of the <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPane" /> object to return a <b>NavigationModules</b> object.</para>
+          <para>Use the <see cref="P:Microsoft.Office.Interop.Outlook._NavigationModules.Item(System.Object)" /> property (<b>this</b> in C#) to retrieve a <b>NavigationModule</b> object by either the name or ordinal position of the navigation module within the collection, or use the <see cref="M:Microsoft.Office.Interop.Outlook._NavigationModules.GetNavigationModule(Microsoft.Office.Interop.Outlook.OlNavigationModuleType)" /> method to return a <b>NavigationModule</b> object by the navigation module type.</para>
+          <para>Use the <see cref="P:Microsoft.Office.Interop.Outlook._NavigationModules.Count" /> property to return the number of navigation modules contained in the Navigation Pane.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>
