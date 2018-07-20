@@ -1,0 +1,1191 @@
+<Type Name="_OlkComboBox" FullName="Microsoft.Office.Interop.Outlook._OlkComboBox">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="89f18877a1a25c0c409aacc28f213dc09a4b2fad" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20635251" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface _OlkComboBox" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _OlkComboBox" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._OlkComboBox" />
+  <TypeSignature Language="VB.NET" Value="Public Interface _OlkComboBox" />
+  <TypeSignature Language="C++ CLI" Value="public interface class _OlkComboBox" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000672DE-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4160)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Il s’agit d’une interface principale dans une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface principale uniquement lorsque la méthode que vous souhaitez utiliser partageant le même nom qu’un événement de l’objet COM ; Dans ce cas, effectuez un cast à cette interface pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Sinon, utilisez l’interface .NET est dérivé de la coclasse COM pour accéder aux méthodes, propriétés et événements de l’objet COM. Pour plus d’informations sur l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.OlkComboBox" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddItem">
+      <MemberSignature Language="C#" Value="public void AddItem (string ItemText, object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddItem([in]string ItemText, [in]object Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._OlkComboBox.AddItem(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddItem (ItemText As String, Optional Index As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-553)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ItemText" Type="System.String" />
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="ItemText">Valeur à ajouter à la liste de la zone de liste déroulante.</param>
+        <param name="Index">Valeur de base 0 qui spécifie l'ordre du nouvel élément dans la liste.</param>
+        <summary>Ajoute un élément à la liste en spécifiant éventuellement un index pour faire apparaître ce nouvel élément dans la liste.</summary>
+        <remarks>
+          <para>Si la valeur de <paramref name="Index" /> est égal ou supérieur au nombre d’éléments dans la liste, le nouvel élément sont additionnée à la fin de la liste.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoSize">
+      <MemberSignature Language="C#" Value="public bool AutoSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._OlkComboBox.AutoSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoSize As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoSize { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-500)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(-500)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(-500)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui redimensionne automatiquement le contrôle pour afficher tout le contenu.  Lecture/écriture.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La valeur par défaut de cette propriété a la <b>valeur False</b>.</para>
+          <para>Paramètre <b>AutoSize</b> sur <b>True</b> définit automatiquement la largeur de la zone d’affichage à la longueur du texte dans la zone de liste déroulante. Ce comportement est similaire à la zone de texte à ligne unique. </para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoTab">
+      <MemberSignature Language="C#" Value="public bool AutoTab { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoTab" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._OlkComboBox.AutoTab" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoTab As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoTab { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(217)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(217)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(217)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui spécifie si une tabulation est insérée automatiquement lorsque le contrôle atteint la longueur maximale spécifiée. Lecture/écriture.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La valeur par défaut de cette propriété a la <b>valeur False</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoWordSelect">
+      <MemberSignature Language="C#" Value="public bool AutoWordSelect { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoWordSelect" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._OlkComboBox.AutoWordSelect" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoWordSelect As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoWordSelect { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(218)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(218)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(218)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si un mot ou un caractère est l’unité de base utilisée pour étendre une sélection.  Lecture/écriture.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La valeur par défaut est <b>True</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackColor">
+      <MemberSignature Language="C#" Value="public uint BackColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 BackColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._OlkComboBox.BackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackColor As UInteger" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt32 BackColor { System::UInt32 get(); void set(System::UInt32 value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComAliasName("stdole.OLE_COLOR")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-501)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(-501)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(-501)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit une valeur <b>UInteger</b> (<b>uint</b> en c#) qui indique la couleur d’arrière-plan du contrôle. Lecture/écriture.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Cette propriété est de type <b>OLE_COLOR</b> , qui est une valeur <b>UInteger</b> (<b>uint</b> en c#). La valeur par défaut de cette propriété est 0 x 80000005, « Fenêtre ».</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderStyle">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.OlBorderStyle BorderStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Outlook.OlBorderStyle BorderStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._OlkComboBox.BorderStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderStyle As OlBorderStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::OlBorderStyle BorderStyle { Microsoft::Office::Interop::Outlook::OlBorderStyle get(); void set(Microsoft::Office::Interop::Outlook::OlBorderStyle value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-504)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(-504)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(-504)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlBorderStyle" /> constante qui définit le style de la bordure autour du contrôle.   Lecture/écriture.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La valeur par défaut est <b>olBorderStyleSingle</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._OlkComboBox.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-554)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Supprime tous les objets de la zone de liste déroulante.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy">
+      <MemberSignature Language="C#" Value="public void Copy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Copy() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._OlkComboBox.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Copy ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Copy();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(22)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Copie le contenu du contrôle vers le Presse-papiers.</summary>
+        <remarks>
+          <para>Les données sont copiées au format texte sans mise en forme, en remplaçant le contenu existant du Presse-papiers.</para>
+          <para>Si le style du contrôle est <b>olComboBoxStyleListBox</b>, alors que cette méthode copie la sélection actuelle dans la liste déroulante dans le Presse-papiers.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cut">
+      <MemberSignature Language="C#" Value="public void Cut ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Cut() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._OlkComboBox.Cut" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Cut ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Cut();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(21)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Supprime le contenu du contrôle et copie le contenu vers le Presse-papiers.</summary>
+        <remarks>
+          <para>Les données sont copiées dans le Presse-papiers au format texte sans mise en forme, en remplaçant le contenu existant du Presse-papiers.</para>
+          <para>Si le style du contrôle est <b>olComboBoxStyleListBox</b>, alors que cette méthode ne peut rien coupe.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DragBehavior">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.OlDragBehavior DragBehavior { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Outlook.OlDragBehavior DragBehavior" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._OlkComboBox.DragBehavior" />
+      <MemberSignature Language="VB.NET" Value="Public Property DragBehavior As OlDragBehavior" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::OlDragBehavior DragBehavior { Microsoft::Office::Interop::Outlook::OlDragBehavior get(); void set(Microsoft::Office::Interop::Outlook::OlDragBehavior value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(225)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(225)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(225)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlDragBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlDragBehavior" /> constante qui indique si le système Active la fonctionnalité de glisser-déplacer pour ce contrôle.  Lecture/écriture.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La valeur par défaut est <b>olDragDropDisabled</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropDown">
+      <MemberSignature Language="C#" Value="public void DropDown ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DropDown() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._OlkComboBox.DropDown" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DropDown ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DropDown();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Développe la liste déroulante dans la zone de liste déroulante.</summary>
+        <remarks>
+          <para>Simule l’utilisateur clique sur le bouton déroulant sur le contrôle. Cette méthode provoque la <see cref="E:Microsoft.Office.Interop.Outlook.OlkComboBoxEvents_Event.DropButtonClick" /> l’événement.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-514)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(-514)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(-514)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si le contrôle est autorisé à fonctionner.  Lecture/écriture.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La valeur par défaut est <b>True</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterFieldBehavior">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.OlEnterFieldBehavior EnterFieldBehavior { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Outlook.OlEnterFieldBehavior EnterFieldBehavior" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._OlkComboBox.EnterFieldBehavior" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnterFieldBehavior As OlEnterFieldBehavior" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::OlEnterFieldBehavior EnterFieldBehavior { Microsoft::Office::Interop::Outlook::OlEnterFieldBehavior get(); void set(Microsoft::Office::Interop::Outlook::OlEnterFieldBehavior value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(224)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(224)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(224)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlEnterFieldBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlEnterFieldBehavior" /> constante qui spécifie le comportement de la sélection lors de la saisie du contrôle. Lecture/écriture.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La valeur par défaut est <b>olEnterFieldBehaviorSelectAll</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Font">
+      <MemberSignature Language="C#" Value="public stdole.StdFont Font { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class stdole.StdFont Font" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Font" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Font As StdFont" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property stdole::StdFont ^ Font { stdole::StdFont ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-512)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(-512)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>stdole.StdFont</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <b>StdFont</b> qui représente la police utilisée pour afficher le texte dans le contrôle.  En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La police est exprimée en tant que le type de Microsoft Windows <b>stdfont</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForeColor">
+      <MemberSignature Language="C#" Value="public uint ForeColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 ForeColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._OlkComboBox.ForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ForeColor As UInteger" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt32 ForeColor { System::UInt32 get(); void set(System::UInt32 value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComAliasName("stdole.OLE_COLOR")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-513)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(-513)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(-513)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit une valeur <b>UInteger</b> (<b>uint</b> en c#) qui indique la couleur de premier plan du contrôle. Lecture/écriture.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Cette propriété est de type <b>OLE_COLOR</b> , qui est une valeur <b>UInteger</b> (<b>uint</b> en c#). La valeur par défaut de cette propriété est 0 x 80000008, « Texte de la fenêtre ».</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItem">
+      <MemberSignature Language="C#" Value="public string GetItem (int Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetItem([in]int32 Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._OlkComboBox.GetItem(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetItem (Index As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetItem(int Index);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8457)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Index">Valeur de base 0 qui spécifie l'emplacement d'un élément dans la liste.</param>
+        <summary>Obtient une <b>chaîne</b> (<b>string</b> en c#) qui représente un élément situé à l’emplacement spécifié dans la liste du contrôle de zone de liste déroulante.</summary>
+        <returns>Une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente l’élément situé à l’emplacement spécifié dans la liste.</returns>
+        <remarks>
+          <para>Si <paramref name="Index" /> est en dehors de la plage de valeurs autorisées (entre 0 et <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.ListCount" />-1), une erreur hors limites est renvoyée.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HideSelection">
+      <MemberSignature Language="C#" Value="public bool HideSelection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HideSelection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._OlkComboBox.HideSelection" />
+      <MemberSignature Language="VB.NET" Value="Public Property HideSelection As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HideSelection { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(207)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(207)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(207)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui spécifie si une sélection est affichée ou masquée dans le contrôle lorsque le contrôle perd le focus.  Lecture/écriture.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La valeur par défaut de cette propriété a la <b>valeur True</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListCount">
+      <MemberSignature Language="C#" Value="public int ListCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ListCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._OlkComboBox.ListCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ListCount { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-531)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(-531)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie une valeur d' <b>entier</b> (<b>int</b> en c#) qui spécifie le nombre d’éléments dans la liste déroulante de la liste déroulante contrôle de zone. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La valeur par défaut est zéro, indiquant qu’il n’y a aucun élément dans la liste.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListIndex">
+      <MemberSignature Language="C#" Value="public int ListIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ListIndex" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._OlkComboBox.ListIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property ListIndex As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ListIndex { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-526)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(-526)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(-526)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui indique l’emplacement de l’élément actuellement sélectionné dans la liste de la zone de liste déroulante contrôle. Lecture/écriture.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>ListIndex</b> est une valeur zéro dans le tableau des éléments dans la liste.  La valeur par défaut est -1, indiquant qu’aucun élément n’est sélectionné.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Locked">
+      <MemberSignature Language="C#" Value="public bool Locked { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Locked" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Locked" />
+      <MemberSignature Language="VB.NET" Value="Public Property Locked As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Locked { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui spécifie si le contrôle est verrouillé contre toute modification.  Lecture/écriture.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La valeur par défaut est <b>False</b>.</para>
+          <para>Lorsque le contrôle est verrouillé, le contrôle ne dispose pas d’une apparence « désactivé », mais l’utilisateur ne peut pas modifier le contenu du contrôle.  </para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxLength">
+      <MemberSignature Language="C#" Value="public int MaxLength { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxLength" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._OlkComboBox.MaxLength" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxLength As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxLength { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-533)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(-533)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(-533)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui spécifie le nombre maximal de caractères pour le <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Value" /> de ce contrôle.  Lecture/écriture.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La valeur par défaut est zéro, ce qui signifie simplement qu’aucune longueur maximale de la valeur n’a été définie pour ce contrôle. Longueur maximale peut toujours être en fonction de la mémoire disponible ou d’autres facteurs.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MouseIcon">
+      <MemberSignature Language="C#" Value="public stdole.StdPicture MouseIcon { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class stdole.StdPicture MouseIcon" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._OlkComboBox.MouseIcon" />
+      <MemberSignature Language="VB.NET" Value="Public Property MouseIcon As StdPicture" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property stdole::StdPicture ^ MouseIcon { stdole::StdPicture ^ get(); void set(stdole::StdPicture ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-522)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(-522)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(-522)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>stdole.StdPicture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit une <b>StdPicture</b> qui représente une image personnalisée pour le curseur de la souris pour ce contrôle. Lecture/écriture.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La valeur par défaut est <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#).</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MousePointer">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.OlMousePointer MousePointer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Outlook.OlMousePointer MousePointer" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._OlkComboBox.MousePointer" />
+      <MemberSignature Language="VB.NET" Value="Public Property MousePointer As OlMousePointer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::OlMousePointer MousePointer { Microsoft::Office::Interop::Outlook::OlMousePointer get(); void set(Microsoft::Office::Interop::Outlook::OlMousePointer value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-521)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(-521)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(-521)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlMousePointer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> constante qui spécifie le type de pointeur affiché lorsque l’utilisateur place la souris sur le contrôle.  Lecture/écriture.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La valeur par défaut est <b>olMousePointerDefault</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Paste">
+      <MemberSignature Language="C#" Value="public void Paste ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Paste() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._OlkComboBox.Paste" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Paste ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Paste();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(24)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Colle le contenu du Presse-papiers dans le contrôle.</summary>
+        <remarks>
+          <para>Le contenu du Presse-papiers est collé au format texte.</para>
+          <para>Cette méthode ne peut rien colle lors du contrôle <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Style" /> est <b>olComboBoxStyleListBox</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveItem">
+      <MemberSignature Language="C#" Value="public void RemoveItem (int Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveItem([in]int32 Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._OlkComboBox.RemoveItem(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveItem (Index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveItem(int Index);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-555)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Index">Index commençant à la valeur zéro dans le tableau des éléments de la liste.</param>
+        <summary>Supprime l'élément spécifié de la liste.</summary>
+        <remarks>
+          <para>Si <paramref name="Index" /> est en dehors de la plage de valeurs autorisées (entre 0 et <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.ListCount" />-1), une erreur hors limites est renvoyée.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectionMargin">
+      <MemberSignature Language="C#" Value="public bool SelectionMargin { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SelectionMargin" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._OlkComboBox.SelectionMargin" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectionMargin As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SelectionMargin { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(220)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(220)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(220)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui spécifie si l’utilisateur peut sélectionner une ligne de texte en cliquant dans la zone à gauche du texte.   Lecture/écriture.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Si <b>la valeur True</b>, en cliquant dans la marge entraîne la sélection de texte.  Si la <b>valeur False</b>, cette action ne sélectionne pas n’importe quel texte. La valeur par défaut est <b>False</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelLength">
+      <MemberSignature Language="C#" Value="public int SelLength { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SelLength" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._OlkComboBox.SelLength" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelLength As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SelLength { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-548)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(-548)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(-548)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui spécifie le nombre de caractères dans la sélection actuelle.  Lecture/écriture.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La sélection en cours est spécifiée par <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.SelText" />, qui est une partie du contrôle <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Value" />. Le nombre maximal de caractères pouvant être pris en charge pour la <b>valeur</b> est <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.MaxLength" />.</para>
+          <para>La valeur par défaut est zéro, signifie qu’aucun texte n’est actuellement sélectionné.</para>
+          <para>à la propriété <b>SelLength</b> est toujours valide, même lorsque le contrôle n’a pas le focus.</para>
+          <para>Paramètre <b>SelLength</b> une valeur inférieure à zéro provoque une erreur.   Essayez de définir la valeur supérieure à <b>MaxLength</b> à <b>SelLength <b>MaxLength</b></b> .  </para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelStart">
+      <MemberSignature Language="C#" Value="public int SelStart { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SelStart" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._OlkComboBox.SelStart" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelStart As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SelStart { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-547)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(-547)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(-547)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit une valeur <b>nombre entier</b> (<b>int</b> en c#) qui spécifie le point de départ du texte sélectionné ou le point d’insertion si aucun texte n’a été sélectionné.    Lecture/écriture.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La sélection en cours est spécifiée par <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.SelText" />, qui est une partie du contrôle <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Value" />. Le nombre maximal de caractères pouvant être pris en charge pour la <b>valeur</b> est <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.MaxLength" />.</para>
+          <para>La valeur par défaut est zéro, signifie qu’aucun texte n’est sélectionné et le point d’insertion se trouve au début.</para> Propriété 
+          <para>le <b>SelStart</b> est toujours valide, même lorsque le contrôle n’a pas le focus.  Affecter à <b>SelStart</b> une valeur inférieure à zéro génère une erreur.  Affecter à <b>SelStart</b> une valeur supérieure à <b>MaxLength</b> , <b>SelStart</b> est réinitialisées à <b>MaxLength</b>.  Modification de la valeur de <b>SelStart</b> annule toute sélection existante, place le point d’insertion dans le texte et définit la propriété <b>SelLength</b> sur zéro. </para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelText">
+      <MemberSignature Language="C#" Value="public string SelText { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SelText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._OlkComboBox.SelText" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SelText { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-546)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(-546)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie sélectionnée de la valeur de la zone de liste déroulante.    En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>SelText</b> représente la sélection active, qui est une partie du contrôle <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Value" />. Le nombre maximal de caractères pouvant être pris en charge pour la <b>valeur</b> est <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.MaxLength" />.</para>
+          <para>La valeur par défaut est une chaîne vide.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItem">
+      <MemberSignature Language="C#" Value="public void SetItem (int Index, string Item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetItem([in]int32 Index, [in]string Item) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._OlkComboBox.SetItem(System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetItem (Index As Integer, Item As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetItem(int Index, System::String ^ Item);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64478)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+        <Parameter Name="Item" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Index">Valeur de base 0 qui spécifie l'emplacement d'un élément dans la liste.</param>
+        <param name="Item">Valeur à utiliser pour mettre à jour la liste à l'emplacement spécifié.</param>
+        <summary>Affecte la valeur spécifiée à l’élément situé à l’emplacement spécifié de la liste dans la zone de liste déroulante.</summary>
+        <remarks>
+          <para>Si <paramref name="Index" /> est en dehors de la plage de valeurs autorisées (entre 0 et <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />-1), une erreur hors limites est renvoyée.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Style">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.OlComboBoxStyle Style { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Outlook.OlComboBoxStyle Style" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Style" />
+      <MemberSignature Language="VB.NET" Value="Public Property Style As OlComboBoxStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::OlComboBoxStyle Style { Microsoft::Office::Interop::Outlook::OlComboBoxStyle get(); void set(Microsoft::Office::Interop::Outlook::OlComboBoxStyle value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(308)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(308)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(308)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlComboBoxStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlComboBoxStyle" /> constante pour spécifier la façon dont l’utilisateur peut choisir ou définir la valeur du contrôle.  Lecture/écriture.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La valeur par défaut est <b>olComboBoxStyleCombo</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-517)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(-517)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(-517)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui correspond au texte affiché dans le contrôle. Lecture/écriture.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La valeur par défaut de la propriété <b>Text</b> est une chaîne vide.</para>
+          <para>La propriété <b>Text</b> fournit la même valeur que la <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Value" /> propriété, mais la valeur est fortement typée en tant que <b>chaîne</b> (<b>string</b> en c#).</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextAlign">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.OlTextAlign TextAlign { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Outlook.OlTextAlign TextAlign" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._OlkComboBox.TextAlign" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextAlign As OlTextAlign" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::OlTextAlign TextAlign { Microsoft::Office::Interop::Outlook::OlTextAlign get(); void set(Microsoft::Office::Interop::Outlook::OlTextAlign value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10004)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(10004)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(10004)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlTextAlign</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlTextAlign" /> constante qui spécifie l’alignement du texte dans le contrôle.  Lecture/écriture.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La valeur par défaut est <b>olTextAlignLeft</b> dans les langues de droite à gauche comme anglais.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TopIndex">
+      <MemberSignature Language="C#" Value="public int TopIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TopIndex" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._OlkComboBox.TopIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property TopIndex As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TopIndex { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(611)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(611)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(611)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui représente l’index de l’élément en haut de la partie affichée de la liste dans la zone de liste déroulante. Lecture/écriture.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Comme faire défiler la liste, l’élément en haut de la liste s’affiche, et la valeur de cette propriété change pour refléter l’élément actuellement affichée en haut de la liste.</para> Valeur 
+          <para>l’index de la valeur zéro. La valeur par défaut est -1, indiquant qu’aucun ordre spécial ne doit être appliquée.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public object this { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Value" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Value As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit un <b>objet</b> qui représente le contenu sélectionné dans la liste affichée par le contrôle. Lecture/écriture.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La valeur est identique à la valeur de <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Text" />, sauf que cette propriété est <b>l’objet</b> et de <b>Text</b> est fortement typée en tant que <b>chaîne</b> (<b>string</b> en c#).</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

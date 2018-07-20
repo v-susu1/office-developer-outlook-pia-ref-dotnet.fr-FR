@@ -1,0 +1,68 @@
+<Type Name="_OlkPageControl" FullName="Microsoft.Office.Interop.Outlook._OlkPageControl">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="bd19045c2d786a5aada969f1043d60bd5356630a" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20634608" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface _OlkPageControl" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _OlkPageControl" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._OlkPageControl" />
+  <TypeSignature Language="VB.NET" Value="Public Interface _OlkPageControl" />
+  <TypeSignature Language="C++ CLI" Value="public interface class _OlkPageControl" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000672F8-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4160)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Il s’agit d’une interface principale dans une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface principale uniquement lorsque la méthode que vous souhaitez utiliser partageant le même nom qu’un événement de l’objet COM ; Dans ce cas, effectuez un cast à cette interface pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Sinon, utilisez l’interface .NET est dérivé de la coclasse COM pour accéder aux méthodes, propriétés et événements de l’objet COM. Pour plus d’informations sur l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.OlkPageControl" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Page">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.OlPageType Page { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Outlook.OlPageType Page" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._OlkPageControl.Page" />
+      <MemberSignature Language="VB.NET" Value="Public Property Page As OlPageType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::OlPageType Page { Microsoft::Office::Interop::Outlook::OlPageType get(); void set(Microsoft::Office::Interop::Outlook::OlPageType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64465)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64465)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(64465)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlPageType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlPageType" /> constante qui spécifie le type de page qui s’affichera dans ce contrôle. Lecture/écriture.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La valeur par défaut est <b>olPageTypePlanner</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,111 @@
+<Type Name="_DDocSiteControl" FullName="Microsoft.Office.Interop.Outlook._DDocSiteControl">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="12a286b8e35832938e6762766814ade975f518fd" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20634837" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface _DDocSiteControl" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _DDocSiteControl" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._DDocSiteControl" />
+  <TypeSignature Language="VB.NET" Value="Public Interface _DDocSiteControl" />
+  <TypeSignature Language="C++ CLI" Value="public interface class _DDocSiteControl" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0006F026-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Un contrôle qui affiche le corps d’un élément Outlook.</summary>
+    <remarks>
+      <para>Il s’agit d’une interface principale dans une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface pour accéder à l’objet et ses membres ; reportez-vous à cette interface pour plus d’informations sur les.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ReadOnly">
+      <MemberSignature Language="C#" Value="public sbyte ReadOnly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int8 ReadOnly" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._DDocSiteControl.ReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReadOnly As SByte" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::SByte ReadOnly { System::SByte get(); void set(System::SByte value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-2147356664)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(-2147356664)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(-2147356664)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.SByte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si le corps affiché dans le contrôle peut uniquement être affiché et ne peut pas être modifié. Lecture/écriture.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>True</b> pour indiquer que le contrôle affiche le corps uniquement et ne prend pas en charge sa modification ; <b>False</b> pour indiquer que le contrôle prend en charge à la fois affichage et modification du corps de l’élément.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuppressAttachments">
+      <MemberSignature Language="C#" Value="public sbyte SuppressAttachments { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int8 SuppressAttachments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._DDocSiteControl.SuppressAttachments" />
+      <MemberSignature Language="VB.NET" Value="Public Property SuppressAttachments As SByte" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::SByte SuppressAttachments { System::SByte get(); void set(System::SByte value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64483)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64483)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(64483)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.SByte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui spécifié si les pièces jointes de l’élément Outlook ne doivent pas être affichées dans le contrôle. Lecture/écriture.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Cette propriété s’applique uniquement aux fichiers joints à l’élément Outlook dans la zone des pièces jointes et ne s’applique pas aux fichiers joints insérée en tant qu’éléments incorporés dans l’élément Outlook.</para>
+          <para>
+            <b>La valeur true</b> pour indiquer que le contrôle n’affiche pas les pièces jointes de l’élément ; <b>False</b> pour indiquer que le contrôle prend en charge l’affichage des pièces jointes de l’élément.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

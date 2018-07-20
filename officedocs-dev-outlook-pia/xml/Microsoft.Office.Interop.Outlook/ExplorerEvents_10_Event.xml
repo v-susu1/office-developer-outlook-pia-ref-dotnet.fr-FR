@@ -1,0 +1,438 @@
+<Type Name="ExplorerEvents_10_Event" FullName="Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="94f38ddf6e70cd1c60c264bff6a43ceefb4bb85d" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20634392" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface ExplorerEvents_10_Event" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ExplorerEvents_10_Event" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ExplorerEvents_10_Event" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ExplorerEvents_10_Event" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComEventInterface(typeof(Microsoft.Office.Interop.Outlook.ExplorerEvents_10), typeof(Microsoft.Office.Interop.Outlook.ExplorerEvents_10_EventProvider))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(16)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Il s’agit d’une interface .NET créée lors du traitement d’une coclasse COM requise par le code managé pour l’interopérabilité avec l’objet COM correspondant. Cette interface implémente tous les événements des interfaces antérieures ainsi que tous les nouveaux événements. Utilisez cette interface uniquement lorsque l’événement que vous souhaitez utiliser partage le même nom qu’une méthode de l’objet COM. Dans ce cas, vous devez effectuer une conversion de type (transtypage) vers cette interface pour vous connecter à l’événement, puis effectuer une conversion de type (transtypage) vers l’interface principale pour appeler la méthode. Vous pouvez également utiliser l’interface .NET dérivée de la coclasse COM pour accéder aux méthodes, aux propriétés et aux événements de l’objet COM.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Activate">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.ExplorerEvents_10_ActivateEventHandler Activate;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.ExplorerEvents_10_ActivateEventHandler Activate" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Activate" />
+      <MemberSignature Language="VB.NET" Value="Event Activate As ExplorerEvents_10_ActivateEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::ExplorerEvents_10_ActivateEventHandler ^ Activate;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_ActivateEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Survient lorsqu'un explorateur devient la fenêtre active à la suite d'une action de l'utilisateur ou par le biais d'un code de programme.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AttachmentSelectionChange">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.ExplorerEvents_10_AttachmentSelectionChangeEventHandler AttachmentSelectionChange;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.ExplorerEvents_10_AttachmentSelectionChangeEventHandler AttachmentSelectionChange" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.AttachmentSelectionChange" />
+      <MemberSignature Language="VB.NET" Value="Event AttachmentSelectionChange As ExplorerEvents_10_AttachmentSelectionChangeEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::ExplorerEvents_10_AttachmentSelectionChangeEventHandler ^ AttachmentSelectionChange;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_AttachmentSelectionChangeEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produit lorsque l’utilisateur sélectionne une pièce jointe différente ou supplémentaire dans l’explorateur actif par programme ou en interagissant avec l’interface utilisateur.</summary>
+        <remarks>
+          <para>L’événement <b>AttachmentSelectionChange</b> se déclenche lorsqu’une pièce jointe au différente ou supplémentaire de n’importe quel élément est sélectionnée dans l’Explorateur actif.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeforeFolderSwitch">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeFolderSwitchEventHandler BeforeFolderSwitch;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeFolderSwitchEventHandler BeforeFolderSwitch" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.BeforeFolderSwitch" />
+      <MemberSignature Language="VB.NET" Value="Event BeforeFolderSwitch As ExplorerEvents_10_BeforeFolderSwitchEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::ExplorerEvents_10_BeforeFolderSwitchEventHandler ^ BeforeFolderSwitch;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeFolderSwitchEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Survient avant que l'explorateur accède à un nouveau dossier, à la suite d'une action de l'utilisateur ou par le biais d'un code de programme.</summary>
+        <remarks>
+          <para>Si le dossier se trouve dans un espace de noms qui ne gère pas automation (par exemple, le système de fichiers), <paramref name="NewFolder" /> a la <b>valeur Nothing</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeforeItemCopy">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeItemCopyEventHandler BeforeItemCopy;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeItemCopyEventHandler BeforeItemCopy" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.BeforeItemCopy" />
+      <MemberSignature Language="VB.NET" Value="Event BeforeItemCopy As ExplorerEvents_10_BeforeItemCopyEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::ExplorerEvents_10_BeforeItemCopyEventHandler ^ BeforeItemCopy;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeItemCopyEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Survient lorsqu’un élément Outlook est copié.</summary>
+        <remarks>
+          <para>Cet événement peut être annulé après son déclenchement.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeforeItemCut">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeItemCutEventHandler BeforeItemCut;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeItemCutEventHandler BeforeItemCut" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.BeforeItemCut" />
+      <MemberSignature Language="VB.NET" Value="Event BeforeItemCut As ExplorerEvents_10_BeforeItemCutEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::ExplorerEvents_10_BeforeItemCutEventHandler ^ BeforeItemCut;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeItemCutEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Survient lorsqu'un élément Outlook est coupé dans un dossier.</summary>
+        <remarks>
+          <para>Cet événement peut être annulé après son déclenchement. Si l’événement est annulé, l’élément ne sera pas supprimé.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeforeItemPaste">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeItemPasteEventHandler BeforeItemPaste;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeItemPasteEventHandler BeforeItemPaste" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.BeforeItemPaste" />
+      <MemberSignature Language="VB.NET" Value="Event BeforeItemPaste As ExplorerEvents_10_BeforeItemPasteEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::ExplorerEvents_10_BeforeItemPasteEventHandler ^ BeforeItemPaste;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeItemPasteEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Survient lorsqu'un élément Outlook est collé.</summary>
+        <remarks>
+          <para>Cet événement peut être annulé après son déclenchement.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeforeMaximize">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeMaximizeEventHandler BeforeMaximize;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeMaximizeEventHandler BeforeMaximize" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.BeforeMaximize" />
+      <MemberSignature Language="VB.NET" Value="Event BeforeMaximize As ExplorerEvents_10_BeforeMaximizeEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::ExplorerEvents_10_BeforeMaximizeEventHandler ^ BeforeMaximize;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeMaximizeEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Survient lorsqu’un explorateur est agrandi par l’utilisateur.</summary>
+        <remarks>
+          <para>Cet événement peut être annulé après son déclenchement.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeforeMinimize">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeMinimizeEventHandler BeforeMinimize;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeMinimizeEventHandler BeforeMinimize" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.BeforeMinimize" />
+      <MemberSignature Language="VB.NET" Value="Event BeforeMinimize As ExplorerEvents_10_BeforeMinimizeEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::ExplorerEvents_10_BeforeMinimizeEventHandler ^ BeforeMinimize;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeMinimizeEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Survient lorsque l’explorateur actif est réduit par l’utilisateur.</summary>
+        <remarks>
+          <para>Cet événement peut être annulé après son déclenchement.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeforeMove">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeMoveEventHandler BeforeMove;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeMoveEventHandler BeforeMove" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.BeforeMove" />
+      <MemberSignature Language="VB.NET" Value="Event BeforeMove As ExplorerEvents_10_BeforeMoveEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::ExplorerEvents_10_BeforeMoveEventHandler ^ BeforeMove;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeMoveEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cet événement se produit lorsque le <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> est déplacé par l’utilisateur.</summary>
+        <remarks>
+          <para>Cet événement peut être annulé après son déclenchement.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeforeSize">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeSizeEventHandler BeforeSize;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeSizeEventHandler BeforeSize" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.BeforeSize" />
+      <MemberSignature Language="VB.NET" Value="Event BeforeSize As ExplorerEvents_10_BeforeSizeEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::ExplorerEvents_10_BeforeSizeEventHandler ^ BeforeSize;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeSizeEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cet événement se produit lorsque l’utilisateur dimensionne actuel <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" />.</summary>
+        <remarks>
+          <para>Cet événement peut être annulé après son déclenchement. Si l’événement est annulé, la fenêtre n’est pas dimensionnée.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeforeViewSwitch">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeViewSwitchEventHandler BeforeViewSwitch;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeViewSwitchEventHandler BeforeViewSwitch" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.BeforeViewSwitch" />
+      <MemberSignature Language="VB.NET" Value="Event BeforeViewSwitch As ExplorerEvents_10_BeforeViewSwitchEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::ExplorerEvents_10_BeforeViewSwitchEventHandler ^ BeforeViewSwitch;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeViewSwitchEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Survient avant que l'explorateur bascule vers un nouvel affichage, à la suite d'une action de l'utilisateur ou par le biais d'un code de programme.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.ExplorerEvents_10_CloseEventHandler Close;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.ExplorerEvents_10_CloseEventHandler Close" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close" />
+      <MemberSignature Language="VB.NET" Value="Event Close As ExplorerEvents_10_CloseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::ExplorerEvents_10_CloseEventHandler ^ Close;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_CloseEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Survient lors de la fermeture d’un explorateur.</summary>
+        <remarks>
+          <para>Si vous utilisez le <see cref="M:Microsoft.Office.Interop.Outlook._Explorer.Close" /> méthode pour déclencher cet événement, il peut être annulé uniquement si la méthode <b>Close</b> utilise l’argument <b>olPromptForSave</b> .</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deactivate">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.ExplorerEvents_10_DeactivateEventHandler Deactivate;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.ExplorerEvents_10_DeactivateEventHandler Deactivate" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Deactivate" />
+      <MemberSignature Language="VB.NET" Value="Event Deactivate As ExplorerEvents_10_DeactivateEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::ExplorerEvents_10_DeactivateEventHandler ^ Deactivate;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_DeactivateEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Survient lorsqu’un explorsteur cesse d’être la fenêtre active, à la suite d’une action de l’utilisateur ou par le biais d’un code de programme.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FolderSwitch">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.ExplorerEvents_10_FolderSwitchEventHandler FolderSwitch;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.ExplorerEvents_10_FolderSwitchEventHandler FolderSwitch" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.FolderSwitch" />
+      <MemberSignature Language="VB.NET" Value="Event FolderSwitch As ExplorerEvents_10_FolderSwitchEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::ExplorerEvents_10_FolderSwitchEventHandler ^ FolderSwitch;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_FolderSwitchEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Survient lorsque l'explorateur accède à un nouveau dossier, à la suite d'une action de l'utilisateur ou par le biais d'un code de programme.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InlineResponse">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.ExplorerEvents_10_InlineResponseEventHandler InlineResponse;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.ExplorerEvents_10_InlineResponseEventHandler InlineResponse" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.InlineResponse" />
+      <MemberSignature Language="VB.NET" Value="Event InlineResponse As ExplorerEvents_10_InlineResponseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::ExplorerEvents_10_InlineResponseEventHandler ^ InlineResponse;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_InlineResponseEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produit lorsque l'utilisateur effectue une action qui entraîne l'affichage d'une réponse incorporée dans le volet de lecture.</summary>
+        <remarks>
+          <para>Cet événement retourne un objet représentant l’élément de réponse en ligne.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InlineResponseClose">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.ExplorerEvents_10_InlineResponseCloseEventHandler InlineResponseClose;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.ExplorerEvents_10_InlineResponseCloseEventHandler InlineResponseClose" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.InlineResponseClose" />
+      <MemberSignature Language="VB.NET" Value="Event InlineResponseClose As ExplorerEvents_10_InlineResponseCloseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::ExplorerEvents_10_InlineResponseCloseEventHandler ^ InlineResponseClose;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_InlineResponseCloseEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produit lorsque l’utilisateur effectue une action qui entraîne la réponse inline active Fermer dans le volet de lecture.</summary>
+        <remarks>
+          <para>Cet événement se déclenche lorsqu’une nouvelle réponse incorporé ou réponse incorporée de brouillon est fermé pour les raisons suivantes :</para>
+          <list type="bullet">
+            <item>
+              <para>L’utilisateur sélectionne la commande <b>Intégrée Out</b> .</para>
+            </item>
+            <item>
+              <para>L’utilisateur sélectionne la commande <b>Annuler</b> .</para>
+            </item>
+            <item>
+              <para>L’utilisateur envoie la réponse incorporée.</para>
+            </item>
+            <item>
+              <para>L’utilisateur navigue vers un autre message dans la liste des messages.</para>
+            </item>
+            <item>
+              <para>L’utilisateur navigue vers un autre dossier.</para>
+            </item>
+            <item>
+              <para>L’utilisateur passe modules, par exemple dans le module de messagerie vers le module Calendrier.</para>
+            </item>
+          </list>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectionChange">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.ExplorerEvents_10_SelectionChangeEventHandler SelectionChange;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.ExplorerEvents_10_SelectionChangeEventHandler SelectionChange" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.SelectionChange" />
+      <MemberSignature Language="VB.NET" Value="Event SelectionChange As ExplorerEvents_10_SelectionChangeEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::ExplorerEvents_10_SelectionChangeEventHandler ^ SelectionChange;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_SelectionChangeEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cet événement se produit lorsque l’utilisateur passe à un autre élément dans un dossier à l’aide de l’interface utilisateur (IU) ou par programme.</summary>
+        <remarks>
+          <para>Cet événement se produit également lorsque l’utilisateur, soit par programme ou à l’aide de l’IU, clique sur ou bascule vers un autre dossier qui contient les éléments Outlook sélectionne automatiquement le premier élément dans ce dossier. Toutefois, cet événement ne se produit pas si le dossier est un dossier de système de fichiers ou tout dossier présentant un affichage Web en cours s’affiche.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ViewSwitch">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.ExplorerEvents_10_ViewSwitchEventHandler ViewSwitch;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.ExplorerEvents_10_ViewSwitchEventHandler ViewSwitch" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.ViewSwitch" />
+      <MemberSignature Language="VB.NET" Value="Event ViewSwitch As ExplorerEvents_10_ViewSwitchEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::ExplorerEvents_10_ViewSwitchEventHandler ^ ViewSwitch;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_ViewSwitchEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Survient lorsque l’affichage de l’explorateur change, à la suite d’une action de l’utilisateur ou par le biais d’un code de programme.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

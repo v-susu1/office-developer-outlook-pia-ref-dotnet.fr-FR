@@ -1,0 +1,41 @@
+<Type Name="TimelineView" FullName="Microsoft.Office.Interop.Outlook.TimelineView">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="0d62aa5ea6183d484c3621f33a77114aa5875672" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20634832" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface TimelineView : Microsoft.Office.Interop.Outlook._TimelineView" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TimelineView implements class Microsoft.Office.Interop.Outlook._TimelineView" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.TimelineView" />
+  <TypeSignature Language="VB.NET" Value="Public Interface TimelineView&#xA;Implements _TimelineView" />
+  <TypeSignature Language="C++ CLI" Value="public interface class TimelineView : Microsoft::Office::Interop::Outlook::_TimelineView" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Outlook._TimelineView</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.Outlook.TimelineViewClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0006309C-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Représente un affichage qui affiche les éléments Outlook sur une barre de planning.</summary>
+    <remarks>
+      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._TimelineView" />. </para>
+      <para>L’objet <b>TimelineView</b> , dérivé de le <see cref="T:Microsoft.Office.Interop.Outlook.View" /> objet, vous permet de créer des affichages personnalisables qui vous permettent d’afficher les éléments Outlook dans une chronologie.</para>
+      <para>Outlook fournit plusieurs objets <b>TimelineView</b> intégrés, et vous pouvez également créer vos propres objets <b>TimelineView</b> . Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._Views.Add(System.String,Microsoft.Office.Interop.Outlook.OlViewType,Microsoft.Office.Interop.Outlook.OlViewSaveOption)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Outlook.Views" /> collection pour ajouter un nouveau <b>TimelineView</b> à un <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> objet. Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._TimelineView.Standard" /> propriété pour déterminer si un objet <b>TimelineView</b> existant est intégrée ou personnalisée.</para> Objet 
+      <para>la <b>TimelineView</b> prend en charge plusieurs modes d’affichage différents, selon la période de temps dans laquelle afficher les éléments Outlook et la mise en page souhaitée. Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._TimelineView.TimelineViewMode" /> propriété à définir le mode d’affichage, le <see cref="P:Microsoft.Office.Interop.Outlook._TimelineView.StartField" /> propriété pour spécifier la propriété d’élément Outlook qui contient la date de début et la <see cref="P:Microsoft.Office.Interop.Outlook._TimelineView.EndField" /> propriété pour spécifier la propriété d’élément Outlook qui contient la date de fin des éléments Outlook à affiché.</para><para>, Vous pouvez configurer l’apparence de la <b>TimelineView</b>, selon le mode d’affichage. Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._TimelineView.ShowWeekNumbers" /> propriété pour indiquer si les numéros de semaine sont affichent dans l’échelle de temps pour l’affichage. Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._TimelineView.UpperScaleFont" /> et <see cref="P:Microsoft.Office.Interop.Outlook._TimelineView.LowerScaleFont" /> propriétés pour spécifier la police utilisée pour afficher, respectivement, les parties supérieures et inférieures de l’échelle de temps pour l’affichage. </para><para>Vous pouvez également configurer la façon dont les éléments Outlook apparaissent dans l’objet <b>TimelineView</b> . Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._TimelineView.ItemFont" /> propriété pour spécifier la police utilisée pour afficher les étiquettes d’éléments Outlook et la <see cref="P:Microsoft.Office.Interop.Outlook._TimelineView.MaxLabelWidth" /> propriété pour spécifier la longueur des étiquettes des éléments Outlook dans l’affichage. Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._TimelineView.DefaultExpandCollapseSetting" /> propriété pour déterminer si les éléments Outlook sont développés par défaut dans l’affichage. Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._TimelineView.Filter" /> propriété pour déterminer les éléments Outlook à afficher dans l’affichage et la <see cref="P:Microsoft.Office.Interop.Outlook._TimelineView.GroupByFields" /> pour spécifier la collection à laquelle les éléments sont regroupés dans l’affichage des propriétés d’élément. Si vous définissez <b>TimelineViewMode</b> sur <b>olTimelineViewMonth</b>, vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Outlook._TimelineView.ShowLabelWhenViewingByMonth" /> propriété pour déterminer si les étiquettes des éléments Outlook sont affichées dans la vue.</para><para>La définition de chaque objet <b>TimelineView</b> est stockée au format Extensible Markup Language (XML). Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._TimelineView.XML" /> propriété fonctionne avec la définition XML de l’objet <b>TimelineView</b> .</para><para>Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._TimelineView.Apply" /> méthode pour appliquer les modifications apportées à l’objet <b>TimelineView</b> à l’affichage actuel. Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._TimelineView.Save" /> méthode afin de conserver les modifications apportées à l’objet <b>TimelineView</b> . Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._TimelineView.LockUserChanges" /> propriété pour autoriser ou empêcher les modifications à l’interface utilisateur pour l’affichage.</para><para>Vous pouvez modifier les objets <b>TimelineView</b> intégrés, mais vous ne pouvez pas les supprimer. Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._TimelineView.Delete" /> méthode pour supprimer un objet <b>TimelineView</b> personnalisé. Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._TimelineView.Reset" /> méthode pour rétablir les propriétés d’un objet <b>TimelineView</b> intégré à leurs valeurs par défaut.</para><para /></remarks>
+  </Docs>
+  <Members />
+</Type>
