@@ -1,0 +1,55 @@
+<Type Name="ColumnFormat" FullName="Microsoft.Office.Interop.Outlook.ColumnFormat">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="9fd8c25ac36ce7163fbea2d36f52c2a9418da6ea" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20635336" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface ColumnFormat : Microsoft.Office.Interop.Outlook._ColumnFormat" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ColumnFormat implements class Microsoft.Office.Interop.Outlook._ColumnFormat" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.ColumnFormat" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ColumnFormat&#xA;Implements _ColumnFormat" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ColumnFormat : Microsoft::Office::Interop::Outlook::_ColumnFormat" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Outlook._ColumnFormat</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.Outlook.ColumnFormatClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0006309E-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="1348e-101">Représente les propriétés d'affichage d'un champ de commande ou un champ d'affichage dans un affichage.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="1348e-101">Represents the display properties of an order field or view field in a view.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="1348e-102">
+        <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._ColumnFormat" />.</para> Objet 
+      <para>la <b>ColumnFormat</b> représente les propriétés d’affichage, telles que le type de champ ou du rectangle de sélection, d’une <see cref="T:Microsoft.Office.Interop.Outlook.OrderField" /> ou <see cref="T:Microsoft.Office.Interop.Outlook.ViewField" /> objet. Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._ViewField.ColumnFormat" /> propriété de l’objet <b>ViewField</b> pour accéder aux propriétés d’affichage d’un champ d’affichage.</para><para>Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._ColumnFormat.Label" /> propriété pour obtenir ou modifier le texte utilisé pour étiqueter le champ, ou <see cref="P:Microsoft.Office.Interop.Outlook._ColumnFormat.Align" /> propriété pour déterminer l’alignement du contenu dans le champ.</para><para>Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._ColumnFormat.FieldType" /> propriété pour déterminer le type et la forme des données affichées pour ce champ et le <see cref="P:Microsoft.Office.Interop.Outlook._ColumnFormat.FieldFormat" /> propriété afin de déterminer comment formater les données de ce champ.</para><para /></span>
+      <span class="sxs-lookup">
+        <span data-stu-id="1348e-102">
+          <para>This is a .NET interface derived from a COM coclass that is required by managed code for interoperability with the corresponding COM object. Use this derived interface to access all method, property, and event members of the COM object. However, if a method or event you want to use shares the same name under the same COM object, cast to the corresponding primary interface to call the method, and cast to the latest events interface to connect to the event. Refer to this topic for information about the COM object. For information about the method and property members of the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook._ColumnFormat" />.</para>
+          <para>The <b>ColumnFormat</b> object represents the display properties, such as the alignment or field type, of an <see cref="T:Microsoft.Office.Interop.Outlook.OrderField" /> or <see cref="T:Microsoft.Office.Interop.Outlook.ViewField" /> object. Use the <see cref="P:Microsoft.Office.Interop.Outlook._ViewField.ColumnFormat" /> property of the <b>ViewField</b> object to access the display properties of a view field.</para>
+          <para>Use the <see cref="P:Microsoft.Office.Interop.Outlook._ColumnFormat.Label" /> property to obtain or change the text used to label the field, or the <see cref="P:Microsoft.Office.Interop.Outlook._ColumnFormat.Align" /> property to determine the alignment of the contents within the field.</para>
+          <para>Use the <see cref="P:Microsoft.Office.Interop.Outlook._ColumnFormat.FieldType" /> property to determine the type and form of the data displayed for that field, and the <see cref="P:Microsoft.Office.Interop.Outlook._ColumnFormat.FieldFormat" /> property to determine how to format the data for that field.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

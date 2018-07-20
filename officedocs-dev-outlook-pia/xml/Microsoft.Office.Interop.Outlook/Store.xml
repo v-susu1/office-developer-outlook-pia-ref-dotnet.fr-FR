@@ -1,0 +1,61 @@
+<Type Name="Store" FullName="Microsoft.Office.Interop.Outlook.Store">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="6445374782d0b4add1312b6169f01fab8b0ba475" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20634792" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Store : Microsoft.Office.Interop.Outlook._Store" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Store implements class Microsoft.Office.Interop.Outlook._Store" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.Store" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Store&#xA;Implements _Store" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Store : Microsoft::Office::Interop::Outlook::_Store" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Outlook._Store</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.Outlook.StoreClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000630C7-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="08676-101">Représente un fichier sur l’ordinateur local ou un lecteur réseau qui stocke des messages électroniques et autres éléments pour un compte dans le profil actuel.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="08676-101">Represents a file on the local computer or a network drive that stores e-mail messages and other items for an account in the current profile.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="08676-102">
+        <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._Store" />. </para>
+        <para>A profil définit un ou plusieurs comptes de messagerie, et chaque compte de messagerie est associé à un serveur d’un type spécifique. Pour un serveur Exchange, un magasin peut être sur le serveur, dans un dossier Public Exchange, ou dans un local fichier de dossiers personnels (.pst) ou un fichier de dossiers en mode hors connexion (.ost). Pour un serveur de messagerie POP3, IMAP ou HTTP, un objet store est un fichier .pst.</para>
+        <para>Que vous pouvez utiliser la <see cref="T:Microsoft.Office.Interop.Outlook.Stores" /> et objets <b>Store</b> pour énumérer tous les dossiers et dossiers de recherche de toutes les banques de la session en cours.  Dans la mesure où obtenir le dossier racine ou les dossiers de recherche dans une banque doit être ouvert et l’ouverture d’un magasin impose une surcharge sur les performances, vous pouvez vérifier le <see cref="P:Microsoft.Office.Interop.Outlook._Store.IsOpen" /> propriété avant de décider de poursuivre l’opération. </para>
+        <para>Si vous utilisez un serveur Exchange, vous pouvez accéder à autres intégrées explicites <b>stocker</b> les propriétés pour stockent des caractéristiques telles que <see cref="P:Microsoft.Office.Interop.Outlook._Store.ExchangeStoreType" />, <see cref="P:Microsoft.Office.Interop.Outlook._Store.IsCachedExchange" />, et <see cref="P:Microsoft.Office.Interop.Outlook._Store.IsDataFileStore" />. Utiliser le <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> objet renvoyé par <see cref="P:Microsoft.Office.Interop.Outlook._Store.PropertyAccessor" /> pour accéder aux autres propriétés store qui ne sont pas exposées dans le modèle objet Outlook.</para>
+        <para>Pour plus d’informations sur le stockage des éléments Outlook dans des dossiers et banques d’informations, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87932">Stockage des éléments Outlook</a></para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="08676-102">
+          <para>This is a .NET interface derived from a COM coclass that is required by managed code for interoperability with the corresponding COM object. Use this derived interface to access all method, property, and event members of the COM object. However, if a method or event you want to use shares the same name under the same COM object, cast to the corresponding primary interface to call the method, and cast to the latest events interface to connect to the event. Refer to this topic for information about the COM object. For information about the method and property members of the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook._Store" />. </para>
+          <para>A profile defines one or more e-mail accounts, and each e-mail account is associated with a server of a specific type. For an  Exchange server, a store can be on the server, in an Exchange Public folder, or in a local Personal Folders File (.pst) or Offline Folder File (.ost). For  a POP3, IMAP, or HTTP e-mail server, a store is a .pst file.</para>
+          <para>You can use the <see cref="T:Microsoft.Office.Interop.Outlook.Stores" /> and <b>Store</b> objects to enumerate all folders and search folders on all stores in the current session.  Since getting the root folder or search folders in a store requires the store to be open and opening a store imposes an overhead on performance, you can check the <see cref="P:Microsoft.Office.Interop.Outlook._Store.IsOpen" /> property before you decide to pursue the operation. </para>
+          <para>If you use an Exchange server, you can access other explicit built-in <b>Store</b> properties for store characteristics such as <see cref="P:Microsoft.Office.Interop.Outlook._Store.ExchangeStoreType" />, <see cref="P:Microsoft.Office.Interop.Outlook._Store.IsCachedExchange" />, and <see cref="P:Microsoft.Office.Interop.Outlook._Store.IsDataFileStore" />. Use the <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> object returned by <see cref="P:Microsoft.Office.Interop.Outlook._Store.PropertyAccessor" /> to access other store properties that are not exposed in the Outlook object model.</para>
+          <para>For more information on storing Outlook items in folders and stores, see <a href="http://go.microsoft.com/fwlink/?LinkId=87932">Storing Outlook Items</a></para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>
