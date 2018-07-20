@@ -1,0 +1,40 @@
+<Type Name="RuleConditions" FullName="Microsoft.Office.Interop.Outlook.RuleConditions">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="090e2fb2c58b7ce3e2eadffe19cd6c02d655882f" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20633476" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface RuleConditions : Microsoft.Office.Interop.Outlook._RuleConditions" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract RuleConditions implements class Microsoft.Office.Interop.Outlook._RuleConditions" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.RuleConditions" />
+  <TypeSignature Language="VB.NET" Value="Public Interface RuleConditions&#xA;Implements _RuleConditions" />
+  <TypeSignature Language="C++ CLI" Value="public interface class RuleConditions : Microsoft::Office::Interop::Outlook::_RuleConditions" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Outlook._RuleConditions</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.Outlook.RuleConditionsClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000630D8-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contient un ensemble de <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objets ou des objets dérivés de <b>RuleCondition</b>représentant les conditions ou conditions d’exception qui doivent être satisfaites afin que le <see cref="T:Microsoft.Office.Interop.Outlook.Rule" /> à exécuter.</summary>
+    <remarks>
+      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._RuleConditions" />. </para>
+      <para>Le <b>RuleConditions</b> objet incluent les conditions et les exceptions de règle. Le type de condition de règle qui peut être ajouté à une collection <b>RuleConditions</b> dépend du <see cref="P:Microsoft.Office.Interop.Outlook._Rule.RuleType" />.</para> Objet 
+      <para>la <b>RuleConditions</b> est une collection fixe. Un objet <b>RuleCondition</b> ou un type qui est dérivé de l’objet <b>RuleCondition</b> ne peut pas être ajouté ou supprimé de l’objet <b>RuleConditions</b> .</para><para>Règles le modèle d’objet fournit une parité partielle avec l’Assistant règles et alertes dans l’interface utilisateur Outlook. Il prend en charge les actions de règle couramment utilisées. Bien qu’il ne prend pas en charge la création de règles avec chaque action ou une condition de règle qui prend en charge de l’Assistant, vous pouvez énumérer et activer ces actions de règle et les conditions dans les règles existantes. </para><para>Pour plus d’informations sur les conditions de règle, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87803">Spécification de Conditions de règle</a><a href="http://go.microsoft.com/fwlink/?LinkId=87859">Comment : créer une règle pour déplacer des messages électroniques spécifiques dans un dossier</a></para><para /></remarks>
+  </Docs>
+  <Members />
+</Type>

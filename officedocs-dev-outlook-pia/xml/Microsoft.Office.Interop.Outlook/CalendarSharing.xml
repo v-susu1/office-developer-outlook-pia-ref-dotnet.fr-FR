@@ -1,0 +1,44 @@
+<Type Name="CalendarSharing" FullName="Microsoft.Office.Interop.Outlook.CalendarSharing">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="6027471b5e06809f023b16c35e56a905936e6b6d" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20634348" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface CalendarSharing : Microsoft.Office.Interop.Outlook._CalendarSharing" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CalendarSharing implements class Microsoft.Office.Interop.Outlook._CalendarSharing" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.CalendarSharing" />
+  <TypeSignature Language="VB.NET" Value="Public Interface CalendarSharing&#xA;Implements _CalendarSharing" />
+  <TypeSignature Language="C++ CLI" Value="public interface class CalendarSharing : Microsoft::Office::Interop::Outlook::_CalendarSharing" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Outlook._CalendarSharing</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.Outlook.CalendarSharingClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000630E2-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Représente un ensemble d'utilitaires pour le partage des informations de calendrier.</summary>
+    <remarks>
+      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._CalendarSharing" />.</para>
+      <para>Que vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Outlook.MAPIFolder.GetCalendarExporter" /> méthode d’un <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> objet qui représente un dossier de calendrier pour créer un objet <b>CalendarSharing</b> . La méthode <b>GetCalendarExporter</b> peut uniquement être utilisée sur dossiers de calendrier. Une erreur se produit si vous utilisez la méthode avec des objets <b>Folder</b> qui représentent les autres types de dossiers.</para>
+      <para>Que vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Outlook._CalendarSharing.SaveAsICal(System.String)" /> méthode pour enregistrer les informations de calendrier dans un fichier iCalendar (.ics) pour le partage d’un calendrier en tant qu’URL ou utiliser la <see cref="M:Microsoft.Office.Interop.Outlook._CalendarSharing.ForwardAsICal(Microsoft.Office.Interop.Outlook.OlCalendarMailFormat)" /> méthode pour créer un <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> pour le partage d’un calendrier en tant qu’une charge utile.</para>
+      <para>
+        <b>Remarque</b>: l’objet <b>CalendarSharing</b> prend uniquement en charge exportation du format iCalendar.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

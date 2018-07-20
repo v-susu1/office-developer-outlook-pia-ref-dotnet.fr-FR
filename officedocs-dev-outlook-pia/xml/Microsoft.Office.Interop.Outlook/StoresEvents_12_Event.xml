@@ -1,0 +1,132 @@
+<Type Name="StoresEvents_12_Event" FullName="Microsoft.Office.Interop.Outlook.StoresEvents_12_Event">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="b7130da689629b3854734549d3eea36f219b10b1" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20634538" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface StoresEvents_12_Event" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract StoresEvents_12_Event" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.StoresEvents_12_Event" />
+  <TypeSignature Language="VB.NET" Value="Public Interface StoresEvents_12_Event" />
+  <TypeSignature Language="C++ CLI" Value="public interface class StoresEvents_12_Event" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComEventInterface(typeof(Microsoft.Office.Interop.Outlook.StoresEvents_12), typeof(Microsoft.Office.Interop.Outlook.StoresEvents_12_EventProvider))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(16)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Il s’agit d’une interface .NET créée lors du traitement d’une coclasse COM requise par le code managé pour l’interopérabilité avec l’objet COM correspondant. Cette interface implémente tous les événements des interfaces antérieures ainsi que tous les nouveaux événements. Utilisez cette interface uniquement lorsque l’événement que vous souhaitez utiliser partage le même nom qu’une méthode de l’objet COM. Dans ce cas, vous devez effectuer une conversion de type (transtypage) vers cette interface pour vous connecter à l’événement, puis effectuer une conversion de type (transtypage) vers l’interface principale pour appeler la méthode. Vous pouvez également utiliser l’interface .NET dérivée de la coclasse COM pour accéder aux méthodes, aux propriétés et aux événements de l’objet COM.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BeforeStoreRemove">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.StoresEvents_12_BeforeStoreRemoveEventHandler BeforeStoreRemove;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.StoresEvents_12_BeforeStoreRemoveEventHandler BeforeStoreRemove" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.StoresEvents_12_Event.BeforeStoreRemove" />
+      <MemberSignature Language="VB.NET" Value="Event BeforeStoreRemove As StoresEvents_12_BeforeStoreRemoveEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::StoresEvents_12_BeforeStoreRemoveEventHandler ^ BeforeStoreRemove;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.StoresEvents_12_BeforeStoreRemoveEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cet événement se produit lorsqu’un <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> doit être supprimé de la session actuelle par programme ou par l’utilisateur.</summary>
+        <remarks>
+          <para>Outlook doit être en cours d’exécution dans l’ordre pour que cet événement se déclenche. Cet événement se déclenche lorsque une des actions suivantes se produit : </para>
+          <list type="bullet">
+            <item>
+              <para>une banque est supprimée par l’utilisateur en cliquant sur la commande Fermer dans le menu contextuel.</para>
+            </item>
+            <item>
+              <para>Une banque est supprimée par programme en appelant <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.RemoveStore(Microsoft.Office.Interop.Outlook.MAPIFolder)" />.</para>
+            </item>
+          </list>
+          <para>Cet événement se déclenche pas lorsque une des actions suivantes se produit :</para>
+          <list type="bullet">
+            <item>
+              <para>Quand Outlook se ferme et ferme principale ou déléguée stocker.</para>
+            </item>
+            <item>
+              <para>Si une banque est supprimée via l’applet Courrier du Panneau de configuration Microsoft Windows et Outlook n’est pas en cours d’exécution.</para>
+            </item>
+            <item>
+              <para>Une banque déléguée est supprimée sous l’onglet Avancé de la boîte de dialogue Microsoft Exchange Server.</para>
+            </item>
+            <item>
+              <para>Une banque est supprimée par le biais de l’onglet fichiers de données de la boîte de dialogue Gestionnaire de comptes lorsque Outlook n’est pas en cours d’exécution.</para>
+            </item>
+            <item>
+              <para>Une banque IMAP est supprimée du profil.</para>
+            </item>
+          </list>
+          <para>Vous pouvez utiliser cet événement pour déterminer qu’une banque a été supprimée et prendre des mesures appropriées si le magasin est requis pour votre application (par exemple, reconstituer la banque). Sinon, vous devez interroger la <see cref="T:Microsoft.Office.Interop.Outlook.Stores" /> collection.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StoreAdd">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.StoresEvents_12_StoreAddEventHandler StoreAdd;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.StoresEvents_12_StoreAddEventHandler StoreAdd" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.StoresEvents_12_Event.StoreAdd" />
+      <MemberSignature Language="VB.NET" Value="Event StoreAdd As StoresEvents_12_StoreAddEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::StoresEvents_12_StoreAddEventHandler ^ StoreAdd;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.StoresEvents_12_StoreAddEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cet événement se produit lorsqu’un <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> a été ajouté à la session active par programmation ou par l’utilisateur.</summary>
+        <remarks>
+          <para>Outlook doit être en cours d’exécution dans l’ordre pour que cet événement se déclenche. Cet événement se déclenche lorsqu’une des opérations suivantes se produisent : </para>
+          <list type="bullet">
+            <item>
+              <para>une banque est ajoutée par le biais de la boîte de dialogue Ouvrir le fichier données Outlook en sélectionnant Ouvrir, puis fichier de données Outlook dans le menu fichier.</para>
+            </item>
+            <item>
+              <para>Une banque est ajoutée sous l’onglet fichiers de données de la boîte de dialogue Gestionnaire de comptes.</para>
+            </item>
+            <item>
+              <para>Une banque est ajoutée avec succès en appelant le <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.AddStore(System.Object)" /> méthode.</para>
+            </item>
+          </list>
+          <para>Cet événement se déclenche pas lorsque une des actions suivantes se produit :</para>
+          <list type="bullet">
+            <item>
+              <para>Quand Outlook démarre et ouvre principale ou déléguée stocker.</para>
+            </item>
+            <item>
+              <para>Si une banque est ajoutée via l’applet Courrier du Panneau de configuration Microsoft Windows et Outlook n’est pas en cours d’exécution.</para>
+            </item>
+            <item>
+              <para>Une banque déléguée est ajoutée sous l’onglet Avancé de la boîte de dialogue Microsoft Exchange Server.</para>
+            </item>
+          </list>
+          <para>, Vous pouvez utiliser cet événement pour déterminer si une banque a été ajoutée et prendre des mesures appropriées sur les éléments de cette banque. Dans le cas contraire, vous devez interroger la <see cref="T:Microsoft.Office.Interop.Outlook.Stores" /> collection.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,58 @@
+<Type Name="OrderField" FullName="Microsoft.Office.Interop.Outlook.OrderField">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="a141c7a729e401f026f05a32cde85f7730804364" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20633471" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface OrderField : Microsoft.Office.Interop.Outlook._OrderField" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OrderField implements class Microsoft.Office.Interop.Outlook._OrderField" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.OrderField" />
+  <TypeSignature Language="VB.NET" Value="Public Interface OrderField&#xA;Implements _OrderField" />
+  <TypeSignature Language="C++ CLI" Value="public interface class OrderField : Microsoft::Office::Interop::Outlook::_OrderField" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Outlook._OrderField</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.Outlook.OrderFieldClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0006309B-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Représente un champ de classement, utilisé pour classer les informations d’un affichage.</summary>
+    <remarks>
+      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._OrderField" />. </para>
+      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._ViewFields.Add(System.String)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Outlook.OrderFields" /> objet pour ajouter une propriété d’élément Outlook à la collection <b>SortFields</b> pour les objets ci-dessous dérivés de le <see cref="T:Microsoft.Office.Interop.Outlook.View" /> objet :</para>
+      <list type="bullet">
+        <item>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Outlook.BusinessCardView" />
+          </para>
+        </item>
+        <item>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Outlook.CardView" />
+          </para>
+        </item>
+        <item>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Outlook.IconView" />
+          </para>
+        </item>
+      </list>
+      <para>utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._OrderField.ViewXMLSchemaName" />propriété pour obtenir le nom du champ de commande tel que référencé dans la définition XML de l’affichage.</para> Objets 
+      <para><b>OrderField</b> contenus dans une collection <b>OrderFields</b> sont appliqués aux éléments Outlook affichés dans l’affichage dans l’ordre dans lequel les objets contenus dans la collection. Pour chaque objet <b>OrderField</b> , utilisez la <see cref="P:Microsoft.Office.Interop.Outlook._OrderField.IsDescending" /> propriété pour déterminer s’il faut trier le contenu du champ de commande dans l’ordre croissant ou décroissant.</para><para /></remarks>
+  </Docs>
+  <Members />
+</Type>

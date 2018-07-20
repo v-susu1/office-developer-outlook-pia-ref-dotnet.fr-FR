@@ -1,0 +1,44 @@
+<Type Name="NoteItem" FullName="Microsoft.Office.Interop.Outlook.NoteItem">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="c3c651b8fa7c6452466bc3e9898b37e5e8be0166" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20633454" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface NoteItem : Microsoft.Office.Interop.Outlook._NoteItem" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract NoteItem implements class Microsoft.Office.Interop.Outlook._NoteItem" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.NoteItem" />
+  <TypeSignature Language="VB.NET" Value="Public Interface NoteItem&#xA;Implements _NoteItem" />
+  <TypeSignature Language="C++ CLI" Value="public interface class NoteItem : Microsoft::Office::Interop::Outlook::_NoteItem" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Outlook._NoteItem</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.Outlook.NoteItemClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00063025-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Représente une note dans un dossier Notes.</summary>
+    <remarks>
+      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._NoteItem" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.ItemEvents_Event" />. </para>
+      <para>Un <b>objet NoteItem</b> n’est pas personnalisable. Si vous ouvrez une nouvelle note, vous remarqueront qu’il n’est pas possible de le placer au moment du design.</para>
+      <para>La <see cref="P:Microsoft.Office.Interop.Outlook._NoteItem.Subject" /> propriété d’un objet <b>NoteItem</b> est en lecture seule, car elle est calculée à partir du corps de texte de la note. En outre, l' <b>objet NoteItem</b><see cref="P:Microsoft.Office.Interop.Outlook._NoteItem.Body" /> peut uniquement être de texte enrichi, les propriétés qui correspondent au contenu HTML et Microsoft Word ne s’appliquent pas. Bien que le <see cref="P:Microsoft.Office.Interop.Outlook._NoteItem.GetInspector" /> propriété fonctionne sur les notes, les notes ne peuvent pas être personnalisées, certaines le <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> propriétés, méthodes et événements seront applique pas aux objets de <b>NoteItem</b> .</para>
+      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._Application.CreateItem(Microsoft.Office.Interop.Outlook.OlItemType)" /> méthode pour créer un objet <b>NoteItem</b> qui représente une nouvelle note.</para>
+      <para>Utiliser <see cref="P:Microsoft.Office.Interop.Outlook._Items.Item(System.Object)" />(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index d’une note ou une valeur correspondant à la propriété par défaut d’une note, pour renvoyer un seul objet <b>NoteItem</b> d’un dossier Notes.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

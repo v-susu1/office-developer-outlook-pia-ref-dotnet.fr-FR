@@ -1,0 +1,42 @@
+<Type Name="DocumentItem" FullName="Microsoft.Office.Interop.Outlook.DocumentItem">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="721532dd62d340e509db090a0d82dda54ca85f23" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20634372" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface DocumentItem : Microsoft.Office.Interop.Outlook._DocumentItem, Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DocumentItem implements class Microsoft.Office.Interop.Outlook._DocumentItem, class Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.DocumentItem" />
+  <TypeSignature Language="VB.NET" Value="Public Interface DocumentItem&#xA;Implements _DocumentItem, ItemEvents_10_Event" />
+  <TypeSignature Language="C++ CLI" Value="public interface class DocumentItem : Microsoft::Office::Interop::Outlook::_DocumentItem, Microsoft::Office::Interop::Outlook::ItemEvents_10_Event" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Outlook._DocumentItem</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Outlook.ItemEvents_10_Event</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.Outlook.DocumentItemClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00063020-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Représente n’importe quel document autre qu’un élément Outlook en tant qu’élément dans un dossier Outlook.</summary>
+    <remarks>
+      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._DocumentItem" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />.</para> Objet 
+      <para>un <b>DocumentItem</b> est n’importe quel document autre qu’un élément Outlook en tant qu’élément dans un dossier Outlook. En commun l’utilisation, il s’agit un document Office mais peut être n’importe quel type de fichier de document ou un fichier exécutable.</para><para>Contrairement à d’autres objets Microsoft Outlook, vous ne pouvez pas créer cet objet.</para><para><b>Remarque</b>: lorsque vous essayez d’ajouter par programme une propriété définie par l’utilisateur à un objet <b>DocumentItem</b> , vous recevez le message d’erreur suivant : « La propriété est en lecture seule. » C’est parce que le modèle objet Outlook ne prend pas en charge cette fonctionnalité.</para><para /></remarks>
+  </Docs>
+  <Members />
+</Type>

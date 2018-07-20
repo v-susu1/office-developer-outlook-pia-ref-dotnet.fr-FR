@@ -1,0 +1,89 @@
+<Type Name="OlAlwaysDeleteConversation" FullName="Microsoft.Office.Interop.Outlook.OlAlwaysDeleteConversation">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="33a2ab3118bc2bf01ffe01cbf8c89cab8f83de19" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20633498" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public enum OlAlwaysDeleteConversation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OlAlwaysDeleteConversation extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.OlAlwaysDeleteConversation" />
+  <TypeSignature Language="VB.NET" Value="Public Enum OlAlwaysDeleteConversation" />
+  <TypeSignature Language="C++ CLI" Value="public enum class OlAlwaysDeleteConversation" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Spécifie les constantes qui déterminent si les nouveaux éléments de la conversation sont toujours déplacés vers le dossier Éléments supprimés de la banque de remise spécifiée.
+</summary>
+    <remarks>
+      <para>Cette énumération est utilisée par la <see cref="M:Microsoft.Office.Interop.Outlook._Conversation.GetAlwaysDelete(Microsoft.Office.Interop.Outlook.Store)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> objet.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="olAlwaysDelete">
+      <MemberSignature Language="C#" Value="olAlwaysDelete" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.Outlook.OlAlwaysDeleteConversation olAlwaysDelete = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.Outlook.OlAlwaysDeleteConversation.olAlwaysDelete" />
+      <MemberSignature Language="VB.NET" Value="olAlwaysDelete" />
+      <MemberSignature Language="C++ CLI" Value="olAlwaysDelete" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlAlwaysDeleteConversation</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>Nouveaux éléments de la conversation doivent toujours être déplacés vers le dossier éléments supprimés pour le magasin qui contient les éléments</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="olAlwaysDeleteUnsupported">
+      <MemberSignature Language="C#" Value="olAlwaysDeleteUnsupported" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.Outlook.OlAlwaysDeleteConversation olAlwaysDeleteUnsupported = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.Outlook.OlAlwaysDeleteConversation.olAlwaysDeleteUnsupported" />
+      <MemberSignature Language="VB.NET" Value="olAlwaysDeleteUnsupported" />
+      <MemberSignature Language="C++ CLI" Value="olAlwaysDeleteUnsupported" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlAlwaysDeleteConversation</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>La banque spécifiée ne prend pas en charge l’action de déplacement systématique des éléments dans le dossier éléments supprimés de cette banque.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="olDoNotDelete">
+      <MemberSignature Language="C#" Value="olDoNotDelete" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.Outlook.OlAlwaysDeleteConversation olDoNotDelete = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.Outlook.OlAlwaysDeleteConversation.olDoNotDelete" />
+      <MemberSignature Language="VB.NET" Value="olDoNotDelete" />
+      <MemberSignature Language="C++ CLI" Value="olDoNotDelete" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlAlwaysDeleteConversation</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>Des nouveaux éléments de la participation à la conversation ne sont pas déplacés vers le dossier éléments supprimés dans la banque de remise spécifiée, et les éléments de conversation existants dans le dossier éléments supprimés sont déplacés vers la boîte de réception.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

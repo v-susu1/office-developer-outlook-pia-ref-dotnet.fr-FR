@@ -1,0 +1,46 @@
+<Type Name="ContactItem" FullName="Microsoft.Office.Interop.Outlook.ContactItem">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="1d1a35ca6b3993fa2db64cb0a9ecf722cf2a8ba2" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20635142" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface ContactItem : Microsoft.Office.Interop.Outlook._ContactItem, Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ContactItem implements class Microsoft.Office.Interop.Outlook._ContactItem, class Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.ContactItem" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ContactItem&#xA;Implements _ContactItem, ItemEvents_10_Event" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ContactItem : Microsoft::Office::Interop::Outlook::_ContactItem, Microsoft::Office::Interop::Outlook::ItemEvents_10_Event" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Outlook._ContactItem</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Outlook.ItemEvents_10_Event</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.Outlook.ContactItemClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00063021-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Représente un contact d'un dossier Contacts.</summary>
+    <remarks>
+      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._ContactItem" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />.</para>
+      <para>Un contact peut représenter toute personne avec laquelle vous avez des contacts personnels ou professionnels.</para>
+      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._Application.CreateItem(Microsoft.Office.Interop.Outlook.OlItemType)" /> méthode pour créer un objet <b>ContactItem</b> qui représente un nouveau contact.</para>
+      <para>Utiliser <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.Items" /> (<paramref name="index" />), où <paramref name="index" /> est le numéro d’index d’un contact ou une valeur correspondant à la propriété par défaut d’un contact, pour renvoyer un seul objet <b>ContactItem</b> d’un dossier Contacts.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

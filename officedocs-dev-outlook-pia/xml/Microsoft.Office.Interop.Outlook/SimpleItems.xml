@@ -1,0 +1,39 @@
+<Type Name="SimpleItems" FullName="Microsoft.Office.Interop.Outlook.SimpleItems">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="aef8169af3ab4e02672bf2917159049b4f1b960a" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20634785" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface SimpleItems : Microsoft.Office.Interop.Outlook._SimpleItems" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SimpleItems implements class Microsoft.Office.Interop.Outlook._SimpleItems" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.SimpleItems" />
+  <TypeSignature Language="VB.NET" Value="Public Interface SimpleItems&#xA;Implements _SimpleItems" />
+  <TypeSignature Language="C++ CLI" Value="public interface class SimpleItems : Microsoft::Office::Interop::Outlook::_SimpleItems" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Outlook._SimpleItems</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.Outlook.SimpleItemsClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00063102-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Représente un groupe d’éléments Microsoft Outlook qui peuvent être hétérogènes, et dont chaque membre ne contient qu’un petit jeu de propriétés courantes, généralement applicables aux éléments Outlook.</summary>
+    <remarks>
+      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._SimpleItems" />.</para> Collection de 
+      <para>la <b>SimpleItems</b> est utilisée pour représenter des objets enfants d’un objet de nœud de <b>Conversation</b> . Cette collection contient peu de membres et joue le rôle de fournir un accès facile à ces éléments, par opposition à la <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> et <see cref="T:Microsoft.Office.Interop.Outlook.Results" /> collections, qui ont plus de membres.</para><para>L’ordre des éléments dans la collection est la même que l’ordre des éléments de la conversation. La collection est organisée par la valeur de la propriété <b>CreationTime</b> de chaque élément dans l’ordre croissant.</para><para /></remarks>
+  </Docs>
+  <Members />
+</Type>

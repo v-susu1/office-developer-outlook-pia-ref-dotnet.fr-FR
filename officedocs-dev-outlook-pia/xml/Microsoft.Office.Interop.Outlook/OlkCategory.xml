@@ -1,0 +1,47 @@
+<Type Name="OlkCategory" FullName="Microsoft.Office.Interop.Outlook.OlkCategory">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="bcb08f12205e840788d139e67ae0b289e13bd211" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20634453" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface OlkCategory : Microsoft.Office.Interop.Outlook._OlkCategory, Microsoft.Office.Interop.Outlook.OlkCategoryEvents_Event" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OlkCategory implements class Microsoft.Office.Interop.Outlook._OlkCategory, class Microsoft.Office.Interop.Outlook.OlkCategoryEvents_Event" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.OlkCategory" />
+  <TypeSignature Language="VB.NET" Value="Public Interface OlkCategory&#xA;Implements _OlkCategory, OlkCategoryEvents_Event" />
+  <TypeSignature Language="C++ CLI" Value="public interface class OlkCategory : Microsoft::Office::Interop::Outlook::_OlkCategory, Microsoft::Office::Interop::Outlook::OlkCategoryEvents_Event" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Outlook._OlkCategory</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Outlook.OlkCategoryEvents_Event</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.Outlook.OlkCategoryClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000672F4-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contrôle affichant les catégories sélectionnées.</summary>
+    <remarks>
+      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._OlkCategory" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.OlkCategoryEvents_Event" />.</para>
+      <para>Avant de pouvoir utiliser ce contrôle pour la première fois dans le Concepteur de formulaires, ajoutez le contrôle catégorie Microsoft Outlook à la boîte à outils contrôles. Vous pouvez uniquement ajouter ce contrôle à une zone de formulaire dans un formulaire Outlook à l’aide du Concepteur de formulaires ; Vous ne pouvez pas ajouter ce contrôle à un objet Visual Basic <b>UserForm</b> dans Visual Basic Editor.</para>
+      <para>Ce contrôle affiche le nom de catégorie et de la couleur de la catégorie.  Cliquez sur ce contrôle affiche le menu contextuel de sélection de catégorie qui autorise l’utilisateur à sélectionner les catégories dans les formulaires Outlook standards. S’il n’y a aucune catégorie à afficher, ce contrôle est automatiquement redimensionné à une hauteur de zéro.</para>
+      <para>Suit est un exemple d’un contrôle de la catégorie en cours d’exécution. Ce contrôle prend en charge des thèmes Microsoft Windows.</para>
+      <para>Pour plus d’informations sur les contrôles Outlook, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87823">contrôles dans un formulaire personnalisé</a></para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

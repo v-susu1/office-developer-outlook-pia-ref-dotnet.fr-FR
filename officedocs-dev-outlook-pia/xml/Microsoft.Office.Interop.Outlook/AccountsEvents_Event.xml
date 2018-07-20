@@ -1,0 +1,59 @@
+<Type Name="AccountsEvents_Event" FullName="Microsoft.Office.Interop.Outlook.AccountsEvents_Event">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="09aae12511aa5364d44502164046c85be0886680" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20635316" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface AccountsEvents_Event" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AccountsEvents_Event" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.AccountsEvents_Event" />
+  <TypeSignature Language="VB.NET" Value="Public Interface AccountsEvents_Event" />
+  <TypeSignature Language="C++ CLI" Value="public interface class AccountsEvents_Event" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComEventInterface(typeof(Microsoft.Office.Interop.Outlook.AccountsEvents), typeof(Microsoft.Office.Interop.Outlook.AccountsEvents_EventProvider))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(16)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Il s’agit d’une interface .NET créée lors du traitement d’une coclasse COM requise par le code managé pour l’interopérabilité avec l’objet COM correspondant. Cette interface implémente tous les événements des interfaces antérieures ainsi que tous les nouveaux événements. Utilisez cette interface uniquement lorsque l’événement que vous souhaitez utiliser partage le même nom qu’une méthode de l’objet COM. Dans ce cas, vous devez effectuer une conversion de type (transtypage) vers cette interface pour vous connecter à l’événement, puis effectuer une conversion de type (transtypage) vers l’interface principale pour appeler la méthode. Vous pouvez également utiliser l’interface .NET dérivée de la coclasse COM pour accéder aux méthodes, aux propriétés et aux événements de l’objet COM.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AutoDiscoverComplete">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.AccountsEvents_AutoDiscoverCompleteEventHandler AutoDiscoverComplete;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.AccountsEvents_AutoDiscoverCompleteEventHandler AutoDiscoverComplete" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.AccountsEvents_Event.AutoDiscoverComplete" />
+      <MemberSignature Language="VB.NET" Value="Event AutoDiscoverComplete As AccountsEvents_AutoDiscoverCompleteEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::AccountsEvents_AutoDiscoverCompleteEventHandler ^ AutoDiscoverComplete;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.AccountsEvents_AutoDiscoverCompleteEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cet événement se produit après que Microsoft Outlook a terminé d’accéder au service de découverte automatique de Microsoft Exchange Server qui est associée au compte et que les informations connexes disponibles dans le <see cref="P:Microsoft.Office.Interop.Outlook._Account.AutoDiscoverXml" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.Account" /> objet.</summary>
+        <remarks>
+          <para>Cet événement est similaire à la <see cref="E:Microsoft.Office.Interop.Outlook.NameSpaceEvents_Event.AutoDiscoverComplete" /> événement de la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet, sauf que cet événement s’applique au compte pour la découverte automatique est terminée et pas nécessairement pour le compte Exchange principal.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

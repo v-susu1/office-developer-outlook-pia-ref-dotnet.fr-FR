@@ -1,0 +1,42 @@
+<Type Name="AttachmentSelection" FullName="Microsoft.Office.Interop.Outlook.AttachmentSelection">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="89d4cc40051887ef0752881948727d49c4a4034f" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20634864" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface AttachmentSelection : Microsoft.Office.Interop.Outlook._AttachmentSelection" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AttachmentSelection implements class Microsoft.Office.Interop.Outlook._AttachmentSelection" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.AttachmentSelection" />
+  <TypeSignature Language="VB.NET" Value="Public Interface AttachmentSelection&#xA;Implements _AttachmentSelection" />
+  <TypeSignature Language="C++ CLI" Value="public interface class AttachmentSelection : Microsoft::Office::Interop::Outlook::_AttachmentSelection" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Outlook._AttachmentSelection</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.Outlook.AttachmentSelectionClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000630F9-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contient un ensemble de <see cref="T:Microsoft.Office.Interop.Outlook.Attachment" /> objets qui représentent les pièces jointes sélectionnées dans un élément Outlook.</summary>
+    <remarks>
+      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._AttachmentSelection" />.</para>
+      <para>L’objet <b>AttachmentSelection</b> constituée une collection en lecture seule de pièces jointes sélectionnées dans un élément qui se trouve dans l’inspecteur actif ou de l’Explorateur actif.</para>
+      <para>Pour personnaliser le menu contextuel de pièce jointe à l’aide de l’extensibilité du ruban Microsoft Office Fluent, utilisez la propriété <b>Context</b> de l’interface <b>IRibbonControl</b> pour obtenir un objet <b>AttachmentSelection</b> .</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

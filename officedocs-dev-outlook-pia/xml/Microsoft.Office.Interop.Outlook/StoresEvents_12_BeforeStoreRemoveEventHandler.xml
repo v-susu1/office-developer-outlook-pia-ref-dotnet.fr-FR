@@ -1,0 +1,43 @@
+<Type Name="StoresEvents_12_BeforeStoreRemoveEventHandler" FullName="Microsoft.Office.Interop.Outlook.StoresEvents_12_BeforeStoreRemoveEventHandler">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="677b41e792ad6cc8d6f0589bbd6666073c4b9617" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20634064" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public delegate void StoresEvents_12_BeforeStoreRemoveEventHandler(Store Store, out bool Cancel);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StoresEvents_12_BeforeStoreRemoveEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.StoresEvents_12_BeforeStoreRemoveEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub StoresEvents_12_BeforeStoreRemoveEventHandler(Store As Store, ByRef Cancel As Boolean)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void StoresEvents_12_BeforeStoreRemoveEventHandler(Store ^ Store, [Runtime::InteropServices::Out] bool % Cancel);" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(16)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="Store" Type="Microsoft.Office.Interop.Outlook.Store" />
+    <Parameter Name="Cancel" Type="System.Boolean&amp;" RefType="out" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="Store">Objet <b>Store</b> à supprimer de la session active.</param>
+    <param name="Cancel">						Affectez à cet argument la valeur <b>True</b> pour annuler la suppression de la banque spécifiée ou la valeur <b>False</b> dans le cas contraire.</param>
+    <summary>Il s’agit d’un délégué pour un événement dans l’objet correspondant. Après avoir implémenté une méthode de rappel pour l’événement, utilisez ce délégué pour connecter la méthode de rappel à l’événement. S’il existe plusieurs versions de l’interface d’événement, ce délégué connecte la méthode de rappel pour l’événement dans la version spécifiée d’Outlook.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

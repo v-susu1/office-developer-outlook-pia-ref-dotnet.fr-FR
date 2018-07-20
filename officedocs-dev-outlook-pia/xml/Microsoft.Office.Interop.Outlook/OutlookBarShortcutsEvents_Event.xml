@@ -1,0 +1,94 @@
+<Type Name="OutlookBarShortcutsEvents_Event" FullName="Microsoft.Office.Interop.Outlook.OutlookBarShortcutsEvents_Event">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="6f4c29858dac9956f726d90782d0d981681a8eff" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20633946" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface OutlookBarShortcutsEvents_Event" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OutlookBarShortcutsEvents_Event" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.OutlookBarShortcutsEvents_Event" />
+  <TypeSignature Language="VB.NET" Value="Public Interface OutlookBarShortcutsEvents_Event" />
+  <TypeSignature Language="C++ CLI" Value="public interface class OutlookBarShortcutsEvents_Event" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComEventInterface(typeof(Microsoft.Office.Interop.Outlook.OutlookBarShortcutsEvents), typeof(Microsoft.Office.Interop.Outlook.OutlookBarShortcutsEvents_EventProvider))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(16)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Il s’agit d’une interface .NET créée lors du traitement d’une coclasse COM requise par le code managé pour l’interopérabilité avec l’objet COM correspondant. Cette interface implémente tous les événements des interfaces antérieures ainsi que tous les nouveaux événements. Utilisez cette interface uniquement lorsque l’événement que vous souhaitez utiliser partage le même nom qu’une méthode de l’objet COM. Dans ce cas, vous devez effectuer une conversion de type (transtypage) vers cette interface pour vous connecter à l’événement, puis effectuer une conversion de type (transtypage) vers l’interface principale pour appeler la méthode. Vous pouvez également utiliser l’interface .NET dérivée de la coclasse COM pour accéder aux méthodes, aux propriétés et aux événements de l’objet COM.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BeforeShortcutAdd">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.OutlookBarShortcutsEvents_BeforeShortcutAddEventHandler BeforeShortcutAdd;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.OutlookBarShortcutsEvents_BeforeShortcutAddEventHandler BeforeShortcutAdd" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.OutlookBarShortcutsEvents_Event.BeforeShortcutAdd" />
+      <MemberSignature Language="VB.NET" Value="Event BeforeShortcutAdd As OutlookBarShortcutsEvents_BeforeShortcutAddEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::OutlookBarShortcutsEvents_BeforeShortcutAddEventHandler ^ BeforeShortcutAdd;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OutlookBarShortcutsEvents_BeforeShortcutAddEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Survient avant qu'un nouveau raccourci soit ajouté à un groupe dans le volet de raccourcis, à la suite d'une action de l'utilisateur ou par le biais d'un code de programme.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeforeShortcutRemove">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.OutlookBarShortcutsEvents_BeforeShortcutRemoveEventHandler BeforeShortcutRemove;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.OutlookBarShortcutsEvents_BeforeShortcutRemoveEventHandler BeforeShortcutRemove" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.OutlookBarShortcutsEvents_Event.BeforeShortcutRemove" />
+      <MemberSignature Language="VB.NET" Value="Event BeforeShortcutRemove As OutlookBarShortcutsEvents_BeforeShortcutRemoveEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::OutlookBarShortcutsEvents_BeforeShortcutRemoveEventHandler ^ BeforeShortcutRemove;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OutlookBarShortcutsEvents_BeforeShortcutRemoveEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Survient avant qu’un nouveau raccourci soit supprimé d’un groupe du volet Raccourcis, à la suite d’une action de l’utilisateur ou par le biais d’un code de programme.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShortcutAdd">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.OutlookBarShortcutsEvents_ShortcutAddEventHandler ShortcutAdd;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.OutlookBarShortcutsEvents_ShortcutAddEventHandler ShortcutAdd" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.OutlookBarShortcutsEvents_Event.ShortcutAdd" />
+      <MemberSignature Language="VB.NET" Value="Event ShortcutAdd As OutlookBarShortcutsEvents_ShortcutAddEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::OutlookBarShortcutsEvents_ShortcutAddEventHandler ^ ShortcutAdd;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OutlookBarShortcutsEvents_ShortcutAddEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Survient lorsqu’un nouveau raccourci est ajouté à un groupe du volet Raccourcis.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

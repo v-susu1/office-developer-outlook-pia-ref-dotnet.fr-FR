@@ -1,0 +1,42 @@
+<Type Name="TimeZone" FullName="Microsoft.Office.Interop.Outlook.TimeZone">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="df2e0acca707a2d52c4baedac03f2eece2d396b9" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20634274" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface TimeZone : Microsoft.Office.Interop.Outlook._TimeZone" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TimeZone implements class Microsoft.Office.Interop.Outlook._TimeZone" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.TimeZone" />
+  <TypeSignature Language="VB.NET" Value="Public Interface TimeZone&#xA;Implements _TimeZone" />
+  <TypeSignature Language="C++ CLI" Value="public interface class TimeZone : Microsoft::Office::Interop::Outlook::_TimeZone" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Outlook._TimeZone</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.Outlook.TimeZoneClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000630FD-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Représente des informations concernant un fuseau horaire telles qu'elles sont prises en charge par Microsoft Windows.</summary>
+    <remarks>
+      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._TimeZone" />. </para>
+      <para>L’objet <b>TimeZone</b> est un wrapper Outlook pour les données de fuseau horaire.</para>
+      <para>Ces données peuvent être obtenues à partir de la clé de Registre Windows HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Time Zones. Dans ce cas, certaines propriétés de cet objet sont des composants de la valeur des informations de fuseau horaire pour le fuseau horaire dans le Registre. Une valeur d’informations de fuseau horaire est mappée sur les fenêtres <a href="http://go.microsoft.com/fwlink/?LinkId=87853">TIME_ZONE_INFORMATION</a></para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

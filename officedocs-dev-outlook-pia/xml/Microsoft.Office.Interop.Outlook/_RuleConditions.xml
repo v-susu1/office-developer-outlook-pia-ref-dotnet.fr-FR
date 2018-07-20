@@ -1,0 +1,1029 @@
+<Type Name="_RuleConditions" FullName="Microsoft.Office.Interop.Outlook._RuleConditions">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="ee9e9cd5e60909dd8c8b2a0698b75286f18e83ac" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20634669" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface _RuleConditions : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _RuleConditions implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._RuleConditions" />
+  <TypeSignature Language="VB.NET" Value="Public Interface _RuleConditions&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class _RuleConditions : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000630D8-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4160)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Il s’agit d’une interface principale dans une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface principale uniquement lorsque la méthode que vous souhaitez utiliser partageant le même nom qu’un événement de l’objet COM ; Dans ce cas, effectuez un cast à cette interface pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Sinon, utilisez l’interface .NET est dérivé de la coclasse COM pour accéder aux méthodes, propriétés et événements de l’objet COM. Pour plus d’informations sur l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Account">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.AccountRuleCondition Account { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.AccountRuleCondition Account" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._RuleConditions.Account" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Account As AccountRuleCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::AccountRuleCondition ^ Account { Microsoft::Office::Interop::Outlook::AccountRuleCondition ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64209)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64209)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.AccountRuleCondition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.AccountRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._AccountRuleCondition.ConditionType" /><b>à olConditionAccount</b>. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Utilisez l’objet <b>AccountRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant qu’un message est envoyé ou reçu par le biais de la compte spécifié. </para>
+          <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection retourne toujours un objet <b>AccountRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._AccountRuleCondition.Enabled" /><b>a la valeur True</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AnyCategory">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.RuleCondition AnyCategory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.RuleCondition AnyCategory" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._RuleConditions.AnyCategory" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AnyCategory As RuleCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::RuleCondition ^ AnyCategory { Microsoft::Office::Interop::Outlook::RuleCondition ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64531)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64531)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.RuleCondition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> de <b>olConditionAnyCategory</b>. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Utilisez l’objet <b>RuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que le message est affecté à n’importe quelle catégorie.  </para>
+          <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> , que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /><b>a la valeur True</b>.  </para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._RuleConditions.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::Application ^ Application { Microsoft::Office::Interop::Outlook::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61440)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61440)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> object qui représente l’application Outlook de l’objet parent. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Body">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.TextRuleCondition Body { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.TextRuleCondition Body" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._RuleConditions.Body" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Body As TextRuleCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::TextRuleCondition ^ Body { Microsoft::Office::Interop::Outlook::TextRuleCondition ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64328)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64328)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.TextRuleCondition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.TextRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.ConditionType" /><b>olConditionBody</b>. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Utilisez l’objet <b>TextRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception texte déterminé figure dans le corps du message. </para>
+          <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection retourne toujours un objet <b>TextRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Enabled" /><b>a la valeur True</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BodyOrSubject">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.TextRuleCondition BodyOrSubject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.TextRuleCondition BodyOrSubject" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._RuleConditions.BodyOrSubject" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BodyOrSubject As TextRuleCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::TextRuleCondition ^ BodyOrSubject { Microsoft::Office::Interop::Outlook::TextRuleCondition ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64329)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64329)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.TextRuleCondition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.TextRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.ConditionType" /><b>olConditionBodyOrSubject</b>. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Utilisez l’objet <b>TextRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception texte déterminé figure dans le corps du message ou d’un objet . </para>
+          <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection retourne toujours un objet <b>TextRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Enabled" /><b>a la valeur True</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Category">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.CategoryRuleCondition Category { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.CategoryRuleCondition Category" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._RuleConditions.Category" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Category As CategoryRuleCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::CategoryRuleCondition ^ Category { Microsoft::Office::Interop::Outlook::CategoryRuleCondition ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64330)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64330)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.CategoryRuleCondition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.CategoryRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._CategoryRuleCondition.ConditionType" /> de <b>olConditionCategory</b>. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Utilisez l’objet <b>CategoryRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception qui sont affectées au message spécifique catégories. </para>
+          <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection retourne toujours un objet <b>CategoryRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._CategoryRuleCondition.Enabled" /><b>a la valeur True</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CC">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.RuleCondition CC { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.RuleCondition CC" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._RuleConditions.CC" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CC As RuleCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::RuleCondition ^ CC { Microsoft::Office::Interop::Outlook::RuleCondition ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64300)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64300)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.RuleCondition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> de <b>à olConditionCc</b>. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Utilisez l’objet <b>RuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que votre nom figure dans la zone Cc.</para>
+          <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /><b>a la valeur True</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Class">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.OlObjectClass Class { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Outlook.OlObjectClass Class" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._RuleConditions.Class" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Class As OlObjectClass" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::OlObjectClass Class { Microsoft::Office::Interop::Outlook::OlObjectClass get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61450)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61450)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constante indiquant la classe de l’objet. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._RuleConditions.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(80)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(80)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie une valeur d' <b>entier</b> (<b>int</b> en c#) indiquant le nombre d’objets dans la collection spécifiée. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Vous pouvez énumérer la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection comprise entre 1 et <b>RuleConditions.Count</b> pour déterminer les conditions de règle pour une règle existante. Bien que le modèle objet règles prend en charge la création de règles uniquement les plus couramment utilisés pas toutes les conditions de règle prises en charge par l’Assistant règles et alertes et les conditions de règle, la collection <b>RuleActions</b> inclut toutes les conditions de règle d’une règle. Par conséquent, vous pouvez toujours énumérer l’objet de la collection <b>RuleConditions</b> pour déterminer les conditions de règle qui sont activées pour une règle existante.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormName">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.FormNameRuleCondition FormName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.FormNameRuleCondition FormName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._RuleConditions.FormName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FormName As FormNameRuleCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::FormNameRuleCondition ^ FormName { Microsoft::Office::Interop::Outlook::FormNameRuleCondition ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64331)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64331)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.FormNameRuleCondition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.FormNameRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._FormNameRuleCondition.ConditionType" /> de <b>olConditionFormName</b>. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Utilisez l’objet <b>FormNameRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que le message utilise un formulaire spécifié.</para>
+          <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>FormNameRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._FormNameRuleCondition.Enabled" /><b>a la valeur True</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="From">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.ToOrFromRuleCondition From { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.ToOrFromRuleCondition From" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._RuleConditions.From" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property From As ToOrFromRuleCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::ToOrFromRuleCondition ^ From { Microsoft::Office::Interop::Outlook::ToOrFromRuleCondition ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64332)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64332)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.ToOrFromRuleCondition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.ToOrFromRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition.ConditionType" /><b>olConditionFrom</b>. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Utilisez l’objet <b>ToOrFromRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que l’expéditeur du message dans la  liste de <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" />.</para>
+          <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>ToOrFromRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition.Enabled" /><b>a la valeur True</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromAnyRSSFeed">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.RuleCondition FromAnyRSSFeed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.RuleCondition FromAnyRSSFeed" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._RuleConditions.FromAnyRSSFeed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FromAnyRSSFeed As RuleCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::RuleCondition ^ FromAnyRSSFeed { Microsoft::Office::Interop::Outlook::RuleCondition ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64534)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64534)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.RuleCondition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> de <b>olConditionFromAnyRssFeed</b>. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Utilisez l’objet <b>RuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que le message provient d’un abonnement RSS.</para>
+          <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> , que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /><b>a la valeur True</b>.  </para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromRssFeed">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.FromRssFeedRuleCondition FromRssFeed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.FromRssFeedRuleCondition FromRssFeed" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._RuleConditions.FromRssFeed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FromRssFeed As FromRssFeedRuleCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::FromRssFeedRuleCondition ^ FromRssFeed { Microsoft::Office::Interop::Outlook::FromRssFeedRuleCondition ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64535)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64535)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.FromRssFeedRuleCondition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.FromRssFeedRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._FromRssFeedRuleCondition.ConditionType" /> de <b>olConditionFromRssFeed</b>. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Utilisez l’objet <b>FromRSSFeedRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que le message provient d’un flux RSS spécifique abonnement.</para>
+          <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>FromRSSFeedRuleCondition</b> , que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._FromRssFeedRuleCondition.Enabled" /><b>a la valeur True</b>.  </para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasAttachment">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.RuleCondition HasAttachment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.RuleCondition HasAttachment" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._RuleConditions.HasAttachment" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasAttachment As RuleCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::RuleCondition ^ HasAttachment { Microsoft::Office::Interop::Outlook::RuleCondition ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64301)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64301)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.RuleCondition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> de <b>à olConditionHasAttachment</b>. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Utilisez l’objet <b>RuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que le message comporte une pièce jointe.</para>
+          <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /><b>a la valeur True</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Importance">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.ImportanceRuleCondition Importance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.ImportanceRuleCondition Importance" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._RuleConditions.Importance" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Importance As ImportanceRuleCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::ImportanceRuleCondition ^ Importance { Microsoft::Office::Interop::Outlook::ImportanceRuleCondition ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64299)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64299)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.ImportanceRuleCondition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.ImportanceRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._ImportanceRuleCondition.ConditionType" /><b>olConditionImportance</b>. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Utilisez l’objet <b>ImportanceRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que le message est du niveau spécifié d’importance.</para>
+          <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>ImportanceRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._ImportanceRuleCondition.Enabled" /><b>a la valeur True</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.RuleCondition this[int Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.RuleCondition Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._RuleConditions.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As RuleCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::RuleCondition ^ default[int] { Microsoft::Office::Interop::Outlook::RuleCondition ^ get(int Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.RuleCondition</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Index">Une valeur numérique basée sur 1 qui reflète la position ordinale d'une condition de règle dans la collection <b>RuleConditions</b>. La valeur d'index de la première condition de règle dans la collection, par exemple, est 1 et la valeur d'index de la seconde condition de règle est 2.</param>
+        <summary>Obtient un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet spécifié par <paramref name="Index" /> qui est un index numérique dans la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection.</summary>
+        <value>Objet <b>RuleCondition</b> qui représente l’objet spécifié.</value>
+        <remarks>
+          <para>L’objet de la collection <b>RuleConditions</b> est une collection fixe. Il contient des objets <b>RuleCondition</b> ou des objets dérivés de <b>RuleCondition</b>. Vous ne pouvez pas ajouter ou supprimer des éléments de cette collection, mais vous pouvez indexer dans la collection pour énumérer les éléments de condition de règle et définir le <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> propriété de la condition de règle. Lorsque vous utilisez <b>l’élément</b> pour énumérer la collection, vous pouvez énumérer <paramref name="Index" /> de 1 à <see cref="P:Microsoft.Office.Interop.Outlook._RuleConditions.Count" />.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeetingInviteOrUpdate">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.RuleCondition MeetingInviteOrUpdate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.RuleCondition MeetingInviteOrUpdate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._RuleConditions.MeetingInviteOrUpdate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MeetingInviteOrUpdate As RuleCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::RuleCondition ^ MeetingInviteOrUpdate { Microsoft::Office::Interop::Outlook::RuleCondition ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64302)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64302)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.RuleCondition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> de <b>à olConditionMeetingInviteOrUpdate</b>. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Utilisez l’objet <b>RuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que le message est une demande de réunion ou une réunion mettre à jour.</para>
+          <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /><b>a la valeur True</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageHeader">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.TextRuleCondition MessageHeader { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.TextRuleCondition MessageHeader" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._RuleConditions.MessageHeader" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MessageHeader As TextRuleCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::TextRuleCondition ^ MessageHeader { Microsoft::Office::Interop::Outlook::TextRuleCondition ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64334)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64334)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.TextRuleCondition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.TextRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.ConditionType" /><b>olConditionMessageHeader</b>. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Utilisez l’objet <b>TextRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que l’en-tête du message contienne le texte spécifié texte.</para>
+          <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection retourne toujours un objet <b>TextRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Enabled" /><b>a la valeur True</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotTo">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.RuleCondition NotTo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.RuleCondition NotTo" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._RuleConditions.NotTo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NotTo As RuleCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::RuleCondition ^ NotTo { Microsoft::Office::Interop::Outlook::RuleCondition ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64303)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64303)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.RuleCondition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> de <b>à olConditionNotTo</b>. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Utilisez l’objet <b>RuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que votre nom ne figure pas dans la zone à.</para>
+          <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /><b>a la valeur True</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnLocalMachine">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.RuleCondition OnLocalMachine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.RuleCondition OnLocalMachine" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._RuleConditions.OnLocalMachine" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OnLocalMachine As RuleCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::RuleCondition ^ OnLocalMachine { Microsoft::Office::Interop::Outlook::RuleCondition ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64340)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64340)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.RuleCondition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> de <b>olConditionLocalMachineOnly</b>. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Utilisez l’objet <b>RuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que la règle peut s’exécuter sur cet ordinateur uniquement. Lorsque vous exécutez la même règle sur un autre ordinateur, la règle indique que la condition <b>olConditionOtherMachine</b> est activée.</para>
+          <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Vous pouvez activer par programme une condition de règle de ce type. Dans certains cas, <b>olConditionLocalMachine</b> est défini automatiquement à la suite de l’activation d’une autre condition de règle comme <b>olConditionAccount</b>. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /><b>a la valeur True</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnlyToMe">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.RuleCondition OnlyToMe { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.RuleCondition OnlyToMe" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._RuleConditions.OnlyToMe" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OnlyToMe As RuleCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::RuleCondition ^ OnlyToMe { Microsoft::Office::Interop::Outlook::RuleCondition ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64304)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64304)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.RuleCondition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> de <b>à olConditionOnlyToMe</b>. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Utilisez l’objet <b>RuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que le message est envoyé qu’à vous.</para>
+          <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /><b>a la valeur True</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnOtherMachine">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.RuleCondition OnOtherMachine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.RuleCondition OnOtherMachine" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._RuleConditions.OnOtherMachine" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OnOtherMachine As RuleCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::RuleCondition ^ OnOtherMachine { Microsoft::Office::Interop::Outlook::RuleCondition ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64473)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64473)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.RuleCondition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /><b>olConditionOtherMachine</b>. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Utilisez l’objet <b>RuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante. Cette condition de règle indique que la règle peut s’exécuter uniquement sur un ordinateur autre que l’ordinateur local.</para>
+          <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle.</para>
+          <para>Ne peut pas par programme pour activer ou désactiver une condition du type <b>olConditionOtherMachine</b>. Ce type de condition de règle indique que la règle peut s’exécuter uniquement sur un ordinateur spécifique qui n’est pas celui en cours. Cela se produit lorsque la règle est créée sur qu’ordinateur et la condition de règle <b>olConditionLocalMachineOnly</b> est activée pour indiquer que la règle peut s’exécuter uniquement sur cet ordinateur. Lorsque vous exécutez la même règle sur un autre ordinateur, la règle indique que la condition <b>olConditionOtherMachine</b> est activée.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._RuleConditions.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61441)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61441)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie la valeur de type <b>Object</b> parent de l’objet spécifié. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Le parent de le <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> objet est la <see cref="T:Microsoft.Office.Interop.Outlook.Rule" /> objet.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecipientAddress">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.AddressRuleCondition RecipientAddress { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.AddressRuleCondition RecipientAddress" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._RuleConditions.RecipientAddress" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RecipientAddress As AddressRuleCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::AddressRuleCondition ^ RecipientAddress { Microsoft::Office::Interop::Outlook::AddressRuleCondition ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64338)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64338)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.AddressRuleCondition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.AddressRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.ConditionType" /><b>olConditionRecipientAddress</b>. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Utilisez l’objet <b>AddressRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception qui contient l’adresse du destinataire le texte spécifié. </para>
+          <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection retourne toujours un objet <b>AddressRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.Enabled" /><b>a la valeur True</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SenderAddress">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.AddressRuleCondition SenderAddress { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.AddressRuleCondition SenderAddress" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._RuleConditions.SenderAddress" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SenderAddress As AddressRuleCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::AddressRuleCondition ^ SenderAddress { Microsoft::Office::Interop::Outlook::AddressRuleCondition ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64335)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64335)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.AddressRuleCondition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.AddressRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.ConditionType" /><b>olConditionSenderAddress</b>. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Utilisez l’objet <b>AddressRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception qui contient l’adresse d’expéditeur le texte spécifié. </para>
+          <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection retourne toujours un objet <b>AddressRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.Enabled" /><b>a la valeur True</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SenderInAddressList">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.SenderInAddressListRuleCondition SenderInAddressList { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.SenderInAddressListRuleCondition SenderInAddressList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._RuleConditions.SenderInAddressList" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SenderInAddressList As SenderInAddressListRuleCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::SenderInAddressListRuleCondition ^ SenderInAddressList { Microsoft::Office::Interop::Outlook::SenderInAddressListRuleCondition ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64336)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64336)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.SenderInAddressListRuleCondition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.SenderInAddressListRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._SenderInAddressListRuleCondition.ConditionType" /><b>à olConditionAccount</b>. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Utilisez l’objet <b>SenderInAddressListRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que l’expéditeur spécifié liste d’adresses.</para>
+          <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection retourne toujours un objet <b>SenderInAddressListRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._SenderInAddressListRuleCondition.Enabled" /><b>a la valeur True</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SentTo">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.ToOrFromRuleCondition SentTo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.ToOrFromRuleCondition SentTo" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._RuleConditions.SentTo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SentTo As ToOrFromRuleCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::ToOrFromRuleCondition ^ SentTo { Microsoft::Office::Interop::Outlook::ToOrFromRuleCondition ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64339)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64339)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.ToOrFromRuleCondition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.ToOrFromRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition.ConditionType" /><b>olConditionSentTo</b>. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Utilisez l’objet <b>ToOrFromRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou une exception condition que les destinataires (à et Cc texte zones) du message figurent dans la liste spécifiée de <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" />.</para>
+          <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>ToOrFromRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition.Enabled" /><b>a la valeur True</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Session">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.NameSpace Session { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.NameSpace Session" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._RuleConditions.Session" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Session As NameSpace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::NameSpace ^ Session { Microsoft::Office::Interop::Outlook::NameSpace ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61451)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61451)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+          <code>Dim objNamespace As Outlook.NameSpace = _
+    Application.GetNamespace("MAPI")</code>
+          <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
+          <code>Outlook.NameSpace objNamespace = 
+    Application.GetNamespace("MAPI");</code>
+          <code>Outlook.NameSpace objSession = Application.Session;</code>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subject">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.TextRuleCondition Subject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.TextRuleCondition Subject" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._RuleConditions.Subject" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Subject As TextRuleCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::TextRuleCondition ^ Subject { Microsoft::Office::Interop::Outlook::TextRuleCondition ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64337)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64337)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.TextRuleCondition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.TextRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.ConditionType" /><b>olConditionSubject</b>. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Utilisez l’objet <b>TextRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que l’objet du message contienne le texte spécifié texte.</para>
+          <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection retourne toujours un objet <b>TextRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Enabled" /><b>a la valeur True</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToMe">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.RuleCondition ToMe { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.RuleCondition ToMe" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._RuleConditions.ToMe" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ToMe As RuleCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::RuleCondition ^ ToMe { Microsoft::Office::Interop::Outlook::RuleCondition ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64305)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64305)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.RuleCondition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> de <b>à olConditionTo</b>. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Utilisez l’objet <b>RuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que votre nom figure dans la zone à.</para>
+          <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /><b>a la valeur True</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToOrCc">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.RuleCondition ToOrCc { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.RuleCondition ToOrCc" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._RuleConditions.ToOrCc" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ToOrCc As RuleCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::RuleCondition ^ ToOrCc { Microsoft::Office::Interop::Outlook::RuleCondition ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64306)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(64306)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.RuleCondition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> de <b>à olConditionToOrCc</b>. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Utilisez l’objet <b>RuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que votre nom figure dans le champ à ou Cc boîte.</para>
+          <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /><b>a la valeur True</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

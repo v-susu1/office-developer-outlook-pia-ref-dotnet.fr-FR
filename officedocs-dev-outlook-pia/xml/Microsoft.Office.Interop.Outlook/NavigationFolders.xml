@@ -1,0 +1,44 @@
+<Type Name="NavigationFolders" FullName="Microsoft.Office.Interop.Outlook.NavigationFolders">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="6fbb80fe1fc1d4e7cde3d72ff9f95a7c7cd9afa9" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20634917" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface NavigationFolders : Microsoft.Office.Interop.Outlook._NavigationFolders" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract NavigationFolders implements class Microsoft.Office.Interop.Outlook._NavigationFolders" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.NavigationFolders" />
+  <TypeSignature Language="VB.NET" Value="Public Interface NavigationFolders&#xA;Implements _NavigationFolders" />
+  <TypeSignature Language="C++ CLI" Value="public interface class NavigationFolders : Microsoft::Office::Interop::Outlook::_NavigationFolders" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Outlook._NavigationFolders</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.Outlook.NavigationFoldersClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000630F1-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contient un ensemble de <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolder" /> objets qui représentent les dossiers de navigation associés à un groupe de navigation.</summary>
+    <remarks>
+      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._NavigationFolders" />. </para>
+      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._NavigationGroup.NavigationFolders" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroup" /> object pour renvoyer un objet <b>NavigationFolders</b> .</para>
+      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._NavigationFolders.Add(Microsoft.Office.Interop.Outlook.MAPIFolder)" /> méthode pour créer un nouvel objet <b>NavigationFolder</b> basé sur un existant <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> objet et l’ajouter à la collection. Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._NavigationFolders.Item(System.Object)" /> propriété (<b>cette</b> en c#) pour renvoyer un objet <b>NavigationFolder</b> existant de la collection <b>NavigationFolders</b> . Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._NavigationFolders.Remove(Microsoft.Office.Interop.Outlook.NavigationFolder)" /> méthode à partir de la <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolders" /> collection du parent <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroup" /> objet.</para>
+      <para>Utiliser le <see cref="E:Microsoft.Office.Interop.Outlook.NavigationGroupsEvents_12_Event.NavigationFolderAdd" /> et <see cref="E:Microsoft.Office.Interop.Outlook.NavigationGroupsEvents_12_Event.NavigationFolderRemove" /> événements pour détecter lorsqu’un dossier de navigation est ajouté ou supprimé, respectivement, de l’objet <b>NavigationFolders</b> . Utiliser le <see cref="E:Microsoft.Office.Interop.Outlook.NavigationGroupsEvents_12_Event.SelectedChange" /> événement afin de détecter des modifications dans l’état de sélection de dossiers de navigation de l’objet <b>NavigationFolders</b> basés sur les dossiers de calendrier.</para>
+      <para>Notez que si vous supprimez un <b>dossier</b> à l’aide de <see cref="M:Microsoft.Office.Interop.Outlook.MAPIFolder.Delete" />, la suppression est automatiquement reflétée dans le volet de Navigation et dans la collection <b>NavigationFolders</b> , mais étant donné que la synchronisation entre les dossiers et les Volet de navigation qui se produit en mode asynchrone, l’opération peut prendre quelques millisecondes pour effectuer. </para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

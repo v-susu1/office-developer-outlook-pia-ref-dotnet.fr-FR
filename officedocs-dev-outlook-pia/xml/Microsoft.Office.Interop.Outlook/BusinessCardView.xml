@@ -1,0 +1,39 @@
+<Type Name="BusinessCardView" FullName="Microsoft.Office.Interop.Outlook.BusinessCardView">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="d53f85b46c01a4290c0f892e89c8f72bc9775905" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20635370" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface BusinessCardView : Microsoft.Office.Interop.Outlook._BusinessCardView" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract BusinessCardView implements class Microsoft.Office.Interop.Outlook._BusinessCardView" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.BusinessCardView" />
+  <TypeSignature Language="VB.NET" Value="Public Interface BusinessCardView&#xA;Implements _BusinessCardView" />
+  <TypeSignature Language="C++ CLI" Value="public interface class BusinessCardView : Microsoft::Office::Interop::Outlook::_BusinessCardView" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.Outlook._BusinessCardView</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.Outlook.BusinessCardViewClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000630A2-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Représente un affichage où apparaissent les données sous forme d'une série d'images de carte de visite électronique.</summary>
+    <remarks>
+      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._BusinessCardView" />.</para> Objet 
+      <para>la <b>BusinessCardView</b> , dérivé de le <see cref="T:Microsoft.Office.Interop.Outlook.View" /> d’objet, vous permet de créer des affichages personnalisables qui vous permettent de mieux trier, grouper et finalement afficher les éléments de contact dans Outlook comme une série de cartes de visite électroniques, chacun des qui affiche les informations de contact pour un élément de contact Outlook en fonction de la conception de carte de visite électronique associée à l’élément de contact.</para><para>Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._Views.Add(System.String,Microsoft.Office.Interop.Outlook.OlViewType,Microsoft.Office.Interop.Outlook.OlViewSaveOption)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Outlook.Views" /> collection pour ajouter un nouveau <b>BusinessCardView</b> à un <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> objet.</para><para>Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._BusinessCardView.Filter" /> propriété pour déterminer les éléments de contact Outlook à afficher dans l’affichage, le <see cref="P:Microsoft.Office.Interop.Outlook._BusinessCardView.CardSize" /> propriété pour spécifier la taille de chaque carte de visite électronique dans l’affichage et le <see cref="P:Microsoft.Office.Interop.Outlook._BusinessCardView.HeadingsFont" /> pour récupérer la <see cref="T:Microsoft.Office.Interop.Outlook.ViewFont" /> objet pour l’affichage. Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._BusinessCardView.LockUserChanges" /> propriété pour autoriser ou empêcher les modifications à l’interface utilisateur pour l’affichage.</para><para /></remarks>
+  </Docs>
+  <Members />
+</Type>

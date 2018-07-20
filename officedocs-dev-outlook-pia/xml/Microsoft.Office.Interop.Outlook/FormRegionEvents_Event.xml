@@ -1,0 +1,79 @@
+<Type Name="FormRegionEvents_Event" FullName="Microsoft.Office.Interop.Outlook.FormRegionEvents_Event">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="2eeb87b0ffb262f178880b4a11c84090bad2d0a8" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20634151" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface FormRegionEvents_Event" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FormRegionEvents_Event" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.FormRegionEvents_Event" />
+  <TypeSignature Language="VB.NET" Value="Public Interface FormRegionEvents_Event" />
+  <TypeSignature Language="C++ CLI" Value="public interface class FormRegionEvents_Event" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComEventInterface(typeof(Microsoft.Office.Interop.Outlook.FormRegionEvents), typeof(Microsoft.Office.Interop.Outlook.FormRegionEvents_EventProvider))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(16)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Il s’agit d’une interface .NET créée lors du traitement d’une coclasse COM requise par le code managé pour l’interopérabilité avec l’objet COM correspondant. Cette interface implémente tous les événements des interfaces antérieures ainsi que tous les nouveaux événements. Utilisez cette interface uniquement lorsque l’événement que vous souhaitez utiliser partage le même nom qu’une méthode de l’objet COM. Dans ce cas, vous devez effectuer une conversion de type (transtypage) vers cette interface pour vous connecter à l’événement, puis effectuer une conversion de type (transtypage) vers l’interface principale pour appeler la méthode. Vous pouvez également utiliser l’interface .NET dérivée de la coclasse COM pour accéder aux méthodes, aux propriétés et aux événements de l’objet COM.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.FormRegionEvents_CloseEventHandler Close;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.FormRegionEvents_CloseEventHandler Close" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.FormRegionEvents_Event.Close" />
+      <MemberSignature Language="VB.NET" Value="Event Close As FormRegionEvents_CloseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::FormRegionEvents_CloseEventHandler ^ Close;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.FormRegionEvents_CloseEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Représente la fermeture du cadre pour une zone de formulaire, cet événement se produit juste avant le <see cref="E:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Close" /> événement de l’inspecteur associé à l’élément Outlook.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Expanded">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.Outlook.FormRegionEvents_ExpandedEventHandler Expanded;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.Outlook.FormRegionEvents_ExpandedEventHandler Expanded" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.Outlook.FormRegionEvents_Event.Expanded" />
+      <MemberSignature Language="VB.NET" Value="Event Expanded As FormRegionEvents_ExpandedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::Outlook::FormRegionEvents_ExpandedEventHandler ^ Expanded;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.FormRegionEvents_ExpandedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Se produit lorsque la zone de formulaire est développée ou réduite.</summary>
+        <remarks>
+          <para>Cet événement ne peut pas être annulé.</para>
+          <para>Outlook charge toujours tout d’abord une zone de formulaire dans un état développé et définit <see cref="P:Microsoft.Office.Interop.Outlook._FormRegion.IsExpanded" /> sur <b>True</b>. Si l’état initial de la zone de formulaire doit être réduite, puis Outlook ferme immédiatement la zone de formulaire, déclenche l’événement <b>Expanded</b> avec la <paramref name="Expand" /> paramètre en cours <b>et affecte <b>IsExpanded</b> sur <b>False</b></b>. </para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

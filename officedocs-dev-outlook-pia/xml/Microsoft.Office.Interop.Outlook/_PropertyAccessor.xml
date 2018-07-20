@@ -1,0 +1,477 @@
+<Type Name="_PropertyAccessor" FullName="Microsoft.Office.Interop.Outlook._PropertyAccessor">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="78e2122c80a9c947755c0b2d0a28a1c207ecb94a" />
+    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="fr-FR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20633664" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface _PropertyAccessor" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _PropertyAccessor" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._PropertyAccessor" />
+  <TypeSignature Language="VB.NET" Value="Public Interface _PropertyAccessor" />
+  <TypeSignature Language="C++ CLI" Value="public interface class _PropertyAccessor" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0006302D-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4160)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Il s’agit d’une interface principale dans une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface principale uniquement lorsque la méthode que vous souhaitez utiliser partageant le même nom qu’un événement de l’objet COM ; Dans ce cas, effectuez un cast à cette interface pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Sinon, utilisez l’interface .NET est dérivé de la coclasse COM pour accéder aux méthodes, propriétés et événements de l’objet COM. Pour plus d’informations sur l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._PropertyAccessor.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::Application ^ Application { Microsoft::Office::Interop::Outlook::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61440)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61440)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> object qui représente l’application parente (Outlook) pour le <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> objet. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BinaryToString">
+      <MemberSignature Language="C#" Value="public string BinaryToString (object Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string BinaryToString([in]object Value) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.BinaryToString(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BinaryToString (Value As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ BinaryToString(System::Object ^ Value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64259)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Value">Représente le tableau d'octets à convertir.</param>
+        <summary>Convertit le tableau d’octets spécifié par <paramref name="Value" /> une <b>chaîne</b> (<b>string</b> en c#).</summary>
+        <returns>Hexadécimal <b>chaîne</b> (<b>string</b> en c#) qui représente la valeur convertie.</returns>
+        <remarks>
+          <para>Pour plus d’informations sur la conversion de type lors de l’utilisation de l’objet <b>PropertyAccessor</b> , voir <a href="http://go.microsoft.com/fwlink/?LinkId=87854">Meilleures pratiques pour l’obtention et définition des propriétés</a></para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Class">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.OlObjectClass Class { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Outlook.OlObjectClass Class" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._PropertyAccessor.Class" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Class As OlObjectClass" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::OlObjectClass Class { Microsoft::Office::Interop::Outlook::OlObjectClass get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61450)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61450)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie une constante dans la <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> énumération indiquant la classe de le <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> objet. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteProperties">
+      <MemberSignature Language="C#" Value="public object DeleteProperties (ref object SchemaNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object DeleteProperties([in]object&amp; SchemaNames) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.DeleteProperties(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeleteProperties (ByRef SchemaNames As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ DeleteProperties(System::Object ^ % SchemaNames);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64402)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SchemaNames" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="SchemaNames">Un tableau qui contient les noms des propriétés qui doivent être supprimés de l’objet parent de le <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> objet. Ces propriétés sont référencées par espace de noms. Pour plus d’informations, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87860">Référencer les propriétés par Namespace</a></param>
+        <summary>Supprime les propriétés spécifiées dans le tableau <paramref name="SchemaNames" />.</summary>
+        <returns>Un <b>objet</b> qui n’est <b>rien</b> (une référence null (Nothing dans Visual Basic) en c#) si l’opération a réussi, ou est un tableau d’objets <b>Err</b> si une erreur se produit. Si la valeur de retour est un tableau, la taille de ce tableau est la même que celle du tableau SchemaNames. Une valeur <b>Err</b> dans le tableau est mappée sur l’erreur résultant de la suppression de la propriété correspondante dans le paramètre SchemaNames.</returns>
+        <remarks>
+          <para>L’appelant doit avoir l’autorisation de supprimer des propriétés. La méthode <b>DeleteProperties permet de supprimer</b> supprime uniquement les propriétés personnalisées qui existent. Elle ne supprime pas des propriétés personnalisées ou des propriétés MAPI. Elle ne supprime pas les propriétés personnalisées de la <see cref="T:Microsoft.Office.Interop.Outlook.DocumentItem" /> objet.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteProperty">
+      <MemberSignature Language="C#" Value="public void DeleteProperty (string SchemaName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteProperty([in]string SchemaName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.DeleteProperty(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DeleteProperty (SchemaName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteProperty(System::String ^ SchemaName);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64401)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SchemaName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="SchemaName">Le nom de la propriété qui doit être supprimé de l’objet parent de le <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> objet. La propriété est référencée par l’espace de noms. Pour plus d’informations, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87860">Référencer les propriétés par Namespace</a></param>
+        <summary>Supprime la propriété spécifiée par <paramref name="SchemaName" />.</summary>
+        <remarks>
+          <para>L’appelant doit avoir l’autorisation de supprimer des propriétés. La méthode <b>DeleteProperty</b> supprime uniquement les propriétés personnalisées ; elle ne supprime pas des propriétés personnalisées ou des propriétés MAPI. Elle ne supprime pas les propriétés personnalisées de la <see cref="T:Microsoft.Office.Interop.Outlook.DocumentItem" /> objet.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProperties">
+      <MemberSignature Language="C#" Value="public object GetProperties (object SchemaNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetProperties([in]object SchemaNames) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.GetProperties(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProperties (SchemaNames As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetProperties(System::Object ^ SchemaNames);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64254)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SchemaNames" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="SchemaNames">Tableau qui contient les noms des propriétés dont les valeurs doivent être renvoyés. Ces propriétés sont référencées par espace de noms. Pour plus d’informations, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87860">Référencer les propriétés par Namespace</a></param>
+        <summary>Obtient les valeurs des propriétés spécifiées par le tableau unidimensionnel <paramref name="SchemaNames" />.</summary>
+        <returns>Un <b>objet</b> qui représente un tableau de valeurs des propriétés spécifiées dans le paramètre <paramref name="SchemaNames" />. Le nombre d’éléments dans le tableau renvoyé est égal au nombre d’éléments dans les <paramref name="SchemaNames" /> tableau.  Si une erreur se produit pour l’obtention d’une propriété spécifique, la valeur <b>Err</b> apparaîtront dans l’emplacement correspondant dans le tableau retourné.</returns>
+        <remarks>
+          <para>Le tableau renvoyé par <b>GetProperties</b> peut contenir des éléments de types différents, selon le type de la propriété demandée. Le type de l’élément de tableau renvoyé par <b>GetProperties</b> sera la même que le type de la propriété sous-jacente. Certains types de propriété brute comme <b>PT_OBJECT</b> non prises en charge et génèrent une erreur. Si vous avez besoin de conversion du type de propriété brute, par exemple, à partir d’une chaîne <b>PT_BINARY</b> ou <b>PT_SYSTIME</b> en heure locale, utilisez les méthodes d’assistance <see cref="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.BinaryToString(System.Object)" /> et <see cref="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.UTCToLocalTime(System.DateTime)" />. </para>
+          <para>Pour plus d’informations sur l’obtention de propriétés à l’aide de l’objet <b>PropertyAccessor</b> , voir <a href="http://go.microsoft.com/fwlink/?LinkId=87854">Meilleures pratiques pour l’obtention et définition des propriétés</a></para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProperty">
+      <MemberSignature Language="C#" Value="public object GetProperty (string SchemaName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetProperty([in]string SchemaName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.GetProperty(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProperty (SchemaName As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetProperty(System::String ^ SchemaName);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64251)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SchemaName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="SchemaName">Nom de la propriété dont la valeur doit être renvoyée. La propriété est référencée par l’espace de noms. Pour plus d’informations, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87860">Référencer les propriétés par Namespace</a></param>
+        <summary>Renvoie un <b>objet</b> qui représente la valeur de la propriété spécifiée par <paramref name="SchemaName" />.</summary>
+        <returns>Valeur <b>Object</b> qui représente la valeur de la propriété demandée, telle que spécifiée par <paramref name="SchemaName" />.</returns>
+        <remarks>
+          <para>Le type de la valeur de retour sera la même que le type de la propriété sous-jacente. Certains types de propriété brute comme <b>PT_OBJECT</b> non prises en charge et génèrent une erreur. Si vous avez besoin de conversion du type de propriété brute, par exemple, à partir d’une chaîne <b>PT_BINARY</b> ou <b>PT_SYSTIME</b> en heure locale, utilisez les méthodes d’assistance <see cref="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.BinaryToString(System.Object)" /> et <see cref="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.UTCToLocalTime(System.DateTime)" />. </para>
+          <para>Pour plus d’informations sur l’obtention de propriétés à l’aide de l’objet <b>PropertyAccessor</b> , voir <a href="http://go.microsoft.com/fwlink/?LinkId=87854">Meilleures pratiques pour l’obtention et définition des propriétés</a></para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalTimeToUTC">
+      <MemberSignature Language="C#" Value="public DateTime LocalTimeToUTC (DateTime Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.DateTime LocalTimeToUTC([in]valuetype System.DateTime Value) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.LocalTimeToUTC(System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LocalTimeToUTC (Value As DateTime) As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime LocalTimeToUTC(DateTime Value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64257)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="Value">La valeur DateTime à convertir à partir de l’heure locale en UTC.</param>
+        <summary>Convertit une valeur DateTime spécifiée par <paramref name="Value" /> à partir du format d’heure locale au format UTC (temps universel coordonné).</summary>
+        <returns>Une valeur DateTime représentant <paramref name="Value" /> après l’heure locale convertie au format UTC.</returns>
+        <remarks>
+          <para>Pour plus d’informations sur la conversion de type lors de l’utilisation de l’objet <b>PropertyAccessor</b> , voir <a href="http://go.microsoft.com/fwlink/?LinkId=87854">Meilleures pratiques pour l’obtention et définition des propriétés</a></para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._PropertyAccessor.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61441)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61441)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie l’objet parent de le <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> objet. En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Session">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Outlook.NameSpace Session { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Outlook.NameSpace Session" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Outlook._PropertyAccessor.Session" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Session As NameSpace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Outlook::NameSpace ^ Session { Microsoft::Office::Interop::Outlook::NameSpace ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(61451)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(61451)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active.  En lecture seule.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+          <code>Dim objNamespace As Outlook.NameSpace = _
+    Application.GetNamespace("MAPI")</code>
+          <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
+          <code>Outlook.NameSpace objNamespace = 
+    Application.GetNamespace("MAPI");</code>
+          <code>Outlook.NameSpace objSession = Application.Session;</code>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetProperties">
+      <MemberSignature Language="C#" Value="public object SetProperties (object SchemaNames, object Values);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object SetProperties([in]object SchemaNames, [in]object Values) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.SetProperties(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetProperties (SchemaNames As Object, Values As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ SetProperties(System::Object ^ SchemaNames, System::Object ^ Values);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64255)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SchemaNames" Type="System.Object" />
+        <Parameter Name="Values" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="SchemaNames">Un tableau de noms de propriétés dont les valeurs doivent être définies comme spécifié par le paramètre valeurs. Ces propriétés sont référencées par espace de noms. Pour plus d’informations, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87860">Référencer les propriétés par Namespace</a></param>
+        <param name="Values">Tableau de valeurs qui doivent être définies pour les propriétés spécifiées par le paramètre NomsSchémas.</param>
+        <summary>Définit les propriétés spécifiées par le tableau <paramref name="SchemaNames" /> les valeurs spécifiées par le tableau <paramref name="Values" />.</summary>
+        <returns>Un <b>objet</b> qui est <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) si l’opération a réussi. Si une erreur se produit avant que des propriétés sont définies, par exemple, le nombre d’éléments dans le tableau SchemaNames ne correspond pas à que dans le tableau de valeurs, et une valeur <b>Err</b> est renvoyée. S’il existe une erreur lors de la définition des propriétés, la valeur de retour est un tableau d’objets <b>Err</b> , et le nombre d’éléments dans ce tableau est la même que celle du tableau SchemaNames. Une valeur <b>Err</b> dans le tableau est mappée sur l’erreur résultant de la définition de la propriété correspondante dans le paramètre SchemaNames.</returns>
+        <remarks>
+          <para>Si la propriété n’existe pas et la <paramref name="SchemaNames" /> élément contient un spécificateur de propriété valide, puis <b>SetProperties</b> crée la propriété et lui attribue la valeur spécifiée par <paramref name="Values" />. Le type de la propriété sera le type de l’élément passé dans <paramref name="Values" />. Si la propriété existe, puis <b>SetProperties</b> attribue à la valeur spécifiée par la propriété <paramref name="Values" />.</para> Notez qu’une propriété personnalisée créée par l’utilisation de <b>PropertyAccessor</b> n’est pas pris en charge dans un affichage personnalisé 
+          <para>. Si vous souhaitez afficher une propriété personnalisée sur un élément, créer la propriété à l’aide de la <see cref="M:Microsoft.Office.Interop.Outlook.UserProperties.Add(System.String,Microsoft.Office.Interop.Outlook.OlUserPropertyType,System.Object,System.Object)" /> méthode.</para><para>Si l’objet parent de le <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> prend en charge explicite opération <b>Enregistrer</b> , puis les propriétés doivent être enregistré à l’objet avec un explicites <b>Enregistrer</b> appel de méthode. Si l’objet ne prend pas en charge explicite opération <b>Enregistrer</b> , puis les propriétés sont enregistrées dans l’objet lorsque la <b>méthode SetProperties</b> est appelée. </para><para>Prudent et vérifiez que toutes les exceptions sont gérées correctement. Conditions où le paramètre propriétés échoue inclure :</para><list type="bullet"><item><para>la propriété est en lecture seule, comme certains Outlook et MAPI de propriétés sont en lecture seule.</para></item><item><para>La propriété référencée par l’espace de noms spécifié est introuvable.</para></item><item><para>La propriété est spécifiée dans un format non valide et ne peut pas être analysée.</para></item><item><para>La propriété n’existe pas et ne peut pas être créée.</para></item><item><para>La propriété existe mais est transmise à une valeur de type incorrect.</para></item><item><para>Ne peut pas ouvrir la propriété, car le client est en mode hors connexion.</para></item><item><para>La propriété est créée à l’aide de la méthode <b>Add</b> de la <see cref="T:Microsoft.Office.Interop.Outlook.UserProperties" /> objet. Lorsque vous définissez la propriété pour la première fois, vous devez utiliser le <see cref="P:Microsoft.Office.Interop.Outlook.UserProperty.Value" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.UserProperty" /> objet, au lieu de la <b>méthode SetProperties</b> ou <see cref="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.SetProperty(System.String,System.Object)" /> méthode de l’objet <b>PropertyAccessor</b> .</para></item></list><para>Pour plus d’informations sur la définition de propriétés à l’aide de l’objet <b>PropertyAccessor</b> , voir <a href="http://go.microsoft.com/fwlink/?LinkId=87854">Meilleures pratiques pour l’obtention et définition des propriétés</a></para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetProperty">
+      <MemberSignature Language="C#" Value="public void SetProperty (string SchemaName, object Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetProperty([in]string SchemaName, [in]object Value) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.SetProperty(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetProperty (SchemaName As String, Value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetProperty(System::String ^ SchemaName, System::Object ^ Value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64252)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SchemaName" Type="System.String" />
+        <Parameter Name="Value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="SchemaName">Le nom d’une propriété dont la valeur doit être définie comme spécifié par <paramref name="Value" />. La propriété est référencée par l’espace de noms. Pour plus d’informations, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87860">Référencer les propriétés par Namespace</a></param>
+        <param name="Value">La valeur doit être définie pour la propriété spécifiée par <paramref name="SchemaName" />.</param>
+        <summary>Définit la propriété spécifiée par <paramref name="SchemaName" /> à la valeur spécifiée par <paramref name="Value" />.</summary>
+        <remarks>
+          <para>Si la propriété n’existe pas et la <paramref name="SchemaName" /> contient un spécificateur de propriété valide, puis <b>SetProperty</b> crée la propriété et affecte la valeur spécifiée par <paramref name="Value" />. Si la propriété n’existe pas et <paramref name="SchemaName" /> n’est valide, la valeur spécifiée par la <b>méthode SetProperty</b> attribue la propriété <paramref name="Value" />.</para> Notez qu’une propriété personnalisée créée par l’utilisation de <b>PropertyAccessor</b> n’est pas pris en charge dans un affichage personnalisé 
+          <para>. Si vous souhaitez afficher une propriété personnalisée sur un élément, créer la propriété à l’aide de la <see cref="M:Microsoft.Office.Interop.Outlook.UserProperties.Add(System.String,Microsoft.Office.Interop.Outlook.OlUserPropertyType,System.Object,System.Object)" /> méthode.</para><para>Si l’objet parent de <b>PropertyAccessor</b> prend en charge explicite opération <b>Enregistrer</b> , puis les propriétés doivent être enregistré à l’objet avec un explicites <b>Enregistrer</b> appel de méthode. Si l’objet ne prend pas en charge explicite opération <b>Enregistrer</b> , puis les propriétés sont enregistrées dans l’objet lorsque la <b>méthode SetProperties</b> est appelée. </para><para>Prudent et vérifiez que toutes les exceptions sont gérées correctement. Conditions où le paramètre propriétés échoue inclure :</para><list type="bullet"><item><para>la propriété est en lecture seule, comme certains Outlook et MAPI de propriétés sont en lecture seule.</para></item><item><para>La propriété référencée par l’espace de noms spécifié est introuvable.</para></item><item><para>La propriété est spécifiée dans un format non valide et ne peut pas être analysée.</para></item><item><para>La propriété n’existe pas et ne peut pas être créée.</para></item><item><para>La propriété existe mais est transmise à une valeur de type incorrect.</para></item><item><para>Ne peut pas ouvrir la propriété, car le client est en mode hors connexion.</para></item><item><para>La propriété est créée à l’aide de la méthode <b>Add</b> de la <see cref="T:Microsoft.Office.Interop.Outlook.UserProperties" /> objet. Lorsque vous définissez la propriété pour la première fois, vous devez utiliser le <see cref="P:Microsoft.Office.Interop.Outlook.UserProperty.Value" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.UserProperty" /> objet, au lieu de la <see cref="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.SetProperties(System.Object,System.Object)" /> ou la méthode <b>SetProperty</b> de l’objet <b>PropertyAccessor</b> .</para></item></list><para>Pour plus d’informations sur la définition de propriétés à l’aide de l’objet <b>PropertyAccessor</b> , voir <a href="http://go.microsoft.com/fwlink/?LinkId=87854">Meilleures pratiques pour l’obtention et définition des propriétés</a></para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StringToBinary">
+      <MemberSignature Language="C#" Value="public object StringToBinary (string Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object StringToBinary([in]string Value) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.StringToBinary(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function StringToBinary (Value As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ StringToBinary(System::String ^ Value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64258)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Value">Valeur hexadécimale qui doit être convertie en tableau d'octets.</param>
+        <summary>Convertit une chaîne spécifiée par <paramref name="Value" /> dans un tableau d’octets.</summary>
+        <returns>Valeur <b>Object</b> qui représente un tableau d’octets renvoyé à partir de la conversion.</returns>
+        <remarks>
+          <para>Pour plus d’informations sur la conversion de type lors de l’utilisation de l’objet <b>PropertyAccessor</b> , voir <a href="http://go.microsoft.com/fwlink/?LinkId=87854">Meilleures pratiques pour l’obtention et définition des propriétés</a></para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UTCToLocalTime">
+      <MemberSignature Language="C#" Value="public DateTime UTCToLocalTime (DateTime Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.DateTime UTCToLocalTime([in]valuetype System.DateTime Value) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.UTCToLocalTime(System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UTCToLocalTime (Value As DateTime) As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime UTCToLocalTime(DateTime Value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Outlook</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(64256)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="Value">La valeur DateTime à convertir à l’heure UTC en heure locale.</param>
+        <summary>Convertit la valeur DateTime spécifiée par <paramref name="Value" /> et exprimée en temps universel coordonné (UTC) en valeur d’heure locale.</summary>
+        <returns>Une valeur DateTime représentant <paramref name="Value" /> après UTC convertie en heure locale.</returns>
+        <remarks>
+          <para>Pour plus d’informations sur la conversion de type lors de l’utilisation du <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> , consultez les <a href="http://go.microsoft.com/fwlink/?LinkId=87854">Meilleures pratiques pour l’obtention et définition des propriétés</a></para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
