@@ -1,13 +1,5 @@
 <Type Name="ItemEvents_10_CloseEventHandler" FullName="Microsoft.Office.Interop.Outlook.ItemEvents_10_CloseEventHandler">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="631ca1cafd9e718a89bcd25b1ffea651d4fa0ccd" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634148" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public delegate void ItemEvents_10_CloseEventHandler(out bool Cancel);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bd49d2c94ec94e4542a45b9b46556f84cfd1e344" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901416" /></Metadata><TypeSignature Language="C#" Value="public delegate void ItemEvents_10_CloseEventHandler(out bool Cancel);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ItemEvents_10_CloseEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.ItemEvents_10_CloseEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ItemEvents_10_CloseEventHandler(ByRef Cancel As Boolean)" />
@@ -34,24 +26,8 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="Cancel">
-      <span data-ttu-id="e43be-101">
-        <b>False</b> lorsque l'événement se produit.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="e43be-101">
-          <b>False</b> when the event occurs.</span>
-      </span>
-      <span data-ttu-id="e43be-102">Si la procédure événementielle affecte à cet argument <b>la valeur True</b>, l’opération de fermeture n’est pas achevée et l’inspecteur reste ouvert.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="e43be-102">If the event procedure sets this argument to <b>True</b>, the close operation is not completed and the inspector is left open.</span>
-      </span>
-    </param>
-    <summary>
-      <span data-ttu-id="e43be-p102">Il s’agit d’un délégué pour un événement dans l’objet correspondant. Après avoir implémenté une méthode de rappel pour l’événement, utilisez ce délégué pour connecter la méthode de rappel à l’événement. S’il existe plusieurs versions de l’interface d’événement, ce délégué connecte la méthode de rappel pour l’événement dans la version spécifiée d’Outlook.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="e43be-p102">This is a delegate for an event in the corresponding object. After implementing a callback method for the event, use this delegate to connect the callback method to the event. If there are multiple versions of the event interface, this delegate connects the callback method for the event in the specified version of Outlook.</span>
-      </span>
-    </summary>
+    <param name="Cancel"><span data-ttu-id="25f63-101"><b>False</b>Heure où l’événement s’est produit.</span><span class="sxs-lookup"><span data-stu-id="25f63-101"><b>False</b> when the event occurs.</span></span> <span data-ttu-id="25f63-102">Si la procédure événementielle affecte à cet argument <b>la valeur True</b>, l’opération de fermeture n’est pas achevée et l’inspecteur reste ouvert.</span><span class="sxs-lookup"><span data-stu-id="25f63-102">If the event procedure sets this argument to <b>True</b>, the close operation is not completed and the inspector is left open.</span></span></param>
+    <summary><span data-ttu-id="25f63-p102">Il s’agit d’un délégué pour un événement dans l’objet correspondant. Après avoir implémenté une méthode de rappel pour l’événement, utilisez ce délégué pour connecter la méthode de rappel à l’événement. S’il existe plusieurs versions de l’interface d’événement, ce délégué connecte la méthode de rappel pour l’événement dans la version spécifiée d’Outlook.</span><span class="sxs-lookup"><span data-stu-id="25f63-p102">This is a delegate for an event in the corresponding object. After implementing a callback method for the event, use this delegate to connect the callback method to the event. If there are multiple versions of the event interface, this delegate connects the callback method for the event in the specified version of Outlook.</span></span></summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

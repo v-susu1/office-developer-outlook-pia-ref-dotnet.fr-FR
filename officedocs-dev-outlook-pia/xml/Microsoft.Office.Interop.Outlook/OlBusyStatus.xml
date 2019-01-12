@@ -1,13 +1,5 @@
 <Type Name="OlBusyStatus" FullName="Microsoft.Office.Interop.Outlook.OlBusyStatus">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ee2ddcdba1a69e7e2392df0e3b1dda0822c4b079" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20635465" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public enum OlBusyStatus" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5814a4a1af5f1841564f7b251a3168d833689217" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901150" /></Metadata><TypeSignature Language="C#" Value="public enum OlBusyStatus" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OlBusyStatus extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.OlBusyStatus" />
   <TypeSignature Language="VB.NET" Value="Public Enum OlBusyStatus" />
@@ -20,24 +12,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>
-      <span data-ttu-id="ea438-101">Indique la disponibilité d'un utilisateur.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="ea438-101">Indicates a user's availability.</span>
-      </span>
-    </summary>
-    <remarks>
-      <span data-ttu-id="ea438-102">
-        <para>Disponibilité de l’utilisateur est basée sur les rendez-vous planifiés.  Voir <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.BusyStatus" /> propriété.</para>
-        <para />
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="ea438-102">
-          <para>The user's availability is based on scheduled appointments.  See <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.BusyStatus" /> property.</para>
-          <para />
-        </span>
-      </span>
-    </remarks>
+    <summary><span data-ttu-id="c816a-101">Indique la disponibilité d'un utilisateur.</span><span class="sxs-lookup"><span data-stu-id="c816a-101">Indicates a user's availability.</span></span></summary>
+    <remarks><para><span data-ttu-id="c816a-102">Disponibilité de l’utilisateur est basée sur les rendez-vous planifiés.</span><span class="sxs-lookup"><span data-stu-id="c816a-102">The user's availability is based on scheduled appointments.</span></span>  <span data-ttu-id="c816a-103">Voir <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.BusyStatus" /> propriété.</span><span class="sxs-lookup"><span data-stu-id="c816a-103">See <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.BusyStatus" /> property.</span></span></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="olBusy">
@@ -56,12 +33,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ea438-103">L'utilisateur est occupé.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ea438-103">The user is busy.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="c816a-104">L'utilisateur est occupé.</span><span class="sxs-lookup"><span data-stu-id="c816a-104">The user is busy.</span></span></summary>
       </Docs>
     </Member>
     <Member MemberName="olFree">
@@ -80,12 +52,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ea438-104">L'utilisateur est disponible.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ea438-104">The user is available.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="c816a-105">L'utilisateur est disponible.</span><span class="sxs-lookup"><span data-stu-id="c816a-105">The user is available.</span></span></summary>
       </Docs>
     </Member>
     <Member MemberName="olOutOfOffice">
@@ -104,12 +71,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ea438-105">L'utilisateur est absent du bureau.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ea438-105">The user is out of office.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="c816a-106">L'utilisateur est absent du bureau.</span><span class="sxs-lookup"><span data-stu-id="c816a-106">The user is out of office.</span></span></summary>
       </Docs>
     </Member>
     <Member MemberName="olTentative">
@@ -128,12 +90,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ea438-106">L'utilisateur a un rendez-vous provisoire de prévu.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ea438-106">The user has a tentative appointment scheduled.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="c816a-107">L'utilisateur a un rendez-vous provisoire de prévu.</span><span class="sxs-lookup"><span data-stu-id="c816a-107">The user has a tentative appointment scheduled.</span></span></summary>
       </Docs>
     </Member>
     <Member MemberName="olWorkingElsewhere">
@@ -152,12 +109,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ea438-107">L’utilisateur travaille à un emplacement de bureau.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ea438-107">The user is working in a location away from the office.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="c816a-108">L’utilisateur travaille à un emplacement de bureau.</span><span class="sxs-lookup"><span data-stu-id="c816a-108">The user is working in a location away from the office.</span></span></summary>
       </Docs>
     </Member>
   </Members>

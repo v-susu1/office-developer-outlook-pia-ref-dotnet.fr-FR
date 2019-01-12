@@ -1,13 +1,5 @@
 <Type Name="Search" FullName="Microsoft.Office.Interop.Outlook.Search">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="95e75d0a084b225bee45b2e7972a363b981ca65d" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20635051" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Search" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="71b006a1225b8c88295fc1f2047326471943e9a9" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27900488" /></Metadata><TypeSignature Language="C#" Value="public interface Search" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Search" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.Search" />
   <TypeSignature Language="VB.NET" Value="Public Interface Search" />
@@ -26,28 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="5b5b6-101">Contient des informations sur les différentes recherches d’éléments Outlook effectuées.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="5b5b6-101">Contains information about individual searches performed against Outlook items.</span>
-      </span>
-    </summary>
-    <remarks>
-      <span data-ttu-id="5b5b6-102">
-        <para>L’objet <b>Search</b> contient des propriétés qui définissent le type de recherche et les paramètres de la recherche proprement dite.</para>
-        <para>Utiliser le <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> l’objet <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> méthode pour renvoyer un objet <b>Search</b> .</para>
-        <para>Utiliser le <see cref="E:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.AdvancedSearchComplete" /> événement pour déterminer si une recherche donnée est terminée.</para>
-        <para />
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="5b5b6-102">
-          <para>The <b>Search</b> object contains properties that define the type of search and the parameters of the search itself.</para>
-          <para>Use the <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> object's <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> method to return a <b>Search</b> object.</para>
-          <para>Use the <see cref="E:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.AdvancedSearchComplete" /> event to determine when a given search has completed.</para>
-          <para />
-        </span>
-      </span>
-    </remarks>
+    <summary><span data-ttu-id="82de5-101">Contient des informations sur les différentes recherches d’éléments Outlook effectuées.</span><span class="sxs-lookup"><span data-stu-id="82de5-101">Contains information about individual searches performed against Outlook items.</span></span></summary>
+    <remarks><para><span data-ttu-id="82de5-102">L'objet <b>Search</b> contient des propriétés définissant le type de recherche et les paramètres de celle-ci.</span><span class="sxs-lookup"><span data-stu-id="82de5-102">The <b>Search</b> object contains properties that define the type of search and the parameters of the search itself.</span></span></para>
+      <para><span data-ttu-id="82de5-103">Utiliser le <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> l’objet <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> méthode pour renvoyer un objet <b>Search</b> .</span><span class="sxs-lookup"><span data-stu-id="82de5-103">Use the <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> object's <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> method to return a <b>Search</b> object.</span></span></para>
+      <para><span data-ttu-id="82de5-104">Utiliser le <see cref="E:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.AdvancedSearchComplete" /> événement pour déterminer si une recherche donnée est terminée.</span><span class="sxs-lookup"><span data-stu-id="82de5-104">Use the <see cref="E:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.AdvancedSearchComplete" /> event to determine when a given search has completed.</span></span></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -73,16 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="5b5b6-103">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> object qui représente l’application Outlook de l’objet parent.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-103">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object that represents the parent Outlook application for the  object.</span>
-          </span>
-          <span data-ttu-id="5b5b6-104">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-104">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="82de5-105">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> object qui représente l’application Outlook de l’objet parent.</span><span class="sxs-lookup"><span data-stu-id="82de5-105">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object that represents the parent Outlook application for the  object.</span></span> <span data-ttu-id="82de5-106">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="82de5-106">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -110,16 +76,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="5b5b6-105">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constante indiquant la classe de l’objet.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-105">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constant indicating the object's class.</span>
-          </span>
-          <span data-ttu-id="5b5b6-106">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-106">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="82de5-107">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constante indiquant la classe de l’objet.</span><span class="sxs-lookup"><span data-stu-id="82de5-107">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constant indicating the object's class.</span></span> <span data-ttu-id="82de5-108">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="82de5-108">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -147,43 +104,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="5b5b6-107">Renvoie une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente l’instruction DASL utilisée pour limiter la recherche à un sous-ensemble de données spécifié.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-107">Returns a <b>String</b> (<b>string</b> in C#) value that represents the DASL statement used to restrict the search to a specified subset of data.</span>
-          </span>
-          <span data-ttu-id="5b5b6-108">Lecture seule</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-108">Read-only</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="82de5-109">Renvoie une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente l’instruction DASL utilisée pour limiter la recherche à un sous-ensemble de données spécifié.</span><span class="sxs-lookup"><span data-stu-id="82de5-109">Returns a <b>String</b> (<b>string</b> in C#) value that represents the DASL statement used to restrict the search to a specified subset of data.</span></span>  <span data-ttu-id="82de5-110">Lecture seule</span><span class="sxs-lookup"><span data-stu-id="82de5-110">Read-only</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="5b5b6-109">
-            <para>Cette propriété est définie comme le <paramref name="Filter" /> argument dans la <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> l’objet <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> méthode. </para>
-            <para>Lors de la recherche des champs de <b>texte</b> , vous pouvez utiliser une apostrophe (') ou entre guillemets (« ») pour délimiter les valeurs qui font partie du filtre. Par exemple, toutes les lignes suivantes fonctionnent correctement lorsque le champ est de type <b>chaîne </b>(<b>string</b> en c#) :</para>
-            <code>sFilter = "[CompanyName] = 'Microsoft'"</code>
-            <code>sFilter = "[CompanyName] = 'Microsoft'";</code>
-            <code>sFilter = "[CompanyName] = ""Microsoft"""</code>
-            <code>sFilter = "[CompanyName] = ""Microsoft""";</code>
-            <code>sFilter = "[CompanyName] = " &amp;amp; Chr(34) &amp;amp; "Microsoft" &amp;amp; Chr(34)</code>
-            <code>sFilter = "[CompanyName] = " &amp;amp; Chr(34) &amp;amp; "Microsoft" &amp;amp; Chr(34);</code>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-109">
-              <para>This property is set as the <paramref name="Filter" /> argument in the <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object's <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" />  method. </para>
-              <para>When searching <b>Text</b> fields, you can use either an apostrophe (') or double quotation marks ("") to delimit the values that are part of the filter. For example, all of the following lines function correctly when the field is of type <b>String </b>(<b>string</b> in C#): </para>
-              <code>sFilter = "[CompanyName] = 'Microsoft'"</code>
-              <code>sFilter = "[CompanyName] = 'Microsoft'";</code>
-              <code>sFilter = "[CompanyName] = ""Microsoft"""</code>
-              <code>sFilter = "[CompanyName] = ""Microsoft""";</code>
-              <code>sFilter = "[CompanyName] = " &amp;amp; Chr(34) &amp;amp; "Microsoft" &amp;amp; Chr(34)</code>
-              <code>sFilter = "[CompanyName] = " &amp;amp; Chr(34) &amp;amp; "Microsoft" &amp;amp; Chr(34);</code>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="82de5-111">Cette propriété est définie comme le <paramref name="Filter" /> argument dans la <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> l’objet <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> méthode.</span><span class="sxs-lookup"><span data-stu-id="82de5-111">This property is set as the <paramref name="Filter" /> argument in the <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object's <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" />  method.</span></span> </para>
+          <para><span data-ttu-id="82de5-112">Lors de la recherche des champs de <b>texte</b> , vous pouvez utiliser une apostrophe (') ou entre guillemets (« ») pour délimiter les valeurs qui font partie du filtre.</span><span class="sxs-lookup"><span data-stu-id="82de5-112">When searching <b>Text</b> fields, you can use either an apostrophe (') or double quotation marks ("") to delimit the values that are part of the filter.</span></span> <span data-ttu-id="82de5-113">Par exemple, toutes les lignes suivantes fonctionnent correctement lorsque le champ est de taper <b>chaîne </b>(<b>string</b> en c#)</span><span class="sxs-lookup"><span data-stu-id="82de5-113">For example, all of the following lines function correctly when the field is of type <b>String </b>(<b>string</b> in C#):</span></span> </para>
+          <code>sFilter = "[CompanyName] = 'Microsoft'"</code>
+          <code>sFilter = "[CompanyName] = 'Microsoft'";</code>
+          <code>sFilter = "[CompanyName] = ""Microsoft"""</code>
+          <code>sFilter = "[CompanyName] = ""Microsoft""";</code>
+          <code>sFilter = "[CompanyName] = " &amp;amp; Chr(34) &amp;amp; "Microsoft" &amp;amp; Chr(34)</code>
+          <code>sFilter = "[CompanyName] = " &amp;amp; Chr(34) &amp;amp; "Microsoft" &amp;amp; Chr(34);</code>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTable">
@@ -207,38 +138,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="5b5b6-110">Obtient un <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> objet qui contient des éléments filtrés par le <paramref name="Filter" /> paramètre dans une <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> appel de méthode.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-110">Obtains a <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> object that contains items filtered by the <paramref name="Filter" /> parameter in a preceding <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> method call.</span>
-          </span>
-        </summary>
-        <returns>
-          <span data-ttu-id="5b5b6-111">Un <b>tableau</b> qui contient des éléments qui répondent aux critères spécifiés par le <paramref name="Filter" /> paramètre dans un appel de méthode <b>Application.AdvancedSearch</b> précédent.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-111">A <b>Table</b> that contains items that meet the criteria specified by the <paramref name="Filter" /> parameter in a preceding <b>Application.AdvancedSearch</b> method call.</span>
-          </span>
-        </returns>
-        <remarks>
-          <span data-ttu-id="5b5b6-112">
-            <para>Contrairement à <see cref="M:Microsoft.Office.Interop.Outlook.MAPIFolder.GetTable(System.Object,System.Object)" />, <b>Search.GetTable</b> n’accepte pas un <paramref name="Filter" /> paramètre. Le filtre du <b>tableau</b> est déterminé par <see cref="P:Microsoft.Office.Interop.Outlook.Search.Filter" />. Étant donné que <b>Search.Filter</b> est une propriété en lecture seule, le <paramref name="Filter" /> paramètre pour la méthode <b>Application.AdvancedSearch</b> établit le filtre de l’objet <b>Table</b> renvoyé par <b>Search.GetTable</b>.</para>
-            <para>La <paramref name="Filter" /> paramètre fourni à Application.AdvancedSearch doit être une requête DASL. Le filtre pour <b>AdvancedSearch</b> n’acceptera pas une requête JET. N’ajoutez pas le préfixe une requête DASL pour <b>AdvancedSearch</b> « @SQL = ». Si vous ajoutez le « @SQL = » préfixe, votre requête génère une erreur. Pour plus d’informations sur les filtres, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Filtrage des éléments</a></para>
-            <para>
-              <b>Search.GetTable</b> renvoie un objet <b>Table</b> avec la colonne par défaut pour le type de dossier du <b>dossier</b>parent. Pour modifier l’ensemble de colonnes par défaut, utilisez la <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Add(System.String)" />, <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Remove(System.Object)" />, ou <see cref="M:Microsoft.Office.Interop.Outlook._Columns.RemoveAll" /> méthodes de le <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> objet de la collection.  Pour plus d’informations sur les jeux de colonnes par défaut, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87925">Propriétés par défaut affichées dans un objet Table</a></para>
-            <para>Contrairement à <b>Folder.GetTable</b>, vous ne pouvez pas utiliser <see cref="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" /> pour appliquer d’autres filtres à un <b>tableau</b> qui est basé sur le <b> Recherche</b> objet. Spécifiez un nouveau filtre dans <b>Application.AdvancedSearch</b> pour appliquer un filtre à nouveau.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-112">
-              <para>Unlike <see cref="M:Microsoft.Office.Interop.Outlook.MAPIFolder.GetTable(System.Object,System.Object)" />, <b>Search.GetTable</b> does not accept a <paramref name="Filter" /> parameter. The filter for the <b>Table</b> is determined by <see cref="P:Microsoft.Office.Interop.Outlook.Search.Filter" />. Since <b>Search.Filter</b> is a read-only property, the <paramref name="Filter" /> parameter for the <b>Application.AdvancedSearch</b> method establishes the filter for the <b>Table</b> object returned by <b>Search.GetTable</b>.</para>
-              <para>The <paramref name="Filter" /> parameter supplied to Application.AdvancedSearch must be a DASL query. The filter for <b>AdvancedSearch</b> will not accept a JET query. Do not prefix a DASL query for <b>AdvancedSearch</b> with “@SQL=”. If you add the “@SQL=” prefix, your query will raise an error. For more information on filters, see <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Filtering Items</a></para>
-              <para>
-                <b>Search.GetTable</b> returns a <b>Table</b> with the default column set for the folder type of the parent <b>Folder</b>. To modify the default column set, use the <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Add(System.String)" />, <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Remove(System.Object)" />, or <see cref="M:Microsoft.Office.Interop.Outlook._Columns.RemoveAll" /> methods of the <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> collection object.  For more information on default column sets, see <a href="http://go.microsoft.com/fwlink/?LinkId=87925">Default Properties Displayed in a Table Object</a></para>
-              <para>Unlike <b>Folder.GetTable</b>, you cannot use <see cref="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" /> to apply subsequent filters to a <b>Table</b> that is based on the <b>Search</b> object. Specify a new filter in <b>Application.AdvancedSearch</b> to re-apply a filter.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="82de5-114">Obtient un <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> objet qui contient des éléments filtrés par le <paramref name="Filter" /> paramètre dans une <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> appel de méthode.</span><span class="sxs-lookup"><span data-stu-id="82de5-114">Obtains a <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> object that contains items filtered by the <paramref name="Filter" /> parameter in a preceding <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> method call.</span></span></summary>
+        <returns><span data-ttu-id="82de5-115">Un <b>tableau</b> qui contient des éléments qui répondent aux critères spécifiés par le <paramref name="Filter" /> paramètre dans un appel de méthode <b>Application.AdvancedSearch</b> précédent.</span><span class="sxs-lookup"><span data-stu-id="82de5-115">A <b>Table</b> that contains items that meet the criteria specified by the <paramref name="Filter" /> parameter in a preceding <b>Application.AdvancedSearch</b> method call.</span></span></returns>
+        <remarks><para><span data-ttu-id="82de5-116">Contrairement à <see cref="M:Microsoft.Office.Interop.Outlook.MAPIFolder.GetTable(System.Object,System.Object)" />, <b>Search.GetTable</b> n’accepte pas un <paramref name="Filter" /> paramètre.</span><span class="sxs-lookup"><span data-stu-id="82de5-116">Unlike <see cref="M:Microsoft.Office.Interop.Outlook.MAPIFolder.GetTable(System.Object,System.Object)" />, <b>Search.GetTable</b> does not accept a <paramref name="Filter" /> parameter.</span></span> <span data-ttu-id="82de5-117">Le filtre du <b>tableau</b> est déterminé par <see cref="P:Microsoft.Office.Interop.Outlook.Search.Filter" />.</span><span class="sxs-lookup"><span data-stu-id="82de5-117">The filter for the <b>Table</b> is determined by <see cref="P:Microsoft.Office.Interop.Outlook.Search.Filter" />.</span></span> <span data-ttu-id="82de5-118">Étant donné que <b>Search.Filter</b> est une propriété en lecture seule, le <paramref name="Filter" /> paramètre pour la méthode <b>Application.AdvancedSearch</b> établit le filtre de l’objet <b>Table</b> renvoyé par <b>Search.GetTable</b>.</span><span class="sxs-lookup"><span data-stu-id="82de5-118">Since <b>Search.Filter</b> is a read-only property, the <paramref name="Filter" /> parameter for the <b>Application.AdvancedSearch</b> method establishes the filter for the <b>Table</b> object returned by <b>Search.GetTable</b>.</span></span></para>
+          <para><span data-ttu-id="82de5-119">Le <paramref name="Filter" /> paramètre fourni à Application.AdvancedSearch doit être une requête DASL.</span><span class="sxs-lookup"><span data-stu-id="82de5-119">The <paramref name="Filter" /> parameter supplied to Application.AdvancedSearch must be a DASL query.</span></span> <span data-ttu-id="82de5-120">Le filtre pour <b>AdvancedSearch</b> n’acceptera pas une requête JET.</span><span class="sxs-lookup"><span data-stu-id="82de5-120">The filter for <b>AdvancedSearch</b> will not accept a JET query.</span></span> <span data-ttu-id="82de5-121">N’ajoutez pas le préfixe une requête DASL pour <b>AdvancedSearch</b> « @SQL = ».</span><span class="sxs-lookup"><span data-stu-id="82de5-121">Do not prefix a DASL query for <b>AdvancedSearch</b> with “@SQL=”.</span></span> <span data-ttu-id="82de5-122">Si vous ajoutez le « @SQL = » préfixe, votre requête génère une erreur.</span><span class="sxs-lookup"><span data-stu-id="82de5-122">If you add the “@SQL=” prefix, your query will raise an error.</span></span> <span data-ttu-id="82de5-123">Pour plus d’informations sur les filtres, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Filtrage des éléments</a></span><span class="sxs-lookup"><span data-stu-id="82de5-123">For more information on filters, see <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Filtering Items</a></span></span></para>
+          <para><span data-ttu-id="82de5-124">
+            <b>Search.GetTable</b> renvoie un <b>tableau</b> avec la colonne par défaut pour le type de dossier du <b>dossier</b>parent.</span><span class="sxs-lookup"><span data-stu-id="82de5-124">
+            <b>Search.GetTable</b> returns a <b>Table</b> with the default column set for the folder type of the parent <b>Folder</b>.</span></span> <span data-ttu-id="82de5-125">Pour modifier l’ensemble de colonnes par défaut, utilisez la <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Add(System.String)" />, <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Remove(System.Object)" />, ou <see cref="M:Microsoft.Office.Interop.Outlook._Columns.RemoveAll" /> méthodes de le <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> objet de la collection.</span><span class="sxs-lookup"><span data-stu-id="82de5-125">To modify the default column set, use the <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Add(System.String)" />, <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Remove(System.Object)" />, or <see cref="M:Microsoft.Office.Interop.Outlook._Columns.RemoveAll" /> methods of the <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> collection object.</span></span>  <span data-ttu-id="82de5-126">Pour plus d’informations sur les jeux de colonnes par défaut, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87925">Propriétés par défaut affichées dans un objet Table</a></span><span class="sxs-lookup"><span data-stu-id="82de5-126">For more information on default column sets, see <a href="http://go.microsoft.com/fwlink/?LinkId=87925">Default Properties Displayed in a Table Object</a></span></span></para>
+          <para><span data-ttu-id="82de5-127">Contrairement à <b>Folder.GetTable</b>, vous ne pouvez pas utiliser <see cref="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" /> pour appliquer d’autres filtres à un <b>tableau</b> qui repose sur l’objet <b>Search</b> .</span><span class="sxs-lookup"><span data-stu-id="82de5-127">Unlike <b>Folder.GetTable</b>, you cannot use <see cref="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" /> to apply subsequent filters to a <b>Table</b> that is based on the <b>Search</b> object.</span></span> <span data-ttu-id="82de5-128">Spécifiez un nouveau filtre dans <b>Application.AdvancedSearch</b> pour réappliquer un filtre.</span><span class="sxs-lookup"><span data-stu-id="82de5-128">Specify a new filter in <b>Application.AdvancedSearch</b> to re-apply a filter.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSynchronous">
@@ -264,29 +172,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="5b5b6-113">Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) indiquant si la recherche est synchrone.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-113">Returns a <b>Boolean</b> (<b>bool</b> in C#) indicating whether the search is synchronous.</span>
-          </span>
-          <span data-ttu-id="5b5b6-114">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-114">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="82de5-129">Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) indiquant si la recherche est synchrone.</span><span class="sxs-lookup"><span data-stu-id="82de5-129">Returns a <b>Boolean</b> (<b>bool</b> in C#) indicating whether the search is synchronous.</span></span> <span data-ttu-id="82de5-130">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="82de5-130">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="5b5b6-115">
-            <para>Une recherche peut être synchrones ou asynchrones. Si la recherche est synchrone, l’exécution du code s’interrompt jusqu'à ce que la recherche est terminée. Inversement, si la recherche est asynchrone, l’exécution du code continue même si la recherche n’est pas terminée. Dans ce cas, utilisez la <see cref="T:Microsoft.Office.Interop.Outlook.Search" /> l’objet <see cref="M:Microsoft.Office.Interop.Outlook.Search.Stop" /> méthode pour interrompre la recherche.  Pour obtenir des résultats pertinents à partir d’une recherche asynchrone, utilisez la <see cref="E:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.AdvancedSearchComplete" /> événement pour vous avertir lors de la recherche est terminée.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-115">
-              <para>A search can be synchronous or asynchronous. If the search is synchronous, code execution will pause until the search has completed. Conversely, if the search is asynchronous, code execution will continue even though the search has not completed. In this case, use the <see cref="T:Microsoft.Office.Interop.Outlook.Search" />  object's <see cref="M:Microsoft.Office.Interop.Outlook.Search.Stop" /> method to halt the search.  In order to get meaningful results from an asynchronous search, use the <see cref="E:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.AdvancedSearchComplete" />  event to notify you when the search has finished.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="82de5-131">Une recherche peut être synchrones ou asynchrones.</span><span class="sxs-lookup"><span data-stu-id="82de5-131">A search can be synchronous or asynchronous.</span></span> <span data-ttu-id="82de5-132">Si la recherche est synchrone, l’exécution du code s’interrompt jusqu'à ce que la recherche est terminée.</span><span class="sxs-lookup"><span data-stu-id="82de5-132">If the search is synchronous, code execution will pause until the search has completed.</span></span> <span data-ttu-id="82de5-133">Inversement, si la recherche est asynchrone, l’exécution du code continue même si la recherche n’est pas terminée.</span><span class="sxs-lookup"><span data-stu-id="82de5-133">Conversely, if the search is asynchronous, code execution will continue even though the search has not completed.</span></span> <span data-ttu-id="82de5-134">Dans ce cas, utilisez la <see cref="T:Microsoft.Office.Interop.Outlook.Search" /> l’objet <see cref="M:Microsoft.Office.Interop.Outlook.Search.Stop" /> méthode pour interrompre la recherche.</span><span class="sxs-lookup"><span data-stu-id="82de5-134">In this case, use the <see cref="T:Microsoft.Office.Interop.Outlook.Search" />  object's <see cref="M:Microsoft.Office.Interop.Outlook.Search.Stop" /> method to halt the search.</span></span>  <span data-ttu-id="82de5-135">Pour obtenir des résultats pertinents à partir d’une recherche asynchrone, utilisez la <see cref="E:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.AdvancedSearchComplete" /> événement pour vous avertir lors de la recherche est terminée.</span><span class="sxs-lookup"><span data-stu-id="82de5-135">In order to get meaningful results from an asynchronous search, use the <see cref="E:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.AdvancedSearchComplete" />  event to notify you when the search has finished.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -312,12 +201,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="5b5b6-p105">Renvoie la valeur de type <b>Object</b> parent de l’objet spécifié. En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-p105">Returns the parent <b>Object</b> of the specified object. Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="82de5-p112">Renvoie la valeur de type <b>Object</b> parent de l’objet spécifié. En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="82de5-p112">Returns the parent <b>Object</b> of the specified object. Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -345,16 +229,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Results</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="5b5b6-118">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Results" /> collection qui spécifie les résultats de la recherche.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-118">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.Results" /> collection that specifies the results of the search.</span>
-          </span>
-          <span data-ttu-id="5b5b6-119">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-119">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="82de5-138">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Results" /> collection qui spécifie les résultats de la recherche.</span><span class="sxs-lookup"><span data-stu-id="82de5-138">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.Results" /> collection that specifies the results of the search.</span></span> <span data-ttu-id="82de5-139">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="82de5-139">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -382,31 +257,11 @@
         <Parameter Name="Name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <span data-ttu-id="5b5b6-120">Une chaîne qui représente le nom du Dossier de recherche.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-120">A string that represents the Search Folder name.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="5b5b6-121">Enregistre les résultats de la recherche dans un Dossier de recherche.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-121">Saves the search results to a Search Folder.</span>
-          </span>
-        </summary>
+        <param name="Name"><span data-ttu-id="82de5-140">Une chaîne qui représente le nom du Dossier de recherche.</span><span class="sxs-lookup"><span data-stu-id="82de5-140">A string that represents the Search Folder name.</span></span></param>
+        <summary><span data-ttu-id="82de5-141">Enregistre les résultats de la recherche dans un Dossier de recherche.</span><span class="sxs-lookup"><span data-stu-id="82de5-141">Saves the search results to a Search Folder.</span></span></summary>
         <returns>To be added.</returns>
-        <remarks>
-          <span data-ttu-id="5b5b6-122">
-            <para>La méthode <b>Save</b> affiche une erreur si un dossier de recherche portant le même nom existe déjà.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-122">
-              <para>The <b>Save</b> method displays an error if a Search Folder with the same name already exists.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="82de5-142">La méthode <b>Save</b> affiche une erreur si un Dossier de recherche portant le même nom existe déjà.</span><span class="sxs-lookup"><span data-stu-id="82de5-142">The <b>Save</b> method displays an error if a Search Folder with the same name already exists.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Scope">
@@ -432,29 +287,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="5b5b6-123">Renvoie une <b>chaîne</b> (<b>string</b> en c#) qui spécifie l’étendue de la recherche spécifiée.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-123">Returns a <b>String</b> (<b>string</b> in C#) that specifies the scope of the specified search.</span>
-          </span>
-          <span data-ttu-id="5b5b6-124">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-124">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="82de5-143">Renvoie une <b>chaîne</b> (<b>string</b> en c#) qui spécifie l’étendue de la recherche spécifiée.</span><span class="sxs-lookup"><span data-stu-id="82de5-143">Returns a <b>String</b> (<b>string</b> in C#) that specifies the scope of the specified search.</span></span> <span data-ttu-id="82de5-144">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="82de5-144">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="5b5b6-125">
-            <para>L’étendue de la recherche est défini lors de la recherche est lancée. Pour plus d’informations, voir la <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> méthode.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-125">
-              <para>The scope of the search is defined when the search is initiated. For more information, see the <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> method.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="82de5-145">L’étendue de la recherche est défini lors de la recherche est lancée.</span><span class="sxs-lookup"><span data-stu-id="82de5-145">The scope of the search is defined when the search is initiated.</span></span> <span data-ttu-id="82de5-146">Pour plus d’informations, voir la <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> méthode.</span><span class="sxs-lookup"><span data-stu-id="82de5-146">For more information, see the <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> method.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SearchSubFolders">
@@ -480,29 +316,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="5b5b6-126">Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) indiquant si l’étendue de la recherche spécifiée inclut les sous-dossiers des dossiers parcourus.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-126">Returns a <b>Boolean</b> (<b>bool</b> in C#) indicating whether the scope of the specified search included the subfolders of any folders searched.</span>
-          </span>
-          <span data-ttu-id="5b5b6-127">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-127">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="82de5-147">Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) indiquant si l’étendue de la recherche spécifiée inclut les sous-dossiers des dossiers parcourus.</span><span class="sxs-lookup"><span data-stu-id="82de5-147">Returns a <b>Boolean</b> (<b>bool</b> in C#) indicating whether the scope of the specified search included the subfolders of any folders searched.</span></span> <span data-ttu-id="82de5-148">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="82de5-148">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="5b5b6-128">
-            <para>Cette propriété est déterminée par le <paramref name="SearchSubfolders" /> argument de la <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> méthode et est spécifiée lors de la recherche est lancée. Si <b>la valeur True</b>, la <b>recherche</b> de l’objet parcourt tous les sous-dossiers dans le chemin d’accès spécifié.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-128">
-              <para>This property is determined by the <paramref name="SearchSubfolders" /> argument of the <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> method and is specified when the search is initiated. If <b>True</b>, the <b>Search</b> object searches through any subfolders in the specified filter path.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="82de5-149">Cette propriété est déterminée par le <paramref name="SearchSubfolders" /> argument de la <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> méthode et est spécifiée lors de la recherche est lancée.</span><span class="sxs-lookup"><span data-stu-id="82de5-149">This property is determined by the <paramref name="SearchSubfolders" /> argument of the <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> method and is specified when the search is initiated.</span></span> <span data-ttu-id="82de5-150">Si <b>la valeur True</b>, la <b>recherche</b> de l’objet parcourt tous les sous-dossiers dans le chemin d’accès spécifié.</span><span class="sxs-lookup"><span data-stu-id="82de5-150">If <b>True</b>, the <b>Search</b> object searches through any subfolders in the specified filter path.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -528,41 +345,16 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="5b5b6-129">Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-129">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  object for the current session.</span>
-          </span>
-          <span data-ttu-id="5b5b6-130">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-130">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="82de5-151">Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active.</span><span class="sxs-lookup"><span data-stu-id="82de5-151">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  object for the current session.</span></span> <span data-ttu-id="82de5-152">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="82de5-152">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="5b5b6-131">
-            <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
-            <code>Dim objNamespace As Outlook.NameSpace = _
+        <remarks><para><span data-ttu-id="82de5-153">La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active.</span><span class="sxs-lookup"><span data-stu-id="82de5-153">The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session.</span></span> <span data-ttu-id="82de5-154">Les deux membres ont la même fonction.</span><span class="sxs-lookup"><span data-stu-id="82de5-154">Both members serve the same purpose.</span></span> <span data-ttu-id="82de5-155">Par exemple, les paires d’instructions suivantes effectuent la même fonction :</span><span class="sxs-lookup"><span data-stu-id="82de5-155">For example, the following pairs of statements perform the same function:</span></span></para>
+          <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
-            <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
-            <code>Outlook.NameSpace objNamespace = 
+          <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
+          <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
-            <code>Outlook.NameSpace objSession = Application.Session;</code>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-131">
-              <para>The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session. Both members serve the same purpose. For example, the following pairs of statements perform the same function:</para>
-              <code>Dim objNamespace As Outlook.NameSpace = _
-    Application.GetNamespace("MAPI")</code>
-              <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
-              <code>Outlook.NameSpace objNamespace = 
-    Application.GetNamespace("MAPI");</code>
-              <code>Outlook.NameSpace objSession = Application.Session;</code>
-              <para />
-            </span>
-          </span>
-        </remarks>
+          <code>Outlook.NameSpace objSession = Application.Session;</code>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Stop">
@@ -586,12 +378,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="5b5b6-132">Met immédiatement fin à la recherche actuellement en cours.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-132">Immediately ends the search that is being performed currently.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="82de5-156">Met immédiatement fin à la recherche actuellement en cours.</span><span class="sxs-lookup"><span data-stu-id="82de5-156">Immediately ends the search that is being performed currently.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -618,33 +405,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="5b5b6-133">Renvoie une <b>chaîne</b> (<b>string</b> en c#) spécifiant le nom de la recherche en cours.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-133">Returns a <b>String</b> (<b>string</b> in C#) specifying the name of the current search.</span>
-          </span>
-          <span data-ttu-id="5b5b6-134">La propriété <b>Tag</b> est utilisée pour identifier une recherche spécifique.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-134">The <b>Tag</b> property is used to identify a specific search.</span>
-          </span>
-          <span data-ttu-id="5b5b6-135">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-135">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="82de5-157">Renvoie une <b>chaîne</b> (<b>string</b> en c#) spécifiant le nom de la recherche en cours.</span><span class="sxs-lookup"><span data-stu-id="82de5-157">Returns a <b>String</b> (<b>string</b> in C#) specifying the name of the current search.</span></span> <span data-ttu-id="82de5-158">La propriété <b>Tag</b> est utilisée pour identifier une recherche spécifique.</span><span class="sxs-lookup"><span data-stu-id="82de5-158">The <b>Tag</b> property is used to identify a specific search.</span></span> <span data-ttu-id="82de5-159">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="82de5-159">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="5b5b6-136">
-            <para>La propriété <b>Tag</b> est définie à l’aide de la <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> méthode lors de la <see cref="T:Microsoft.Office.Interop.Outlook.Search" /> objet est créé.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="5b5b6-136">
-              <para>The <b>Tag</b> property is set by using the <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> method when the <see cref="T:Microsoft.Office.Interop.Outlook.Search" /> object is created.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="82de5-160">La propriété <b>Tag</b> est définie à l’aide de la <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> méthode lors de la <see cref="T:Microsoft.Office.Interop.Outlook.Search" /> objet est créé.</span><span class="sxs-lookup"><span data-stu-id="82de5-160">The <b>Tag</b> property is set by using the <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> method when the <see cref="T:Microsoft.Office.Interop.Outlook.Search" /> object is created.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

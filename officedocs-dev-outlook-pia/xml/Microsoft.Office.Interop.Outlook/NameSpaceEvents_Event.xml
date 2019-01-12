@@ -1,13 +1,5 @@
 <Type Name="NameSpaceEvents_Event" FullName="Microsoft.Office.Interop.Outlook.NameSpaceEvents_Event">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0f045237185550e081b3a4867c8df470879b59be" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634952" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface NameSpaceEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1c005a7d21957144559d87eb958351e7789b49e6" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27896862" /></Metadata><TypeSignature Language="C#" Value="public interface NameSpaceEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract NameSpaceEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.NameSpaceEvents_Event" />
   <TypeSignature Language="VB.NET" Value="Public Interface NameSpaceEvents_Event" />
@@ -29,12 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="ca655-p101">Il s’agit d’une interface .NET créée lors du traitement d’une coclasse COM requise par le code managé pour l’interopérabilité avec l’objet COM correspondant. Cette interface implémente tous les événements des interfaces antérieures ainsi que tous les nouveaux événements. Utilisez cette interface uniquement lorsque l’événement que vous souhaitez utiliser partage le même nom qu’une méthode de l’objet COM. Dans ce cas, vous devez effectuer une conversion de type (transtypage) vers cette interface pour vous connecter à l’événement, puis effectuer une conversion de type (transtypage) vers l’interface principale pour appeler la méthode. Vous pouvez également utiliser l’interface .NET dérivée de la coclasse COM pour accéder aux méthodes, aux propriétés et aux événements de l’objet COM.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="ca655-p101">This is a .NET interface created when processing a COM coclass that is required by managed code for interoperability with the corresponding COM object. This interface implements all events of earlier interfaces and any additional new events. Use this interface only when the event you want to use shares the same name as a method of the COM object; in this case, cast to this interface to connect to the event, and cast to the primary interface to call the method. Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span>
-      </span>
-    </summary>
+    <summary><span data-ttu-id="3c3e6-p101">Il s’agit d’une interface .NET créée lors du traitement d’une coclasse COM requise par le code managé pour l’interopérabilité avec l’objet COM correspondant. Cette interface implémente tous les événements des interfaces antérieures ainsi que tous les nouveaux événements. Utilisez cette interface uniquement lorsque l’événement que vous souhaitez utiliser partage le même nom qu’une méthode de l’objet COM. Dans ce cas, vous devez effectuer une conversion de type (transtypage) vers cette interface pour vous connecter à l’événement, puis effectuer une conversion de type (transtypage) vers l’interface principale pour appeler la méthode. Vous pouvez également utiliser l’interface .NET dérivée de la coclasse COM pour accéder aux méthodes, aux propriétés et aux événements de l’objet COM.</span><span class="sxs-lookup"><span data-stu-id="3c3e6-p101">This is a .NET interface created when processing a COM coclass that is required by managed code for interoperability with the corresponding COM object. This interface implements all events of earlier interfaces and any additional new events. Use this interface only when the event you want to use shares the same name as a method of the COM object; in this case, cast to this interface to connect to the event, and cast to the primary interface to call the method. Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span></span></summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -53,12 +40,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpaceEvents_AutoDiscoverCompleteEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ca655-105">Cet événement se produit après que Outlook a terminé d’accéder au service de découverte automatique d’un serveur Exchange et que les informations connexes disponibles dans <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.AutoDiscoverXml" />.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ca655-105">Occurs after Outlook has finished accessing the auto-discovery service of an Exchange server and has the related information available in <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.AutoDiscoverXml" />.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e6-105">Cet événement se produit après que Outlook a terminé d’accéder au service de découverte automatique d’un serveur Exchange et que les informations connexes disponibles dans <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.AutoDiscoverXml" />.</span><span class="sxs-lookup"><span data-stu-id="3c3e6-105">Occurs after Outlook has finished accessing the auto-discovery service of an Exchange server and has the related information available in <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.AutoDiscoverXml" />.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,26 +59,11 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpaceEvents_OptionsPagesAddEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ca655-106">Survient chaque fois que la boîte de dialogue Propriétés du dossier est ouverte.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ca655-106">Occurs whenever the Properties dialog box for a folder is opened.</span>
-          </span>
-        </summary>
-        <remarks>
-          <span data-ttu-id="ca655-107">
-            <para>Vous pouvez ouvrir la boîte de dialogue Propriétés pour un dossier, cliquez sur le dossier et sélectionnez Propriétés.</para>
-            <para>Votre programme gère cet événement pour ajouter une page de propriétés personnalisée. La page de propriétés sera ajoutée à la boîte de dialogue Propriétés du dossier spécifié. Lorsque l’événement est déclenché, la collection d’objets <b>PropertyPages</b> identifiée par <paramref name="Pages" /> contient les pages de propriétés qui ont été ajoutés avant le Gestionnaire d’événements est appelée. Pour ajouter votre page de propriétés à la collection, utilisez la <see cref="M:Microsoft.Office.Interop.Outlook.PropertyPages.Add(System.Object,System.String)" /> méthode de la collection <b>PropertyPages</b> avant de quitter le Gestionnaire d’événements.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ca655-107">
-              <para>You can open the Properties dialog box for a folder by right-clicking the folder and selecting Properties.</para>
-              <para>Your program handles this event to add a custom property page. The property page will be added to Properties dialog box of the specified folder. When the event fires, the <b>PropertyPages</b> collection object identified by <paramref name="Pages" /> contains the property pages that have been added prior to the event handler being called. To add your property page to the collection, use the <see cref="M:Microsoft.Office.Interop.Outlook.PropertyPages.Add(System.Object,System.String)" />  method of the <b>PropertyPages</b> collection before exiting the event handler.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="3c3e6-106">Survient chaque fois que la boîte de dialogue Propriétés du dossier est ouverte.</span><span class="sxs-lookup"><span data-stu-id="3c3e6-106">Occurs whenever the Properties dialog box for a folder is opened.</span></span></summary>
+        <remarks><para><span data-ttu-id="3c3e6-107">Vous pouvez ouvrir la boîte de dialogue Properties pour un dossier en cliquant avec le bouton droit sur le dossier et en sélectionnant Propriétés.
+</span><span class="sxs-lookup"><span data-stu-id="3c3e6-107">You can open the Properties dialog box for a folder by right-clicking the folder and selecting Properties.</span></span></para>
+          <para><span data-ttu-id="3c3e6-108">Votre programme gère cet événement pour ajouter une page de propriétés personnalisée.</span><span class="sxs-lookup"><span data-stu-id="3c3e6-108">Your program handles this event to add a custom property page.</span></span> <span data-ttu-id="3c3e6-109">La page de propriétés sera ajoutée à la boîte de dialogue Propriétés du dossier spécifié.</span><span class="sxs-lookup"><span data-stu-id="3c3e6-109">The property page will be added to Properties dialog box of the specified folder.</span></span> <span data-ttu-id="3c3e6-110">Lorsque l’événement est déclenché, la collection d’objets <b>PropertyPages</b> identifiée par <paramref name="Pages" /> contient les pages de propriétés qui ont été ajoutés avant le Gestionnaire d’événements est appelée.</span><span class="sxs-lookup"><span data-stu-id="3c3e6-110">When the event fires, the <b>PropertyPages</b> collection object identified by <paramref name="Pages" /> contains the property pages that have been added prior to the event handler being called.</span></span> <span data-ttu-id="3c3e6-111">Pour ajouter votre page de propriétés à la collection, utilisez la <see cref="M:Microsoft.Office.Interop.Outlook.PropertyPages.Add(System.Object,System.String)" /> méthode de la collection <b>PropertyPages</b> avant de quitter le Gestionnaire d’événements.</span><span class="sxs-lookup"><span data-stu-id="3c3e6-111">To add your property page to the collection, use the <see cref="M:Microsoft.Office.Interop.Outlook.PropertyPages.Add(System.Object,System.String)" />  method of the <b>PropertyPages</b> collection before exiting the event handler.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

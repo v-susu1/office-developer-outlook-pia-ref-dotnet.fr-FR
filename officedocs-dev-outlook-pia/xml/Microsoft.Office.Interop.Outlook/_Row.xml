@@ -1,13 +1,5 @@
 <Type Name="_Row" FullName="Microsoft.Office.Interop.Outlook._Row">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a3c7defd97d97fe5c78387a6bea20000c185f175" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20635124" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _Row" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a3c7defd97d97fe5c78387a6bea20000c185f175" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27899998" /></Metadata><TypeSignature Language="C#" Value="public interface _Row" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Row" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._Row" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Row" />
@@ -26,24 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="601c8-101">Il s’agit d’une interface principale dans une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="601c8-101">This is a primary interface in a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span>
-      </span>
-      <span data-ttu-id="601c8-102">Utilisez cette interface principale uniquement lorsque la méthode que vous souhaitez utiliser partageant le même nom qu’un événement de l’objet COM ; Dans ce cas, effectuez un cast à cette interface pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="601c8-102">Use this primary interface only when the method you want to use shares the same name as an event of the COM object; in this case, cast to this interface to call the method, and cast to the latest events interface to connect to the event.</span>
-      </span>
-      <span data-ttu-id="601c8-103">Sinon, utilisez l’interface .NET est dérivé de la coclasse COM pour accéder aux méthodes, propriétés et événements de l’objet COM.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="601c8-103">Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span>
-      </span>
-      <span data-ttu-id="601c8-104">Pour plus d’informations sur l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.Row" />.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="601c8-104">For information about the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook.Row" />.</span>
-      </span>
-    </summary>
+    <summary><span data-ttu-id="a3aa4-101">Il s’agit d’une interface principale dans une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-101">This is a primary interface in a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span></span> <span data-ttu-id="a3aa4-102">Utilisez cette interface principale uniquement lorsque la méthode que vous souhaitez utiliser partageant le même nom qu’un événement de l’objet COM ; Dans ce cas, effectuez un cast à cette interface pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-102">Use this primary interface only when the method you want to use shares the same name as an event of the COM object; in this case, cast to this interface to call the method, and cast to the latest events interface to connect to the event.</span></span> <span data-ttu-id="a3aa4-103">Sinon, utilisez l’interface .NET est dérivé de la coclasse COM pour accéder aux méthodes, propriétés et événements de l’objet COM.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-103">Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span></span> <span data-ttu-id="a3aa4-104">Pour plus d’informations sur l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.Row" />.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-104">For information about the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook.Row" />.</span></span></summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -70,16 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="601c8-105">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> object qui représente l’application parente (Outlook) pour le <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> objet.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="601c8-105">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> object that represents the parent application (Outlook) for the <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> object.</span>
-          </span>
-          <span data-ttu-id="601c8-106">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="601c8-106">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="a3aa4-105">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> object qui représente l’application parente (Outlook) pour le <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> objet.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-105">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> object that represents the parent application (Outlook) for the <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> object.</span></span> <span data-ttu-id="a3aa4-106">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-106">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -107,40 +73,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="601c8-107">Une valeur d’index de base 1 qui peut être soit une valeur d' <b>entier</b> (<b>int</b> en c#) représentant l’index de colonne pour la <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> collection ou une <b>chaîne</b> (<b>string</b> en c#) représentant la <see cref="P:Microsoft.Office.Interop.Outlook._Column.Name" /> de la <b>colonne</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="601c8-107">A 1-based index value that can be either an <b>Integer</b> (<b>int</b> in C#) value representing the column index for the <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> collection or a <b>String</b> (<b>string</b> in C#) representing the <see cref="P:Microsoft.Office.Interop.Outlook._Column.Name" /> of the <b>Column</b>.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="601c8-108">Obtient une <b>chaîne</b> (<b>string</b> en c#) qui représente une valeur qui a été convertie à partir d’une valeur binaire pour l’objet parent <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> au niveau de la colonne spécifiée par <paramref name="Index" />.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="601c8-108">Obtains a <b>String</b> (<b>string</b> in C#) representing a value that has been converted from a binary value for the parent <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> at the column specified by <paramref name="Index" />.</span>
-          </span>
-        </summary>
-        <returns>
-          <span data-ttu-id="601c8-109">Une valeur de <b>chaîne</b> (<b>string</b> en c#) hexadécimale qui a été convertie à partir d’une valeur PT_BINARY de l’objet <b>Row</b> parent de l’objet column spécifié par <paramref name="Index" />.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="601c8-109">A hexadecimal <b>String</b> (<b>string</b> in C#) value that has been converted from a PT_BINARY value for the parent <b>Row</b> at the column specified by <paramref name="Index" />.</span>
-          </span>
-          <span data-ttu-id="601c8-110">Renvoie l’erreur « Impossible de convertir la colonne spécifiée par Index en chaîne » si la valeur spécifiée par <paramref name="Index" /> n’est pas PT_BINARY.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="601c8-110">Returns the error, "Cannot convert the column specified by Index to String" if the value specified by <paramref name="Index" /> is not PT_BINARY.</span>
-          </span>
-        </returns>
-        <remarks>
-          <span data-ttu-id="601c8-111">
-            <para>Utilisez les fonctions d' <b>aide Row.BinaryToString</b>, <see cref="M:Microsoft.Office.Interop.Outlook._Row.LocalTimeToUTC(System.Object)" />, et <see cref="M:Microsoft.Office.Interop.Outlook._Row.UTCToLocalTime(System.Object)" /> pour faciliter la conversion des valeurs de colonne d’une ligne spécifique. Pour plus d’informations sur la représentation des valeurs de propriété dans un <see cref="T:Microsoft.Office.Interop.Outlook.Table" />, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87858">Facteurs affectant la représentation des valeurs de propriété dans les Classes Table et View</a></para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="601c8-111">
-              <para>Use the helper functions <b>Row.BinaryToString</b>, <see cref="M:Microsoft.Office.Interop.Outlook._Row.LocalTimeToUTC(System.Object)" />, and <see cref="M:Microsoft.Office.Interop.Outlook._Row.UTCToLocalTime(System.Object)" /> to facilitate type conversion of column values at a specific row. For more information on property value representation in a <see cref="T:Microsoft.Office.Interop.Outlook.Table" />, see <a href="http://go.microsoft.com/fwlink/?LinkId=87858">Factors Affecting Property Value Representation in the Table and View Classes</a></para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <param name="Index"><span data-ttu-id="a3aa4-107">Une valeur d’index de base 1 qui peut être soit une valeur d' <b>entier</b> (<b>int</b> en c#) représentant l’index de colonne pour la <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> collection ou une <b>chaîne</b> (<b>string</b> en c#) représentant la <see cref="P:Microsoft.Office.Interop.Outlook._Column.Name" /> de la <b>colonne</b>.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-107">A 1-based index value that can be either an <b>Integer</b> (<b>int</b> in C#) value representing the column index for the <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> collection or a <b>String</b> (<b>string</b> in C#) representing the <see cref="P:Microsoft.Office.Interop.Outlook._Column.Name" /> of the <b>Column</b>.</span></span></param>
+        <summary><span data-ttu-id="a3aa4-108">Obtient une <b>chaîne</b> (<b>string</b> en c#) qui représente une valeur qui a été convertie à partir d’une valeur binaire pour l’objet parent <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> au niveau de la colonne spécifiée par <paramref name="Index" />.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-108">Obtains a <b>String</b> (<b>string</b> in C#) representing a value that has been converted from a binary value for the parent <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> at the column specified by <paramref name="Index" />.</span></span></summary>
+        <returns><span data-ttu-id="a3aa4-109">Une valeur de <b>chaîne</b> (<b>string</b> en c#) hexadécimale qui a été convertie à partir d’une valeur PT_BINARY de l’objet <b>Row</b> parent de l’objet column spécifié par <paramref name="Index" />.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-109">A hexadecimal <b>String</b> (<b>string</b> in C#) value that has been converted from a PT_BINARY value for the parent <b>Row</b> at the column specified by <paramref name="Index" />.</span></span> <span data-ttu-id="a3aa4-110">Renvoie l’erreur « Impossible de convertir la colonne spécifiée par Index en chaîne » si la valeur spécifiée par <paramref name="Index" /> n’est pas PT_BINARY.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-110">Returns the error, "Cannot convert the column specified by Index to String" if the value specified by <paramref name="Index" /> is not PT_BINARY.</span></span></returns>
+        <remarks><para><span data-ttu-id="a3aa4-111">Utilisez les fonctions d' <b>aide Row.BinaryToString</b>, <see cref="M:Microsoft.Office.Interop.Outlook._Row.LocalTimeToUTC(System.Object)" />, et <see cref="M:Microsoft.Office.Interop.Outlook._Row.UTCToLocalTime(System.Object)" /> pour faciliter la conversion des valeurs de colonne d’une ligne spécifique.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-111">Use the helper functions <b>Row.BinaryToString</b>, <see cref="M:Microsoft.Office.Interop.Outlook._Row.LocalTimeToUTC(System.Object)" />, and <see cref="M:Microsoft.Office.Interop.Outlook._Row.UTCToLocalTime(System.Object)" /> to facilitate type conversion of column values at a specific row.</span></span> <span data-ttu-id="a3aa4-112">Pour plus d’informations sur la représentation des valeurs de propriété dans un <see cref="T:Microsoft.Office.Interop.Outlook.Table" />, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87858">Facteurs affectant la représentation des valeurs de propriété dans les Classes Table et View</a></span><span class="sxs-lookup"><span data-stu-id="a3aa4-112">For more information on property value representation in a <see cref="T:Microsoft.Office.Interop.Outlook.Table" />, see <a href="http://go.microsoft.com/fwlink/?LinkId=87858">Factors Affecting Property Value Representation in the Table and View Classes</a></span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Class">
@@ -166,16 +103,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="601c8-112">Renvoie une constante dans la <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> énumération indiquant la classe de le <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> objet.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="601c8-112">Returns a constant in the <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> enumeration indicating the class of the <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> object.</span>
-          </span>
-          <span data-ttu-id="601c8-113">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="601c8-113">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="a3aa4-113">Renvoie une constante dans la <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> énumération indiquant la classe de le <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> objet.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-113">Returns a constant in the <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> enumeration indicating the class of the <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> object.</span></span> <span data-ttu-id="a3aa4-114">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-114">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -201,36 +129,14 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="601c8-114">Obtient un tableau unidimensionnel contenant les valeurs de toutes les colonnes à la <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> dans l’objet parent <see cref="T:Microsoft.Office.Interop.Outlook.Table" />.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="601c8-114">Obtains a one-dimensional array containing the values for all columns at the <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> in the parent <see cref="T:Microsoft.Office.Interop.Outlook.Table" />.</span>
-          </span>
-        </summary>
-        <returns>
-          <span data-ttu-id="601c8-115">Un <b>objet</b> qui représente un tableau de valeurs pour toutes les colonnes des <b>ligne</b> dans le <b>tableau</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="601c8-115">An <b>Object</b> that represents an array of values for all the columns at that <b>Row</b> in the <b>Table</b>.</span>
-          </span>
-        </returns>
-        <remarks>
-          <span data-ttu-id="601c8-116">
-            <para>
-              <b>GetValues</b> est une méthode d’assistance qui facilite l’extraction de toutes les valeurs de colonne dans la <b>ligne</b> dans un seul appel.</para>
-            <para>Dans la mesure où le tableau est zéro, la longueur du tableau est le nombre de colonnes dans la <b>ligne</b> moins 1.</para>
-            <para>Les valeurs renvoyées dans le tableau sont du même type que les valeurs dans la <b>Table</b>parent. Cela signifie que les propriétés binaires dans le <b>tableau</b> sont renvoyées sous forme de tableaux d’octets. Pour les propriétés de date-heure, si un <see cref="T:Microsoft.Office.Interop.Outlook.Column" /> est une colonne par défaut ou s’il a été ajouté à l’aide d’un nom de propriété intégrée explicite, sa valeur dans le <b>tableau</b> et dans le tableau sont exprimées en heure locale. Si la <b>colonne</b> a été ajouté à la <b>Table</b> à l’aide d’une référence d’espace de noms, sa valeur dans le tableau et dans le tableau sont exprimées en temps universel coordonné (UTC). Pour plus d’informations sur les propriétés référencées par un espace de noms, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87860">Référencer les propriétés par Namespace</a></para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="601c8-116">
-              <para>
-                <b>GetValues</b> is a helper method that facilitates fetching all the column values in the <b>Row</b> in a single call.</para>
-              <para>Since the array is zero-based, the length of the array is the number of columns in the <b>Row</b> minus one.</para>
-              <para>Values returned in the array are of the same type as the values in the parent <b>Table</b>. This means that binary properties in the <b>Table</b> are returned as arrays of bytes. For date-time properties, if  a <see cref="T:Microsoft.Office.Interop.Outlook.Column" /> is a default column or if it has been added using an explicit built-in property name, then its value in the <b>Table</b> and in the array are expressed in local time. If the <b>Column</b> has been added to the <b>Table</b> using a namespace reference, then its value in the Table and in the array are expressed in Coordinated Universal  Time (UTC). For more information on referencing properties by namespace, see <a href="http://go.microsoft.com/fwlink/?LinkId=87860">Referencing Properties by Namespace</a></para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="a3aa4-115">Obtient un tableau unidimensionnel contenant les valeurs de toutes les colonnes à la <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> dans l’objet parent <see cref="T:Microsoft.Office.Interop.Outlook.Table" />.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-115">Obtains a one-dimensional array containing the values for all columns at the <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> in the parent <see cref="T:Microsoft.Office.Interop.Outlook.Table" />.</span></span></summary>
+        <returns><span data-ttu-id="a3aa4-116">Un <b>objet</b> qui représente un tableau de valeurs pour toutes les colonnes des <b>ligne</b> dans le <b>tableau</b>.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-116">An <b>Object</b> that represents an array of values for all the columns at that <b>Row</b> in the <b>Table</b>.</span></span></returns>
+        <remarks><para><span data-ttu-id="a3aa4-117">
+            <b>GetValues</b> est une méthode d'aide qui permet de récupérer facilement les valeurs de toutes les colonnes dans l'objet <b>Row</b> en un seul appel.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-117">
+            <b>GetValues</b> is a helper method that facilitates fetching all the column values in the <b>Row</b> in a single call.</span></span></para>
+          <para><span data-ttu-id="a3aa4-118">Étant donné que le tableau commence à partir de zéro, sa longueur est le nombre de colonnes dans l'objet <b>Row</b> moins une.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-118">Since the array is zero-based, the length of the array is the number of columns in the <b>Row</b> minus one.</span></span></para>
+          <para><span data-ttu-id="a3aa4-119">Les valeurs renvoyées dans le tableau sont du même type que les valeurs dans la <b>Table</b>parent.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-119">Values returned in the array are of the same type as the values in the parent <b>Table</b>.</span></span> <span data-ttu-id="a3aa4-120">Cela signifie que les propriétés binaires dans le <b>tableau</b> sont renvoyées sous forme de tableaux d’octets.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-120">This means that binary properties in the <b>Table</b> are returned as arrays of bytes.</span></span> <span data-ttu-id="a3aa4-121">Pour les propriétés de date-heure, si un <see cref="T:Microsoft.Office.Interop.Outlook.Column" /> est une colonne par défaut ou s’il a été ajouté à l’aide d’un nom de propriété intégrée explicite, sa valeur dans le <b>tableau</b> et dans le tableau sont exprimées en heure locale.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-121">For date-time properties, if  a <see cref="T:Microsoft.Office.Interop.Outlook.Column" /> is a default column or if it has been added using an explicit built-in property name, then its value in the <b>Table</b> and in the array are expressed in local time.</span></span> <span data-ttu-id="a3aa4-122">Si la <b>colonne</b> a été ajouté à la <b>Table</b> à l’aide d’une référence d’espace de noms, sa valeur dans le tableau et dans le tableau sont exprimées en temps universel coordonné (UTC).</span><span class="sxs-lookup"><span data-stu-id="a3aa4-122">If the <b>Column</b> has been added to the <b>Table</b> using a namespace reference, then its value in the Table and in the array are expressed in Coordinated Universal  Time (UTC).</span></span> <span data-ttu-id="a3aa4-123">Pour plus d’informations sur les propriétés référencées par un espace de noms, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87860">Référencer les propriétés par Namespace</a></span><span class="sxs-lookup"><span data-stu-id="a3aa4-123">For more information on referencing properties by namespace, see <a href="http://go.microsoft.com/fwlink/?LinkId=87860">Referencing Properties by Namespace</a></span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -259,36 +165,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="601c8-117">Une valeur d’index de base 1 qui peut être soit une valeur d' <b>entier</b> (<b>int</b> en c#) représentant l’index de colonne pour la <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> collection ou une <b>chaîne</b> (<b>string</b> en c#) représentant la <see cref="P:Microsoft.Office.Interop.Outlook._Column.Name" /> de le <see cref="T:Microsoft.Office.Interop.Outlook.Column" />.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="601c8-117">A 1-based index value that can be either an <b>Integer</b> (<b>int</b> in C#) value representing the column index for the <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> collection or a <b>String</b> (<b>string</b> in C#) representing the <see cref="P:Microsoft.Office.Interop.Outlook._Column.Name" /> of the <see cref="T:Microsoft.Office.Interop.Outlook.Column" />.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="601c8-118">Obtient un <b>objet</b> qui représente la valeur de la <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> objet au niveau de la colonne spécifiée par <paramref name="Index" />.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="601c8-118">Obtains an <b>Object</b> that represents the value for the <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> object at the column specified by <paramref name="Index" />.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="601c8-119">Un <b>objet</b> qui représente la valeur d’une propriété (comme indiqué par <paramref name="Index" />) d’un élément (comme spécifié par l’objet <b>Row</b>parent).</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="601c8-119">An <b>Object</b> that represents the value of a property (as specified by <paramref name="Index" />) of an item (as specified by the parent <b>Row</b>).</span>
-          </span>
-        </value>
-        <remarks>
-          <span data-ttu-id="601c8-120">
-            <para>Si une <b>colonne</b> a été ajouté à une <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> à l’aide d’un nom de propriété référençant un espace de noms, vous devez faire référence la <b>colonne</b> dans la propriété <b>Row.Item</b> (<b>cette</b> en c#) par le même espace de noms. Si vous utilisez une référence de nom intégré explicite dans la <b>méthode Row.Item</b>, vous obtiendrez une erreur.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="601c8-120">
-              <para>If a <b>Column</b> has been added to a <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> using a property name referencing a namespace, you must reference the <b>Column</b> in the <b>Row.Item</b> property (<b>this</b> in C#) by the same namespace reference. If you use an explicit built-in name reference in <b>Row.Item</b>, you will get an error.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <param name="Index"><span data-ttu-id="a3aa4-124">Une valeur d’index de base 1 qui peut être soit une valeur d' <b>entier</b> (<b>int</b> en c#) représentant l’index de colonne pour la <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> collection ou une <b>chaîne</b> (<b>string</b> en c#) représentant la <see cref="P:Microsoft.Office.Interop.Outlook._Column.Name" /> de le <see cref="T:Microsoft.Office.Interop.Outlook.Column" />.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-124">A 1-based index value that can be either an <b>Integer</b> (<b>int</b> in C#) value representing the column index for the <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> collection or a <b>String</b> (<b>string</b> in C#) representing the <see cref="P:Microsoft.Office.Interop.Outlook._Column.Name" /> of the <see cref="T:Microsoft.Office.Interop.Outlook.Column" />.</span></span></param>
+        <summary><span data-ttu-id="a3aa4-125">Obtient un <b>objet</b> qui représente la valeur de la <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> objet au niveau de la colonne spécifiée par <paramref name="Index" />.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-125">Obtains an <b>Object</b> that represents the value for the <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> object at the column specified by <paramref name="Index" />.</span></span></summary>
+        <value><span data-ttu-id="a3aa4-126">Un <b>objet</b> qui représente la valeur d’une propriété (comme indiqué par <paramref name="Index" />) d’un élément (comme spécifié par l’objet <b>Row</b>parent).</span><span class="sxs-lookup"><span data-stu-id="a3aa4-126">An <b>Object</b> that represents the value of a property (as specified by <paramref name="Index" />) of an item (as specified by the parent <b>Row</b>).</span></span></value>
+        <remarks><para><span data-ttu-id="a3aa4-127">Si une <b>colonne</b> a été ajouté à une <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> à l’aide d’un nom de propriété référençant un espace de noms, vous devez faire référence la <b>colonne</b> dans la propriété <b>Row.Item</b> (<b>cette</b> en c#) par le même espace de noms.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-127">If a <b>Column</b> has been added to a <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> using a property name referencing a namespace, you must reference the <b>Column</b> in the <b>Row.Item</b> property (<b>this</b> in C#) by the same namespace reference.</span></span> <span data-ttu-id="a3aa4-128">Si vous utilisez une référence de nom intégré explicite dans la <b>méthode Row.Item</b>, vous obtiendrez une erreur.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-128">If you use an explicit built-in name reference in <b>Row.Item</b>, you will get an error.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LocalTimeToUTC">
@@ -314,42 +195,12 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="601c8-121">Une valeur d’index de base 1 qui peut être soit une valeur d' <b>entier</b> (<b>int</b> en c#) représentant l’index de colonne pour la <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> collection ou une <b>chaîne</b> (<b>string</b> en c#) représentant la <see cref="P:Microsoft.Office.Interop.Outlook._Column.Name" /> de le <see cref="T:Microsoft.Office.Interop.Outlook.Column" />.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="601c8-121">A 1-based index value that can be either an <b>Integer</b> (<b>int</b> in C#) value representing the column index for the <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> collection or a <b>String</b> (<b>string</b> in C#) representing the <see cref="P:Microsoft.Office.Interop.Outlook._Column.Name" /> of the <see cref="T:Microsoft.Office.Interop.Outlook.Column" />.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="601c8-122">Obtient une valeur <b>DateTime</b> dans un <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> spécifié par le <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> objet à <paramref name="Index" />, qui a été convertie à partir de l’heure locale en temps universel coordonné (UTC).</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="601c8-122">Obtains a <b>DateTime</b> value in a <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> specified by the <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> object at <paramref name="Index" />, that has been converted from local time to Coordinated Universal Time (UTC).</span>
-          </span>
-        </summary>
-        <returns>
-          <span data-ttu-id="601c8-123">Une valeur de Date qui a été convertie à partir d’une représentation en heure locale en temps UTC.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="601c8-123">A Date value that has been converted from a representation in local time to UTC.</span>
-          </span>
-          <span data-ttu-id="601c8-124">Une erreur est renvoyée si <paramref name="Index" /> est non valide ou la valeur de la ligne indiquée par <paramref name="Index" /> n’est pas une valeur de Date.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="601c8-124">An error is returned if <paramref name="Index" /> is invalid or the row value indicated by <paramref name="Index" /> is not a Date value.</span>
-          </span>
-        </returns>
-        <remarks>
-          <span data-ttu-id="601c8-125">
-            <para>Utilisez les fonctions d’assistance <see cref="M:Microsoft.Office.Interop.Outlook._Row.BinaryToString(System.Object)" />, <b>Row.LocalTimeToUTC</b>et <see cref="M:Microsoft.Office.Interop.Outlook._Row.UTCToLocalTime(System.Object)" /> pour faciliter la conversion des valeurs de colonne d’une ligne spécifique.</para>
-            <para>Pour plus d’informations sur la représentation des valeurs de propriété dans une <b>Table</b>, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87858">Facteurs affectant la représentation des valeurs de propriété dans les Classes Table et View</a>des filtres de<b>Table</b> , voir <a href="http://go.microsoft.com/fwlink/?LinkId=87929">Filtrage des éléments à l’aide d’une comparaison Date-heure</a></para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="601c8-125">
-              <para>Use the helper functions <see cref="M:Microsoft.Office.Interop.Outlook._Row.BinaryToString(System.Object)" />, <b>Row.LocalTimeToUTC</b>, and <see cref="M:Microsoft.Office.Interop.Outlook._Row.UTCToLocalTime(System.Object)" /> to facilitate type conversion of column values at a specific row.</para>
-              <para>For information on property value representation in a <b>Table</b>, see <a href="http://go.microsoft.com/fwlink/?LinkId=87858">Factors Affecting Property Value Representation in the Table and View Classes</a><b>Table</b> filters, see <a href="http://go.microsoft.com/fwlink/?LinkId=87929">Filtering Items Using a Date-time Comparison</a></para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <param name="Index"><span data-ttu-id="a3aa4-129">Une valeur d’index de base 1 qui peut être soit une valeur d' <b>entier</b> (<b>int</b> en c#) représentant l’index de colonne pour la <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> collection ou une <b>chaîne</b> (<b>string</b> en c#) représentant la <see cref="P:Microsoft.Office.Interop.Outlook._Column.Name" /> de le <see cref="T:Microsoft.Office.Interop.Outlook.Column" />.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-129">A 1-based index value that can be either an <b>Integer</b> (<b>int</b> in C#) value representing the column index for the <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> collection or a <b>String</b> (<b>string</b> in C#) representing the <see cref="P:Microsoft.Office.Interop.Outlook._Column.Name" /> of the <see cref="T:Microsoft.Office.Interop.Outlook.Column" />.</span></span></param>
+        <summary><span data-ttu-id="a3aa4-130">Obtient une valeur <b>DateTime</b> dans un <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> spécifié par le <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> objet à <paramref name="Index" />, qui a été convertie à partir de l’heure locale en temps universel coordonné (UTC).</span><span class="sxs-lookup"><span data-stu-id="a3aa4-130">Obtains a <b>DateTime</b> value in a <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> specified by the <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> object at <paramref name="Index" />, that has been converted from local time to Coordinated Universal Time (UTC).</span></span></summary>
+        <returns><span data-ttu-id="a3aa4-131">Une valeur de Date qui a été convertie à partir d’une représentation en heure locale en temps UTC.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-131">A Date value that has been converted from a representation in local time to UTC.</span></span> <span data-ttu-id="a3aa4-132">Une erreur est renvoyée si <paramref name="Index" /> est non valide ou la valeur de la ligne indiquée par <paramref name="Index" /> n’est pas une valeur de Date.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-132">An error is returned if <paramref name="Index" /> is invalid or the row value indicated by <paramref name="Index" /> is not a Date value.</span></span></returns>
+        <remarks><para><span data-ttu-id="a3aa4-133">Utilisez les fonctions d’assistance <see cref="M:Microsoft.Office.Interop.Outlook._Row.BinaryToString(System.Object)" />, <b>Row.LocalTimeToUTC</b>et <see cref="M:Microsoft.Office.Interop.Outlook._Row.UTCToLocalTime(System.Object)" /> pour faciliter la conversion des valeurs de colonne d’une ligne spécifique.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-133">Use the helper functions <see cref="M:Microsoft.Office.Interop.Outlook._Row.BinaryToString(System.Object)" />, <b>Row.LocalTimeToUTC</b>, and <see cref="M:Microsoft.Office.Interop.Outlook._Row.UTCToLocalTime(System.Object)" /> to facilitate type conversion of column values at a specific row.</span></span></para>
+          <para><span data-ttu-id="a3aa4-134">Pour plus d’informations sur la représentation des valeurs de propriété dans une <b>Table</b>, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87858">Facteurs affectant la représentation des valeurs de propriété dans les Classes Table et View</a><b>tableau</b> filtres, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87929">Filtrage d’éléments à l’aide d’une comparaison Date-heure</a></span><span class="sxs-lookup"><span data-stu-id="a3aa4-134">For information on property value representation in a <b>Table</b>, see <a href="http://go.microsoft.com/fwlink/?LinkId=87858">Factors Affecting Property Value Representation in the Table and View Classes</a><b>Table</b> filters, see <a href="http://go.microsoft.com/fwlink/?LinkId=87929">Filtering Items Using a Date-time Comparison</a></span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -375,16 +226,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="601c8-126">Renvoie l’objet parent de le <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> objet.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="601c8-126">Returns the parent object of the <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> object.</span>
-          </span>
-          <span data-ttu-id="601c8-127">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="601c8-127">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="a3aa4-135">Renvoie l’objet parent de le <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> objet.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-135">Returns the parent object of the <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> object.</span></span> <span data-ttu-id="a3aa4-136">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-136">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -412,41 +254,16 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="601c8-128">Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="601c8-128">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> object for the current session.</span>
-          </span>
-          <span data-ttu-id="601c8-129">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="601c8-129">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="a3aa4-137">Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-137">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> object for the current session.</span></span> <span data-ttu-id="a3aa4-138">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-138">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="601c8-130">
-            <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
-            <code>Dim objNamespace As Outlook.NameSpace = _
+        <remarks><para><span data-ttu-id="a3aa4-139">La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-139">The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session.</span></span> <span data-ttu-id="a3aa4-140">Les deux membres ont la même fonction.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-140">Both members serve the same purpose.</span></span> <span data-ttu-id="a3aa4-141">Par exemple, les paires d’instructions suivantes effectuent la même fonction :</span><span class="sxs-lookup"><span data-stu-id="a3aa4-141">For example, the following pairs of statements perform the same function:</span></span></para>
+          <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
-            <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
-            <code>Outlook.NameSpace objNamespace = 
+          <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
+          <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
-            <code>Outlook.NameSpace objSession = Application.Session;</code>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="601c8-130">
-              <para>The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session. Both members serve the same purpose. For example, the following pairs of statements perform the same function:</para>
-              <code>Dim objNamespace As Outlook.NameSpace = _
-    Application.GetNamespace("MAPI")</code>
-              <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
-              <code>Outlook.NameSpace objNamespace = 
-    Application.GetNamespace("MAPI");</code>
-              <code>Outlook.NameSpace objSession = Application.Session;</code>
-              <para />
-            </span>
-          </span>
-        </remarks>
+          <code>Outlook.NameSpace objSession = Application.Session;</code>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UTCToLocalTime">
@@ -472,42 +289,12 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="601c8-131">Une valeur d’index de base 1 qui peut être soit une valeur d' <b>entier</b> (<b>int</b> en c#) représentant l’index de colonne pour la <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> collection ou une <b>chaîne</b> (<b>string</b> en c#) représentant la <see cref="P:Microsoft.Office.Interop.Outlook._Column.Name" /> de le <see cref="T:Microsoft.Office.Interop.Outlook.Column" />.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="601c8-131">A 1-based index value that can be either an <b>Integer</b> (<b>int</b> in C#) value representing the column index for the <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> collection or a <b>String</b> (<b>string</b> in C#) representing the <see cref="P:Microsoft.Office.Interop.Outlook._Column.Name" /> of the <see cref="T:Microsoft.Office.Interop.Outlook.Column" />.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="601c8-132">Obtient une valeur DateTime dans un <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> spécifié par le <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> objet à <paramref name="Index" />, qui a été convertie du temps universel coordonné (UTC) en heure locale.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="601c8-132">Obtains a DateTime value in a <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> specified by the <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> object at <paramref name="Index" />, that has been converted from Coordinated Universal Time (UTC) to local time.</span>
-          </span>
-        </summary>
-        <returns>
-          <span data-ttu-id="601c8-133">Une valeur de Date qui a été convertie à partir d’une représentation en UTC en heure locale.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="601c8-133">A Date value that has been converted from a representation in  UTC to local time.</span>
-          </span>
-          <span data-ttu-id="601c8-134">Une erreur est renvoyée si <paramref name="Index" /> est non valide ou la valeur de la ligne indiquée par <paramref name="Index" /> n’est pas une valeur de Date.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="601c8-134">An error is returned if <paramref name="Index" /> is invalid or the row value indicated by <paramref name="Index" /> is not a Date value.</span>
-          </span>
-        </returns>
-        <remarks>
-          <span data-ttu-id="601c8-135">
-            <para>Utilisez les fonctions d’assistance <see cref="M:Microsoft.Office.Interop.Outlook._Row.BinaryToString(System.Object)" />, <see cref="M:Microsoft.Office.Interop.Outlook._Row.LocalTimeToUTC(System.Object)" />et <b>Row.UTCToLocalTime</b> pour faciliter la conversion des valeurs de colonne d’une ligne spécifique. </para>
-            <para>Pour plus d’informations sur la représentation des valeurs de propriété dans une <b>Table</b>, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87858">Facteurs affectant la représentation des valeurs de propriété dans les Classes Table et View</a><b>tableau</b> filtres, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87929">Filtrage d’éléments à l’aide d’une comparaison Date-heure</a></para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="601c8-135">
-              <para>Use the helper functions <see cref="M:Microsoft.Office.Interop.Outlook._Row.BinaryToString(System.Object)" />, <see cref="M:Microsoft.Office.Interop.Outlook._Row.LocalTimeToUTC(System.Object)" />, and <b>Row.UTCToLocalTime</b> to facilitate type conversion of column values at a specific row. </para>
-              <para>For information on property value representation in a <b>Table</b>, see <a href="http://go.microsoft.com/fwlink/?LinkId=87858">Factors Affecting Property Value Representation in the Table and View Classes</a><b>Table</b> filters, see <a href="http://go.microsoft.com/fwlink/?LinkId=87929">Filtering Items Using a Date-time Comparison</a></para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <param name="Index"><span data-ttu-id="a3aa4-142">Une valeur d’index de base 1 qui peut être soit une valeur d' <b>entier</b> (<b>int</b> en c#) représentant l’index de colonne pour la <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> collection ou une <b>chaîne</b> (<b>string</b> en c#) représentant la <see cref="P:Microsoft.Office.Interop.Outlook._Column.Name" /> de le <see cref="T:Microsoft.Office.Interop.Outlook.Column" />.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-142">A 1-based index value that can be either an <b>Integer</b> (<b>int</b> in C#) value representing the column index for the <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> collection or a <b>String</b> (<b>string</b> in C#) representing the <see cref="P:Microsoft.Office.Interop.Outlook._Column.Name" /> of the <see cref="T:Microsoft.Office.Interop.Outlook.Column" />.</span></span></param>
+        <summary><span data-ttu-id="a3aa4-143">Obtient une valeur DateTime dans un <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> spécifié par le <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> objet à <paramref name="Index" />, qui a été convertie du temps universel coordonné (UTC) en heure locale.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-143">Obtains a DateTime value in a <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> specified by the <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> object at <paramref name="Index" />, that has been converted from Coordinated Universal Time (UTC) to local time.</span></span></summary>
+        <returns><span data-ttu-id="a3aa4-144">Une valeur de Date qui a été convertie à partir d’une représentation en UTC en heure locale.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-144">A Date value that has been converted from a representation in  UTC to local time.</span></span> <span data-ttu-id="a3aa4-145">Une erreur est renvoyée si <paramref name="Index" /> est non valide ou la valeur de la ligne indiquée par <paramref name="Index" /> n’est pas une valeur de Date.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-145">An error is returned if <paramref name="Index" /> is invalid or the row value indicated by <paramref name="Index" /> is not a Date value.</span></span></returns>
+        <remarks><para><span data-ttu-id="a3aa4-146">Utilisez les fonctions d’assistance <see cref="M:Microsoft.Office.Interop.Outlook._Row.BinaryToString(System.Object)" />, <see cref="M:Microsoft.Office.Interop.Outlook._Row.LocalTimeToUTC(System.Object)" />et <b>Row.UTCToLocalTime</b> pour faciliter la conversion des valeurs de colonne d’une ligne spécifique.</span><span class="sxs-lookup"><span data-stu-id="a3aa4-146">Use the helper functions <see cref="M:Microsoft.Office.Interop.Outlook._Row.BinaryToString(System.Object)" />, <see cref="M:Microsoft.Office.Interop.Outlook._Row.LocalTimeToUTC(System.Object)" />, and <b>Row.UTCToLocalTime</b> to facilitate type conversion of column values at a specific row.</span></span> </para>
+          <para><span data-ttu-id="a3aa4-147">Pour plus d’informations sur la représentation des valeurs de propriété dans une <b>Table</b>, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87858">Facteurs affectant la représentation des valeurs de propriété dans les Classes Table et View</a><b>tableau</b> filtres, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87929">Filtrage d’éléments à l’aide d’une comparaison Date-heure</a></span><span class="sxs-lookup"><span data-stu-id="a3aa4-147">For information on property value representation in a <b>Table</b>, see <a href="http://go.microsoft.com/fwlink/?LinkId=87858">Factors Affecting Property Value Representation in the Table and View Classes</a><b>Table</b> filters, see <a href="http://go.microsoft.com/fwlink/?LinkId=87929">Filtering Items Using a Date-time Comparison</a></span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="AddressList" FullName="Microsoft.Office.Interop.Outlook.AddressList">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a41313c3d06cf1f8ff69f9336dea1b509c5eda8b" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20635326" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AddressList" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6a0bab57e96ddcb76bf78e2046cc16317ccf2001" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27898374" /></Metadata><TypeSignature Language="C#" Value="public interface AddressList" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AddressList" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.AddressList" />
   <TypeSignature Language="VB.NET" Value="Public Interface AddressList" />
@@ -26,24 +18,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="bd243-101">Représente un carnet d’adresses qui contient un ensemble de <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> objets.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="bd243-101">Represents an address book that contains a set of <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" />  objects.</span>
-      </span>
-    </summary>
-    <remarks>
-      <span data-ttu-id="bd243-102">
-        <para>L’objet <b>AddressList</b> est un carnet d’adresses qui contient un ensemble de <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> objets.</para> Objet 
-      <para>l' <b>objet AddressList</b> fournit une liste d’entrées d’adresse à laquelle un système de messagerie peut remettre des messages. Un objet <b>AddressList</b> représente un conteneur de carnet d’adresses disponible dans la hiérarchie de carnets d’adresses du fournisseur de transport pour la session active. La hiérarchie entière est disponible via le parent <see cref="T:Microsoft.Office.Interop.Outlook.AddressLists" /> objet.</para><para /></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="bd243-102">
-          <para>The <b>AddressList</b> object is an address book that contains a set of <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" />  objects.</para>
-          <para>The <b>AddressList</b> object supplies a list of address entries to which a messaging system can deliver messages. An <b>AddressList</b> object represents one address book container available under the transport provider's address book hierarchy for the current session. The entire hierarchy is available through the parent <see cref="T:Microsoft.Office.Interop.Outlook.AddressLists" />  object.</para>
-          <para />
-        </span>
-      </span>
-    </remarks>
+    <summary><span data-ttu-id="fca1a-101">Représente un carnet d’adresses qui contient un ensemble de <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> objets.</span><span class="sxs-lookup"><span data-stu-id="fca1a-101">Represents an address book that contains a set of <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" />  objects.</span></span></summary>
+    <remarks><para><span data-ttu-id="fca1a-102">L’objet <b>AddressList</b> est un carnet d’adresses qui contient un ensemble de <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> objets.</span><span class="sxs-lookup"><span data-stu-id="fca1a-102">The <b>AddressList</b> object is an address book that contains a set of <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" />  objects.</span></span></para>
+      <para><span data-ttu-id="fca1a-103">L’objet <b>AddressList</b> fournit une liste d’entrées d’adresse à laquelle un système de messagerie peut remettre des messages.</span><span class="sxs-lookup"><span data-stu-id="fca1a-103">The <b>AddressList</b> object supplies a list of address entries to which a messaging system can deliver messages.</span></span> <span data-ttu-id="fca1a-104">Un objet <b>AddressList</b> représente un conteneur de carnet d’adresses disponible dans la hiérarchie de carnets d’adresses du fournisseur de transport pour la session active.</span><span class="sxs-lookup"><span data-stu-id="fca1a-104">An <b>AddressList</b> object represents one address book container available under the transport provider's address book hierarchy for the current session.</span></span> <span data-ttu-id="fca1a-105">La hiérarchie entière est disponible via le parent <see cref="T:Microsoft.Office.Interop.Outlook.AddressLists" /> objet.</span><span class="sxs-lookup"><span data-stu-id="fca1a-105">The entire hierarchy is available through the parent <see cref="T:Microsoft.Office.Interop.Outlook.AddressLists" />  object.</span></span></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddressEntries">
@@ -69,16 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.AddressEntries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="bd243-103">Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> collection pour l’objet spécifié.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-103">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" />  collection for the specified object.</span>
-          </span>
-          <span data-ttu-id="bd243-104">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-104">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fca1a-106">Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> collection pour l’objet spécifié.</span><span class="sxs-lookup"><span data-stu-id="fca1a-106">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" />  collection for the specified object.</span></span> <span data-ttu-id="fca1a-107">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fca1a-107">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -106,16 +75,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlAddressListType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="bd243-105">Renvoie une constante de le <see cref="T:Microsoft.Office.Interop.Outlook.OlAddressListType" /> énumération qui représente le type de le <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" />.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-105">Returns a constant from the <see cref="T:Microsoft.Office.Interop.Outlook.OlAddressListType" /> enumeration that represents the type of the <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" />.</span>
-          </span>
-          <span data-ttu-id="bd243-106">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-106">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fca1a-108">Renvoie une constante de le <see cref="T:Microsoft.Office.Interop.Outlook.OlAddressListType" /> énumération qui représente le type de le <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" />.</span><span class="sxs-lookup"><span data-stu-id="fca1a-108">Returns a constant from the <see cref="T:Microsoft.Office.Interop.Outlook.OlAddressListType" /> enumeration that represents the type of the <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" />.</span></span> <span data-ttu-id="fca1a-109">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fca1a-109">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -143,16 +103,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="bd243-107">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> object qui représente l’application Outlook de l’objet parent.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-107">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object that represents the parent Outlook application for the  object.</span>
-          </span>
-          <span data-ttu-id="bd243-108">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-108">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fca1a-110">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> object qui représente l’application Outlook de l’objet parent.</span><span class="sxs-lookup"><span data-stu-id="fca1a-110">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object that represents the parent Outlook application for the  object.</span></span> <span data-ttu-id="fca1a-111">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fca1a-111">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -180,16 +131,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="bd243-109">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constante indiquant la classe de l’objet.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-109">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constant indicating the object's class.</span>
-          </span>
-          <span data-ttu-id="bd243-110">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-110">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fca1a-112">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constante indiquant la classe de l’objet.</span><span class="sxs-lookup"><span data-stu-id="fca1a-112">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constant indicating the object's class.</span></span> <span data-ttu-id="fca1a-113">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fca1a-113">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -215,30 +157,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="bd243-111">Obtient un <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> object qui représente le dossier Contacts de le <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> objet.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-111">Obtains a <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> object that represents the Contacts folder for the <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> object.</span>
-          </span>
-        </summary>
-        <returns>
-          <span data-ttu-id="bd243-p105">Un objet <b>Folder</b> qui représente le dossier Contacts d'Outlook pour l'objet <b>AddressList</b>. Renvoie la valeur <b>Null</b> (<b>Nothing</b> dans Visual Basic) si aucun dossier de contacts Outlook n'est trouvé.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-p105">A <b>Folder</b> object that represents the Outlook Contacts folder for the <b>AddressList</b>. Returns <b>Null</b> (<b>Nothing</b> in Visual Basic) if no Outlook contacts folder is found.</span>
-          </span>
-        </returns>
-        <remarks>
-          <span data-ttu-id="bd243-114">
-            <para>Cette méthode vous permet de faire correspondre un <b>objet AddressList</b> pour le dossier Contacts que vous souhaitez configurer comme liste d’adresses initiale dans la boîte de dialogue Sélectionner des noms.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-114">
-              <para>This method allows you to match an <b>AddressList</b> for the Contacts folder that you would like to set up as the initial address list in the Select Names dialog box.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <summary><span data-ttu-id="fca1a-114">Obtient un <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> object qui représente le dossier Contacts de le <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> objet.</span><span class="sxs-lookup"><span data-stu-id="fca1a-114">Obtains a <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> object that represents the Contacts folder for the <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> object.</span></span></summary>
+        <returns><span data-ttu-id="fca1a-p106">Un objet <b>Folder</b> qui représente le dossier Contacts d'Outlook pour l'objet <b>AddressList</b>. Renvoie la valeur <b>Null</b> (<b>Nothing</b> dans Visual Basic) si aucun dossier de contacts Outlook n'est trouvé.</span><span class="sxs-lookup"><span data-stu-id="fca1a-p106">A <b>Folder</b> object that represents the Outlook Contacts folder for the <b>AddressList</b>. Returns <b>Null</b> (<b>Nothing</b> in Visual Basic) if no Outlook contacts folder is found.</span></span></returns>
+        <remarks><para><span data-ttu-id="fca1a-117">Cette méthode permet de trouver un objet <b>AddressList</b> correspondant au dossier Contacts que vous souhaitez configurer comme liste d'adresses initiale dans la boîte de dialogue Choisir des noms.</span><span class="sxs-lookup"><span data-stu-id="fca1a-117">This method allows you to match an <b>AddressList</b> for the Contacts folder that you would like to set up as the initial address list in the Select Names dialog box.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -264,29 +186,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="bd243-115">Renvoie une <b>chaîne</b> (<b>string</b> en c#) qui représente l’identificateur unique de l’objet.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-115">Returns a <b>String</b> (<b>string</b> in C#) representing the unique identifier for the object.</span>
-          </span>
-          <span data-ttu-id="bd243-116">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-116">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fca1a-118">Renvoie une <b>chaîne</b> (<b>string</b> en c#) qui représente l’identificateur unique de l’objet.</span><span class="sxs-lookup"><span data-stu-id="fca1a-118">Returns a <b>String</b> (<b>string</b> in C#) representing the unique identifier for the object.</span></span> <span data-ttu-id="fca1a-119">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fca1a-119">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="bd243-117">
-            <para>Le fournisseur de transport affecte une propriété <b>d’ID</b> de chaîne permanent et unique lorsqu’un objet membre individuel est créé. Ces identificateurs ne changent pas d’une session à l’autre.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-117">
-              <para>The transport provider assigns a permanent, unique string <b>ID</b> property when an individual member object is created. These identifiers do not change from one session to another. </para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="fca1a-p108">Le fournisseur de transport affecte une propriété <b>ID</b> unique et permanente sous la forme d'une chaîne chaque fois qu'un objet membre individuel est créé. Ces identificateurs ne changent pas d'une session à l'autre.</span><span class="sxs-lookup"><span data-stu-id="fca1a-p108">The transport provider assigns a permanent, unique string <b>ID</b> property when an individual member object is created. These identifiers do not change from one session to another. </span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -312,29 +215,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="bd243-118">Renvoie une valeur d' <b>entier</b> (<b>int</b> en c#) indiquant la position de l’objet au sein de la collection.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-118">Returns an <b>Integer</b> (<b>int</b> in C#) value indicating the position of the object within the collection.</span>
-          </span>
-          <span data-ttu-id="bd243-119">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-119">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fca1a-122">Renvoie une valeur d' <b>entier</b> (<b>int</b> en c#) indiquant la position de l’objet au sein de la collection.</span><span class="sxs-lookup"><span data-stu-id="fca1a-122">Returns an <b>Integer</b> (<b>int</b> in C#) value indicating the position of the object within the collection.</span></span>  <span data-ttu-id="fca1a-123">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fca1a-123">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="bd243-120">
-            <para>La propriété <b>Index</b> n’est valide que pendant la session en cours et peut changer lorsque les objets sont ajoutés au et supprimés de la collection. Le premier objet de la collection a une valeur <b>d’Index</b> 1.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-120">
-              <para>The <b>Index</b> property is only valid during the current session and can change as objects are added to and deleted from the collection. The first object in the collection has an <b>Index</b> value of 1.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="fca1a-p110">La propriété <b>Index</b> n'est valide que pendant la session en cours et peut être modifiée à mesure que des objets sont ajoutés à la collection et supprimés. La propriété <b>Index</b> du premier objet de la collection a la valeur 1.</span><span class="sxs-lookup"><span data-stu-id="fca1a-p110">The <b>Index</b> property is only valid during the current session and can change as objects are added to and deleted from the collection. The first object in the collection has an <b>Index</b> value of 1.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsInitialAddressList">
@@ -360,31 +244,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="bd243-121">Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si les <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> est l' initiale <b>AddressList</b> indiqué dans la boîte de dialogue Sélectionner des noms.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-121">Returns a <b>Boolean</b> (<b>bool</b> in C#) that indicates if the <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> is the initial <b>AddressList</b> shown in the Select Names dialog.</span>
-          </span>
-          <span data-ttu-id="bd243-122">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-122">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fca1a-126">Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si les <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> est l' initiale <b>AddressList</b> indiqué dans la boîte de dialogue Sélectionner des noms.</span><span class="sxs-lookup"><span data-stu-id="fca1a-126">Returns a <b>Boolean</b> (<b>bool</b> in C#) that indicates if the <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> is the initial <b>AddressList</b> shown in the Select Names dialog.</span></span> <span data-ttu-id="fca1a-127">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fca1a-127">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="bd243-123">
-            <para>
-              <b>IsInitialAddressList</b> correspond au paramètre afficher cette liste d’adresses d’abord dans la boîte de dialogue adressage, qui est disponible en cliquant sur Outils, puis sur Options dans la boîte de dialogue Carnet d’adresses.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-123">
-              <para>
-                <b>IsInitialAddressList</b> corresponds to setting Show this address list first in the Addressing dialog box, which is available by clicking Tools, and then Options in the Address Book dialog box.  </para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="fca1a-128">
+            <b>IsInitialAddressList</b> correspond au paramètre afficher cette liste d’adresses d’abord dans la boîte de dialogue adressage, qui est disponible en cliquant sur Outils, puis sur Options dans la boîte de dialogue Carnet d’adresses.</span><span class="sxs-lookup"><span data-stu-id="fca1a-128">
+            <b>IsInitialAddressList</b> corresponds to setting Show this address list first in the Addressing dialog box, which is available by clicking Tools, and then Options in the Address Book dialog box.</span></span>  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -410,29 +275,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="bd243-124">Renvoie une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique que le <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> objet ne peut pas être modifié.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-124">Returns a <b>Boolean</b> value (<b>bool</b> in C#) that indicates that the <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" />  object cannot be modified.</span>
-          </span>
-          <span data-ttu-id="bd243-125">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-125">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fca1a-129">Renvoie une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique que le <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> objet ne peut pas être modifié.</span><span class="sxs-lookup"><span data-stu-id="fca1a-129">Returns a <b>Boolean</b> value (<b>bool</b> in C#) that indicates that the <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" />  object cannot be modified.</span></span> <span data-ttu-id="fca1a-130">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fca1a-130">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="bd243-126">
-            <para>La propriété <b>IsReadOnly</b> fait référence à l’ajout et la suppression des entrées figurant dans le conteneur de carnet d’adresses représenté par l’objet <b>AddressList</b> . La propriété est <b>True</b> si aucune entrée ne peut être ajoutée ou supprimée. La propriété a la <b>valeur False</b> si le conteneur peut être modifié, autrement dit, si des entrées d’adresse peuvent être ajoutées à et supprimé du conteneur. Il désigne les entrées de carnet d’adresses dans le contexte du conteneur de carnet d’adresses. Il n’indique pas si le contenu des entrées eux-mêmes peut être modifié.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-126">
-              <para>The <b>IsReadOnly</b> property refers to adding and deleting the entries in the address book container represented by the <b>AddressList</b> object. The property is <b>True</b> if no entries can be added or deleted. The property is <b>False</b> if the container can be modified, that is, if address entries can be added to and deleted from the container. It refers to the address book entries in the context of the address book container. It does not indicate whether the contents of the individual entries themselves can be modified.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="fca1a-131">La propriété <b>IsReadOnly</b> fait référence à l’ajout et la suppression des entrées figurant dans le conteneur de carnet d’adresses représenté par l’objet <b>AddressList</b> .</span><span class="sxs-lookup"><span data-stu-id="fca1a-131">The <b>IsReadOnly</b> property refers to adding and deleting the entries in the address book container represented by the <b>AddressList</b> object.</span></span> <span data-ttu-id="fca1a-132">La propriété est <b>True</b> si aucune entrée ne peut être ajoutée ou supprimée.</span><span class="sxs-lookup"><span data-stu-id="fca1a-132">The property is <b>True</b> if no entries can be added or deleted.</span></span> <span data-ttu-id="fca1a-133">La propriété a la <b>valeur False</b> si le conteneur peut être modifié, autrement dit, si des entrées d’adresse peuvent être ajoutées à et supprimé du conteneur.</span><span class="sxs-lookup"><span data-stu-id="fca1a-133">The property is <b>False</b> if the container can be modified, that is, if address entries can be added to and deleted from the container.</span></span> <span data-ttu-id="fca1a-134">Il désigne les entrées de carnet d’adresses dans le contexte du conteneur de carnet d’adresses.</span><span class="sxs-lookup"><span data-stu-id="fca1a-134">It refers to the address book entries in the context of the address book container.</span></span> <span data-ttu-id="fca1a-135">Il n’indique pas si le contenu des entrées eux-mêmes peut être modifié.</span><span class="sxs-lookup"><span data-stu-id="fca1a-135">It does not indicate whether the contents of the individual entries themselves can be modified.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -458,16 +304,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="bd243-127">Renvoie une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le nom complet de l’objet.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-127">Returns a <b>String</b> value (<b>string</b> in C#) that represents the display name for the object.</span>
-          </span>
-          <span data-ttu-id="bd243-128">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-128">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fca1a-136">Renvoie une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le nom complet de l’objet.</span><span class="sxs-lookup"><span data-stu-id="fca1a-136">Returns a <b>String</b> value (<b>string</b> in C#) that represents the display name for the object.</span></span> <span data-ttu-id="fca1a-137">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fca1a-137">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -495,12 +332,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="bd243-p111">Renvoie la valeur de type <b>Object</b> parent de l’objet spécifié. En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-p111">Returns the parent <b>Object</b> of the specified object. Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fca1a-p116">Renvoie la valeur de type <b>Object</b> parent de l’objet spécifié. En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fca1a-p116">Returns the parent <b>Object</b> of the specified object. Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -528,16 +360,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.PropertyAccessor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="bd243-131">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> objet qui prend en charge la création, l’obtention, la définition et la suppression de propriétés de l’objet parent <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> objet.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-131">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> object that supports creating, getting, setting, and deleting properties of the parent <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> object.</span>
-          </span>
-          <span data-ttu-id="bd243-132">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-132">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fca1a-140">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> objet qui prend en charge la création, l’obtention, la définition et la suppression de propriétés de l’objet parent <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> objet.</span><span class="sxs-lookup"><span data-stu-id="fca1a-140">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> object that supports creating, getting, setting, and deleting properties of the parent <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> object.</span></span> <span data-ttu-id="fca1a-141">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fca1a-141">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -565,31 +388,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="bd243-133">Renvoie un <b>entier</b> qui représente l’ordre de ce <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> dans la liste personnalisée dans la boîte de dialogue adressage.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-133">Returns an <b>Integer</b> that represents the order of this <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> in the custom scroll list in the Addressing dialog box.</span>
-          </span>
-          <span data-ttu-id="bd243-134">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-134">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fca1a-142">Renvoie un <b>entier</b> qui représente l’ordre de ce <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> dans la liste personnalisée dans la boîte de dialogue adressage.</span><span class="sxs-lookup"><span data-stu-id="fca1a-142">Returns an <b>Integer</b> that represents the order of this <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> in the custom scroll list in the Addressing dialog box.</span></span> <span data-ttu-id="fca1a-143">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fca1a-143">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="bd243-135">
-            <para>La propriété <b>ResolutionOrder</b> correspond à la position de l' <b>objet AddressList</b> dans la zone de liste appelée lors de l’envoi de courrier, vérifiez les listes dans l’ordre suivant dans la boîte de dialogue adressage et est disponible en cliquant sur Outils, puis sur Options dans la boîte de dialogue Carnet d’adresses. Notez que ce comportement est indépendant de si personnalisé est sélectionnée dans la boîte de dialogue adressage. Par exemple, si démarrer avec la liste d’adresses globale est sélectionnée et affiche les Contacts en tant que le premier élément de la liste déroulante, la propriété <b>ResolutionOrder</b> de la liste d’adresses de Contacts est toujours 1, même si lors de la résolution des destinataires, Outlook utilise l’adresse globale Répertorier en premier.</para>
-            <para>Lorsque personnalisé est sélectionnée dans la boîte de dialogue adressage, la propriété <b>ResolutionOrder</b> correspond à l’ordre par Outlook lors de la résolution des noms des destinataires. La valeur de <b>propriété ResolutionOrder</b> est basé sur un. Dans ce cas, la première liste d’adresses à utiliser pour résoudre les noms des destinataires a une <b>propriété ResolutionOrder</b> égale à 1, la deuxième liste 2 d’adresses et ainsi de suite. Si une liste d’adresses n’est pas utilisée pour résoudre les adresses, sa propriété <b>ResolutionOrder</b> est la valeur -1. Par programme, lorsque l’option personnalisé est sélectionnée dans la boîte de dialogue adressage, la propriété <b>ResolutionOrder</b> reflète la solution afin que <see cref="M:Microsoft.Office.Interop.Outlook.Recipients.ResolveAll" /> ou <see cref="M:Microsoft.Office.Interop.Outlook.Recipient.Resolve" /> utilise.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-135">
-              <para>The <b>ResolutionOrder</b> property corresponds to the position of the <b>AddressList</b> in the list box which is labeled When sending mail, check address lists in this order in the Addressing dialog box and is available by clicking Tools, and then Options in the Address Book dialog box. Note that this behavior is independent of whether Custom is selected in the Addressing dialog box. For example, if Start with Global Address List is selected and the scroll list  displays Contacts as the first item, the <b>ResolutionOrder</b> property of the Contacts address list is still 1, even though when resolving recipients, Outlook uses the Global Address List first.</para>
-              <para>When Custom is selected in the Addressing dialog box, the <b>ResolutionOrder</b> property reflects the order that Outlook uses when resolving recipient names. The value of <b>ResolutionOrder</b> is one-based. In this case, the first address list to be used for resolving recipient names has a <b>ResolutionOrder</b> equal to 1, the second address list 2, and so forth. If an address list is not used to resolve addresses, then its <b>ResolutionOrder</b> has a value of -1. Programmatically, when Custom is selected in the Addressing dialog box, the <b>ResolutionOrder</b> property reflects the actual resolution order that <see cref="M:Microsoft.Office.Interop.Outlook.Recipients.ResolveAll" /> or <see cref="M:Microsoft.Office.Interop.Outlook.Recipient.Resolve" /> uses.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="fca1a-144">La propriété <b>ResolutionOrder</b> correspond à la position de l' <b>objet AddressList</b> dans la zone de liste appelée lors de l’envoi de courrier, vérifiez les listes dans l’ordre suivant dans la boîte de dialogue adressage et est disponible en cliquant sur Outils, puis sur Options dans la boîte de dialogue Carnet d’adresses.</span><span class="sxs-lookup"><span data-stu-id="fca1a-144">The <b>ResolutionOrder</b> property corresponds to the position of the <b>AddressList</b> in the list box which is labeled When sending mail, check address lists in this order in the Addressing dialog box and is available by clicking Tools, and then Options in the Address Book dialog box.</span></span> <span data-ttu-id="fca1a-145">Notez que ce comportement est indépendant de si personnalisé est sélectionnée dans la boîte de dialogue adressage.</span><span class="sxs-lookup"><span data-stu-id="fca1a-145">Note that this behavior is independent of whether Custom is selected in the Addressing dialog box.</span></span> <span data-ttu-id="fca1a-146">Par exemple, si démarrer avec la liste d’adresses globale est sélectionnée et affiche les Contacts en tant que le premier élément de la liste déroulante, la propriété <b>ResolutionOrder</b> de la liste d’adresses de Contacts est toujours 1, même si lors de la résolution des destinataires, Outlook utilise l’adresse globale Début de liste.</span><span class="sxs-lookup"><span data-stu-id="fca1a-146">For example, if Start with Global Address List is selected and the scroll list  displays Contacts as the first item, the <b>ResolutionOrder</b> property of the Contacts address list is still 1, even though when resolving recipients, Outlook uses the Global Address List first.</span></span></para>
+          <para><span data-ttu-id="fca1a-147">Lorsque l’option personnalisé est sélectionnée dans la boîte de dialogue adressage, la propriété <b>ResolutionOrder</b> correspond à l’ordre par Outlook lors de la résolution des noms des destinataires.</span><span class="sxs-lookup"><span data-stu-id="fca1a-147">When Custom is selected in the Addressing dialog box, the <b>ResolutionOrder</b> property reflects the order that Outlook uses when resolving recipient names.</span></span> <span data-ttu-id="fca1a-148">La valeur de <b>propriété ResolutionOrder</b> est basé sur un.</span><span class="sxs-lookup"><span data-stu-id="fca1a-148">The value of <b>ResolutionOrder</b> is one-based.</span></span> <span data-ttu-id="fca1a-149">Dans ce cas, la première liste d’adresses à utiliser pour résoudre les noms des destinataires a une <b>propriété ResolutionOrder</b> égale à 1, la deuxième liste 2 d’adresses et ainsi de suite.</span><span class="sxs-lookup"><span data-stu-id="fca1a-149">In this case, the first address list to be used for resolving recipient names has a <b>ResolutionOrder</b> equal to 1, the second address list 2, and so forth.</span></span> <span data-ttu-id="fca1a-150">Si une liste d’adresses n’est pas utilisée pour résoudre les adresses, sa propriété <b>ResolutionOrder</b> est la valeur -1.</span><span class="sxs-lookup"><span data-stu-id="fca1a-150">If an address list is not used to resolve addresses, then its <b>ResolutionOrder</b> has a value of -1.</span></span> <span data-ttu-id="fca1a-151">Par programme, lorsque l’option personnalisé est sélectionnée dans la boîte de dialogue adressage, la propriété <b>ResolutionOrder</b> reflète la solution afin que <see cref="M:Microsoft.Office.Interop.Outlook.Recipients.ResolveAll" /> ou <see cref="M:Microsoft.Office.Interop.Outlook.Recipient.Resolve" /> utilise.</span><span class="sxs-lookup"><span data-stu-id="fca1a-151">Programmatically, when Custom is selected in the Addressing dialog box, the <b>ResolutionOrder</b> property reflects the actual resolution order that <see cref="M:Microsoft.Office.Interop.Outlook.Recipients.ResolveAll" /> or <see cref="M:Microsoft.Office.Interop.Outlook.Recipient.Resolve" /> uses.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -615,41 +418,16 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="bd243-136">Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-136">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  object for the current session.</span>
-          </span>
-          <span data-ttu-id="bd243-137">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-137">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fca1a-152">Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active.</span><span class="sxs-lookup"><span data-stu-id="fca1a-152">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  object for the current session.</span></span> <span data-ttu-id="fca1a-153">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fca1a-153">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="bd243-138">
-            <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
-            <code>Dim objNamespace As Outlook.NameSpace = _
+        <remarks><para><span data-ttu-id="fca1a-154">La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active.</span><span class="sxs-lookup"><span data-stu-id="fca1a-154">The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session.</span></span> <span data-ttu-id="fca1a-155">Les deux membres ont la même fonction.</span><span class="sxs-lookup"><span data-stu-id="fca1a-155">Both members serve the same purpose.</span></span> <span data-ttu-id="fca1a-156">Par exemple, les paires d’instructions suivantes effectuent la même fonction :</span><span class="sxs-lookup"><span data-stu-id="fca1a-156">For example, the following pairs of statements perform the same function:</span></span></para>
+          <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
-            <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
-            <code>Outlook.NameSpace objNamespace = 
+          <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
+          <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
-            <code>Outlook.NameSpace objSession = Application.Session;</code>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="bd243-138">
-              <para>The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session. Both members serve the same purpose. For example, the following pairs of statements perform the same function:</para>
-              <code>Dim objNamespace As Outlook.NameSpace = _
-    Application.GetNamespace("MAPI")</code>
-              <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
-              <code>Outlook.NameSpace objNamespace = 
-    Application.GetNamespace("MAPI");</code>
-              <code>Outlook.NameSpace objSession = Application.Session;</code>
-              <para />
-            </span>
-          </span>
-        </remarks>
+          <code>Outlook.NameSpace objSession = Application.Session;</code>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
