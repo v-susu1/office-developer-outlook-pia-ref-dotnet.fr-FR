@@ -1,13 +1,5 @@
 <Type Name="OutlookBarPaneEvents_BeforeNavigateEventHandler" FullName="Microsoft.Office.Interop.Outlook.OutlookBarPaneEvents_BeforeNavigateEventHandler">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="517b4e73c164f029f8676e71c1dd2c776c47dbf7" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633950" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public delegate void OutlookBarPaneEvents_BeforeNavigateEventHandler(OutlookBarShortcut Shortcut, out bool Cancel);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="745e41fa9ac697538739396eef107231e00b6ed4" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901731" /></Metadata><TypeSignature Language="C#" Value="public delegate void OutlookBarPaneEvents_BeforeNavigateEventHandler(OutlookBarShortcut Shortcut, out bool Cancel);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OutlookBarPaneEvents_BeforeNavigateEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.OutlookBarPaneEvents_BeforeNavigateEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub OutlookBarPaneEvents_BeforeNavigateEventHandler(Shortcut As OutlookBarShortcut, ByRef Cancel As Boolean)" />
@@ -36,8 +28,7 @@
   </ReturnValue>
   <Docs>
     <param name="Shortcut">Raccourci sur lequel l'utilisateur a cliqué.</param>
-    <param name="Cancel">
-      <b>False</b> lorsque l'événement se produit. Si la procédure événementielle affecte à cet argument la valeur <b>True</b>, le dossier actif ne change pas.</param>
+    <param name="Cancel"><b>False</b> lorsque l'événement se produit. Si la procédure événementielle affecte à cet argument la valeur <b>True</b>, le dossier actif ne change pas.</param>
     <summary>Il s’agit d’un délégué pour un événement dans l’objet correspondant. Après avoir implémenté une méthode de rappel pour l’événement, utilisez ce délégué pour connecter la méthode de rappel à l’événement. S’il existe plusieurs versions de l’interface d’événement, ce délégué connecte la méthode de rappel pour l’événement dans la version spécifiée d’Outlook.</summary>
     <remarks>To be added.</remarks>
   </Docs>

@@ -1,13 +1,5 @@
 <Type Name="Recipients" FullName="Microsoft.Office.Interop.Outlook.Recipients">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a1f866bf331ae092d59a1e210e16a01c82d526ca" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20635323" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Recipients : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c27dd2e543e6657e2eb0bd16529ca6be9ff7a8d6" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27900320" /></Metadata><TypeSignature Language="C#" Value="public interface Recipients : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Recipients implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.Recipients" />
   <TypeSignature Language="VB.NET" Value="Public Interface Recipients&#xA;Implements IEnumerable" />
@@ -31,9 +23,10 @@
   </Attributes>
   <Docs>
     <summary>Contient une collection de <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> objets pour un élément Outlook.</summary>
-    <remarks>
-      <para>Utilisez la propriété <b>Recipients</b> pour renvoyer l’objet <b>Recipients</b> d’un <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />, <see cref="T:Microsoft.Office.Interop.Outlook.JournalItem" />, <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />, <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" />, ou <see cref="T:Microsoft.Office.Interop.Outlook.TaskItem" /> objet.</para> Utilisation de 
-      <para>les <see cref="M:Microsoft.Office.Interop.Outlook.Recipients.Add(System.String)" /> méthode pour créer un nouvel objet <b>Recipient</b> et l’ajouter à l’objet <b>Recipients</b> . Le <see cref="P:Microsoft.Office.Interop.Outlook.Recipient.Type" /> propriété d’un nouvel objet <b>destinataire</b> est définie sur la valeur par défaut de l’objet <b>AppointmentItem</b>, <b>JournalItem</b>, <b>MailItem</b>ou <b>TaskItem</b> associé et doit être réinitialisée pour indiquer un autre destinataire type.</para><para>Utiliser <b>destinataires</b>(<paramref name="index" />), où <paramref name="index" /> est le nom ou le numéro d’index, pour renvoyer un seul objet <b>Recipient</b> . Le nom peut être une chaîne représentant le nom complet, l’alias ou l’adresse de messagerie SMTP complète du destinataire.</para><para /></remarks>
+    <remarks><para>Utilisez la propriété <b>Recipients</b> pour renvoyer l’objet <b>Recipients</b> d’un <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />, <see cref="T:Microsoft.Office.Interop.Outlook.JournalItem" />, <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />, <see cref="T:Microsoft.Office.Interop.Outlook.MeetingItem" />, ou <see cref="T:Microsoft.Office.Interop.Outlook.TaskItem" /> objet.</para>
+      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook.Recipients.Add(System.String)" /> méthode pour créer un nouvel objet <b>Recipient</b> et l’ajouter à l’objet <b>Recipients</b> . Le <see cref="P:Microsoft.Office.Interop.Outlook.Recipient.Type" /> propriété d’un nouvel objet <b>destinataire</b> est définie sur la valeur par défaut de l’objet <b>AppointmentItem</b>, <b>JournalItem</b>, <b>MailItem</b>ou <b>TaskItem</b> associé et doit être réinitialisée pour indiquer un autre type de destinataire.</para>
+      <para>Utilisez la propriété <b>Recipients</b>(<paramref name="index" />), où <paramref name="index" /> est le nom ou le numéro d’index, pour renvoyer un seul objet <b>Recipient</b> . Le nom peut être une chaîne représentant le nom complet, l’alias ou l’adresse de messagerie SMTP complète du destinataire.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -288,16 +281,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

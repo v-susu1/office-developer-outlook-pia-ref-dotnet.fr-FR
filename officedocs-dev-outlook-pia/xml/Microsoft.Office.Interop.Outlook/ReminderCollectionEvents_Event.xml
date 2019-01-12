@@ -1,13 +1,5 @@
 <Type Name="ReminderCollectionEvents_Event" FullName="Microsoft.Office.Interop.Outlook.ReminderCollectionEvents_Event">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="82f7e87f4a7c31c6fea7961afdea6e402f53ccb4" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634596" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ReminderCollectionEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c046e68f17198ddfc2900cf348031dac0601e25f" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27898514" /></Metadata><TypeSignature Language="C#" Value="public interface ReminderCollectionEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ReminderCollectionEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.ReminderCollectionEvents_Event" />
   <TypeSignature Language="VB.NET" Value="Public Interface ReminderCollectionEvents_Event" />
@@ -68,10 +60,8 @@
       </ReturnValue>
       <Docs>
         <summary>Survient après l’ajout d’un rappel.</summary>
-        <remarks>
-          <para>Un rappel n’est pas réellement créé jusqu'à ce que l’élément Microsoft Outlook associé a été enregistré. Par conséquent, cet événement se produit pas jusqu'à ce que l’objet d’élément associé a été enregistré.</para>
-          <para />
-        </remarks>
+        <remarks><para>Un rappel n’est pas réellement créé jusqu'à ce que l’élément Microsoft Outlook associé a été enregistré. Par conséquent, cet événement se produit pas jusqu'à ce que l’objet d’élément associé a été enregistré.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReminderChange">
@@ -128,27 +118,25 @@
       </ReturnValue>
       <Docs>
         <summary>Cet événement se produit lorsqu’un <see cref="T:Microsoft.Office.Interop.Outlook.Reminder" /> objet a été supprimé de la collection.</summary>
-        <remarks>
-          <para>Un rappel peut être retiré de la collection <b>Reminders</b> par un des moyens suivants :</para>
+        <remarks><para>Un rappel peut être retiré de la collection <b>Reminders</b> de l'une des façons suivantes :</para>
           <list type="bullet">
             <item>
-              <para>méthode Remove de la collection Reminders The.</para>
+              <para>Méthode Remove de la collection Reminders.</para>
             </item>
             <item>
-              <para>Méthode Dismiss de l’objet Reminder the.</para>
+              <para>Méthode Dismiss de l’objet Reminder.</para>
             </item>
             <item>
-              <para>Lorsque l’utilisateur clique sur le bouton faire disparaître.</para>
+              <para>lorsque l'utilisateur clique sur le bouton Faire disparaître ;</para>
             </item>
             <item>
-              <para>Lorsqu’un utilisateur désactive un rappel de réunion à partir de l’élément associé.</para>
+              <para>lorsqu'un utilisateur désactive un rappel de réunion à partir de l'élément associé ;</para>
             </item>
             <item>
-              <para>Lorsqu’un utilisateur supprime un élément contenant un rappel.</para>
+              <para>lorsqu'un utilisateur supprime un élément contenant un rappel.</para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Snooze">
@@ -169,10 +157,8 @@
         <summary>Survient lorsqu’un rappel est rejeté à l’aide du bouton Répéter.
 
 </summary>
-        <remarks>
-          <para>Cet événement se déclenche lorsque la <see cref="M:Microsoft.Office.Interop.Outlook._Reminder.Snooze(System.Object)" /> méthode est exécutée ou lorsque l’utilisateur clique sur le bouton Répéter.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cet événement se déclenche lorsque la <see cref="M:Microsoft.Office.Interop.Outlook._Reminder.Snooze(System.Object)" /> méthode est exécutée ou lorsque l’utilisateur clique sur le bouton Répéter.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

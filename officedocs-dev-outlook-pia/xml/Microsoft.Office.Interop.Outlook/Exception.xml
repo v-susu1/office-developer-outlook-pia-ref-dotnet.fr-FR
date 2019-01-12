@@ -1,13 +1,5 @@
 <Type Name="Exception" FullName="Microsoft.Office.Interop.Outlook.Exception">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9b115b7a385cbe53cefdab4d3a549f6f64635e72" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634391" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Exception" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="47943f3ce7b614b555767c32ad8d514efe3bf2b1" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27899984" /></Metadata><TypeSignature Language="C#" Value="public interface Exception" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Exception" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.Exception" />
   <TypeSignature Language="VB.NET" Value="Public Interface Exception" />
@@ -27,14 +19,12 @@
   </Attributes>
   <Docs>
     <summary>Représente les informations relatives à une instance d’un <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> objet qui est une exception à une série périodique.</summary>
-    <remarks>
-      <para>Contrairement à la plupart des autres objets Microsoft Outlook, l’objet <b>Exception</b> est un objet en lecture seule. Cela signifie que vous ne pouvez pas créer un objet <b>Exception</b> mais, au lieu de cela, l’objet est créé lorsqu’une propriété d’un <b>objet AppointmentItem</b> est modifiée. Par exemple, si vous modifiez le <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.Start" /> propriété d' un <b>objet AppointmentItem</b>, vous avez créé une <b>Exception</b> dans <b>AppointmentItem.RecurrencePattern.Exceptions</b>.</para>
+    <remarks><para> Contrairement à la plupart des autres objets Microsoft Outlook, l’objet <b>Exception</b> est un objet en lecture seule. Cela signifie que vous ne pouvez pas créer un objet <b>Exception</b> mais, au lieu de cela, l’objet est créé lorsqu’une propriété d’un <b>objet AppointmentItem</b> est modifiée. Par exemple, si vous modifiez le <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.Start" /> propriété d' un <b>objet AppointmentItem</b>, vous avez créé une <b>Exception</b> dans <b>AppointmentItem.RecurrencePattern.Exceptions</b>.</para>
       <para>
         <b>Remarque</b>: le <see cref="T:Microsoft.Office.Interop.Outlook.Exceptions" /> objet est sur le <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> , pas l’objet <b>AppointmentItem</b> proprement dit.</para>
-      <para>Lorsque vous travaillez avec des éléments de rendez-vous périodiques, vous devez libérer tout avant références, obtenir de nouvelles références à l’élément de rendez-vous périodiques avant d’accéder ou modifier l’élément et libérer les références dès que vous avez terminé et que vous avez enregistré le modifications apportées. Cela s’applique à l’abonnement <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> objet et tous <see cref="T:Microsoft.Office.Interop.Outlook.Exception" /> ou <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> objet. Pour libérer une référence dans Visual Basic, définissez existant de cet objet sur <b>Nothing</b>. En c#, libérer explicitement la mémoire pour cet objet. </para>
-      <para>Notez que même après avoir libérer la référence et tenter d’obtenir une référence, s’il existe toujours une référence active, organisée par un autre complément ou Outlook, à un des objets ci-dessus, votre nouvelle référence pointe toujours vers une copie obsolète de la objet. Par conséquent, il est important que vous relâchiez vos références dès que vous avez terminé avec le rendez-vous périodique.</para>
-      <para />
-    </remarks>
+      <para>Lorsque vous travaillez avec des éléments de rendez-vous périodiques, vous devez libérer les références antérieures, obtenir de nouvelles références à l'élément de rendez-vous périodique avant d'accéder à l'élément ou de le modifier, et libérer ces références dès que vous avez terminé et enregistré les modifications. Cela s’applique à l’abonnement <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> objet et tous <see cref="T:Microsoft.Office.Interop.Outlook.Exception" /> ou <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> objet. Pour libérer une référence dans Visual Basic, définissez cet objet existant sur <b>Nothing</b>. Dans C#, libérez explicitement la mémoire pour cet objet. </para>
+      <para>Notez que même après avoir libéré votre référence et tenté d’obtenir une nouvelle référence, s’il existe encore une référence active détenue par un autre complément ou par Outlook vers un des objets mentionnés ci-dessus, votre nouvelle référence pointera encore vers une copie périmée de l’objet. Il est donc important de libérer vos références dès que vous en avez terminé avec le rendez-vous périodique.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -90,11 +80,9 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> objet qui constitue l’exception. Non valide pour les rendez-vous supprimés. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Lorsque vous travaillez avec des éléments de rendez-vous périodiques, vous devez libérer tout avant références, obtenir de nouvelles références à l’élément de rendez-vous périodiques avant d’accéder ou modifier l’élément et libérer les références dès que vous avez terminé et que vous avez enregistré le modifications apportées. Cela s’applique à l’abonnement <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> objet et tous <see cref="T:Microsoft.Office.Interop.Outlook.Exception" /> ou <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> objet. Pour libérer une référence dans Visual Basic, définissez existant de cet objet sur <b>Nothing</b>. En c#, libérer explicitement la mémoire pour cet objet. </para>
-          <para>Notez que même après avoir libérer la référence et tenter d’obtenir une référence, s’il existe toujours une référence active, organisée par un autre complément ou Outlook, à un des objets ci-dessus, votre nouvelle référence pointe toujours vers une copie de l’objet obsolète . Par conséquent, il est important que vous relâchiez vos références dès que vous avez terminé avec le rendez-vous périodique.</para>
-          <para />
-        </remarks>
+        <remarks><para>Lorsque vous travaillez avec des éléments de rendez-vous périodiques, vous devez libérer les références antérieures, obtenir de nouvelles références à l'élément de rendez-vous périodique avant d'accéder à l'élément ou de le modifier, et libérer ces références dès que vous avez terminé et enregistré les modifications. Cela s’applique à l’abonnement <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> objet et tous <see cref="T:Microsoft.Office.Interop.Outlook.Exception" /> ou <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> objet. Pour libérer une référence dans Visual Basic, définissez cet objet existant sur <b>Nothing</b>. Dans C#, libérez explicitement la mémoire pour cet objet. </para>
+          <para>Notez que même après avoir libéré votre référence et tenté d’obtenir une nouvelle référence, s’il existe encore une référence active détenue par un autre complément ou par Outlook vers un des objets mentionnés ci-dessus, votre nouvelle référence pointera encore vers une copie périmée de l’objet. Il est donc important de libérer vos références dès que vous en avez terminé avec le rendez-vous périodique.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Class">
@@ -265,16 +253,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

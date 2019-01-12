@@ -1,13 +1,5 @@
 <Type Name="_ConversationHeader" FullName="Microsoft.Office.Interop.Outlook._ConversationHeader">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3e7523fbc078c04c08925a77c26ff767d6e7a942" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633648" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _ConversationHeader" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3e7523fbc078c04c08925a77c26ff767d6e7a942" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901745" /></Metadata><TypeSignature Language="C#" Value="public interface _ConversationHeader" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _ConversationHeader" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._ConversationHeader" />
   <TypeSignature Language="VB.NET" Value="Public Interface _ConversationHeader" />
@@ -111,10 +103,10 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) qui identifie de manière unique le <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> objet auquel appartient cet en-tête de conversation. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété associe l’en-tête de conversation avec d’autres éléments dans la même conversation. Tous ces éléments et la conversation ont la même valeur dans leur propriété <b>ConversationID</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété associe l’en-tête de conversation avec les autres éléments de la même conversation. Ces éléments et la conversation ont la même valeur dans leur propriété <b>ConversationID</b>.
+
+</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ConversationTopic">
@@ -142,10 +134,8 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) qui représente le sujet de la conversation de l’élément Outlook. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Correspond à la propriété MAPI PidTagConversationTopic.</para>
-          <para />
-        </remarks>
+        <remarks><para>Correspond à la propriété MAPI PidTagConversationTopic.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetConversation">
@@ -171,25 +161,23 @@
       <Docs>
         <summary>Obtient un <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> object qui représente la conversation à laquelle appartient cet en-tête de conversation.</summary>
         <returns>Renvoie un objet <b>Conversation</b> représentant la conversation à laquelle appartient cet en-tête de conversation.</returns>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>GetConversation</b> renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) si aucune conversation n’existe pour l’élément. Aucune conversation n’existe pour un élément dans les scénarios suivants :</para>
           <list type="bullet">
             <item>
-              <para>l’élément n’a pas été enregistré. Un élément peut être enregistré par programme, par une action de l’utilisateur ou par l’enregistrement automatique. </para>
+              <para>L’élément n’a pas été enregistré. Un élément peut être enregistré par programme, par une action de l’utilisateur ou par l’enregistrement automatique. </para>
             </item>
             <item>
-              <para>Pour un élément qui peut être envoyé (par exemple, un élément de courrier, élément de rendez-vous ou élément de contact), l’élément n’a pas été envoyé.</para>
+              <para>Un élément qui peut être envoyé (par exemple un élément de courrier, de rendez-vous ou de contact) n’a pas été envoyé.</para>
             </item>
             <item>
-              <para>Les conversations sont désactivées via le Registre Windows.</para>
+              <para>Les conversations sont désactivées par le biais du Registre Windows.</para>
             </item>
             <item>
-              <para>Le magasin ne gère pas l’affichage de Conversation (par exemple, Outlook s’exécute en mode en ligne classique avec une version de Microsoft Exchange qui est antérieure à Microsoft Exchange Server 2010). Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._Store.IsConversationEnabled" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> objet afin de déterminer si la banque prend en charge l’affichage Conversation.</para>
+              <para>Le magasin ne gère pas l’affichage de Conversation (par exemple, Outlook s’exécute en mode en ligne classique avec une version de Microsoft Exchange qui est antérieure à Microsoft Exchange Server 2010). Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._Store.IsConversationEnabled" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> objet afin de déterminer si la banque prend en charge l’affichage de la Conversation.</para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetItems">
@@ -215,10 +203,8 @@
       <Docs>
         <summary>Obtient un <see cref="T:Microsoft.Office.Interop.Outlook.SimpleItems" /> collection qui contient tous les éléments de la conversation qui résident dans le même dossier que l’en-tête de conversation sélectionné.</summary>
         <returns>Renvoie une collection <b>SimpleItems</b> d’éléments qui appartiennent à la même conversation et résident dans le même dossier que l’en-tête de conversation.</returns>
-        <remarks>
-          <para>La collection <b>SimpleItems</b> contient uniquement les éléments de conversation dans le dossier qui contient l’en-tête de conversation. La collection <b>SimpleItems</b> ne renvoie pas d’éléments de conversation entre un dossier. Si vous devez accéder cross-dossier contenu, utilisez la <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" />objet. Si aucun élément de conversation n’existe dans le même dossier que l’en-tête de conversation, <b>GetItems</b> renvoie une collection <b>SimpleItems</b> avec la <see cref="P:Microsoft.Office.Interop.Outlook._SimpleItems.Count" /> propriété est égale à 0.</para>
-          <para />
-        </remarks>
+        <remarks><para>La collection <b>SimpleItems</b> contient uniquement les éléments de conversation dans le dossier qui contient l’en-tête de conversation. La collection <b>SimpleItems</b> ne renvoie pas d’éléments de conversation entre un dossier. Si vous devez accéder cross-dossier contenu, utilisez la <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" />objet. Si aucun élément de conversation n’existe dans le même dossier que l’en-tête de conversation, <b>GetItems</b> renvoie une collection <b>SimpleItems</b> avec la <see cref="P:Microsoft.Office.Interop.Outlook._SimpleItems.Count" /> propriété est égale à 0.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -246,9 +232,9 @@
       <Docs>
         <summary>Renvoie l’objet parent <see cref="T:System.Object" /> de l’objet spécifié. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le parent d’un <see cref="T:Microsoft.Office.Interop.Outlook.ConversationHeader" /> objet est une <see cref="T:Microsoft.Office.Interop.Outlook.Selection" /> objet.</para> Objet 
-          <para>la <b>sélection</b> de renvoyé contient uniquement les objets <b>ConversationHeader</b> . Obtention de la propriété <b>Parent</b> équivaut à appeler le <see cref="M:Microsoft.Office.Interop.Outlook.Selection.GetSelection(Microsoft.Office.Interop.Outlook.OlSelectionContents)" /> méthode avec la <see cref="F:Microsoft.Office.Interop.Outlook.OlSelectionContents.olConversationHeaders" /> argument.</para><para /></remarks>
+        <remarks><para>Le parent d’un <see cref="T:Microsoft.Office.Interop.Outlook.ConversationHeader" /> objet est une <see cref="T:Microsoft.Office.Interop.Outlook.Selection" /> objet.</para>
+          <para>L’objet <b>Selection</b> renvoyée contient uniquement les objets <b>ConversationHeader</b> . Obtention de la propriété <b>Parent</b> équivaut à appeler le <see cref="M:Microsoft.Office.Interop.Outlook.Selection.GetSelection(Microsoft.Office.Interop.Outlook.OlSelectionContents)" /> méthode avec la <see cref="F:Microsoft.Office.Interop.Outlook.OlSelectionContents.olConversationHeaders" /> argument.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -276,11 +262,9 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) s’il n’existe aucune session active. </para>
-          <para>Vous pouvez utiliser la propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session en cours.</para>
-          <para />
-        </remarks>
+        <remarks><para>Renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) s’il n’existe aucune session active. </para>
+          <para>Vous pouvez utiliser la propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

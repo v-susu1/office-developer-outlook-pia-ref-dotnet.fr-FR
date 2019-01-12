@@ -1,13 +1,5 @@
 <Type Name="SharingItem" FullName="Microsoft.Office.Interop.Outlook.SharingItem">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="63d5d340dc1933c7c9df7ff9df6b1420f1fc1fde" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633804" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SharingItem : Microsoft.Office.Interop.Outlook._SharingItem, Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="16a751c8e7e322c5384c507c1e0de9d3b65c2f7f" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27899237" /></Metadata><TypeSignature Language="C#" Value="public interface SharingItem : Microsoft.Office.Interop.Outlook._SharingItem, Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SharingItem implements class Microsoft.Office.Interop.Outlook._SharingItem, class Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.SharingItem" />
   <TypeSignature Language="VB.NET" Value="Public Interface SharingItem&#xA;Implements _SharingItem, ItemEvents_10_Event" />
@@ -34,12 +26,10 @@
   </Attributes>
   <Docs>
     <summary>Représente un message de partage dans un dossier Boîte de réception.</summary>
-    <remarks>
-      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._SharingItem" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />.</para>
+    <remarks><para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._SharingItem" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />.</para>
       <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.CreateSharingItem(System.Object,System.Object)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour créer un objet <b>SharingItem</b> qui représente une nouvelle demande ou invitation de partage.</para>
-      <para>Utiliser <see cref="P:Microsoft.Office.Interop.Outlook._Folders.Item(System.Object)" /> (<paramref name="index" />), où <paramref name="index" /> est le numéro d’index d’un message de partage ou une valeur correspondant à la propriété par défaut d’un message, pour renvoyer un seul objet <b>SharingItem</b> depuis un dossier boîte de réception.</para>
-      <para />
-    </remarks>
+      <para>Utilisez <see cref="P:Microsoft.Office.Interop.Outlook._Folders.Item(System.Object)" /> (<paramref name="index" />), où <paramref name="index" /> est le numéro d’index d’un message de partage ou une valeur correspondant à la propriété par défaut d’un message, pour renvoyer un seul objet <b>SharingItem</b> depuis un dossier boîte de réception.</para>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

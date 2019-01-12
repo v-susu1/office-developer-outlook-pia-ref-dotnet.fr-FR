@@ -1,13 +1,5 @@
 <Type Name="ApplicationEvents_11_ItemSendEventHandler" FullName="Microsoft.Office.Interop.Outlook.ApplicationEvents_11_ItemSendEventHandler">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="465b86198df606e5a7627ef5ccb68c62ec8f4c7a" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634882" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public delegate void ApplicationEvents_11_ItemSendEventHandler(object Item, out bool Cancel);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ec39d34f9d5843049568f02a7703a30147aac215" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901675" /></Metadata><TypeSignature Language="C#" Value="public delegate void ApplicationEvents_11_ItemSendEventHandler(object Item, out bool Cancel);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ApplicationEvents_11_ItemSendEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_ItemSendEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ApplicationEvents_11_ItemSendEventHandler(Item As Object, ByRef Cancel As Boolean)" />
@@ -36,8 +28,7 @@
   </ReturnValue>
   <Docs>
     <param name="Item">Élément envoyé.</param>
-    <param name="Cancel">
-      <b>False</b> lorsque l'événement survient. Si la procédure événementielle affecte à cet argument la valeur <b>True</b>, l'action d'envoi ne se termine pas et l'inspecteur reste ouvert.</param>
+    <param name="Cancel"><b>False</b> lorsque l'événement survient. Si la procédure événementielle affecte à cet argument la valeur <b>True</b>, l'action d'envoi ne se termine pas et l'inspecteur reste ouvert.</param>
     <summary>Il s’agit d’un délégué pour un événement dans l’objet correspondant. Après avoir implémenté une méthode de rappel pour l’événement, utilisez ce délégué pour connecter la méthode de rappel à l’événement. S’il existe plusieurs versions de l’interface d’événement, ce délégué connecte la méthode de rappel pour l’événement dans la version spécifiée d’Outlook.</summary>
     <remarks>To be added.</remarks>
   </Docs>

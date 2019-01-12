@@ -1,13 +1,5 @@
 <Type Name="Reminders" FullName="Microsoft.Office.Interop.Outlook.Reminders">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6aa22620bec00382bc27272b4238014063511ff2" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634520" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Reminders : Microsoft.Office.Interop.Outlook._Reminders, Microsoft.Office.Interop.Outlook.ReminderCollectionEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3177ac1eb6298998c0f5ce092ef8ffe8c6b6fb25" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901773" /></Metadata><TypeSignature Language="C#" Value="public interface Reminders : Microsoft.Office.Interop.Outlook._Reminders, Microsoft.Office.Interop.Outlook.ReminderCollectionEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Reminders implements class Microsoft.Office.Interop.Outlook._Reminders, class Microsoft.Office.Interop.Outlook.ReminderCollectionEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.Reminders" />
   <TypeSignature Language="VB.NET" Value="Public Interface Reminders&#xA;Implements _Reminders, ReminderCollectionEvents_Event" />
@@ -34,12 +26,10 @@
   </Attributes>
   <Docs>
     <summary>Contient une collection de tous les <see cref="T:Microsoft.Office.Interop.Outlook.Reminder" /> les objets d’une application Microsoft Outlook qui représentent les rappels pour tous les éléments en attente.</summary>
-    <remarks>
-      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._Reminders" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.ReminderCollectionEvents_Event" />.</para>
+    <remarks><para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._Reminders" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.ReminderCollectionEvents_Event" />.</para>
       <para>Utiliser le <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> l’objet <see cref="P:Microsoft.Office.Interop.Outlook._Application.Reminders" /> propriété permet de renvoyer la collection <b>Reminders</b> . Utilisez <b>Reminders</b>(<paramref name="index" />), où <paramref name="index" /> est le nom ou la valeur ordinale du rappel, pour renvoyer un seul <see cref="T:Microsoft.Office.Interop.Outlook.Reminder" /> objet. </para>
-      <para>Rappels créés par programmation lorsqu’un nouvel élément Microsoft Outlook est créé avec un rappel. Par exemple, un rappel est créé lorsqu’un <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> objet est créé et l’objet <b>AppointmentItem</b><see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.ReminderSet" /> propriété est définie sur <b>True</b>.</para>
-      <para />
-    </remarks>
+      <para>Les rappels sont créés par programmation lorsqu’un nouvel élément Microsoft Outlook est créé avec un rappel. Par exemple, un rappel est créé lorsqu’un <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> objet est créé et l’objet <b>AppointmentItem</b> <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.ReminderSet" /> propriété est définie sur <b>True</b>.</para>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

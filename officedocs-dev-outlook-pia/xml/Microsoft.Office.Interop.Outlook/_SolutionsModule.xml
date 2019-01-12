@@ -1,13 +1,5 @@
 <Type Name="_SolutionsModule" FullName="Microsoft.Office.Interop.Outlook._SolutionsModule">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f35b5c23dfbd65c71e9461b0584b441e862ca400" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633708" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _SolutionsModule" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f35b5c23dfbd65c71e9461b0584b441e862ca400" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27896974" /></Metadata><TypeSignature Language="C#" Value="public interface _SolutionsModule" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _SolutionsModule" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._SolutionsModule" />
   <TypeSignature Language="VB.NET" Value="Public Interface _SolutionsModule" />
@@ -57,9 +49,8 @@
         <param name="Solution">A <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> object qui représente le dossier racine solution à ajouter à la <b>SolutionsModule</b>.</param>
         <param name="Scope">Un <see cref="T:Microsoft.Office.Interop.Outlook.OlSolutionScope" /> énumération qui spécifie s’il faut afficher les dossiers qui se trouvent dans la solution uniquement dans le module <b>Solutions</b> et la liste des <b>dossiers</b> , ou les afficher dans leurs modules respectifs par défaut dans le <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPane" /> également.</param>
         <summary>Ajoute un dossier racine solution et ses sous-dossiers à la <see cref="T:Microsoft.Office.Interop.Outlook.SolutionsModule" /> module.</summary>
-        <remarks>
-          <para>Si la méthode <b>AddSolution</b> aboutit et aucun dossier racine solution n’existait précédemment dans le module <b>Solutions</b> , Microsoft Outlook affiche le module <b>Solutions</b> dans le volet de Navigation.</para>
-          <para>Vous ne pouvez pas ajouter les dossiers suivants au module <b>Solutions</b> en tant que dossier racine solution :</para>
+        <remarks><para>Si la méthode <b>AddSolution</b> aboutit et aucun dossier racine solution n’existait précédemment dans le module <b>Solutions</b> , Microsoft Outlook affiche le module <b>Solutions</b> dans le volet de Navigation.</para>
+          <para>Vous ne pouvez pas ajouter les dossiers suivants au module <b>Solutions</b> en tant que dossier racine Solution :</para>
           <list type="bullet">
             <item>
               <para>Un dossier Outlook s’affiche dans le volet de Navigation, tel que défini par le <see cref="T:Microsoft.Office.Interop.Outlook.OlDefaultFolders" /> énumération.</para>
@@ -68,16 +59,19 @@
               <para>Un dossier spécial, tel que défini par le <see cref="T:Microsoft.Office.Interop.Outlook.OlSpecialFolders" /> énumération.</para>
             </item>
             <item>
-              <para>Stocker de n’importe quel dossier sur un dossier public Microsoft Exchange Server. Le <see cref="P:Microsoft.Office.Interop.Outlook._Store.ExchangeStoreType" /> propriété sur le <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> objet pour ce dossier a <b>pour valeur olExchangePublicFolder</b>.</para>
-            </item> Dossier 
-            <item><para>cachée. Un dossier masqué est dont la propriété MAPI, <b>PR_ATTR_HIDDEN</b>, a la <b>valeur True</b> ou qui ne figure pas dans la sous-arborescence IPM.</para></item></list>
-          <para>Cette méthode renvoie également une erreur si le dossier que vous spécifiez déjà existe sous forme d’un dossier racine ou dans un sous-dossier dans le module <b>Solutions</b> , ou si le dossier est un dossier parent d’un dossier dans le module <b>Solutions</b> .</para>
+              <para>Magasin de n’importe quel dossier sur un dossier public Microsoft Exchange Server. Le <see cref="P:Microsoft.Office.Interop.Outlook._Store.ExchangeStoreType" /> propriété sur le <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> objet pour ce dossier a <b>pour valeur olExchangePublicFolder</b>.</para>
+            </item>
+            <item>
+              <para>
+Dossier caché. Un dossier caché est un dossier dont la valeur de la propriété MAPI <b>PR_ATTR_HIDDEN</b> est définie sur <b>True</b>, ou qui n’est pas inclus dans la sous-arborescence IPM.</para>
+            </item>
+          </list>
+          <para>Cette méthode renvoie également une erreur si le dossier que vous spécifiez déjà existe sous un dossier racine ou un sous-dossier dans le module <b>Solutions</b> , ou si le dossier est un dossier parent d’un dossier dans le module <b>Solutions</b> .</para>
           <para>Si le <paramref name="Scope" /> paramètre est défini sur <b>olShowInDefaultModules</b> de l’énumération <b>OlSolutionScope</b> , à la racine de solution et ses sous-dossiers sont affichés dans leurs modules respectifs par défaut ainsi que le module <b>Solutions</b> . Si le <paramref name="Scope" /> paramètre est défini sur <b>olHideInDefaultModules</b>, la racine de solution et ses sous-dossiers sont affichés dans le module <b>Solutions</b> .</para>
-          <para>Dossiers 
+          <para>Les dossiers 
             <b>solution</b> sont toujours affichées dans le module de la <b>Liste des dossiers</b> .</para>
           <para>Par défaut, Outlook affiche le module <b>Solutions</b> après le module <b>tâches</b> , à condition que les modules de navigation sont dans l’ordre par défaut – courrier, calendrier, Contacts et tâches. Si le volet de Navigation est développé, le module <b>Solutions</b> s’affiche également à l’origine comme un module étendu. Si le module <b>tâches</b> n’apparaît pas, le module <b>Solutions</b> s’affiche après le dernier module développé dans le volet de Navigation.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -161,10 +155,8 @@
       <Docs>
         <summary>Renvoie un <see cref="T:System.String" /> valeur (<b>chaîne</b> en c#) qui représente le nom complet localisé pour le <see cref="T:Microsoft.Office.Interop.Outlook.SolutionsModule" /> objet. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le nom complet du module <b>Solutions</b> peut être personnalisé s’il existe un seul dossier racine de solution dans le module <b>Solutions</b> . S’il existe plusieurs dossiers racine de solution, le nom rétablit <b>Solutions</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le nom d’affichage du module <b>Solutions</b> peut être modifié, à condition qu’il n’existe qu’un seul dossier racine Solution sous le module <b>Solutions</b>. Dans le cas de plusieurs dossiers racine Solution, le module restera nommé <b>Solutions</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NavigationModuleType">
@@ -192,10 +184,8 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlNavigationModuleType" /> constante représentant le type de module de navigation pour le <see cref="T:Microsoft.Office.Interop.Outlook.SolutionsModule" /> objet. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour l’objet <b>SolutionsModule</b> , cette propriété renvoie la valeur <b>olModuleSolutions</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour l’objet <b>SolutionsModule</b>, cette propriété renvoie la valeur <b>olModuleSolutions</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -223,10 +213,8 @@
       <Docs>
         <summary>Renvoie l’objet parent <see cref="T:System.Object" /> (<b>objet</b> en c#) de l’objet <see cref="T:Microsoft.Office.Interop.Outlook.SolutionsModule" /> objet. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le parent d’un objet <b>SolutionsModule</b> renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPane" /> objet.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le parent d’un objet <b>SolutionsModule</b> renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPane" /> objet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Position">
@@ -255,21 +243,19 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>entier</b> (<b>int</b> en c#) qui représente la position ordinale de le <see cref="T:Microsoft.Office.Interop.Outlook.SolutionsModule" /> objet lorsqu’il est affiché dans le <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPane" />. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>entier</b> (<b>int</b> en c#) qui représente la position ordinale de le <see cref="T:Microsoft.Office.Interop.Outlook.SolutionsModule" /> objet lorsqu’il est affiché dans le <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPane" />. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété peut uniquement être définie sur une valeur comprise entre 1 et 9. Une erreur se produit si vous tentez de définir cette propriété sur une valeur en dehors de cette plage. Si aucune solution n’existe dans le module <b>Solutions</b> , définition ou l’obtention de la propriété <b>Position</b> génère également une erreur.</para>
-          <para>Modification de la valeur de cette propriété pour un objet <b>SolutionsModule</b> donné modifie les valeurs <b>Position</b> des autres modules de navigation dans un <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModules" /> collection, en fonction de la modification relative entre la nouvelle valeur et la valeur d’origine.</para>
+        <remarks><para>Cette propriété ne peut être définie que sur une valeur comprise entre 1 et 9. Une erreur se produit si vous tentez de lui donner une valeur qui se trouve en dehors de cette plage de valeurs. S’il n’existe aucune solution dans le module <b>Solutions</b>, l’accès ou la définition de la propriété <b>Position</b> génère un message d’erreur.</para>
+          <para>Modification de la valeur de cette propriété pour un objet <b>SolutionsModule</b> donné modifie les valeurs <b>Position</b> des autres modules de navigation dans un <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModules" /> collection, en fonction de la modification relative entre la nouvelle valeur et la valeur d’origine. </para>
           <list type="bullet">
             <item>
-              <para>Si la nouvelle valeur n’est inférieure à la valeur d’origine, l’objet <b>SolutionsModule</b> spécifié se déplace jusqu'à la nouvelle position et les autres modules de navigation qui sont déjà à ou en dessous de cette position déplacent vers le bas.</para>
+              <para>Si la nouvelle valeur est inférieure à la valeur d’origine, alors l’objet <b>SolutionsModule</b> spécifié se déplace vers le haut et pousse les autres modules de navigation déjà à cette position ou en dessous vers le bas.</para>
             </item>
             <item>
-              <para>Si la nouvelle valeur est supérieure à la valeur d’origine, l’objet <b>SolutionsModule</b> spécifié se déplace vers le bas et les autres modules de navigation entre l’ancienne position et la nouvelle position vers le haut, le remplissage de l’ancienne position.</para>
+              <para>Si la nouvelle valeur est supérieure à la valeur d’origine, alors l’objet <b>SolutionsModule</b> spécifié se déplace vers le bas et pousse les autres modules de navigation entre l’ancienne position et la nouvelle en prenant l’ancienne position.</para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -297,9 +283,9 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) s’il n’existe aucune session active.</para> Propriété 
-          <para>la <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction.</para><para /></remarks>
+        <remarks><para>Renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) s’il n’existe aucune session active.</para>
+          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -328,12 +314,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:System.Boolean" /> valeur (<b>bool</b> en c#) qui indique si le module <b>Solutions</b> est affiché dans le volet de Navigation. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:System.Boolean" /> valeur (<b>bool</b> en c#) qui indique si le module <b>Solutions</b> est affiché dans le volet de Navigation. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>S’il n’existe aucune solution dans le module <b>Solutions</b> , le paramètre ou la propriété <b>Visible</b> entraîne une erreur.</para>
-          <para />
-        </remarks>
+        <remarks><para>S’il n’existe aucune solution dans le module <b>Solutions</b>, l’accès ou la définition de la propriété <b>Visible</b> génère une erreur.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

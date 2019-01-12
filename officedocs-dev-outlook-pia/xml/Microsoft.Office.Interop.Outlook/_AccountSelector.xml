@@ -1,13 +1,5 @@
 <Type Name="_AccountSelector" FullName="Microsoft.Office.Interop.Outlook._AccountSelector">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="33f6ada9ca53fd6445dfacde4868a898b71da6f5" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633693" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _AccountSelector" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="33f6ada9ca53fd6445dfacde4868a898b71da6f5" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27896743" /></Metadata><TypeSignature Language="C#" Value="public interface _AccountSelector" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _AccountSelector" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._AccountSelector" />
   <TypeSignature Language="VB.NET" Value="Public Interface _AccountSelector" />
@@ -111,10 +103,8 @@
       <Docs>
         <summary>Renvoie la valeur de type <b>Object</b> parent de l’objet spécifié. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le parent de l’objet <b>AccountSelector</b> renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> objet.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le parent de l’objet <b>AccountSelector</b> renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> objet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectedAccount">
@@ -142,11 +132,9 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Account" /> object qui représente le compte sélectionné dans le Microsoft Office Backstage dans Microsoft Outlook. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Dans l’interface utilisateur Outlook, vous pouvez sélectionner un compte explicitement sur l’onglet Infos du mode Backstage, ou vous pouvez sélectionner un compte implicitement lorsque vous sélectionnez un dossier dans une liste de dossiers. <b>Selectedaccount,</b> de la propriété représente le compte actuellement sélectionné en mode Backstage pour une instance donnée de le <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> objet. Pour déterminer le compte qui est sélectionné implicitement, identifier l’objet de <b>compte</b> qui est son <see cref="P:Microsoft.Office.Interop.Outlook._Account.DeliveryStore" /> propriété est égale à la <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.Store" /> propriété du dossier actif (qui est représenté par le <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" /> propriété de l’objet <b>Explorer</b> ).</para>
-          <para>Cette propriété renvoie <b>Null</b> (<b>Nothing</b> dans Visual Basic) si aucun compte n’est définis dans le profil de la session, qui est, le <see cref="P:Microsoft.Office.Interop.Outlook._Accounts.Count" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.Accounts" /> object qui représente tous les comptes dans le profil actif est égal à 0.</para>
-          <para />
-        </remarks>
+        <remarks><para>Dans l’interface utilisateur Outlook, vous pouvez sélectionner un compte explicitement sur l’onglet Infos du mode Backstage, ou vous pouvez sélectionner un compte implicitement lorsque vous sélectionnez un dossier dans une liste de dossiers. <b>Selectedaccount,</b> de la propriété représente le compte actuellement sélectionné en mode Backstage pour une instance donnée de le <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> objet. Pour déterminer le compte qui est sélectionné implicitement, identifier l’objet de <b>compte</b> qui est son <see cref="P:Microsoft.Office.Interop.Outlook._Account.DeliveryStore" /> propriété est égale à la <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.Store" /> propriété du dossier actif (qui est représenté par le <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" /> propriété de l’objet <b>Explorer</b> ).</para>
+          <para>Cette propriété renvoie <b>Null</b> (<b>Nothing</b> dans Visual Basic) si aucun compte n’est définis dans la session du profil ; Autrement dit, le <see cref="P:Microsoft.Office.Interop.Outlook._Accounts.Count" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.Accounts" /> object qui représente tous les comptes dans le profil actif est égal à 0. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -174,11 +162,9 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Renvoie <b>Null</b> (<b>Nothing</b> dans Visual Basic) s’il n’existe aucune session active.</para>
-          <para>Vous pouvez utiliser la propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> objet interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session en cours.</para>
-          <para />
-        </remarks>
+        <remarks><para>Renvoie <b>Null</b> (<b>Nothing</b> dans Visual Basic) s'il n'y a pas de session active.</para>
+          <para>Vous pouvez utiliser la propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> objet interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="MAPIFolderEvents_12_Event" FullName="Microsoft.Office.Interop.Outlook.MAPIFolderEvents_12_Event">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b57abf71e090da959e1914f676e549cec228a8b5" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633508" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MAPIFolderEvents_12_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2e4d2f373dd74a164ad2cbc827efc264eecdbd98" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27900859" /></Metadata><TypeSignature Language="C#" Value="public interface MAPIFolderEvents_12_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MAPIFolderEvents_12_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.MAPIFolderEvents_12_Event" />
   <TypeSignature Language="VB.NET" Value="Public Interface MAPIFolderEvents_12_Event" />
@@ -49,11 +41,9 @@
       </ReturnValue>
       <Docs>
         <summary>Se produit lorsqu'un dossier est sur le point d'être déplacé ou supprimé, à la suite de l'action d'un utilisateur ou de l'exécution du code d'un programme.</summary>
-        <remarks>
-          <para>Cet événement se déclenche lorsque le dossier est sur le point d’être déplacé vers un autre dossier (y compris le dossier éléments supprimés) ou lorsque le dossier est sur le point d’être définitivement supprimés.  Il ne se déclenche pas lors de l’archivage automatique ou la synchronisation des opérations.</para>
+        <remarks><para>Cet événement se déclenche lorsque le dossier est sur le point d'être déplacé dans un autre dossier (y compris le dossier Éléments supprimés) ou lorsque le dossier est sur le point d'être supprimé définitivement. Il ne se déclenche pas au cours des opérations de synchronisation et d'archivage automatique.</para>
           <para>Si l’action est une suppression définitive, le <paramref name="MoveTo" /> dossier renvoyé dans l’événement sera <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#).</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BeforeItemMove">
@@ -72,11 +62,9 @@
       </ReturnValue>
       <Docs>
         <summary>Se produit lorsqu'un élément est sur le point d'être déplacé ou supprimé d'un dossier, à la suite de l'action d'un utilisateur ou de l'exécution du code d'un programme.</summary>
-        <remarks>
-          <para>Cet événement se déclenche lorsque l’élément est sur le point d’être déplacé vers un autre dossier (y compris le dossier éléments supprimés) ou lorsque l’élément est sur le point d’être définitivement supprimés. Il ne se déclenche pas lors de l’archivage automatique ou la synchronisation des opérations.</para>
+        <remarks><para>Cet événement se déclenche lorsque l'élément est sur le point d'être déplacé dans un autre dossier (y compris le dossier Éléments supprimés) ou lorsque l'élément est sur le point d'être supprimé définitivement. Il ne se déclenche pas au cours des opérations de synchronisation et d'archivage automatique.</para>
           <para>Si l’action est une suppression définitive, le <paramref name="MoveTo" /> dossier renvoyé dans l’événement sera <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#).</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

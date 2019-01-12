@@ -1,13 +1,5 @@
 <Type Name="OutlookBarGroupsEvents_BeforeGroupRemoveEventHandler" FullName="Microsoft.Office.Interop.Outlook.OutlookBarGroupsEvents_BeforeGroupRemoveEventHandler">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f84955c13ba797c47834ddb5634c91fe3cd2cbd8" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633455" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public delegate void OutlookBarGroupsEvents_BeforeGroupRemoveEventHandler(OutlookBarGroup Group, out bool Cancel);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1c1c3008df5fff44e9e8dfea7e9b3157812ac06a" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901297" /></Metadata><TypeSignature Language="C#" Value="public delegate void OutlookBarGroupsEvents_BeforeGroupRemoveEventHandler(OutlookBarGroup Group, out bool Cancel);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OutlookBarGroupsEvents_BeforeGroupRemoveEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.OutlookBarGroupsEvents_BeforeGroupRemoveEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub OutlookBarGroupsEvents_BeforeGroupRemoveEventHandler(Group As OutlookBarGroup, ByRef Cancel As Boolean)" />
@@ -35,10 +27,8 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="Group">
-      <b>Objet OutlookBarGroup</b> qui est supprimé.</param>
-    <param name="Cancel">
-      <b>False</b> lorsque l’événement survient. Si la procédure événementielle affecte à cet argument la valeur <b>True</b>, le groupe n’est pas supprimé du volet Raccourcis.</param>
+    <param name="Group"><b>Objet OutlookBarGroup</b> qui est supprimé.</param>
+    <param name="Cancel"><b>False</b> lorsque l’événement survient. Si la procédure événementielle affecte à cet argument la valeur <b>True</b>, le groupe n’est pas supprimé du volet Raccourcis.</param>
     <summary>Il s’agit d’un délégué pour un événement dans l’objet correspondant. Après avoir implémenté une méthode de rappel pour l’événement, utilisez ce délégué pour connecter la méthode de rappel à l’événement. S’il existe plusieurs versions de l’interface d’événement, ce délégué connecte la méthode de rappel pour l’événement dans la version spécifiée d’Outlook.</summary>
     <remarks>To be added.</remarks>
   </Docs>

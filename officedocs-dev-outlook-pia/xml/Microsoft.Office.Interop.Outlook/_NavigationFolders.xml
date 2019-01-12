@@ -1,13 +1,5 @@
 <Type Name="_NavigationFolders" FullName="Microsoft.Office.Interop.Outlook._NavigationFolders">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b4c4d498f22e067b44aff3e0cf6b8a93dfd0cfd1" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633658" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _NavigationFolders : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b4c4d498f22e067b44aff3e0cf6b8a93dfd0cfd1" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27900772" /></Metadata><TypeSignature Language="C#" Value="public interface _NavigationFolders : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _NavigationFolders implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._NavigationFolders" />
   <TypeSignature Language="VB.NET" Value="Public Interface _NavigationFolders&#xA;Implements IEnumerable" />
@@ -60,10 +52,8 @@
         <param name="Folder">Dossier à ajouter.</param>
         <summary>Ajoute le <see cref="T:Microsoft.Office.Interop.Outlook.Folder" />, comme un <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolder" /> objet, à la fin de la <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolders" /> collection.</summary>
         <returns>Objet <b>NavigationFolder</b> qui représente le nouveau dossier de navigation.</returns>
-        <remarks>
-          <para>Un dossier ne peut apparaître dans un groupe de navigation. Lorsque vous ajoutez un objet <b>Folder</b> à un nouveau groupe de navigation, toutes les références à ce <b>dossier</b> sont supprimés à partir de n’importe quel autre groupe de navigation dont il était précédemment membre.</para>
-          <para />
-        </remarks>
+        <remarks><para>Un dossier peut apparaître uniquement dans un groupe de navigation. Lors de l’ajout d’un objet <b>Folder</b> à un nouveau groupe de navigation, toute référence à cet objet <b>Folder</b> est supprimée de tout autre groupe de navigation duquel il était précédemment membre.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -119,10 +109,8 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constante indiquant la classe de l’objet. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>olNavigationFolders</b> pour le <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolders" /> objet.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie <b>olNavigationFolders</b> pour le <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolders" /> objet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -182,10 +170,8 @@
         <param name="Index">Soit le numéro d'index de l'objet, soit la valeur utilisée pour la correspondance de la propriété par défaut d'un objet dans la collection.</param>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolder" /> objet de la collection.</summary>
         <value>Objet <b>NavigationFolder</b> qui représente l'objet spécifié.</value>
-        <remarks>
-          <para>La valeur d’index d’un <b>objet NavigationFolder</b> de la collection représente la position ordinale du dossier dans le groupe de navigation lorsque affiché dans le volet de Navigation. Modification de la position de dossiers de navigation dans le groupe de navigation modifie également les valeurs d’index des dossiers contenus dans le <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolders" /> collection qui <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroup" /> objet.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur d’index d’un <b>objet NavigationFolder</b> de la collection représente la position ordinale du dossier dans le groupe de navigation lorsque affiché dans le volet de Navigation. Modification de la position de dossiers de navigation dans le groupe de navigation modifie également les valeurs d’index des dossiers contenus dans le <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolders" /> collection qui <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroup" /> objet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -241,10 +227,8 @@
       <Docs>
         <param name="RemovableFolder">Dossier de navigation à supprimer.</param>
         <summary>Supprime un objet de la collection.</summary>
-        <remarks>
-          <para>Uniquement les dossiers amovibles, les objets <b>NavigationFolder</b> avec une <see cref="P:Microsoft.Office.Interop.Outlook._NavigationFolder.IsRemovable" /> valeur de la propriété la valeur <b>True</b>, peuvent être supprimés d’une collection <b>NavigationFolders</b> . Cela signifie que vous pouvez utiliser <b>NavigationFolders.Remove</b> pour supprimer des dossiers partagés, des dossiers publics et des dossiers liés. Toutefois, vous devez utiliser <see cref="M:Microsoft.Office.Interop.Outlook.MAPIFolder.Delete" /> pour supprimer tous les dossiers créés par l’utilisateur.</para>
-          <para />
-        </remarks>
+        <remarks><para>Uniquement les dossiers amovibles, les objets <b>NavigationFolder</b> avec une <see cref="P:Microsoft.Office.Interop.Outlook._NavigationFolder.IsRemovable" /> valeur de la propriété la valeur <b>True</b>, peuvent être supprimés d’une collection <b>NavigationFolders</b> . Cela signifie que vous pouvez utiliser <b>NavigationFolders.Remove</b> pour supprimer des dossiers partagés, des dossiers publics et des dossiers liés. Toutefois, vous devez utiliser <see cref="M:Microsoft.Office.Interop.Outlook.MAPIFolder.Delete" /> pour supprimer tous les dossiers créés par l’utilisateur.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -272,16 +256,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

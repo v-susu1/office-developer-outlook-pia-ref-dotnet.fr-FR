@@ -1,13 +1,5 @@
 <Type Name="_TableView" FullName="Microsoft.Office.Interop.Outlook._TableView">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c944369730ff7d74f1d0dfa289d7e444b8c1c71a" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633763" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _TableView" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c944369730ff7d74f1d0dfa289d7e444b8c1c71a" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27897191" /></Metadata><TypeSignature Language="C#" Value="public interface _TableView" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _TableView" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._TableView" />
   <TypeSignature Language="VB.NET" Value="Public Interface _TableView" />
@@ -56,12 +48,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui détermine si la modification dans les cellules est autorisée dans les <see cref="T:Microsoft.Office.Interop.Outlook.TableView" /> objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui détermine si la modification dans les cellules est autorisée dans les <see cref="T:Microsoft.Office.Interop.Outlook.TableView" /> objet. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si cette propriété est définie sur <b>True</b>, le <see cref="P:Microsoft.Office.Interop.Outlook._TableView.MultiLine" /> propriété de l’objet <b>TableView</b> prend automatiquement la valeur <b>olAlwaysSingleLine</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si cette propriété est définie sur <b>True</b>, le <see cref="P:Microsoft.Office.Interop.Outlook._TableView.MultiLine" /> propriété de l’objet <b>TableView</b> prend automatiquement la valeur <b>olAlwaysSingleLine</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AlwaysExpandConversation">
@@ -90,14 +80,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si les conversations sont toujours complètement développées dans l’affichage tableau. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si les conversations sont toujours complètement développées dans l’affichage tableau. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>AlwaysExpandConversation</b> correspond à la sélection toujours développer les Conversations dans le menu Conversations du groupe réorganisation sous l’onglet Affichage du ruban Microsoft Office Fluent.</para>
+        <remarks><para>La propriété <b>AlwaysExpandConversation</b> correspond à la sélection de toujours développer les Conversations dans le menu Conversations du groupe réorganisation sous l’onglet Affichage du ruban Microsoft Office Fluent.</para>
           <para>
-            <b>True</b> indique que cette conversation groupes sont entièrement développés dans l’affichage tableau par défaut ; <b>La valeur False</b> indique que les groupes de conversation sont seulement partiellement développés.</para>
-          <para />
-        </remarks>
+            <b>True</b> indique que les groupes de conversation sont complètement développés dans l’affichage Tableau par défaut ; <b>False</b> indique que les groupes de conversation sont seulement partiellement développés.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -207,12 +195,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si les colonnes de la <see cref="T:Microsoft.Office.Interop.Outlook.TableView" /> objet sont dimensionnés automatiquement par Outlook. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si les colonnes de la <see cref="T:Microsoft.Office.Interop.Outlook.TableView" /> objet sont dimensionnés automatiquement par Outlook. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si cette propriété est définie sur <b>False</b>, puis la <see cref="P:Microsoft.Office.Interop.Outlook._TableView.MultiLine" /> propriété de l’objet <b>TableView</b> prend automatiquement la valeur <b>olAlwaysSingleLine</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si cette propriété est définie sur <b>False</b>, puis la <see cref="P:Microsoft.Office.Interop.Outlook._TableView.MultiLine" /> propriété de l’objet <b>TableView</b> prend automatiquement la valeur <b>olAlwaysSingleLine</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutomaticGrouping">
@@ -241,12 +227,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si le regroupement automatique est actif dans le <see cref="T:Microsoft.Office.Interop.Outlook.TableView" /> objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si le regroupement automatique est actif dans le <see cref="T:Microsoft.Office.Interop.Outlook.TableView" /> objet. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si cette propriété est définie sur <b>True</b>, les éléments sont regroupés automatiquement dans l’affichage en fonction de la disposition spécifiée dans l’interface utilisateur Outlook. Si cette propriété est définie sur <b>False</b>, les éléments sont regroupés dans l’affichage en fonction de la valeur de la <see cref="P:Microsoft.Office.Interop.Outlook._TableView.GroupByFields" /> propriété.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si cette propriété est définie sur <b>True</b>, les éléments sont regroupés automatiquement dans l’affichage en fonction de la disposition spécifiée dans l’interface utilisateur Outlook. Si cette propriété est définie sur <b>False</b>, les éléments sont regroupés dans l’affichage en fonction de la valeur de la <see cref="P:Microsoft.Office.Interop.Outlook._TableView.GroupByFields" /> propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoPreview">
@@ -275,7 +259,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlAutoPreview</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlAutoPreview" /> constante qui détermine comment aperçu automatique des éléments par le <see cref="T:Microsoft.Office.Interop.Outlook.TableView" /> objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlAutoPreview" /> constante qui détermine comment aperçu automatique des éléments par le <see cref="T:Microsoft.Office.Interop.Outlook.TableView" /> objet. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -420,7 +404,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlDefaultExpandCollapseSetting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlDefaultExpandCollapseSetting" /> constante qui détermine le paramètre d’extension par défaut pour les groupes dans le <see cref="T:Microsoft.Office.Interop.Outlook.TableView" /> objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlDefaultExpandCollapseSetting" /> constante qui détermine le paramètre d’extension par défaut pour les groupes dans le <see cref="T:Microsoft.Office.Interop.Outlook.TableView" /> objet. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -476,12 +460,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le filtre d’un affichage.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le filtre d’un affichage.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur de cette propriété est une chaîne, dans la syntaxe DAV Searching and Locating (DASL), qui représente le filtre actif de la vue. Pour plus d’informations sur l’utilisation de la syntaxe DASL pour filtrer les éléments dans un affichage, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Filtrage des éléments</a></para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur de cette propriété est une chaîne, dans la syntaxe DAV Searching and Locating (DASL), qui représente le filtre actif de la vue. Pour plus d’informations sur l’utilisation de la syntaxe DASL pour filtrer les éléments dans un affichage, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Filtrage des éléments</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTable">
@@ -507,9 +489,14 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> object qui représente tous les éléments Microsoft Outlook qui sont contenus dans un <see cref="T:Microsoft.Office.Interop.Outlook.TableView" />objet.</summary>
         <returns>Renvoie un objet <b>Table</b>dont les lignes représentent des éléments dans l’affichage tableau actuel.</returns>
-        <remarks>
-          <para>La méthode <b>GetTable</b> de l’objet <b>TableView</b> renvoie un tableau d’éléments à partir d’un ou plusieurs dossiers dans le même magasin ou recouvrant plusieurs magasins, dans une vue agrégée. Par exemple, une vue agrégée obtenue par une recherche dans tous les éléments de messagerie à l’aide de la recherche instantanée. Ce comportement diffère de la <see cref="M:Microsoft.Office.Interop.Outlook.MAPIFolder.GetTable(System.Object,System.Object)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> object, qui obtient un objet table qui contient des éléments dans le même dossier.</para> Objet 
-          <para><b>TableView</b> parent doit être basé sur le dossier actif de l’Explorateur actif, comme indiqué par le <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" /> propriété actif <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> objet. Si le dossier n’est pas un dossier actif d’un Explorateur visible, ou si l’affichage de ce dossier, qui est indiqué par le <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.CurrentView" /> propriété n’est pas un affichage tableau, Outlook renvoie une erreur.</para><para>Le filtre pour la table résultante est défini par le <see cref="P:Microsoft.Office.Interop.Outlook._TableView.Filter" /> propriété de l’objet <b>TableView</b> . Si la propriété <b>Filter</b> de l’objet <b>TableView</b> n’est pas vide, <b>GetTable</b> renvoie un objet <b>Table</b> avec des lignes qui représentent le sous-ensemble d’éléments disponibles dans la vue filtré. Si par la suite, le <see cref="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" /> est appelée sur le tableau qui en découlent, appliquer la <b>Restrict</b> méthode équivaut à une opération AND logique avec le filtre représenté par <see cref="P:Microsoft.Office.Interop.Outlook._TableView.Filter" />.</para><para><b>GetTable</b> renvoie un <b>tableau</b> avec l’ensemble de colonnes par défaut. <b>GetTable</b> ne renvoie pas un <b>tableau</b> qui contient des colonnes pour chaque champ de la <see cref="T:Microsoft.Office.Interop.Outlook.ViewFields" /> collection de l’affichage actuel. Pour plus d’informations sur l’ensemble de colonnes par défaut d’une table en fonction du type de dossier, voir Propriétés par défaut affichées dans un objet Table. Pour modifier l’ensemble de colonnes par défaut, utilisez la <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Add(System.String)" />, <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Remove(System.Object)" />, ou <see cref="M:Microsoft.Office.Interop.Outlook._Columns.RemoveAll" /> méthodes de le <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> objet de la collection. Les propriétés que vous ne pouvez pas ajouter à un tableau comme colonnes sont répertoriées dans les propriétés non prises en charge dans un objet Table ou un filtre Table.</para><para>L’ordre des lignes dans le tableau qui en découlent peut être la même que l’ordre des éléments dans la vue actuelle sur laquelle repose <b>GetTable</b> . Par exemple, <b>GetTable</b> ne renvoie pas un tableau avec une ligne qui représente un en-tête Grouper par dans la vue. Pour trier les lignes dans le tableau renvoyé par <b>GetTable</b>, utilisez la <see cref="M:Microsoft.Office.Interop.Outlook._Table.Sort(System.String,System.Object)" /> méthode de l’objet <b>Table</b> .</para><para>L’objet parent de l’objet <b>Table</b> renvoyé par <b>GetTable</b> est l’objet <b>TableView</b> . L’objet parent de l’objet <b>TableView</b> est la <see cref="T:Microsoft.Office.Interop.Outlook.Views" /> collection et l’objet parent de la collection <b>Views</b> est l’objet <b>Folder</b> .</para><para /></remarks>
+        <remarks><para>La méthode <b>GetTable</b> de l’objet <b>TableView</b> renvoie un tableau d’éléments à partir d’un ou plusieurs dossiers dans le même magasin ou recouvrant plusieurs magasins, dans une vue agrégée. Par exemple, une vue agrégée obtenue par une recherche dans tous les éléments de messagerie à l’aide de la recherche instantanée. Ce comportement diffère de la <see cref="M:Microsoft.Office.Interop.Outlook.MAPIFolder.GetTable(System.Object,System.Object)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> object, qui obtient un objet table qui contient des éléments dans le même dossier.</para>
+          <para>L’objet <b>TableView</b> parent doit être basé sur le dossier actif de l’Explorateur actif, comme indiqué par le <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" /> propriété actif <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> objet. Si le dossier n’est pas un dossier actif d’un Explorateur visible, ou si l’affichage de ce dossier, qui est indiqué par le <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.CurrentView" /> propriété n’est pas un affichage tableau, Outlook renvoie une erreur.</para>
+          <para>Le filtre pour la table résultante est défini par le <see cref="P:Microsoft.Office.Interop.Outlook._TableView.Filter" /> propriété de l’objet <b>TableView</b> . Si la propriété <b>Filter</b> de l’objet <b>TableView</b> n’est pas vide, <b>GetTable</b> renvoie un objet <b>Table</b> avec des lignes qui représentent le sous-ensemble d’éléments disponibles dans la vue filtré. Si par la suite, le <see cref="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" /> est appelée sur le tableau qui en découlent, appliquer la <b>Restrict</b> méthode équivaut à une opération AND logique avec le filtre représenté par <see cref="P:Microsoft.Office.Interop.Outlook._TableView.Filter" />.</para>
+          <para>
+            <b>GetTable</b> renvoie un <b>tableau</b> avec l’ensemble de colonnes par défaut. <b>GetTable</b> ne renvoie pas un <b>tableau</b> qui contient des colonnes pour chaque champ de la <see cref="T:Microsoft.Office.Interop.Outlook.ViewFields" /> collection de l’affichage actuel. Pour plus d’informations sur l’ensemble de colonnes par défaut d’une table en fonction du type de dossier, voir Propriétés par défaut affichées dans un objet Table. Pour modifier l’ensemble de colonnes par défaut, utilisez la <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Add(System.String)" />, <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Remove(System.Object)" />, ou <see cref="M:Microsoft.Office.Interop.Outlook._Columns.RemoveAll" /> méthodes de le <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> objet de la collection. Propriétés que vous ne pouvez pas ajouter à un tableau comme colonnes sont répertoriées dans les propriétés non prises en charge dans un objet Table ou un filtre Table.</para>
+          <para>L’ordre des lignes dans le tableau qui en découlent n’est pas garanti pour être la même que l’ordre des éléments dans la vue actuelle sur laquelle repose <b>GetTable</b> . Par exemple, <b>GetTable</b> ne renvoie pas un tableau avec une ligne qui représente un en-tête Grouper par dans la vue. Pour trier les lignes dans le tableau renvoyé par <b>GetTable</b>, utilisez la <see cref="M:Microsoft.Office.Interop.Outlook._Table.Sort(System.String,System.Object)" /> méthode de l’objet <b>Table</b> .</para>
+          <para>L’objet parent de l’objet <b>Table</b> renvoyé par <b>GetTable</b> est l’objet <b>TableView</b> . L’objet parent de l’objet <b>TableView</b> est la <see cref="T:Microsoft.Office.Interop.Outlook.Views" /> collection et l’objet parent de la collection <b>Views</b> est l’objet <b>Folder</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GoToDate">
@@ -566,7 +553,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlGridLineStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlGridLineStyle" /> constante représentant le style de trait utilisé pour le quadrillage dans le <see cref="T:Microsoft.Office.Interop.Outlook.TableView" /> objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlGridLineStyle" /> constante représentant le style de trait utilisé pour le quadrillage dans le <see cref="T:Microsoft.Office.Interop.Outlook.TableView" /> objet. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -625,7 +612,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui détermine si l’en-tête d’un élément Outlook est affiché dans le volet de lecture pour le <see cref="T:Microsoft.Office.Interop.Outlook.TableView" /> objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui détermine si l’en-tête d’un élément Outlook est affiché dans le volet de lecture pour le <see cref="T:Microsoft.Office.Interop.Outlook.TableView" /> objet. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -656,13 +643,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le paramètre de langue pour l’affichage. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le paramètre de langue pour l’affichage. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La <b>langue</b> de la propriété utilise une <b>chaîne</b> (<b>string</b> en c#) pour représenter une balise de langue ISO. Par exemple, la chaîne « EN-US » représente le code ISO « États-Unis - anglais. »</para>
-          <para>Si un code de langue valide est spécifié, l’objet ne seront disponible dans le menu Affichage pour le type de la langue spécifiée. Si aucune valeur n’est pas spécifié, l’élément objet est disponible pour tous les types de langue. La valeur par défaut de cette propriété est une chaîne vide.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>Language</b> utilise une <b>chaîne</b> (<b>string</b> en c#) pour représenter une balise de langue ISO. Par exemple, la chaîne « EN-US » représente le code ISO « Aux États-Unis - anglais ».</para>
+          <para>Si un code de langue valide est spécifié, l'objet est uniquement disponible dans le menu Affichage pour le type de langue spécifié. Si aucune valeur n'est spécifiée, l'élément objet est disponible pour tous les types de langues. La valeur par défaut de cette propriété est une chaîne vide.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LockUserChanges">
@@ -691,12 +676,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si un utilisateur peut modifier les paramètres de l’affichage. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si un utilisateur peut modifier les paramètres de l’affichage. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si la <b>valeur True</b>, l’utilisateur peut modifier les paramètres de la vue spécifiée. Toutefois, les modifications apportées à l’interface ne seront pas enregistrées. Si la <b>valeur False</b> (valeur par défaut), les modifications seront enregistrées.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si la valeur est <b>True</b>, l'utilisateur peut modifier les paramètres de l'affichage spécifié. En revanche, les modifications apportées à l'interface ne sont pas enregistrées. Si la valeur est <b>False</b> (valeur par défaut), toutes les modifications sont enregistrées.
+
+</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxLinesInMultiLineView">
@@ -725,12 +710,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui détermine le nombre maximal de lignes affichées en mode multiligne pour le <see cref="T:Microsoft.Office.Interop.Outlook.TableView" /> objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui détermine le nombre maximal de lignes affichées en mode multiligne pour le <see cref="T:Microsoft.Office.Interop.Outlook.TableView" /> objet. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété peut être définie sur une valeur comprise entre 2 et 20. Si cette propriété est définie sur une valeur inférieure à 2, la propriété est définie à 2. Si cette propriété est définie sur une valeur supérieure à 20, la propriété est définie à 20. La valeur par défaut de cette propriété est 2.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété peut être définie sur une valeur comprise entre 2 et 20. Si cette propriété est définie sur une valeur inférieure à 2, la propriété est définie à 2. Si cette propriété est définie sur une valeur supérieure à 20, la propriété est définie à 20. La valeur par défaut de cette propriété est 2.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MultiLine">
@@ -759,12 +742,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlMultiLine</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlMultiLine" /> constante qui détermine comment plusieurs lignes sont affichées dans le <see cref="T:Microsoft.Office.Interop.Outlook.TableView" /> objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlMultiLine" /> constante qui détermine comment plusieurs lignes sont affichées dans le <see cref="T:Microsoft.Office.Interop.Outlook.TableView" /> objet. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si la valeur de la <see cref="P:Microsoft.Office.Interop.Outlook._TableView.AutomaticColumnSizing" /> propriété est définie sur <b>False</b> ou si la valeur de la <see cref="P:Microsoft.Office.Interop.Outlook._TableView.AllowInCellEditing" /> est définie sur <b>True</b>, la valeur de cette propriété prend automatiquement la valeur <b>olAlwaysSingleLine</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si la valeur de la <see cref="P:Microsoft.Office.Interop.Outlook._TableView.AutomaticColumnSizing" /> propriété est définie sur <b>False</b> ou si la valeur de la <see cref="P:Microsoft.Office.Interop.Outlook._TableView.AllowInCellEditing" /> est définie sur <b>True</b>, la valeur de cette propriété prend automatiquement la valeur <b>olAlwaysSingleLine</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MultiLineWidth">
@@ -795,11 +776,9 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui représente la largeur du texte (en caractères) nécessaire au déclenchement du mode multiligne dans le <see cref="T:Microsoft.Office.Interop.Outlook.TableView" /> objet. En lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété peut être définie sur une valeur comprise entre 1 et 999. Si cette propriété est définie sur une valeur inférieure à 1, la propriété est définie sur 1. Si cette propriété est définie sur une valeur supérieure à 999, la propriété est définie à 999. La valeur par défaut de cette propriété est 100.</para>
+        <remarks><para>Cette propriété peut être définie sur une valeur comprise entre 1 et 999. Si cette propriété est définie sur une valeur inférieure à 1, la propriété est définie sur 1. Si cette propriété est définie sur une valeur supérieure à 999, la propriété est définie à 999. La valeur par défaut de cette propriété est 100.</para>
           <para>Cette propriété s’applique uniquement si la <see cref="P:Microsoft.Office.Interop.Outlook._TableView.MultiLine" /> propriété de l’objet <b>TableView</b> est définie sur <b>olWidthMultiLine</b>. La valeur de cette propriété détermine le point auquel l’objet <b>TableView</b> affiche le texte d’un élément Outlook en mode multiligne.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -828,7 +807,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le nom complet de l’objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le nom complet de l’objet. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -883,10 +862,8 @@
       <Parameters />
       <Docs>
         <summary>Rétablit les paramètres d’origine d’un affichage prédéfini de Microsoft Outlook.</summary>
-        <remarks>
-          <para>Cette méthode fonctionne uniquement sur les affichages d’Outlook intégrés.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette méthode n'est valable que pour les affichages prédéfinis de Microsoft Outlook.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RowFont">
@@ -967,10 +944,8 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlViewSaveOption" /> constante qui spécifie les dossiers dans lesquels l’affichage spécifié est disponible et les autorisations de lecture associées à cet affichage. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur de la propriété <b>SaveOption</b> est définie lorsque le <see cref="T:Microsoft.Office.Interop.Outlook.TableView" /> objet est créé à l’aide de la <see cref="M:Microsoft.Office.Interop.Outlook._Views.Add(System.String,Microsoft.Office.Interop.Outlook.OlViewType,Microsoft.Office.Interop.Outlook.OlViewSaveOption)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Outlook.Views" /> collection.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur de la propriété <b>SaveOption</b> est définie lorsque le <see cref="T:Microsoft.Office.Interop.Outlook.TableView" /> objet est créé à l’aide de la <see cref="M:Microsoft.Office.Interop.Outlook._Views.Add(System.String,Microsoft.Office.Interop.Outlook.OlViewType,Microsoft.Office.Interop.Outlook.OlViewSaveOption)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Outlook.Views" /> collection. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -998,16 +973,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowConversationByDate">
@@ -1036,13 +1009,15 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si les éléments d’une conversation sont verticalement aligné à gauche et triée par la date de réception et l’heure, avec l’élément le plus récent en haut. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si les éléments d’une conversation sont verticalement aligné à gauche et triée par la date de réception et l’heure, avec l’élément le plus récent en haut. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si l’affichage tableau n’est pas organisé par conversation, le définissant la propriété <b>ShowConversationByDate</b> ne réorganise tous les éléments dans l’affichage. Pour afficher les éléments par conversation, dans le groupe de Conversations de l’onglet Affichage dans le ruban Microsoft Office Fluent, activez Afficher en tant que Conversations.</para>
+        <remarks><para>Si l’affichage Tableau n’est pas organisé par conversation, la définition de la propriété <b>ShowConversationByDate</b> ne réorganise aucun élément dans l’affichage.
+ Pour afficher des éléments par conversation, dans le groupe de Conversations de l’onglet Affichage dans le ruban Microsoft Office Fluent, activez Afficher en tant que Conversations.</para>
           <para>Définition de la propriété <b>ShowConversationByDate</b> sur <b>True</b> verticalement aligne à gauche les éléments de conversation et les trie par leur date de réception et l’heure, avec l’élément le plus récent en haut. Cette organisation dans l’affichage de la conversation est identique à l’avoir désactivée le paramètre utiliser l’affichage mis en retrait classique dans le menu Paramètres de Conversations dans le groupe de Conversations du ruban.</para>
-          <para>Définissant la propriété <b>ShowConversationByDate</b> sur <b>False</b> met en retrait des éléments de conversation et les trie par leur date de réception et l’heure avec l’élément en haut au plus tôt. La racine de chaque thread de la conversation est affichée en premier, suivi d’éléments appartenant à ce thread, chaque aligné à gauche de la dernière. Cette organisation dans l’affichage de la conversation est identique à avoir sélectionné le paramètre d’utiliser l’affichage mis en retrait classique dans le menu Paramètres de Conversations dans le groupe de Conversations du ruban.</para> Pour appliquer une modification à la propriété <b>ShowConversationByDate</b> , appel 
-          <para>le <see cref="M:Microsoft.Office.Interop.Outlook._TableView.Apply" /> méthode. Les conversations sont affichées sous forme réduite dans l’affichage de la conversation. Si vous développez une conversation, vous verrez des éléments de la conversation réorganisation et affichent la façon dont vous définissez la propriété <b>ShowConversationByDate</b> .</para><para /><para /></remarks>
+          <para>Définition de la propriété <b>ShowConversationByDate</b> sur <b>False</b> met en retrait des éléments de conversation et les trie par leur date de réception et l’heure avec l’élément en haut au plus tôt. La racine de chaque thread de la conversation est affichée en premier, suivi d’éléments appartenant à ce thread, chaque aligné à gauche de la dernière. Cette organisation dans l’affichage de la conversation est identique à avoir sélectionné le paramètre d’utiliser l’affichage mis en retrait classique dans le menu Paramètres de Conversations dans le groupe de Conversations du ruban.</para>
+          <para>Pour appliquer une modification à la propriété <b>ShowConversationByDate</b> , appelez le <see cref="M:Microsoft.Office.Interop.Outlook._TableView.Apply" /> méthode. Les conversations sont affichées sous forme réduite dans l’affichage de la conversation. Si vous développez une conversation, vous verrez des éléments de la conversation réorganisation et affichent la façon dont vous définissez la propriété <b>ShowConversationByDate</b> .</para>
+          <para> </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowConversationSendersAboveSubject">
@@ -1071,13 +1046,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si l’affichage tableau affiche les expéditeurs participants au-dessus de la ligne d’objet dans l’en-tête de conversation, ou en dessous. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si l’affichage tableau affiche les expéditeurs participants au-dessus de la ligne d’objet dans l’en-tête de conversation, ou en dessous. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>True</b> indique que l’affichage tableau affiche les expéditeurs participants au-dessus de la ligne d’objet dans l’en-tête de conversation. <b>La valeur False</b> indique que l’affichage tableau affiche les expéditeurs participants sous la ligne objet dans l’en-tête de conversation.</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>True</b> indique que la vue Table affiche les expéditeurs participants au-dessus de la ligne d’objet dans l’en-tête de conversation. <b>False</b> indique que la vue Table affiche les expéditeurs participants en dessous de la ligne d’objet dans l’en-tête de conversation.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowFullConversations">
@@ -1106,15 +1079,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique s’il faut afficher les éléments de conversation des autres dossiers, tels que le dossier éléments envoyés, dans le cadre de la conversation dans l’affichage tableau. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique s’il faut afficher les éléments de conversation des autres dossiers, tels que le dossier éléments envoyés, dans le cadre de la conversation dans l’affichage tableau. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>ShowFullConversations</b> prend effet uniquement si l’affichage tableau actuel affiche les éléments par date et conversation.</para>
+        <remarks><para>La propriété <b>ShowFullConversations</b> prend effet uniquement si l’affichage Tableau actuel affiche les éléments par date et conversation.</para>
           <para>
-            <b>La valeur true</b> indique que les éléments de la même conversation sont affichés par défaut dans le cadre de la conversation dans l’affichage tableau. <b>La valeur False</b> indique que seuls les éléments de conversation dans le dossier actif sont affichés dans l’affichage tableau.</para>
-          <para>La propriété <b>ShowFullConversations</b> correspond à la sélection d’afficher les Messages des autres dossiers dans le menu Conversations du groupe réorganisation sous l’onglet Affichage du ruban Microsoft Office Fluent.</para>
-          <para />
-        </remarks>
+            <b>True</b> indique que les éléments de la même conversation sont affichés par défaut dans le cadre de la conversation dans l’affichage Tableau. <b>False</b> indique que seuls les éléments de conversation du dossier actif sont affichés dans l’affichage Tableau.</para>
+          <para>La propriété <b>ShowFullConversations</b> équivaut à sélectionner Afficher les Messages des autres dossiers dans le menu Conversations du groupe réorganisation sous l’onglet Affichage du ruban Microsoft Office Fluent.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowItemsInGroups">
@@ -1143,7 +1114,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui détermine si les éléments Outlook sont affichés dans des groupes au sein de la <see cref="T:Microsoft.Office.Interop.Outlook.TableView" /> objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui détermine si les éléments Outlook sont affichés dans des groupes au sein de la <see cref="T:Microsoft.Office.Interop.Outlook.TableView" /> objet. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1176,10 +1147,8 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui détermine si la nouvelle ligne d’élément est affichée dans le <see cref="T:Microsoft.Office.Interop.Outlook.TableView" /> objet. En lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur de cette propriété s’applique uniquement si la <see cref="P:Microsoft.Office.Interop.Outlook._TableView.AllowInCellEditing" /> propriété est définie sur <b>True</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur de cette propriété s’applique uniquement si la <see cref="P:Microsoft.Office.Interop.Outlook._TableView.AllowInCellEditing" /> propriété est définie sur <b>True</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowReadingPane">
@@ -1208,7 +1177,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si le volet de lecture est affiché dans le <see cref="T:Microsoft.Office.Interop.Outlook.TableView" /> objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si le volet de lecture est affiché dans le <see cref="T:Microsoft.Office.Interop.Outlook.TableView" /> objet. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1303,10 +1272,8 @@
       <Docs>
         <summary>Renvoie une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si le <see cref="T:Microsoft.Office.Interop.Outlook.TableView" /> objet est un affichage Outlook intégré. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le <see cref="M:Microsoft.Office.Interop.Outlook.View.Reset" /> méthode peut être utilisée dans un affichage que si la valeur de cette propriété est définie sur <b>True</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le <see cref="M:Microsoft.Office.Interop.Outlook.View.Reset" /> méthode peut être utilisée dans un affichage que si la valeur de cette propriété est définie sur <b>True</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ViewFields">
@@ -1391,9 +1358,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) spécifiant la définition XML de l’affichage. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) spécifiant la définition XML de l’affichage. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>Définition de <para>le XML décrit le type d’affichage à l’aide d’une série de balises et de mots clés correspondant aux différentes propriétés de l’affichage lui-même. Lorsque la vue est créée, la définition XML est analysée pour fournir les paramètres pour le nouvel affichage.</para><para>Afin de déterminer comment le code XML doit être structuré lors de la création de vues, vous pouvez créer un affichage à l’aide de l’interface utilisateur Outlook et puis vous pouvez récupérer la propriété <b>XML</b> pour cet affichage.  </para><para /></remarks>
+        <remarks><para>La définition XML décrit le type d'affichage à l'aide d'un ensemble d'indicateurs et mots clés correspondant aux différentes propriétés de l'affichage lui-même. Une fois l'affichage créé, la définition XML est analysée pour fournir les paramètres du nouvel affichage.</para>
+          <para>Pour déterminer la structuration XML lors de la création d'affichages, vous pouvez créer un affichage en utilisant l'interface utilisateur Outlook, puis extraire la propriété <b>XML</b> de cet affichage.
+
+</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

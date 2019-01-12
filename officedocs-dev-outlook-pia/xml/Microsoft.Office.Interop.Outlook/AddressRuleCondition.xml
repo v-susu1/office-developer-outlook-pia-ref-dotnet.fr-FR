@@ -1,13 +1,5 @@
 <Type Name="AddressRuleCondition" FullName="Microsoft.Office.Interop.Outlook.AddressRuleCondition">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6fb93c163c144051524a8ccda77644fc156e0d63" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634367" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AddressRuleCondition : Microsoft.Office.Interop.Outlook._AddressRuleCondition" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="230b82b2732282ec731484764a55a70ca78d93de" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27897814" /></Metadata><TypeSignature Language="C#" Value="public interface AddressRuleCondition : Microsoft.Office.Interop.Outlook._AddressRuleCondition" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AddressRuleCondition implements class Microsoft.Office.Interop.Outlook._AddressRuleCondition" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.AddressRuleCondition" />
   <TypeSignature Language="VB.NET" Value="Public Interface AddressRuleCondition&#xA;Implements _AddressRuleCondition" />
@@ -31,13 +23,11 @@
   </Attributes>
   <Docs>
     <summary>Représente une condition de règle qui évalue si l’adresse du destinataire ou l’expéditeur du message est contenue dans l’adresse spécifiée dans <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.Address" />.</summary>
-    <remarks>
-      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._AddressRuleCondition" />.</para>
+    <remarks><para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._AddressRuleCondition" />.</para>
       <para>
-        <b>AddressRuleCondition</b> est dérivé de le <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet. Chaque règle est associée à un <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> objet doté d’un <see cref="P:Microsoft.Office.Interop.Outlook._RuleConditions.RecipientAddress" /> propriété et un <see cref="P:Microsoft.Office.Interop.Outlook._RuleConditions.SenderAddress" />. Chacune de ces propriétés renvoie toujours un objet <b>AddressRuleCondition</b> . <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.ConditionType" /> fait la distinction entre ces conditions de règle. Si la règle possède une de ces conditions de règle est activées, puis <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.Enabled" /> doit être <b>vraie</b>.</para>
+        <b>AddressRuleCondition</b> est dérivé de le <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet. Chaque règle est associée à un <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> objet doté d’un <see cref="P:Microsoft.Office.Interop.Outlook._RuleConditions.RecipientAddress" /> propriété et un <see cref="P:Microsoft.Office.Interop.Outlook._RuleConditions.SenderAddress" />. Chacune de ces propriétés renvoie toujours un objet <b>AddressRuleCondition</b> . <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.ConditionType" />elle fait la distinction entre ces conditions de règle. Si la règle possède une de ces conditions de règle est activées, puis <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.Enabled" /> <b>valeur True</b>.</para>
       <para>Pour plus d’informations sur la spécification d’actions de règle, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87803">Spécification de Conditions de règle</a></para>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

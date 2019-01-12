@@ -1,13 +1,5 @@
 <Type Name="_Store" FullName="Microsoft.Office.Interop.Outlook._Store">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3f2239ab127f9c76011dbb664fdfb2aec7a1918e" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20635144" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _Store" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3f2239ab127f9c76011dbb664fdfb2aec7a1918e" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27899004" /></Metadata><TypeSignature Language="C#" Value="public interface _Store" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Store" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._Store" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Store" />
@@ -83,11 +75,9 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Categories" /> collection qui représente toutes les catégories qui sont définies pour le <see cref="T:Microsoft.Office.Interop.Outlook.Store" />. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété équivaut à la <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.Categories" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet, sauf que cette propriété s’applique à un profil de session qui spécifie un ou plusieurs comptes et les catégories pour le magasin associé à un compte, tandis que la <b> Catégories</b> propriété de l’objet <b>NameSpace</b> s’applique à un profil de session qui définit un seul compte et spécifie la liste principale des catégories pour cette session.</para>
-          <para>Pour certaines banques de remise secondaire comme une banque IMAP, la propriété <b>Categories</b> renvoie la collection de <b>catégories</b> de la banque principale. Banques IMAP ne pas réellement prennent en charge une collection de catégories distinctes.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété équivaut à la <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.Categories" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet, sauf que cette propriété s’applique à un profil de session qui spécifie un ou plusieurs comptes et les catégories pour le magasin associé à un compte, tandis que la <b> Catégories</b> propriété de l’objet <b>NameSpace</b> s’applique à un profil de session qui définit un seul compte et spécifie la liste principale des catégories de la session.</para>
+          <para>Pour certaines banques de remise secondaires telles que les banques IMAP, la propriété <b>Categories</b> renvoie la collection <b>Categories</b> pour la banque principale. Les banques IMAP ne prennent pas en charge les collections de catégories distinctes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Class">
@@ -143,13 +133,11 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant le nom complet de le <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> objet. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>DisplayName</b> est la propriété par défaut de l’objet <b>Store</b> . Cette propriété correspond à la propriété MAPI <b>PidTagDisplayName</b>. </para>
+        <remarks><para>
+            <b>DisplayName</b> est la propriété par défaut de l’objet <b>Store</b>. Cette propriété correspond à la propriété <b>PidTagDisplayName</b> de l’interface MAPI.</para>
           <para>
             <b>DisplayName</b> est en lecture seule. Pour modifier le <b>DisplayName</b> d’un fichier de dossiers personnels (.pst), utilisez la <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> objet et le <see cref="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.SetProperty(System.String,System.Object)" /> méthode.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExchangeStoreType">
@@ -177,10 +165,8 @@
       <Docs>
         <summary>Renvoie une constante dans la <see cref="T:Microsoft.Office.Interop.Outlook.OlExchangeStoreType" /> énumération qui indique le type d’une banque d’informations Exchange. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>ExchangeStoreType</b> distingue différents types de banque Exchange : boîte aux lettres Exchange principale, boîte aux lettres Exchange, banque de dossiers publics ou banque non-Exchange. Cette propriété ne fait pas la distinction entre tous les types de banque notamment Hotmail, HTTP, IMAP et ainsi de suite. Utilisez <see cref="P:Microsoft.Office.Interop.Outlook._Account.AccountType" /> pour le type de serveur associé à un compte de messagerie, tels que Exchange, HTTP, IMAP ou POP3.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>ExchangeStoreType</b> distingue différents types de banque Exchange : boîte aux lettres Exchange principale, boîte aux lettres Exchange, banque de dossiers publics ou banque non-Exchange. Cette propriété ne fait pas la distinction entre tous les types de banque notamment Hotmail, HTTP, IMAP et ainsi de suite. Utilisez <see cref="P:Microsoft.Office.Interop.Outlook._Account.AccountType" /> pour le type de serveur associé à un compte de messagerie, tels que Exchange, HTTP, IMAP ou POP3.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FilePath">
@@ -208,10 +194,8 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant le chemin d’accès complet du fichier pour un fichier de dossiers personnels (.pst) ou un fichier de dossiers en mode hors connexion (.ost). En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété prend en charge Exchange et non-Exchange magasins. Si la banque d’informations n’est pas un fichier .pst ou .ost, <b>FilePath</b> renvoie une chaîne vide.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété prend en charge les banques Exchange et non-Exchange. Si la banque n'est pas un fichier .pst ou .ost, <b>FilePath</b> renvoie une chaîne vide.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDefaultFolder">
@@ -240,11 +224,9 @@
         <param name="FolderType">Spécifie le type du dossier par défaut demandé.</param>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.MAPIFolder" /> objet qui représente le dossier par défaut de la banque et qui est du type spécifié par le <paramref name="FolderType" /> argument.</summary>
         <returns>Renvoie un objet <b>Folder</b> qui représente le dossier par défaut du type demandé. Si le dossier par défaut du type demandé n’existe pas, <b>GetDefaultFolder</b> renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#).</returns>
-        <remarks>
-          <para>Cette méthode est similaire à la <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.GetDefaultFolder(Microsoft.Office.Interop.Outlook.OlDefaultFolders)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet. La différence est que cette méthode obtient le dossier par défaut de la banque de remise qui est associé au compte, alors que la <b>méthode GetDefaultFolder</b> de l’objet <b>NameSpace</b> renvoie le dossier par défaut dans la banque par défaut pour le profil actuel.</para>
+        <remarks><para>Cette méthode est similaire à la <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.GetDefaultFolder(Microsoft.Office.Interop.Outlook.OlDefaultFolders)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet. La différence est que cette méthode obtient le dossier par défaut de la banque de remise qui est associé au compte, alors que la <b>méthode GetDefaultFolder</b> de l’objet <b>NameSpace</b> renvoie le dossier par défaut dans la banque par défaut pour le profil actuel.</para>
           <para>Un exemple de cas où <b>GetDefaultFolder</b> renvoie <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) est lorsque <see cref="F:Microsoft.Office.Interop.Outlook.OlDefaultFolders.olFolderManagedEmail" /> est spécifié en tant que la <paramref name="FolderType" /> , mais le groupe dossiers gérés n’a pas été déployé.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRootFolder">
@@ -270,10 +252,12 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> représentant le dossier racine de la <see cref="T:Microsoft.Office.Interop.Outlook.Store" />. En lecture seule.</summary>
         <returns>Objet <b>Folder</b> qui représente le dossier racine de cet objet <b>Store</b>.</returns>
-        <remarks>
-          <para>Vous pouvez utiliser la méthode <b>GetRootFolder</b> pour énumérer les sous-dossiers du dossier racine de la <b>banque</b>. Contrairement à <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.Folders" /> qui contient tous les dossiers pour tous les magasins dans le profil actif, <b>Store.GetRootFolder.Folders vous permet d’énumérer tous les dossiers d’un objet <b>Store</b> donné dans le profil actuel</b> .</para>
-          <para>La <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.Parent" /> propriété du dossier racine d’une banque renvoie la chaîne « Mapi ».</para> Magasin de 
-          <para>le dossier racine du dossier Public Exchange est le dossier Public Folders. Ce dossier est renvoyé par l’appel d’application.session.GetDefaultFolder (olPublicFoldersAllPublicFolders).</para><para><b>GetRootFolder</b> renvoie une erreur si le fournisseur de services ne prend pas en charge les dossiers racine.</para><para /></remarks>
+        <remarks><para>Vous pouvez utiliser la méthode <b>GetRootFolder</b> pour énumérer les sous-dossiers du dossier racine de la <b>banque</b>. Contrairement à <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.Folders" /> qui contient tous les dossiers pour tous les magasins dans le profil actif, <b>Store.GetRootFolder.Folders vous permet d’énumérer tous les dossiers d’un objet <b>Store</b> donné dans le profil actif</b> .</para>
+          <para>Le <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.Parent" /> propriété du dossier racine d’une banque renvoie la chaîne « Mapi ».</para>
+          <para>Le dossier racine de la banque de dossiers publics Exchange est le dossier Public Folders. Ce dossier est renvoyé par l’appel d’application.session.GetDefaultFolder (olPublicFoldersAllPublicFolders).</para>
+          <para>				La méthode 
+            <b>GetRootFolder</b> renvoie une erreur si le fournisseur de service ne prend pas en charge les dossiers racine.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRules">
@@ -299,11 +283,9 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Rules" /> objet de collection qui contienne le <see cref="T:Microsoft.Office.Interop.Outlook.Rule" /> objets définis pour la session active.</summary>
         <returns>Objet de collection <b>Rules</b> qui représente l'ensemble d'objets <b>Rules</b> défini pour la session active.</returns>
-        <remarks>
-          <para>Appeler la <b>méthode GetRules</b> peut être coûteux en termes de performances sur les connexions lentes à un serveur Exchange.</para>
-          <para>L’ordre des objets <b>Rule</b> dans la collection retournée par la <b>méthode GetRules</b> suit de <see cref="P:Microsoft.Office.Interop.Outlook._Rule.ExecutionOrder" /> par <b>Rule.ExecutionOrder, ExecutionOrder</b> égal 1 étant la première <b>règle</b> de la collection et <b>ExecutionOrder</b> égal <see cref="P:Microsoft.Office.Interop.Outlook._Rules.Count" /> en cours le dernière <b>règle</b> dans la collection.</para>
-          <para />
-        </remarks>
+        <remarks><para>L'appel de la méthode <b>GetRules</b> peut affecter les performances en cas de connexion lente à un serveur Exchange.</para>
+          <para>L’ordre des objets <b>Rule</b> dans la collection retournée par la <b>méthode GetRules</b> suit de <see cref="P:Microsoft.Office.Interop.Outlook._Rule.ExecutionOrder" /> par <b>Rule.ExecutionOrder, ExecutionOrder</b> égal 1 étant la première <b>règle</b> de la collection et <b>ExecutionOrder</b> égal <see cref="P:Microsoft.Office.Interop.Outlook._Rules.Count" /> en cours de la dernière <b>Règle</b> de la collection.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSearchFolders">
@@ -329,14 +311,12 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> objet de collection qui représente les dossiers de recherche définis pour le <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> objet.</summary>
         <returns>Objet de collection <b>Folders</b> qui représente tous les dossiers de recherche correspondant à l'objet <b>Store</b>.</returns>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>La méthode GetSearchFolders</b> renvoie tous les dossiers de recherche actifs visibles pour le <b>magasin</b>. Il ne retourne pas non initialisés ou obsolètes de dossiers de recherche.</para>
           <para>
-            <b>GetSearchFolders</b> renvoie un objet de collection <b>Folders</b> avec <see cref="P:Microsoft.Office.Interop.Outlook._Folders.Count" /> égal à zéro (0) si aucun dossier de recherche n’ont été définies pour le <b>magasin</b>.</para>
-          <para>Pour un objet de collection <b>Folders</b> qui représente une collection de dossiers de recherche, <see cref="P:Microsoft.Office.Interop.Outlook._Folders.Parent" /> renvoie le même objet que <see cref="M:Microsoft.Office.Interop.Outlook._Store.GetRootFolder" />. <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.Folders" /> renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#).</para>
-          <para />
-        </remarks>
+            <b>La méthode GetSearchFolders</b> renvoie un objet de collection <b>Folders</b> avec <see cref="P:Microsoft.Office.Interop.Outlook._Folders.Count" /> égal à zéro (0) si aucun dossier de recherche n’ont été définies pour le <b>magasin</b>.</para>
+          <para>Pour un objet de collection <b>Folders</b> qui représente une collection de dossiers de recherche, <see cref="P:Microsoft.Office.Interop.Outlook._Folders.Parent" /> renvoie le même objet que <see cref="M:Microsoft.Office.Interop.Outlook._Store.GetRootFolder" />. <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.Folders" />Renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSpecialFolder">
@@ -365,10 +345,8 @@
         <param name="FolderType">Constante de l’énumération <b>OlSpecialFolders</b> qui spécifie le type du dossier spécial dans la banque.</param>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> objet d’un dossier spécial spécifié par <paramref name="FolderType" /> dans une banque donnée.</summary>
         <returns>Un objet <b>Folder</b> qui représente un dossier spécial spécifié par le <paramref name="FolderType" />.</returns>
-        <remarks>
-          <para>Dossiers spéciaux n’existent dans toutes les banques.  Si le dossier spécial demandé n’existe pas, <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) s’afficheront.</para>
-          <para />
-        </remarks>
+        <remarks><para>Il arrive que des dossiers spéciaux ne figurent pas dans certaines banques.  Si le dossier spécial demandé n’existe pas, <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) s’afficheront.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCachedExchange">
@@ -396,11 +374,9 @@
       <Docs>
         <summary>Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si les <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> est une banque Exchange mis en cache. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>Propriété IsCachedExchange</b> renvoie <b>True</b> lorsque <see cref="P:Microsoft.Office.Interop.Outlook._Store.ExchangeStoreType" /> est une boîte aux lettres Exchange principale (<b>Store.ExchangeStoreType</b> a <b>pour valeur olExchangePrimaryMailbox</b>) et la boîte aux lettres est configuré pour le mode Exchange mis en cache d’utiliser. Elle renvoie la <b>valeur False</b> dans le cas contraire. En particulier, elle renvoie <b>False</b> pour une banque de dossiers publics Exchange qui est configurée au cache les favoris du dossier Public.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsConversationEnabled">
@@ -428,11 +404,9 @@
       <Docs>
         <summary>Renvoie un <see cref="T:System.Boolean" /> valeur (<b>bool</b> en c#) qui a la <b>valeur True</b> si la banque prend en charge l’affichage de la Conversation. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Une banque prend en charge l’affichage Conversation si le magasin est un magasin POP, IMAP ou PST, ou s’il s’exécute une version de Microsoft Exchange Server est au moins Microsoft Exchange Server 2010. Une banque prend également en charge l’affichage Conversation si la banque exécute Microsoft Exchange Server 2007, la version d’Outlook est au moins Microsoft Outlook 2010 et Outlook s’exécute en mode mis en cache.</para>
-          <para>Si une banque prend en charge les conversations, l’appel de la méthode <b>GetConversation</b> d’un élément dans le magasin de renvoie une <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> objet pour l’élément. Si le magasin ne gère pas les conversations, <b>GetConversation</b> renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) pour les éléments dans le magasin.</para>
-          <para />
-        </remarks>
+        <remarks><para>Une banque prend en charge l’affichage Conversation si le magasin est un magasin POP, IMAP ou PST, ou s’il s’exécute une version de Microsoft Exchange Server est au moins Microsoft Exchange Server 2010. Une banque prend également en charge l’affichage Conversation si la banque exécute Microsoft Exchange Server 2007, la version d’Outlook est au moins Microsoft Outlook 2010 et Outlook s’exécute en mode mis en cache.</para>
+          <para>Si une banque prend en charge les conversations, l’appel de la méthode <b>GetConversation</b> d’un élément dans le magasin de renvoie une <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> objet pour l’élément. Si le magasin ne gère pas les conversations, <b>GetConversation</b> renvoie <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) pour les éléments dans le magasin.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDataFileStore">
@@ -460,10 +434,13 @@
       <Docs>
         <summary>Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si les <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> est une banque pour un fichier de données Outlook, qui est un fichier de dossiers personnels (.pst) ou un fichier de dossiers en mode hors connexion (.ost). En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>				La propriété 
+            <b>IsDataFileStore</b> prend en charge uniquement les banques Exchange et renverra la valeur <b>False</b> pour les banques de type HTTP comme Hotmail et MSN et pour les banques IMAP.</para>
+          <para>Pour les banques Exchange, <b>IsDataFileStore</b> renvoie <b>False</b> si le profil utilisateur n’utilise pas le mode Exchange mis en cache. <b>IsDataFileStore</b> retourne également <b>False</b> lorsque la banque est un dossier Public Exchange (c'est-à-dire, <see cref="P:Microsoft.Office.Interop.Outlook._Store.ExchangeStoreType" /> a <b>pour valeur olExchangePublicFolder</b>).</para>
           <para>
-            <b>La propriété IsDataFileStore</b> prend en charge uniquement les banques Exchange et retourne la <b>valeur False</b> pour les banques de type HTTP comme Hotmail et MSN et pour les banques IMAP.</para> Magasins 
-          <para>pour Exchange, <b>IsDataFileStore</b> renvoie <b>False</b> si le profil utilisateur n’utilise pas le mode Exchange mis en cache. <b>IsDataFileStore</b> retourne également <b>False</b> lorsque la banque est un dossier Public Exchange (c'est-à-dire, <see cref="P:Microsoft.Office.Interop.Outlook._Store.ExchangeStoreType" /> a <b>pour valeur olExchangePublicFolder</b>).</para><para><b>IsDataFileStore</b> n’indique pas si le magasin se trouve sur un disque dur local. Par exemple, un fichier .pst peut se trouver sur un lecteur réseau mappé et <b>IsDataFileStore</b> renvoie toujours <b>True</b>.</para><para>La valeur de retour de <b>la propriété IsDataFileStore</b> peut changer si l’utilisateur est configuré pour le mode Exchange en mode hors connexion classique. Lorsque l’utilisateur est en mode hors connexion et utilisant le mode Exchange en mode hors connexion classique, <b>IsDataFileStore</b> renvoie <b>la valeur True</b>. Lorsque l’utilisateur est en ligne et utilise le mode en ligne Exchange classique, <b>IsDataFileStore</b> renvoie <b>False</b>.</para><para /></remarks>
+            <b>IsDataFileStore</b> n’indique pas si le magasin se trouve sur un disque dur local. Par exemple, un fichier .pst peut se trouver sur un lecteur réseau mappé et <b>IsDataFileStore</b> renvoie toujours <b>la valeur True</b>.</para>
+          <para>La valeur renvoyée de la propriété <b>IsDataFileStore</b> peut être différente si l'utilisateur est configuré pour le mode Exchange hors connexion classique. Si l'utilisateur est hors connexion et utilise le mode Exchange hors connexion classique, <b>IsDataFileStore</b> renvoie<b>True</b>. Si l'utilisateur est connecté et utilise le mode Exchange hors connexion classique, <b>IsDataFileStore</b> renvoie <b>False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsInstantSearchEnabled">
@@ -491,11 +468,9 @@
       <Docs>
         <summary>Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si la recherche instantanée est activé et opérationnel sur un magasin. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>IsInstantSearchEnabled est spécifiée permet d’évaluer si vous devez utiliser les opérateurs <b>ci_startswith</b> ou <b>ci_phrasematch</b> dans votre requête.</b> Si vous utilisez <b>ci_startswith</b> ou <b>ci_phrasematch</b> dans la requête et de la recherche instantanée n’est pas activée, Outlook renvoie une erreur.</para>
-          <para />
-        </remarks>
+        <remarks><para><b>IsInstantSearchEnabled</b> permet d'évaluer si vous devez utiliser les opérateurs <b>ci_startswith</b> ou <b>ci_phrasematch</b> dans une requête. Si vous utilisez <b>ci_startswith</b> ou <b>ci_phrasematch</b> dans la requête et que la recherche instantanée n'est pas activée, Outlook renvoie une erreur.
+</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsOpen">
@@ -523,13 +498,11 @@
       <Docs>
         <summary>Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si les <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> est ouvert. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété prend en charge Exchange et non-Exchange magasins.</para>
-          <para>
-            <b>IsOpen</b> indique uniquement si le magasin est ouvert. Il n’indique pas si la banque est en mode hors connexion ou s’il est une boîte aux lettres Exchange ou un dossier Public Exchange et le serveur de stockage est inactif.</para>
-          <para>, Car l’ouverture d’une banque peut affecter les performances, et <see cref="M:Microsoft.Office.Interop.Outlook._Store.GetRootFolder" /> et <see cref="M:Microsoft.Office.Interop.Outlook._Store.GetSearchFolders" /> ouvriront une banque si elle n’est pas déjà ouvert, vous pouvez utiliser <b>IsOpen</b> avant de décider d’appeler <b>GetRootFolder</b> ou <b>GetSearchFolders</b> afin de réduire surcharge de performance. </para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété prend en charge les banques Exchange et non-Exchange.</para>
+          <para>				La propriété 
+            <b>IsOpen</b> indique uniquement si la banque est ouverte. Elle n'indique pas si elle est hors connexion ou s'il s'agit d'une boîte aux lettres Exchange ou d'un dossier public Exchange et que le serveur de la banque ne fonctionne pas.</para>
+          <para>Étant donné que l’ouverture d’une banque peut affecter les performances, et <see cref="M:Microsoft.Office.Interop.Outlook._Store.GetRootFolder" /> et <see cref="M:Microsoft.Office.Interop.Outlook._Store.GetSearchFolders" /> ouvriront une banque si elle n’est pas déjà ouvert, vous pouvez utiliser <b>IsOpen</b> avant de décider d’appeler <b>la méthode GetRootFolder</b> ou <b>GetSearchFolders</b> pour limiter les performances surcharge. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MAPIOBJECT">
@@ -588,10 +561,8 @@
       <Docs>
         <summary>Renvoie la valeur de type <b>Object</b> parent de l’objet spécifié. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le parent de le <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> objet est la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le parent de le <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> objet est la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PropertyAccessor">
@@ -644,10 +615,8 @@
       <Parameters />
       <Docs>
         <summary>Actualise les informations de quota de la banque affichées dans la barre d’état de la fenêtre de l’explorateur.</summary>
-        <remarks>
-          <para>Si le magasin ne gère pas l’affichage des informations de quota, cette méthode est sans effet.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si la banque ne prend pas en charge l’affichage des informations de quota, cette méthode est sans effet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -675,16 +644,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StoreID">
@@ -712,11 +679,9 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) identifiant le <see cref="T:Microsoft.Office.Interop.Outlook.Store" />. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Propriété StoreID</b> est spécifique au profil. Elle est équivalente à la propriété MAPI <b>PidTagStoreEntryId</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>				La propriété 
+            <b>StoreID</b> est spécifique au profil. Elle équivaut à la propriété MAPI <b>PidTagStoreEntryId</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

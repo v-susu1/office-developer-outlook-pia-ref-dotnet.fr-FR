@@ -1,13 +1,5 @@
 <Type Name="_Account" FullName="Microsoft.Office.Interop.Outlook._Account">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="cdae52cef0897987594724efe1193410fea403d7" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20635070" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _Account" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="cdae52cef0897987594724efe1193410fea403d7" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901304" /></Metadata><TypeSignature Language="C#" Value="public interface _Account" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Account" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._Account" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Account" />
@@ -111,10 +103,8 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlAutoDiscoverConnectionMode" /> constante qui spécifie le type de connexion à utiliser pour le service de découverte automatique du serveur Microsoft Exchange qui héberge la boîte aux lettres du compte. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété équivaut à la <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.AutoDiscoverConnectionMode" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet, sauf que cette propriété s’applique au compte pour la découverte automatique est terminée et n’est pas nécessairement pour le compte Exchange principal.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété équivaut à la <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.AutoDiscoverConnectionMode" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet, sauf que cette propriété s’applique au compte pour la découverte automatique est terminée et n’est pas nécessairement pour le compte Exchange principal.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoDiscoverXml">
@@ -142,12 +132,10 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) qui représente les informations contenues dans le XML récupéré à partir du service de découverte automatique de Microsoft Exchange Server qui est associée au compte. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété équivaut à la <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.AutoDiscoverXml" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet, sauf que cette propriété s’applique au compte pour la découverte automatique est terminée et n’est pas nécessairement pour le compte Exchange principal.</para>
-          <para>La chaîne XML renvoyée contient des informations sur les différents services Web (par exemple, service de disponibilité et service de messagerie unifié) et les serveurs disponibles.</para>
+        <remarks><para>Cette propriété équivaut à la <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.AutoDiscoverXml" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet, sauf que cette propriété s’applique au compte pour la découverte automatique est terminée et n’est pas nécessairement pour le compte Exchange principal.</para>
+          <para>La chaîne XML renvoyée contient des informations sur les différents services Web (par exemple, le service de disponibilité et le service de messagerie unifié) et les serveurs disponibles.</para>
           <para>Une erreur est renvoyée si le compte n’est pas associé à un serveur Exchange qui exécute Microsoft Exchange Server 2007 ou version ultérieure.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Class">
@@ -231,10 +219,8 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> object qui représente la banque de remise par défaut pour le compte. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) si le compte ne dispose pas d’une banque de remise par défaut.</para>
-          <para />
-        </remarks>
+        <remarks><para>Renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) si le compte ne dispose pas d’une banque de remise par défaut.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayName">
@@ -262,11 +248,9 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant le nom complet de la messagerie <see cref="T:Microsoft.Office.Interop.Outlook.Account" />. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>DisplayName</b> est la propriété par défaut de l’objet <b>Account</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>DisplayName</b> est la propriété par défaut de l'objet <b>Account</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExchangeConnectionMode">
@@ -294,10 +278,8 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlExchangeConnectionMode" /> constante qui indique le mode de connexion actuel pour le serveur Microsoft Exchange qui héberge la boîte aux lettres du compte. Lecture seule</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété équivaut à la <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.ExchangeConnectionMode" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet, sauf que cette propriété s’applique au serveur Exchange qui héberge la boîte aux lettres du compte et pas nécessairement pour le compte Exchange principal.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété équivaut à la <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.ExchangeConnectionMode" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet, sauf que cette propriété s’applique au serveur Exchange qui héberge la boîte aux lettres du compte et pas nécessairement pour le compte Exchange principal.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExchangeMailboxServerName">
@@ -325,11 +307,9 @@
       <Docs>
         <summary>Renvoie une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le nom du serveur Microsoft Exchange qui héberge la boîte aux lettres du compte. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété équivaut à la <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.ExchangeMailboxServerName" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet, sauf que cette propriété s’applique au serveur Exchange qui héberge la boîte aux lettres du compte et pas nécessairement pour le compte Exchange principal.</para>
-          <para>Si une boîte aux lettres Exchange n’est pas associé à ce compte, cette propriété renvoie une chaîne vide.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété équivaut à la <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.ExchangeMailboxServerName" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet, sauf que cette propriété s’applique au serveur Exchange qui héberge la boîte aux lettres du compte et pas nécessairement pour le compte Exchange principal.</para>
+          <para>Si une boîte aux lettres Exchange n’est pas associée au compte, cette propriété renvoie une chaîne vide.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExchangeMailboxServerVersion">
@@ -357,14 +337,12 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) qui représente le numéro de version complète de Microsoft Exchange Server qui héberge la boîte aux lettres du compte. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété équivaut à la <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.ExchangeMailboxServerVersion" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet, sauf que cette propriété s’applique au serveur Exchange qui héberge la boîte aux lettres du compte et pas nécessairement pour le compte Exchange principal.</para>
+        <remarks><para>Cette propriété équivaut à la <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.ExchangeMailboxServerVersion" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet, sauf que cette propriété s’applique au serveur Exchange qui héberge la boîte aux lettres du compte et pas nécessairement pour le compte Exchange principal.</para>
           <para>Cette propriété renvoie une chaîne qui contient le numéro de version du serveur Exchange pour le compte. Le numéro de version comporte les quatre composants suivants :</para>
-          <para>&lt;version principale&gt;.&lt; version secondaire&gt;. &lt;numéro de build&gt;. &lt;révision&gt;</para>
-          <para>pas tous les composants peuvent être présents dans le numéro de version, selon les informations de version qui sont fournis par le serveur Exchange. Par exemple, cette propriété renvoie « 6.5.7638 » pour Microsoft Exchange Server 2003 Service Pack 2.</para>
-          <para>Si une boîte aux lettres Exchange n’est pas associé à ce compte, cette propriété renvoie une chaîne vide.</para>
-          <para />
-        </remarks>
+          <para>&lt;version principale&gt;. &lt;version secondaire&gt;. &lt;numéro de build&gt;. &lt;révision&gt;</para>
+          <para>Les parties qui apparaissent dans le numéro de version dépendent des informations de version fournies par Microsoft Exchange Server. Par exemple, cette propriété renvoie « 6.5.7638 » pour Microsoft Exchange Server 2003 Service Pack 2.</para>
+          <para>Si une boîte aux lettres Exchange n’est pas associée au compte, cette propriété renvoie une chaîne vide.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetAddressEntryFromID">
@@ -393,13 +371,13 @@
         <param name="ID">Utilisé pour identifier une entrée d’adresse maintenue pour la session.</param>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> object qui représente l’entrée d’adresse spécifiée par l’ID d’entrée donné.</summary>
         <returns>Renvoie un <b>objet AddressEntry</b> qui possède la <see cref="P:Microsoft.Office.Interop.Outlook.AddressEntry.ID" /> propriété qui correspond à l’élément spécifié <paramref name="ID" />.</returns>
-        <remarks>
-          <para>Cette méthode est similaire à la <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.GetAddressEntryFromID(System.String)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet, mais contient des informations contextuelles supplémentaires sur le compte à utiliser pour la recherche. S’il existe plusieurs comptes Microsoft Exchange dans le profil actuel, utilisez la méthode <b>GetAddressEntryFromID</b> pour le compte correspondant. </para>
+        <remarks><para>Cette méthode est similaire à la <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.GetAddressEntryFromID(System.String)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet, mais contient des informations contextuelles supplémentaires sur le compte à utiliser pour la recherche. S’il existe plusieurs comptes Microsoft Exchange dans le profil actuel, utilisez la méthode <b>GetAddressEntryFromID</b> pour le compte correspondant. </para>
           <para>La propriété <b>ID</b> pour un <b>objet AddressEntry</b> est un identificateur de chaîne permanent et unique que le fournisseur de transport affecte lors de la création d’un <b>objet AddressEntry</b> . Outlook conserve une hiérarchie de carnets d’adresses pendant une session et l’entrée d’adresse renvoyée doit correspondre à l’ID fourni et se trouver dans un des carnets d’adresses. </para>
           <para>
-            <b>GetAddressEntryFromID</b> renvoie une erreur si aucun élément avec l’ID donné ne peut être trouvé, si aucune connexion n’est disponible ou si l’utilisateur est défini sur travailler hors connexion.</para>
-          <para />
-        </remarks>
+            <b>GetAddressEntryFromID</b> renvoie une erreur si aucun élément avec l’ID donné n’est trouvé, si aucune connexion n’est disponible ou si l’utilisateur est configuré pour travailler en mode hors connexion.
+
+</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetRecipientFromID">
@@ -428,10 +406,8 @@
         <param name="EntryID">La <see cref="P:Microsoft.Office.Interop.Outlook.Recipient.EntryID" /> du destinataire.</param>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> objet identifié par l’ID d’entrée donné.</summary>
         <returns>Renvoie un objet <b>Recipient</b> qui représente le destinataire associé à l’ID d’entrée spécifié.</returns>
-        <remarks>
-          <para>Cette méthode est similaire à la <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.GetRecipientFromID(System.String)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet. S’il existe plusieurs comptes Microsoft Exchange dans le profil actuel, utilisez la méthode <b>GetRecipientFromID</b> pour le compte correspondant.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette méthode est similaire à la <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.GetRecipientFromID(System.String)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet. S’il existe plusieurs comptes Microsoft Exchange dans le profil actuel, utilisez la méthode <b>GetRecipientFromID</b> pour le compte correspondant.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IOlkAccount">
@@ -490,10 +466,8 @@
       <Docs>
         <summary>Renvoie la valeur de type <b>Object</b> parent de l’objet spécifié. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le parent de le <see cref="T:Microsoft.Office.Interop.Outlook.Account" /> objet est la <see cref="T:Microsoft.Office.Interop.Outlook.Accounts" /> objet.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le parent de le <see cref="T:Microsoft.Office.Interop.Outlook.Account" /> objet est la <see cref="T:Microsoft.Office.Interop.Outlook.Accounts" /> objet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -521,11 +495,15 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) s’il n’existe aucune session active.</para> Propriété 
-          <para>la <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para><code>Dim objNamespace As Outlook.NameSpace = _
-    Application.GetNamespace("MAPI")</code><code>Dim objSession As Outlook.NameSpace = Application.Session</code><code>Outlook.NameSpace objNamespace = 
-    Application.GetNamespace("MAPI");</code><code>Outlook.NameSpace objSession = Application.Session;</code><para /></remarks>
+        <remarks><para>Renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) s’il n’existe aucune session active.</para>
+          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+          <code>Dim objNamespace As Outlook.NameSpace = _
+    Application.GetNamespace("MAPI")</code>
+          <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
+          <code>Outlook.NameSpace objNamespace = 
+    Application.GetNamespace("MAPI");</code>
+          <code>Outlook.NameSpace objSession = Application.Session;</code>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SmtpAddress">
@@ -553,11 +531,9 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant l’adresse SMTP Simple Mail Transfer Protocol () pour le <see cref="T:Microsoft.Office.Interop.Outlook.Account" />. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le but de <b>SmtpAddress</b> et <see cref="P:Microsoft.Office.Interop.Outlook._Account.UserName" /> est de fournir un contexte basé sur le compte pour l’identification.</para>
-          <para>Si le compte ne dispose pas d’une adresse SMTP, <b>SmtpAddress</b> renvoie une chaîne vide.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le but de <b>SmtpAddress</b> et <see cref="P:Microsoft.Office.Interop.Outlook._Account.UserName" /> est de fournir un contexte basé sur le compte pour l’identification.</para>
+          <para>Si le compte n'a aucune adresse SMTP, <b>SmtpAddress</b> renvoie une chaîne vide.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UserName">
@@ -585,11 +561,9 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant le nom d’utilisateur pour le <see cref="T:Microsoft.Office.Interop.Outlook.Account" />. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>L’objectif de <see cref="P:Microsoft.Office.Interop.Outlook._Account.SmtpAddress" /> et <b>UserName</b> est de fournir un contexte basé sur le compte pour l’identification.</para>
-          <para>Si le compte ne dispose pas d’un nom d’utilisateur défini, <b>UserName</b> renvoie une chaîne vide.</para>
-          <para />
-        </remarks>
+        <remarks><para>L’objectif de <see cref="P:Microsoft.Office.Interop.Outlook._Account.SmtpAddress" /> et <b>UserName</b> est de fournir un contexte basé sur le compte pour l’identification.</para>
+          <para>Si aucun nom d'utilisateur n'est défini pour le compte, <b>UserName</b> renvoie une chaîne vide.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

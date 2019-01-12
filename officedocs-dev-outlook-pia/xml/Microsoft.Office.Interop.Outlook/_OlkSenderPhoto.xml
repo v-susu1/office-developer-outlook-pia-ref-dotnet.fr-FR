@@ -1,13 +1,5 @@
 <Type Name="_OlkSenderPhoto" FullName="Microsoft.Office.Interop.Outlook._OlkSenderPhoto">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6bd4215e1541e0ea4e888c0b42d4236596677ba2" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633843" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _OlkSenderPhoto" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6bd4215e1541e0ea4e888c0b42d4236596677ba2" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27896617" /></Metadata><TypeSignature Language="C#" Value="public interface _OlkSenderPhoto" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _OlkSenderPhoto" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._OlkSenderPhoto" />
   <TypeSignature Language="VB.NET" Value="Public Interface _OlkSenderPhoto" />
@@ -56,12 +48,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si le contrôle est autorisé à fonctionner.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si le contrôle est autorisé à fonctionner.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut est <b>True</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut est <b>True</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseIcon">
@@ -90,12 +80,10 @@
         <ReturnType>stdole.StdPicture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>StdPicture</b> qui représente l’image personnalisée pour le curseur de la souris pour ce contrôle. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>StdPicture</b> qui représente l’image personnalisée pour le curseur de la souris pour ce contrôle. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut est <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#).</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut est <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MousePointer">
@@ -124,12 +112,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlMousePointer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> constante qui spécifie le type de pointeur affiché lorsque l’utilisateur place la souris sur le contrôle.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> constante qui spécifie le type de pointeur affiché lorsque l’utilisateur place la souris sur le contrôle.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut est <b>olMousePointerDefault</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut est <b>olMousePointerDefault</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PreferredHeight">
@@ -157,11 +143,9 @@
       <Docs>
         <summary>Renvoie une valeur <b>entière</b> (<b>int</b> en c#) qui spécifie la hauteur de l’image de l’expéditeur par défaut l’application.    En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur est exprimée en unités de pixels. La valeur par défaut est 96.</para>
-          <para>Vous pouvez utiliser cette propriété et la <see cref="P:Microsoft.Office.Interop.Outlook._OlkSenderPhoto.PreferredWidth" /> propriété pour simuler le comportement d’Outlook pour l’affichage, redimensionnement et l’alignement de l’image de l’expéditeur dans un formulaire standard.</para>
-          <para />
-        </remarks>
+        <remarks><para>La largeur est exprimée en pixels. La valeur par défaut est 96.</para>
+          <para> Vous pouvez utiliser cette propriété et la <see cref="P:Microsoft.Office.Interop.Outlook._OlkSenderPhoto.PreferredWidth" /> propriété pour simuler le comportement d’Outlook pour l’affichage, redimensionnement et l’alignement de l’image de l’expéditeur dans un formulaire standard.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PreferredWidth">
@@ -189,11 +173,9 @@
       <Docs>
         <summary>Renvoie une valeur <b>entière</b> (<b>int</b> en c#) qui spécifie la largeur de l’image de l’expéditeur par défaut l’application.    En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur est exprimée en unités de pixels. La valeur par défaut est 72.</para>
-          <para>Vous pouvez utiliser cette propriété et la <see cref="P:Microsoft.Office.Interop.Outlook._OlkSenderPhoto.PreferredHeight" /> propriété pour simuler le comportement d’Outlook pour l’affichage, redimensionnement et l’alignement de l’image de l’expéditeur dans un formulaire standard.</para>
-          <para />
-        </remarks>
+        <remarks><para>La largeur est exprimée en pixels. La valeur par défaut est 72.</para>
+          <para> Vous pouvez utiliser cette propriété et la <see cref="P:Microsoft.Office.Interop.Outlook._OlkSenderPhoto.PreferredHeight" /> propriété pour simuler le comportement d’Outlook pour l’affichage, redimensionnement et l’alignement de l’image de l’expéditeur dans un formulaire standard.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="TaskItem" FullName="Microsoft.Office.Interop.Outlook.TaskItem">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6425c86a472b6cc62f19b83bcfd65894cf45a1bf" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20635242" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TaskItem : Microsoft.Office.Interop.Outlook._TaskItem, Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ba7b011ba9540c870cce72b6407533419c8b11f0" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27902179" /></Metadata><TypeSignature Language="C#" Value="public interface TaskItem : Microsoft.Office.Interop.Outlook._TaskItem, Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TaskItem implements class Microsoft.Office.Interop.Outlook._TaskItem, class Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.TaskItem" />
   <TypeSignature Language="VB.NET" Value="Public Interface TaskItem&#xA;Implements _TaskItem, ItemEvents_10_Event" />
@@ -34,12 +26,10 @@
   </Attributes>
   <Docs>
     <summary>Représente une tâche (assignée, déléguée ou dont vous vous chargez, qui doit être exécutée dans un délai donné) du dossier Tâches.</summary>
-    <remarks>
-      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._TaskItem" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />.</para>
+    <remarks><para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._TaskItem" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />.</para>
       <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._Application.CreateItem(Microsoft.Office.Interop.Outlook.OlItemType)" /> méthode pour créer un objet <b>TaskItem</b> qui représente une nouvelle tâche.</para>
-      <para>Utiliser <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.Items" />(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index d’une tâche ou une valeur correspondant à la propriété par défaut d’une tâche, pour renvoyer un seul objet <b>TaskItem</b> d’un dossier tâches.</para>
-      <para />
-    </remarks>
+      <para>Utilisez <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.Items" />(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index d’une tâche ou une valeur correspondant à la propriété par défaut d’une tâche, pour renvoyer un seul objet <b>TaskItem</b> d’un dossier tâches.</para>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

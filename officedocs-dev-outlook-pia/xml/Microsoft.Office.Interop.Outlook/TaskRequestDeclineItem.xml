@@ -1,13 +1,5 @@
 <Type Name="TaskRequestDeclineItem" FullName="Microsoft.Office.Interop.Outlook.TaskRequestDeclineItem">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="91f2d4c798ff8de01f4a5199945010aa437aabf9" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20635076" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TaskRequestDeclineItem : Microsoft.Office.Interop.Outlook._TaskRequestDeclineItem, Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="495df375de17047c39740d7962d7f46e1098197d" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27900330" /></Metadata><TypeSignature Language="C#" Value="public interface TaskRequestDeclineItem : Microsoft.Office.Interop.Outlook._TaskRequestDeclineItem, Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TaskRequestDeclineItem implements class Microsoft.Office.Interop.Outlook._TaskRequestDeclineItem, class Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.TaskRequestDeclineItem" />
   <TypeSignature Language="VB.NET" Value="Public Interface TaskRequestDeclineItem&#xA;Implements _TaskRequestDeclineItem, ItemEvents_10_Event" />
@@ -34,11 +26,11 @@
   </Attributes>
   <Docs>
     <summary>Représente une réponse à une <see cref="T:Microsoft.Office.Interop.Outlook.TaskRequestItem" /> envoyés par l’utilisateur d’origine.</summary>
-    <remarks>
-      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._TaskRequestDeclineItem" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.TaskRequestDeclineItemClass" />.</para>
+    <remarks><para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._TaskRequestDeclineItem" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.TaskRequestDeclineItemClass" />.</para>
       <para>Si l’utilisateur délégué refuse la tâche, la <see cref="P:Microsoft.Office.Interop.Outlook._TaskItem.ResponseState" /> propriété a la valeur <b>olTaskDecline</b>. Associé <see cref="T:Microsoft.Office.Interop.Outlook.TaskItem" /> est reçu par la personne qui a délégué en tant qu’objet <b>TaskRequestDeclineItem</b> .</para>
-      <para>Contrairement à d’autres objets Microsoft Outlook, vous ne pouvez pas créer cet objet.</para> Utilisation de 
-      <para>les <see cref="M:Microsoft.Office.Interop.Outlook._TaskRequestDeclineItem.GetAssociatedTask(System.Boolean)" /> méthode pour renvoyer l’objet <b>TaskItem</b> qui est associé à cet <b>objet TaskRequestDeclineItem</b>. Utiliser directement l’objet <b>TaskItem</b> .</para><para /></remarks>
+      <para>Contrairement à d’autres objets Microsoft Outlook, vous ne pouvez pas créer cet objet.</para>
+      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._TaskRequestDeclineItem.GetAssociatedTask(System.Boolean)" /> méthode pour renvoyer l’objet <b>TaskItem</b> qui est associé à cet <b>objet TaskRequestDeclineItem</b>. Utiliser directement l’objet <b>TaskItem</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

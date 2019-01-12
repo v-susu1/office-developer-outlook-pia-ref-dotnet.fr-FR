@@ -1,13 +1,5 @@
 <Type Name="_Results" FullName="Microsoft.Office.Interop.Outlook._Results">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="82f716ca4e71998fcf133f6738e482e4bba38a38" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634812" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _Results : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="82f716ca4e71998fcf133f6738e482e4bba38a38" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27898892" /></Metadata><TypeSignature Language="C#" Value="public interface _Results : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Results implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._Results" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Results&#xA;Implements IEnumerable" />
@@ -144,7 +136,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlItemType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlItemType" /> contenu dans le dossier de type d’élément de constante indiquant la valeur par défaut Outlook. Lecture/écriture.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlItemType" /> contenu dans le dossier de type d’élément de constante indiquant la valeur par défaut Outlook. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -172,10 +164,8 @@
       <Docs>
         <summary>Renvoie le premier objet de la collection.</summary>
         <returns>Valeur Object qui représente le premier objet contenu dans la collection.</returns>
-        <remarks>
-          <para>Renvoie <b>Nothing</b> si aucun objet premier existe, par exemple, s’il n’y a aucuns objets dans la collection. Pour garantir le bon fonctionnement de la <b>GetFirst</b>, <see cref="M:Microsoft.Office.Interop.Outlook._Results.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook._Results.GetNext" />, et <see cref="M:Microsoft.Office.Interop.Outlook._Results.GetPrevious" /> dans une collection volumineuse, appelez <b>GetFirst</b> avant <b>cette collection GetNext</b> et <b>GetLast</b> avant d’appeler <b>GetPrevious </b>. Pour vous assurer que vous sont toujours vos appels sur la même collection, créez une variable explicite qui fait référence à la collection avant d’entrer dans la boucle.</para>
-          <para />
-        </remarks>
+        <remarks><para>Renvoie <b>Nothing</b> si aucun objet premier existe, par exemple, s’il n’y a aucuns objets dans la collection. Pour garantir le bon fonctionnement de la <b>GetFirst</b>, <see cref="M:Microsoft.Office.Interop.Outlook._Results.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook._Results.GetNext" />, et <see cref="M:Microsoft.Office.Interop.Outlook._Results.GetPrevious" /> dans une collection volumineuse, appelez <b>GetFirst</b> avant <b>cette collection GetNext</b> et <b>GetLast</b> avant d’appeler <b>GetPrevious </b>. Pour vous assurer que vous sont toujours vos appels sur la même collection, créez une variable explicite qui fait référence à la collection avant d’entrer dans la boucle.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetLast">
@@ -201,10 +191,8 @@
       <Docs>
         <summary>Renvoie le dernier objet de la collection.</summary>
         <returns>Valeur Object qui représente le dernier objet contenu dans la collection.</returns>
-        <remarks>
-          <para>Elle renvoie la <b>valeur Nothing</b> si aucun objet n’existe, par exemple, si la collection est vide. Pour garantir le bon fonctionnement de le <see cref="M:Microsoft.Office.Interop.Outlook._Results.GetFirst" />, <b>GetLast</b>, <see cref="M:Microsoft.Office.Interop.Outlook._Results.GetNext" />, et <see cref="M:Microsoft.Office.Interop.Outlook._Results.GetPrevious" /> dans une collection volumineuse, appelez <b>GetFirst</b> avant d’appeler <b>GetNext</b> dans cette collection et appelez <b>GetLast</b> avant d’appeler <b>GetPrevious </b>. Pour vous assurer que vous sont toujours vos appels sur la même collection, créez une variable explicite qui fait référence à la collection avant d’entrer dans la boucle.</para>
-          <para />
-        </remarks>
+        <remarks><para>Elle renvoie la <b>valeur Nothing</b> si aucun objet n’existe, par exemple, si la collection est vide. Pour garantir le bon fonctionnement de le <see cref="M:Microsoft.Office.Interop.Outlook._Results.GetFirst" />, <b>GetLast</b>, <see cref="M:Microsoft.Office.Interop.Outlook._Results.GetNext" />, et <see cref="M:Microsoft.Office.Interop.Outlook._Results.GetPrevious" /> dans une collection volumineuse, appelez <b>GetFirst</b> avant d’appeler <b>GetNext</b> dans cette collection et appelez <b>GetLast</b> avant d’appeler <b>GetPrevious </b>. Pour vous assurer que vous sont toujours vos appels sur la même collection, créez une variable explicite qui fait référence à la collection avant d’entrer dans la boucle.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNext">
@@ -230,10 +218,8 @@
       <Docs>
         <summary>Renvoie l'objet suivant de la collection.</summary>
         <returns>Valeur Object qui représente l'objet suivant contenu dans la collection.</returns>
-        <remarks>
-          <para>Elle renvoie la <b>valeur Nothing</b> si aucun objet suivant n’existe, par exemple, si déjà placé à la fin de la collection. Pour garantir le bon fonctionnement de le <see cref="M:Microsoft.Office.Interop.Outlook._Results.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook._Results.GetLast" />, <b>GetNext</b>, et <see cref="M:Microsoft.Office.Interop.Outlook._Results.GetPrevious" /> dans une collection volumineuse, appelez <b>GetFirst</b> avant d’appeler <b>GetNext</b> dans cette collection et appelez <b>GetLast</b> avant d’appeler <b>GetPrevious </b>. Pour vous assurer que vous sont toujours vos appels sur la même collection, créez une variable explicite qui fait référence à la collection avant d’entrer dans la boucle.</para>
-          <para />
-        </remarks>
+        <remarks><para>Elle renvoie la <b>valeur Nothing</b> si aucun objet suivant n’existe, par exemple, si déjà placé à la fin de la collection. Pour garantir le bon fonctionnement de le <see cref="M:Microsoft.Office.Interop.Outlook._Results.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook._Results.GetLast" />, <b>GetNext</b>, et <see cref="M:Microsoft.Office.Interop.Outlook._Results.GetPrevious" /> dans une collection volumineuse, appelez <b>GetFirst</b> avant d’appeler <b>GetNext</b> dans cette collection et appelez <b>GetLast</b> avant d’appeler <b>GetPrevious </b>. Pour vous assurer que vous sont toujours vos appels sur la même collection, créez une variable explicite qui fait référence à la collection avant d’entrer dans la boucle.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPrevious">
@@ -259,10 +245,8 @@
       <Docs>
         <summary>Renvoie l'objet précédent de la collection.</summary>
         <returns>Valeur Object qui représente l'objet précédent contenu dans la collection.</returns>
-        <remarks>
-          <para>Elle renvoie la <b>valeur Nothing</b> si aucun objet précédent n’existe, par exemple, si le début de la collection. Pour garantir le bon fonctionnement de le <see cref="M:Microsoft.Office.Interop.Outlook._Results.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook._Results.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook._Results.GetNext" />, et les méthodes <b>GetPrevious</b> dans une collection volumineuse, appelez <b>GetFirst</b> avant d’appeler <b>GetNext</b> dans cette collection et appelez <b>GetLast</b> avant d’appeler <b> GetPrevious</b>. Pour vous assurer que vous sont toujours vos appels sur la même collection, créez une variable explicite qui fait référence à la collection avant d’entrer dans la boucle.</para>
-          <para />
-        </remarks>
+        <remarks><para>Elle renvoie la <b>valeur Nothing</b> si aucun objet précédent n’existe, par exemple, si le début de la collection. Pour garantir le bon fonctionnement de le <see cref="M:Microsoft.Office.Interop.Outlook._Results.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook._Results.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook._Results.GetNext" />, et les méthodes <b>GetPrevious</b> dans une collection volumineuse, appelez <b>GetFirst</b> avant d’appeler <b>GetNext</b> dans cette collection et appelez <b>GetLast</b> avant d’appeler <b> GetPrevious</b>. Pour vous assurer que vous sont toujours vos appels sur la même collection, créez une variable explicite qui fait référence à la collection avant d’entrer dans la boucle.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -378,10 +362,8 @@
       <Parameters />
       <Docs>
         <summary>Efface les propriétés qui ont été mis en cache avec les <see cref="M:Microsoft.Office.Interop.Outlook._Results.SetColumns(System.String)" /> méthode.</summary>
-        <remarks>
-          <para>Toutes les propriétés sont accessibles après l’appel de la méthode <b>ResetColumns</b> . <b>SetColumns</b> doit être réutilisée pour le stockage de nouvelles propriétés. <b>ResetColumns</b> n’a aucun effet si <b>SetColumns</b> n’a pas été appelée au préalable.</para>
-          <para />
-        </remarks>
+        <remarks><para>Toutes les propriétés demeurent accessibles après l'appel de la méthode <b>ResetColumns</b>. La méthode <b>SetColumns</b> doit être réutilisée pour permettre le stockage de nouvelles propriétés. La méthode <b>ResetColumns</b> n'a aucun effet si la méthode <b>SetColumns</b> n'a pas été appelée au préalable.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -409,16 +391,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetColumns">
@@ -446,10 +426,8 @@
       <Docs>
         <param name="Columns">To be added.</param>
         <summary>Met en cache certaines propriétés d’un élément de la collection pour permettre d’y accéder très rapidement.</summary>
-        <remarks>
-          <para>La méthode <b>SetColumns</b> est utile pour itérer la <see cref="T:Microsoft.Office.Interop.Outlook.Results" /> objet. Si vous n’utilisez pas cette méthode, Microsoft Outlook doit ouvrir chaque élément pour accéder à la propriété. Avec la méthode <b>SetColumns</b> , Outlook vérifie uniquement les propriétés que vous avez mis en cache. Les propriétés qui ne sont pas mis en cache sont renvoyées vides.</para>
-          <para />
-        </remarks>
+        <remarks><para>La méthode <b>SetColumns</b> est utile pour itérer la <see cref="T:Microsoft.Office.Interop.Outlook.Results" /> objet. Si vous n’utilisez pas cette méthode, Microsoft Outlook doit ouvrir chaque élément pour accéder à la propriété. Avec la méthode <b>SetColumns</b> , Outlook vérifie uniquement les propriétés que vous avez mis en cache. Les propriétés qui ne sont pas mis en cache sont renvoyées vides.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -478,11 +456,10 @@
         <param name="Property">Nom de la propriété utilisée pour le tri. Il peut être indiqué entre crochets (par exemple, [CompanyName]). Il ne peut pas s'agir d'un champ défini par l'utilisateur, ni d'une propriété contenant plusieurs valeurs, telle qu'une catégorie.</param>
         <param name="Descending">Cet argument à la valeur <b>True</b> pour un tri par ordre décroissant. La valeur par défaut est <b>False</b> (croissant).</param>
         <summary>Trie la collection d'éléments en fonction de la propriété spécifiée. L'index de cette collection est ramené à 1 après exécution de cette méthode.</summary>
-        <remarks>
-          <para>
-            <b>Tri</b> n’affecte que l’ordre des éléments dans une collection. Il n’affecte pas l’ordre des éléments dans un affichage de l’Explorateur de solutions.</para>
-          <para />
-        </remarks>
+        <remarks><para>La méthode 
+            <b>Sort</b> affecte uniquement l'ordre des éléments d'une collection. Elle n'affecte pas l'ordre des éléments dans un affichage d'explorateur.
+</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="OrderFields" FullName="Microsoft.Office.Interop.Outlook.OrderFields">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9183d5dc750fff2bfc66cdfd12a98a8b39d02306" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633953" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OrderFields : Microsoft.Office.Interop.Outlook._OrderFields" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b599c4362afd37d9c09301a5813a20e6fcd93238" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901136" /></Metadata><TypeSignature Language="C#" Value="public interface OrderFields : Microsoft.Office.Interop.Outlook._OrderFields" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OrderFields implements class Microsoft.Office.Interop.Outlook._OrderFields" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.OrderFields" />
   <TypeSignature Language="VB.NET" Value="Public Interface OrderFields&#xA;Implements _OrderFields" />
@@ -31,9 +23,33 @@
   </Attributes>
   <Docs>
     <summary>Représente la collection de <see cref="T:Microsoft.Office.Interop.Outlook.OrderField" /> objets dans un affichage.</summary>
-    <remarks>
-      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._OrderFields" />. </para>Collection 
-      <para><b>OrderFields</b> représente les propriétés d’élément Outlook permet de trier les éléments Outlook affichés dans l’affichage. Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._OrderFields.Add(System.String,System.Object)" /> méthode ou la collection <b>OrderFields</b> pour créer un nouveau champ de commande pour les objets ci-dessous dérivés de le <see cref="T:Microsoft.Office.Interop.Outlook.View" /> objet :</para><list type="bullet"><item><para><see cref="T:Microsoft.Office.Interop.Outlook.BusinessCardView" /></para></item><item><para><see cref="T:Microsoft.Office.Interop.Outlook.CardView" /></para></item><item><para><see cref="T:Microsoft.Office.Interop.Outlook.IconView" /></para></item></list><para><b>OrderField</b> objets contenus dans un Collection <b>OrderFields</b> sont appliqués aux éléments Outlook affichés dans l’affichage dans l’ordre dans lequel les objets contenus dans la collection.</para><para /></remarks>
+    <remarks><para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._OrderFields" />. </para>
+      <para>La collection <b>OrderFields</b> représente les propriétés d’élément Outlook permet de trier les éléments Outlook affichés dans l’affichage. Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._OrderFields.Add(System.String,System.Object)" /> méthode ou la collection <b>OrderFields</b> pour créer un nouveau champ de commande pour les objets ci-dessous dérivés de le <see cref="T:Microsoft.Office.Interop.Outlook.View" /> objet :</para>
+      <list type="bullet">
+        <item>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Outlook.BusinessCardView" />
+          </para>
+        </item>
+        <item>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Outlook.CardView" />
+          </para>
+        </item>
+        <item>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Outlook.IconView" />
+          </para>
+        </item>
+        <item>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Outlook.TableView" />
+          </para>
+        </item>
+      </list>
+      <para>				Les objets 
+        <b>OrderField</b> d'une collection <b>OrderFields</b> sont appliqués aux éléments Outlook inclus dans l'affichage dans l'ordre dans lequel ils sont classés dans la collection.</para>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

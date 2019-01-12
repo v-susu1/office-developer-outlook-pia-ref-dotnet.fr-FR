@@ -1,13 +1,5 @@
 <Type Name="ExplorerEvents_10_BeforeFolderSwitchEventHandler" FullName="Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeFolderSwitchEventHandler">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b84776ec518e0734384489378bee9be4baf1b5d2" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20635374" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public delegate void ExplorerEvents_10_BeforeFolderSwitchEventHandler(object NewFolder, out bool Cancel);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bf58077ed7001078679d497c231c40ae4ac8014a" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27899431" /></Metadata><TypeSignature Language="C#" Value="public delegate void ExplorerEvents_10_BeforeFolderSwitchEventHandler(object NewFolder, out bool Cancel);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ExplorerEvents_10_BeforeFolderSwitchEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeFolderSwitchEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ExplorerEvents_10_BeforeFolderSwitchEventHandler(NewFolder As Object, ByRef Cancel As Boolean)" />
@@ -36,8 +28,7 @@
   </ReturnValue>
   <Docs>
     <param name="NewFolder">Le <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> objet vers lequel l’Explorateur bascule.</param>
-    <param name="Cancel">
-      <b>False</b> lorsque l'événement se produit. Si la procédure événementielle affecte à cet argument la valeur <b>True</b>, la navigation est annulée et le dossier actif ne change pas.</param>
+    <param name="Cancel"><b>False</b> lorsque l'événement se produit. Si la procédure événementielle affecte à cet argument la valeur <b>True</b>, la navigation est annulée et le dossier actif ne change pas.</param>
     <summary>Il s’agit d’un délégué pour un événement dans l’objet correspondant. Après avoir implémenté une méthode de rappel pour l’événement, utilisez ce délégué pour connecter la méthode de rappel à l’événement. S’il existe plusieurs versions de l’interface d’événement, ce délégué connecte la méthode de rappel pour l’événement dans la version spécifiée d’Outlook.</summary>
     <remarks>To be added.</remarks>
   </Docs>

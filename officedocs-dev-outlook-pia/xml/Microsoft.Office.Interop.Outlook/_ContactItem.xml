@@ -1,13 +1,5 @@
 <Type Name="_ContactItem" FullName="Microsoft.Office.Interop.Outlook._ContactItem">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3f2c44daf638b39436b23bc1e53afb53a7577330" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633822" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _ContactItem" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3f2c44daf638b39436b23bc1e53afb53a7577330" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27896582" /></Metadata><TypeSignature Language="C#" Value="public interface _ContactItem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _ContactItem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._ContactItem" />
   <TypeSignature Language="VB.NET" Value="Public Interface _ContactItem" />
@@ -56,7 +48,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le compte du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le compte du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -114,10 +106,9 @@
       <Docs>
         <param name="Path">Chemin d'accès complet spécifiant le fichier image à charger.</param>
         <summary>Ajoute une image de logo à la carte de visite électronique actuelle de l’élément de contact.</summary>
-        <remarks>
-          <para>Une carte de visite électronique peut être une image de logo, afin que les images de logo existante seront remplacées.  Formats de fichiers graphiques standards sont prises en charge, y compris. BMP. GIF. JPG, et. PNG.</para>
-          <para />
-        </remarks>
+        <remarks><para>Une carte de visite électronique ne pouvant être associée qu'à une seule image de logo, toute image de logo existante sera remplacée. Les formats de fichiers graphiques standard sont pris en charge, à savoir : .BMP, .GIF, .JPG et .PNG.
+ </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddPicture">
@@ -145,11 +136,9 @@
       <Docs>
         <param name="Path">Chaîne qui contient le chemin d'accès complet et le nom de fichier de l'image à ajouter à l'élément de contact.</param>
         <summary>Ajoute une image à un élément de contact.</summary>
-        <remarks>
-          <para>Si l’élément de contact possède déjà une image attachée, cette méthode remplace l’image existante.</para>
-          <para>L’image peut être une icône, GIF, JPEG, BMP, TIFF, WMF, EMF ou PNG. Microsoft Outlook effectuera automatiquement le redimensionnement requis de l’image.</para>
-          <para />
-        </remarks>
+        <remarks><para> Si une image est déjà liée à l'élément de contact, cette méthode remplace l'image existante.</para>
+          <para>L’image peut être une icône, GIF, JPEG, TIFF, WMF, EMF, fichier BMP ou PNG. Microsoft Outlook effectuera automatiquement le redimensionnement requis de l’image.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Anniversary">
@@ -237,7 +226,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le nom de la personne qui assiste le contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le nom de la personne qui assiste le contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -268,7 +257,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le numéro de téléphone de la personne qui assiste le contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le numéro de téléphone de la personne qui assiste le contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -326,11 +315,9 @@
       <Docs>
         <summary>Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) qui détermine si l’élément est gagné en cas de résolution automatique de conflit. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur <b>False</b> n’indique pas nécessairement que l’élément est une précédence de résolution automatique de conflit. L’élément peut être en conflit avec un autre élément.</para>
-          <para>Si un élément a <see cref="P:Microsoft.Office.Interop.Outlook.Conflicts.Count" /> de son <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.Conflicts" /> propriété supérieure à zéro et si la propriété <b>AutoResolvedWinner</b> a la <b>valeur True</b>, il s’agit d’une résolution de conflit automatique un. En revanche, si l’élément est en conflit et que sa propriété <b>AutoResolvedWinner prend la</b><b>valeur False</b>, il est une précédence en cas de résolution automatique de conflit.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur <b>False</b> n'indique pas forcément que l'élément est un élément perdant dans une résolution automatique de conflit. L'élément peut être en conflit avec un autre élément.</para>
+          <para>Si un élément a <see cref="P:Microsoft.Office.Interop.Outlook.Conflicts.Count" /> de son <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.Conflicts" /> propriété supérieure à zéro et si la propriété <b>AutoResolvedWinner</b> a la <b>valeur True</b>, il s’agit d’une résolution de conflit automatique un. En revanche, si l’élément est en conflit et que sa propriété <b>AutoResolvedWinner prend la</b> <b>valeur False</b>, il est une précédence en cas de résolution automatique de conflit.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BillingInformation">
@@ -359,12 +346,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente les informations de facturation associées à l’élément Outlook. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente les informations de facturation associées à l’élément Outlook. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Il s’agit d’un champ de texte de forme libre.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est un champ texte en forme libre.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Birthday">
@@ -393,7 +378,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>DateTime</b> qui indique l’anniversaire du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>DateTime</b> qui indique l’anniversaire du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -424,7 +409,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le corps de texte en clair de l’élément Outlook. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le corps de texte en clair de l’élément Outlook. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -455,7 +440,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le deuxième numéro de téléphone professionnel du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le deuxième numéro de téléphone professionnel du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -486,7 +471,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant l’ensemble, non analysée du contact adresse professionnelle. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant l’ensemble, non analysée du contact adresse professionnelle. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -517,12 +502,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie de nom de ville de l’adresse professionnelle du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie de nom de ville de l’adresse professionnelle du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.BusinessAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées à la propriété <b>BusinessAddress</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.BusinessAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées à la propriété <b>BusinessAddress</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BusinessAddressCountry">
@@ -551,12 +534,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie du code de pays/région de l’adresse professionnelle du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie du code de pays/région de l’adresse professionnelle du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.BusinessAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées à la propriété <b>BusinessAddress</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.BusinessAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées à la propriété <b>BusinessAddress</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BusinessAddressPostalCode">
@@ -585,12 +566,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie du code postal (code postal) de l’adresse professionnelle du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie du code postal (code postal) de l’adresse professionnelle du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.BusinessAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées à la propriété <b>BusinessAddress</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.BusinessAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées à la propriété <b>BusinessAddress</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BusinessAddressPostOfficeBox">
@@ -619,12 +598,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie du numéro de boîte postale de l’adresse professionnelle du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie du numéro de boîte postale de l’adresse professionnelle du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.BusinessAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées à la propriété <b>BusinessAddress</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.BusinessAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées à la propriété <b>BusinessAddress</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BusinessAddressState">
@@ -653,12 +630,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie de code d’état de l’adresse professionnelle du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie de code d’état de l’adresse professionnelle du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.BusinessAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées à la propriété <b>BusinessAddress</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.BusinessAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées à la propriété <b>BusinessAddress</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BusinessAddressStreet">
@@ -687,12 +662,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant la partie de l’adresse postale de l’adresse professionnelle du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant la partie de l’adresse postale de l’adresse professionnelle du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.BusinessAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées à la propriété <b>BusinessAddress</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.BusinessAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées à la propriété <b>BusinessAddress</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BusinessCardLayoutXml">
@@ -721,12 +694,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le code XML de la disposition de la carte de visite électronique. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le code XML de la disposition de la carte de visite électronique. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour plus d’informations sur le schéma XML pour les cartes de visite électroniques, voir la référence de schéma XML de Microsoft Outlook 2010 dans la <a href="http://msdn.microsoft.com/en-us/library/default.aspx">Bibliothèque MSDN</a></para>
-          <para />
-        </remarks>
+        <remarks><para>Pour plus d’informations sur le schéma XML pour les cartes de visite électroniques, voir la référence de schéma XML de Microsoft Outlook 2010 dans la <a href="http://msdn.microsoft.com/en-us/library/default.aspx">Bibliothèque MSDN</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BusinessCardType">
@@ -754,10 +725,8 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlBusinessCardType" /> constante qui spécifie le type de carte de visite électronique utilisée par ce contact. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La carte de visite électronique peut être soit au format Microsoft Office InterConnect ou Outlook. Une carte de visite électronique au format InterConnect ne peuvent pas être modifiés par le biais du modèle objet Outlook.</para>
-          <para />
-        </remarks>
+        <remarks><para>La carte de visite électronique peut être soit au format Microsoft Office InterConnect ou Outlook. Une carte de visite électronique au format InterConnect ne peuvent pas être modifiés par le biais du modèle objet Outlook. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BusinessFaxNumber">
@@ -786,7 +755,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le numéro de télécopie professionnel du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le numéro de télécopie professionnel du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -817,7 +786,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente l’URL de la page Web professionnelle du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente l’URL de la page Web professionnelle du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -848,7 +817,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le premier numéro de téléphone professionnel du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le premier numéro de téléphone professionnel du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -879,7 +848,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le numéro de téléphone de rappel pour le contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le numéro de téléphone de rappel pour le contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -910,7 +879,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le numéro de téléphone de voiture du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le numéro de téléphone de voiture du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -941,13 +910,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente les catégories affectées à l’élément Outlook. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente les catégories affectées à l’élément Outlook. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>Categories</b> est une chaîne délimitée des noms de catégories qui ont été attribués à un élément Outlook. Cette propriété utilise le caractère spécifié dans le nom de la valeur, sList, sous HKEY_CURRENT_USER\Control Panel\International dans le Registre Windows, comme délimiteur de plusieurs valeurs de catégorie. Pour convertir la chaîne de noms de catégories à un tableau de noms de catégorie, utilisez la fonction Microsoft Visual Basic <b>Split</b>.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Children">
@@ -976,7 +943,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant les noms des enfants du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant les noms des enfants du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1031,10 +998,8 @@
       <Parameters />
       <Docs>
         <summary>Efface le <see cref="T:Microsoft.Office.Interop.Outlook.ContactItem" /> objet en tant que tâche.</summary>
-        <remarks>
-          <para>Appel de cette méthode définit la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.IsMarkedAsTask" /> propriété la <b>valeur False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Appel de cette méthode définit la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.IsMarkedAsTask" /> propriété la <b>valeur False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -1091,12 +1056,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant les noms des sociétés associées à l’élément Outlook. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant les noms des sociétés associées à l’élément Outlook. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Il s’agit d’un champ de texte de forme libre.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est un champ texte en forme libre. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CompanyAndFullName">
@@ -1152,10 +1115,8 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant le nom de société du contact suivi du nom de famille concaténé, prénom et prénom sans espace entre les noms des premières et dernières. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.CompanyName" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.LastName" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FirstName" />, et <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.MiddleName" /> propriétés. Les propriétés <b>LastName</b>, <b>FirstName</b>et <b>MiddleName</b> sont elles-mêmes analysées à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FullName" /> propriété. La valeur de cette propriété est fournie que lorsque sa propriété associée (<b>FirstName</b>, <b>LastName</b>, <b>MiddleName</b>, <b>CompanyName</b>et <b>Suffix</b>) contient des caractères asiatiques (DBCS). Si le champ correspondant ne contient pas de caractères asiatiques, la propriété sera vide.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.CompanyName" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.LastName" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FirstName" />, et <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.MiddleName" /> propriétés. Les propriétés <b>LastName</b>, <b>FirstName</b>et <b>MiddleName</b> sont elles-mêmes analysées à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FullName" /> propriété. La valeur de cette propriété est fournie que lorsque sa propriété associée (<b>FirstName</b>, <b>LastName</b>, <b>MiddleName</b>, <b>CompanyName</b>et <b>Suffix</b>) contient des caractères asiatiques (DBCS). Si le champ correspondant ne contient pas de caractères asiatiques, la propriété sera vide.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CompanyLastFirstSpaceOnly">
@@ -1183,10 +1144,8 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant le nom de société du contact suivi du nom de famille concaténé, prénom et prénom par des espaces entre le dernier, le premier et le prénom. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.CompanyName" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.LastName" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FirstName" />, et <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.MiddleName" /> propriétés. Les propriétés <b>LastName</b>, <b>FirstName</b>et <b>MiddleName</b> sont elles-mêmes analysées à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FullName" /> propriété. La valeur de cette propriété est remplie uniquement lorsqu’elle est associée à propriété (<b>FirstName</b>, <b>LastName</b>, <b>MiddleName</b>, <b>CompanyName</b>et <b>Suffix</b>) contient des caractères asiatiques (DBCS). Si le champ correspondant ne contient pas de caractères asiatiques, la propriété sera vide.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.CompanyName" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.LastName" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FirstName" />, et <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.MiddleName" /> propriétés. Les propriétés <b>LastName</b>, <b>FirstName</b>et <b>MiddleName</b> sont elles-mêmes analysées à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FullName" /> propriété. La valeur de cette propriété est remplie uniquement lorsqu’elle est associée à propriété (<b>FirstName</b>, <b>LastName</b>, <b>MiddleName</b>, <b>CompanyName</b>et <b>Suffix</b>) contient des caractères asiatiques (DBCS). Si le champ correspondant ne contient pas de caractères asiatiques, la propriété sera vide.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CompanyMainTelephoneNumber">
@@ -1215,7 +1174,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le numéro de téléphone principal du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le numéro de téléphone principal du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1246,7 +1205,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le nom de société du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le nom de société du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1277,7 +1236,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le nom du réseau informatique du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le nom du réseau informatique du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1335,12 +1294,10 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) qui identifie de manière unique un <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> objet qui le <see cref="T:Microsoft.Office.Interop.Outlook.ContactItem" /> objet appartient. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété associe des éléments à une conversation. Tous ces éléments et la conversation ont la même valeur dans leur propriété <b>ConversationID</b> .</para>
+        <remarks><para>Cette propriété associe les éléments à une conversation. Ces éléments et la conversation ont la même valeur dans leur propriété <b>ConversationID</b>.</para>
           <para>Cette propriété correspond à la propriété MAPI <b>PidTagConversationId</b>.</para>
-          <para>Si l’objet <b>ContactItem</b> est créé dans une version antérieure de Microsoft Outlook 2010 de Microsoft Outlook, ou si Outlook est exécuté en mode en ligne par rapport à une version de Microsoft Exchange Server antérieure à Microsoft Exchange Server 2010, cela propriété renvoie la même valeur que la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.ConversationTopic" /> propriété.</para>
-          <para />
-        </remarks>
+          <para>Si l’objet <b>ContactItem</b> est créé dans une version antérieure de Microsoft Outlook 2010 de Microsoft Outlook, ou si Outlook est exécuté en mode en ligne par rapport à une version antérieure à Microsoft Exchange Server 2010, cette propriété de Microsoft Exchange Server Renvoie la même valeur que la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.ConversationTopic" /> propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ConversationIndex">
@@ -1450,10 +1407,8 @@
       <Docs>
         <summary>Retourne un <b>DateTime</b> indiquant l’heure de création de l’élément Outlook. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagCreationTime</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagCreationTime</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomerID">
@@ -1482,7 +1437,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant l’ID client pour le contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant l’ID client pour le contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1509,11 +1464,9 @@
       <Parameters />
       <Docs>
         <summary>Supprime l’élément à partir du dossier qui contient l’élément.</summary>
-        <remarks>
-          <para>La méthode <b>Delete</b> supprime un seul élément dans une collection. Pour supprimer tous les éléments de la <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> collection d’un dossier, vous devez supprimer chaque élément commençant par le dernier élément dans le dossier. Par exemple, dans la collection items d’un dossier, AllItems, s’il y a n le nombre d’éléments dans le dossier, démarrez la suppression de l’élément situé à AllItems.Item(n), décrémenter l’index de chaque fois que vous supprimez AllItems.Item(1).</para>
-          <para>Supprimer la méthode déplace l’élément à partir du dossier contenant vers le dossier éléments supprimés. Si le dossier conteneur est le dossier éléments supprimés, la méthode <b>Delete</b> supprime l’élément définitivement.</para>
-          <para />
-        </remarks>
+        <remarks><para>La méthode <b>Delete</b> supprime un seul élément dans une collection. Pour supprimer tous les éléments de la <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> collection d’un dossier, vous devez supprimer chaque élément commençant par le dernier élément dans le dossier. Par exemple, dans la collection items d’un dossier, AllItems, s’il y a n le nombre d’éléments dans le dossier, démarrez la suppression de l’élément situé à AllItems.Item(n), décrémenter l’index de chaque fois que vous supprimez AllItems.Item(1).</para>
+          <para>La méthode Delete déplace l’élément à partir du dossier contenant vers le dossier éléments supprimés. Si le dossier conteneur est le dossier éléments supprimés, la méthode <b>Delete</b> supprime définitivement l’élément.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Department">
@@ -1542,7 +1495,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le nom du service pour le contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le nom du service pour le contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1569,14 +1522,11 @@
         <Parameter Name="Modal" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Modal">
-          <b>True</b> pour que la fenêtre soit modale. La valeur par défaut est <b>False</b>.</param>
+        <param name="Modal"><b>True</b> pour que la fenêtre soit modale. La valeur par défaut est <b>False</b>.</param>
         <summary>Affiche un nouvel <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> objet pour l’élément.</summary>
-        <remarks>
-          <para>La méthode <b>Display</b> est prise en charge pour les fenêtres d’Explorateur et inspecteur pour des raisons de compatibilité descendante. Pour activer une fenêtre d’Explorateur ou d’inspecteur, utilisez la <see cref="M:Microsoft.Office.Interop.Outlook._Inspector.Activate" /> méthode.</para>
-          <para>Si vous essayez d’ouvrir un objet système de fichiers « dangereux » (ou un fichier « freedoc ») à l’aide du modèle objet Microsoft Outlook, vous recevez le code de retour E_FAIL dans les langages de programmation C ou C++. Dans Outlook 2000 et versions antérieures, vous pouviez ouvrir un objet de système fichier « non » à l’aide de la méthode <b>Display</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>La méthode <b>Display</b> est prise en charge pour les fenêtres d’Explorateur et inspecteur pour des raisons de compatibilité descendante. Pour activer une fenêtre d’Explorateur ou d’inspecteur, utilisez la <see cref="M:Microsoft.Office.Interop.Outlook._Inspector.Activate" /> méthode.</para>
+          <para>Si vous essayez d’ouvrir un objet système de fichiers « dangereux » (ou un fichier « freedoc ») à l’aide du modèle objet Microsoft Outlook, vous recevez le code de retour E_FAIL dans les langages de programmation C ou C++. Dans Outlook 2000 et versions antérieures, vous pouviez ouvrir un objet de système de fichiers qui n’était « pas sûr » à l’aide de la méthode <b>Display</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DownloadState">
@@ -1633,7 +1583,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente l’adresse de messagerie de la première entrée d’adresse de messagerie du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente l’adresse de messagerie de la première entrée d’adresse de messagerie du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1664,12 +1614,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le type d’adresse (par exemple, EX ou SMTP) de la première entrée d’adresse de messagerie du contact.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le type d’adresse (par exemple, EX ou SMTP) de la première entrée d’adresse de messagerie du contact.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Il s’agit d’un champ de texte libre, qui doit toutefois correspondre au type réel d’un transport de messagerie existant.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est un champ de texte de forme libre, qui doit toutefois correspondre au type réel d'un transport de messagerie électronique existant.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Email1DisplayName">
@@ -1698,12 +1646,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant le nom complet de la première adresse de messagerie du contact.  Lecture/écriture.</summary>
+        <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant le nom complet de la première adresse de messagerie du contact.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est définie à la valeur de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FullName" /> propriété par défaut.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est définie à la valeur de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FullName" /> propriété par défaut.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Email1EntryID">
@@ -1760,7 +1706,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente l’adresse de messagerie de la deuxième entrée d’adresse de messagerie du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente l’adresse de messagerie de la deuxième entrée d’adresse de messagerie du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1791,12 +1737,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le type d’adresse (par exemple, EX ou SMTP) de la deuxième entrée d’adresse de messagerie du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le type d’adresse (par exemple, EX ou SMTP) de la deuxième entrée d’adresse de messagerie du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Il s’agit d’un champ de texte libre, qui doit toutefois correspondre au type réel d’un transport de messagerie existant.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est un champ de texte de forme libre, qui doit toutefois correspondre au type réel d'un transport de messagerie électronique existant.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Email2DisplayName">
@@ -1825,12 +1769,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant le nom complet de la deuxième entrée d’adresse de messagerie du contact. Lecture/écriture.</summary>
+        <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant le nom complet de la deuxième entrée d’adresse de messagerie du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est définie à la valeur de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FullName" /> propriété par défaut.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est définie à la valeur de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FullName" /> propriété par défaut. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Email2EntryID">
@@ -1887,7 +1829,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente l’adresse de messagerie de la troisième entrée d’adresse de messagerie du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente l’adresse de messagerie de la troisième entrée d’adresse de messagerie du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1918,12 +1860,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le type d’adresse (par exemple, EX ou SMTP) de la troisième entrée d’adresse de messagerie du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le type d’adresse (par exemple, EX ou SMTP) de la troisième entrée d’adresse de messagerie du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Il s’agit d’un champ de texte libre, qui doit toutefois correspondre au type réel d’un transport de messagerie existant.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est un champ de texte de forme libre, qui doit toutefois correspondre au type réel d'un transport de messagerie électronique existant.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Email3DisplayName">
@@ -1952,12 +1892,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant le nom complet de la troisième entrée d’adresse de messagerie du contact.  Lecture/écriture.</summary>
+        <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant le nom complet de la troisième entrée d’adresse de messagerie du contact.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est définie à la valeur de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FullName" /> propriété par défaut.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est définie à la valeur de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FullName" /> propriété par défaut.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Email3EntryID">
@@ -2013,9 +1951,9 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) qui représente l’identificateur d’entrée unique de l’objet.  En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagEntryId</b>.</para> Fournisseur de banque 
-          <para>MAPI A assigne une chaîne d’ID unique lorsqu’un élément est créé dans son magasin. Par conséquent, la propriété <b>EntryID</b> n’est pas définie pour un élément Outlook jusqu'à ce qu’il est enregistré ou envoyé. L’identificateur d’entrée change lorsqu’un élément est déplacé vers une autre banque, par exemple, à partir de votre boîte de réception à un dossier public Microsoft Exchange Server, ou d’un fichier de dossiers personnels (.pst) vers un autre fichier .pst. Solutions ne doivent pas dépendre de la propriété <b>EntryID</b> pour être uniques, sauf si les éléments ne seront pas déplacées. La propriété <b>EntryID</b> renvoie un identificateur d’entrée à long terme MAPI. Pour plus d’informations sur les identificateurs d’entrée à long et à court terme, recherchez http://msdn.microsoft.com pour <b>PidTagEntryId</b>. </para><para /></remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagEntryId</b>.</para>
+          <para>Un fournisseur de banque MAPI affecte une chaîne d’ID unique lorsqu’un élément est créé dans son magasin. Par conséquent, la propriété <b>EntryID</b> n’est pas définie pour un élément Outlook jusqu'à ce qu’il est enregistré ou envoyé. L’ID d’entrée est modifié lorsqu’un élément est déplacé vers une autre banque, par exemple, depuis votre boîte de réception vers un dossier public Microsoft Exchange Server ou depuis un fichier Dossier personnel (.pst) vers un autre fichier .pst. Les solutions ne doivent pas dépendre du fait que la propriété <b>EntryID</b> soit unique, sauf si les éléments ne sont pas déplacés. La propriété <b>EntryID</b> renvoie un ID d’entrée à long terme MAPI. Pour plus d’informations sur les identificateurs d’entrée à long et à court terme, recherchez http://msdn.microsoft.com pour <b>PidTagEntryId</b>. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FileAs">
@@ -2044,7 +1982,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) indiquant la chaîne de mot clé par défaut attribuée au contact lors de son enregistrement. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) indiquant la chaîne de mot clé par défaut attribuée au contact lors de son enregistrement. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2075,12 +2013,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le prénom du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le prénom du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FullName" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé en cas de modification d’entrées à <b>FullName</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FullName" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé en cas de modification d’entrées à <b>FullName</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FormDescription">
@@ -2134,15 +2070,28 @@
       <Docs>
         <summary>Crée une nouvelle <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> objet contenant les informations de contact et, éventuellement, une image de carte de visite électronique basé sur le <see cref="T:Microsoft.Office.Interop.Outlook.ContactItem" /> objet.</summary>
         <returns>Objet <b>MailItem</b> qui représente le nouvel élément de courrier électronique contenant les informations de carte de visite.</returns>
-        <remarks>
-          <para>Cette méthode crée un nouvel élément de messagerie Outlook en fonction des informations stockées dans l’objet <b>ContactItem</b> . Les informations contenues dans l’élément de messagerie Outlook dépendant de la valeur de la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.BodyFormat" /> propriété de l’objet <b>MailItem</b> :</para>
-          <list type="table">le
-            <item><description>résultat</description>de la
-              <description>valeur de la propriété</description></item><item><description>olFormatPlain</description><description>un fichier vCard (.VCD) est créé et ajouté à la collection Attachments de l’objet MailItem.</description></item><item><description>olFormatRichText</description><description>un fichier vCard est créé et ajouté à la collection Attachments de l’objet MailItem.</description></item><item><description>olFormatHTML</description><description>une image de carte de visite électronique est générée et incluse dans la propriété Body de l’objet MailItem et un fichier vCard est créé et ajouté à la collection Attachments de l’objet MailItem.</description></item></list>
+        <remarks><para>Cette méthode crée un nouvel élément de messagerie Outlook en fonction des informations stockées dans l’objet <b>ContactItem</b> . Les informations contenues dans l’élément de messagerie Outlook dépendant de la valeur de la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.BodyFormat" /> propriété de l’objet <b>MailItem</b> :</para>
+          <list type="table">
+            <item>
+              <description>Valeur de propriété</description>
+              <description>Résultat</description>
+            </item>
+            <item>
+              <description>olFormatPlain</description>
+              <description>Un fichier vCard (.vcd) est créé et ajouté à la collection Attachments de l’objet MailItem.</description>
+            </item>
+            <item>
+              <description>olFormatRichText</description>
+              <description>Un fichier vCard est créé et ajouté à la collection Attachments de l'objet MailItem.</description>
+            </item>
+            <item>
+              <description>valeur olFormatHTML</description>
+              <description>Une image de carte de visite électronique est générée et incluse dans la propriété Body de l’objet MailItem, tandis qu’un fichier vCard est créé et ajouté à la collection Attachments de l’objet MailItem.</description>
+            </item>
+          </list>
           <para>
             <b>Remarque</b>: le fichier vCard joint contient uniquement les informations de contact incluses dans la carte de visite électronique associée à l’objet <b>ContactItem</b> . Les informations de contact n’affichées ne pas dans la carte de visite électronique sont exclues à partir du fichier vCard.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ForwardAsVcard">
@@ -2168,10 +2117,8 @@
       <Docs>
         <summary>Crée un <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> et attache les informations de contact au format vCard.</summary>
         <returns>Objet <b>MailItem</b> qui représente le nouvel élément de courrier électronique auquel les informations de contact sont jointes.</returns>
-        <remarks>
-          <para>vCard est la norme Internet pour créer et partager des cartes de visite virtuelles.</para>
-          <para />
-        </remarks>
+        <remarks><para>vCard est la norme Internet pour créer et partager des cartes de visite virtuelles.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FTPSite">
@@ -2200,7 +2147,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente l’entrée de site FTP du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente l’entrée de site FTP du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2231,12 +2178,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) spécifiant le nom complet entier, non analysé du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) spécifiant le nom complet entier, non analysé du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est analysée dans le <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FirstName" /> , <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.MiddleName" /> , <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.LastName" />, et <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.Suffix" /> propriétés, qui peuvent être modifiées ou définies indépendamment si l’analyse est incorrect. Les modifications ou les <b>FirstName</b>, <b>LastName</b>, <b>MiddleName</b>ou propriétés <b>suffixe</b> sera remplacé par les modifications ou les entrées à <b>FullName</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est analysée dans le <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FirstName" /> , <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.MiddleName" /> , <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.LastName" />, et <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.Suffix" /> propriétés, qui peuvent être modifiées ou définies indépendamment si l’analyse est incorrect. Les modifications ou les <b>FirstName</b>, <b>LastName</b>, <b>MiddleName</b>ou propriétés <b>suffixe</b> sera remplacé par les modifications ou les entrées à <b>FullName</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FullNameAndCompany">
@@ -2293,7 +2238,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlGender</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlGender" /> constante indiquant le sexe du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlGender" /> constante indiquant le sexe du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2321,25 +2266,23 @@
       <Docs>
         <summary>Obtient un <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> object qui représente la conversation à laquelle cet élément appartient.</summary>
         <returns>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> object qui représente la conversation à laquelle cet élément appartient.</returns>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>GetConversation</b> renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) si aucune conversation n’existe pour l’élément. Aucune conversation n’existe pour un élément dans les scénarios suivants :</para>
           <list type="bullet">
             <item>
-              <para>l’élément n’a pas été enregistré. Un élément peut être enregistré par un programme, par une action de l’utilisateur, ou à l’enregistrement automatique.</para>
+              <para>L’élément n’a pas été enregistré. Un élément peut être enregistré par programme, par une action de l’utilisateur ou par l’enregistrement automatique.</para>
             </item>
             <item>
-              <para>Pour un élément qui peut être envoyé (par exemple, un élément de courrier, élément de rendez-vous ou élément de contact), l’élément n’a pas été envoyé.</para>
+              <para>Un élément qui peut être envoyé (par exemple, un élément de courrier, de rendez-vous ou de contact) n’a pas été envoyé.</para>
             </item>
             <item>
-              <para>Conversations ont été désactivées via le Registre Windows.</para>
+              <para>Les conversations ont été désactivées via le Registre Windows.</para>
             </item>
             <item>
-              <para>Le magasin ne gère pas l’affichage de conversation (par exemple, Outlook s’exécute en mode en ligne classique par rapport à une version de Microsoft Exchange antérieure à Microsoft Exchange Server 2010). Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._Store.IsConversationEnabled" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> objet afin de déterminer si la banque prend en charge l’affichage conversation.</para>
+              <para>Le magasin ne gère pas l’affichage de conversation (par exemple, Outlook s’exécute en mode en ligne classique par rapport à une version de Microsoft Exchange antérieure à Microsoft Exchange Server 2010). Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._Store.IsConversationEnabled" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> objet afin de déterminer si la banque prend en charge l’affichage de la conversation.</para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetInspector">
@@ -2367,10 +2310,8 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> object qui représente un inspecteur initialisé pour contenir l’élément spécifié. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est particulièrement utile pour renvoyer un nouvel objet <b>Inspector</b> dans lequel afficher l’élément, par opposition à l’aide de la <see cref="M:Microsoft.Office.Interop.Outlook._Application.ActiveInspector" /> méthode et la définition du <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.CurrentItem" /> propriété. S’il existe déjà un objet <b>Inspector</b> pour l’élément, la propriété <b>GetInspector</b> renvoie cet objet <b>Inspector</b> au lieu de créer un nouveau.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est particulièrement utile pour renvoyer un nouvel objet <b>Inspector</b> dans lequel afficher l’élément, par opposition à l’aide de la <see cref="M:Microsoft.Office.Interop.Outlook._Application.ActiveInspector" /> méthode et la définition du <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.CurrentItem" /> propriété. Si un objet<b>Inspecteur</b> existe déjà pour l’élément, la propriété<b>GetInspector</b> renverra cet objet <b>Inspecteur</b> plutôt que d’en créer un nouveau.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GovernmentIDNumber">
@@ -2399,7 +2340,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le code gouvernement du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le code gouvernement du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2458,7 +2399,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant la passion pour le contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant la passion pour le contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2489,7 +2430,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le deuxième numéro de téléphone personnel du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le deuxième numéro de téléphone personnel du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2520,7 +2461,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant la version complète, non analysée de l’adresse d’accueil du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant la version complète, non analysée de l’adresse d’accueil du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2551,12 +2492,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant la partie de la ville de l’adresse du domicile du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant la partie de la ville de l’adresse du domicile du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.HomeAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées <b>HomeAddress</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.HomeAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées <b>HomeAddress</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HomeAddressCountry">
@@ -2585,12 +2524,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant la partie de pays/région de l’adresse du domicile du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant la partie de pays/région de l’adresse du domicile du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.HomeAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées <b>HomeAddress</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.HomeAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées <b>HomeAddress</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HomeAddressPostalCode">
@@ -2619,12 +2556,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie code postal de l’adresse d’accueil du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie code postal de l’adresse d’accueil du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.HomeAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées <b>HomeAddress</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.HomeAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées <b>HomeAddress</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HomeAddressPostOfficeBox">
@@ -2653,12 +2588,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) la partie du numéro de boîte postale de l’adresse pour le contact personnel. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) la partie du numéro de boîte postale de l’adresse pour le contact personnel. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.HomeAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées <b>HomeAddress</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.HomeAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées <b>HomeAddress</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HomeAddressState">
@@ -2687,12 +2620,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant la partie de l’état de l’adresse du domicile du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant la partie de l’état de l’adresse du domicile du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.HomeAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées <b>HomeAddress</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.HomeAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées <b>HomeAddress</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HomeAddressStreet">
@@ -2721,12 +2652,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie rue de l’adresse du domicile du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie rue de l’adresse du domicile du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.HomeAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées <b>HomeAddress</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.HomeAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées <b>HomeAddress</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HomeFaxNumber">
@@ -2755,7 +2684,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le numéro de télécopie du domicile du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le numéro de télécopie du domicile du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2786,7 +2715,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le premier numéro de téléphone personnel du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le premier numéro de téléphone personnel du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2817,12 +2746,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente une adresse de messagerie instantanée Microsoft. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente une adresse de messagerie instantanée Microsoft. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Contrairement à la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.Recipients" /> ou <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.To" /> propriétés, il n’existe aucun moyen de vérifier que la propriété <b>IMAddress</b> contient une adresse valide.</para>
-          <para />
-        </remarks>
+        <remarks><para>Contrairement à la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.Recipients" /> ou <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.To" /> propriétés, il n’existe aucun moyen de vérifier que la propriété <b>IMAddress</b> contient une adresse valide.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Importance">
@@ -2851,12 +2778,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlImportance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlImportance" /> constante indiquant le niveau d’importance relative de l’élément Outlook. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlImportance" /> constante indiquant le niveau d’importance relative de l’élément Outlook. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagImportance</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagImportance</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Initials">
@@ -2885,7 +2810,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente les initiales du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente les initiales du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2916,12 +2841,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) correspondant à la zone adresse dans l’onglet Détails d’un contact.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) correspondant à la zone adresse dans l’onglet Détails d’un contact.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La zone adresse dans l’onglet Détails peut contenir l’emplacement des informations de disponibilité l’utilisateur standard vCard disponibilité au format URL.</para>
-          <para />
-        </remarks>
+        <remarks><para>La zone Adresse de l'onglet Détails peut contenir l'emplacement (URL) des informations de disponibilité de l'utilisateur au format de disponibilité standard vCard.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsConflict">
@@ -2949,11 +2872,9 @@
       <Docs>
         <summary>Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) qui détermine si l’élément est en conflit. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si un élément est en conflit est déterminée par l’état de l’application. Par exemple, lorsqu’un utilisateur est en mode hors connexion et tente d’accéder à un dossier en ligne l’action échoue. Dans ce scénario, la propriété <b>IsConflict</b> renvoie <b>la valeur True</b>.</para>
-          <para>Si <b>la valeur True</b>, l’élément spécifié est en conflit.</para>
-          <para />
-        </remarks>
+        <remarks><para>C'est l'état de l'application qui permet de déterminer si un élément est en conflit ou non. Par exemple, lorsqu'un utilisateur travaille en mode hors connexion et essaie d'accéder à un dossier en ligne, l'action échoue. Dans ce scénario, la propriété <b>IsConflict</b> renvoie la valeur <b>True</b>.</para>
+          <para>Si la valeur est <b>True</b>, l'élément spécifié est en conflit.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ISDNNumber">
@@ -2982,7 +2903,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le numéro RNIS du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le numéro RNIS du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3040,10 +2961,10 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.ItemProperties" /> collection qui représente toutes les propriétés standard et définies par l’utilisateur associées à l’élément Outlook. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La collection <b>ItemProperties</b> est une collection de base zéro, ce qui signifie que le premier objet de la collection est référencé par la valeur 0.</para>
-          <para />
-        </remarks>
+        <remarks><para>La collection <b>ItemProperties</b> est basée sur le zéro. En d’autres termes, l’index 0 fait référence au premier objet de la collection.
+
+</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="JobTitle">
@@ -3072,7 +2993,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant la fonction du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant la fonction du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3103,12 +3024,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) qui indique <b>True</b> si la transaction du contact sera à journaliser. Lecture/écriture.</summary>
+        <summary>Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) qui indique <b>True</b> si la transaction du contact sera à journaliser. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut est <b>False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut est <b>False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Language">
@@ -3137,12 +3056,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la langue dans laquelle le contact rédige les messages. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la langue dans laquelle le contact rédige les messages. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagLanguage</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagLanguage</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LastFirstAndSuffix">
@@ -3170,10 +3087,8 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant le nom, le dernier, le deuxième prénom et le suffixe du contact. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Il existe une virgule entre les noms et les prénoms et les espaces entre tous les noms et le suffixe. Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.LastName" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FirstName" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.MiddleName" /> et <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.Suffix" /> propriétés. Les propriétés <b>LastName</b>, <b>FirstName</b>et <b>Suffix</b> sont elles-mêmes analysées à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FullName" /> propriété. La valeur de cette propriété est remplie uniquement lorsqu’elle est associée à propriété (<b>FirstName</b>, <b>LastName</b>, <b>MiddleName</b>, <b>CompanyName</b>et <b>Suffix</b>) contient des caractères asiatiques (DBCS). Si le champ correspondant ne contient pas de caractères asiatiques, la propriété sera vide.</para>
-          <para />
-        </remarks>
+        <remarks><para>Il existe une virgule entre les noms et les prénoms et les espaces entre tous les noms et le suffixe. Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.LastName" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FirstName" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.MiddleName" /> et <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.Suffix" /> propriétés. Les propriétés <b>LastName</b>, <b>FirstName</b>et <b>Suffix</b> sont elles-mêmes analysées à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FullName" /> propriété. La valeur de cette propriété est remplie uniquement lorsqu’elle est associée à propriété (<b>FirstName</b>, <b>LastName</b>, <b>MiddleName</b>, <b>CompanyName</b>et <b>Suffix</b>) contient des caractères asiatiques (DBCS). Si le champ correspondant ne contient pas de caractères asiatiques, la propriété sera vide.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LastFirstNoSpace">
@@ -3201,10 +3116,8 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant le nom de famille concaténé, le prénom et le deuxième prénom du contact sans espace entre le nom et le prénom. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.LastName" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FirstName" />, et <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.MiddleName" /> propriétés. Les propriétés <b>LastName</b>, <b>FirstName</b>et <b>MiddleName</b> sont elles-mêmes analysées à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FullName" /> propriété. La valeur de cette propriété est fournie que lorsque sa propriété associée (<b>FirstName</b>, <b>LastName</b>, <b>MiddleName</b>, <b>CompanyName</b>et <b>Suffix</b>) contient des caractères asiatiques (DBCS). Si le champ correspondant ne contient pas de caractères asiatiques, la propriété sera vide.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.LastName" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FirstName" />, et <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.MiddleName" /> propriétés. Les propriétés <b>LastName</b>, <b>FirstName</b>et <b>MiddleName</b> sont elles-mêmes analysées à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FullName" /> propriété. La valeur de cette propriété est fournie que lorsque sa propriété associée (<b>FirstName</b>, <b>LastName</b>, <b>MiddleName</b>, <b>CompanyName</b>et <b>Suffix</b>) contient des caractères asiatiques (DBCS). Si le champ correspondant ne contient pas de caractères asiatiques, la propriété sera vide.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LastFirstNoSpaceAndSuffix">
@@ -3232,10 +3145,8 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) qui contient le dernier nom, prénom et le suffixe de l’utilisateur sans espace. Lecture seule</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est utilisée uniquement lorsque la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FirstName" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.LastName" />, et <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.Suffix" /> propriétés (champs définissant cette propriété) contiennent des caractères asiatiques (DBCS). Notez que ces modifications ou aux propriétés <b>FirstName</b>, <b>LastName</b>et <b>Suffix</b> sera remplacé par les modifications ou les entrées à FullName.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est utilisée uniquement lorsque la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FirstName" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.LastName" />, et <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.Suffix" /> propriétés (champs définissant cette propriété) contiennent des caractères asiatiques (DBCS). Notez que ces modifications ou aux propriétés <b>FirstName</b>, <b>LastName</b>et <b>Suffix</b> sera remplacé par les modifications ou les entrées à FullName.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LastFirstNoSpaceCompany">
@@ -3263,10 +3174,8 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant le nom de famille concaténé, le prénom et le deuxième prénom du contact sans espace entre le nom et le prénom. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Nom de société du contact est inclus après le deuxième prénom. Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.CompanyName" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.LastName" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FirstName" />, et <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.MiddleName" /> propriétés. Les propriétés <b>LastName</b>, <b>FirstName</b>et <b>MiddleName</b> sont elles-mêmes analysées à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FullName" /> propriété. La valeur de cette propriété est fournie que lorsque sa propriété associée (<b>FirstName</b>, <b>LastName</b>, <b>MiddleName</b>, <b>CompanyName</b>et <b>Suffix</b>) contient des caractères asiatiques (DBCS). Si le champ correspondant ne contient pas de caractères asiatiques, la propriété sera vide.</para>
-          <para />
-        </remarks>
+        <remarks><para>Nom de société du contact est inclus après le deuxième prénom. Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.CompanyName" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.LastName" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FirstName" />, et <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.MiddleName" /> propriétés. Les propriétés <b>LastName</b>, <b>FirstName</b>et <b>MiddleName</b> sont elles-mêmes analysées à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FullName" /> propriété. La valeur de cette propriété est fournie que lorsque sa propriété associée (<b>FirstName</b>, <b>LastName</b>, <b>MiddleName</b>, <b>CompanyName</b>et <b>Suffix</b>) contient des caractères asiatiques (DBCS). Si le champ correspondant ne contient pas de caractères asiatiques, la propriété sera vide.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LastFirstSpaceOnly">
@@ -3294,10 +3203,8 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant les concaténé nom, le prénom et le deuxième prénom du contact avec des espaces entre eux. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.LastName" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FirstName" />, et <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.MiddleName" /> propriétés. Les propriétés <b>LastName</b>, <b>FirstName</b>et <b>MiddleName</b> sont elles-mêmes analysées à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FullName" /> propriété. La valeur de cette propriété est fournie que lorsque sa propriété associée (<b>FirstName</b>, <b>LastName</b>, <b>MiddleName</b>, <b>CompanyName</b>et <b>Suffix</b>) contient des caractères asiatiques (DBCS). Si le champ correspondant ne contient pas de caractères asiatiques, la propriété sera vide.</para>
-          <para />
-        </remarks>
+        <remarks><para> Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.LastName" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FirstName" />, et <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.MiddleName" /> propriétés. Les propriétés <b>LastName</b>, <b>FirstName</b>et <b>MiddleName</b> sont elles-mêmes analysées à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FullName" /> propriété. La valeur de cette propriété est fournie que lorsque sa propriété associée (<b>FirstName</b>, <b>LastName</b>, <b>MiddleName</b>, <b>CompanyName</b>et <b>Suffix</b>) contient des caractères asiatiques (DBCS). Si le champ correspondant ne contient pas de caractères asiatiques, la propriété sera vide.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LastFirstSpaceOnlyCompany">
@@ -3325,10 +3232,8 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant les concaténé nom, le prénom et le deuxième prénom du contact avec des espaces entre eux. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Nom de société du contact est inclus après le deuxième prénom. Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.CompanyName" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.LastName" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FirstName" />, et <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.MiddleName" /> propriétés. Les propriétés <b>LastName</b>, <b>FirstName</b>et <b>MiddleName</b> sont elles-mêmes analysées à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FullName" /> propriété. La valeur de cette propriété est fournie que lorsque sa propriété associée (<b>FirstName</b>, <b>LastName</b>, <b>MiddleName</b>, <b>CompanyName</b>et <b>Suffix</b>) contient des caractères asiatiques (DBCS). Si le champ correspondant ne contient pas de caractères asiatiques, la propriété sera vide.</para>
-          <para />
-        </remarks>
+        <remarks><para>Nom de société du contact est inclus après le deuxième prénom. Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.CompanyName" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.LastName" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FirstName" />, et <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.MiddleName" /> propriétés. Les propriétés <b>LastName</b>, <b>FirstName</b>et <b>MiddleName</b> sont elles-mêmes analysées à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FullName" /> propriété. La valeur de cette propriété est fournie que lorsque sa propriété associée (<b>FirstName</b>, <b>LastName</b>, <b>MiddleName</b>, <b>CompanyName</b>et <b>Suffix</b>) contient des caractères asiatiques (DBCS). Si le champ correspondant ne contient pas de caractères asiatiques, la propriété sera vide.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LastModificationTime">
@@ -3356,10 +3261,8 @@
       <Docs>
         <summary>Retourne un <b>DateTime</b> spécifiant la date et l’heure de dernière modification de l’élément Outlook.  En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagLastModificationTime</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagLastModificationTime</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LastName">
@@ -3388,12 +3291,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le nom de famille du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le nom de famille du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FullName" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé en cas de modification d’entrées à <b>FullName</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FullName" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé en cas de modification d’entrées à <b>FullName</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LastNameAndFirstName">
@@ -3421,10 +3322,8 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) qui représente le texte concaténé nom et prénom du contact. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FirstName" /> et <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.LastName" /> propriétés du contact, elles-mêmes analysées à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FullName" /> propriété.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FirstName" /> et <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.LastName" /> propriétés du contact, elles-mêmes analysées à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FullName" /> propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Links">
@@ -3484,12 +3383,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant la complète non analysée l’adresse postale sélectionnée du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant la complète non analysée l’adresse postale sélectionnée du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété duplique la propriété indiquée par le <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.SelectedMailingAddress" /> propriété, qui est une des constantes <b>OlMailingAddress</b> suivantes : <b>olBusiness</b>, <b>olHome</b>, <b>olNone</b>ou <b>olOther</b>. Pendant qu’il peut être modifiée ou définie indépendamment, ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées à la propriété indiquée par <b>SelectedMailingAddress</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété duplique la propriété indiquée par le <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.SelectedMailingAddress" /> propriété, qui est une des constantes <b>OlMailingAddress</b> suivantes : <b>olBusiness</b>, <b>olHome</b>, <b>olNone</b>ou <b>olOther</b>. Pendant qu’il peut être modifiée ou définie indépendamment, ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées à la propriété indiquée par <b>SelectedMailingAddress</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailingAddressCity">
@@ -3518,12 +3415,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie de nom de ville de l’adresse postale sélectionnée du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie de nom de ville de l’adresse postale sélectionnée du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété duplique la propriété indiquée par le <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.SelectedMailingAddress" /> propriété, qui est une des constantes <b>OlMailingAddress</b> suivantes : <b>olBusiness</b>, <b>olHome</b>, <b>olNone</b>ou <b>olOther</b>. Pendant qu’il peut être modifiée ou définie indépendamment, ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées à la propriété indiquée par <b>SelectedMailingAddress</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété duplique la propriété indiquée par le <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.SelectedMailingAddress" /> propriété, qui est une des constantes <b>OlMailingAddress</b> suivantes : <b>olBusiness</b>, <b>olHome</b>, <b>olNone</b>ou <b>olOther</b>. Pendant qu’il peut être modifiée ou définie indépendamment, ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées à la propriété indiquée par <b>SelectedMailingAddress</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailingAddressCountry">
@@ -3552,12 +3447,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie du code de pays/région de l’adresse postale sélectionnée du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie du code de pays/région de l’adresse postale sélectionnée du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété duplique la propriété indiquée par le <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.SelectedMailingAddress" /> propriété, qui est une des constantes <b>OlMailingAddress</b> suivantes : <b>olBusiness</b>, <b>olHome</b>, <b>olNone</b>ou <b>olOther</b>. Pendant qu’il peut être modifiée ou définie indépendamment, ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées à la propriété indiquée par <b>SelectedMailingAddress</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété duplique la propriété indiquée par le <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.SelectedMailingAddress" /> propriété, qui est une des constantes <b>OlMailingAddress</b> suivantes : <b>olBusiness</b>, <b>olHome</b>, <b>olNone</b>ou <b>olOther</b>. Pendant qu’il peut être modifiée ou définie indépendamment, ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées à la propriété indiquée par <b>SelectedMailingAddress</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailingAddressPostalCode">
@@ -3586,12 +3479,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie du code postal (code postal) de l’adresse postale sélectionnée du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie du code postal (code postal) de l’adresse postale sélectionnée du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété duplique la propriété indiquée par le <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.SelectedMailingAddress" /> propriété, qui est une des constantes <b>OlMailingAddress</b> suivantes : <b>olBusiness</b>, <b>olHome</b>, <b>olNone</b>ou <b>olOther</b>. Pendant qu’il peut être modifiée ou définie indépendamment, ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées à la propriété indiquée par <b>SelectedMailingAddress</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété duplique la propriété indiquée par le <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.SelectedMailingAddress" /> propriété, qui est une des constantes <b>OlMailingAddress</b> suivantes : <b>olBusiness</b>, <b>olHome</b>, <b>olNone</b>ou <b>olOther</b>. Pendant qu’il peut être modifiée ou définie indépendamment, ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées à la propriété indiquée par <b>SelectedMailingAddress</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailingAddressPostOfficeBox">
@@ -3620,12 +3511,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie du numéro de boîte postale de l’adresse postale sélectionnée du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie du numéro de boîte postale de l’adresse postale sélectionnée du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété duplique la propriété indiquée par le <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.SelectedMailingAddress" /> propriété, qui est une des constantes <b>OlMailingAddress</b> suivantes : <b>olBusiness</b>, <b>olHome</b>, <b>olNone</b>ou <b>olOther</b>. Pendant qu’il peut être modifiée ou définie indépendamment, ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées à la propriété indiquée par <b>SelectedMailingAddress</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété duplique la propriété indiquée par le <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.SelectedMailingAddress" /> propriété, qui est une des constantes <b>OlMailingAddress</b> suivantes : <b>olBusiness</b>, <b>olHome</b>, <b>olNone</b>ou <b>olOther</b>. Pendant qu’il peut être modifiée ou définie indépendamment, ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées à la propriété indiquée par <b>SelectedMailingAddress</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailingAddressState">
@@ -3654,12 +3543,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie de code d’état de l’adresse postale sélectionnée du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie de code d’état de l’adresse postale sélectionnée du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété duplique la propriété indiquée par le <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.SelectedMailingAddress" /> propriété, qui est une des constantes <b>OlMailingAddress</b> suivantes : <b>olBusiness</b>, <b>olHome</b>, <b>olNone</b>ou <b>olOther</b>. Pendant qu’il peut être modifiée ou définie indépendamment, ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées à la propriété indiquée par <b>SelectedMailingAddress</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété duplique la propriété indiquée par le <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.SelectedMailingAddress" /> propriété, qui est une des constantes <b>OlMailingAddress</b> suivantes : <b>olBusiness</b>, <b>olHome</b>, <b>olNone</b>ou <b>olOther</b>. Pendant qu’il peut être modifiée ou définie indépendamment, ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées à la propriété indiquée par <b>SelectedMailingAddress</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailingAddressStreet">
@@ -3688,12 +3575,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant la partie de l’adresse postale de l’adresse postale sélectionnée du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant la partie de l’adresse postale de l’adresse postale sélectionnée du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété duplique la propriété indiquée par le <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.SelectedMailingAddress" /> propriété, qui est une des constantes <b>OlMailingAddress</b> suivantes : <b>olBusiness</b>, <b>olHome</b>, <b>olNone</b>ou <b>olOther</b>. Pendant qu’il peut être modifiée ou définie indépendamment, ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées à la propriété indiquée par <b>SelectedMailingAddress</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété duplique la propriété indiquée par le <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.SelectedMailingAddress" /> propriété, qui est une des constantes <b>OlMailingAddress</b> suivantes : <b>olBusiness</b>, <b>olHome</b>, <b>olNone</b>ou <b>olOther</b>. Pendant qu’il peut être modifiée ou définie indépendamment, ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées à la propriété indiquée par <b>SelectedMailingAddress</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ManagerName">
@@ -3722,7 +3607,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le nom du responsable du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le nom du responsable du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3783,10 +3668,8 @@
       <Docs>
         <param name="MarkInterval">Intervalle de tâche pour l'objet <b>ContactItem</b>.</param>
         <summary>Marque un <see cref="T:Microsoft.Office.Interop.Outlook.ContactItem" /> objet en tant que tâche et affecte un intervalle de tâche pour l’objet.</summary>
-        <remarks>
-          <para>L’appel de cette méthode définit la valeur de plusieurs autres propriétés, en fonction de la valeur fournie dans <paramref name="MarkInterval" />. Pour plus d’informations sur les propriétés définies en spécifiant <paramref name="MarkInterval" />, voir <see cref="T:Microsoft.Office.Interop.Outlook.OlMarkInterval" />.</para>
-          <para />
-        </remarks>
+        <remarks><para>L’appel de cette méthode définit la valeur de plusieurs autres propriétés, en fonction de la valeur fournie dans <paramref name="MarkInterval" />. Pour plus d’informations sur les propriétés définies en spécifiant <paramref name="MarkInterval" />, voir <see cref="T:Microsoft.Office.Interop.Outlook.OlMarkInterval" />.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MarkForDownload">
@@ -3815,12 +3698,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlRemoteStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlRemoteStatus" /> constante qui détermine l’état d’un élément une fois qu’il est reçu par un utilisateur distant. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlRemoteStatus" /> constante qui détermine l’état d’un élément une fois qu’il est reçu par un utilisateur distant. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété donne aux utilisateurs distants avec moins idéales transfert de données fonctionnalités messagerie une souplesse accrue.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété donne plus de souplesse de messagerie aux utilisateurs distants qui ne disposent pas de capacités de transfert idéales.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MessageClass">
@@ -3849,12 +3730,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant la classe de message de l’élément Outlook. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant la classe de message de l’élément Outlook. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagMessageClass</b>. La propriété <b>MessageClass</b> lie l’élément au formulaire sur lequel il est basé. Lorsqu’un élément est sélectionné, Outlook utilise la classe de message pour localiser le formulaire et exposer ses propriétés, telles que des commandes répondre.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagMessageClass</b>. La propriété <b>MessageClass</b> lie l’élément au formulaire sur lequel il est basé. Lorsqu’un élément est sélectionné, Outlook se sert de la classe de message pour localiser le formulaire et exposer ses propriétés, comme les commandes Répondre.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MiddleName">
@@ -3883,12 +3762,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le deuxième prénom du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le deuxième prénom du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FullName" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé en cas de modification d’entrées à <b>FullName</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FullName" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé en cas de modification d’entrées à <b>FullName</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Mileage">
@@ -3917,12 +3794,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant la mileage pour un élément. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant la mileage pour un élément. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Ceci est un champ de chaîne de la forme libre et peut servir à stocker les informations mileage associées à des fins de remboursement à l’élément (par exemple, 100 miles documentés pour un rendez-vous, contact ou tâche).</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est un champ de type chaîne forme libre qui permet de stocker les informations de kilométrage associées à l'élément (par exemple, 160 kilomètres indiqués pour un rendez-vous, un contact ou une tâche) en vue d'obtenir le remboursement des frais. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MobileTelephoneNumber">
@@ -3951,7 +3826,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le numéro de téléphone mobile du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le numéro de téléphone mobile du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4011,7 +3886,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) indiquant l’identificateur Microsoft NetMeeting de l’utilisateur, ou l’alias. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) indiquant l’identificateur Microsoft NetMeeting de l’utilisateur, ou l’alias. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4042,7 +3917,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) spécifiant le nom du serveur Microsoft NetMeeting utilisé pour une réunion en ligne. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) spécifiant le nom du serveur Microsoft NetMeeting utilisé pour une réunion en ligne. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4073,7 +3948,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le surnom du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le surnom du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4104,7 +3979,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui a la <b>valeur True</b> pour ne pas dater l’élément Outlook. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui a la <b>valeur True</b> pour ne pas dater l’élément Outlook. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4135,12 +4010,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) spécifiant l’emplacement de bureau spécifique (par exemple, bâtiment 1 salle 1 ou Suite 123) pour le contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) spécifiant l’emplacement de bureau spécifique (par exemple, bâtiment 1 salle 1 ou Suite 123) pour le contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagOfficeLocation</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagOfficeLocation</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OrganizationalIDNumber">
@@ -4169,7 +4042,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le numéro d’identification d’organisation pour le contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le numéro d’identification d’organisation pour le contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4200,12 +4073,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente l’autre adresse du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente l’autre adresse du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété contient la complète non analysée autre adresse du contact.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété contient l'autre adresse complète non analysée du contact.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OtherAddressCity">
@@ -4234,12 +4105,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie de la ville de l’autre adresse du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie de la ville de l’autre adresse du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.OtherAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées <b>OtherAddress</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.OtherAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées <b>OtherAddress</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OtherAddressCountry">
@@ -4268,12 +4137,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie de pays/région de l’autre adresse du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie de pays/région de l’autre adresse du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.OtherAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées <b>OtherAddress</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.OtherAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées <b>OtherAddress</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OtherAddressPostalCode">
@@ -4302,12 +4169,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie code postal de l’autre adresse du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie code postal de l’autre adresse du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.OtherAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées <b>OtherAddress</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.OtherAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées <b>OtherAddress</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OtherAddressPostOfficeBox">
@@ -4336,12 +4201,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie boîte postale de l’autre adresse du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie boîte postale de l’autre adresse du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.OtherAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées <b>OtherAddress</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.OtherAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées <b>OtherAddress</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OtherAddressState">
@@ -4370,12 +4233,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie de l’état de l’autre adresse du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie de l’état de l’autre adresse du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.OtherAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées <b>OtherAddress</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.OtherAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées <b>OtherAddress</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OtherAddressStreet">
@@ -4404,12 +4265,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie rue de l’autre adresse du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie rue de l’autre adresse du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.OtherAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées <b>OtherAddress</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est analysée à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.OtherAddress" /> propriété, mais peut être modifiée ou définie indépendamment analyse est incorrect. Notez que ces modifications ou à cette propriété sera remplacé par les modifications ou les entrées <b>OtherAddress</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OtherFaxNumber">
@@ -4438,7 +4297,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le numéro de télécopie du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le numéro de télécopie du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4469,7 +4328,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le numéro de téléphone du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le numéro de téléphone du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4556,7 +4415,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le numéro de récepteur de radiomessagerie du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le numéro de récepteur de radiomessagerie du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4615,7 +4474,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente l’URL de la page Web personnelle du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente l’URL de la page Web personnelle du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4646,7 +4505,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) spécifiant le numéro de téléphone principal du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) spécifiant le numéro de téléphone principal du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4702,7 +4561,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui indique la profession du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui indique la profession du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4761,7 +4620,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) indiquant le numéro de radiotéléphone du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) indiquant le numéro de radiotéléphone du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4792,7 +4651,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) spécifiant l’entrée de nom de référence pour le contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) spécifiant l’entrée de nom de référence pour le contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4823,12 +4682,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui a la <b>valeur True</b> si le rappel remplace le comportement de rappel par défaut pour l’élément. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui a la <b>valeur True</b> si le rappel remplace le comportement de rappel par défaut pour l’élément. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Vous devez définir la propriété <b>ReminderOverrideDefault</b> pour valider la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.ReminderPlaySound" /> et <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.ReminderSoundFile" /> propriétés.</para>
-          <para />
-        </remarks>
+        <remarks><para>Vous devez définir la propriété <b>ReminderOverrideDefault</b> pour valider la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.ReminderPlaySound" /> et <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.ReminderSoundFile" /> propriétés.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReminderPlaySound">
@@ -4857,12 +4714,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui a la <b>valeur True</b> si le rappel doit émettre un signal sonore lorsqu’il se produit pour cet élément. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui a la <b>valeur True</b> si le rappel doit émettre un signal sonore lorsqu’il se produit pour cet élément. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>ReminderPlaySound</b> doit être définie pour valider la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.ReminderSoundFile" /> propriété.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>ReminderPlaySound</b> doit être définie pour valider la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.ReminderSoundFile" /> propriété. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReminderSet">
@@ -4891,7 +4746,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui a la <b>valeur True</b> si un rappel a été défini pour cet élément. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui a la <b>valeur True</b> si un rappel a été défini pour cet élément. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4922,12 +4777,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) indiquant le chemin d’accès et le nom du fichier audio à lire quand le rappel se déclenche pour l’élément Outlook. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) indiquant le chemin d’accès et le nom du fichier audio à lire quand le rappel se déclenche pour l’élément Outlook. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété n’est valide que si la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.ReminderOverrideDefault" /> et <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.ReminderPlaySound" /> propriétés est définie à <b>True</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété n’est valide que si la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.ReminderOverrideDefault" /> et <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.ReminderPlaySound" /> propriétés est définie à <b>True</b>. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReminderTime">
@@ -4956,7 +4809,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>DateTime</b> indiquant la date et l’heure à laquelle le rappel doit avoir lieu pour l’élément spécifié. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>DateTime</b> indiquant la date et l’heure à laquelle le rappel doit avoir lieu pour l’élément spécifié. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5008,10 +4861,8 @@
       <Parameters />
       <Docs>
         <summary>Remplace la carte de visite électronique de l’élément contact par la carte de visite par défaut, supprimant ainsi la mise en page personnalisée et le logo de la carte de visite électronique, le cas échéant.</summary>
-        <remarks>
-          <para>Pour les contacts avec un type de carte de Microsoft Office InterConnect sont réinitialisés en le contact à l’aide d’une carte de type Outlook.</para>
-          <para />
-        </remarks>
+        <remarks><para>Les contacts qui possèdent une carte de type Microsoft Office InterConnect sont réinitialisés en tant qu'utilisateurs de carte de type Outlook.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RTFBody">
@@ -5040,12 +4891,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un tableau d’octets qui représente le corps de l’élément Microsoft Outlook au Format RTF. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un tableau d’octets qui représente le corps de l’élément Microsoft Outlook au Format RTF. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Vous pouvez utiliser la méthode System.Text.Encoding.ASCIIEncoding.GetString () en c# ou Visual Basic pour convertir un tableau d’octets en une chaîne.</para>
-          <para />
-        </remarks>
+        <remarks><para>Vous pouvez utiliser la méthode System.Text.Encoding.ASCIIEncoding.GetString () en c# ou Visual Basic pour convertir un tableau d’octets en une chaîne.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -5096,13 +4945,11 @@
         <Parameter Name="Type" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Path">Chemin d'accès sur lequel l'élément doit être enregistré.</param>
-        <param name="Type">Le type de fichier à enregistrer. Peut être une des constantes <b>OlSaveAsType</b> suivantes : <b>olHTML</b>, <b>olMSG</b>, <b>olRTF</b>, <b>olTemplate</b>, <b>olDoc</b>,<b>olTXT</b>, <b>olVCal</b>, <b>olVCard</b>, <b>olICal</b>, ou <b>olMSGUnicode</b>.</param>
-        <summary>Enregistre l’élément Microsoft Outlook sur le chemin d’accès spécifié et le format du type de fichier spécifié. Si le type de fichier n’est pas spécifié, le format MSG (.msg) est utilisé.</summary>
-        <remarks>
-          <para>Notez que même si <b>olDoc</b> est une constante <b>OlSaveAsType</b> valide, les messages au format HTML ne peut pas être enregistrés au format de Document (.doc), la constante <b>olDoc</b> fonctionne uniquement si Microsoft Word est défini comme éditeur de messagerie par défaut.</para>
-          <para />
-        </remarks>
+        <param name="Path">Le chemin d’accès dans lequel enregistrer l’élément.</param>
+        <param name="Type">Type de fichier à enregistrer. Peut être une des constantes <b>OlSaveAsType</b> suivantes : <b>olHTML</b>, <b>olMSG</b>, <b>olRTF</b>, <b>olTemplate</b>, <b>olDoc</b>,<b>olTXT</b>, <b>olVCal</b>, <b>olVCard</b>, <b>olICal</b>, ou <b>olMSGUnicode</b>.</param>
+        <summary>Enregistre l’élément Microsoft Outlook dans le chemin d’accès spécifié et dans le format du type de fichier spécifié. Si le type de fichier n’est pas spécifié, le format message (.msg) est utilisé.</summary>
+        <remarks><para>Notez que même si <b>olDoc</b> est une constante <b>OlSaveAsType</b> valide, les messages au format HTML ne peut pas être enregistrés au format de Document (.doc), la constante <b>olDoc</b> fonctionne uniquement si Microsoft Word est défini comme éditeur de messagerie par défaut.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveBusinessCardImage">
@@ -5130,10 +4977,8 @@
       <Docs>
         <param name="Path">Chemin complet et nom de fichier de l'image à enregistrer.</param>
         <summary>Enregistre une image de la carte de visite générée à partir du <see cref="T:Microsoft.Office.Interop.Outlook.ContactItem" /> objet.</summary>
-        <remarks>
-          <para>Cette méthode génère une image, sous forme de fichier Portable Network Graphics (.png), de la carte de visite générée à partir de l’objet <b>ContactItem</b> spécifié. Si le chemin d’accès et le nom spécifié dans le chemin d’accès ne peut pas être résolu, une erreur se produit.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette méthode génère une image en tant que fichier PNG (Portable Network Graphics, .png) de la carte de visite générée à partir de l'objet <b>ContactItem</b> spécifié. Si le chemin d'accès et le nom de fichier ne peuvent être résolus, une erreur se produit.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Saved">
@@ -5190,7 +5035,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlMailingAddress</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlMailingAddress" /> constante indiquant le type de l’adresse postale du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlMailingAddress" /> constante indiquant le type de l’adresse postale du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5221,12 +5066,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlSensitivity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une constante de le <see cref="T:Microsoft.Office.Interop.Outlook.OlSensitivity" /> énumération indiquant la sensibilité de l’élément Outlook. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une constante de le <see cref="T:Microsoft.Office.Interop.Outlook.OlSensitivity" /> énumération indiquant la sensibilité de l’élément Outlook. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagSensitivity</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagSensitivity</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -5254,16 +5097,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowBusinessCardEditor">
@@ -5288,10 +5129,8 @@
       <Parameters />
       <Docs>
         <summary>Affiche la boîte de dialogue de l’éditeur de carte de visite électronique (EBC) pour le <see cref="T:Microsoft.Office.Interop.Outlook.ContactItem" /> objet.</summary>
-        <remarks>
-          <para>Cette méthode récupère les données de l’objet <b>ContactItem</b> spécifié, puis affiche ces données dans la boîte de dialogue de l’éditeur de carte de visite électronique. Une erreur se produit si les données ne peuvent pas être récupérées.</para>
-          <para />
-        </remarks>
+        <remarks><para>L'appel de cette méthode extrait les données de l'objet <b>ContactItem</b> spécifié, puis affiche ces données dans la boîte de dialogue d'édition de carte de visite électronique. Une erreur se produit si les données ne peuvent pas être extraites.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowCategoriesDialog">
@@ -5454,7 +5293,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) indiquant l’entrée du nom du conjoint du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) indiquant l’entrée du nom du conjoint du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5485,12 +5324,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui indique l’objet de l’élément Outlook. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui indique l’objet de l’élément Outlook. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagSubject</b>. La propriété <b>Subject</b> est la propriété par défaut pour les éléments Outlook.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagSubject</b>. La propriété <b>Subject</b> est la propriété par défaut des éléments Outlook.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Suffix">
@@ -5519,12 +5356,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui indique le suffixe de nom (tel que Jr., III ou Dr.) du contact spécifié. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui indique le suffixe de nom (tel que Jr., III ou Dr.) du contact spécifié. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.LastName" /> , <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FirstName" /> , <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.MiddleName" /> , et les propriétés des <b>suffixes</b> sont analysées à partir du <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FullName" /> propriété.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.LastName" /> , <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FirstName" /> , <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.MiddleName" /> , et les propriétés des <b>suffixes</b> sont analysées à partir du <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.FullName" /> propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TaskCompletedDate">
@@ -5553,12 +5388,10 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>DateTime</b> qui représente la date de fin de la tâche pour cet <see cref="T:Microsoft.Office.Interop.Outlook.ContactItem" />. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>DateTime</b> qui représente la date de fin de la tâche pour cet <see cref="T:Microsoft.Office.Interop.Outlook.ContactItem" />. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) si le <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.IsMarkedAsTask" /> propriété est définie sur <b>False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) si le <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.IsMarkedAsTask" /> propriété est définie sur <b>False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TaskDueDate">
@@ -5587,12 +5420,10 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>DateTime</b> qui représente la date d’échéance de la tâche pour ce <see cref="T:Microsoft.Office.Interop.Outlook.ContactItem" />. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>DateTime</b> qui représente la date d’échéance de la tâche pour ce <see cref="T:Microsoft.Office.Interop.Outlook.ContactItem" />. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) si le <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.IsMarkedAsTask" /> propriété est définie sur <b>False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) si le <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.IsMarkedAsTask" /> propriété est définie sur <b>False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TaskStartDate">
@@ -5621,12 +5452,10 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>DateTime</b> qui représente la date de début de la tâche pour ce <see cref="T:Microsoft.Office.Interop.Outlook.ContactItem" /> objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>DateTime</b> qui représente la date de début de la tâche pour ce <see cref="T:Microsoft.Office.Interop.Outlook.ContactItem" /> objet. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) si le <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.IsMarkedAsTask" /> propriété est définie sur <b>False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) si le <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.IsMarkedAsTask" /> propriété est définie sur <b>False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TaskSubject">
@@ -5655,12 +5484,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente l’objet de la tâche pour le <see cref="T:Microsoft.Office.Interop.Outlook.ContactItem" /> objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente l’objet de la tâche pour le <see cref="T:Microsoft.Office.Interop.Outlook.ContactItem" /> objet. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie la valeur de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.Subject" /> propriété si la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.IsMarkedAsTask" /> propriété est définie sur <b>False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la valeur de la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.Subject" /> propriété si la <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.IsMarkedAsTask" /> propriété est définie sur <b>False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TelexNumber">
@@ -5689,7 +5516,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) indiquant le numéro de télex du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) indiquant le numéro de télex du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5720,7 +5547,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui indique le titre du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui indique le titre du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5751,13 +5578,11 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>DateTime</b> qui représente la valeur ordinale de la tâche pour le <see cref="T:Microsoft.Office.Interop.Outlook.ContactItem" />. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>DateTime</b> qui représente la valeur ordinale de la tâche pour le <see cref="T:Microsoft.Office.Interop.Outlook.ContactItem" />. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) si le <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.IsMarkedAsTask" /> propriété est définie sur <b>False</b>.</para>
+        <remarks><para>Cette propriété renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) si le <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.IsMarkedAsTask" /> propriété est définie sur <b>False</b>.</para>
           <para>Cette propriété est utilisée pour indiquer la façon dont la tâche doit être classée dans les groupes parents, comme le groupe aujourd'hui ou le groupe demain de la barre des tâches. La valeur utilisée dans cette propriété n’a pas de n’importe quelle relation aux valeurs de le <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.TaskStartDate" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.TaskDueDate" />, ou <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.TaskCompletedDate" /> propriétés.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TTYTDDTelephoneNumber">
@@ -5786,7 +5611,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) spécifiant le numéro de téléphone TTY/TDD pour le contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) spécifiant le numéro de téléphone TTY/TDD pour le contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5817,7 +5642,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui est <b>la valeur True</b> si l’élément Outlook n'a pas été ouvert (lu). Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui est <b>la valeur True</b> si l’élément Outlook n'a pas été ouvert (lu). Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5848,12 +5673,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) spécifiant le premier champ du formulaire Contacts destinée à l’utilisation de divers pour le contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) spécifiant le premier champ du formulaire Contacts destinée à l’utilisation de divers pour le contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Les propriétés <b>ContactItem.User1</b>, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.User2" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.User3" />, et <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.User4" /> correspondent respectivement aux champs champ utilisateur 1, champ utilisateur 2, champ utilisateur 3 et champ utilisateur 4 du formulaire Contacts. Ces propriétés sont les propriétés de <b>chaîne</b> (<b>string</b> en c#) intégrées explicites ; les utilisateurs peuvent utiliser ces champs de diverses manières pour le contact.</para>
-          <para />
-        </remarks>
+        <remarks><para>Les propriétés <b>ContactItem.User1</b>, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.User2" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.User3" />, et <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.User4" /> correspondent respectivement aux champs champ utilisateur 1, champ utilisateur 2, champ utilisateur 3 et champ utilisateur 4 du formulaire Contacts. Ces propriétés sont les propriétés de <b>chaîne</b> (<b>string</b> en c#) intégrées explicites ; les utilisateurs peuvent utiliser ces champs de diverses manières pour le contact.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="User2">
@@ -5882,12 +5705,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) spécifiant le deuxième champ du formulaire Contacts destinée à l’utilisation de divers pour le contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) spécifiant le deuxième champ du formulaire Contacts destinée à l’utilisation de divers pour le contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Les propriétés <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.User1" />, <b>ContactItem.User2</b>, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.User3" />, et <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.User4" /> correspondent respectivement aux champs champ utilisateur 1, champ utilisateur 2, champ utilisateur 3 et champ utilisateur 4 du formulaire Contacts. Ces propriétés sont les propriétés de <b>chaîne</b> (<b>string</b> en c#) intégrées explicites ; les utilisateurs peuvent utiliser ces champs de diverses manières pour le contact.</para>
-          <para />
-        </remarks>
+        <remarks><para>Les propriétés <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.User1" />, <b>ContactItem.User2</b>, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.User3" />, et <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.User4" /> correspondent respectivement aux champs champ utilisateur 1, champ utilisateur 2, champ utilisateur 3 et champ utilisateur 4 du formulaire Contacts. Ces propriétés sont les propriétés de <b>chaîne</b> (<b>string</b> en c#) intégrées explicites ; les utilisateurs peuvent utiliser ces champs de diverses manières pour le contact.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="User3">
@@ -5916,12 +5737,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) spécifiant le troisième champ du formulaire Contacts destinée à l’utilisation de divers pour le contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) spécifiant le troisième champ du formulaire Contacts destinée à l’utilisation de divers pour le contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Les propriétés <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.User1" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.User2" />, <b>ContactItem.User3</b>et <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.User4" /> correspondent respectivement aux champs champ utilisateur 1, champ utilisateur 2, champ utilisateur 3 et champ utilisateur 4 du formulaire Contacts. Ces propriétés sont les propriétés de <b>chaîne</b> (<b>string</b> en c#) intégrées explicites ; les utilisateurs peuvent utiliser ces champs de diverses manières pour le contact.</para>
-          <para />
-        </remarks>
+        <remarks><para>Les propriétés <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.User1" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.User2" />, <b>ContactItem.User3</b>et <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.User4" /> correspondent respectivement aux champs champ utilisateur 1, champ utilisateur 2, champ utilisateur 3 et champ utilisateur 4 du formulaire Contacts. Ces propriétés sont les propriétés de <b>chaîne</b> (<b>string</b> en c#) intégrées explicites ; les utilisateurs peuvent utiliser ces champs de diverses manières pour le contact.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="User4">
@@ -5950,12 +5769,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) spécifiant le quatrième champ du formulaire Contacts destinée à l’utilisation de divers pour le contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) spécifiant le quatrième champ du formulaire Contacts destinée à l’utilisation de divers pour le contact. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Les propriétés <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.User1" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.User2" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.User3" />et <b>ContactItem.User4</b> correspondent respectivement aux champs champ utilisateur 1, champ utilisateur 2, champ utilisateur 3 et champ utilisateur 4 du formulaire Contacts. Ces propriétés sont les propriétés de <b>chaîne</b> (<b>string</b> en c#) intégrées explicites ; les utilisateurs peuvent utiliser ces champs de diverses manières pour le contact.</para>
-          <para />
-        </remarks>
+        <remarks><para>Les propriétés <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.User1" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.User2" />, <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.User3" />et <b>ContactItem.User4</b> correspondent respectivement aux champs champ utilisateur 1, champ utilisateur 2, champ utilisateur 3 et champ utilisateur 4 du formulaire Contacts. Ces propriétés sont les propriétés de <b>chaîne</b> (<b>string</b> en c#) intégrées explicites ; les utilisateurs peuvent utiliser ces champs de diverses manières pour le contact.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UserCertificate">
@@ -6049,7 +5866,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) indiquant l’URL de la page Web pour le contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) indiquant l’URL de la page Web pour le contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6080,7 +5897,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui indique l’équivalent phonétique japonais (yomigana) du nom de la société du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui indique l’équivalent phonétique japonais (yomigana) du nom de la société du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6111,7 +5928,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui indique l’équivalent phonétique japonais (yomigana) du prénom du contact. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui indique l’équivalent phonétique japonais (yomigana) du prénom du contact. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

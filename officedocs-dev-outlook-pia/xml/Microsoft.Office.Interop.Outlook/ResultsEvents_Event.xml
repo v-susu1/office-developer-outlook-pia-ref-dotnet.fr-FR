@@ -1,13 +1,5 @@
 <Type Name="ResultsEvents_Event" FullName="Microsoft.Office.Interop.Outlook.ResultsEvents_Event">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3a87dc9dae2379388ad923144e6c646f5a199984" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634955" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ResultsEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4a6435255dc3c98ff97995c77a01ed2d110fb667" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27896848" /></Metadata><TypeSignature Language="C#" Value="public interface ResultsEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ResultsEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.ResultsEvents_Event" />
   <TypeSignature Language="VB.NET" Value="Public Interface ResultsEvents_Event" />
@@ -49,10 +41,8 @@
       </ReturnValue>
       <Docs>
         <summary>Survient lorsqu’un ou plusieurs éléments sont ajoutés à la collection spécifiée.</summary>
-        <remarks>
-          <para>Cet événement ne s’exécute pas un grand nombre d’éléments est ajouté à la fois dans le dossier.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cet événement ne s’exécute pas un grand nombre d’éléments est ajouté à la fois dans le dossier. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ItemChange">
@@ -90,10 +80,8 @@
       </ReturnValue>
       <Docs>
         <summary>Survient lorsqu’un élément est supprimé de la collection spécifiée.</summary>
-        <remarks>
-          <para>Cet événement ne s’exécute pas lorsque le dernier élément dans un fichier de dossiers personnels (.pst) est supprimé, ou si au moins 16 sont supprimés à la fois à partir d’un fichier .pst, boîte aux lettres Microsoft Exchange ou un dossier public Exchange.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cet événement n’est pas exécuté lorsque le dernier élément d’un fichier de Dossiers personnels (.pst) est supprimé, ou si un minimum de 16 éléments sont supprimés en même temps dans un fichier .pst, une boîte aux lettres Microsoft Exchange ou un dossier public Exchange.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="TextRuleCondition" FullName="Microsoft.Office.Interop.Outlook.TextRuleCondition">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="eea24f05937aa92de1ab3303d709f26cd651c89d" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634312" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TextRuleCondition : Microsoft.Office.Interop.Outlook._TextRuleCondition" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="697924f1cd12fc5b54f56facdf5159fdbeedec94" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27899239" /></Metadata><TypeSignature Language="C#" Value="public interface TextRuleCondition : Microsoft.Office.Interop.Outlook._TextRuleCondition" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextRuleCondition implements class Microsoft.Office.Interop.Outlook._TextRuleCondition" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.TextRuleCondition" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextRuleCondition&#xA;Implements _TextRuleCondition" />
@@ -31,13 +23,11 @@
   </Attributes>
   <Docs>
     <summary>Représente une règle de condition que la partie du message, qui peut être le corps, en-tête ou objet, comme indiqué par <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.ConditionType" />, contient les mots spécifiés dans <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Text" />.</summary>
-    <remarks>
-      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._TextRuleCondition" />. </para>
+    <remarks><para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._TextRuleCondition" />. </para>
       <para>
-        <b>TextRuleCondition</b> est dérivé de le <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet. Chaque règle est associée à un <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> objet qui possède les propriétés suivantes : <see cref="P:Microsoft.Office.Interop.Outlook._RuleConditions.Body" />, <see cref="P:Microsoft.Office.Interop.Outlook._RuleConditions.BodyOrSubject" />, <see cref="P:Microsoft.Office.Interop.Outlook._RuleConditions.MessageHeader" />, et <see cref="P:Microsoft.Office.Interop.Outlook._RuleConditions.Subject" />. Chacune de ces propriétés renvoie toujours un objet <b>TextRuleCondition</b> . <b>TextRuleCondition.ConditionType</b> fait la distinction entre ces conditions de règle. Si la règle possède une de ces conditions de règle est activées, puis <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Enabled" /> doit être <b>vraie</b>.</para>
+        <b>TextRuleCondition</b> est dérivé de le <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet. Chaque règle est associée à un <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> objet qui possède les propriétés suivantes : <see cref="P:Microsoft.Office.Interop.Outlook._RuleConditions.Body" />, <see cref="P:Microsoft.Office.Interop.Outlook._RuleConditions.BodyOrSubject" />, <see cref="P:Microsoft.Office.Interop.Outlook._RuleConditions.MessageHeader" />, et <see cref="P:Microsoft.Office.Interop.Outlook._RuleConditions.Subject" />. Chacune de ces propriétés renvoie toujours un objet <b>TextRuleCondition</b> . <b>TextRuleCondition.ConditionType</b> fait la distinction entre ces conditions de règle. Si la règle possède une de ces conditions de règle est activées, puis <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Enabled" /> <b>valeur True</b>.</para>
       <para>Pour plus d’informations sur la spécification de conditions de règle, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87803">Spécification de Conditions de règle</a></para>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

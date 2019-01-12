@@ -1,13 +1,5 @@
 <Type Name="OlkControl" FullName="Microsoft.Office.Interop.Outlook.OlkControl">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5775f16b4f47ab029314c22c5ef7bfb307c13e1f" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633531" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OlkControl" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5939b00a41bad44f31458db50a6e9149c2069729" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901885" /></Metadata><TypeSignature Language="C#" Value="public interface OlkControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OlkControl" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.OlkControl" />
   <TypeSignature Language="VB.NET" Value="Public Interface OlkControl" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Définit un jeu de propriétés de contrôle communes à certains contrôles Microsoft Outlook.</summary>
-    <remarks>
-      <para>Les membres offerts par <b>OlkControl</b> peuvent appliquer à la plupart des contrôles Outlook.  <b>OlkControl</b> fournit une classe à laquelle vous pouvez facilement diffuser un contrôle Outlook sans avoir recours à la réflexion. Bien que <b>OlkControl</b> ne s’applique pas aux contrôles Microsoft Forms 2.0, les propriétés similaires sont disponibles pour les contrôles Forms 2.0. Pour plus d’informations, voir <a href="http://go.microsoft.com/fwlink/?LinkID=87937">OL98 : supplémentaires contrôle propriétés disponibles pour la programmation</a></para>
-      <para />
-    </remarks>
+    <remarks><para>Les membres offerts par <b>OlkControl</b> peuvent appliquer à la plupart des contrôles Outlook.  <b>OlkControl</b> fournit une classe à laquelle vous pouvez facilement diffuser un contrôle Outlook sans avoir recours à la réflexion. Bien que <b>OlkControl</b> ne s’applique pas aux contrôles Microsoft Forms 2.0, les propriétés similaires sont disponibles pour les contrôles Forms 2.0. Pour plus d’informations, voir <a href="http://go.microsoft.com/fwlink/?LinkID=87937">OL98 : supplémentaires contrôle propriétés disponibles pour la programmation</a></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="ControlProperty">
@@ -90,12 +80,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui permet les ajustements automatiques de la disposition du contrôle en ce qui concerne le reste du formulaire. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui permet les ajustements automatiques de la disposition du contrôle en ce qui concerne le reste du formulaire. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Ajustements automatiques de la disposition d’un contrôle incluent verticalement ou horizontalement aligner le contrôle en ce qui concerne les autres contrôles et le dimensionnement de la hauteur ou la largeur du contrôle en ce qui concerne la longueur ou la largeur du formulaire.</para>
-          <para />
-        </remarks>
+        <remarks><para>Les ajustements automatiques de la disposition d'un contrôle incluent l'alignement vertical ou horizontal du contrôle par rapport aux autres contrôles, ainsi que le dimensionnement de la hauteur ou de la largeur du contrôle par rapport à la longueur ou à la largeur du formulaire.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -124,11 +112,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui spécifie comment une valeur doit être affiché dans le contrôle. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui spécifie comment une valeur doit être affiché dans le contrôle. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Format</b> peut être une constante d’une énumération qui décrit comment afficher une valeur. Par exemple, vous pouvez spécifier le <b>Format</b> en tant que constante <b>olFormatCurrencyDecimal</b> est défini dans le <see cref="T:Microsoft.Office.Interop.Outlook.OlFormatCurrency" /> énumération pour afficher une valeur monétaire dans une <see cref="T:Microsoft.Office.Interop.Outlook.OlkTextBox" /> contrôle.</para> Propriété 
-          <para>le <b>Format</b> est spécifique à la propriété dans le modèle objet Outlook auquel le contrôle est lié à. Indiqué par <see cref="P:Microsoft.Office.Interop.Outlook.OlkControl.ItemProperty" />. Si le contrôle n’est pas lié à n’importe quelle propriété, puis accès au <b>Format</b> renvoie une erreur.</para><para /></remarks>
+        <remarks><para>La propriété <b>Format</b> peut être une constante d’une énumération qui décrit comment afficher une valeur. Par exemple, vous pouvez spécifier le <b>Format</b> en tant que constante <b>olFormatCurrencyDecimal</b> est défini dans le <see cref="T:Microsoft.Office.Interop.Outlook.OlFormatCurrency" /> énumération pour afficher une valeur monétaire dans une <see cref="T:Microsoft.Office.Interop.Outlook.OlkTextBox" /> contrôle.</para>
+          <para>La propriété <b>Format</b> est spécifique à la propriété dans le modèle objet Outlook auquel le contrôle est lié à. Indiqué par <see cref="P:Microsoft.Office.Interop.Outlook.OlkControl.ItemProperty" />. Si le contrôle n’est pas lié à n’importe quelle propriété, puis accès au <b>Format</b> renvoie une erreur.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalLayout">
@@ -157,7 +145,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlHorizontalLayout</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlHorizontalLayout" /> constante qui spécifie l’alignement de la direction horizontale de ce contrôle avec d’autres contrôles sélectionnés dans le formulaire, ou si le contrôle est ajusté dans le sens horizontal automatiquement lors de la modification de la largeur du formulaire. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlHorizontalLayout" /> constante qui spécifie l’alignement de la direction horizontale de ce contrôle avec d’autres contrôles sélectionnés dans le formulaire, ou si le contrôle est ajusté dans le sens horizontal automatiquement lors de la modification de la largeur du formulaire. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -188,7 +176,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui spécifie le nom de la propriété dans le modèle objet Outlook auquel le contrôle est lié à. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui spécifie le nom de la propriété dans le modèle objet Outlook auquel le contrôle est lié à. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -219,13 +207,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui spécifie la hauteur minimale, que le contrôle peut être automatiquement réduit. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui spécifie la hauteur minimale, que le contrôle peut être automatiquement réduit. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="P:Microsoft.Office.Interop.Outlook.OlkControl.EnableAutoLayout" />doit être définie sur <b>True</b> dans l’ordre pour <b>MinimumLength</b> devienne effective.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MinimumWidth">
@@ -254,13 +240,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui spécifie la largeur minimale, que le contrôle peut être automatiquement réduit. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui spécifie la largeur minimale, que le contrôle peut être automatiquement réduit. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="P:Microsoft.Office.Interop.Outlook.OlkControl.EnableAutoLayout" />doit être définie sur <b>True</b> afin que <b>MinimumWidth</b> devienne effective.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PossibleValues">
@@ -289,12 +273,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente une liste de valeurs possibles pour la liste déroulante du contrôle, séparés par des points-virgules. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente une liste de valeurs possibles pour la liste déroulante du contrôle, séparés par des points-virgules. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour les contrôles qui ne prennent pas en charge une liste déroulante, la valeur de cette propriété est <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#).</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour les contrôles qui ne prennent pas en charge une liste déroulante, la valeur de cette propriété est <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalLayout">

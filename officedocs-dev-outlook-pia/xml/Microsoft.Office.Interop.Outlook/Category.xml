@@ -1,13 +1,5 @@
 <Type Name="Category" FullName="Microsoft.Office.Interop.Outlook.Category">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="435e5765b7ec5d5ff26be55adc999086a3415e41" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20635139" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Category : Microsoft.Office.Interop.Outlook._Category" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a7e2734d6e53bd5a1e3e99a9c8084ca598f7964f" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27897443" /></Metadata><TypeSignature Language="C#" Value="public interface Category : Microsoft.Office.Interop.Outlook._Category" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Category implements class Microsoft.Office.Interop.Outlook._Category" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.Category" />
   <TypeSignature Language="VB.NET" Value="Public Interface Category&#xA;Implements _Category" />
@@ -31,12 +23,11 @@
   </Attributes>
   <Docs>
     <summary>Représente une catégorie définie par l’utilisateur qui peuvent être regroupés, éléments Microsoft Outlook.</summary>
-    <remarks>
-      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._Category" />.</para>
+    <remarks><para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._Category" />.</para>
       <para>Outlook fournit un système de catégorisation avec lequel des éléments Outlook peuvent être facilement identifiés et regroupés dans des catégories définies par l’utilisateur. L’objet <b>Category</b> représente une catégorie définie par l’utilisateur.</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._Categories.Add(System.String,System.Object,System.Object)" /> méthode de la <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.Categories" /> propriété pour la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour créer un nouvel objet <b>Category</b> , en ajoutant la catégorie à la liste principale des catégories pour cet espace de noms.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._Category.Name" /> propriété pour spécifier le nom de la catégorie, le <see cref="P:Microsoft.Office.Interop.Outlook._Category.Color" /> propriété pour spécifier la couleur affichée pour cette catégorie et le <see cref="P:Microsoft.Office.Interop.Outlook._Category.ShortcutKey" /> propriété pour spécifier la touche de raccourci utilisée pour affecter cette catégorie à un élément Outlook dans Outlook interface utilisateur. Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._Category.CategoryID" /> propriété pour récupérer l’identificateur unique d’une catégorie.</para>
-      <para>Catégories peuvent être affectées à des éléments Outlook en spécifiant les noms des objets <b>Category</b> appropriés dans une chaîne délimitée par des virgules dans la propriété <b>Categories</b> des objets suivants :</para>
+      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._Categories.Add(System.String,System.Object,System.Object)" /> méthode de la <see cref="P:Microsoft.Office.Interop.Outlook._NameSpace.Categories" /> propriété pour la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour créer un nouvel objet <b>Category</b> , en ajoutant la catégorie à la liste principale des catégories pour cet espace de noms. </para>
+      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._Category.Name" /> propriété pour spécifier le nom de la catégorie, le <see cref="P:Microsoft.Office.Interop.Outlook._Category.Color" /> propriété pour spécifier la couleur affichée pour cette catégorie et le <see cref="P:Microsoft.Office.Interop.Outlook._Category.ShortcutKey" /> propriété pour spécifier la touche de raccourci utilisée pour affecter cette catégorie à un élément Outlook dans l’interface utilisateur Outlook . Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._Category.CategoryID" /> propriété pour récupérer l’identificateur unique d’une catégorie.</para>
+      <para>Des catégories peuvent être attribuées à des éléments Outlook en spécifiant les noms des objets <b>Category</b> appropriés, dans une chaîne délimitée par des virgules, dans la propriété  <b>Catégories</b> des objets suivants :</para>
       <list type="table">
         <item>
           <description>
@@ -109,8 +100,7 @@
           <description />
         </item>
       </list>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

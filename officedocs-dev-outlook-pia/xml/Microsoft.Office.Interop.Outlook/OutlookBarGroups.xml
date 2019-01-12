@@ -1,13 +1,5 @@
 <Type Name="OutlookBarGroups" FullName="Microsoft.Office.Interop.Outlook.OutlookBarGroups">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4ec37831bca16dd22d2ec7ced0143c9bdff6dee7" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633954" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OutlookBarGroups : Microsoft.Office.Interop.Outlook._OutlookBarGroups, Microsoft.Office.Interop.Outlook.OutlookBarGroupsEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c9ebbde3c6b3af38dc98d4d94c47e406247ce1ba" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27898857" /></Metadata><TypeSignature Language="C#" Value="public interface OutlookBarGroups : Microsoft.Office.Interop.Outlook._OutlookBarGroups, Microsoft.Office.Interop.Outlook.OutlookBarGroupsEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OutlookBarGroups implements class Microsoft.Office.Interop.Outlook._OutlookBarGroups, class Microsoft.Office.Interop.Outlook.OutlookBarGroupsEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.OutlookBarGroups" />
   <TypeSignature Language="VB.NET" Value="Public Interface OutlookBarGroups&#xA;Implements _OutlookBarGroups, OutlookBarGroupsEvents_Event" />
@@ -34,12 +26,10 @@
   </Attributes>
   <Docs>
     <summary>Contient un ensemble de <see cref="T:Microsoft.Office.Interop.Outlook.OutlookBarGroup" /> objets représentant tous les groupes dans le volet Raccourcis. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.OutlookBarGroupsEvents_Event" />.</summary>
-    <remarks>
-      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._OutlookBarGroups" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.OutlookBarGroupsClass" />.</para>
+    <remarks><para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._OutlookBarGroups" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.OutlookBarGroupsClass" />.</para>
       <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook.OutlookBarStorage.Groups" /> propriété permet de renvoyer l’objet <b>OutlookBarGroups</b> à partir de la <see cref="T:Microsoft.Office.Interop.Outlook.OutlookBarStorage" /> objet.</para>
-      <para>Utilisez des <b>groupes</b>(<paramref name="index" />), où <paramref name="index" /> est le nom d’un groupe disponible, pour renvoyer un seul objet <b>OutlookBarGroup</b> .</para>
-      <para />
-    </remarks>
+      <para>Utilisez des <b>groupes</b>(<paramref name="index" />), où <paramref name="index" /> est le nom d’un groupe disponible, pour renvoyer un objet <b>OutlookBarGroup</b> unique.</para>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

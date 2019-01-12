@@ -1,13 +1,5 @@
 <Type Name="_ViewField" FullName="Microsoft.Office.Interop.Outlook._ViewField">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4d44bb6a8b837a9e7915411ef3b86af5170112ba" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634354" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _ViewField" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4d44bb6a8b837a9e7915411ef3b86af5170112ba" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901017" /></Metadata><TypeSignature Language="C#" Value="public interface _ViewField" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _ViewField" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._ViewField" />
   <TypeSignature Language="VB.NET" Value="Public Interface _ViewField" />
@@ -167,16 +159,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ViewXMLSchemaName">
@@ -204,10 +194,8 @@
       <Docs>
         <summary>Renvoie une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le nom du schéma XML pour la propriété référencée par le <see cref="T:Microsoft.Office.Interop.Outlook.ViewField" /> objet. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur de cette propriété contient le nom de la propriété telle qu’elle figure dans la définition XML de l’affichage de l’objet <b>ViewField</b> . Cette valeur ne peut pas correspondre au nom utilisé pour faire référence à la propriété lorsque l’objet <b>ViewField</b> a été défini.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur de cette propriété contient le nom de la propriété telle qu'elle figure dans la définition XML de la vue qui contient l'objet <b>ViewField</b>. Cette valeur peut ne pas correspondre au nom utilisé pour désigner la propriété lorsque l'objet <b>ViewField</b> a été défini.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

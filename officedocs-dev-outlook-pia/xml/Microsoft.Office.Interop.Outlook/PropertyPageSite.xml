@@ -1,13 +1,5 @@
 <Type Name="PropertyPageSite" FullName="Microsoft.Office.Interop.Outlook.PropertyPageSite">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3da8a15e1213bc289f8144fbd4527357769b055b" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633807" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PropertyPageSite" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1605e730a32e4dac4023d073b77fcdcf33b9d6b0" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27898005" /></Metadata><TypeSignature Language="C#" Value="public interface PropertyPageSite" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PropertyPageSite" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.PropertyPageSite" />
   <TypeSignature Language="VB.NET" Value="Public Interface PropertyPageSite" />
@@ -27,16 +19,14 @@
   </Attributes>
   <Docs>
     <summary>Représente le conteneur d'une page de propriétés personnalisée.</summary>
-    <remarks>
-      <para>Utilisez la propriété <b>Parent</b> du contrôle ActiveX qui implémente le <see cref="T:Microsoft.Office.Interop.Outlook.PropertyPage" /> objet associé à l’objet <b>PropertyPageSite</b> pour renvoyer l’objet <b>PropertyPageSite</b> . La section des déclarations du module implémentant l’objet <b>PropertyPage</b> doit contenir une déclaration semblable à ce qui suit.</para>
+    <remarks><para>Utilisez la propriété <b>Parent</b> du contrôle ActiveX qui implémente le <see cref="T:Microsoft.Office.Interop.Outlook.PropertyPage" /> objet associé à l’objet <b>PropertyPageSite</b> pour renvoyer l’objet <b>PropertyPageSite</b> . La section des déclarations du module implémentant l’objet <b>PropertyPage</b> doit contenir une déclaration semblable au suivant.</para>
       <code>Private myPropertyPageSite As Outlook.PropertyPageSite</code>
       <code>private Outlook.PropertyPageSite myPropertyPageSite;</code>
       <para>L’objet est ensuite renvoyé à partir de la propriété <b>Parent</b> du contrôle ActiveX.</para>
       <code>myPropertyPageSite = Parent</code>
       <code>myPropertyPageSite = Parent;</code>
       <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook.PropertyPageSite.OnStatusChange" /> méthode pour informer Microsoft Outlook de la page de propriétés a été modifiée.</para>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -173,16 +163,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

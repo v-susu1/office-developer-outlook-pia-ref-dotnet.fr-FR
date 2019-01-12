@@ -1,13 +1,5 @@
 <Type Name="_Reminder" FullName="Microsoft.Office.Interop.Outlook._Reminder">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c32220cc6cd2297c2f337e6d7f5f70853a5de7e6" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633660" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _Reminder" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c32220cc6cd2297c2f337e6d7f5f70853a5de7e6" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901759" /></Metadata><TypeSignature Language="C#" Value="public interface _Reminder" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Reminder" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._Reminder" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Reminder" />
@@ -136,10 +128,8 @@
       <Parameters />
       <Docs>
         <summary>Rejette le rappel en cours.</summary>
-        <remarks>
-          <para>La méthode <b>Dismiss</b> échoue si aucun rappel n’est visible.</para>
-          <para />
-        </remarks>
+        <remarks><para>La méthode <b>Dismiss</b> échoue si aucun rappel n'est visible.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsVisible">
@@ -167,10 +157,8 @@
       <Docs>
         <summary>Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) qui détermine si le rappel est actuellement visible.  En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Outlook détermine la valeur de retour de cette propriété en fonction de l’état du rappel actif. Tous les rappels actifs sont visibles. Si <b>IsVisible</b> a la valeur True, le rappel est visible.</para>
-          <para />
-        </remarks>
+        <remarks><para> Outlook détermine la valeur de retour de cette propriété en fonction de l’état du rappel actif. Tous les rappels actifs sont visibles. Si <b>IsVisible</b> a la valeur True, le rappel est visible.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -226,10 +214,8 @@
       <Docs>
         <summary>Renvoie une valeur de type <b>Date</b> indiquant la prochaine heure à laquelle le rappel spécifié se produira. Lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur de la propriété <b>NextReminderDate</b> change à chaque exécution de l’objet <see cref="M:Microsoft.Office.Interop.Outlook._Reminder.Snooze(System.Object)" /> méthode est exécutée ou lorsque l’utilisateur clique sur le bouton Répéter.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur de la propriété <b>NextReminderDate</b> change à chaque exécution de l’objet <see cref="M:Microsoft.Office.Interop.Outlook._Reminder.Snooze(System.Object)" /> méthode est exécutée ou lorsque l’utilisateur clique sur le bouton Répéter.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OriginalReminderDate">
@@ -257,10 +243,8 @@
       <Docs>
         <summary>Renvoie une valeur de type <b>Date</b> qui spécifie la date et l'heure d'origine à laquelle le rappel spécifié doit se produire. Lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette valeur correspond à la valeur de date et heure d’origine avant la <see cref="M:Microsoft.Office.Interop.Outlook._Reminder.Snooze(System.Object)" /> méthode est exécutée ou que l’utilisateur clique sur le bouton Répéter.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette valeur correspond à la valeur de date et heure d’origine avant la <see cref="M:Microsoft.Office.Interop.Outlook._Reminder.Snooze(System.Object)" /> méthode est exécutée ou que l’utilisateur clique sur le bouton Répéter.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -316,16 +300,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Snooze">
@@ -353,11 +335,13 @@
         <param name="SnoozeTime">Indique la durée (en minutes) selon laquelle le rappel est reporté. La valeur par défaut est de 5 minutes.
 </param>
         <summary>Reporte le rappel selon la durée spécifiée.</summary>
-        <remarks>
-          <para>Cela équivaut à l’utilisateur en cliquant sur le bouton Répéter.  </para>
-          <para>Cette méthode échoue si le rappel en cours n’est pas actif.  </para>
-          <para />
-        </remarks>
+        <remarks><para>Cela équivaut à l'activation du bouton Répéter par l'utilisateur.
+
+  </para>
+          <para>Cette méthode échoue si le rappel en cours n'est pas actif.
+
+  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

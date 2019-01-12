@@ -1,13 +1,5 @@
 <Type Name="OlkDateControl" FullName="Microsoft.Office.Interop.Outlook.OlkDateControl">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ce876da0e95e34a935d5cc135c3b5ee95b6a85db" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20635024" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OlkDateControl : Microsoft.Office.Interop.Outlook._OlkDateControl, Microsoft.Office.Interop.Outlook.OlkDateControlEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="975913fa14a8ca339d5a16022712197207f11424" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27896778" /></Metadata><TypeSignature Language="C#" Value="public interface OlkDateControl : Microsoft.Office.Interop.Outlook._OlkDateControl, Microsoft.Office.Interop.Outlook.OlkDateControlEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OlkDateControl implements class Microsoft.Office.Interop.Outlook._OlkDateControl, class Microsoft.Office.Interop.Outlook.OlkDateControlEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.OlkDateControl" />
   <TypeSignature Language="VB.NET" Value="Public Interface OlkDateControl&#xA;Implements _OlkDateControl, OlkDateControlEvents_Event" />
@@ -34,15 +26,13 @@
   </Attributes>
   <Docs>
     <summary>Contrôle prenant en charge le sélecteur de dates déroulantes utilisé dans les inspecteurs pour éléments de tâches et de rendez-vous afin de sélectionner une date.</summary>
-    <remarks>
-      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._OlkDateControl" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.OlkDateControlEvents_Event" />.</para>
-      <para>Avant de pouvoir utiliser ce contrôle pour la première fois dans le Concepteur de formulaires, ajoutez le contrôle de Date de Microsoft Outlook à la boîte à outils contrôles. Vous pouvez uniquement ajouter ce contrôle à une zone de formulaire dans un formulaire Outlook à l’aide du Concepteur de formulaires ; Vous ne pouvez pas ajouter ce contrôle à un objet Visual Basic <b>UserForm</b> dans Visual Basic Editor.</para>
-      <para>Suit est un exemple du contrôle de date lors de l’exécution. Ce contrôle prend en charge des thèmes Microsoft Windows.</para>
-      <para>Ce contrôle peut être lié à un champ <b>DateTime</b> intégré ou personnalisé.  Cependant, le contrôle ne prend pas en charge n’importe quel format de date pour le champ, ni ne prend en charge le comportement de sélectionner une plage qui est disponible dans l’inspecteur de rendez-vous.</para>
+    <remarks><para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._OlkDateControl" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.OlkDateControlEvents_Event" />.</para>
+      <para>Avant d’utiliser ce contrôle pour la première fois dans le Concepteur de formulaires, ajoutez le contrôle de Date de Microsoft Outlook à la boîte à outils contrôles. Vous pouvez uniquement ajouter ce contrôle à une zone de formulaire dans un formulaire Outlook à l’aide du Concepteur de formulaires ; Vous ne pouvez pas ajouter ce contrôle à un objet Visual Basic <b>UserForm</b> dans Visual Basic Editor.</para>
+      <para>L'exemple suivant illustre le contrôle de date à l'exécution. Ce contrôle prend en charge les thèmes Microsoft Windows.</para>
+      <para>Ce contrôle peut être relié à tout champ <b>DateTime</b> intégré ou personnalisé.  Toutefois, il ne prend en charge ni les paramètres de formatage de date pour le champ, ni le comportement de plage de sélection disponible dans l'inspecteur de rendez-vous.</para>
       <para>Si le <see cref="E:Microsoft.Office.Interop.Outlook.OlkDateControlEvents_Event.Click" /> événement est implémenté mais que le <see cref="E:Microsoft.Office.Interop.Outlook.OlkDateControlEvents_Event.DropButtonClick" /> événement n’est pas implémenté, puis en cliquant sur le bouton déroulant déclenche uniquement l’événement <b>Click</b> .</para>
       <para>Pour plus d’informations sur les contrôles Outlook, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87823">contrôles dans un formulaire personnalisé</a></para>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

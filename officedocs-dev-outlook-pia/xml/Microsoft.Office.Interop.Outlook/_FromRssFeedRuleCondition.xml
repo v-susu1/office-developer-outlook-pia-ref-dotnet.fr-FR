@@ -1,13 +1,5 @@
 <Type Name="_FromRssFeedRuleCondition" FullName="Microsoft.Office.Interop.Outlook._FromRssFeedRuleCondition">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5456d3a993ab54560ea591aa3a07476cccd977c7" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633653" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _FromRssFeedRuleCondition" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5456d3a993ab54560ea591aa3a07476cccd977c7" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27898899" /></Metadata><TypeSignature Language="C#" Value="public interface _FromRssFeedRuleCondition" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _FromRssFeedRuleCondition" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._FromRssFeedRuleCondition" />
   <TypeSignature Language="VB.NET" Value="Public Interface _FromRssFeedRuleCondition" />
@@ -111,10 +103,8 @@
       <Docs>
         <summary>Renvoie une constante, <b>olConditionFromRssFeed</b>, à partir de la <see cref="T:Microsoft.Office.Interop.Outlook.OlRuleConditionType" /> énumération qui indique le type de condition de règle. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette condition de règle est pris en charge par les règles de réception de messages. Pour plus d’informations, voir <a href="http://go.microsoft.com/fwlink/?LinkID=87803">Spécification de Conditions de règle</a></para>
-          <para />
-        </remarks>
+        <remarks><para>Cette condition de règle est pris en charge par les règles de réception de messages. Pour plus d’informations, voir <a href="http://go.microsoft.com/fwlink/?LinkID=87803">Spécification de Conditions de règle</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -143,12 +133,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui détermine si la condition de règle est activée. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui détermine si la condition de règle est activée. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Une fois que vous activez une condition de règle, vous devez également enregistrer la règle à l’aide de <see cref="M:Microsoft.Office.Interop.Outlook._Rules.Save(System.Object)" /> afin que la condition de règle et son état seront conservés au-delà de la session en cours. Une condition de règle est activée uniquement après que qu’il a été enregistré avec succès.</para>
-          <para />
-        </remarks>
+        <remarks><para>Une fois que vous activez une condition de règle, vous devez également enregistrer la règle à l’aide de <see cref="M:Microsoft.Office.Interop.Outlook._Rules.Save(System.Object)" /> afin que la condition de règle et son état seront conservés au-delà de la session en cours. Une condition de règle est activée uniquement après que qu’il a été enregistré avec succès.   </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FromRssFeed">
@@ -177,14 +165,12 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un tableau d’éléments de <b>chaîne</b> (<b>string</b> en c#) qui représentent les abonnements RSS sont évaluées par la condition de règle. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un tableau d’éléments de <b>chaîne</b> (<b>string</b> en c#) qui représentent les abonnements RSS sont évaluées par la condition de règle. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Chaque élément du tableau est un seul abonnement RSS. Plusieurs abonnements RSS sont évalués comme des conditions logiques OR.</para>
-          <para>Vous ne pouvez pas obtenir une liste des noms d’abonnements RSS valides par le biais du modèle objet Outlook. Vous pouvez obtenir une liste de noms d’abonnements RSS valides à partir du fichier XML Outlook.Sharing.xml.obi, qui se trouve dans le dossier [lecteur] \Documents and Settings\[UserName] Settings\Application Data\Microsoft\Outlook\. le nom attribut de le &lt;local&gt; balise contient le nom de l’abonnement RSS qui doit être fourni dans le tableau de chaînes pour <b>FromRssFeed</b>. Pour énumérer tous les abonnements RSS, examinez la &lt;liaisons&gt; balise where &lt;: fournisseurs de liaison = « {0006F0AF-0000-0000-C000-000000000046} »&gt;. </para>
-          <para>Renvoie une erreur si un ou plusieurs éléments dans le tableau contient une chaîne vide ou un abonnement RSS non valide.</para>
-          <para />
-        </remarks>
+        <remarks><para>Chaque élément du tableau représente un abonnement RSS donné. Dans le cas de plusieurs abonnements RSS, ceux-ci sont évalués comme des conditions logiques OR.</para>
+          <para> Vous ne pouvez pas obtenir une liste de noms d’abonnements RSS valides par le biais du modèle objet Outlook. Vous pouvez obtenir une liste de noms d’abonnements RSS valides à partir du fichier XML Outlook.Sharing.xml.obi, qui se trouve dans le dossier [lecteur] \Documents and Settings\[UserName] Settings\Application Data\Microsoft\Outlook\. L’attribut name de le &lt;local&gt; balise contient le nom de l’abonnement RSS qui doit être fourni dans le tableau de chaînes pour <b>FromRssFeed</b>. Pour énumérer tous les abonnements RSS, examinez la &lt;liaisons&gt; balise where &lt;: fournisseurs de liaison = « {0006F0AF-0000-0000-C000-000000000046} »&gt;. </para>
+          <para>Renvoie une erreur si un ou plusieurs éléments du tableau contiennent une chaîne vide ou un abonnement RSS non valide.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -212,10 +198,8 @@
       <Docs>
         <summary>Renvoie la valeur de type <b>Object</b> parent de l’objet spécifié. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>L’objet parent est la <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet.</para>
-          <para />
-        </remarks>
+        <remarks><para>L’objet parent est la <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -243,16 +227,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="ConversationHeader" FullName="Microsoft.Office.Interop.Outlook.ConversationHeader">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f240db48bde1c2db353f938b5173be3971c038f7" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20635321" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ConversationHeader : Microsoft.Office.Interop.Outlook._ConversationHeader" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6baf4e2eb6ab932ae64172f4ef76ba4e203b7dff" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27900842" /></Metadata><TypeSignature Language="C#" Value="public interface ConversationHeader : Microsoft.Office.Interop.Outlook._ConversationHeader" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ConversationHeader implements class Microsoft.Office.Interop.Outlook._ConversationHeader" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.ConversationHeader" />
   <TypeSignature Language="VB.NET" Value="Public Interface ConversationHeader&#xA;Implements _ConversationHeader" />
@@ -31,24 +23,22 @@
   </Attributes>
   <Docs>
     <summary>Représente un en-tête de conversation Microsoft Outlook dans un affichage Conversation.</summary>
-    <remarks>
-      <para>Dans Outlook, une conversation regroupe les messages qui partagent le même objet et qui appartiennent à la même thread. Une conversation peut également inclure les agences, telle que lorsqu’un message obtient au moins deux réponses et discussions agrandir séparément à partir de chaque réponse. L’affichage Conversation rapporte à tous les éléments dans la même conversation entre les dossiers et banques. Un en-tête de conversation peut être un élément ou un en-tête de groupe dans un des formats suivants :</para>
+    <remarks><para>Dans Outlook, une conversation regroupe les messages qui partagent le même objet et qui appartiennent à la même thread. Une conversation peut également inclure les agences, telle que lorsqu’un message obtient au moins deux réponses et discussions agrandir séparément à partir de chaque réponse. L’affichage Conversation rapporte à tous les éléments dans la même conversation entre les dossiers et banques. Un en-tête de conversation peut être un élément ou un en-tête de groupe dans un des formats suivants :</para>
       <list type="bullet">
         <item>
-          <para>un élément dans un thread qui contient un seul élément.</para>
+          <para>Un élément d’un thème ne contenant qu’un élément.</para>
         </item>
         <item>
-          <para>Un en-tête de groupe pour une conversation contenant plusieurs éléments.</para>
+          <para>Un en-tête de groupe d’une conversation contenant plusieurs éléments.</para>
         </item>
         <item>
-          <para>Le premier élément dans une conversation contenant un seul thread.</para>
+          <para>Le premier élément d’une conversation contenant un seul thème.</para>
         </item>
         <item>
           <para>Le premier élément d’une conversation double.</para>
         </item>
       </list>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

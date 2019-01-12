@@ -1,13 +1,5 @@
 <Type Name="MailItem" FullName="Microsoft.Office.Interop.Outlook.MailItem">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b9f1b555db9763b2d2b05b2f81661df9b1ca01ad" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634924" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MailItem : Microsoft.Office.Interop.Outlook._MailItem, Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="80cbf52d9de23bd42fda0b5b76947a1e875ea183" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901864" /></Metadata><TypeSignature Language="C#" Value="public interface MailItem : Microsoft.Office.Interop.Outlook._MailItem, Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailItem implements class Microsoft.Office.Interop.Outlook._MailItem, class Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.MailItem" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailItem&#xA;Implements _MailItem, ItemEvents_10_Event" />
@@ -34,12 +26,10 @@
   </Attributes>
   <Docs>
     <summary>Représente un message électronique.</summary>
-    <remarks>
-      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._MailItem" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />.</para>
+    <remarks><para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._MailItem" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />.</para>
       <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._Application.CreateItem(Microsoft.Office.Interop.Outlook.OlItemType)" /> méthode pour créer un objet <b>MailItem</b> qui représente un nouveau message électronique.</para>
-      <para>Utiliser <see cref="P:Microsoft.Office.Interop.Outlook._Folders.Item(System.Object)" /> (<paramref name="index" />), où <paramref name="index" /> est le numéro d’index d’un message électronique ou une valeur correspondant à la propriété par défaut d’un message, pour renvoyer un seul objet <b>MailItem</b> d’un dossier spécifié.</para>
-      <para />
-    </remarks>
+      <para>Utilisez <see cref="P:Microsoft.Office.Interop.Outlook._Folders.Item(System.Object)" /> (<paramref name="index" />), où <paramref name="index" /> est le numéro d’index d’un message électronique ou une valeur correspondant à la propriété par défaut d’un message, pour renvoyer un seul objet <b>MailItem</b> d’un dossier spécifié.</para>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

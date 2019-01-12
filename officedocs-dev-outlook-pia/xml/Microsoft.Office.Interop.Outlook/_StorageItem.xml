@@ -1,13 +1,5 @@
 <Type Name="_StorageItem" FullName="Microsoft.Office.Interop.Outlook._StorageItem">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="dd3a237c41ec2b485800536418f96d03f99ca232" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634825" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _StorageItem" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dd3a237c41ec2b485800536418f96d03f99ca232" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27896505" /></Metadata><TypeSignature Language="C#" Value="public interface _StorageItem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _StorageItem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._StorageItem" />
   <TypeSignature Language="VB.NET" Value="Public Interface _StorageItem" />
@@ -112,13 +104,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le corps de texte en clair de l’élément Outlook. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le corps de texte en clair de l’élément Outlook. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="T:Microsoft.Office.Interop.Outlook.StorageItem" />objets prennent uniquement en charge le corps de l’élément au format texte. Ils ne prennent pas charge les flux de corps HTML ou RTF.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Class">
@@ -203,12 +193,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie et définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la solution qui a créé le <see cref="T:Microsoft.Office.Interop.Outlook.StorageItem" /> objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie et définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la solution qui a créé le <see cref="T:Microsoft.Office.Interop.Outlook.StorageItem" /> objet. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Outlook ne définit pas la propriété <b>Creator</b> . Utilisez la propriété <b>Creator</b> pour identifier les objets <b>StorageItem</b> que vous avez créé pour votre complément. Une des valeurs recommandées pour cette propriété sont l’identificateur programmatique (<b>ProgID</b>) de la macro complémentaire.</para>
-          <para />
-        </remarks>
+        <remarks><para>Outlook ne définit pas la propriété <b>Creator</b> . Utilisez la propriété <b>Creator</b> pour identifier les objets <b>StorageItem</b> que vous avez créé pour votre complément. Une des valeurs recommandées pour cette propriété sont l’identificateur programmatique (<b>ProgID</b>) de la macro complémentaire. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -233,11 +221,11 @@
       <Parameters />
       <Docs>
         <summary>Supprime définitivement la <see cref="T:Microsoft.Office.Interop.Outlook.StorageItem" /> objet à partir du dossier parent.</summary>
-        <remarks>
-          <para>Cet appel permet une solution nettoyer ou réinitialiser l’emplacement de stockage pour ses données privées. Essayez de supprimer un <b>objet StorageItem</b> qui a été supprimé par une <b>méthode StorageItem.Delete</b> préalable appel entraînera l’erreur « Impossible de terminer la suppression ».  </para>
+        <remarks><para>Cet appel permet de nettoyer une solution ou de réinitialiser l'enregistrement de ses données privées. Toute tentative de suppression d'un objet <b>StorageItem</b> déjà éliminé lors d'un appel antérieur de <b>StorageItem.Delete</b> générera l'erreur « Impossible de terminer la suppression ».
+
+</para>
           <para>Pour plus d’informations sur la suppression des données de solution enregistrées dans un objet <b>StorageItem</b> , voir <a href="http://go.microsoft.com/fwlink/?LinkId=87948">mise à jour et suppression du stockage des solutions</a></para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EntryID">
@@ -265,10 +253,10 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) qui représente l’identificateur d’entrée unique de l’objet.  En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété EntryID est une des trois manières d’identifier un <see cref="T:Microsoft.Office.Interop.Outlook.StorageItem" /> objet <see cref="M:Microsoft.Office.Interop.Outlook.MAPIFolder.GetStorage(System.String,Microsoft.Office.Interop.Outlook.OlStorageIdentifierType)" />.</para>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagEntryId</b>.</para> Fournisseur de banque 
-          <para>MAPI A assigne une chaîne d’ID unique lorsqu’un élément est créé dans son magasin. Par conséquent, la propriété <b>EntryID</b> n’est pas définie pour un élément Outlook jusqu'à ce qu’il est enregistré ou envoyé. L’identificateur d’entrée change lorsqu’un élément est déplacé vers une autre banque, par exemple, à partir de votre boîte de réception à un dossier public Microsoft Exchange Server, ou d’un fichier de dossiers personnels (.pst) vers un autre fichier .pst. Solutions ne doivent pas dépendre de la propriété <b>EntryID</b> pour être uniques, sauf si les éléments ne seront pas déplacées. La propriété <b>EntryID</b> renvoie un identificateur d’entrée à long terme MAPI. Pour plus d’informations sur les identificateurs d’entrée à long et à court terme, recherchez http://msdn.microsoft.com pour <b>PidTagEntryId</b>. </para><para /></remarks>
+        <remarks><para>La propriété EntryID est une des trois manières d’identifier un <see cref="T:Microsoft.Office.Interop.Outlook.StorageItem" /> objet <see cref="M:Microsoft.Office.Interop.Outlook.MAPIFolder.GetStorage(System.String,Microsoft.Office.Interop.Outlook.OlStorageIdentifierType)" />.</para>
+          <para>Cette propriété correspond à la propriété MAPI <b>PidTagEntryId</b>.</para>
+          <para>Un fournisseur de banque MAPI affecte une chaîne d’ID unique lorsqu’un élément est créé dans son magasin. Par conséquent, la propriété <b>EntryID</b> n’est pas définie pour un élément Outlook jusqu'à ce qu’il est enregistré ou envoyé. L’ID d’entrée est modifié lorsqu’un élément est déplacé vers une autre banque, par exemple, depuis votre boîte de réception vers un dossier public Microsoft Exchange Server ou depuis un fichier Dossier personnel (.pst) vers un autre fichier .pst. Les solutions ne doivent pas dépendre du fait que la propriété <b>EntryID</b> soit unique, sauf si les éléments ne sont pas déplacés. La propriété <b>EntryID</b> renvoie un ID d’entrée à long terme MAPI. Pour plus d’informations sur les identificateurs d’entrée à long et à court terme, recherchez http://msdn.microsoft.com pour <b>PidTagEntryId</b>. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LastModificationTime">
@@ -296,10 +284,8 @@
       <Docs>
         <summary>Renvoie une valeur de type <b>DateTime</b> qui spécifie la date et l’heure de la dernière modification de l’élément Outlook. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagLastModificationTime</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagLastModificationTime</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -327,10 +313,8 @@
       <Docs>
         <summary>Renvoie la valeur de type <b>Object</b> parent de l’objet spécifié. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le parent de l’objet <b>StorageItem</b> est le <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> objet.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le parent de l’objet <b>StorageItem</b> est le <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> objet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PropertyAccessor">
@@ -383,11 +367,9 @@
       <Parameters />
       <Docs>
         <summary>Enregistre le <see cref="T:Microsoft.Office.Interop.Outlook.StorageItem" />.</summary>
-        <remarks>
-          <para>Si l' <b>objet StorageItem</b> n’a jamais été enregistré, <b>la commande Enregistrer</b> enregistre l’élément en tant qu’élément masqué du <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> sur lequel <see cref="M:Microsoft.Office.Interop.Outlook.MAPIFolder.GetStorage(System.String,Microsoft.Office.Interop.Outlook.OlStorageIdentifierType)" /> a été appelée. Si l' <b>objet StorageItem</b> a déjà été enregistré et l’élément a été modifié, <b>Enregistrer</b> enregistre les modifications apportées à l’élément. Si l' <b>objet StorageItem</b> a déjà été enregistré et l’élément n’a pas été modifié depuis, la méthode <b>Save</b> est sans effet.</para>
-          <para>Pour plus d’informations sur l’enregistrement des données de solution à un objet <b>StorageItem</b> , voir <a href="http://go.microsoft.com/fwlink/?LinkId=87949">Création et enregistrement de données pour le stockage de Solution</a></para>
-          <para />
-        </remarks>
+        <remarks><para>Si l' <b>objet StorageItem</b> n’a jamais été enregistré, <b>la commande Enregistrer</b> enregistre l’élément en tant qu’élément masqué du <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> sur lequel <see cref="M:Microsoft.Office.Interop.Outlook.MAPIFolder.GetStorage(System.String,Microsoft.Office.Interop.Outlook.OlStorageIdentifierType)" /> a été appelée. Si l' <b>objet StorageItem</b> a déjà été enregistré et l’élément a été modifié, <b>Enregistrer</b> enregistre les modifications apportées à l’élément. Si l' <b>objet StorageItem</b> a déjà été enregistré et que l’élément n’a pas été modifié depuis, la méthode <b>Save</b> est sans effet.</para>
+          <para>Pour plus d’informations sur l’enregistrement des données de solution pour un objet <b>StorageItem</b> , voir <a href="http://go.microsoft.com/fwlink/?LinkId=87949">Création et enregistrement de données pour le stockage de Solution</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -415,11 +397,15 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) s’il n’existe aucune session active.</para> Propriété 
-          <para>la <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para><code>Dim objNamespace As Outlook.NameSpace = _
-    Application.GetNamespace("MAPI")</code><code>Dim objSession As Outlook.NameSpace = Application.Session</code><code>Outlook.NameSpace objNamespace = 
-    Application.GetNamespace("MAPI");</code><code>Outlook.NameSpace objSession = Application.Session;</code><para /></remarks>
+        <remarks><para>Renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) s’il n’existe aucune session active.</para>
+          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+          <code>Dim objNamespace As Outlook.NameSpace = _
+    Application.GetNamespace("MAPI")</code>
+          <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
+          <code>Outlook.NameSpace objNamespace = 
+    Application.GetNamespace("MAPI");</code>
+          <code>Outlook.NameSpace objSession = Application.Session;</code>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -447,10 +433,8 @@
       <Docs>
         <summary>Renvoie une valeur d' <b>entier</b> (<b>int</b> en c#) indiquant la taille (en octets) de la <see cref="T:Microsoft.Office.Interop.Outlook.StorageItem" />. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La <b>taille</b> d’un <b>objet StorageItem</b> nouvellement créé est zéro (0) tant que vous n’appelez pas explicitement sur la <see cref="M:Microsoft.Office.Interop.Outlook._StorageItem.Save" /> méthode de l’élément.</para>
-          <para />
-        </remarks>
+        <remarks><para>La <b>taille</b> d’un <b>objet StorageItem</b> nouvellement créé est zéro (0) tant que vous n’appelez pas explicitement sur la <see cref="M:Microsoft.Office.Interop.Outlook._StorageItem.Save" /> méthode de l’élément.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Subject">
@@ -479,13 +463,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui indique l’objet de l’élément Outlook. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui indique l’objet de l’élément Outlook. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagSubject</b>. La propriété <b>Subject</b> est la propriété par défaut pour les éléments Outlook. </para>
-          <para>Le <b>sujet</b> sert d’identificateur unique pour <see cref="T:Microsoft.Office.Interop.Outlook.StorageItem" /> objets. Vous devez définir l’objet de façon à garantir que les objets sont uniques et ne seraient pas remplacés par d’autres auteurs de solution. La méthode recommandée consiste à utiliser un <b>ProgID</b> ainsi que tout autre texte unique pour identifier l' <b>objet StorageItem</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagSubject</b>. La propriété <b>Subject</b> est la propriété par défaut pour les éléments Outlook. </para>
+          <para>L' <b>objet</b> sert d’identificateur unique pour <see cref="T:Microsoft.Office.Interop.Outlook.StorageItem" /> objets. Vous devez définir l’objet de façon à garantir que les objets sont uniques et ne seraient pas remplacés par d’autres auteurs de solution. La méthode recommandée consiste à utiliser un <b>ProgID</b> ainsi que tout autre texte unique pour identifier l' <b>objet StorageItem</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UserProperties">
@@ -513,10 +495,8 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.UserProperties" /> collection qui représente toutes les propriétés utilisateur de l’élément Outlook. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si vous utilisez le <see cref="M:Microsoft.Office.Interop.Outlook.UserProperties.Add(System.String,Microsoft.Office.Interop.Outlook.OlUserPropertyType,System.Object,System.Object)" /> méthode sur le <see cref="T:Microsoft.Office.Interop.Outlook.UserProperties" /> objet associé à une <see cref="T:Microsoft.Office.Interop.Outlook.StorageItem" />, l’option <paramref name="AddToFolderFields" /> et <paramref name="DisplayFormat" /> arguments de la méthode <b>UserProperties.Add</b> sont ignorés. Propriétés personnalisées de l’objet <b>StorageItem</b> ne seront pas être exposées en tant que propriétés personnalisées dans le sélecteur de champs.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si vous utilisez le <see cref="M:Microsoft.Office.Interop.Outlook.UserProperties.Add(System.String,Microsoft.Office.Interop.Outlook.OlUserPropertyType,System.Object,System.Object)" /> méthode sur le <see cref="T:Microsoft.Office.Interop.Outlook.UserProperties" /> objet associé à une <see cref="T:Microsoft.Office.Interop.Outlook.StorageItem" />, l’option <paramref name="AddToFolderFields" /> et <paramref name="DisplayFormat" /> arguments de la méthode <b>UserProperties.Add</b> sont ignorés. Propriétés personnalisées de l’objet <b>StorageItem</b> ne seront pas être exposées en tant que propriétés personnalisées dans le sélecteur de champs.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

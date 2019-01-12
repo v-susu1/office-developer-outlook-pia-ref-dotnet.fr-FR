@@ -1,13 +1,5 @@
 <Type Name="_ColumnFormat" FullName="Microsoft.Office.Interop.Outlook._ColumnFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ca93c66781144247e55eb34c6eb88cc1c2f08496" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634834" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _ColumnFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ca93c66781144247e55eb34c6eb88cc1c2f08496" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901794" /></Metadata><TypeSignature Language="C#" Value="public interface _ColumnFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _ColumnFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._ColumnFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface _ColumnFormat" />
@@ -56,12 +48,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlAlign</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlAlign" /> constante qui indique l’alignement de l’étiquette de colonne de la propriété à laquelle le <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" /> objet est associé. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlAlign" /> constante qui indique l’alignement de l’étiquette de colonne de la propriété à laquelle le <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" /> objet est associé. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur de cette propriété est ignorée pour les propriétés dans laquelle l’étiquette de colonne est affichée sous forme d’icône.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur de cette propriété est ignorée pour les propriétés dont l'étiquette de colonne est affichée dans une icône.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -146,14 +136,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui représente le format d’affichage de la propriété à laquelle le <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" /> objet est associé. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui représente le format d’affichage de la propriété à laquelle le <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" /> objet est associé. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur de cette propriété est une constante d’une énumération, où l’énumération dépend de la valeur de la <see cref="P:Microsoft.Office.Interop.Outlook._ColumnFormat.FieldType" /> propriété de l’objet <b>ColumnFormat</b> :</para>
+        <remarks><para>La valeur de cette propriété est une constante d’une énumération, où l’énumération dépend de la valeur de la <see cref="P:Microsoft.Office.Interop.Outlook._ColumnFormat.FieldType" /> propriété de l’objet <b>ColumnFormat</b> :</para>
           <list type="table">
             <item>
-              <description>valeur FieldType</description>
-              <description>FieldFormat énumération</description>
+              <description>Valeur FieldType</description>
+              <description>Éumération FieldFormat</description>
             </item>
             <item>
               <description>
@@ -235,16 +224,17 @@
                 <see cref="T:Microsoft.Office.Interop.Outlook.OlFormatEnumeration" />
               </description>
             </item>
-            <description>
-              <b>olSmartFrom</b>
-            </description>
-            <description>
-              <see cref="T:Microsoft.Office.Interop.Outlook.OlFormatSmartFrom" />
-            </description>
+            <item>
+              <description>
+                <b>olSmartFrom</b>
+              </description>
+              <description>
+                <see cref="T:Microsoft.Office.Interop.Outlook.OlFormatSmartFrom" />
+              </description>
+            </item>
           </list>
-          <para>pour types de champ non répertoriés dans le tableau ci-dessus, la valeur de cette propriété est ignorée.</para>
-          <para />
-        </remarks>
+          <para>Pour les types de champ non répertoriés dans le tableau ci-dessus, la valeur de cette propriété est ignorée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FieldType">
@@ -301,13 +291,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente l’étiquette de colonne et l’info-bulle affichée pour la propriété à laquelle le <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" /> objet est associé. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente l’étiquette de colonne et l’info-bulle affichée pour la propriété à laquelle le <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" /> objet est associé. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour les propriétés Outlook intégrées, la valeur par défaut de cette propriété est le nom localisé de la propriété. Pour les propriétés personnalisées Outlook, la valeur par défaut de cette propriété est le nom de la propriété.</para>
-          <para>La valeur de cette propriété s’applique uniquement à l’info-bulle des propriétés Outlook dans laquelle l’en-tête de colonne est représenté sous forme d’icône.</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour les propriétés Outlook intégrées, la valeur par défaut de cette propriété est le nom traduit de la propriété. Pour les propriétés Outlook personnalisées, la valeur par défaut de cette propriété est le nom de la propriété.</para>
+          <para>La valeur de cette propriété s'applique uniquement à l'info-bulle des propriétés Outlook pour lesquelles l'en-tête de colonne est représenté sous forme d'icône.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -363,16 +351,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -401,13 +387,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) indiquant la largeur approximative (en caractères) de la colonne. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) indiquant la largeur approximative (en caractères) de la colonne. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété peut être définie sur une valeur comprise entre 2 et 1024. Si cette propriété est définie sur une valeur inférieure à 2, la propriété est définie à 2. Si cette propriété est définie sur une valeur supérieure à 1024, la propriété est définie sur 1024.</para>
+        <remarks><para>Vous pouvez définir cette propriété sur une valeur comprise entre 2 et 1024. Si la valeur est inférieure à 2, la propriété est définie sur 2. Si la valeur est supérieure à 1024, la propriété est définie sur 1024.</para>
           <para>Si la valeur de cette propriété pour chaque colonne dans un affichage est inférieure à la largeur totale de l’affichage, puis la propriété <b>Width</b> de la <see cref="T:Microsoft.Office.Interop.Outlook.ColumnFormat" /> objet pour la dernière <see cref="T:Microsoft.Office.Interop.Outlook.ViewField" /> dans l’affichage est augmentée pour correspondre à la largeur totale de l’affichage.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

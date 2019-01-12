@@ -1,13 +1,5 @@
 <Type Name="ToOrFromRuleCondition" FullName="Microsoft.Office.Interop.Outlook.ToOrFromRuleCondition">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b7a2e6b11444eb36064ec4f5f430e3841ee60a66" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634277" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ToOrFromRuleCondition : Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="72f4768adb4b615ecde4398d0e292f8493de62bb" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901647" /></Metadata><TypeSignature Language="C#" Value="public interface ToOrFromRuleCondition : Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ToOrFromRuleCondition implements class Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.ToOrFromRuleCondition" />
   <TypeSignature Language="VB.NET" Value="Public Interface ToOrFromRuleCondition&#xA;Implements _ToOrFromRuleCondition" />
@@ -31,13 +23,11 @@
   </Attributes>
   <Docs>
     <summary>Représente une règle de condition que l’expéditeur ou les destinataires du message, tel que spécifié par <see cref="P:Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition.ConditionType" />, se trouve dans la liste de destinataires spécifiée dans <see cref="P:Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition.Recipients" />.</summary>
-    <remarks>
-      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition" />. </para>
+    <remarks><para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition" />. </para>
       <para>
-        <b>ToOrFromRuleCondition</b> est dérivé de le <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet. Chaque règle est associée à un <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> objet doté d’un <see cref="P:Microsoft.Office.Interop.Outlook._RuleConditions.SentTo" /> propriété et un <see cref="P:Microsoft.Office.Interop.Outlook._RuleConditions.From" />. Chacune de ces propriétés renvoie toujours un objet <b>ToOrFromRuleCondition</b> . <b>ToOrFromRuleCondition.ConditionType</b> fait la distinction entre ces conditions de règle. Si la règle possède une de ces conditions de règle est activées, puis <see cref="P:Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition.Enabled" /> doit être <b>vraie</b>.</para>
+        <b>ToOrFromRuleCondition</b> est dérivé de le <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet. Chaque règle est associée à un <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> objet doté d’un <see cref="P:Microsoft.Office.Interop.Outlook._RuleConditions.SentTo" /> propriété et un <see cref="P:Microsoft.Office.Interop.Outlook._RuleConditions.From" />. Chacune de ces propriétés renvoie toujours un objet <b>ToOrFromRuleCondition</b> . <b>ToOrFromRuleCondition.ConditionType</b> fait la distinction entre ces conditions de règle. Si la règle possède une de ces conditions de règle est activées, puis <see cref="P:Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition.Enabled" /> <b>valeur True</b>.</para>
       <para>Pour plus d’informations sur la spécification de conditions de règle, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87803">Spécification de Conditions de règle</a></para>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

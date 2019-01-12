@@ -1,13 +1,5 @@
 <Type Name="_UserDefinedProperties" FullName="Microsoft.Office.Interop.Outlook._UserDefinedProperties">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="24b5b183d8ab727f45fd9782281e0902068419cd" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633651" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _UserDefinedProperties : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="24b5b183d8ab727f45fd9782281e0902068419cd" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27900073" /></Metadata><TypeSignature Language="C#" Value="public interface _UserDefinedProperties : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _UserDefinedProperties implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._UserDefinedProperties" />
   <TypeSignature Language="VB.NET" Value="Public Interface _UserDefinedProperties&#xA;Implements IEnumerable" />
@@ -65,10 +57,8 @@
         <param name="Formula">La formule utilisée pour calculer des valeurs pour la nouvelle propriété définie par l’utilisateur. Ce paramètre est ignoré si le <paramref name="Type" /> paramètre est défini sur une valeur autre que <b>olCombination</b> ou <b>olFormula</b>.</param>
         <summary>Crée une nouvelle <see cref="T:Microsoft.Office.Interop.Outlook.UserDefinedProperty" /> objet et l’ajoute à la collection.</summary>
         <returns>Objet <b>UserDefinedProperty</b> représentant la nouvelle propriété définie par l'utilisateur.</returns>
-        <remarks>
-          <para>Vous pouvez créer une propriété d’un type défini par le <see cref="T:Microsoft.Office.Interop.Outlook.OlUserPropertyType" /> énumération, à l’exception des types suivants : <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olEnumeration" />, <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olOutlookInternal" />, et <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olSmartFrom" />.</para>
-          <para />
-        </remarks>
+        <remarks><para>Vous pouvez créer une propriété d’un type défini par le <see cref="T:Microsoft.Office.Interop.Outlook.OlUserPropertyType" /> énumération, à l’exception des types suivants : <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olEnumeration" />, <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olOutlookInternal" />, et <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olSmartFrom" />.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -322,16 +312,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="PropertyPage" FullName="Microsoft.Office.Interop.Outlook.PropertyPage">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6dbed428a055e97eb67cfd333fb2c6bc9ce4824a" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633963" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PropertyPage" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="48f2f3f7d91d2193670d3d00ba2f1e1b6f744750" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27897597" /></Metadata><TypeSignature Language="C#" Value="public interface PropertyPage" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PropertyPage" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.PropertyPage" />
   <TypeSignature Language="VB.NET" Value="Public Interface PropertyPage" />
@@ -27,10 +19,12 @@
   </Attributes>
   <Docs>
     <summary>Représente une page de propriétés personnalisée dans la boîte de dialogue Options ou dans la boîte de dialogue Propriétés d’un dossier.</summary>
-    <remarks>
-      <para>Outlook utilise cet objet pour permettre à une page de propriétés personnalisée interagir avec le bouton Appliquer dans la boîte de dialogue.</para> Objet 
-      <para>la <b>PropertyPage</b> est un objet abstrait. Autrement dit, l’objet <b>PropertyPage</b> dans la bibliothèque d’objets Microsoft Outlook ne contient aucun code d’implémentation. Au lieu de cela, il est fourni en tant que modèle à l’aide de l’implémentation de l’objet dans Microsoft Visual Basic. Il fournit un jeu prédéfini d’interfaces qu’Outlook peut utiliser pour déterminer si votre page de propriétés personnalisée a changé et pour informer votre programme que l’utilisateur a cliqué sur les boutons Appliquer ou OK. (Si votre page de propriétés personnalisée ne s’appuie pas sur le bouton Appliquer, puis vous n’avez pas besoin d’implémenter l’objet <b>PropertyPage</b> .)</para> Page de propriétés personnalisée 
-      <para>A est un contrôle ActiveX qui est affiché par Outlook dans la boîte de dialogue Options ou dans la boîte de dialogue Propriétés lorsque l’utilisateur clique sur l’onglet de la page de propriétés personnalisée. Pour implémenter l’objet <b>PropertyPage</b> dans Visual Basic .NET, le module qui contient le code d’implémentation doit contenir l’instruction Implements suivante.</para><code>Implements Outlook.PropertyPage</code><para>Le module doit également contenir des procédures qui implémentent les propriétés et méthodes de l’objet <b>PropertyPage</b> .</para><para /></remarks>
+    <remarks><para>Outlook utilise cet objet pour permettre l'interaction entre une page de propriétés personnalisée et le bouton Appliquer de la boîte de dialogue.</para>
+      <para>L’objet <b>PropertyPage</b> est un objet abstrait. Autrement dit, l’objet <b>PropertyPage</b> dans la bibliothèque d’objets Microsoft Outlook ne contient aucun code d’implémentation. Au lieu de cela, il est fourni en tant que modèle à l’aide de l’implémentation de l’objet dans Microsoft Visual Basic. Il fournit un jeu prédéfini d’interfaces qu’Outlook peut utiliser pour déterminer si votre page de propriétés personnalisée a changé et pour informer votre programme que l’utilisateur a cliqué sur les boutons Appliquer ou OK. (Si votre page de propriétés personnalisée ne s’appuie pas sur le bouton Appliquer, puis il est inutile d’implémenter l’objet <b>PropertyPage</b> .)</para>
+      <para>Page de propriétés personnalisée est un contrôle ActiveX qui est affiché par Outlook dans la boîte de dialogue Options ou dans la boîte de dialogue Propriétés lorsque l’utilisateur clique sur l’onglet de la page de propriétés personnalisée. Pour implémenter l’objet <b>PropertyPage</b> dans Visual Basic .NET, le module qui contient le code d’implémentation doit contenir l’instruction Implements suivante.</para>
+      <code>Implements Outlook.PropertyPage</code>
+      <para>Le module doit également contenir des procédures qui implémentent les propriétés et méthodes de l’objet <b>PropertyPage</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Apply">
@@ -50,10 +44,8 @@
       <Parameters />
       <Docs>
         <summary>Applique les modifications apportées à une page de propriétés personnalisée.</summary>
-        <remarks>
-          <para>Étant donné que la <see cref="T:Microsoft.Office.Interop.Outlook.PropertyPage" /> est un objet abstrait qui est implémenté dans votre application (plutôt que dans Microsoft Outlook), l’implémentation de l' <b>Appliquer</b> , méthode ressemble à une procédure événementielle dans votre code de programme. Autrement dit, vous écrivez le code qui implémente la méthode pratiquement de la même manière, vous devez écrire une procédure événementielle. En d’autres termes, Outlook appelle la méthode <b>Apply</b> pour informer votre programme que l’utilisateur a effectué une action dans la boîte de dialogue Affichage de la page de propriétés personnalisées qui nécessite que votre programme applique les valeurs de propriété modifiées par l’utilisateur.</para>
-          <para />
-        </remarks>
+        <remarks><para>Étant donné que la <see cref="T:Microsoft.Office.Interop.Outlook.PropertyPage" /> est un objet abstrait qui est implémenté dans votre application (plutôt que dans Microsoft Outlook), l’implémentation de l' <b>Appliquer</b> , méthode ressemble à une procédure événementielle dans votre code de programme. Autrement dit, vous écrivez le code qui implémente la méthode pratiquement de la même manière, vous devez écrire une procédure événementielle. En d’autres termes, Outlook appelle la méthode <b>Apply</b> pour informer votre programme que l’utilisateur a effectué une action dans la boîte de dialogue Affichage de la page de propriétés personnalisées qui nécessite que votre programme applique les valeurs de propriété modifiées par l’utilisateur.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Dirty">

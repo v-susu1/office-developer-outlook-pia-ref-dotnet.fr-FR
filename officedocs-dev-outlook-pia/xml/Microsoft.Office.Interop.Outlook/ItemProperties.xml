@@ -1,13 +1,5 @@
 <Type Name="ItemProperties" FullName="Microsoft.Office.Interop.Outlook.ItemProperties">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="068473e5343109a26ed982c2916e8e99e1bf5182" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634426" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ItemProperties : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2e0b6f765c864178318a6ab735154aa9fb4aa042" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27900278" /></Metadata><TypeSignature Language="C#" Value="public interface ItemProperties : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ItemProperties implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.ItemProperties" />
   <TypeSignature Language="VB.NET" Value="Public Interface ItemProperties&#xA;Implements IEnumerable" />
@@ -31,15 +23,13 @@
   </Attributes>
   <Docs>
     <summary>Collection de toutes les propriétés associées à l'élément.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.ItemProperties" /> propriété permet de renvoyer la collection <b>ItemProperties</b> . Utilisez ItemProperties.Item (<paramref name="index" />), où <paramref name="index" /> est le nom de l’objet ou la position numérique de l’élément dans la collection, pour renvoyer un seul <see cref="T:Microsoft.Office.Interop.Outlook.ItemProperty" /> objet.</para>
+    <remarks><para>Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.ItemProperties" /> propriété permet de renvoyer la collection <b>ItemProperties</b> . Utilisez ItemProperties.Item (<paramref name="index" />), où <paramref name="index" /> est le nom de l’objet ou la position numérique de l’élément dans la collection, pour renvoyer un seul <see cref="T:Microsoft.Office.Interop.Outlook.ItemProperty" /> objet.</para>
       <para>
         <b>Remarque</b>: la collection <b>ItemProperties</b> est zéro, ce qui signifie que le premier élément de la collection est référencé par 0.</para>
       <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook.ItemProperties.Add(System.String,Microsoft.Office.Interop.Outlook.OlUserPropertyType,System.Object,System.Object)" /> pour ajouter une nouvelle propriété d’élément à la collection <b>ItemProperties</b> . Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook.ItemProperties.Remove(System.Int32)" /> méthode pour supprimer une propriété d’élément de la collection <b>ItemProperties</b> .</para>
       <para>
         <b>Remarque</b>: vous pouvez uniquement ajouter ou supprimer des propriétés personnalisées. Propriétés personnalisées sont indiquées par le <see cref="P:Microsoft.Office.Interop.Outlook.ItemProperty.IsUserProperty" /> .</para>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -73,10 +63,8 @@
         <param name="DisplayFormat">Définit le format du champ tel qu'il apparaît dans un dossier donné.</param>
         <summary>Ajoute un objet <b>ItemProperty</b> à la collection <b>ItemProperties</b>.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Vous pouvez créer une propriété d’un type défini par le <see cref="T:Microsoft.Office.Interop.Outlook.OlUserPropertyType" /> énumération, à l’exception des types suivants : <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olEnumeration" />, <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olOutlookInternal" />, et <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olSmartFrom" />.</para>
-          <para />
-        </remarks>
+        <remarks><para>Vous pouvez créer une propriété d’un type défini par le <see cref="T:Microsoft.Office.Interop.Outlook.OlUserPropertyType" /> énumération, à l’exception des types suivants : <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olEnumeration" />, <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olOutlookInternal" />, et <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olSmartFrom" />.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -308,16 +296,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

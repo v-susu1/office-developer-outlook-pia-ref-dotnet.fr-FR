@@ -1,13 +1,5 @@
 <Type Name="AccountRuleCondition" FullName="Microsoft.Office.Interop.Outlook.AccountRuleCondition">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ab2fb2ad4de1c8d3c092db9fdff8bb6ff1786c7d" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20635308" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AccountRuleCondition : Microsoft.Office.Interop.Outlook._AccountRuleCondition" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e4ae3dafc45df9984f8fe87f23dbff4114265c1e" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27899886" /></Metadata><TypeSignature Language="C#" Value="public interface AccountRuleCondition : Microsoft.Office.Interop.Outlook._AccountRuleCondition" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AccountRuleCondition implements class Microsoft.Office.Interop.Outlook._AccountRuleCondition" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.AccountRuleCondition" />
   <TypeSignature Language="VB.NET" Value="Public Interface AccountRuleCondition&#xA;Implements _AccountRuleCondition" />
@@ -32,13 +24,11 @@
   <Docs>
     <summary>Représente une condition de règle qui évalue si un compte a été utilisé pour envoyer un message.
 </summary>
-    <remarks>
-      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._AccountRuleCondition" />.</para>
+    <remarks><para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._AccountRuleCondition" />.</para>
       <para>
-        <b>AccountRuleCondition</b> est dérivé de le <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet. Chaque règle est associée à un <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> objet doté d’un <see cref="P:Microsoft.Office.Interop.Outlook._RuleConditions.Account" /> propriété. La propriété <b>Account</b> renvoie toujours un objet <b>AccountRuleCondition</b> . Si la règle possède une condition de règle activée qui le message est envoyé à l’aide d’un compte spécifié, puis <see cref="P:Microsoft.Office.Interop.Outlook._AccountRuleCondition.Enabled" /> doit être <b>vraie</b>.</para>
+        <b>AccountRuleCondition</b> est dérivé de le <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet. Chaque règle est associée à un <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> objet doté d’un <see cref="P:Microsoft.Office.Interop.Outlook._RuleConditions.Account" /> propriété. La propriété <b>Account</b> renvoie toujours un objet <b>AccountRuleCondition</b> . Si la règle possède une condition de règle activée qui le message est envoyé à l’aide d’un compte spécifié, puis <see cref="P:Microsoft.Office.Interop.Outlook._AccountRuleCondition.Enabled" /> <b>valeur True</b>.</para>
       <para>Pour plus d’informations sur la spécification d’actions de règle, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87803">Spécification de Conditions de règle</a></para>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

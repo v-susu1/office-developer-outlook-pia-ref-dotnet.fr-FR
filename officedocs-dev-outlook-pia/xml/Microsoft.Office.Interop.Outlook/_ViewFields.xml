@@ -1,13 +1,5 @@
 <Type Name="_ViewFields" FullName="Microsoft.Office.Interop.Outlook._ViewFields">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2fa7e9f0d7874832b1d6dbb48db18e744e8b2a5f" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633681" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _ViewFields : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2fa7e9f0d7874832b1d6dbb48db18e744e8b2a5f" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901598" /></Metadata><TypeSignature Language="C#" Value="public interface _ViewFields : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _ViewFields implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._ViewFields" />
   <TypeSignature Language="VB.NET" Value="Public Interface _ViewFields&#xA;Implements IEnumerable" />
@@ -60,14 +52,12 @@
         <param name="PropertyName">Nom de la propriété à laquelle le nouvel objet est associé. Cette propriété peut être référencée par un nom de champ (affiché dans le sélecteur de champs) ou par espace de noms (représenté par <see cref="P:Microsoft.Office.Interop.Outlook._ViewField.ViewXMLSchemaName" />).</param>
         <summary>Ajoute le champ spécifié à la fin de la <see cref="T:Microsoft.Office.Interop.Outlook.ViewFields" /> collection pour l’affichage.</summary>
         <returns>Objet <b>ViewField</b> qui représente le nouveau champ d'affichage.</returns>
-        <remarks>
-          <para>Référence à la propriété dans <paramref name="PropertyName" /> par son champ nom requiert le nom localisé dans les paramètres régionaux correspondant. Pour plus d’informations sur les propriétés référencées par un espace de noms, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87860">Référencer les propriétés par Namespace</a></para>
-          <para>Si vous ajoutez une propriété personnalisée à la collection <b>ViewFields</b> , la propriété doit exister dans le <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.UserDefinedProperties" /> collection pour le Dossier parent de la vue.  </para>
-          <para>Si la propriété existe déjà dans la collection <b>ViewFields</b> , Outlook génère une erreur.</para>
-          <para>Par programme ajouter un champ personnalisé à un affichage, utilisez la méthode <b>ViewFields.Add</b> . Il s’agit de la méthode recommandée pour modifier l’affichage de façon dynamique sur paramètre le <see cref="P:Microsoft.Office.Interop.Outlook.View.XML" /> propriété.</para>
-          <para>Certaines propriétés ne peut pas être ajouté à un affichage à l’aide de <b>ViewFields.Add</b>, y compris les propriétés binaires, des propriétés calculées et le contenu du corps HTML ou RTF. Pour plus d’informations, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87926">Propriétés non prises en charge dans un objet Table ou un filtre Table</a></para>
-          <para />
-        </remarks>
+        <remarks><para>Référence à la propriété dans <paramref name="PropertyName" /> par son champ nom requiert le nom localisé dans les paramètres régionaux correspondant. Pour plus d’informations sur les propriétés référencées par un espace de noms, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87860">Référencer les propriétés par Namespace</a></para>
+          <para>Si vous ajoutez une propriété personnalisée à la collection <b>ViewFields</b> , la propriété doit exister dans le <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.UserDefinedProperties" /> collection pour le dossier parent de la vue.  </para>
+          <para>Si la propriété existe déjà dans la collection <b>ViewFields</b>, Outlook génère une erreur.</para>
+          <para>Pour ajouter par programme un champ personnalisé à un affichage, utilisez la méthode <b>ViewFields.Add</b> . Il s’agit de la méthode recommandée pour modifier l’affichage de façon dynamique sur paramètre le <see cref="P:Microsoft.Office.Interop.Outlook.View.XML" /> propriété.</para>
+          <para>Certaines propriétés ne peut pas être ajoutées à un affichage à l’aide de <b>ViewFields.Add</b>, y compris les propriétés binaires, les propriétés calculées et le contenu HTML ou RTF. Pour plus d’informations, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87926">Propriétés non prises en charge dans un objet Table ou un filtre Table</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -298,16 +288,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="CategoryRuleCondition" FullName="Microsoft.Office.Interop.Outlook.CategoryRuleCondition">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="621402ba698c6664848e8d9f9a96cfef933693e2" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20635283" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CategoryRuleCondition : Microsoft.Office.Interop.Outlook._CategoryRuleCondition" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7d77bb9842cb2bb5142b28dde54c82b8383227a8" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27899011" /></Metadata><TypeSignature Language="C#" Value="public interface CategoryRuleCondition : Microsoft.Office.Interop.Outlook._CategoryRuleCondition" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CategoryRuleCondition implements class Microsoft.Office.Interop.Outlook._CategoryRuleCondition" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.CategoryRuleCondition" />
   <TypeSignature Language="VB.NET" Value="Public Interface CategoryRuleCondition&#xA;Implements _CategoryRuleCondition" />
@@ -31,13 +23,11 @@
   </Attributes>
   <Docs>
     <summary>Représente une condition de règle évaluant les catégories d’un message par rapport à l’objet <b>CategoryRuleCondition.Categories</b>.</summary>
-    <remarks>
-      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._CategoryRuleCondition" />.</para>
+    <remarks><para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._CategoryRuleCondition" />.</para>
       <para>
-        <b>CategoryRuleCondition</b> est dérivé de le <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet. Chaque règle est associée à un <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> objet doté d’un <see cref="P:Microsoft.Office.Interop.Outlook._RuleConditions.Category" /> propriété. La propriété <b>Category</b> renvoie toujours un objet <b>CategoryRuleCondition</b> . Si la règle possède une de ces conditions de règle est activées, puis <see cref="P:Microsoft.Office.Interop.Outlook._CategoryRuleCondition.Enabled" /> doit être <b>vraie</b>.</para>
+        <b>CategoryRuleCondition</b> est dérivé de le <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet. Chaque règle est associée à un <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> objet doté d’un <see cref="P:Microsoft.Office.Interop.Outlook._RuleConditions.Category" /> propriété. La propriété <b>Category</b> renvoie toujours un objet <b>CategoryRuleCondition</b> . Si la règle possède une de ces conditions de règle est activées, puis <see cref="P:Microsoft.Office.Interop.Outlook._CategoryRuleCondition.Enabled" /> <b>valeur True</b>.</para>
       <para>Pour plus d’informations sur la spécification d’actions de règle, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87803">Spécification de Conditions de règle</a></para>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

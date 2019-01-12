@@ -1,13 +1,5 @@
 <Type Name="OlkTimeZoneControlEvents_Event" FullName="Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ace53552d870de047458ea4d3f31ae51e1131a0d" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20635083" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OlkTimeZoneControlEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ffd4b13a2783277c17f8b79a4ac7a06cf6e5fb22" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27897723" /></Metadata><TypeSignature Language="C#" Value="public interface OlkTimeZoneControlEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OlkTimeZoneControlEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event" />
   <TypeSignature Language="VB.NET" Value="Public Interface OlkTimeZoneControlEvents_Event" />
@@ -49,31 +41,29 @@
       </ReturnValue>
       <Docs>
         <summary>Se produit après modification des données du contrôle via l'interface utilisateur.</summary>
-        <remarks>
-          <para>
-            <see cref="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.BeforeUpdate" />et <b>AfterUpdate</b> peuvent survenir chaque fois que les données dans le contrôle sont enregistrées à l’élément. Voici la séquence d’événements impliquant <b>AfterUpdate</b> pour ce contrôle est la suivante : </para>
+        <remarks><para>
+            <see cref="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.BeforeUpdate" />et <b>AfterUpdate</b> peuvent survenir chaque fois que les données dans le contrôle sont enregistrées à l’élément. Voici la séquence d’événements impliquant <b>AfterUpdate</b> pour ce contrôle est la suivante :  </para>
           <list type="number">
             <item>
-              <description>utilisateur se concentre sur le contrôle de</description>
+              <description>L'utilisateur active le contrôle.</description>
             </item>
             <item>
-              <description>l’événement
-                <b>BeforeUpdate</b> survient</description>
+              <description>Événement 
+                <b>BeforeUpdate</b> survient.</description>
             </item>
             <item>
-              <description>données du contrôle sont mis à jour</description>
+              <description>Les données du contrôle sont mises à jour.</description>
+            </item>
+            <item>
+              <description>L'événement 
+                <b>AfterUpdate</b> survient.</description>
             </item>
             <item>
               <description>
-                <b>AfterUpdate</b> se produit </description>
-            </item>
-            <item>
-              <description>
-                <see cref="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.Exit" /> cet événement se produit : utilisateur déplace désactive le contrôle</description>
+                <see cref="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.Exit" />Cet événement se produit : utilisateur déplace désactive le contrôle </description>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BeforeUpdate">
@@ -92,32 +82,30 @@
       </ReturnValue>
       <Docs>
         <summary>Se produit lorsque les données du contrôle sont modifiées via l'interface utilisateur et sont sur le point d'être enregistrées dans l'élément.</summary>
-        <remarks>
-          <para>L’annulation de cette propriété sera rétablir le contrôle à la valeur actuelle de la propriété et retourner le focus au contrôle.</para>
+        <remarks><para>L'annulation de cette propriété rétablit la valeur actuelle de la propriété du contrôle et réactive le contrôle.</para>
           <para>
-            <b>BeforeUpdate</b> et <see cref="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.AfterUpdate" /> peut se produire à tout moment les données dans le contrôle sont enregistrées à l’élément. Voici la séquence d’événements impliquant <b>AfterUpdate</b> pour ce contrôle est la suivante : </para>
+            <b>BeforeUpdate</b> et <see cref="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.AfterUpdate" /> peut se produire à tout moment les données dans le contrôle sont enregistrées à l’élément. Voici la séquence d’événements impliquant <b>AfterUpdate</b> pour ce contrôle est la suivante :  </para>
           <list type="number">
             <item>
-              <description>utilisateur se concentre sur le contrôle de</description>
+              <description>L'utilisateur active le contrôle.</description>
             </item>
             <item>
-              <description>l’événement
-                <b>BeforeUpdate</b> survient</description>
+              <description>Événement 
+                <b>BeforeUpdate</b> survient.</description>
             </item>
             <item>
-              <description>données du contrôle sont mis à jour</description>
+              <description>Les données du contrôle sont mises à jour.</description>
+            </item>
+            <item>
+              <description>L'événement 
+                <b>AfterUpdate</b> survient.</description>
             </item>
             <item>
               <description>
-                <b>AfterUpdate</b> se produit </description>
-            </item>
-            <item>
-              <description>
-                <see cref="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.Exit" /> cet événement se produit : utilisateur déplace désactive le contrôle</description>
+                <see cref="E:Microsoft.Office.Interop.Outlook.OlkTimeZoneControlEvents_Event.Exit" />Cet événement se produit : utilisateur déplace désactive le contrôle</description>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Change">
@@ -212,10 +200,8 @@
       </ReturnValue>
       <Docs>
         <summary>Se produit lorsque le contrôle est activé immédiatement après l'événement  <b>Exit</b> du contrôle précédent.</summary>
-        <remarks>
-          <para>Ceci est similaire à l’événement <b>GotFocus</b> exposé par les contrôles de code managé ou dans Microsoft Visual Basic 6.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cet événement est similaire à l'événement  <b>GotFocus</b> exposé par les contrôles de code managé ou dans Microsoft Visual Basic 6.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Exit">
@@ -253,10 +239,8 @@
       </ReturnValue>
       <Docs>
         <summary>Se produit lorsque l’utilisateur appuie sur une touche.</summary>
-        <remarks>
-          <para>L’état des touches de modification (MAJ, CTRL ou ALT) enfoncées pendant l’événement <b>KeyDown</b> est accessible via la <paramref name="Shift" /> paramètre.</para>
-          <para />
-        </remarks>
+        <remarks><para>L’état des touches de modification (MAJ, CTRL ou ALT) enfoncées pendant l’événement <b>KeyDown</b> est accessible via la <paramref name="Shift" /> paramètre.  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyPress">
@@ -275,25 +259,23 @@
       </ReturnValue>
       <Docs>
         <summary>Se produit lorsque l’utilisateur appuie sur une touche ANSI.</summary>
-        <remarks>
-          <para>Une touche ANSI est celui qui génère un caractère de frappe lorsque l’utilisateur appuie dessus. L’événement <b>KeyPress</b> se produit lorsque l’utilisateur appuie sur une touche ANSI dans un formulaire en cours d’exécution pendant que le formulaire ou un contrôle a le focus. L’événement peut se produire avant ou après la publication de la clé.</para>
-          <para>L’événement <b>KeyPress</b> ne se produit pas dans les conditions suivantes :</para>
+        <remarks><para>Une touche ANSI est celui qui génère un caractère de frappe lorsque l’utilisateur appuie dessus. L’événement <b>KeyPress</b> se produit lorsque l’utilisateur appuie sur une touche ANSI dans un formulaire en cours d’exécution pendant que le formulaire ou un contrôle a le focus. L’événement peut se produire avant ou après la publication de la clé.</para>
+          <para>L'événement <b>KeyPress</b> ne se produit pas dans les conditions suivantes :  </para>
           <list type="bullet">
             <item>
-              <para>En appuyant sur un onglet </para>
+              <para>Si la touche Tab est enfoncée. </para>
             </item>
             <item>
-              <para>En appuyant sur entrer </para>
+              <para>Si la touche Entrée est enfoncée. </para>
             </item>
             <item>
-              <para>en appuyant sur une touche de direction </para>
+              <para>Si une touche de direction est enfoncée. </para>
             </item>
             <item>
-              <para>lorsqu’une frappe le focus se déplace d’un contrôle à un autre</para>
+              <para>Si une séquence de touches déplace le focus sur un autre contrôle.</para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyUp">
@@ -312,10 +294,8 @@
       </ReturnValue>
       <Docs>
         <summary>Se produit lorsque l’utilisateur relâche une touche.</summary>
-        <remarks>
-          <para>L’état des touches de modification (MAJ, CTRL ou ALT) enfoncées pendant l’événement <b>KeyUp</b> est accessible via le paramètre Shift.</para>
-          <para />
-        </remarks>
+        <remarks><para>L’état des touches de modification (Maj, Ctrl ou Alt) enfoncées pendant l’événement <b>KeyUp</b> est accessible via le paramètre Shift.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseDown">
@@ -353,10 +333,8 @@
       </ReturnValue>
       <Docs>
         <summary>Se produit après enregistrement d’un mouvement de la souris sur le contrôle.</summary>
-        <remarks>
-          <para>La touche ALT déclenche l’événement <b>MouseMove</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Le fait d’appuyer sur la touche Alt déclenche l’événement <b>MouseMove</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseUp">

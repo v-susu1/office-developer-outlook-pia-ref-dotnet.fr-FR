@@ -1,13 +1,5 @@
 <Type Name="PostItem" FullName="Microsoft.Office.Interop.Outlook.PostItem">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2dd2d4a30f7e841adcaaac74530a86f518832308" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633760" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PostItem : Microsoft.Office.Interop.Outlook._PostItem, Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2c948a4eab000903aa0258e53595254a09468c9f" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27896953" /></Metadata><TypeSignature Language="C#" Value="public interface PostItem : Microsoft.Office.Interop.Outlook._PostItem, Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PostItem implements class Microsoft.Office.Interop.Outlook._PostItem, class Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.PostItem" />
   <TypeSignature Language="VB.NET" Value="Public Interface PostItem&#xA;Implements _PostItem, ItemEvents_10_Event" />
@@ -34,13 +26,11 @@
   </Attributes>
   <Docs>
     <summary>Représente une publication dans un dossier public que d'autres utilisateurs peuvent parcourir.</summary>
-    <remarks>
-      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._PostItem" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />.</para>
-      <para>Contrairement à un <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> objet, un objet <b>PostItem</b> n’est pas envoyé à un destinataire. Vous utilisez la <see cref="M:Microsoft.Office.Interop.Outlook._PostItem.Post" /> méthode, ce qui équivaut à la <see cref="M:Microsoft.Office.Interop.Outlook._MailItem.Send" /> méthode pour l’objet <b>MailItem</b> , pour enregistrer l' <b>objet PostItem</b> dans le dossier public cible au lieu de publipostage it.</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._Application.CreateItem(Microsoft.Office.Interop.Outlook.OlItemType)" /> ou <see cref="M:Microsoft.Office.Interop.Outlook._Application.CreateItemFromTemplate(System.String,System.Object)" /> méthode pour créer un objet <b>PostItem</b> qui représente une nouvelle publication.</para>
-      <para>Utiliser <see cref="T:Microsoft.Office.Interop.Outlook.Items" />(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index d’une publication ou une valeur correspondant à la propriété par défaut de la publication, pour renvoyer un seul objet <b>PostItem</b> d’un dossier public.</para>
-      <para />
-    </remarks>
+    <remarks><para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._PostItem" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />.</para>
+      <para>Contrairement à un <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> objet, un objet <b>PostItem</b> n’est pas envoyé à un destinataire. Vous utilisez la <see cref="M:Microsoft.Office.Interop.Outlook._PostItem.Post" /> méthode, ce qui équivaut à la <see cref="M:Microsoft.Office.Interop.Outlook._MailItem.Send" /> méthode pour l’objet <b>MailItem</b> , pour enregistrer l' <b>objet PostItem</b> dans le dossier public cible au lieu de l’envoyer.</para>
+      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._Application.CreateItem(Microsoft.Office.Interop.Outlook.OlItemType)" /> ou <see cref="M:Microsoft.Office.Interop.Outlook._Application.CreateItemFromTemplate(System.String,System.Object)" /> méthode pour créer un objet <b>PostItem</b> qui représente une nouvelle publication. </para>
+      <para>Utilisez <see cref="T:Microsoft.Office.Interop.Outlook.Items" />(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index d’une publication ou une valeur correspondant à la propriété par défaut de la publication, pour renvoyer un seul objet <b>PostItem</b> d’un dossier public.</para>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

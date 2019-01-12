@@ -1,13 +1,5 @@
 <Type Name="_SyncObject" FullName="Microsoft.Office.Interop.Outlook._SyncObject">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="76910bdb5f2ffd23348b9b37eff39ee5cb4ca869" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634615" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _SyncObject" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="76910bdb5f2ffd23348b9b37eff39ee5cb4ca869" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27896561" /></Metadata><TypeSignature Language="C#" Value="public interface _SyncObject" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _SyncObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._SyncObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface _SyncObject" />
@@ -167,16 +159,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -228,10 +218,8 @@
       <Parameters />
       <Docs>
         <summary>Termine immédiatement la synchronisation des dossiers d'un utilisateur à l'aide du groupe d'envoi/réception spécifié.</summary>
-        <remarks>
-          <para>Cette méthode n’annule pas de synchronisation qui a déjà eu lieu.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette méthode ne permet pas d'annuler le travail de synchronisation déjà effectué.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

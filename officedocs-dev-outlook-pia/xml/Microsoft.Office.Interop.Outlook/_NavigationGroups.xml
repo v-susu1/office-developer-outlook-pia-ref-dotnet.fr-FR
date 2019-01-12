@@ -1,13 +1,5 @@
 <Type Name="_NavigationGroups" FullName="Microsoft.Office.Interop.Outlook._NavigationGroups">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d00a34406d33157b2a7462c169f68ae4e8e21656" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20635245" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _NavigationGroups : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d00a34406d33157b2a7462c169f68ae4e8e21656" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901927" /></Metadata><TypeSignature Language="C#" Value="public interface _NavigationGroups : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _NavigationGroups implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._NavigationGroups" />
   <TypeSignature Language="VB.NET" Value="Public Interface _NavigationGroups&#xA;Implements IEnumerable" />
@@ -87,10 +79,8 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constante indiquant la classe de l’objet. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>olNavigationGroups</b> pour le <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroups" /> objet.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie <b>olNavigationGroups</b> pour le <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroups" /> objet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -147,11 +137,9 @@
         <param name="GroupDisplayName">La valeur de la <see cref="P:Microsoft.Office.Interop.Outlook._NavigationGroup.Name" /> propriété pour le nouvel objet <b>NavigationGroup</b> .</param>
         <summary>Crée et renvoie une nouvelle <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroup" /> objet, ajouté à la fin de la <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroups" /> collection.</summary>
         <returns>Objet <b>NavigationGroup</b> qui représente le nouveau groupe de navigation.</returns>
-        <remarks>
-          <para>Une collection <b>NavigationGroups</b> peut contenir plusieurs objets <b>NavigationGroup</b> avec les mêmes valeurs de propriété <b>Name</b> .</para>
+        <remarks><para>Une collection <b>NavigationGroups</b> peut contenir plusieurs objets <b>NavigationGroup</b> avec les mêmes valeurs de propriété <b>Name</b>.</para>
           <para>Une erreur se produit si un complément tente d’ajouter plus de 50 groupes de navigation à une collection <b>NavigationGroups</b> ou si un complément tente d’ajouter un objet <b>NavigationGroup</b> à la collection <b>NavigationGroups</b> d’un <see cref="T:Microsoft.Office.Interop.Outlook.MailModule" /> objet.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -179,21 +167,19 @@
       <Docs>
         <param name="Group">Groupe de navigation à supprimer.</param>
         <summary>Supprime le texte spécifié <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroup" /> d’objet à partir de la <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroups" /> collection.</summary>
-        <remarks>
-          <para>La méthode <b>Delete</b> génère une erreur si :</para>
+        <remarks><para>La méthode <b>Delete</b> génère une erreur si :</para>
           <list type="bullet">
             <item>
-              <para> le groupe de navigation spécifié dans <paramref name="Group" /> contient des dossiers de navigation dans sa <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolders" /> collection.</para>
+              <para> Le groupe de navigation spécifié dans <paramref name="Group" /> contient des dossiers de navigation dans sa <see cref="T:Microsoft.Office.Interop.Outlook.NavigationFolders" /> collection.</para>
             </item>
             <item>
-              <para>La <see cref="P:Microsoft.Office.Interop.Outlook._NavigationGroup.GroupType" /> propriété du groupe de navigation spécifié dans <paramref name="Group" /> est défini <b>avec la valeur olMyFoldersGroup</b>.</para>
+              <para>Le <see cref="P:Microsoft.Office.Interop.Outlook._NavigationGroup.GroupType" /> propriété du groupe de navigation spécifié dans <paramref name="Group" /> est défini <b>avec la valeur olMyFoldersGroup</b>.</para>
             </item>
             <item>
               <para>Le parent de la collection <b>NavigationGroups</b> est un <see cref="T:Microsoft.Office.Interop.Outlook.MailModule" /> objet.</para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDefaultNavigationGroup">
@@ -222,10 +208,8 @@
         <param name="DefaultFolderGroup">Type de groupe de navigation à extraire.</param>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroup" /> qui correspond au groupe de dossier partagé par défaut sélectionné.</summary>
         <returns>Objet <b>NavigationGroup</b> qui représente le groupe de dossiers par défaut sélectionné.</returns>
-        <remarks>
-          <para>Si le groupe de navigation par défaut spécifié dans <paramref name="DefaultFolderGroup" /> a été supprimé ou n’existe pas, il est créé automatiquement si le parent <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModule" /> objet prend en charge le type de groupe de navigation spécifié.  Une erreur se produit si l’objet <b>NavigationModule</b> parent ne prend pas en charge la création de ce type de groupe de navigation.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si le groupe de navigation par défaut spécifié dans <paramref name="DefaultFolderGroup" /> a été supprimé ou n’existe pas, il est créé automatiquement si le parent <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModule" /> objet prend en charge le type de groupe de navigation spécifié.  Une erreur se produit si l’objet <b>NavigationModule</b> parent ne prend pas en charge la création de ce type de groupe de navigation.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -257,10 +241,8 @@
         <param name="Index">Numéro d'index de l'objet.</param>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroup" /> objet de la collection.</summary>
         <value>Objet <b>NavigationGroup</b> qui représente l'objet spécifié.</value>
-        <remarks>
-          <para>La valeur d’index d’un <b>NavigationGroup</b> de la collection représente la position ordinale du groupe de navigation lorsque affiché dans le volet de Navigation. Modification de la position de groupes de navigation modifie également les valeurs d’index de groupes de navigation contenus dans le <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroups" /> collection.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur d’index d’un <b>NavigationGroup</b> de la collection représente la position ordinale du groupe de navigation lorsque affiché dans le volet de Navigation. Modification de la position de groupes de navigation modifie également les valeurs d’index de groupes de navigation contenus dans le <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroups" /> collection.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -316,16 +298,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

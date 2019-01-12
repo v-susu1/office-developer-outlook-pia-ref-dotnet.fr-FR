@@ -1,13 +1,5 @@
 <Type Name="JournalItem" FullName="Microsoft.Office.Interop.Outlook.JournalItem">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="14da28a55cb285e5fa631d53c0982fc20f778e83" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634705" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface JournalItem : Microsoft.Office.Interop.Outlook._JournalItem, Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="37cc2b675f196e34f038328b05b82eec29f9e316" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27898696" /></Metadata><TypeSignature Language="C#" Value="public interface JournalItem : Microsoft.Office.Interop.Outlook._JournalItem, Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract JournalItem implements class Microsoft.Office.Interop.Outlook._JournalItem, class Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.JournalItem" />
   <TypeSignature Language="VB.NET" Value="Public Interface JournalItem&#xA;Implements _JournalItem, ItemEvents_10_Event" />
@@ -34,13 +26,11 @@
   </Attributes>
   <Docs>
     <summary>Représente une entrée de journal d'un dossier Journal.</summary>
-    <remarks>
-      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._JournalItem" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />.</para>
+    <remarks><para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._JournalItem" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />.</para>
       <para>Une entrée de journal représente un enregistrement de toutes les transactions effectuées dans Outlook pendant une période donnée.</para>
       <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._Application.CreateItem(Microsoft.Office.Interop.Outlook.OlItemType)" /> méthode pour créer un objet <b>JournalItem</b> qui représente une nouvelle entrée de journal.</para>
-      <para>Utiliser <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.Items" />(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index d’une entrée de journal ou une valeur correspondant à la propriété par défaut d’une entrée de journal, pour renvoyer un seul objet <b>JournalItem</b> d’un dossier Journal.</para>
-      <para />
-    </remarks>
+      <para>Utilisez <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.Items" />(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index d’une entrée de journal ou une valeur correspondant à la propriété par défaut d’une entrée de journal, pour renvoyer un seul objet <b>JournalItem</b> d’un dossier Journal.</para>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

@@ -1,13 +1,5 @@
 <Type Name="_OlkDateControl" FullName="Microsoft.Office.Interop.Outlook._OlkDateControl">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f064fabf18e8108fe4dbcd30b73c9f5f5a2fb068" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634645" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _OlkDateControl" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f064fabf18e8108fe4dbcd30b73c9f5f5a2fb068" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27896967" /></Metadata><TypeSignature Language="C#" Value="public interface _OlkDateControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _OlkDateControl" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._OlkDateControl" />
   <TypeSignature Language="VB.NET" Value="Public Interface _OlkDateControl" />
@@ -56,12 +48,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui redimensionne automatiquement le contrôle pour afficher tout le contenu.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui redimensionne automatiquement le contrôle pour afficher tout le contenu.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut de cette propriété a la <b>valeur False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>  La valeur par défaut de cette propriété est <b>False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoWordSelect">
@@ -90,12 +80,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si un mot ou un caractère est l’unité de base utilisée pour étendre une sélection.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si un mot ou un caractère est l’unité de base utilisée pour étendre une sélection.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut est <b>True</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut est <b>True</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -127,12 +115,10 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>UInteger</b> (<b>uint</b> en c#) qui indique la couleur d’arrière-plan du contrôle. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>UInteger</b> (<b>uint</b> en c#) qui indique la couleur d’arrière-plan du contrôle. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est de type <b>OLE_COLOR</b> , qui est une valeur <b>UInteger</b> (<b>uint</b> en c#). La valeur par défaut de cette propriété est 0 x 80000005, « Fenêtre ».</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est de type <b>OLE_COLOR</b> , qui est une valeur <b>UInteger</b> (<b>uint</b> en c#). La valeur par défaut de cette propriété est 0 x 80000005, « Fenêtre ». </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BackStyle">
@@ -161,12 +147,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlBackStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlBackStyle" /> constante qui modifie le style d’arrière-plan du contrôle entre transparent et opaque. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlBackStyle" /> constante qui modifie le style d’arrière-plan du contrôle entre transparent et opaque. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut est <b>olBackStyleOpaque</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut est <b>olBackStyleOpaque</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Date">
@@ -195,12 +179,10 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit la valeur <b>DateTime</b> actuellement sélectionnée avec l’heure définie à 12:00:00.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit la valeur <b>DateTime</b> actuellement sélectionnée avec l’heure définie à 12:00:00.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Lors de l’obtention de cette propriété, la valeur par défaut est la date actuelle avec l’heure définie à 12:00:00.  Lorsque vous définissez cette propriété, les informations d’heure seront ignorées ; l’heure est fixée à 12:00:00.</para>
-          <para />
-        </remarks>
+        <remarks><para>À l'extraction, cette propriété a pour valeur par défaut la date actuelle, accompagnée de l'heure réglée sur 12:00. Lorsque cette propriété est définie, les informations d'heure sont ignorées ; l'heure est réglée sur 12:00.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DropDown">
@@ -254,12 +236,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si le contrôle est autorisé à fonctionner.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si le contrôle est autorisé à fonctionner.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut est <b>True</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut est <b>True</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnterFieldBehavior">
@@ -288,12 +268,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlEnterFieldBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlEnterFieldBehavior" /> constante qui spécifie le comportement de la sélection lors de la saisie du contrôle. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlEnterFieldBehavior" /> constante qui spécifie le comportement de la sélection lors de la saisie du contrôle. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut est <b>olEnterFieldBehaviorSelectAll</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut est <b>olEnterFieldBehaviorSelectAll</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -353,12 +331,10 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>UInteger</b> (<b>uint</b> en c#) qui indique la couleur de premier plan du contrôle. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>UInteger</b> (<b>uint</b> en c#) qui indique la couleur de premier plan du contrôle. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est de type <b>OLE_COLOR</b> , qui est une valeur <b>UInteger</b> (<b>uint</b> en c#). La valeur par défaut de cette propriété est 0 x 80000008, « Texte de la fenêtre ».</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est de type <b>OLE_COLOR</b> , qui est une valeur <b>UInteger</b> (<b>uint</b> en c#). La valeur par défaut de cette propriété est 0 x 80000008, « Texte de la fenêtre ».  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HideSelection">
@@ -387,12 +363,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui spécifie si une sélection est affichée ou masquée dans le contrôle lorsque le contrôle perd le focus.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui spécifie si une sélection est affichée ou masquée dans le contrôle lorsque le contrôle perd le focus.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut de cette propriété a la <b>valeur True</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut de cette propriété est <b>True</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Locked">
@@ -421,13 +395,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui spécifie si le contrôle est verrouillé contre toute modification.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui spécifie si le contrôle est verrouillé contre toute modification.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut est <b>False</b>.</para>
-          <para>Lorsque le contrôle est verrouillé, le contrôle ne dispose pas d’une apparence « désactivé », mais l’utilisateur ne peut pas modifier le contenu du contrôle.  </para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut est <b>False</b>.</para>
+          <para>Lorsque le contrôle est verrouillé, il n'apparaît pas comme désactivé mais l'utilisateur ne peut pas en modifier le contenu.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseIcon">
@@ -456,12 +428,10 @@
         <ReturnType>stdole.StdPicture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>StdPicture</b> qui représente l’image personnalisée pour le curseur de la souris pour ce contrôle. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>StdPicture</b> qui représente l’image personnalisée pour le curseur de la souris pour ce contrôle. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut est <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#).</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut est <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MousePointer">
@@ -490,12 +460,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlMousePointer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> constante qui spécifie le type de pointeur affiché lorsque l’utilisateur place la souris sur le contrôle.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> constante qui spécifie le type de pointeur affiché lorsque l’utilisateur place la souris sur le contrôle.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut est <b>olMousePointerDefault</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut est <b>olMousePointerDefault</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowNoneButton">
@@ -524,12 +492,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui spécifie si pour afficher le bouton sans dans le contrôle de date.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui spécifie si pour afficher le bouton sans dans le contrôle de date.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut est <b>True</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut est <b>True</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -558,13 +524,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui correspond au texte affiché dans le contrôle. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui correspond au texte affiché dans le contrôle. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut de la propriété <b>Text</b> est une chaîne vide.</para>
+        <remarks><para>La valeur par défaut de la propriété <b>Text</b> est une chaîne vide.</para>
           <para>La propriété <b>Text</b> fournit la même valeur que la <see cref="P:Microsoft.Office.Interop.Outlook._OlkDateControl.Value" /> propriété, mais la valeur est fortement typée en tant que <b>chaîne</b> (<b>string</b> en c#).</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextAlign">
@@ -593,12 +557,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlTextAlign</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlTextAlign" /> constante qui spécifie l’alignement du texte dans le contrôle.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlTextAlign" /> constante qui spécifie l’alignement du texte dans le contrôle.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut est <b>olTextAlignLeft</b> dans les langues de droite à gauche comme anglais.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut est <b>olTextAlignLeft</b> dans les langues qui s'écrivent de gauche à droite comme le français.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -627,12 +589,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>objet</b> qui représente le contenu du contrôle. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>objet</b> qui représente le contenu du contrôle. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur est identique à la valeur de <see cref="P:Microsoft.Office.Interop.Outlook._OlkDateControl.Text" />, sauf que cette propriété est <b>l’objet</b> et de <b>Text</b> est fortement typée en tant que <b>chaîne</b> (<b>string</b> en c#).</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur est identique à la valeur de <see cref="P:Microsoft.Office.Interop.Outlook._OlkDateControl.Text" />, sauf que cette propriété est <b>l’objet</b> et de <b>Text</b> est fortement typée en tant que <b>chaîne</b> (<b>string</b> en c#).  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

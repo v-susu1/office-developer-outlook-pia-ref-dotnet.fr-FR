@@ -1,13 +1,5 @@
 <Type Name="SyncObject" FullName="Microsoft.Office.Interop.Outlook.SyncObject">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c7b5b6d9c05205c5c73153590c2ceeaf12468c51" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634232" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SyncObject : Microsoft.Office.Interop.Outlook._SyncObject, Microsoft.Office.Interop.Outlook.SyncObjectEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="425a97ec5a4f82fd4a0230509fcb5effa105a5fa" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901836" /></Metadata><TypeSignature Language="C#" Value="public interface SyncObject : Microsoft.Office.Interop.Outlook._SyncObject, Microsoft.Office.Interop.Outlook.SyncObjectEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SyncObject implements class Microsoft.Office.Interop.Outlook._SyncObject, class Microsoft.Office.Interop.Outlook.SyncObjectEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.SyncObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface SyncObject&#xA;Implements _SyncObject, SyncObjectEvents_Event" />
@@ -34,11 +26,11 @@
   </Attributes>
   <Docs>
     <summary>Représente le groupe d’envoi/réception d’un utilisateur.</summary>
-    <remarks>
-      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._SyncObject" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.SyncObjectEvents_Event" />.</para>
-      <para>Groupe d’envoi/réception A permet aux utilisateurs de configurer différents scénarios de synchronisation, sélectionnez les dossiers et les filtres à appliquer.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook.SyncObjects.Item(System.Object)" /> propriété (<b>cette</b> en c#) pour récupérer l’objet <b>SyncObject</b> à partir d’un <see cref="T:Microsoft.Office.Interop.Outlook.SyncObjects" /> objet. Étant donné que la <see cref="P:Microsoft.Office.Interop.Outlook._SyncObject.Name" /> propriété est la propriété par défaut de l’objet <b>SyncObject</b> , vous pouvez identifier le groupe par son nom.</para> Objet 
-      <para>l' <b>objet SyncObject</b> est en lecture seule ; vous ne pouvez pas modifier ses propriétés ou créer de nouveaux. Toutefois, notez que vous pouvez ajouter un groupe d’envoi/réception à l’aide du <see cref="P:Microsoft.Office.Interop.Outlook.SyncObjects.AppFolders" /> propriété qui crée un groupe d’envoi/réception appelé dossiers d’applications.</para><para /></remarks>
+    <remarks><para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._SyncObject" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.SyncObjectEvents_Event" />.</para>
+      <para>Un groupe d'envoi/réception permet aux utilisateurs de configurer différents scénarios de synchronisation, en sélectionnant les dossiers et les filtres à appliquer.</para>
+      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook.SyncObjects.Item(System.Object)" /> propriété (<b>cette</b> en c#) pour récupérer l’objet <b>SyncObject</b> à partir d’un <see cref="T:Microsoft.Office.Interop.Outlook.SyncObjects" /> objet. Étant donné que la <see cref="P:Microsoft.Office.Interop.Outlook._SyncObject.Name" /> propriété est la propriété par défaut de l’objet <b>SyncObject</b> , vous pouvez identifier le groupe par son nom.</para>
+      <para>L’objet <b>SyncObject</b> est en lecture seule ; Vous ne pouvez pas modifier ses propriétés ou créer de nouveaux. Toutefois, notez que vous pouvez ajouter un groupe d’envoi/réception à l’aide du <see cref="P:Microsoft.Office.Interop.Outlook.SyncObjects.AppFolders" /> propriété qui crée un groupe d’envoi/réception appelé dossiers d’applications.</para>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>
