@@ -1,13 +1,5 @@
 <Type Name="_RuleConditions" FullName="Microsoft.Office.Interop.Outlook._RuleConditions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ee9e9cd5e60909dd8c8b2a0698b75286f18e83ac" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634669" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _RuleConditions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ee9e9cd5e60909dd8c8b2a0698b75286f18e83ac" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27905462" /></Metadata><TypeSignature Language="C#" Value="public interface _RuleConditions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _RuleConditions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._RuleConditions" />
   <TypeSignature Language="VB.NET" Value="Public Interface _RuleConditions&#xA;Implements IEnumerable" />
@@ -30,24 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="0dd14-101">Il s’agit d’une interface principale dans une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="0dd14-101">This is a primary interface in a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span>
-      </span>
-      <span data-ttu-id="0dd14-102">Utilisez cette interface principale uniquement lorsque la méthode que vous souhaitez utiliser partageant le même nom qu’un événement de l’objet COM ; Dans ce cas, effectuez un cast à cette interface pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="0dd14-102">Use this primary interface only when the method you want to use shares the same name as an event of the COM object; in this case, cast to this interface to call the method, and cast to the latest events interface to connect to the event.</span>
-      </span>
-      <span data-ttu-id="0dd14-103">Sinon, utilisez l’interface .NET est dérivé de la coclasse COM pour accéder aux méthodes, propriétés et événements de l’objet COM.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="0dd14-103">Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span>
-      </span>
-      <span data-ttu-id="0dd14-104">Pour plus d’informations sur l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" />.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="0dd14-104">For information about the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" />.</span>
-      </span>
-    </summary>
+    <summary><span data-ttu-id="fed7f-101">Il s’agit d’une interface principale dans une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant.</span><span class="sxs-lookup"><span data-stu-id="fed7f-101">This is a primary interface in a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span></span> <span data-ttu-id="fed7f-102">Utilisez cette interface principale uniquement lorsque la méthode que vous souhaitez utiliser partageant le même nom qu’un événement de l’objet COM ; Dans ce cas, effectuez un cast à cette interface pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement.</span><span class="sxs-lookup"><span data-stu-id="fed7f-102">Use this primary interface only when the method you want to use shares the same name as an event of the COM object; in this case, cast to this interface to call the method, and cast to the latest events interface to connect to the event.</span></span> <span data-ttu-id="fed7f-103">Sinon, utilisez l’interface .NET est dérivé de la coclasse COM pour accéder aux méthodes, propriétés et événements de l’objet COM.</span><span class="sxs-lookup"><span data-stu-id="fed7f-103">Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span></span> <span data-ttu-id="fed7f-104">Pour plus d’informations sur l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" />.</span><span class="sxs-lookup"><span data-stu-id="fed7f-104">For information about the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" />.</span></span></summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -74,31 +49,11 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.AccountRuleCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dd14-105">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.AccountRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._AccountRuleCondition.ConditionType" /><b>à olConditionAccount</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-105">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.AccountRuleCondition" /> object with an  <see cref="P:Microsoft.Office.Interop.Outlook._AccountRuleCondition.ConditionType" /> of <b>olConditionAccount</b>.</span>
-          </span>
-          <span data-ttu-id="0dd14-106">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-106">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fed7f-105">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.AccountRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._AccountRuleCondition.ConditionType" /> <b>à olConditionAccount</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-105">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.AccountRuleCondition" /> object with an  <see cref="P:Microsoft.Office.Interop.Outlook._AccountRuleCondition.ConditionType" /> of <b>olConditionAccount</b>.</span></span> <span data-ttu-id="fed7f-106">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fed7f-106">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dd14-107">
-            <para>Utilisez l’objet <b>AccountRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant qu’un message est envoyé ou reçu par le biais de la compte spécifié. </para>
-            <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection retourne toujours un objet <b>AccountRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._AccountRuleCondition.Enabled" /><b>a la valeur True</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-107">
-              <para>Use the returned  <b>AccountRuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that a message is sent or received through the specified account. </para>
-              <para>This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection always returns an <b>AccountRuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition. If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._AccountRuleCondition.Enabled" /> will be <b>True</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="fed7f-p103">Utilisez l’objet <b>AccountRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante, ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant qu’un message est envoyé ou reçu par le compte mentionné.</span><span class="sxs-lookup"><span data-stu-id="fed7f-p103">Use the returned  <b>AccountRuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that a message is sent or received through the specified account. </span></span></para>
+          <para><span data-ttu-id="fed7f-108">Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection retourne toujours un objet <b>AccountRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle.</span><span class="sxs-lookup"><span data-stu-id="fed7f-108">This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection always returns an <b>AccountRuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition.</span></span> <span data-ttu-id="fed7f-109">Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._AccountRuleCondition.Enabled" /> <b>a la valeur True</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-109">If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._AccountRuleCondition.Enabled" /> will be <b>True</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AnyCategory">
@@ -124,31 +79,13 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.RuleCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dd14-108">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> de <b>olConditionAnyCategory</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-108">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> of  <b>olConditionAnyCategory</b>.</span>
-          </span>
-          <span data-ttu-id="0dd14-109">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-109">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fed7f-110">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> de <b>olConditionAnyCategory</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-110">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> of  <b>olConditionAnyCategory</b>.</span></span> <span data-ttu-id="fed7f-111">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fed7f-111">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dd14-110">
-            <para>Utilisez l’objet <b>RuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que le message est affecté à n’importe quelle catégorie.  </para>
-            <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> , que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /><b>a la valeur True</b>.  </para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-110">
-              <para>Use the returned <b>RuleCondition</b> object when enumerating the rule conditions or exception conditions of an existing rule, or when creating a rule that specifies the condition or exception condition that the message is assigned to any category.  </para>
-              <para>This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection always returns a <b>RuleCondition</b> object, regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition. If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> will be <b>True</b>.  </para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="fed7f-p106">Utilisez l'objet <b>RuleCondition</b> renvoyé lors de l'énumération des conditions de règle, des conditions d'exception d'une règle existante ou lors de la création d'une règle qui spécifie, comme condition ou condition d'exception, que le message est affecté à n'importe quelle catégorie.
+
+</span><span class="sxs-lookup"><span data-stu-id="fed7f-p106">Use the returned <b>RuleCondition</b> object when enumerating the rule conditions or exception conditions of an existing rule, or when creating a rule that specifies the condition or exception condition that the message is assigned to any category.  </span></span></para>
+          <para><span data-ttu-id="fed7f-113">Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> , que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle.</span><span class="sxs-lookup"><span data-stu-id="fed7f-113">This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection always returns a <b>RuleCondition</b> object, regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition.</span></span> <span data-ttu-id="fed7f-114">Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> <b>a la valeur True</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-114">If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> will be <b>True</b>.</span></span>  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -174,16 +111,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dd14-111">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> object qui représente l’application Outlook de l’objet parent.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-111">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object that represents the parent Outlook application for the  object.</span>
-          </span>
-          <span data-ttu-id="0dd14-112">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-112">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fed7f-115">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> object qui représente l’application Outlook de l’objet parent.</span><span class="sxs-lookup"><span data-stu-id="fed7f-115">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object that represents the parent Outlook application for the  object.</span></span> <span data-ttu-id="fed7f-116">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fed7f-116">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -211,31 +139,11 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.TextRuleCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dd14-113">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.TextRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.ConditionType" /><b>olConditionBody</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-113">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.TextRuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.ConditionType" /> of <b>olConditionBody</b>.</span>
-          </span>
-          <span data-ttu-id="0dd14-114">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-114">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fed7f-117">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.TextRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.ConditionType" /> <b>olConditionBody</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-117">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.TextRuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.ConditionType" /> of <b>olConditionBody</b>.</span></span> <span data-ttu-id="fed7f-118">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fed7f-118">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dd14-115">
-            <para>Utilisez l’objet <b>TextRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception texte déterminé figure dans le corps du message. </para>
-            <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection retourne toujours un objet <b>TextRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Enabled" /><b>a la valeur True</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-115">
-              <para>Use the returned  <b>TextRuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that certain text is in the message body. </para>
-              <para>This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection always returns a <b>TextRuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition. If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Enabled" /> will be <b>True</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="fed7f-p110">Utilisez l’objet <b>TextRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante, ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant qu’un texte déterminé figure dans le corps du message.</span><span class="sxs-lookup"><span data-stu-id="fed7f-p110">Use the returned  <b>TextRuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that certain text is in the message body. </span></span></para>
+          <para><span data-ttu-id="fed7f-120">Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection retourne toujours un objet <b>TextRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle.</span><span class="sxs-lookup"><span data-stu-id="fed7f-120">This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection always returns a <b>TextRuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition.</span></span> <span data-ttu-id="fed7f-121">Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Enabled" /> <b>a la valeur True</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-121">If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Enabled" /> will be <b>True</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BodyOrSubject">
@@ -261,31 +169,11 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.TextRuleCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dd14-116">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.TextRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.ConditionType" /><b>olConditionBodyOrSubject</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-116">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.TextRuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.ConditionType" /> of <b>olConditionBodyOrSubject</b>.</span>
-          </span>
-          <span data-ttu-id="0dd14-117">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-117">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fed7f-122">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.TextRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.ConditionType" /> <b>olConditionBodyOrSubject</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-122">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.TextRuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.ConditionType" /> of <b>olConditionBodyOrSubject</b>.</span></span> <span data-ttu-id="fed7f-123">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fed7f-123">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dd14-118">
-            <para>Utilisez l’objet <b>TextRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception texte déterminé figure dans le corps du message ou d’un objet . </para>
-            <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection retourne toujours un objet <b>TextRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Enabled" /><b>a la valeur True</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-118">
-              <para>Use the returned  <b>TextRuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that certain text is in the message body or subject. </para>
-              <para>This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection always returns a <b>TextRuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition. If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Enabled" /> will be <b>True</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="fed7f-p113">Utilisez l’objet <b>TextRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante, ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant qu’un texte déterminé figure dans le corps du message ou en objet.</span><span class="sxs-lookup"><span data-stu-id="fed7f-p113">Use the returned  <b>TextRuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that certain text is in the message body or subject. </span></span></para>
+          <para><span data-ttu-id="fed7f-125">Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection retourne toujours un objet <b>TextRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle.</span><span class="sxs-lookup"><span data-stu-id="fed7f-125">This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection always returns a <b>TextRuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition.</span></span> <span data-ttu-id="fed7f-126">Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Enabled" /> <b>a la valeur True</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-126">If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Enabled" /> will be <b>True</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Category">
@@ -311,31 +199,11 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.CategoryRuleCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dd14-119">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.CategoryRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._CategoryRuleCondition.ConditionType" /> de <b>olConditionCategory</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-119">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.CategoryRuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._CategoryRuleCondition.ConditionType" /> of <b>olConditionCategory</b>.</span>
-          </span>
-          <span data-ttu-id="0dd14-120">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-120">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fed7f-127">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.CategoryRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._CategoryRuleCondition.ConditionType" /> de <b>olConditionCategory</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-127">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.CategoryRuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._CategoryRuleCondition.ConditionType" /> of <b>olConditionCategory</b>.</span></span> <span data-ttu-id="fed7f-128">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fed7f-128">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dd14-121">
-            <para>Utilisez l’objet <b>CategoryRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception qui sont affectées au message spécifique catégories. </para>
-            <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection retourne toujours un objet <b>CategoryRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._CategoryRuleCondition.Enabled" /><b>a la valeur True</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-121">
-              <para>Use the returned  <b>CategoryRuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that the message is assigned specific categories. </para>
-              <para>This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection always returns a <b>CategoryRuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition. If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._CategoryRuleCondition.Enabled" /> will be <b>True</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="fed7f-p116">Utilisez l’objet <b>CategoryRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante, ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que des catégories spécifiques sont affectées au message.</span><span class="sxs-lookup"><span data-stu-id="fed7f-p116">Use the returned  <b>CategoryRuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that the message is assigned specific categories. </span></span></para>
+          <para><span data-ttu-id="fed7f-130">Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection retourne toujours un objet <b>CategoryRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle.</span><span class="sxs-lookup"><span data-stu-id="fed7f-130">This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection always returns a <b>CategoryRuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition.</span></span> <span data-ttu-id="fed7f-131">Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._CategoryRuleCondition.Enabled" /> <b>a la valeur True</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-131">If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._CategoryRuleCondition.Enabled" /> will be <b>True</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CC">
@@ -361,31 +229,11 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.RuleCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dd14-122">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> de <b>à olConditionCc</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-122">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> of <b>olConditionCc</b>.</span>
-          </span>
-          <span data-ttu-id="0dd14-123">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-123">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fed7f-132">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> de <b>à olConditionCc</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-132">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> of <b>olConditionCc</b>.</span></span> <span data-ttu-id="fed7f-133">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fed7f-133">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dd14-124">
-            <para>Utilisez l’objet <b>RuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que votre nom figure dans la zone Cc.</para>
-            <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /><b>a la valeur True</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-124">
-              <para>Use the returned  <b>RuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that your name is in the Cc box.</para>
-              <para>This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection always returns a <b>RuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition. If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> will be <b>True</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="fed7f-134">Utilisez l'objet <b>RuleCondition</b> renvoyé lors de l'énumération des conditions de règle ou des conditions d'exception d'une règle existante, ou lors de la création d'une règle qui spécifie la condition ou la condition d'exception indiquant que votre nom figure dans le champ Cc.</span><span class="sxs-lookup"><span data-stu-id="fed7f-134">Use the returned  <b>RuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that your name is in the Cc box.</span></span></para>
+          <para><span data-ttu-id="fed7f-135">Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle.</span><span class="sxs-lookup"><span data-stu-id="fed7f-135">This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection always returns a <b>RuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition.</span></span> <span data-ttu-id="fed7f-136">Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> <b>a la valeur True</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-136">If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> will be <b>True</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Class">
@@ -411,16 +259,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dd14-125">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constante indiquant la classe de l’objet.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-125">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constant indicating the object's class.</span>
-          </span>
-          <span data-ttu-id="0dd14-126">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-126">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fed7f-137">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constante indiquant la classe de l’objet.</span><span class="sxs-lookup"><span data-stu-id="fed7f-137">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constant indicating the object's class.</span></span> <span data-ttu-id="fed7f-138">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fed7f-138">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -448,29 +287,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dd14-127">Renvoie une valeur d' <b>entier</b> (<b>int</b> en c#) indiquant le nombre d’objets dans la collection spécifiée.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-127">Returns an <b>Integer</b> (<b>int</b> in C#) value indicating the count of objects in the specified collection.</span>
-          </span>
-          <span data-ttu-id="0dd14-128">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-128">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fed7f-139">Renvoie une valeur d' <b>entier</b> (<b>int</b> en c#) indiquant le nombre d’objets dans la collection spécifiée.</span><span class="sxs-lookup"><span data-stu-id="fed7f-139">Returns an <b>Integer</b> (<b>int</b> in C#) value indicating the count of objects in the specified collection.</span></span> <span data-ttu-id="fed7f-140">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fed7f-140">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dd14-129">
-            <para>Vous pouvez énumérer la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection comprise entre 1 et <b>RuleConditions.Count</b> pour déterminer les conditions de règle pour une règle existante. Bien que le modèle objet règles prend en charge la création de règles uniquement les plus couramment utilisés pas toutes les conditions de règle prises en charge par l’Assistant règles et alertes et les conditions de règle, la collection <b>RuleActions</b> inclut toutes les conditions de règle d’une règle. Par conséquent, vous pouvez toujours énumérer l’objet de la collection <b>RuleConditions</b> pour déterminer les conditions de règle qui sont activées pour une règle existante.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-129">
-              <para>You can enumerate the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection from 1 through <b>RuleConditions.Count</b> to determine all the rule conditions for an existing rule. Although the Rules OM supports creating rules with only the most commonly used rule conditions and not all rule conditions supported by the Rules and Alerts Wizard, the <b>RuleConditions</b> collection includes all rule conditions of a rule. Hence you can always enumerate the <b>RuleConditions</b> collection object to determine which rule conditions are enabled for an existing rule.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="fed7f-141">Vous pouvez énumérer la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection comprise entre 1 et <b>RuleConditions.Count</b> pour déterminer les conditions de règle pour une règle existante.</span><span class="sxs-lookup"><span data-stu-id="fed7f-141">You can enumerate the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection from 1 through <b>RuleConditions.Count</b> to determine all the rule conditions for an existing rule.</span></span> <span data-ttu-id="fed7f-142">Bien que le modèle objet règles prend en charge la création de règles uniquement les plus couramment utilisés pas toutes les conditions de règle prises en charge par l’Assistant règles et alertes et les conditions de règle, la collection <b>RuleActions</b> inclut toutes les conditions de règle d’une règle.</span><span class="sxs-lookup"><span data-stu-id="fed7f-142">Although the Rules OM supports creating rules with only the most commonly used rule conditions and not all rule conditions supported by the Rules and Alerts Wizard, the <b>RuleConditions</b> collection includes all rule conditions of a rule.</span></span> <span data-ttu-id="fed7f-143">Par conséquent, vous pouvez toujours énumérer l’objet de la collection <b>RuleConditions</b> pour déterminer les conditions de règle qui sont activées pour une règle existante.</span><span class="sxs-lookup"><span data-stu-id="fed7f-143">Hence you can always enumerate the <b>RuleConditions</b> collection object to determine which rule conditions are enabled for an existing rule.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FormName">
@@ -496,31 +316,11 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.FormNameRuleCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dd14-130">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.FormNameRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._FormNameRuleCondition.ConditionType" /> de <b>olConditionFormName</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-130">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.FormNameRuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._FormNameRuleCondition.ConditionType" /> of <b>olConditionFormName</b>.</span>
-          </span>
-          <span data-ttu-id="0dd14-131">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-131">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fed7f-144">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.FormNameRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._FormNameRuleCondition.ConditionType" /> de <b>olConditionFormName</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-144">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.FormNameRuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._FormNameRuleCondition.ConditionType" /> of <b>olConditionFormName</b>.</span></span> <span data-ttu-id="fed7f-145">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fed7f-145">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dd14-132">
-            <para>Utilisez l’objet <b>FormNameRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que le message utilise un formulaire spécifié.</para>
-            <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>FormNameRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._FormNameRuleCondition.Enabled" /><b>a la valeur True</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-132">
-              <para>Use the returned  <b>FormNameRuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that the message uses a specified form.</para>
-              <para>This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection always returns a <b>FormNameRuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition. If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._FormNameRuleCondition.Enabled" /> will be <b>True</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="fed7f-146">Utilisez l'objet <b>FormNameRuleCondition</b> renvoyé lors de l'énumération des conditions de règle ou des conditions d'exception d'une règle existante, ou lors de la création d'une règle qui spécifie la condition ou la condition d'exception indiquant que le message utilise un format indiqué.</span><span class="sxs-lookup"><span data-stu-id="fed7f-146">Use the returned  <b>FormNameRuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that the message uses a specified form.</span></span></para>
+          <para><span data-ttu-id="fed7f-147">Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>FormNameRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle.</span><span class="sxs-lookup"><span data-stu-id="fed7f-147">This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection always returns a <b>FormNameRuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition.</span></span> <span data-ttu-id="fed7f-148">Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._FormNameRuleCondition.Enabled" /> <b>a la valeur True</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-148">If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._FormNameRuleCondition.Enabled" /> will be <b>True</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="From">
@@ -546,31 +346,11 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ToOrFromRuleCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dd14-133">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.ToOrFromRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition.ConditionType" /><b>olConditionFrom</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-133">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.ToOrFromRuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition.ConditionType" /> of <b>olConditionFrom</b>.</span>
-          </span>
-          <span data-ttu-id="0dd14-134">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-134">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fed7f-149">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.ToOrFromRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition.ConditionType" /> <b>olConditionFrom</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-149">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.ToOrFromRuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition.ConditionType" /> of <b>olConditionFrom</b>.</span></span> <span data-ttu-id="fed7f-150">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fed7f-150">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dd14-135">
-            <para>Utilisez l’objet <b>ToOrFromRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que l’expéditeur du message dans la  liste de <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" />.</para>
-            <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>ToOrFromRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition.Enabled" /><b>a la valeur True</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-135">
-              <para>Use the returned  <b>ToOrFromRuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that the sender of the message is in the  specified list of <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" />.</para>
-              <para>This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection always returns a <b>ToOrFromRuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition. If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition.Enabled" /> will be <b>True</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="fed7f-151">Utilisez l’objet <b>ToOrFromRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que l’expéditeur du message dans la  liste de <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" />.</span><span class="sxs-lookup"><span data-stu-id="fed7f-151">Use the returned  <b>ToOrFromRuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that the sender of the message is in the  specified list of <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" />.</span></span></para>
+          <para><span data-ttu-id="fed7f-152">Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>ToOrFromRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle.</span><span class="sxs-lookup"><span data-stu-id="fed7f-152">This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection always returns a <b>ToOrFromRuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition.</span></span> <span data-ttu-id="fed7f-153">Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition.Enabled" /> <b>a la valeur True</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-153">If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition.Enabled" /> will be <b>True</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FromAnyRSSFeed">
@@ -596,31 +376,11 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.RuleCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dd14-136">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> de <b>olConditionFromAnyRssFeed</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-136">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> of <b>olConditionFromAnyRssFeed</b>.</span>
-          </span>
-          <span data-ttu-id="0dd14-137">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-137">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fed7f-154">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> de <b>olConditionFromAnyRssFeed</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-154">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> of <b>olConditionFromAnyRssFeed</b>.</span></span> <span data-ttu-id="fed7f-155">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fed7f-155">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dd14-138">
-            <para>Utilisez l’objet <b>RuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que le message provient d’un abonnement RSS.</para>
-            <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> , que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /><b>a la valeur True</b>.  </para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-138">
-              <para>Use the returned <b>RuleCondition</b> object when enumerating the rule conditions or exception conditions of an existing rule, or when creating a rule that specifies the condition or exception condition that the message is from an RSS subscription.</para>
-              <para>This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection always returns a <b>RuleCondition</b> object, regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition. If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> will be <b>True</b>.  </para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="fed7f-156">Utilisez l'objet <b>RuleCondition</b> renvoyé lors de l'énumération des conditions de règle, des conditions d'exception d'une règle existante ou lors de la création d'une règle qui spécifie, comme condition ou condition d'exception, que le message émane d'un abonnement RSS.</span><span class="sxs-lookup"><span data-stu-id="fed7f-156">Use the returned <b>RuleCondition</b> object when enumerating the rule conditions or exception conditions of an existing rule, or when creating a rule that specifies the condition or exception condition that the message is from an RSS subscription.</span></span></para>
+          <para><span data-ttu-id="fed7f-157">Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> , que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle.</span><span class="sxs-lookup"><span data-stu-id="fed7f-157">This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection always returns a <b>RuleCondition</b> object, regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition.</span></span> <span data-ttu-id="fed7f-158">Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> <b>a la valeur True</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-158">If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> will be <b>True</b>.</span></span>  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FromRssFeed">
@@ -646,31 +406,11 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.FromRssFeedRuleCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dd14-139">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.FromRssFeedRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._FromRssFeedRuleCondition.ConditionType" /> de <b>olConditionFromRssFeed</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-139">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.FromRssFeedRuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._FromRssFeedRuleCondition.ConditionType" /> of  <b>olConditionFromRssFeed</b>.</span>
-          </span>
-          <span data-ttu-id="0dd14-140">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-140">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fed7f-159">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.FromRssFeedRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._FromRssFeedRuleCondition.ConditionType" /> de <b>olConditionFromRssFeed</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-159">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.FromRssFeedRuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._FromRssFeedRuleCondition.ConditionType" /> of  <b>olConditionFromRssFeed</b>.</span></span> <span data-ttu-id="fed7f-160">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fed7f-160">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dd14-141">
-            <para>Utilisez l’objet <b>FromRSSFeedRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que le message provient d’un flux RSS spécifique abonnement.</para>
-            <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>FromRSSFeedRuleCondition</b> , que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._FromRssFeedRuleCondition.Enabled" /><b>a la valeur True</b>.  </para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-141">
-              <para>Use the returned <b>FromRSSFeedRuleCondition</b> object when enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that the message is from a specific RSS subscription.</para>
-              <para>This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection always returns a <b>FromRSSFeedRuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition. If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._FromRssFeedRuleCondition.Enabled" /> will be <b>True</b>.  </para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="fed7f-161">Utilisez l’objet <b>FromRSSFeedRuleCondition</b> renvoyé lors de l’énumération des conditions de règle, des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie, comme condition ou condition d’exception, que le message émane d’un abonnement RSS spécifique.</span><span class="sxs-lookup"><span data-stu-id="fed7f-161">Use the returned <b>FromRSSFeedRuleCondition</b> object when enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that the message is from a specific RSS subscription.</span></span></para>
+          <para><span data-ttu-id="fed7f-162">Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>FromRSSFeedRuleCondition</b> , que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle.</span><span class="sxs-lookup"><span data-stu-id="fed7f-162">This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection always returns a <b>FromRSSFeedRuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition.</span></span> <span data-ttu-id="fed7f-163">Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._FromRssFeedRuleCondition.Enabled" /> <b>a la valeur True</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-163">If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._FromRssFeedRuleCondition.Enabled" /> will be <b>True</b>.</span></span>  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasAttachment">
@@ -696,31 +436,11 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.RuleCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dd14-142">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> de <b>à olConditionHasAttachment</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-142">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> of <b>olConditionHasAttachment</b>.</span>
-          </span>
-          <span data-ttu-id="0dd14-143">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-143">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fed7f-164">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> de <b>à olConditionHasAttachment</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-164">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> of <b>olConditionHasAttachment</b>.</span></span> <span data-ttu-id="fed7f-165">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fed7f-165">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dd14-144">
-            <para>Utilisez l’objet <b>RuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que le message comporte une pièce jointe.</para>
-            <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /><b>a la valeur True</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-144">
-              <para>Use the returned  <b>RuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that the message has an attachment.</para>
-              <para>This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection always returns a <b>RuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition. If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> will be <b>True</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="fed7f-166">Utilisez l'objet <b>RuleCondition</b> renvoyé lors de l'énumération des conditions de règle ou des conditions d'exception d'une règle existante, ou lors de la création d'une règle qui spécifie la condition ou la condition d'exception indiquant que le message comporte une pièce jointe.</span><span class="sxs-lookup"><span data-stu-id="fed7f-166">Use the returned  <b>RuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that the message has an attachment.</span></span></para>
+          <para><span data-ttu-id="fed7f-167">Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle.</span><span class="sxs-lookup"><span data-stu-id="fed7f-167">This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection always returns a <b>RuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition.</span></span> <span data-ttu-id="fed7f-168">Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> <b>a la valeur True</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-168">If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> will be <b>True</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Importance">
@@ -746,31 +466,11 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ImportanceRuleCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dd14-145">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.ImportanceRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._ImportanceRuleCondition.ConditionType" /><b>olConditionImportance</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-145">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.ImportanceRuleCondition" /> object with an <see cref="P:Microsoft.Office.Interop.Outlook._ImportanceRuleCondition.ConditionType" /> of <b>olConditionImportance</b>.</span>
-          </span>
-          <span data-ttu-id="0dd14-146">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-146">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fed7f-169">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.ImportanceRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._ImportanceRuleCondition.ConditionType" /> <b>olConditionImportance</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-169">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.ImportanceRuleCondition" /> object with an <see cref="P:Microsoft.Office.Interop.Outlook._ImportanceRuleCondition.ConditionType" /> of <b>olConditionImportance</b>.</span></span> <span data-ttu-id="fed7f-170">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fed7f-170">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dd14-147">
-            <para>Utilisez l’objet <b>ImportanceRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que le message est du niveau spécifié d’importance.</para>
-            <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>ImportanceRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._ImportanceRuleCondition.Enabled" /><b>a la valeur True</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-147">
-              <para>Use the returned  <b>ImportanceRuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that the message is of the specified level of importance.</para>
-              <para>This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection always returns an <b>ImportanceRuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition. If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._ImportanceRuleCondition.Enabled" /> will be <b>True</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="fed7f-171">Utilisez l'objet <b>ImportanceRuleCondition</b> renvoyé lors de l'énumération des conditions de règle ou des conditions d'exception d'une règle existante, ou lors de la création d'une règle qui spécifie la condition ou la condition d'exception indiquant que le message est du niveau d'importance mentionnée.</span><span class="sxs-lookup"><span data-stu-id="fed7f-171">Use the returned  <b>ImportanceRuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that the message is of the specified level of importance.</span></span></para>
+          <para><span data-ttu-id="fed7f-172">Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>ImportanceRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle.</span><span class="sxs-lookup"><span data-stu-id="fed7f-172">This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection always returns an <b>ImportanceRuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition.</span></span> <span data-ttu-id="fed7f-173">Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._ImportanceRuleCondition.Enabled" /> <b>a la valeur True</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-173">If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._ImportanceRuleCondition.Enabled" /> will be <b>True</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -799,36 +499,11 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="0dd14-p117">Une valeur numérique basée sur 1 qui reflète la position ordinale d'une condition de règle dans la collection <b>RuleConditions</b>. La valeur d'index de la première condition de règle dans la collection, par exemple, est 1 et la valeur d'index de la seconde condition de règle est 2.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-p117">A 1-based numerical value that reflects the ordinal position of a rule condition within  the <b>RuleConditions</b> collection. For example, the index value of the first rule condition in the collection is 1, and the index value of the second rule condition is 2.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="0dd14-150">Obtient un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet spécifié par <paramref name="Index" /> qui est un index numérique dans la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-150">Obtains a <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> object specified by <paramref name="Index" /> which is a numerical index into the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="0dd14-151">Objet <b>RuleCondition</b> qui représente l’objet spécifié.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-151">A <b>RuleCondition</b> object that represents the specified object.</span>
-          </span>
-        </value>
-        <remarks>
-          <span data-ttu-id="0dd14-152">
-            <para>L’objet de la collection <b>RuleConditions</b> est une collection fixe. Il contient des objets <b>RuleCondition</b> ou des objets dérivés de <b>RuleCondition</b>. Vous ne pouvez pas ajouter ou supprimer des éléments de cette collection, mais vous pouvez indexer dans la collection pour énumérer les éléments de condition de règle et définir le <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> propriété de la condition de règle. Lorsque vous utilisez <b>l’élément</b> pour énumérer la collection, vous pouvez énumérer <paramref name="Index" /> de 1 à <see cref="P:Microsoft.Office.Interop.Outlook._RuleConditions.Count" />.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-152">
-              <para>The <b>RuleConditions</b> collection object is a fixed collection. It contains <b>RuleCondition</b> objects or objects derived from <b>RuleCondition</b>. You cannot add or remove items from this collection, but you can index into the collection to enumerate the rule condition  items, and set the <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> property of the rule condition. When using <b>Item</b> to enumerate the collection, you can enumerate <paramref name="Index" /> from 1 to <see cref="P:Microsoft.Office.Interop.Outlook._RuleConditions.Count" />.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <param name="Index"><span data-ttu-id="fed7f-p135">Une valeur numérique basée sur 1 qui reflète la position ordinale d'une condition de règle dans la collection <b>RuleConditions</b>. La valeur d'index de la première condition de règle dans la collection, par exemple, est 1 et la valeur d'index de la seconde condition de règle est 2.</span><span class="sxs-lookup"><span data-stu-id="fed7f-p135">A 1-based numerical value that reflects the ordinal position of a rule condition within  the <b>RuleConditions</b> collection. For example, the index value of the first rule condition in the collection is 1, and the index value of the second rule condition is 2.</span></span></param>
+        <summary><span data-ttu-id="fed7f-176">Obtient un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet spécifié par <paramref name="Index" /> qui est un index numérique dans la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection.</span><span class="sxs-lookup"><span data-stu-id="fed7f-176">Obtains a <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> object specified by <paramref name="Index" /> which is a numerical index into the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection.</span></span></summary>
+        <value><span data-ttu-id="fed7f-177">Objet <b>RuleCondition</b> qui représente l’objet spécifié.</span><span class="sxs-lookup"><span data-stu-id="fed7f-177">A <b>RuleCondition</b> object that represents the specified object.</span></span></value>
+        <remarks><para><span data-ttu-id="fed7f-178">L’objet de la collection <b>RuleConditions</b> est une collection fixe.</span><span class="sxs-lookup"><span data-stu-id="fed7f-178">The <b>RuleConditions</b> collection object is a fixed collection.</span></span> <span data-ttu-id="fed7f-179">Il contient des objets <b>RuleCondition</b> ou des objets dérivés de <b>RuleCondition</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-179">It contains <b>RuleCondition</b> objects or objects derived from <b>RuleCondition</b>.</span></span> <span data-ttu-id="fed7f-180">Vous ne pouvez pas ajouter ou supprimer des éléments de cette collection, mais vous pouvez indexer dans la collection pour énumérer les éléments de condition de règle et définir le <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> propriété de la condition de règle.</span><span class="sxs-lookup"><span data-stu-id="fed7f-180">You cannot add or remove items from this collection, but you can index into the collection to enumerate the rule condition  items, and set the <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> property of the rule condition.</span></span> <span data-ttu-id="fed7f-181">Lorsque vous utilisez <b>l’élément</b> pour énumérer la collection, vous pouvez énumérer <paramref name="Index" /> de 1 à <see cref="P:Microsoft.Office.Interop.Outlook._RuleConditions.Count" />.</span><span class="sxs-lookup"><span data-stu-id="fed7f-181">When using <b>Item</b> to enumerate the collection, you can enumerate <paramref name="Index" /> from 1 to <see cref="P:Microsoft.Office.Interop.Outlook._RuleConditions.Count" />.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MeetingInviteOrUpdate">
@@ -854,31 +529,11 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.RuleCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dd14-153">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> de <b>à olConditionMeetingInviteOrUpdate</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-153">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> of <b>olConditionMeetingInviteOrUpdate</b>.</span>
-          </span>
-          <span data-ttu-id="0dd14-154">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-154">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fed7f-182">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> de <b>à olConditionMeetingInviteOrUpdate</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-182">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> of <b>olConditionMeetingInviteOrUpdate</b>.</span></span> <span data-ttu-id="fed7f-183">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fed7f-183">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dd14-155">
-            <para>Utilisez l’objet <b>RuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que le message est une demande de réunion ou une réunion mettre à jour.</para>
-            <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /><b>a la valeur True</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-155">
-              <para>Use the returned  <b>RuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that the message is a meeting request or a meeting update.</para>
-              <para>This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection always returns a <b>RuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition. If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> will be <b>True</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="fed7f-184">Utilisez l'objet <b>RuleCondition</b> renvoyé lors de l'énumération des conditions de règle ou des conditions d'exception d'une règle existante, ou lors de la création d'une règle qui spécifie la condition ou la condition d'exception indiquant que le message est une demande de réunion ou une mise à jour d'une demande de réunion.</span><span class="sxs-lookup"><span data-stu-id="fed7f-184">Use the returned  <b>RuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that the message is a meeting request or a meeting update.</span></span></para>
+          <para><span data-ttu-id="fed7f-185">Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle.</span><span class="sxs-lookup"><span data-stu-id="fed7f-185">This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection always returns a <b>RuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition.</span></span> <span data-ttu-id="fed7f-186">Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> <b>a la valeur True</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-186">If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> will be <b>True</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MessageHeader">
@@ -904,31 +559,11 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.TextRuleCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dd14-156">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.TextRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.ConditionType" /><b>olConditionMessageHeader</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-156">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.TextRuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.ConditionType" /> of <b>olConditionMessageHeader</b>.</span>
-          </span>
-          <span data-ttu-id="0dd14-157">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-157">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fed7f-187">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.TextRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.ConditionType" /> <b>olConditionMessageHeader</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-187">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.TextRuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.ConditionType" /> of <b>olConditionMessageHeader</b>.</span></span> <span data-ttu-id="fed7f-188">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fed7f-188">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dd14-158">
-            <para>Utilisez l’objet <b>TextRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que l’en-tête du message contienne le texte spécifié texte.</para>
-            <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection retourne toujours un objet <b>TextRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Enabled" /><b>a la valeur True</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-158">
-              <para>Use the returned  <b>TextRuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that the message header contains the specified text.</para>
-              <para>This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection always returns a <b>TextRuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition. If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Enabled" /> will be <b>True</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="fed7f-189">Utilisez l’objet <b>TextRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante, ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que l’en-tête du message contient le texte mentionné.</span><span class="sxs-lookup"><span data-stu-id="fed7f-189">Use the returned  <b>TextRuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that the message header contains the specified text.</span></span></para>
+          <para><span data-ttu-id="fed7f-190">Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection retourne toujours un objet <b>TextRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle.</span><span class="sxs-lookup"><span data-stu-id="fed7f-190">This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection always returns a <b>TextRuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition.</span></span> <span data-ttu-id="fed7f-191">Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Enabled" /> <b>a la valeur True</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-191">If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Enabled" /> will be <b>True</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NotTo">
@@ -954,31 +589,11 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.RuleCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dd14-159">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> de <b>à olConditionNotTo</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-159">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> of <b>olConditionNotTo</b>.</span>
-          </span>
-          <span data-ttu-id="0dd14-160">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-160">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fed7f-192">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> de <b>à olConditionNotTo</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-192">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> of <b>olConditionNotTo</b>.</span></span> <span data-ttu-id="fed7f-193">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fed7f-193">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dd14-161">
-            <para>Utilisez l’objet <b>RuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que votre nom ne figure pas dans la zone à.</para>
-            <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /><b>a la valeur True</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-161">
-              <para>Use the returned  <b>RuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that your name is not in the To box.</para>
-              <para>This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection always returns a <b>RuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition. If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> will be <b>True</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="fed7f-194">Utilisez l'objet <b>RuleCondition</b> renvoyé lors de l'énumération des conditions de règle ou des conditions d'exception d'une règle existante, ou lors de la création d'une règle qui spécifie la condition ou la condition d'exception indiquant que votre nom ne figure pas dans le champ À.</span><span class="sxs-lookup"><span data-stu-id="fed7f-194">Use the returned  <b>RuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that your name is not in the To box.</span></span></para>
+          <para><span data-ttu-id="fed7f-195">Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle.</span><span class="sxs-lookup"><span data-stu-id="fed7f-195">This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection always returns a <b>RuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition.</span></span> <span data-ttu-id="fed7f-196">Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> <b>a la valeur True</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-196">If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> will be <b>True</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OnLocalMachine">
@@ -1004,31 +619,11 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.RuleCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dd14-162">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> de <b>olConditionLocalMachineOnly</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-162">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> of <b>olConditionLocalMachineOnly</b>.</span>
-          </span>
-          <span data-ttu-id="0dd14-163">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-163">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fed7f-197">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> de <b>olConditionLocalMachineOnly</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-197">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> of <b>olConditionLocalMachineOnly</b>.</span></span> <span data-ttu-id="fed7f-198">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fed7f-198">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dd14-164">
-            <para>Utilisez l’objet <b>RuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que la règle peut s’exécuter sur cet ordinateur uniquement. Lorsque vous exécutez la même règle sur un autre ordinateur, la règle indique que la condition <b>olConditionOtherMachine</b> est activée.</para>
-            <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Vous pouvez activer par programme une condition de règle de ce type. Dans certains cas, <b>olConditionLocalMachine</b> est défini automatiquement à la suite de l’activation d’une autre condition de règle comme <b>olConditionAccount</b>. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /><b>a la valeur True</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-164">
-              <para>Use the returned  <b>RuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that the rule can run on this machine only. When you run the same rule on another computer, the rule will show that the condition <b>olConditionOtherMachine</b> is enabled.</para>
-              <para>This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection always returns a <b>RuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition. You can programmatically enable a rule condition of this type. In certain cases, <b>olConditionLocalMachine</b> is automatically set as a result of enabling another rule condition such as <b>olConditionAccount</b>. If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> will be <b>True</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="fed7f-p144">Utilisez l'objet <b>RuleCondition</b> lors de l'énumération des conditions de règle ou des conditions d'exception d'une règle existante, ou lors de la création d'une règle qui spécifie la condition ou la condition d'exception indiquant que la règle ne peut être exécutée que sur cet ordinateur, la règle signale que la condition <b>olConditionOtherMachine</b> est activée.</span><span class="sxs-lookup"><span data-stu-id="fed7f-p144">Use the returned  <b>RuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that the rule can run on this machine only. When you run the same rule on another computer, the rule will show that the condition <b>olConditionOtherMachine</b> is enabled.</span></span></para>
+          <para><span data-ttu-id="fed7f-201">Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle.</span><span class="sxs-lookup"><span data-stu-id="fed7f-201">This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection always returns a <b>RuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition.</span></span> <span data-ttu-id="fed7f-202">Vous pouvez activer par programme une condition de règle de ce type.</span><span class="sxs-lookup"><span data-stu-id="fed7f-202">You can programmatically enable a rule condition of this type.</span></span> <span data-ttu-id="fed7f-203">Dans certains cas, <b>olConditionLocalMachine</b> est défini automatiquement à la suite de l’activation d’une autre condition de règle comme <b>olConditionAccount</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-203">In certain cases, <b>olConditionLocalMachine</b> is automatically set as a result of enabling another rule condition such as <b>olConditionAccount</b>.</span></span> <span data-ttu-id="fed7f-204">Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> <b>a la valeur True</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-204">If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> will be <b>True</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OnlyToMe">
@@ -1054,31 +649,11 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.RuleCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dd14-165">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> de <b>à olConditionOnlyToMe</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-165">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> of <b>olConditionOnlyToMe</b>.</span>
-          </span>
-          <span data-ttu-id="0dd14-166">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-166">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fed7f-205">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> de <b>à olConditionOnlyToMe</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-205">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> of <b>olConditionOnlyToMe</b>.</span></span> <span data-ttu-id="fed7f-206">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fed7f-206">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dd14-167">
-            <para>Utilisez l’objet <b>RuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que le message est envoyé qu’à vous.</para>
-            <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /><b>a la valeur True</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-167">
-              <para>Use the returned  <b>RuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that the message is sent only to you.</para>
-              <para>This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection always returns a <b>RuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition. If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> will be <b>True</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="fed7f-207">Utilisez l’objet <b>RuleCondition</b> renvoyé lors de l’énumération des conditions de règle, des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie, comme condition ou condition d’exception, que le message n’est envoyé qu’à vous.</span><span class="sxs-lookup"><span data-stu-id="fed7f-207">Use the returned  <b>RuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that the message is sent only to you.</span></span></para>
+          <para><span data-ttu-id="fed7f-208">Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle.</span><span class="sxs-lookup"><span data-stu-id="fed7f-208">This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection always returns a <b>RuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition.</span></span> <span data-ttu-id="fed7f-209">Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> <b>a la valeur True</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-209">If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> will be <b>True</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OnOtherMachine">
@@ -1104,33 +679,12 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.RuleCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dd14-168">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /><b>olConditionOtherMachine</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-168">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> of <b>olConditionOtherMachine</b>.</span>
-          </span>
-          <span data-ttu-id="0dd14-169">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-169">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fed7f-210">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> <b>olConditionOtherMachine</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-210">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> of <b>olConditionOtherMachine</b>.</span></span> <span data-ttu-id="fed7f-211">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fed7f-211">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dd14-170">
-            <para>Utilisez l’objet <b>RuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante. Cette condition de règle indique que la règle peut s’exécuter uniquement sur un ordinateur autre que l’ordinateur local.</para>
-            <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle.</para>
-            <para>Ne peut pas par programme pour activer ou désactiver une condition du type <b>olConditionOtherMachine</b>. Ce type de condition de règle indique que la règle peut s’exécuter uniquement sur un ordinateur spécifique qui n’est pas celui en cours. Cela se produit lorsque la règle est créée sur qu’ordinateur et la condition de règle <b>olConditionLocalMachineOnly</b> est activée pour indiquer que la règle peut s’exécuter uniquement sur cet ordinateur. Lorsque vous exécutez la même règle sur un autre ordinateur, la règle indique que la condition <b>olConditionOtherMachine</b> est activée.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-170">
-              <para>Use the returned  <b>RuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule. This rule condition indicates that the rule can run only on some machine other than the local machine.</para>
-              <para>This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection always returns a <b>RuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition.</para>
-              <para>You cannot programmatically enable or disable a condition of type <b>olConditionOtherMachine</b>. This type of  rule condition indicates that the rule can run only on a specific computer that is not the current one. This happens when the  rule is created on that computer and the rule condition <b>olConditionLocalMachineOnly</b> is enabled, indicating that the rule can run only on that computer. When you run the same rule on another computer, the rule will show that the condition <b>olConditionOtherMachine</b> is enabled.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="fed7f-p149">Utilisez l'objet <b>RuleCondition</b> renvoyé lors de l'énumération des conditions de règle ou des conditions d'exception d'une règle existante. Cette condition de règle indique que la règle ne peut être exécutée que sur certains ordinateurs, autres que l'ordinateur local.</span><span class="sxs-lookup"><span data-stu-id="fed7f-p149">Use the returned  <b>RuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule. This rule condition indicates that the rule can run only on some machine other than the local machine.</span></span></para>
+          <para><span data-ttu-id="fed7f-214">Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle.</span><span class="sxs-lookup"><span data-stu-id="fed7f-214">This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection always returns a <b>RuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition.</span></span></para>
+          <para><span data-ttu-id="fed7f-p150">Vous ne pouvez pas activer ou désactiver, par le biais de la programmation, une condition du type <b>olConditionOtherMachine</b>. Ce type de condition de règle indique que la règle ne peut être exécutée que sur un ordinateur spécifique qui n'est pas l'ordinateur actif. Cela se produit lorsque la règle est créée sur cet ordinateur et que la condition de règle <b>olConditionLocalMachineOnly</b> est activée pour indiquer que la règle ne peut être exécutée que sur cet ordinateur. Lorsque vous exécutez la même règle sur un autre ordinateur, la règle affiche que la condition <b>olConditionOtherMachine</b> est activée.</span><span class="sxs-lookup"><span data-stu-id="fed7f-p150">You cannot programmatically enable or disable a condition of type <b>olConditionOtherMachine</b>. This type of  rule condition indicates that the rule can run only on a specific computer that is not the current one. This happens when the  rule is created on that computer and the rule condition <b>olConditionLocalMachineOnly</b> is enabled, indicating that the rule can run only on that computer. When you run the same rule on another computer, the rule will show that the condition <b>olConditionOtherMachine</b> is enabled.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -1156,25 +710,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dd14-p124">Renvoie la valeur de type <b>Object</b> parent de l’objet spécifié. En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-p124">Returns the parent <b>Object</b> of the specified object. Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fed7f-p151">Renvoie la valeur de type <b>Object</b> parent de l’objet spécifié. En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fed7f-p151">Returns the parent <b>Object</b> of the specified object. Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dd14-173">
-            <para>Le parent de le <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> objet est la <see cref="T:Microsoft.Office.Interop.Outlook.Rule" /> objet.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-173">
-              <para>The parent of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> object is the <see cref="T:Microsoft.Office.Interop.Outlook.Rule" /> object.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="fed7f-221">Le parent de le <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> objet est la <see cref="T:Microsoft.Office.Interop.Outlook.Rule" /> objet.</span><span class="sxs-lookup"><span data-stu-id="fed7f-221">The parent of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> object is the <see cref="T:Microsoft.Office.Interop.Outlook.Rule" /> object.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RecipientAddress">
@@ -1200,31 +739,12 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.AddressRuleCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dd14-174">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.AddressRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.ConditionType" /><b>olConditionRecipientAddress</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-174">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.AddressRuleCondition" /> object with an <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.ConditionType" /> of <b>olConditionRecipientAddress</b>.</span>
-          </span>
-          <span data-ttu-id="0dd14-175">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-175">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fed7f-222">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.AddressRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.ConditionType" /> <b>olConditionRecipientAddress</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-222">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.AddressRuleCondition" /> object with an <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.ConditionType" /> of <b>olConditionRecipientAddress</b>.</span></span> <span data-ttu-id="fed7f-223">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fed7f-223">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dd14-176">
-            <para>Utilisez l’objet <b>AddressRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception qui contient l’adresse du destinataire le texte spécifié. </para>
-            <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection retourne toujours un objet <b>AddressRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.Enabled" /><b>a la valeur True</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-176">
-              <para>Use the returned  <b>AddressRuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that the recipient address contain the specified text. </para>
-              <para>This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection always returns a <b>AddressRuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition. If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.Enabled" /> will be <b>True</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="fed7f-p153">Utilisez l’objet <b>AddressRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante, ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que l’adresse du destinataire contient le texte mentionné.
+</span><span class="sxs-lookup"><span data-stu-id="fed7f-p153">Use the returned  <b>AddressRuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that the recipient address contain the specified text. </span></span></para>
+          <para><span data-ttu-id="fed7f-225">Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection retourne toujours un objet <b>AddressRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle.</span><span class="sxs-lookup"><span data-stu-id="fed7f-225">This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection always returns a <b>AddressRuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition.</span></span> <span data-ttu-id="fed7f-226">Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.Enabled" /> <b>a la valeur True</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-226">If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.Enabled" /> will be <b>True</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SenderAddress">
@@ -1250,31 +770,12 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.AddressRuleCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dd14-177">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.AddressRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.ConditionType" /><b>olConditionSenderAddress</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-177">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.AddressRuleCondition" /> object with an <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.ConditionType" /> of <b>olConditionSenderAddress</b>.</span>
-          </span>
-          <span data-ttu-id="0dd14-178">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-178">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fed7f-227">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.AddressRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.ConditionType" /> <b>olConditionSenderAddress</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-227">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.AddressRuleCondition" /> object with an <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.ConditionType" /> of <b>olConditionSenderAddress</b>.</span></span> <span data-ttu-id="fed7f-228">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fed7f-228">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dd14-179">
-            <para>Utilisez l’objet <b>AddressRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception qui contient l’adresse d’expéditeur le texte spécifié. </para>
-            <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection retourne toujours un objet <b>AddressRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.Enabled" /><b>a la valeur True</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-179">
-              <para>Use the returned  <b>AddressRuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that the sender address contains the specified text. </para>
-              <para>This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection always returns a <b>AddressRuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition. If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.Enabled" /> will be <b>True</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="fed7f-p156">Utilisez l’objet <b>AddressRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante, ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que l’adresse de l’expéditeur contient le texte mentionné.
+</span><span class="sxs-lookup"><span data-stu-id="fed7f-p156">Use the returned  <b>AddressRuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that the sender address contains the specified text. </span></span></para>
+          <para><span data-ttu-id="fed7f-230">Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection retourne toujours un objet <b>AddressRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle.</span><span class="sxs-lookup"><span data-stu-id="fed7f-230">This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection always returns a <b>AddressRuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition.</span></span> <span data-ttu-id="fed7f-231">Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.Enabled" /> <b>a la valeur True</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-231">If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._AddressRuleCondition.Enabled" /> will be <b>True</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SenderInAddressList">
@@ -1300,31 +801,11 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.SenderInAddressListRuleCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dd14-180">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.SenderInAddressListRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._SenderInAddressListRuleCondition.ConditionType" /><b>à olConditionAccount</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-180">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.SenderInAddressListRuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._SenderInAddressListRuleCondition.ConditionType" /> of <b>olConditionAccount</b>.</span>
-          </span>
-          <span data-ttu-id="0dd14-181">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-181">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fed7f-232">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.SenderInAddressListRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._SenderInAddressListRuleCondition.ConditionType" /> <b>à olConditionAccount</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-232">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.SenderInAddressListRuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._SenderInAddressListRuleCondition.ConditionType" /> of <b>olConditionAccount</b>.</span></span> <span data-ttu-id="fed7f-233">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fed7f-233">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dd14-182">
-            <para>Utilisez l’objet <b>SenderInAddressListRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que l’expéditeur spécifié liste d’adresses.</para>
-            <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection retourne toujours un objet <b>SenderInAddressListRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._SenderInAddressListRuleCondition.Enabled" /><b>a la valeur True</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-182">
-              <para>Use the returned  <b>SenderInAddressListRuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that the sender is in a specified address list.</para>
-              <para>This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection always returns a <b>SenderInAddressListRuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition. If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._SenderInAddressListRuleCondition.Enabled" /> will be <b>True</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="fed7f-234">Utilisez l’objet <b>SenderInAddressListRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante, ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que l’adresse de l’expéditeur contient le texte mentionné.</span><span class="sxs-lookup"><span data-stu-id="fed7f-234">Use the returned  <b>SenderInAddressListRuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that the sender is in a specified address list.</span></span></para>
+          <para><span data-ttu-id="fed7f-235">Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection retourne toujours un objet <b>SenderInAddressListRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle.</span><span class="sxs-lookup"><span data-stu-id="fed7f-235">This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection always returns a <b>SenderInAddressListRuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition.</span></span> <span data-ttu-id="fed7f-236">Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._SenderInAddressListRuleCondition.Enabled" /> <b>a la valeur True</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-236">If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._SenderInAddressListRuleCondition.Enabled" /> will be <b>True</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SentTo">
@@ -1350,31 +831,11 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ToOrFromRuleCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dd14-183">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.ToOrFromRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition.ConditionType" /><b>olConditionSentTo</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-183">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.ToOrFromRuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition.ConditionType" /> of <b>olConditionSentTo</b>.</span>
-          </span>
-          <span data-ttu-id="0dd14-184">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-184">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fed7f-237">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.ToOrFromRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition.ConditionType" /> <b>olConditionSentTo</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-237">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.ToOrFromRuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition.ConditionType" /> of <b>olConditionSentTo</b>.</span></span> <span data-ttu-id="fed7f-238">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fed7f-238">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dd14-185">
-            <para>Utilisez l’objet <b>ToOrFromRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou une exception condition que les destinataires (à et Cc texte zones) du message figurent dans la liste spécifiée de <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" />.</para>
-            <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>ToOrFromRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition.Enabled" /><b>a la valeur True</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-185">
-              <para>Use the returned  <b>ToOrFromRuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that the recipients (in the To and Cc text boxes) of the message are in the  specified list of <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" />.</para>
-              <para>This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection always returns a <b>ToOrFromRuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition. If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition.Enabled" /> will be <b>True</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="fed7f-239">Utilisez l’objet <b>ToOrFromRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou une exception condition que les destinataires (à et Cc texte zones) du message figurent dans la liste spécifiée de <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" />.</span><span class="sxs-lookup"><span data-stu-id="fed7f-239">Use the returned  <b>ToOrFromRuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that the recipients (in the To and Cc text boxes) of the message are in the  specified list of <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" />.</span></span></para>
+          <para><span data-ttu-id="fed7f-240">Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>ToOrFromRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle.</span><span class="sxs-lookup"><span data-stu-id="fed7f-240">This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection always returns a <b>ToOrFromRuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition.</span></span> <span data-ttu-id="fed7f-241">Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition.Enabled" /> <b>a la valeur True</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-241">If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._ToOrFromRuleCondition.Enabled" /> will be <b>True</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -1400,41 +861,16 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dd14-186">Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-186">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  object for the current session.</span>
-          </span>
-          <span data-ttu-id="0dd14-187">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-187">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fed7f-242">Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active.</span><span class="sxs-lookup"><span data-stu-id="fed7f-242">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  object for the current session.</span></span> <span data-ttu-id="fed7f-243">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fed7f-243">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dd14-188">
-            <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
-            <code>Dim objNamespace As Outlook.NameSpace = _
+        <remarks><para><span data-ttu-id="fed7f-244">La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active.</span><span class="sxs-lookup"><span data-stu-id="fed7f-244">The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session.</span></span> <span data-ttu-id="fed7f-245">Les deux membres ont la même fonction.</span><span class="sxs-lookup"><span data-stu-id="fed7f-245">Both members serve the same purpose.</span></span> <span data-ttu-id="fed7f-246">Par exemple, les paires d’instructions suivantes effectuent la même fonction :</span><span class="sxs-lookup"><span data-stu-id="fed7f-246">For example, the following pairs of statements perform the same function:</span></span></para>
+          <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
-            <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
-            <code>Outlook.NameSpace objNamespace = 
+          <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
+          <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
-            <code>Outlook.NameSpace objSession = Application.Session;</code>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-188">
-              <para>The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session. Both members serve the same purpose. For example, the following pairs of statements perform the same function:</para>
-              <code>Dim objNamespace As Outlook.NameSpace = _
-    Application.GetNamespace("MAPI")</code>
-              <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
-              <code>Outlook.NameSpace objNamespace = 
-    Application.GetNamespace("MAPI");</code>
-              <code>Outlook.NameSpace objSession = Application.Session;</code>
-              <para />
-            </span>
-          </span>
-        </remarks>
+          <code>Outlook.NameSpace objSession = Application.Session;</code>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Subject">
@@ -1460,31 +896,11 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.TextRuleCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dd14-189">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.TextRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.ConditionType" /><b>olConditionSubject</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-189">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.TextRuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.ConditionType" /> of <b>olConditionSubject</b>.</span>
-          </span>
-          <span data-ttu-id="0dd14-190">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-190">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fed7f-247">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.TextRuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.ConditionType" /> <b>olConditionSubject</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-247">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.TextRuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.ConditionType" /> of <b>olConditionSubject</b>.</span></span> <span data-ttu-id="fed7f-248">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fed7f-248">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dd14-191">
-            <para>Utilisez l’objet <b>TextRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que l’objet du message contienne le texte spécifié texte.</para>
-            <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection retourne toujours un objet <b>TextRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Enabled" /><b>a la valeur True</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-191">
-              <para>Use the returned  <b>TextRuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that the message subject contains the specified text.</para>
-              <para>This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection always returns a <b>TextRuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition. If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Enabled" /> will be <b>True</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="fed7f-249">Utilisez l’objet <b>TextRuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante, ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que l’objet du message contient le texte mentionné.</span><span class="sxs-lookup"><span data-stu-id="fed7f-249">Use the returned  <b>TextRuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that the message subject contains the specified text.</span></span></para>
+          <para><span data-ttu-id="fed7f-250">Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection retourne toujours un objet <b>TextRuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle.</span><span class="sxs-lookup"><span data-stu-id="fed7f-250">This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleActions" /> collection always returns a <b>TextRuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition.</span></span> <span data-ttu-id="fed7f-251">Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Enabled" /> <b>a la valeur True</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-251">If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._TextRuleCondition.Enabled" /> will be <b>True</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ToMe">
@@ -1510,31 +926,11 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.RuleCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dd14-192">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> de <b>à olConditionTo</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-192">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> of <b>olConditionTo</b>.</span>
-          </span>
-          <span data-ttu-id="0dd14-193">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-193">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fed7f-252">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> de <b>à olConditionTo</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-252">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> of <b>olConditionTo</b>.</span></span> <span data-ttu-id="fed7f-253">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fed7f-253">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dd14-194">
-            <para>Utilisez l’objet <b>RuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que votre nom figure dans la zone à.</para>
-            <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /><b>a la valeur True</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-194">
-              <para>Use the returned  <b>RuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that your name is in the To box.</para>
-              <para>This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection always returns a <b>RuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition. If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> will be <b>True</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="fed7f-254">Utilisez l'objet <b>RuleCondition</b> renvoyé lors de l'énumération des conditions de règle ou des conditions d'exception d'une règle existante, ou lors de la création d'une règle qui spécifie la condition ou la condition d'exception indiquant que votre nom figure dans le champ À.</span><span class="sxs-lookup"><span data-stu-id="fed7f-254">Use the returned  <b>RuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that your name is in the To box.</span></span></para>
+          <para><span data-ttu-id="fed7f-255">Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle.</span><span class="sxs-lookup"><span data-stu-id="fed7f-255">This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection always returns a <b>RuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition.</span></span> <span data-ttu-id="fed7f-256">Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> <b>a la valeur True</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-256">If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> will be <b>True</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ToOrCc">
@@ -1560,31 +956,11 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.RuleCondition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dd14-195">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> de <b>à olConditionToOrCc</b>.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-195">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> of <b>olConditionToOrCc</b>.</span>
-          </span>
-          <span data-ttu-id="0dd14-196">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-196">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="fed7f-257">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> de <b>à olConditionToOrCc</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-257">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> object with a <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.ConditionType" /> of <b>olConditionToOrCc</b>.</span></span> <span data-ttu-id="fed7f-258">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="fed7f-258">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dd14-197">
-            <para>Utilisez l’objet <b>RuleCondition</b> renvoyé lors de l’énumération des conditions de règle ou des conditions d’exception d’une règle existante ou lors de la création d’une règle qui spécifie la condition ou la condition d’exception indiquant que votre nom figure dans le champ à ou Cc boîte.</para>
-            <para>Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle. Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /><b>a la valeur True</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dd14-197">
-              <para>Use the returned  <b>RuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that your name is in the To or Cc box.</para>
-              <para>This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection always returns a <b>RuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition. If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> will be <b>True</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="fed7f-259">Utilisez l'objet <b>RuleCondition</b> renvoyé lors de l'énumération des conditions de règle ou des conditions d'exception d'une règle existante, ou lors de la création d'une règle qui spécifie la condition ou la condition d'exception indiquant que votre nom figure dans le champ À ou Cc.</span><span class="sxs-lookup"><span data-stu-id="fed7f-259">Use the returned  <b>RuleCondition</b> object when  enumerating the rule conditions or exception conditions of an existing rule, or when creating a new rule that specifies the condition or exception condition that your name is in the To or Cc box.</span></span></para>
+          <para><span data-ttu-id="fed7f-260">Cette propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection retourne toujours un objet <b>RuleCondition</b> que la règle associée à cette collection <b>RuleConditions</b> ait défini cette condition de règle.</span><span class="sxs-lookup"><span data-stu-id="fed7f-260">This property of the <see cref="T:Microsoft.Office.Interop.Outlook.RuleConditions" /> collection always returns a <b>RuleCondition</b> object regardless of whether the rule associated with this <b>RuleConditions</b> collection has defined such a rule condition.</span></span> <span data-ttu-id="fed7f-261">Si la règle a défini et activé cette condition de règle, puis <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> <b>a la valeur True</b>.</span><span class="sxs-lookup"><span data-stu-id="fed7f-261">If the rule has defined and enabled such a rule condition, then <see cref="P:Microsoft.Office.Interop.Outlook._RuleCondition.Enabled" /> will be <b>True</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

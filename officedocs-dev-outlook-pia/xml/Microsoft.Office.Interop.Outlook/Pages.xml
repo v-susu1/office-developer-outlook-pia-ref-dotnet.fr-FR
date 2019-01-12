@@ -1,13 +1,5 @@
 <Type Name="Pages" FullName="Microsoft.Office.Interop.Outlook.Pages">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3a39316f31c31dd7d14073362c6ea96a307b3e63" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634823" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Pages : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ee2ae6b5fa0a95a49e5a94e7b8a64a924c28cab9" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27905616" /></Metadata><TypeSignature Language="C#" Value="public interface Pages : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Pages implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.Pages" />
   <TypeSignature Language="VB.NET" Value="Public Interface Pages&#xA;Implements IEnumerable" />
@@ -30,27 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="73d63-101">Contient des pages qui représentent les pages d'une fenêtre d'inspecteur.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="73d63-101">Contains pages that represent the pages of an Inspector window.</span>
-      </span>
-    </summary>
-    <remarks>
-      <span data-ttu-id="73d63-102">
-        <para>Chaque <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> objet a un objet <b>Pages</b> défini, qui est vide (nombre 0) si l’élément Outlook n’a jamais été personnalisé avant.</para>
-        <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.ModifiedFormPages" /> propriété permet de renvoyer l’objet <b>Pages</b> à partir d’un objet <b>Inspector</b> .</para> Utilisation de 
-      <para>les <see cref="M:Microsoft.Office.Interop.Outlook.Pages.Add(System.Object)" /> méthode pour créer une page personnalisée (vous pouvez ajouter jusqu'à 5 pages personnalisables). Utilisez l’argument nom de la méthode <b>Add</b> pour définir le nom complet de la page renvoyée. Outre l’ajout de pages personnalisées, vous pouvez utiliser la <paramref name="Name" /> argument afin de renvoyer la page principale d’un objet <b>Inspector</b> pour modification.</para><para>Utilisez <b>ModifiedFormPages</b>(<paramref name="index" />), où <paramref name="index" /> est le nom ou le numéro d’index, pour renvoyer une page unique d’un objet <b>Pages</b> .</para><para /></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="73d63-102">
-          <para>Every <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" />  object has a <b>Pages</b> object defined, which is empty (count 0) if the Outlook item has never been customized before.</para>
-          <para>Use the <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.ModifiedFormPages" />  property to return the <b>Pages</b> object from an <b>Inspector</b> object.</para>
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Outlook.Pages.Add(System.Object)" />  method to create a custom page (you can add as many as 5 customizable pages). Use the Name argument of the <b>Add</b> method to set the display name of the returned page. In addition to adding custom pages, you can use the <paramref name="Name" /> argument to return the main page of an <b>Inspector</b> object for modification.</para>
-          <para>Use <b>ModifiedFormPages</b>(<paramref name="index" />), where <paramref name="index" /> is the name or index number, to return a single page from a <b>Pages</b> object.</para>
-          <para />
-        </span>
-      </span>
-    </remarks>
+    <summary><span data-ttu-id="8d973-101">Contient des pages qui représentent les pages d'une fenêtre d'inspecteur.</span><span class="sxs-lookup"><span data-stu-id="8d973-101">Contains pages that represent the pages of an Inspector window.</span></span></summary>
+    <remarks><para><span data-ttu-id="8d973-102">Chaque <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> objet a un objet <b>Pages</b> défini, qui est vide (nombre 0) si l’élément Outlook n’a jamais été personnalisé avant.</span><span class="sxs-lookup"><span data-stu-id="8d973-102">Every <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" />  object has a <b>Pages</b> object defined, which is empty (count 0) if the Outlook item has never been customized before.</span></span></para>
+      <para><span data-ttu-id="8d973-103">Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.ModifiedFormPages" /> propriété permet de renvoyer l’objet <b>Pages</b> à partir d’un objet <b>Inspector</b> .</span><span class="sxs-lookup"><span data-stu-id="8d973-103">Use the <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.ModifiedFormPages" />  property to return the <b>Pages</b> object from an <b>Inspector</b> object.</span></span></para>
+      <para><span data-ttu-id="8d973-104">Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook.Pages.Add(System.Object)" /> méthode pour créer une page personnalisée (vous pouvez ajouter jusqu'à 5 pages personnalisables).</span><span class="sxs-lookup"><span data-stu-id="8d973-104">Use the <see cref="M:Microsoft.Office.Interop.Outlook.Pages.Add(System.Object)" />  method to create a custom page (you can add as many as 5 customizable pages).</span></span> <span data-ttu-id="8d973-105">Utilisez l’argument nom de la méthode <b>Add</b> pour définir le nom complet de la page renvoyée.</span><span class="sxs-lookup"><span data-stu-id="8d973-105">Use the Name argument of the <b>Add</b> method to set the display name of the returned page.</span></span> <span data-ttu-id="8d973-106">Outre l’ajout de pages personnalisées, vous pouvez utiliser la <paramref name="Name" /> argument afin de renvoyer la page principale d’un objet <b>Inspector</b> pour modification.</span><span class="sxs-lookup"><span data-stu-id="8d973-106">In addition to adding custom pages, you can use the <paramref name="Name" /> argument to return the main page of an <b>Inspector</b> object for modification.</span></span></para>
+      <para><span data-ttu-id="8d973-107">Utilisez la <b>propriété ModifiedFormPages</b>(<paramref name="index" />), où <paramref name="index" /> est le nom ou le numéro d’index, pour renvoyer une page unique d’un objet <b>Pages</b> .</span><span class="sxs-lookup"><span data-stu-id="8d973-107">Use <b>ModifiedFormPages</b>(<paramref name="index" />), where <paramref name="index" /> is the name or index number, to return a single page from a <b>Pages</b> object.</span></span></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -75,37 +52,12 @@
         <Parameter Name="Name" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <span data-ttu-id="73d63-103">
-						Nom de la page.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="73d63-103">The name of the page.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="73d63-104">Crée une nouvelle page dans le <see cref="T:Microsoft.Office.Interop.Outlook.Pages" /> collection.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="73d63-104">Creates a new page in the <see cref="T:Microsoft.Office.Interop.Outlook.Pages" /> collection.</span>
-          </span>
-        </summary>
-        <returns>
-          <span data-ttu-id="73d63-105">Une <a href="http://go.microsoft.com/fwlink/?LinkId=87950">Page</a></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="73d63-105">A <a href="http://go.microsoft.com/fwlink/?LinkId=87950">Page</a></span>
-          </span>
-        </returns>
-        <remarks>
-          <span data-ttu-id="73d63-106">
-            <para>La collection <b>Pages</b> est initialement vide et il existe une limite de 5 pages personnalisables par collection.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="73d63-106">
-              <para>The <b>Pages</b> collection is initially empty, and there is a limit of 5 customizable pages per collection.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <param name="Name"><span data-ttu-id="8d973-108">
+						Nom de la page.</span><span class="sxs-lookup"><span data-stu-id="8d973-108">The name of the page.</span></span></param>
+        <summary><span data-ttu-id="8d973-109">Crée une nouvelle page dans le <see cref="T:Microsoft.Office.Interop.Outlook.Pages" /> collection.</span><span class="sxs-lookup"><span data-stu-id="8d973-109">Creates a new page in the <see cref="T:Microsoft.Office.Interop.Outlook.Pages" /> collection.</span></span></summary>
+        <returns><span data-ttu-id="8d973-110">Une <a href="http://go.microsoft.com/fwlink/?LinkId=87950">Page</a></span><span class="sxs-lookup"><span data-stu-id="8d973-110">A <a href="http://go.microsoft.com/fwlink/?LinkId=87950">Page</a></span></span></returns>
+        <remarks><para><span data-ttu-id="8d973-111">La collection <b>Pages</b> est initialement vide et comporte une limite de 5 pages personnalisables par collection</span><span class="sxs-lookup"><span data-stu-id="8d973-111">The <b>Pages</b> collection is initially empty, and there is a limit of 5 customizable pages per collection.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -131,16 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="73d63-107">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> object qui représente l’application Outlook de l’objet parent.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="73d63-107">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object that represents the parent Outlook application for the  object.</span>
-          </span>
-          <span data-ttu-id="73d63-108">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="73d63-108">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="8d973-112">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> object qui représente l’application Outlook de l’objet parent.</span><span class="sxs-lookup"><span data-stu-id="8d973-112">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object that represents the parent Outlook application for the  object.</span></span> <span data-ttu-id="8d973-113">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="8d973-113">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -168,16 +111,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="73d63-109">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constante indiquant la classe de l’objet.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="73d63-109">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constant indicating the object's class.</span>
-          </span>
-          <span data-ttu-id="73d63-110">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="73d63-110">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="8d973-114">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constante indiquant la classe de l’objet.</span><span class="sxs-lookup"><span data-stu-id="8d973-114">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constant indicating the object's class.</span></span> <span data-ttu-id="8d973-115">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="8d973-115">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -205,16 +139,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="73d63-111">Renvoie une valeur d' <b>entier</b> (<b>int</b> en c#) indiquant le nombre d’objets dans la collection spécifiée.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="73d63-111">Returns an <b>Integer</b> (<b>int</b> in C#) value indicating the count of objects in the specified collection.</span>
-          </span>
-          <span data-ttu-id="73d63-112">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="73d63-112">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="8d973-116">Renvoie une valeur d' <b>entier</b> (<b>int</b> en c#) indiquant le nombre d’objets dans la collection spécifiée.</span><span class="sxs-lookup"><span data-stu-id="8d973-116">Returns an <b>Integer</b> (<b>int</b> in C#) value indicating the count of objects in the specified collection.</span></span> <span data-ttu-id="8d973-117">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="8d973-117">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -246,18 +171,8 @@
       </Parameters>
       <Docs>
         <param name="Index">To be added.</param>
-        <summary>
-          <span data-ttu-id="73d63-113">Renvoie une page d'une collection.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="73d63-113">Returns a page from a collection.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="73d63-114">Valeur Object qui représente l'objet spécifié.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="73d63-114">An Object value that represents the specified object.</span>
-          </span>
-        </value>
+        <summary><span data-ttu-id="8d973-118">Renvoie une page d'une collection.</span><span class="sxs-lookup"><span data-stu-id="8d973-118">Returns a page from a collection.</span></span></summary>
+        <value><span data-ttu-id="8d973-119">Valeur Object qui représente l'objet spécifié.</span><span class="sxs-lookup"><span data-stu-id="8d973-119">An Object value that represents the specified object.</span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -284,12 +199,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="73d63-p104">Renvoie la valeur de type <b>Object</b> parent de l’objet spécifié. En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="73d63-p104">Returns the parent <b>Object</b> of the specified object. Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="8d973-p105">Renvoie la valeur de type <b>Object</b> parent de l’objet spécifié. En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="8d973-p105">Returns the parent <b>Object</b> of the specified object. Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -317,18 +227,8 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="73d63-117">Valeur d’index à base 1 de l’objet dans la collection.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="73d63-117">The 1-based index value of the object within the collection.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="73d63-118">Supprime un objet de la collection.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="73d63-118">Removes an object from the collection.</span>
-          </span>
-        </summary>
+        <param name="Index"><span data-ttu-id="8d973-122">Valeur d’index à base 1 de l’objet dans la collection.</span><span class="sxs-lookup"><span data-stu-id="8d973-122">The 1-based index value of the object within the collection.</span></span></param>
+        <summary><span data-ttu-id="8d973-123">Supprime un objet de la collection.</span><span class="sxs-lookup"><span data-stu-id="8d973-123">Removes an object from the collection.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -355,41 +255,16 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="73d63-119">Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="73d63-119">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  object for the current session.</span>
-          </span>
-          <span data-ttu-id="73d63-120">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="73d63-120">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="8d973-124">Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active.</span><span class="sxs-lookup"><span data-stu-id="8d973-124">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  object for the current session.</span></span> <span data-ttu-id="8d973-125">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="8d973-125">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="73d63-121">
-            <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
-            <code>Dim objNamespace As Outlook.NameSpace = _
+        <remarks><para><span data-ttu-id="8d973-126">La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active.</span><span class="sxs-lookup"><span data-stu-id="8d973-126">The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session.</span></span> <span data-ttu-id="8d973-127">Les deux membres ont la même fonction.</span><span class="sxs-lookup"><span data-stu-id="8d973-127">Both members serve the same purpose.</span></span> <span data-ttu-id="8d973-128">Par exemple, les paires d’instructions suivantes effectuent la même fonction :</span><span class="sxs-lookup"><span data-stu-id="8d973-128">For example, the following pairs of statements perform the same function:</span></span></para>
+          <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
-            <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
-            <code>Outlook.NameSpace objNamespace = 
+          <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
+          <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
-            <code>Outlook.NameSpace objSession = Application.Session;</code>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="73d63-121">
-              <para>The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session. Both members serve the same purpose. For example, the following pairs of statements perform the same function:</para>
-              <code>Dim objNamespace As Outlook.NameSpace = _
-    Application.GetNamespace("MAPI")</code>
-              <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
-              <code>Outlook.NameSpace objNamespace = 
-    Application.GetNamespace("MAPI");</code>
-              <code>Outlook.NameSpace objSession = Application.Session;</code>
-              <para />
-            </span>
-          </span>
-        </remarks>
+          <code>Outlook.NameSpace objSession = Application.Session;</code>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="AutoFormatRule" FullName="Microsoft.Office.Interop.Outlook.AutoFormatRule">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4810c5d1dab65629f59a1b4f0090cef64f569c57" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633468" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AutoFormatRule : Microsoft.Office.Interop.Outlook._AutoFormatRule" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3cbd9d04360e1b625009997f6ae2ad8e4c9222b8" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27904804" /></Metadata><TypeSignature Language="C#" Value="public interface AutoFormatRule : Microsoft.Office.Interop.Outlook._AutoFormatRule" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoFormatRule implements class Microsoft.Office.Interop.Outlook._AutoFormatRule" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.AutoFormatRule" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoFormatRule&#xA;Implements _AutoFormatRule" />
@@ -30,57 +22,29 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="f5902-101">Représente une règle de mise en forme utilisée par un objet pour déterminer comment mettre en forme des éléments Microsoft Outlook apparaissent dans cet affichage.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="f5902-101">Represents a formatting rule used by a object to determine how to format Microsoft Outlook items displayed within that view.</span>
-      </span>
-    </summary>
-    <remarks>
-      <span data-ttu-id="f5902-102">
-        <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._AutoFormatRule" />.</para>
-        <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._AutoFormatRules.Add(System.String)" /> méthode ou <see cref="M:Microsoft.Office.Interop.Outlook._AutoFormatRules.Insert(System.String,System.Object)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRules" /> collection pour créer une nouvelle mise en forme de la règle pour les objets suivants :</para>
-        <list type="bullet">
-          <item>
-            <para>
-              <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" />
-            </para>
-          </item>
-          <item>
-            <para>
-              <see cref="T:Microsoft.Office.Interop.Outlook.CardView" />
-            </para>
-          </item>
-        </list>
-        <para>Outlook propose un ensemble de règles de mise en forme prédéfinies qui peuvent être désactivée, mais ne peut pas être supprimée ou réorganisés. Personnalisé, les règles de mise en forme définie par programme ou par utilisateur, ne peut pas être déplacée au-dessus ou entre des règles de mise en forme prédéfinies. Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Standard" /> propriété pour déterminer si une règle de mise en forme est intégrée ou personnalisée.</para> Règles de mise en forme 
-      <para>sont vérifiées et appliquées pour chaque élément Outlook, dans l’ordre dans lequel elles sont contenues dans la collection <b>AutoFormatRules</b> . Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Enabled" /> propriété pour activer ou désactiver une règle de mise en forme, le <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Filter" /> propriété pour définir les conditions d’un élément Outlook doit répondre pour être mis en forme par la règle, et le <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Font" /> propriété pour spécifier le format à appliquer à la mise en forme règle.</para><para /></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="f5902-102">
-          <para>This is a .NET interface derived from a COM coclass that is required by managed code for interoperability with the corresponding COM object. Use this derived interface to access all method, property, and event members of the COM object. However, if a method or event you want to use shares the same name under the same COM object, cast to the corresponding primary interface to call the method, and cast to the latest events interface to connect to the event. Refer to this topic for information about the COM object. For information about the method and property members of the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook._AutoFormatRule" />.</para>
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Outlook._AutoFormatRules.Add(System.String)" /> method or the <see cref="M:Microsoft.Office.Interop.Outlook._AutoFormatRules.Insert(System.String,System.Object)" /> method of the <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRules" /> collection to create a new formatting rule for the following objects:</para>
-          <list type="bullet">
-            <item>
-              <para>
-                <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" />
-              </para>
-            </item>
-            <item>
-              <para>
-                <see cref="T:Microsoft.Office.Interop.Outlook.CardView" />
-              </para>
-            </item>
-            <item>
-              <para>
-                <see cref="T:Microsoft.Office.Interop.Outlook.TableView" />
-              </para>
-            </item>
-          </list>
-          <para>Outlook provides a set of built-in formatting rules that can be disabled but cannot be removed or reordered. Custom formatting rules, defined either programmatically or by user action, cannot be moved above or between built-in formatting rules. Use the <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Standard" /> property to determine whether a formatting rule is built-in or custom.</para>
-          <para>Formatting rules are checked and applied against each Outlook item, in the order in which they are contained within the <b>AutoFormatRules</b> collection. Use the <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Enabled" /> property to enable or disable a formatting rule, the <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Filter" /> property to define the conditions an Outlook item must meet to be formatted by the formatting rule, and the <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Font" /> property to specify the format to be applied by the formatting rule.</para>
-          <para />
-        </span>
-      </span>
-    </remarks>
+    <summary><span data-ttu-id="32d52-101">Représente une règle de mise en forme utilisée par un objet pour déterminer comment mettre en forme des éléments Microsoft Outlook apparaissent dans cet affichage.</span><span class="sxs-lookup"><span data-stu-id="32d52-101">Represents a formatting rule used by a object to determine how to format Microsoft Outlook items displayed within that view.</span></span></summary>
+    <remarks><para><span data-ttu-id="32d52-102">Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant.</span><span class="sxs-lookup"><span data-stu-id="32d52-102">This is a .NET interface derived from a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span></span> <span data-ttu-id="32d52-103">Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM.</span><span class="sxs-lookup"><span data-stu-id="32d52-103">Use this derived interface to access all method, property, and event members of the COM object.</span></span> <span data-ttu-id="32d52-104">Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement.</span><span class="sxs-lookup"><span data-stu-id="32d52-104">However, if a method or event you want to use shares the same name under the same COM object, cast to the corresponding primary interface to call the method, and cast to the latest events interface to connect to the event.</span></span> <span data-ttu-id="32d52-105">Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM.</span><span class="sxs-lookup"><span data-stu-id="32d52-105">Refer to this topic for information about the COM object.</span></span> <span data-ttu-id="32d52-106">Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._AutoFormatRule" />.</span><span class="sxs-lookup"><span data-stu-id="32d52-106">For information about the method and property members of the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook._AutoFormatRule" />.</span></span></para>
+      <para><span data-ttu-id="32d52-107">Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._AutoFormatRules.Add(System.String)" /> méthode ou <see cref="M:Microsoft.Office.Interop.Outlook._AutoFormatRules.Insert(System.String,System.Object)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRules" /> collection pour créer une nouvelle mise en forme de la règle pour les objets suivants :</span><span class="sxs-lookup"><span data-stu-id="32d52-107">Use the <see cref="M:Microsoft.Office.Interop.Outlook._AutoFormatRules.Add(System.String)" /> method or the <see cref="M:Microsoft.Office.Interop.Outlook._AutoFormatRules.Insert(System.String,System.Object)" /> method of the <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRules" /> collection to create a new formatting rule for the following objects:</span></span></para>
+      <list type="bullet">
+        <item>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" />
+          </para>
+        </item>
+        <item>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Outlook.CardView" />
+          </para>
+        </item>
+        <item>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Outlook.TableView" />
+          </para>
+        </item>
+      </list>
+      <para><span data-ttu-id="32d52-108">Outlook propose un ensemble de règles de mise en forme prédéfinies qui peuvent être désactivée, mais ne peut pas être supprimée ou réorganisés.</span><span class="sxs-lookup"><span data-stu-id="32d52-108">Outlook provides a set of built-in formatting rules that can be disabled but cannot be removed or reordered.</span></span> <span data-ttu-id="32d52-109">Personnalisé, les règles de mise en forme définie par programme ou par utilisateur, ne peut pas être déplacée au-dessus ou entre des règles de mise en forme prédéfinies.</span><span class="sxs-lookup"><span data-stu-id="32d52-109">Custom formatting rules, defined either programmatically or by user action, cannot be moved above or between built-in formatting rules.</span></span> <span data-ttu-id="32d52-110">Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Standard" /> propriété pour déterminer si une règle de mise en forme est intégrée ou personnalisée.</span><span class="sxs-lookup"><span data-stu-id="32d52-110">Use the <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Standard" /> property to determine whether a formatting rule is built-in or custom.</span></span></para>
+      <para><span data-ttu-id="32d52-111">Règles de mise en forme sont vérifiées et appliquées pour chaque élément Outlook, dans l’ordre dans lequel elles sont contenues dans la collection <b>AutoFormatRules</b> .</span><span class="sxs-lookup"><span data-stu-id="32d52-111">Formatting rules are checked and applied against each Outlook item, in the order in which they are contained within the <b>AutoFormatRules</b> collection.</span></span> <span data-ttu-id="32d52-112">Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Enabled" /> propriété pour activer ou désactiver une règle de mise en forme, le <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Filter" /> propriété pour définir les conditions d’un élément Outlook doit répondre pour être mis en forme par la règle, et le <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Font" /> propriété pour spécifier le format à appliquer à la règle de mise en forme.</span><span class="sxs-lookup"><span data-stu-id="32d52-112">Use the <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Enabled" /> property to enable or disable a formatting rule, the <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Filter" /> property to define the conditions an Outlook item must meet to be formatted by the formatting rule, and the <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Font" /> property to specify the format to be applied by the formatting rule.</span></span></para>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

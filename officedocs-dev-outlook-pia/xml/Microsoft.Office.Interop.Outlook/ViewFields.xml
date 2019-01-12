@@ -1,13 +1,5 @@
 <Type Name="ViewFields" FullName="Microsoft.Office.Interop.Outlook.ViewFields">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6c5bf900d2618884c0ebd49cc59733155a2c46db" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634808" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ViewFields : Microsoft.Office.Interop.Outlook._ViewFields" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e67dc4b790fef67a336ce6e85e74c95d5ed28f92" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27906463" /></Metadata><TypeSignature Language="C#" Value="public interface ViewFields : Microsoft.Office.Interop.Outlook._ViewFields" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ViewFields implements class Microsoft.Office.Interop.Outlook._ViewFields" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.ViewFields" />
   <TypeSignature Language="VB.NET" Value="Public Interface ViewFields&#xA;Implements _ViewFields" />
@@ -30,49 +22,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="b51d3-101">Représente la collection de <see cref="T:Microsoft.Office.Interop.Outlook.ViewField" /> objets dans un affichage.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="b51d3-101">Represents the collection of <see cref="T:Microsoft.Office.Interop.Outlook.ViewField" /> objects in a view.</span>
-      </span>
-    </summary>
-    <remarks>
-      <span data-ttu-id="b51d3-102">
-        <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._ViewFields" />. </para>
-        <para>La collection <b>ViewFields</b> représente les propriétés d’élément Outlook available afficher dans la vue.</para>
-        <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._ViewFields.Add(System.String)" /> méthode de la collection <b>ViewFields</b> pour ajouter un champ d’affichage pour les objets ci-dessous dérivés de le <see cref="T:Microsoft.Office.Interop.Outlook.View" /> objet :</para>
-        <list type="bullet">
-          <item>
-            <para>
-              <see cref="T:Microsoft.Office.Interop.Outlook.CardView" />
-            </para>
-          </item>
-        </list>
-        <para>Dans un affichage tableau, l’ordre des objets <b>ViewField</b> dans la collection <b>ViewFields</b> n’est pas identique à l’ordre de ce champ colonnes sont affichés dans l’affichage tableau. Une solution de contournement pour obtenir l’ordre des colonnes est d’analyser la chaîne renvoyée par la <see cref="P:Microsoft.Office.Interop.Outlook.View.XML" /> propriété.</para>
-        <para />
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="b51d3-102">
-          <para>This is a .NET interface derived from a COM coclass that is required by managed code for interoperability with the corresponding COM object. Use this derived interface to access all method, property, and event members of the COM object. However, if a method or event you want to use shares the same name under the same COM object, cast to the corresponding primary interface to call the method, and cast to the latest events interface to connect to the event. Refer to this topic for information about the COM object. For information about the method and property members of the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook._ViewFields" />. </para>
-          <para>The <b>ViewFields</b> collection represents the Outlook item properties available for display in the view. </para>
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Outlook._ViewFields.Add(System.String)" /> method of the <b>ViewFields</b> collection to add a view field for the following objects derived from the <see cref="T:Microsoft.Office.Interop.Outlook.View" /> object:</para>
-          <list type="bullet">
-            <item>
-              <para>
-                <see cref="T:Microsoft.Office.Interop.Outlook.CardView" />
-              </para>
-            </item>
-            <item>
-              <para>
-                <see cref="T:Microsoft.Office.Interop.Outlook.TableView" />
-              </para>
-            </item>
-          </list>
-          <para>In a table view, the order of <b>ViewField</b> objects in the <b>ViewFields</b> collection is not the same as the order that field columns are displayed in the table view. A workaround to obtain the column order is to parse the string returned by the <see cref="P:Microsoft.Office.Interop.Outlook.View.XML" /> property.</para>
-          <para />
-        </span>
-      </span>
-    </remarks>
+    <summary><span data-ttu-id="d7fd2-101">Représente la collection de <see cref="T:Microsoft.Office.Interop.Outlook.ViewField" /> objets dans un affichage.</span><span class="sxs-lookup"><span data-stu-id="d7fd2-101">Represents the collection of <see cref="T:Microsoft.Office.Interop.Outlook.ViewField" /> objects in a view.</span></span></summary>
+    <remarks><para><span data-ttu-id="d7fd2-102">Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant.</span><span class="sxs-lookup"><span data-stu-id="d7fd2-102">This is a .NET interface derived from a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span></span> <span data-ttu-id="d7fd2-103">Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM.</span><span class="sxs-lookup"><span data-stu-id="d7fd2-103">Use this derived interface to access all method, property, and event members of the COM object.</span></span> <span data-ttu-id="d7fd2-104">Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement.</span><span class="sxs-lookup"><span data-stu-id="d7fd2-104">However, if a method or event you want to use shares the same name under the same COM object, cast to the corresponding primary interface to call the method, and cast to the latest events interface to connect to the event.</span></span> <span data-ttu-id="d7fd2-105">Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM.</span><span class="sxs-lookup"><span data-stu-id="d7fd2-105">Refer to this topic for information about the COM object.</span></span> <span data-ttu-id="d7fd2-106">Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._ViewFields" />.</span><span class="sxs-lookup"><span data-stu-id="d7fd2-106">For information about the method and property members of the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook._ViewFields" />.</span></span> </para>
+      <para><span data-ttu-id="d7fd2-107">La collection <b>ViewFields</b> représente les propriétés d’élément Outlook available afficher dans l’affichage.</span><span class="sxs-lookup"><span data-stu-id="d7fd2-107">The <b>ViewFields</b> collection represents the Outlook item properties available for display in the view.</span></span> </para>
+      <para><span data-ttu-id="d7fd2-108">Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._ViewFields.Add(System.String)" /> méthode de la collection <b>ViewFields</b> pour ajouter un champ d’affichage pour les objets ci-dessous dérivés de le <see cref="T:Microsoft.Office.Interop.Outlook.View" /> objet :</span><span class="sxs-lookup"><span data-stu-id="d7fd2-108">Use the <see cref="M:Microsoft.Office.Interop.Outlook._ViewFields.Add(System.String)" /> method of the <b>ViewFields</b> collection to add a view field for the following objects derived from the <see cref="T:Microsoft.Office.Interop.Outlook.View" /> object:</span></span></para>
+      <list type="bullet">
+        <item>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Outlook.CardView" />
+          </para>
+        </item>
+        <item>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Outlook.TableView" />
+          </para>
+        </item>
+      </list>
+      <para><span data-ttu-id="d7fd2-109">Dans un affichage tableau, l’ordre des objets <b>ViewField</b> dans la collection <b>ViewFields</b> n’est pas le même que l’ordre que les colonnes de champs sont affichés dans l’affichage tableau.</span><span class="sxs-lookup"><span data-stu-id="d7fd2-109">In a table view, the order of <b>ViewField</b> objects in the <b>ViewFields</b> collection is not the same as the order that field columns are displayed in the table view.</span></span> <span data-ttu-id="d7fd2-110">Une solution de contournement pour obtenir l’ordre des colonnes est d’analyser la chaîne renvoyée par la <see cref="P:Microsoft.Office.Interop.Outlook.View.XML" /> propriété.</span><span class="sxs-lookup"><span data-stu-id="d7fd2-110">A workaround to obtain the column order is to parse the string returned by the <see cref="P:Microsoft.Office.Interop.Outlook.View.XML" /> property.</span></span></para>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

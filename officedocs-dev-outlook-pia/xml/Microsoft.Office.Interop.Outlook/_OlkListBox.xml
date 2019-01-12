@@ -1,13 +1,5 @@
 <Type Name="_OlkListBox" FullName="Microsoft.Office.Interop.Outlook._OlkListBox">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7e9053f372be4d8cf569cbaf4b62f4d812bf11d7" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634333" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _OlkListBox" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7e9053f372be4d8cf569cbaf4b62f4d812bf11d7" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27902760" /></Metadata><TypeSignature Language="C#" Value="public interface _OlkListBox" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _OlkListBox" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._OlkListBox" />
   <TypeSignature Language="VB.NET" Value="Public Interface _OlkListBox" />
@@ -26,24 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="0dc68-101">Il s’agit d’une interface principale dans une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="0dc68-101">This is a primary interface in a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span>
-      </span>
-      <span data-ttu-id="0dc68-102">Utilisez cette interface principale uniquement lorsque la méthode que vous souhaitez utiliser partageant le même nom qu’un événement de l’objet COM ; Dans ce cas, effectuez un cast à cette interface pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="0dc68-102">Use this primary interface only when the method you want to use shares the same name as an event of the COM object; in this case, cast to this interface to call the method, and cast to the latest events interface to connect to the event.</span>
-      </span>
-      <span data-ttu-id="0dc68-103">Sinon, utilisez l’interface .NET est dérivé de la coclasse COM pour accéder aux méthodes, propriétés et événements de l’objet COM.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="0dc68-103">Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span>
-      </span>
-      <span data-ttu-id="0dc68-104">Pour plus d’informations sur l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.OlkListBox" />.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="0dc68-104">For information about the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook.OlkListBox" />.</span>
-      </span>
-    </summary>
+    <summary><span data-ttu-id="857b3-101">Il s’agit d’une interface principale dans une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant.</span><span class="sxs-lookup"><span data-stu-id="857b3-101">This is a primary interface in a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span></span> <span data-ttu-id="857b3-102">Utilisez cette interface principale uniquement lorsque la méthode que vous souhaitez utiliser partageant le même nom qu’un événement de l’objet COM ; Dans ce cas, effectuez un cast à cette interface pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement.</span><span class="sxs-lookup"><span data-stu-id="857b3-102">Use this primary interface only when the method you want to use shares the same name as an event of the COM object; in this case, cast to this interface to call the method, and cast to the latest events interface to connect to the event.</span></span> <span data-ttu-id="857b3-103">Sinon, utilisez l’interface .NET est dérivé de la coclasse COM pour accéder aux méthodes, propriétés et événements de l’objet COM.</span><span class="sxs-lookup"><span data-stu-id="857b3-103">Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span></span> <span data-ttu-id="857b3-104">Pour plus d’informations sur l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.OlkListBox" />.</span><span class="sxs-lookup"><span data-stu-id="857b3-104">For information about the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook.OlkListBox" />.</span></span></summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -70,36 +45,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ItemText">
-          <span data-ttu-id="0dc68-105">Valeur à ajouter à la liste du contrôle de zone de liste déroulante.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-105">Value to be added to the list in the list box control.</span>
-          </span>
-        </param>
-        <param name="Index">
-          <span data-ttu-id="0dc68-106">Valeur de base 0 qui spécifie l'ordre du nouvel élément dans la liste.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-106">A 0-based value that specifies the order of the new item in the list.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="0dc68-107">Ajoute un élément à la liste en spécifiant éventuellement un index pour faire apparaître ce nouvel élément dans la liste.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-107">Adds an item to the list, optionally specifying an index for the new item to appear in the list.</span>
-          </span>
-        </summary>
-        <remarks>
-          <span data-ttu-id="0dc68-108">
-            <para>Si la valeur de <paramref name="Index" /> est égal ou supérieur au nombre d’éléments dans la liste, le nouvel élément sont additionnée à la fin de la liste.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-108">
-              <para>If the value of  <paramref name="Index" /> is equal to or larger than the number of elements in the list, the new item will  be added to the end of the list.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <param name="ItemText"><span data-ttu-id="857b3-105">Valeur à ajouter à la liste du contrôle de zone de liste déroulante.</span><span class="sxs-lookup"><span data-stu-id="857b3-105">Value to be added to the list in the list box control.</span></span></param>
+        <param name="Index"><span data-ttu-id="857b3-106">Valeur de base 0 qui spécifie l'ordre du nouvel élément dans la liste.</span><span class="sxs-lookup"><span data-stu-id="857b3-106">A 0-based value that specifies the order of the new item in the list.</span></span></param>
+        <summary><span data-ttu-id="857b3-107">Ajoute un élément à la liste en spécifiant éventuellement un index pour faire apparaître ce nouvel élément dans la liste.</span><span class="sxs-lookup"><span data-stu-id="857b3-107">Adds an item to the list, optionally specifying an index for the new item to appear in the list.</span></span></summary>
+        <remarks><para><span data-ttu-id="857b3-108">Si la valeur de <paramref name="Index" /> est égal ou supérieur au nombre d’éléments dans la liste, le nouvel élément sont additionnée à la fin de la liste.</span><span class="sxs-lookup"><span data-stu-id="857b3-108">If the value of  <paramref name="Index" /> is equal to or larger than the number of elements in the list, the new item will  be added to the end of the list.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -131,29 +81,10 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dc68-109">Cette propriété renvoie ou définit une valeur <b>UInteger</b> (<b>uint</b> en c#) qui indique la couleur d’arrière-plan du contrôle.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-109">Returns or sets a <b>UInteger</b> (<b>uint</b> in C#) value that indicates the background color of the control.</span>
-          </span>
-          <span data-ttu-id="0dc68-110">Lecture/écriture.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-110">Read/write.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="857b3-109">Cette propriété renvoie ou définit une valeur <b>UInteger</b> (<b>uint</b> en c#) qui indique la couleur d’arrière-plan du contrôle.</span><span class="sxs-lookup"><span data-stu-id="857b3-109">Returns or sets a <b>UInteger</b> (<b>uint</b> in C#) value that indicates the background color of the control.</span></span> <span data-ttu-id="857b3-110">Lecture-écriture.</span><span class="sxs-lookup"><span data-stu-id="857b3-110">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dc68-111">
-            <para>Cette propriété est de type <b>OLE_COLOR</b> , qui est une valeur <b>UInteger</b> (<b>uint</b> en c#). La valeur par défaut de cette propriété est 0 x 80000005, « Fenêtre ».</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-111">
-              <para>This property is of the type <b>OLE_COLOR</b> which is a <b>UInteger</b> (<b>uint</b> in C#) value. The default value for this property is 0x80000005, "Window." </para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="857b3-111">Cette propriété est de type <b>OLE_COLOR</b> , qui est une valeur <b>UInteger</b> (<b>uint</b> en c#).</span><span class="sxs-lookup"><span data-stu-id="857b3-111">This property is of the type <b>OLE_COLOR</b> which is a <b>UInteger</b> (<b>uint</b> in C#) value.</span></span> <span data-ttu-id="857b3-112">La valeur par défaut de cette propriété est 0 x 80000005, « Fenêtre ».</span><span class="sxs-lookup"><span data-stu-id="857b3-112">The default value for this property is 0x80000005, "Window."</span></span> </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderStyle">
@@ -182,29 +113,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlBorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dc68-112">Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlBorderStyle" /> constante qui définit le style de la bordure autour du contrôle.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-112">Returns or sets an <see cref="T:Microsoft.Office.Interop.Outlook.OlBorderStyle" /> constant that defines the style of the  border  around the control.</span>
-          </span>
-          <span data-ttu-id="0dc68-113">Lecture/écriture.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-113">Read/write.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="857b3-113">Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlBorderStyle" /> constante qui définit le style de la bordure autour du contrôle.</span><span class="sxs-lookup"><span data-stu-id="857b3-113">Returns or sets an <see cref="T:Microsoft.Office.Interop.Outlook.OlBorderStyle" /> constant that defines the style of the  border  around the control.</span></span>   <span data-ttu-id="857b3-114">Lecture-écriture.</span><span class="sxs-lookup"><span data-stu-id="857b3-114">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dc68-114">
-            <para>La valeur par défaut est <b>olBorderStyleSingle</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-114">
-              <para>The default value is <b>olBorderStyleSingle</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="857b3-115">La valeur par défaut est <b>olBorderStyleSingle</b>.</span><span class="sxs-lookup"><span data-stu-id="857b3-115">The default value is <b>olBorderStyleSingle</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -228,12 +140,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="0dc68-115">Supprime tous les objets de la liste.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-115">Removes all objects from the list.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="857b3-116">Supprime tous les objets de la liste.</span><span class="sxs-lookup"><span data-stu-id="857b3-116">Removes all objects from the list.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,12 +165,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="0dc68-116">Copie vers le Presse-papiers la sélection active dans la liste déroulante.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-116">Copies the current selection in the drop-down list to the clipboard.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="857b3-117">Copie vers le Presse-papiers la sélection active dans la liste déroulante.</span><span class="sxs-lookup"><span data-stu-id="857b3-117">Copies the current selection in the drop-down list to the clipboard.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -293,29 +195,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dc68-117">Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si le contrôle est autorisé à fonctionner.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-117">Returns or sets a <b>Boolean</b> (<b>bool</b> in C#) that indicates if the control is allowed to function.</span>
-          </span>
-          <span data-ttu-id="0dc68-118">Lecture/écriture.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-118">Read/write.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="857b3-118">Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si le contrôle est autorisé à fonctionner.</span><span class="sxs-lookup"><span data-stu-id="857b3-118">Returns or sets a <b>Boolean</b> (<b>bool</b> in C#) that indicates if the control is allowed to function.</span></span>  <span data-ttu-id="857b3-119">Lecture-écriture.</span><span class="sxs-lookup"><span data-stu-id="857b3-119">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dc68-119">
-            <para>La valeur par défaut est <b>True</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-119">
-              <para>The default value is <b>True</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="857b3-120">La valeur par défaut est <b>True</b>.</span><span class="sxs-lookup"><span data-stu-id="857b3-120">The default value is <b>True</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -341,16 +224,7 @@
         <ReturnType>stdole.StdFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dc68-120">Renvoie un <b>StdFont</b> qui représente la police utilisée pour afficher le texte dans le contrôle.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-120">Returns an <b>StdFont</b> that represents the font used to render the text inside the control.</span>
-          </span>
-          <span data-ttu-id="0dc68-121">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-121">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="857b3-121">Renvoie un <b>StdFont</b> qui représente la police utilisée pour afficher le texte dans le contrôle.</span><span class="sxs-lookup"><span data-stu-id="857b3-121">Returns an <b>StdFont</b> that represents the font used to render the text inside the control.</span></span>  <span data-ttu-id="857b3-122">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="857b3-122">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -384,29 +258,10 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dc68-122">Cette propriété renvoie ou définit une valeur <b>UInteger</b> (<b>uint</b> en c#) qui indique la couleur de premier plan du contrôle.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-122">Returns or sets a <b>UInteger</b> (<b>uint</b> in C#) value that indicates the foreground color of the control.</span>
-          </span>
-          <span data-ttu-id="0dc68-123">Lecture/écriture.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-123">Read/write.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="857b3-123">Cette propriété renvoie ou définit une valeur <b>UInteger</b> (<b>uint</b> en c#) qui indique la couleur de premier plan du contrôle.</span><span class="sxs-lookup"><span data-stu-id="857b3-123">Returns or sets a <b>UInteger</b> (<b>uint</b> in C#) value that indicates the foreground color of the control.</span></span> <span data-ttu-id="857b3-124">Lecture-écriture.</span><span class="sxs-lookup"><span data-stu-id="857b3-124">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dc68-124">
-            <para>Cette propriété est de type <b>OLE_COLOR</b> , qui est une valeur <b>UInteger</b> (<b>uint</b> en c#). La valeur par défaut de cette propriété est 0 x 80000008, « Texte de la fenêtre ».</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-124">
-              <para>This property is of the type <b>OLE_COLOR</b> which is a <b>UInteger</b> (<b>uint</b> in C#) value. The default value for this property is 0x80000008, "Window Text."  </para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="857b3-125">Cette propriété est de type <b>OLE_COLOR</b> , qui est une valeur <b>UInteger</b> (<b>uint</b> en c#).</span><span class="sxs-lookup"><span data-stu-id="857b3-125">This property is of the type <b>OLE_COLOR</b> which is a <b>UInteger</b> (<b>uint</b> in C#) value.</span></span> <span data-ttu-id="857b3-126">La valeur par défaut de cette propriété est 0 x 80000008, « Texte de la fenêtre ».</span><span class="sxs-lookup"><span data-stu-id="857b3-126">The default value for this property is 0x80000008, "Window Text."</span></span>  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetItem">
@@ -432,36 +287,11 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="0dc68-125">Valeur de base 0 qui spécifie l'emplacement d'un élément dans la liste.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-125">A zero-based value that specifies the location of an item in the list.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="0dc68-126">Obtient une <b>chaîne</b> (<b>string</b> en c#) qui représente un élément situé à l’emplacement spécifié dans la liste.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-126">Obtains a <b>String</b> (<b>string</b> in C#)  that represents an item at the specified location in the list.</span>
-          </span>
-        </summary>
-        <returns>
-          <span data-ttu-id="0dc68-127">Une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente l’élément situé à l’emplacement spécifié dans la liste.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-127">A <b>String</b> (<b>string</b> in C#)  value that represents the item at the specified location in the list.</span>
-          </span>
-        </returns>
-        <remarks>
-          <span data-ttu-id="0dc68-128">
-            <para>Si <paramref name="Index" /> est en dehors de la plage de valeurs autorisées (entre 0 et <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />-1), une erreur hors limites est renvoyée.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-128">
-              <para>If <paramref name="Index" /> is outside the range of the allowed values (between zero and <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />-1), then an out-of-bounds  error will be returned.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <param name="Index"><span data-ttu-id="857b3-127">Valeur de base 0 qui spécifie l'emplacement d'un élément dans la liste.</span><span class="sxs-lookup"><span data-stu-id="857b3-127">A zero-based value that specifies the location of an item in the list.</span></span></param>
+        <summary><span data-ttu-id="857b3-128">Obtient une <b>chaîne</b> (<b>string</b> en c#) qui représente un élément situé à l’emplacement spécifié dans la liste.</span><span class="sxs-lookup"><span data-stu-id="857b3-128">Obtains a <b>String</b> (<b>string</b> in C#)  that represents an item at the specified location in the list.</span></span></summary>
+        <returns><span data-ttu-id="857b3-129">Une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente l’élément situé à l’emplacement spécifié dans la liste.</span><span class="sxs-lookup"><span data-stu-id="857b3-129">A <b>String</b> (<b>string</b> in C#)  value that represents the item at the specified location in the list.</span></span></returns>
+        <remarks><para><span data-ttu-id="857b3-130">Si <paramref name="Index" /> est en dehors de la plage de valeurs autorisées (entre 0 et <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />-1), une erreur hors limites est renvoyée.</span><span class="sxs-lookup"><span data-stu-id="857b3-130">If <paramref name="Index" /> is outside the range of the allowed values (between zero and <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />-1), then an out-of-bounds  error will be returned.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetSelected">
@@ -487,36 +317,11 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="0dc68-129">Valeur de base 0 qui spécifie l'emplacement d'un élément dans la liste.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-129">A zero-based value that specifies the location of an item in the list.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="0dc68-130">Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si l’élément indexé est actuellement sélectionné.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-130">Returns a <b>Boolean</b> (<b>bool</b> in C#) that indicates if the indexed item is currently selected.</span>
-          </span>
-        </summary>
-        <returns>
-          <span data-ttu-id="0dc68-131">Une valeur booléenne (<b>bool</b> en c#) qui a la <b>valeur True</b> si l’élément spécifié est actuellement sélectionné, <b>False</b> dans le cas contraire.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-131">A Boolean value (<b>bool</b> in C#) that is <b>True</b> if the specified item is currently selected, <b>False</b> otherwise.</span>
-          </span>
-        </returns>
-        <remarks>
-          <span data-ttu-id="0dc68-132">
-            <para>Si <paramref name="Index" /> est en dehors de la plage de valeurs autorisées (entre 0 et <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />-1), une erreur hors limites est renvoyée.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-132">
-              <para>If <paramref name="Index" /> is outside the range of the allowed values (between zero and <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />-1), then an out-of-bounds error will be returned. </para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <param name="Index"><span data-ttu-id="857b3-131">Valeur de base 0 qui spécifie l'emplacement d'un élément dans la liste.</span><span class="sxs-lookup"><span data-stu-id="857b3-131">A zero-based value that specifies the location of an item in the list.</span></span></param>
+        <summary><span data-ttu-id="857b3-132">Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si l’élément indexé est actuellement sélectionné.</span><span class="sxs-lookup"><span data-stu-id="857b3-132">Returns a <b>Boolean</b> (<b>bool</b> in C#) that indicates if the indexed item is currently selected.</span></span></summary>
+        <returns><span data-ttu-id="857b3-133">Une valeur booléenne (<b>bool</b> en c#) qui a la <b>valeur True</b> si l’élément spécifié est actuellement sélectionné, <b>False</b> dans le cas contraire.</span><span class="sxs-lookup"><span data-stu-id="857b3-133">A Boolean value (<b>bool</b> in C#) that is <b>True</b> if the specified item is currently selected, <b>False</b> otherwise.</span></span></returns>
+        <remarks><para><span data-ttu-id="857b3-134">Si <paramref name="Index" /> est en dehors de la plage de valeurs autorisées (entre 0 et <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />-1), une erreur hors limites est renvoyée.</span><span class="sxs-lookup"><span data-stu-id="857b3-134">If <paramref name="Index" /> is outside the range of the allowed values (between zero and <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />-1), then an out-of-bounds error will be returned.</span></span> </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListCount">
@@ -542,29 +347,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dc68-133">Renvoie une valeur d' <b>entier</b> (<b>int</b> en c#) qui spécifie le nombre d’éléments dans la liste déroulante du contrôle zone de liste.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-133">Returns an <b>Integer</b> (<b>int</b> in C#) value that specifies the number of elements in the drop-down list of the list box control.</span>
-          </span>
-          <span data-ttu-id="0dc68-134">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-134">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="857b3-135">Renvoie une valeur d' <b>entier</b> (<b>int</b> en c#) qui spécifie le nombre d’éléments dans la liste déroulante du contrôle zone de liste.</span><span class="sxs-lookup"><span data-stu-id="857b3-135">Returns an <b>Integer</b> (<b>int</b> in C#) value that specifies the number of elements in the drop-down list of the list box control.</span></span> <span data-ttu-id="857b3-136">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="857b3-136">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dc68-135">
-            <para>La valeur par défaut est zéro, indiquant qu’il n’y a aucun élément dans la liste.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-135">
-              <para>The default value is zero, indicating that there are no items in the list.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="857b3-137">La valeur par défaut est zéro. Elle indique qu'il n'y a aucun élément dans la liste.</span><span class="sxs-lookup"><span data-stu-id="857b3-137">The default value is zero, indicating that there are no items in the list.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListIndex">
@@ -593,31 +379,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dc68-136">Renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui indique l’emplacement de l’élément actuellement sélectionné dans la liste de la zone de liste déroulante contrôle.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-136">Reurns or sets an <b>Integer</b> (<b>int</b> in C#) value that indicates the location of the currently selected element in the list of the combo box control.</span>
-          </span>
-          <span data-ttu-id="0dc68-137">Lecture/écriture.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-137">Read/write.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="857b3-138">Renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui indique l’emplacement de l’élément actuellement sélectionné dans la liste de la zone de liste déroulante contrôle.</span><span class="sxs-lookup"><span data-stu-id="857b3-138">Reurns or sets an <b>Integer</b> (<b>int</b> in C#) value that indicates the location of the currently selected element in the list of the combo box control.</span></span> <span data-ttu-id="857b3-139">Lecture-écriture.</span><span class="sxs-lookup"><span data-stu-id="857b3-139">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dc68-138">
-            <para>
-              <b>ListIndex</b> est une valeur zéro dans le tableau des éléments dans la liste.  La valeur par défaut est -1, indiquant qu’aucun élément n’est sélectionné.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-138">
-              <para>
-                <b>ListIndex</b> is a zero-based value indexing into the array of items in the list.  The default value is -1, indicating that no item is selected.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="857b3-p112">
+            <b>ListIndex</b> est un index commençant à la valeur zéro dans le tableau des éléments de la liste. La valeur par défaut est  -1. Elle indique qu'aucun élément n'est sélectionné.</span><span class="sxs-lookup"><span data-stu-id="857b3-p112">
+            <b>ListIndex</b> is a zero-based value indexing into the array of items in the list.  The default value is -1, indicating that no item is selected.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Locked">
@@ -646,31 +413,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dc68-139">Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui spécifie si le contrôle est verrouillé contre toute modification.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-139">Returns or sets a <b>Boolean</b> (<b>bool</b> in C#) that specifies whether or not the control is locked from being changed.</span>
-          </span>
-          <span data-ttu-id="0dc68-140">Lecture/écriture.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-140">Read/write.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="857b3-142">Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui spécifie si le contrôle est verrouillé contre toute modification.</span><span class="sxs-lookup"><span data-stu-id="857b3-142">Returns or sets a <b>Boolean</b> (<b>bool</b> in C#) that specifies whether or not the control is locked from being changed.</span></span>  <span data-ttu-id="857b3-143">Lecture-écriture.</span><span class="sxs-lookup"><span data-stu-id="857b3-143">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dc68-141">
-            <para>La valeur par défaut est <b>False</b>.</para>
-            <para>Lorsque le contrôle est verrouillé, le contrôle ne dispose pas d’une apparence « désactivé », mais l’utilisateur ne peut pas modifier le contenu du contrôle.  </para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-141">
-              <para>The default value is <b>False</b>.</para>
-              <para>When the control is locked, the control does not have  a "disabled" appearance, but the user cannot edit the contents of the control.  </para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="857b3-144">La valeur par défaut est <b>False</b>.</span><span class="sxs-lookup"><span data-stu-id="857b3-144">The default value is <b>False</b>.</span></span></para>
+          <para><span data-ttu-id="857b3-p114">Lorsque le contrôle est verrouillé, il n'apparaît pas comme désactivé mais l'utilisateur ne peut pas en modifier le contenu.</span><span class="sxs-lookup"><span data-stu-id="857b3-p114">When the control is locked, the control does not have  a "disabled" appearance, but the user cannot edit the contents of the control.  </span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchEntry">
@@ -699,29 +446,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlMatchEntry</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dc68-142">Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlMatchEntry" /> constante qui indique comment le contrôle recherche dans sa liste par l’utilisateur.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-142">Returns or sets an <see cref="T:Microsoft.Office.Interop.Outlook.OlMatchEntry" /> constant that  indicates how the control searches its list as the user types.</span>
-          </span>
-          <span data-ttu-id="0dc68-143">Lecture/écriture.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-143">Read/write.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="857b3-146">Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlMatchEntry" /> constante qui indique comment le contrôle recherche dans sa liste par l’utilisateur.</span><span class="sxs-lookup"><span data-stu-id="857b3-146">Returns or sets an <see cref="T:Microsoft.Office.Interop.Outlook.OlMatchEntry" /> constant that  indicates how the control searches its list as the user types.</span></span> <span data-ttu-id="857b3-147">Lecture-écriture.</span><span class="sxs-lookup"><span data-stu-id="857b3-147">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dc68-144">
-            <para>La valeur par défaut est <b>olMatchEntryComplete</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-144">
-              <para>The default value is <b>olMatchEntryComplete</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="857b3-148">La valeur par défaut est <b>olMatchEntryComplete</b>.</span><span class="sxs-lookup"><span data-stu-id="857b3-148">The default value is <b>olMatchEntryComplete</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseIcon">
@@ -750,29 +478,10 @@
         <ReturnType>stdole.StdPicture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dc68-145">Cette propriété renvoie ou définit une <b>StdPicture</b> qui représente l’image personnalisée pour le curseur de la souris pour ce contrôle.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-145">Returns or sets a <b>StdPicture</b> that represents the custom picture to the mouse cursor for this control.</span>
-          </span>
-          <span data-ttu-id="0dc68-146">Lecture/écriture.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-146">Read/write.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="857b3-149">Cette propriété renvoie ou définit une <b>StdPicture</b> qui représente l’image personnalisée pour le curseur de la souris pour ce contrôle.</span><span class="sxs-lookup"><span data-stu-id="857b3-149">Returns or sets a <b>StdPicture</b> that represents the custom picture to the mouse cursor for this control.</span></span> <span data-ttu-id="857b3-150">Lecture-écriture.</span><span class="sxs-lookup"><span data-stu-id="857b3-150">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dc68-147">
-            <para>La valeur par défaut est <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#).</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-147">
-              <para>The default value is <b>Nothing</b> (a null reference (Nothing in Visual Basic) in C#).</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="857b3-151">La valeur par défaut est <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#).</span><span class="sxs-lookup"><span data-stu-id="857b3-151">The default value is <b>Nothing</b> (a null reference (Nothing in Visual Basic) in C#).</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MousePointer">
@@ -801,29 +510,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlMousePointer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dc68-148">Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> constante qui spécifie le type de pointeur affiché lorsque l’utilisateur place la souris sur le contrôle.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-148">Returns or sets an <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> constant that specifies the type of pointer displayed when the user positions the mouse over the control.</span>
-          </span>
-          <span data-ttu-id="0dc68-149">Lecture/écriture.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-149">Read/write.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="857b3-152">Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> constante qui spécifie le type de pointeur affiché lorsque l’utilisateur place la souris sur le contrôle.</span><span class="sxs-lookup"><span data-stu-id="857b3-152">Returns or sets an <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> constant that specifies the type of pointer displayed when the user positions the mouse over the control.</span></span>  <span data-ttu-id="857b3-153">Lecture-écriture.</span><span class="sxs-lookup"><span data-stu-id="857b3-153">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dc68-150">
-            <para>La valeur par défaut est <b>olMousePointerDefault</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-150">
-              <para>The default value is <b>olMousePointerDefault</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="857b3-154">La valeur par défaut est <b>olMousePointerDefault</b>.</span><span class="sxs-lookup"><span data-stu-id="857b3-154">The default value is <b>olMousePointerDefault</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MultiSelect">
@@ -852,16 +542,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlMultiSelect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dc68-151">Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlMultiSelect" /> constante qui spécifie la plage d’éléments qui peuvent être sélectionnés dans le contrôle de zone de liste.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-151">Returns or sets an <see cref="T:Microsoft.Office.Interop.Outlook.OlMultiSelect" /> constant that  specifies the range of items that can be selected in the list box control.</span>
-          </span>
-          <span data-ttu-id="0dc68-152">Lecture/écriture.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-152">Read/write.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="857b3-155">Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlMultiSelect" /> constante qui spécifie la plage d’éléments qui peuvent être sélectionnés dans le contrôle de zone de liste.</span><span class="sxs-lookup"><span data-stu-id="857b3-155">Returns or sets an <see cref="T:Microsoft.Office.Interop.Outlook.OlMultiSelect" /> constant that  specifies the range of items that can be selected in the list box control.</span></span> <span data-ttu-id="857b3-156">Lecture-écriture.</span><span class="sxs-lookup"><span data-stu-id="857b3-156">Read/write.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -889,30 +570,10 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="0dc68-153">Index commençant à la valeur zéro dans le tableau des éléments de la liste.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-153">A zero-based value indexing into the array of items in the list.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="0dc68-154">Supprime l'élément spécifié de la liste.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-154">Removes the specified item from the list.</span>
-          </span>
-        </summary>
-        <remarks>
-          <span data-ttu-id="0dc68-155">
-            <para>Si <paramref name="Index" /> est en dehors de la plage de valeurs autorisées (entre 0 et <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />-1), une erreur hors limites est renvoyée.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-155">
-              <para>If <paramref name="Index" /> is outside the range of the allowed values (between zero and <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />-1), then an out-of-bounds error will be returned. </para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <param name="Index"><span data-ttu-id="857b3-157">Index commençant à la valeur zéro dans le tableau des éléments de la liste.</span><span class="sxs-lookup"><span data-stu-id="857b3-157">A zero-based value indexing into the array of items in the list.</span></span></param>
+        <summary><span data-ttu-id="857b3-158">Supprime l'élément spécifié de la liste.</span><span class="sxs-lookup"><span data-stu-id="857b3-158">Removes the specified item from the list.</span></span></summary>
+        <remarks><para><span data-ttu-id="857b3-159">Si <paramref name="Index" /> est en dehors de la plage de valeurs autorisées (entre 0 et <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />-1), une erreur hors limites est renvoyée.</span><span class="sxs-lookup"><span data-stu-id="857b3-159">If <paramref name="Index" /> is outside the range of the allowed values (between zero and <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />-1), then an out-of-bounds error will be returned.</span></span> </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetItem">
@@ -939,36 +600,11 @@
         <Parameter Name="Item" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="0dc68-156">Valeur de base 0 qui spécifie l'emplacement d'un élément dans la liste.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-156">A zero-based value that specifies the location of an item in the list.</span>
-          </span>
-        </param>
-        <param name="Item">
-          <span data-ttu-id="0dc68-157">Valeur à utiliser pour mettre à jour la liste à l'emplacement spécifié.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-157">The value to be used to update the list at the specified location.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="0dc68-158">Affecte la valeur spécifiée à l’élément situé à l’emplacement spécifié de la liste.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-158">Sets the item at the specified location in the list to the specified value.</span>
-          </span>
-        </summary>
-        <remarks>
-          <span data-ttu-id="0dc68-159">
-            <para>Si <paramref name="Index" /> est en dehors de la plage de valeurs autorisées (entre 0 et <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />-1), une erreur hors limites est renvoyée.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-159">
-              <para>If <paramref name="Index" /> is outside the range of the allowed values (between zero and <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />-1), then an out-of-bounds error will be returned. </para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <param name="Index"><span data-ttu-id="857b3-160">Valeur de base 0 qui spécifie l'emplacement d'un élément dans la liste.</span><span class="sxs-lookup"><span data-stu-id="857b3-160">A zero-based value that specifies the location of an item in the list.</span></span></param>
+        <param name="Item"><span data-ttu-id="857b3-161">Valeur à utiliser pour mettre à jour la liste à l'emplacement spécifié.</span><span class="sxs-lookup"><span data-stu-id="857b3-161">The value to be used to update the list at the specified location.</span></span></param>
+        <summary><span data-ttu-id="857b3-162">Affecte la valeur spécifiée à l’élément situé à l’emplacement spécifié de la liste.</span><span class="sxs-lookup"><span data-stu-id="857b3-162">Sets the item at the specified location in the list to the specified value.</span></span></summary>
+        <remarks><para><span data-ttu-id="857b3-163">Si <paramref name="Index" /> est en dehors de la plage de valeurs autorisées (entre 0 et <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />-1), une erreur hors limites est renvoyée.</span><span class="sxs-lookup"><span data-stu-id="857b3-163">If <paramref name="Index" /> is outside the range of the allowed values (between zero and <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />-1), then an out-of-bounds error will be returned.</span></span> </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetSelected">
@@ -995,38 +631,11 @@
         <Parameter Name="Selected" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="0dc68-160">Valeur de base 0 qui spécifie l'emplacement d'un élément dans la liste.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-160">A zero-based value that specifies the location of an item in the list.</span>
-          </span>
-        </param>
-        <param name="Selected">
-          <span data-ttu-id="0dc68-161">
-            <b>True</b> indique que l'élément doit être sélectionné, <b>False</b> indique que l'élément ne doit pas être sélectionné.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-161">
-              <b>True</b> to indicate that the item should be selected, <b>False</b> to indicate that the item should not be selected.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="0dc68-162">Définit l’état sélectionné d’un élément à l’emplacement spécifié dans la liste pour la donnée <paramref name="Selected" /> valeur.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-162">Sets the selected state of an item at the specified location in the list to the given <paramref name="Selected" /> value.</span>
-          </span>
-        </summary>
-        <remarks>
-          <span data-ttu-id="0dc68-163">
-            <para>Si <paramref name="Index" /> est en dehors de la plage de valeurs autorisées (entre 0 et <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />-1), une erreur hors limites est renvoyée.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-163">
-              <para>If <paramref name="Index" /> is outside the range of the allowed values (between zero and <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />-1), then an out-of-bounds error will be returned. </para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <param name="Index"><span data-ttu-id="857b3-164">Valeur de base 0 qui spécifie l'emplacement d'un élément dans la liste.</span><span class="sxs-lookup"><span data-stu-id="857b3-164">A zero-based value that specifies the location of an item in the list.</span></span></param>
+        <param name="Selected"><span data-ttu-id="857b3-165"><b>True</b> indique que l'élément doit être sélectionné, <b>False</b> indique que l'élément ne doit pas être sélectionné.</span><span class="sxs-lookup"><span data-stu-id="857b3-165"><b>True</b> to indicate that the item should be selected, <b>False</b> to indicate that the item should not be selected.</span></span></param>
+        <summary><span data-ttu-id="857b3-166">Définit l’état sélectionné d’un élément à l’emplacement spécifié dans la liste pour la donnée <paramref name="Selected" /> valeur.</span><span class="sxs-lookup"><span data-stu-id="857b3-166">Sets the selected state of an item at the specified location in the list to the given <paramref name="Selected" /> value.</span></span></summary>
+        <remarks><para><span data-ttu-id="857b3-167">Si <paramref name="Index" /> est en dehors de la plage de valeurs autorisées (entre 0 et <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />-1), une erreur hors limites est renvoyée.</span><span class="sxs-lookup"><span data-stu-id="857b3-167">If <paramref name="Index" /> is outside the range of the allowed values (between zero and <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />-1), then an out-of-bounds error will be returned.</span></span> </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -1055,31 +664,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dc68-164">Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui correspond au texte affiché dans le contrôle.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-164">Returns or sets a <b>String</b> (<b>string</b> in C#) that is the text displayed in the control.</span>
-          </span>
-          <span data-ttu-id="0dc68-165">Lecture/écriture.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-165">Read/write.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="857b3-168">Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui correspond au texte affiché dans le contrôle.</span><span class="sxs-lookup"><span data-stu-id="857b3-168">Returns or sets a <b>String</b> (<b>string</b> in C#) that is the text displayed in the control.</span></span> <span data-ttu-id="857b3-169">Lecture-écriture.</span><span class="sxs-lookup"><span data-stu-id="857b3-169">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dc68-166">
-            <para>La valeur par défaut de la propriété <b>Text</b> est une chaîne vide.</para>
-            <para>La propriété <b>Text</b> fournit la même valeur que la <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.Value" /> propriété, mais la valeur est fortement typée en tant que <b>chaîne</b> (<b>string</b> en c#).</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-166">
-              <para>The default value of the <b>Text</b> property is the empty string.</para>
-              <para>The <b>Text</b> property provides the same value as the <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.Value" /> property, but the value is strongly typed as a <b>String</b> (<b>string</b> in C#).</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="857b3-170">La valeur par défaut de la propriété <b>Text</b> est une chaîne vide.</span><span class="sxs-lookup"><span data-stu-id="857b3-170">The default value of the <b>Text</b> property is the empty string.</span></span></para>
+          <para><span data-ttu-id="857b3-171">La propriété <b>Text</b> fournit la même valeur que la <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.Value" /> propriété, mais la valeur est fortement typée en tant que <b>chaîne</b> (<b>string</b> en c#).</span><span class="sxs-lookup"><span data-stu-id="857b3-171">The <b>Text</b> property provides the same value as the <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.Value" /> property, but the value is strongly typed as a <b>String</b> (<b>string</b> in C#).</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextAlign">
@@ -1108,29 +697,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlTextAlign</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dc68-167">Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlTextAlign" /> constante qui spécifie l’alignement du texte dans le contrôle.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-167">Returns or sets an <see cref="T:Microsoft.Office.Interop.Outlook.OlTextAlign" /> constant that specifies how text is aligned in the control.</span>
-          </span>
-          <span data-ttu-id="0dc68-168">Lecture/écriture.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-168">Read/write.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="857b3-172">Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlTextAlign" /> constante qui spécifie l’alignement du texte dans le contrôle.</span><span class="sxs-lookup"><span data-stu-id="857b3-172">Returns or sets an <see cref="T:Microsoft.Office.Interop.Outlook.OlTextAlign" /> constant that specifies how text is aligned in the control.</span></span>  <span data-ttu-id="857b3-173">Lecture-écriture.</span><span class="sxs-lookup"><span data-stu-id="857b3-173">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dc68-169">
-            <para>La valeur par défaut est <b>olTextAlignLeft</b> dans les langues de droite à gauche comme anglais.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-169">
-              <para>The default value is <b>olTextAlignLeft</b> in left-to-right languages such as English.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="857b3-174">La valeur par défaut est <b>olTextAlignLeft</b> dans les langues qui s'écrivent de gauche à droite comme le français.</span><span class="sxs-lookup"><span data-stu-id="857b3-174">The default value is <b>olTextAlignLeft</b> in left-to-right languages such as English.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TopIndex">
@@ -1159,29 +729,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dc68-170">Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui représente l’index de l’élément dans la partie supérieure de la partie de la liste affichée.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-170">Returns or sets an <b>Integer</b> (<b>int</b> in C#) value that represents the index of the item at the top of the displayed portion of the list.</span>
-          </span>
-          <span data-ttu-id="0dc68-171">Lecture/écriture.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-171">Read/write.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="857b3-175">Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui représente l’index de l’élément dans la partie supérieure de la partie de la liste affichée.</span><span class="sxs-lookup"><span data-stu-id="857b3-175">Returns or sets an <b>Integer</b> (<b>int</b> in C#) value that represents the index of the item at the top of the displayed portion of the list.</span></span> <span data-ttu-id="857b3-176">Lecture-écriture.</span><span class="sxs-lookup"><span data-stu-id="857b3-176">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dc68-172">
-            <para>Comme faire défiler la liste, l’élément en haut de la liste s’affiche, et la valeur de cette propriété change pour refléter l’élément actuellement affichée en haut de la liste.</para> Valeur 
-          <para>l’index de la valeur zéro. La valeur par défaut est -1, indiquant qu’aucun ordre spécial ne doit être appliquée.</para><para /></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-172">
-              <para>As the list scrolls, the item at the top of the list will change, and the value of this property will change to reflect the item currently displayed at the top of the list.</para>
-              <para>The index value is zero-based. The default value is -1, indicating that no special ordering should be applied.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="857b3-177">Au fur et à mesure du défilement de la liste, l'élément situé en haut de la liste change et la valeur de cette propriété change en fonction de cet élément.</span><span class="sxs-lookup"><span data-stu-id="857b3-177">As the list scrolls, the item at the top of the list will change, and the value of this property will change to reflect the item currently displayed at the top of the list.</span></span></para>
+          <para><span data-ttu-id="857b3-p125">L'index commence à la valeur zéro. La valeur par défaut -1 indique qu'aucun ordre spécial ne doit être appliqué.</span><span class="sxs-lookup"><span data-stu-id="857b3-p125">The index value is zero-based. The default value is -1, indicating that no special ordering should be applied.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -1210,29 +762,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="0dc68-173">Cette propriété renvoie ou définit un <b>objet</b> qui représente le contenu sélectionné dans la liste affichée par le contrôle.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-173">Returns or sets an <b>Object</b> that represents the content selected in the list displayed by the control.</span>
-          </span>
-          <span data-ttu-id="0dc68-174">Lecture/écriture.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-174">Read/write.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="857b3-180">Cette propriété renvoie ou définit un <b>objet</b> qui représente le contenu sélectionné dans la liste affichée par le contrôle.</span><span class="sxs-lookup"><span data-stu-id="857b3-180">Returns or sets an <b>Object</b> that represents the content selected in the list displayed by the control.</span></span> <span data-ttu-id="857b3-181">Lecture-écriture.</span><span class="sxs-lookup"><span data-stu-id="857b3-181">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="0dc68-175">
-            <para>La valeur est identique à la valeur de <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.Text" />, sauf que cette propriété est <b>l’objet</b> et de <b>Text</b> est fortement typée en tant que <b>chaîne</b> (<b>string</b> en c#).</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="0dc68-175">
-              <para>The value is the same as the value of  <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.Text" />, except that this property is <b>Object</b> and <b>Text</b> is strongly typed as <b>String</b> (<b>string</b> in C#).  </para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="857b3-182">La valeur est identique à la valeur de <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.Text" />, sauf que cette propriété est <b>l’objet</b> et de <b>Text</b> est fortement typée en tant que <b>chaîne</b> (<b>string</b> en c#).</span><span class="sxs-lookup"><span data-stu-id="857b3-182">The value is the same as the value of  <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.Text" />, except that this property is <b>Object</b> and <b>Text</b> is strongly typed as <b>String</b> (<b>string</b> in C#).</span></span>  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

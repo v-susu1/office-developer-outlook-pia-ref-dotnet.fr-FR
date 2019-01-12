@@ -1,13 +1,5 @@
 <Type Name="_Stores" FullName="Microsoft.Office.Interop.Outlook._Stores">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="1140b6b1b491b9b987703c19f7175944985e3b9b" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633695" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _Stores : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1140b6b1b491b9b987703c19f7175944985e3b9b" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27903229" /></Metadata><TypeSignature Language="C#" Value="public interface _Stores : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Stores implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._Stores" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Stores&#xA;Implements IEnumerable" />
@@ -30,24 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="8c564-101">Il s’agit d’une interface principale dans une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="8c564-101">This is a primary interface in a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span>
-      </span>
-      <span data-ttu-id="8c564-102">Utilisez cette interface principale uniquement lorsque la méthode que vous souhaitez utiliser partageant le même nom qu’un événement de l’objet COM ; Dans ce cas, effectuez un cast à cette interface pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="8c564-102">Use this primary interface only when the method you want to use shares the same name as an event of the COM object; in this case, cast to this interface to call the method, and cast to the latest events interface to connect to the event.</span>
-      </span>
-      <span data-ttu-id="8c564-103">Sinon, utilisez l’interface .NET est dérivé de la coclasse COM pour accéder aux méthodes, propriétés et événements de l’objet COM.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="8c564-103">Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span>
-      </span>
-      <span data-ttu-id="8c564-104">Pour plus d’informations sur l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.Stores" />.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="8c564-104">For information about the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook.Stores" />.</span>
-      </span>
-    </summary>
+    <summary><span data-ttu-id="44cdd-101">Il s’agit d’une interface principale dans une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant.</span><span class="sxs-lookup"><span data-stu-id="44cdd-101">This is a primary interface in a COM coclass that is required by managed code for interoperability with the corresponding COM object.</span></span> <span data-ttu-id="44cdd-102">Utilisez cette interface principale uniquement lorsque la méthode que vous souhaitez utiliser partageant le même nom qu’un événement de l’objet COM ; Dans ce cas, effectuez un cast à cette interface pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement.</span><span class="sxs-lookup"><span data-stu-id="44cdd-102">Use this primary interface only when the method you want to use shares the same name as an event of the COM object; in this case, cast to this interface to call the method, and cast to the latest events interface to connect to the event.</span></span> <span data-ttu-id="44cdd-103">Sinon, utilisez l’interface .NET est dérivé de la coclasse COM pour accéder aux méthodes, propriétés et événements de l’objet COM.</span><span class="sxs-lookup"><span data-stu-id="44cdd-103">Otherwise, use the .NET interface that is derived from the COM coclass to access methods, properties, and events of the COM object.</span></span> <span data-ttu-id="44cdd-104">Pour plus d’informations sur l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.Stores" />.</span><span class="sxs-lookup"><span data-stu-id="44cdd-104">For information about the COM object, see <see cref="T:Microsoft.Office.Interop.Outlook.Stores" />.</span></span></summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -74,16 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="8c564-105">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> object qui représente l’application Outlook de l’objet parent.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c564-105">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object that represents the parent Outlook application for the  object.</span>
-          </span>
-          <span data-ttu-id="8c564-106">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c564-106">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="44cdd-105">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> object qui représente l’application Outlook de l’objet parent.</span><span class="sxs-lookup"><span data-stu-id="44cdd-105">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object that represents the parent Outlook application for the  object.</span></span> <span data-ttu-id="44cdd-106">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="44cdd-106">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -111,16 +77,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="8c564-107">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constante indiquant la classe de l’objet.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c564-107">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constant indicating the object's class.</span>
-          </span>
-          <span data-ttu-id="8c564-108">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c564-108">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="44cdd-107">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constante indiquant la classe de l’objet.</span><span class="sxs-lookup"><span data-stu-id="44cdd-107">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constant indicating the object's class.</span></span> <span data-ttu-id="44cdd-108">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="44cdd-108">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -148,16 +105,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="8c564-109">Renvoie une valeur d' <b>entier</b> (<b>int</b> en c#) indiquant le nombre d’objets dans la collection spécifiée.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c564-109">Returns an <b>Integer</b> (<b>int</b> in C#) value indicating the count of objects in the specified collection.</span>
-          </span>
-          <span data-ttu-id="8c564-110">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c564-110">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="44cdd-109">Renvoie une valeur d' <b>entier</b> (<b>int</b> en c#) indiquant le nombre d’objets dans la collection spécifiée.</span><span class="sxs-lookup"><span data-stu-id="44cdd-109">Returns an <b>Integer</b> (<b>int</b> in C#) value indicating the count of objects in the specified collection.</span></span> <span data-ttu-id="44cdd-110">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="44cdd-110">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -188,42 +136,12 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="8c564-111">Un <b>entier</b> qui spécifie un index de base 1 dans la collection <b>Stores</b> ou une valeur de <b>chaîne</b> (<b>string</b> en c#) qui spécifie le <see cref="P:Microsoft.Office.Interop.Outlook._Store.DisplayName" /> d’un <b>magasin</b> de la collection <b>Stores</b> .</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c564-111">Either an <b>Integer</b> that specifies a one-based index into the <b>Stores</b> collection, or a <b>String</b> (<b>string</b> in C#) value that specifies the <see cref="P:Microsoft.Office.Interop.Outlook._Store.DisplayName" /> of a <b>Store</b> in the <b>Stores</b> collection.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="8c564-112">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> objet qui est spécifiée par <paramref name="Index" />.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c564-112">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> object that is specified by <paramref name="Index" />.</span>
-          </span>
-          <span data-ttu-id="8c564-113">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c564-113">Read-only.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="8c564-114">Objet <b>Store</b> de l’objet parent <see cref="T:Microsoft.Office.Interop.Outlook.Stores" /> collection, tel que spécifié par <paramref name="Index" />.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c564-114">A <b>Store</b> object in the parent <see cref="T:Microsoft.Office.Interop.Outlook.Stores" /> collection, as specified by <paramref name="Index" />.</span>
-          </span>
-        </value>
-        <remarks>
-          <span data-ttu-id="8c564-115">
-            <para>La propriété <b>Store.DisplayName</b> est la propriété par défaut d’un <b>magasin</b>.</para>
-            <para>Si <paramref name="Index" /> est une chaîne et vous pouvez trouver aucun élément portant ce nom, une erreur est renvoyée.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c564-115">
-              <para>The <b>Store.DisplayName</b> property is the default property of a <b>Store</b>.</para>
-              <para>If <paramref name="Index" /> is a string and no item can be found by that name, an error will be returned.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <param name="Index"><span data-ttu-id="44cdd-111">Un <b>entier</b> qui spécifie un index de base 1 dans la collection <b>Stores</b> ou une valeur de <b>chaîne</b> (<b>string</b> en c#) qui spécifie le <see cref="P:Microsoft.Office.Interop.Outlook._Store.DisplayName" /> d’un <b>magasin</b> de la collection <b>Stores</b> .</span><span class="sxs-lookup"><span data-stu-id="44cdd-111">Either an <b>Integer</b> that specifies a one-based index into the <b>Stores</b> collection, or a <b>String</b> (<b>string</b> in C#) value that specifies the <see cref="P:Microsoft.Office.Interop.Outlook._Store.DisplayName" /> of a <b>Store</b> in the <b>Stores</b> collection.</span></span></param>
+        <summary><span data-ttu-id="44cdd-112">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> objet qui est spécifiée par <paramref name="Index" />.</span><span class="sxs-lookup"><span data-stu-id="44cdd-112">Returns a <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> object that is specified by <paramref name="Index" />.</span></span> <span data-ttu-id="44cdd-113">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="44cdd-113">Read-only.</span></span></summary>
+        <value><span data-ttu-id="44cdd-114">Objet <b>Store</b> de l’objet parent <see cref="T:Microsoft.Office.Interop.Outlook.Stores" /> collection, tel que spécifié par <paramref name="Index" />.</span><span class="sxs-lookup"><span data-stu-id="44cdd-114">A <b>Store</b> object in the parent <see cref="T:Microsoft.Office.Interop.Outlook.Stores" /> collection, as specified by <paramref name="Index" />.</span></span></value>
+        <remarks><para><span data-ttu-id="44cdd-115">La propriété <b>Store.DisplayName</b> est la propriété par défaut d'un objet <b>Store</b>.</span><span class="sxs-lookup"><span data-stu-id="44cdd-115">The <b>Store.DisplayName</b> property is the default property of a <b>Store</b>.</span></span></para>
+          <para><span data-ttu-id="44cdd-116">Si <paramref name="Index" /> est une chaîne et vous pouvez trouver aucun élément portant ce nom, une erreur est renvoyée.</span><span class="sxs-lookup"><span data-stu-id="44cdd-116">If <paramref name="Index" /> is a string and no item can be found by that name, an error will be returned.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -249,25 +167,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="8c564-p106">Renvoie la valeur de type <b>Object</b> parent de l’objet spécifié. En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c564-p106">Returns the parent <b>Object</b> of the specified object. Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="44cdd-p106">Renvoie la valeur de type <b>Object</b> parent de l’objet spécifié. En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="44cdd-p106">Returns the parent <b>Object</b> of the specified object. Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="8c564-118">
-            <para>Le parent d’un <see cref="T:Microsoft.Office.Interop.Outlook.Stores" /> objet est la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c564-118">
-              <para>The parent of a <see cref="T:Microsoft.Office.Interop.Outlook.Stores" /> object is the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> object.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="44cdd-119">Le parent d’un <see cref="T:Microsoft.Office.Interop.Outlook.Stores" /> objet est la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet.</span><span class="sxs-lookup"><span data-stu-id="44cdd-119">The parent of a <see cref="T:Microsoft.Office.Interop.Outlook.Stores" /> object is the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> object.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -293,41 +196,16 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="8c564-119">Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c564-119">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  object for the current session.</span>
-          </span>
-          <span data-ttu-id="8c564-120">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c564-120">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="44cdd-120">Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active.</span><span class="sxs-lookup"><span data-stu-id="44cdd-120">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  object for the current session.</span></span> <span data-ttu-id="44cdd-121">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="44cdd-121">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="8c564-121">
-            <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
-            <code>Dim objNamespace As Outlook.NameSpace = _
+        <remarks><para><span data-ttu-id="44cdd-122">La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active.</span><span class="sxs-lookup"><span data-stu-id="44cdd-122">The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session.</span></span> <span data-ttu-id="44cdd-123">Les deux membres ont la même fonction.</span><span class="sxs-lookup"><span data-stu-id="44cdd-123">Both members serve the same purpose.</span></span> <span data-ttu-id="44cdd-124">Par exemple, les paires d’instructions suivantes effectuent la même fonction :</span><span class="sxs-lookup"><span data-stu-id="44cdd-124">For example, the following pairs of statements perform the same function:</span></span></para>
+          <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
-            <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
-            <code>Outlook.NameSpace objNamespace = 
+          <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
+          <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
-            <code>Outlook.NameSpace objSession = Application.Session;</code>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c564-121">
-              <para>The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session. Both members serve the same purpose. For example, the following pairs of statements perform the same function:</para>
-              <code>Dim objNamespace As Outlook.NameSpace = _
-    Application.GetNamespace("MAPI")</code>
-              <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
-              <code>Outlook.NameSpace objNamespace = 
-    Application.GetNamespace("MAPI");</code>
-              <code>Outlook.NameSpace objSession = Application.Session;</code>
-              <para />
-            </span>
-          </span>
-        </remarks>
+          <code>Outlook.NameSpace objSession = Application.Session;</code>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
