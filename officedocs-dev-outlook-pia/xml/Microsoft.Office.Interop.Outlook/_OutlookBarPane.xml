@@ -1,13 +1,5 @@
 <Type Name="_OutlookBarPane" FullName="Microsoft.Office.Interop.Outlook._OutlookBarPane">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2923a9288732ec725b287e2a4c842456a050a185" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633482" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _OutlookBarPane" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2923a9288732ec725b287e2a4c842456a050a185" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27906729" /></Metadata><TypeSignature Language="C#" Value="public interface _OutlookBarPane" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _OutlookBarPane" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._OutlookBarPane" />
   <TypeSignature Language="VB.NET" Value="Public Interface _OutlookBarPane" />
@@ -232,16 +224,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -270,14 +260,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) indiquant l’état de visibilité de l’objet spécifié. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) indiquant l’état de visibilité de l’objet spécifié. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>True</b> pour afficher l’objet ; <b>False</b> pour le masquer.</para>
+        <remarks><para>Affectez-lui la valeur 
+            <b>True</b> pour afficher l’objet et la valeur <b>False</b> pour le masquer.</para>
           <para>Vous pouvez également utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._Explorer.ShowPane(Microsoft.Office.Interop.Outlook.OlPane,System.Boolean)" /> méthode ou <see cref="M:Microsoft.Office.Interop.Outlook._Explorer.IsPaneVisible(Microsoft.Office.Interop.Outlook.OlPane)" /> méthode d’un <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> object pour définir ou extraire cette valeur.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
