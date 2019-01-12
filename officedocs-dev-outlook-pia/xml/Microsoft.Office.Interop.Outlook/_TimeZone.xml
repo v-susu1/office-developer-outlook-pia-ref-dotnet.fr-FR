@@ -1,13 +1,5 @@
 <Type Name="_TimeZone" FullName="Microsoft.Office.Interop.Outlook._TimeZone">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c93472155461317f92e16b09941e71830b4f74ac" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634360" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _TimeZone" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c93472155461317f92e16b09941e71830b4f74ac" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901843" /></Metadata><TypeSignature Language="C#" Value="public interface _TimeZone" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _TimeZone" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._TimeZone" />
   <TypeSignature Language="VB.NET" Value="Public Interface _TimeZone" />
@@ -83,13 +75,11 @@
       <Docs>
         <summary>Renvoie une valeur d' <b>entier</b> (<b>int</b> en c#) qui représente la différence en minutes entre l’heure locale dans ce fuseau horaire et le temps universel coordonné (UTC). En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette valeur est stockée dans le cadre de la valeur pour les informations de fuseau horaire pour le fuseau horaire dans le Registre Windows. La valeur des informations de fuseau horaire est mappée sur les fenêtres <a href="http://go.microsoft.com/fwlink/?LinkId=87853">TIME_ZONE_INFORMATION</a></para>
+        <remarks><para>Cette valeur est stockée dans le cadre de la valeur pour les informations de fuseau horaire pour le fuseau horaire dans le Registre Windows. La valeur des informations de fuseau horaire est mappée sur les fenêtres <a href="http://go.microsoft.com/fwlink/?LinkId=87853">TIME_ZONE_INFORMATION</a></para>
           <para>
             <b>Bias</b> ne tient pas compte tout décalage d’heure pour l’heure d’été ou l’heure standard dans le fuseau horaire. Pour prendre en compte tout décalage d’heure d’été, utilisez <see cref="P:Microsoft.Office.Interop.Outlook._TimeZone.DaylightBias" />. En règle générale, lorsque le fuseau horaire local adopte heure, heure UTC est le résultat de l’ajout de <b>décalage</b> et <b>DaylightBias</b> à l’heure locale. Pour prendre en compte tout décalage d’heure standard, utilisez <see cref="P:Microsoft.Office.Interop.Outlook._TimeZone.StandardBias" />. En règle générale, lorsque le fuseau horaire local adopte l’heure standard, heure UTC est le résultat de l’ajout de <b>décalage</b> et <b>StandardBias</b> à l’heure locale. </para>
-          <para>, Par exemple, dans un état l’adoption d’heure d’été dans le fuseau horaire Pacifique, le <b>décalage</b> est 480 minutes et <b>DaylightBias</b> est 60 minutes. Pour déterminer l’heure UTC du 11 juin à 2 heures PST, ajoutez <b>Bias</b> (480/60) heures et une <b>DaylightBias</b> -(60/60) heures à l’heure locale 11 juin à 2 h du matin L’heure UTC est le 11 juin, 9 h 00</para>
-          <para />
-        </remarks>
+          <para>Par exemple, dans un État américain qui adopte l'heure d'été dans un fuseau horaire du Pacifique, la propriété <b>Bias</b> est égale à 480 minutes et la propriété <b>DaylightBias</b> à -60 minutes. Pour déterminer l'heure UTC du 11 juin à 2 heures PST, ajoutez une propriété <b>Bias</b> de (480/60) heures et une propriété <b>DaylightBias</b> de -(60/60) heures à l'heure locale de 2 heures le 11 juin. L'heure UTC est 9 heures le 11 juin.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Class">
@@ -145,11 +135,9 @@
       <Docs>
         <summary>Renvoie une valeur d' <b>entier</b> (<b>int</b> en c#) qui représente le décalage de temps en minutes à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._TimeZone.Bias" /> pour tenir compte de l’heure d’été dans ce fuseau horaire. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette valeur est stockée dans le cadre de la valeur pour les informations de fuseau horaire pour le fuseau horaire dans le Registre Windows. La valeur des informations de fuseau horaire est mappée sur les fenêtres <a href="http://go.microsoft.com/fwlink/?LinkId=87853">TIME_ZONE_INFORMATION</a></para>
-          <para>par rapport à l’heure UTC et l’heure locale du fuseau horaire, heure UTC est le résultat de l’ajout de <b>décalage</b> et <b>DaylightBias</b> à l’heure locale. Par exemple, dans un état l’adoption d’heure d’été dans le fuseau horaire Pacifique, le <b>décalage</b> est 480 minutes et <b>DaylightBias</b> est 60 minutes. Pour déterminer l’heure UTC du 11 juin à 2 heures PST, ajoutez <b>Bias</b> (480/60) heures et une <b>DaylightBias</b> -(60/60) heures à l’heure locale 11 juin à 2 h du matin L’heure UTC est le 11 juin, 9 h 00</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette valeur est stockée dans le cadre de la valeur pour les informations de fuseau horaire pour le fuseau horaire dans le Registre Windows. La valeur des informations de fuseau horaire est mappée sur les fenêtres <a href="http://go.microsoft.com/fwlink/?LinkId=87853">TIME_ZONE_INFORMATION</a></para>
+          <para>En ce qui concerne la relation entre l'heure UTC et l'heure locale du fuseau horaire, l'heure UTC résulte de l'ajout des propriétés <b>Bias</b> et <b>DaylightBias</b> à l'heure locale. Par exemple, dans un État américain qui adopte l'heure d'été dans un fuseau horaire du Pacifique, la propriété <b>Bias</b> est égale à 480 minutes et la propriété <b>DaylightBias</b> à -60 minutes. Pour déterminer l'heure UTC du 11 juin à 2 heures PST, ajoutez une propriété <b>Bias</b> de (480/60) heures et une propriété <b>DaylightBias</b> de -(60/60) heures à l'heure locale de 2 heures le 11 juin. L'heure UTC est 9 heures le 11 juin.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DaylightDate">
@@ -177,10 +165,8 @@
       <Docs>
         <summary>Renvoie une valeur <b>DateTime</b> qui représente la date et l’heure dans ce fuseau horaire lorsque l’heure passe à l’heure dans l’année en cours. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette valeur est stockée dans le cadre de la valeur des informations de fuseau horaire pour le fuseau horaire dans le Registre Windows. La valeur des informations de fuseau horaire est mappée sur les fenêtres <a href="http://go.microsoft.com/fwlink/?LinkId=87853">TIME_ZONE_INFORMATION</a></para>
-          <para />
-        </remarks>
+        <remarks><para>Cette valeur est stockée dans le cadre de la valeur des informations de fuseau horaire pour le fuseau horaire dans le Registre Windows. La valeur des informations de fuseau horaire est mappée sur les fenêtres <a href="http://go.microsoft.com/fwlink/?LinkId=87853">TIME_ZONE_INFORMATION</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DaylightDesignation">
@@ -208,10 +194,8 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) qui identifie le fuseau horaire à l’heure. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est stockée en tant que valeur Dlt pour le fuseau horaire dans le Registre.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est stockée en tant que valeur Dlt pour le fuseau horaire dans le Registre.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -239,10 +223,8 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) qui identifie de manière unique le fuseau horaire. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>L' <b>ID</b> d’un fuseau horaire est globalement identique à ce fuseau horaire.  Il est le nom de la clé de Registre Windows qui contient les informations de fuseau horaire. Contrairement à la <see cref="P:Microsoft.Office.Interop.Outlook._TimeZone.Name" /> propriété, la valeur <b>d’ID</b> n’est pas localisée.</para>
-          <para />
-        </remarks>
+        <remarks><para>L' <b>ID</b> d’un fuseau horaire est globalement identique à ce fuseau horaire.  Il est le nom de la clé de Registre Windows qui contient les informations de fuseau horaire. Contrairement à la <see cref="P:Microsoft.Office.Interop.Outlook._TimeZone.Name" /> propriété, la valeur <b>d’ID</b> n’est pas localisée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -270,10 +252,8 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) qui représente l’identificateur du fuseau horaire. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Généralement, le <b>nom</b> inclut la valeur de décalage de temps universel coordonné (UTC), le fuseau horaire officiel et les régions où le fuseau horaire est utilisé. Il est stocké en tant que la valeur d’affichage dans la clé de Registre pour un fuseau horaire.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>Name</b> inclut généralement la valeur de décalage entre l'heure UTC (Coordinated Universal Time), le fuseau horaire officiel, et les régions où le fuseau horaire est utilisé. Elle est stockée comme valeur Display dans la clé de Registre pour un fuseau horaire.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -329,16 +309,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StandardBias">
@@ -366,11 +344,9 @@
       <Docs>
         <summary>Renvoie une valeur d' <b>entier</b> (<b>int</b> en c#) qui représente le décalage de temps en minutes à partir de la <see cref="P:Microsoft.Office.Interop.Outlook._TimeZone.Bias" /> pour tenir compte de l’heure standard dans ce fuseau horaire. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette valeur est stockée dans le cadre de la valeur pour les informations de fuseau horaire pour le fuseau horaire dans le Registre Windows. La valeur des informations de fuseau horaire est mappée sur les fenêtres <a href="http://go.microsoft.com/fwlink/?LinkId=87853">TIME_ZONE_INFORMATION</a></para>
-          <para>par rapport à l’heure UTC et l’heure locale du fuseau horaire, heure UTC est le résultat de l’ajout de <b>décalage</b> et <b>StandardBias</b> à l’heure locale. Par exemple, dans un état adopte l’heure standard dans le fuseau horaire Pacifique, le <b>décalage</b> est 480 minutes et <b>StandardBias</b> est 0 minutes. Pour déterminer l’heure UTC du 11 juin à 2 heures PST, ajoutez <b>Bias</b> de (480/60) heures et une <b>StandardBias</b> 0 heures à l’heure locale 11 juin, 2 h du matin L’heure UTC est 10 heures le 11 juin</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette valeur est stockée dans le cadre de la valeur pour les informations de fuseau horaire pour le fuseau horaire dans le Registre Windows. La valeur des informations de fuseau horaire est mappée sur les fenêtres <a href="http://go.microsoft.com/fwlink/?LinkId=87853">TIME_ZONE_INFORMATION</a></para>
+          <para>En ce qui concerne la relation entre l'heure UTC et l'heure locale du fuseau horaire, l'heure UTC résulte de l'ajout des propriétés <b>Bias</b> et <b>StandardBias</b> à l'heure locale. Par exemple, dans un État américain qui adopte l'heure standard dans le fuseau horaire du Pacifique, la propriété <b>Bias</b> est égale à 480 minutes et la propriété <b>StandardBias</b> à 0 minutes. Pour déterminer l'heure UTC du 11 juin à 2 heures PST, ajoutez une propriété <b>Bias</b> de (480/60) heures et une propriété <b>StandardBias</b> de 0 heure à l'heure locale du 11 juin, 2 heures. L'heure UTC est le 11 juin, 9 heures.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StandardDate">
@@ -398,10 +374,8 @@
       <Docs>
         <summary>Renvoie une valeur <b>DateTime</b> qui représente la date et l’heure dans ce fuseau horaire lorsque l’heure passe à l’heure standard. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette valeur est stockée dans le cadre de la valeur des informations de fuseau horaire pour le fuseau horaire dans le Registre Windows. La valeur des informations de fuseau horaire est mappée sur les fenêtres <a href="http://go.microsoft.com/fwlink/?LinkId=87853">TIME_ZONE_INFORMATION</a></para>
-          <para />
-        </remarks>
+        <remarks><para>Cette valeur est stockée dans le cadre de la valeur des informations de fuseau horaire pour le fuseau horaire dans le Registre Windows. La valeur des informations de fuseau horaire est mappée sur les fenêtres <a href="http://go.microsoft.com/fwlink/?LinkId=87853">TIME_ZONE_INFORMATION</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StandardDesignation">
@@ -429,10 +403,8 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) qui identifie le fuseau horaire en heure standard. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est stockée en tant que valeur Std pour le fuseau horaire dans le Registre.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est stockée en tant que valeur Std pour le fuseau horaire dans le Registre.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

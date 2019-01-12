@@ -1,13 +1,5 @@
 <Type Name="_AssignToCategoryRuleAction" FullName="Microsoft.Office.Interop.Outlook._AssignToCategoryRuleAction">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5c792cfd8ebc5a986254fa2d2ce409c68091bc98" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633768" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _AssignToCategoryRuleAction" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5c792cfd8ebc5a986254fa2d2ce409c68091bc98" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27902718" /></Metadata><TypeSignature Language="C#" Value="public interface _AssignToCategoryRuleAction" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _AssignToCategoryRuleAction" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._AssignToCategoryRuleAction" />
   <TypeSignature Language="VB.NET" Value="Public Interface _AssignToCategoryRuleAction" />
@@ -55,10 +47,8 @@
       <Docs>
         <summary>Renvoie une constante, <b>olRuleActionAssignToCategory</b>, à partir de la <see cref="T:Microsoft.Office.Interop.Outlook.OlRuleActionType" /> énumération qui indique le type d’action entreprise par la règle. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La catégorie affecter l’action de la règle est pris en charge par les règles pour la réception des messages et des règles pour l’envoi de messages. Pour plus d’informations, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87797">Spécification d’Actions de règle</a></para>
-          <para />
-        </remarks>
+        <remarks><para> La catégorie affecter l’action de la règle est pris en charge par les règles pour la réception des messages et des règles pour l’envoi de messages. Pour plus d’informations, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87797">Spécification d’Actions de règle</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -115,13 +105,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un tableau de chaînes représentant les catégories affectées au message. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un tableau de chaînes représentant les catégories affectées au message. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>, Vous pouvez assigner un tableau avec un seul élément d’une seule catégorie ou un tableau de chaînes pour plusieurs catégories. Cette propriété utilise le caractère spécifié dans le nom de la valeur, sList, sous HKEY_CURRENT_USER\Control Panel\International dans le Registre Windows, comme délimiteur de plusieurs valeurs de catégorie. </para>
-          <para>Outlook ne vérifie pas pour déterminer si la propriété <b>Categories</b> contient des noms de catégorie qui se trouvent dans la liste principale des catégories.</para>
-          <para />
-        </remarks>
+        <remarks><para>Vous pouvez assigner un tableau avec un seul élément d’une seule catégorie ou un tableau de chaînes pour plusieurs catégories. Cette propriété utilise le caractère spécifié dans le nom de la valeur, sList, sous HKEY_CURRENT_USER\Control Panel\International dans le Registre Windows, comme délimiteur de plusieurs valeurs de catégorie. </para>
+          <para>Outlook n'effectue pas de vérification pour déterminer si la propriété <b>Categories</b> contient des noms de catégories qui se trouvent dans la liste principale des catégories.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Class">
@@ -178,12 +166,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui détermine si l’action de règle est activée. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui détermine si l’action de règle est activée. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Une fois que vous activez une règle, vous devez également enregistrer la règle à l’aide de <see cref="M:Microsoft.Office.Interop.Outlook._Rules.Save(System.Object)" /> afin que la règle et son état seront conservés au-delà de la session en cours.  Une règle est activée uniquement une fois qu’il a été enregistré avec succès.</para>
-          <para />
-        </remarks>
+        <remarks><para>Une fois que vous activez une règle, vous devez également enregistrer la règle à l’aide de <see cref="M:Microsoft.Office.Interop.Outlook._Rules.Save(System.Object)" /> afin que la règle et son état seront conservés au-delà de la session en cours.  Une règle est activée uniquement une fois qu’il a été enregistré avec succès. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -211,10 +197,8 @@
       <Docs>
         <summary>Renvoie la valeur de type <b>Object</b> parent de l’objet spécifié. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le parent de le <see cref="T:Microsoft.Office.Interop.Outlook.AssignToCategoryRuleAction" /> objet est la <see cref="T:Microsoft.Office.Interop.Outlook.RuleAction" /> objet.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le parent de le <see cref="T:Microsoft.Office.Interop.Outlook.AssignToCategoryRuleAction" /> objet est la <see cref="T:Microsoft.Office.Interop.Outlook.RuleAction" /> objet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -242,16 +226,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

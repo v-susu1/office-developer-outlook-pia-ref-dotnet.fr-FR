@@ -1,13 +1,5 @@
 <Type Name="_NewItemAlertRuleAction" FullName="Microsoft.Office.Interop.Outlook._NewItemAlertRuleAction">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5964291225b3ec448a6016897fb073eae35180fc" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633670" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _NewItemAlertRuleAction" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5964291225b3ec448a6016897fb073eae35180fc" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27902165" /></Metadata><TypeSignature Language="C#" Value="public interface _NewItemAlertRuleAction" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _NewItemAlertRuleAction" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._NewItemAlertRuleAction" />
   <TypeSignature Language="VB.NET" Value="Public Interface _NewItemAlertRuleAction" />
@@ -55,10 +47,8 @@
       <Docs>
         <summary>Renvoie une constante, <b>olRuleActionNewItemAlert</b>, à partir de la <see cref="T:Microsoft.Office.Interop.Outlook.OlRuleActionType" /> énumération qui indique le type d’action entreprise par la règle. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La nouvelle action de règle d’alerte d’élément est pris en charge uniquement par les règles de réception de messages. Pour plus d’informations, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87797">Spécification d’Actions de règle</a></para>
-          <para />
-        </remarks>
+        <remarks><para> La nouvelle action de règle d’alerte d’élément est pris en charge uniquement par les règles de réception de messages. Pour plus d’informations, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87797">Spécification d’Actions de règle</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -143,12 +133,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui détermine si l’action de règle est activée. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui détermine si l’action de règle est activée. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Une fois que vous activez une règle, vous devez également enregistrer la règle à l’aide de <see cref="M:Microsoft.Office.Interop.Outlook._Rules.Save(System.Object)" /> afin que la règle et son état seront conservés au-delà de la session en cours.  Une règle est activée uniquement une fois qu’il a été enregistré avec succès.</para>
-          <para />
-        </remarks>
+        <remarks><para>Une fois que vous activez une règle, vous devez également enregistrer la règle à l’aide de <see cref="M:Microsoft.Office.Interop.Outlook._Rules.Save(System.Object)" /> afin que la règle et son état seront conservés au-delà de la session en cours.  Une règle est activée uniquement une fois qu’il a été enregistré avec succès. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -176,10 +164,8 @@
       <Docs>
         <summary>Renvoie la valeur de type <b>Object</b> parent de l’objet spécifié. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>L’objet parent est la <see cref="T:Microsoft.Office.Interop.Outlook.RuleAction" /> objet.</para>
-          <para />
-        </remarks>
+        <remarks><para>L’objet parent est la <see cref="T:Microsoft.Office.Interop.Outlook.RuleAction" /> objet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -207,16 +193,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -245,12 +229,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le texte affiché dans la boîte de dialogue Nouvel élément. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le texte affiché dans la boîte de dialogue Nouvel élément. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Renvoie une erreur si le texte est une chaîne vide.</para>
-          <para />
-        </remarks>
+        <remarks><para>Renvoie une erreur si le texte est une chaîne vide</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

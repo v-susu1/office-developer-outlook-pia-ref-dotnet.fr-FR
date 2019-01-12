@@ -1,13 +1,5 @@
 <Type Name="Attachments" FullName="Microsoft.Office.Interop.Outlook.Attachments">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2b8b26dcc7340ad097dbcab31fa6b4722b3b19e2" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633884" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Attachments : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6f34c001cfd4c3278473ca2d66f73650667d3c4b" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27898731" /></Metadata><TypeSignature Language="C#" Value="public interface Attachments : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Attachments implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.Attachments" />
   <TypeSignature Language="VB.NET" Value="Public Interface Attachments&#xA;Implements IEnumerable" />
@@ -31,12 +23,10 @@
   </Attributes>
   <Docs>
     <summary>Contient un ensemble de <see cref="T:Microsoft.Office.Interop.Outlook.Attachment" /> objets qui représentent les pièces jointes d’un élément Outlook.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook.Attachments.Item(System.Object)" /> propriété permet de renvoyer la collection <b>Attachments</b> de tout élément Outlook (à l’exception des notes).</para>
+    <remarks><para>Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook.Attachments.Item(System.Object)" /> propriété permet de renvoyer la collection <b>Attachments</b> de tout élément Outlook (à l’exception des notes).</para>
       <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook.Attachments.Add(System.Object,System.Object,System.Object,System.Object)" /> pour ajouter une pièce jointe à un élément.</para>
-      <para>Pour garantir des résultats cohérents, enregistrez toujours un élément avant d’ajouter ou supprimer des objets dans la collection <b>Attachments</b> de l’élément.</para>
-      <para />
-    </remarks>
+      <para>Pour garantir des résultats cohérents, vous devez toujours enregistrer un élément avant d’ajouter ou supprimer des objets dans la collection <b>Attachments</b> de l’élément.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -70,10 +60,8 @@
         <param name="DisplayName">Ce paramètre s’applique uniquement si l’élément de messagerie est Rich Text format et de Type valeur <b>olByValue</b>: le nom est affiché dans un objet <b>Inspector</b> pour la pièce jointe, ou lorsque vous affichez les propriétés de la pièce jointe. Si l’élément de messagerie est au format texte brut ou HTML, puis la pièce jointe est affichée en utilisant le nom de fichier dans le <paramref name="Source" /> paramètre.</param>
         <summary>Crée une pièce jointe dans le <see cref="T:Microsoft.Office.Interop.Outlook.Attachments" /> collection.</summary>
         <returns>Un <see cref="T:Microsoft.Office.Interop.Outlook.Attachment" /> object qui représente la nouvelle pièce jointe.</returns>
-        <remarks>
-          <para>Lorsqu’une <b>pièce jointe</b> est ajouté à la collection <b>Attachments</b> d’un élément, la propriété <b>Type</b> de la <b>pièce jointe</b> renverra toujours <b>olOLE</b> (6) jusqu'à ce que l’élément est enregistré. Pour garantir des résultats cohérents, vous devez toujours enregistrer un élément avant d’ajouter ou supprimer des objets dans la collection <b>Attachments</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Lorsqu’une <b>pièce jointe</b> est ajoutée à la collection <b>Attachments</b> d’un élément, la propriété <b>Type</b> de la <b>pièce jointe</b> renvoie toujours <b>olOLE</b> (6) jusqu’à ce que l’élément soit enregistré. Pour obtenir des résultats cohérents, enregistrez toujours un élément avant d’ajouter ou de supprimer des objets de la collection <b>Attachments</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -273,16 +261,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

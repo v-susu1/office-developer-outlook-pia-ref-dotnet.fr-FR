@@ -1,13 +1,5 @@
 <Type Name="_NavigationGroup" FullName="Microsoft.Office.Interop.Outlook._NavigationGroup">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f9f5a339656c6e155227a160682fb61bd64884b8" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634330" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _NavigationGroup" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f9f5a339656c6e155227a160682fb61bd64884b8" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27902347" /></Metadata><TypeSignature Language="C#" Value="public interface _NavigationGroup" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _NavigationGroup" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._NavigationGroup" />
   <TypeSignature Language="VB.NET" Value="Public Interface _NavigationGroup" />
@@ -83,10 +75,8 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constante indiquant la classe de l’objet. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>olNavigationGroup</b> pour le <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroup" /> objet.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie <b>olNavigationGroup</b> pour le <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroup" /> objet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GroupType">
@@ -143,13 +133,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le nom complet de le <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroup" /> objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le nom complet de le <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroup" /> objet. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est limitée à 127 caractères. Plus de 127 caractères sont tronquées de valeurs de chaîne.</para>
+        <remarks><para>Cette propriété est limitée à 127 caractères. Les valeurs de chaîne dont la taille excède 127 caractères sont tronquées.</para>
           <para>Une erreur se produit si vous tentez de définir la valeur de cette propriété pour tout objet <b>NavigationGroup</b> associé à un <see cref="T:Microsoft.Office.Interop.Outlook.MailModule" /> objet.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NavigationFolders">
@@ -234,22 +222,20 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui représente la position ordinale de le <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroup" /> objet affiché dans le volet de Navigation. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui représente la position ordinale de le <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroup" /> objet affiché dans le volet de Navigation. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété peut uniquement être définie sur une valeur comprise entre 1 et la valeur de la <see cref="P:Microsoft.Office.Interop.Outlook._NavigationGroups.Count" /> propriété pour l’objet parent <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroups" /> objet. Une erreur se produit si vous tentez de définir cette propriété sur une valeur en dehors de cette plage.</para>
-          <para>Modifier la valeur de cette propriété pour un objet <b>NavigationGroup</b> modifie les valeurs <b>Position</b> des autres groupes de navigation contenus dans une collection <b>NavigationGroups</b> , en fonction de la modification relative entre la nouvelle valeur et la valeur d’origine de la propriété <b>Position</b> de cet objet <b>NavigationGroup</b> :</para>
+        <remarks><para>Cette propriété peut uniquement être définie sur une valeur comprise entre 1 et la valeur de la <see cref="P:Microsoft.Office.Interop.Outlook._NavigationGroups.Count" /> propriété pour l’objet parent <see cref="T:Microsoft.Office.Interop.Outlook.NavigationGroups" /> objet. Une erreur se produit si vous tentez de définir cette propriété sur une valeur en dehors de cette plage.</para>
+          <para>Le fait de modifier la valeur de cette propriété pour un objet <b>NavigationGroup</b> modifie les valeurs <b>Position</b> des autres groupes de navigation d'une collection <b>NavigationGroups</b> en fonction de la modification relative entre la nouvelle valeur et la valeur d'origine de la propriété <b>Position</b> de cet objet <b>NavigationGroup</b> :</para>
           <list type="bullet">
             <item>
-              <para>Si la nouvelle valeur est inférieure à la valeur d’origine, alors l’objet <b>NavigationGroup</b> spécifié se déplace vers le haut et pousse l’autre groupes de navigation déjà à ou en dessous de cette position vers le bas.</para>
+              <para>Si la nouvelle valeur est inférieure à la valeur d'origine, alors l'objet <b>NavigationGroup</b> spécifié se déplace vers le haut et pousse les autres groupes de navigation déjà à cette position ou en dessous vers le bas.</para>
             </item>
             <item>
-              <para>Si la nouvelle valeur est supérieure à la valeur d’origine, alors l’objet <b>NavigationGroup</b> spécifié se déplace vers le bas et pousse les autres groupes de navigation entre l’ancienne position et la nouvelle configuration, remplir l’ancienne position.</para>
+              <para>Si la nouvelle valeur est supérieure à la valeur d'origine, alors l'objet <b>NavigationGroup</b> spécifié se déplace vers le bas et pousse les autres groupes de navigation entre l'ancienne position et la nouvelle en prenant l'ancienne position.</para>
             </item>
           </list>
-          <para>Si le groupe de navigation n’est pas dans le volet de Navigation, alors que cette propriété renvoie -1.</para>
-          <para />
-        </remarks>
+          <para>Si le groupe de navigation n'est pas sur le Volet de navigation, cette propriété renvoie -1.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -277,16 +263,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

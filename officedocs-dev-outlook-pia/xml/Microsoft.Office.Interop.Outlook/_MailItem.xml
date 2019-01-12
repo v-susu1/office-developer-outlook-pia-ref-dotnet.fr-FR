@@ -1,13 +1,5 @@
 <Type Name="_MailItem" FullName="Microsoft.Office.Interop.Outlook._MailItem">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8ebd187494220916c18381901c32818abbb42e39" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633908" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _MailItem" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8ebd187494220916c18381901c32818abbb42e39" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901129" /></Metadata><TypeSignature Language="C#" Value="public interface _MailItem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _MailItem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._MailItem" />
   <TypeSignature Language="VB.NET" Value="Public Interface _MailItem" />
@@ -83,15 +75,28 @@
       <Docs>
         <param name="contact">Élément de contact à partir duquel obtenir les informations de carte de visite.</param>
         <summary>Ajoute des informations de contact basées sur la carte de visite électronique associée spécifié <see cref="T:Microsoft.Office.Interop.Outlook.ContactItem" /> objet dans le <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> objet.</summary>
-        <remarks>
-          <para>Cette méthode ajoute des informations de contact, générées à partir des informations stockées dans l’objet <b>ContactItem</b> , à l’objet <b>MailItem</b> existant. Les informations incluses dépendent de la valeur de la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.BodyFormat" /> propriété de l’objet <b>MailItem</b> :</para>
-          <list type="table">le
-            <item><description>résultat</description>de la
-              <description>valeur de la propriété</description></item><item><description>olFormatPlain</description><description>un fichier vCard (.VCD) est créé et ajouté à la Collection Attachments de l’objet MailItem.</description></item><item><description>olFormatRichText</description><description>un fichier vCard (.VCD) est créé et ajouté à la collection Attachments de l’objet MailItem.</description></item><item><description>olFormatHTML</description><description>une image de la carte de visite est générée et incluse dans la propriété Body de l’objet MailItem et un fichier vCard (.VCD) est créé et ajouté à la collection Attachments de l’objet MailItem.</description></item></list>
+        <remarks><para>Cette méthode ajoute des informations de contact, générées à partir des informations stockées dans l’objet <b>ContactItem</b> , à l’objet <b>MailItem</b> existant. Les informations incluses dépendent de la valeur de la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.BodyFormat" /> propriété de l’objet <b>MailItem</b> :</para>
+          <list type="table">
+            <item>
+              <description>Valeur de propriété</description>
+              <description>Résultat</description>
+            </item>
+            <item>
+              <description>olFormatPlain</description>
+              <description>Un fichier vCard (.vcd) est créé et ajouté à la collection Attachments de l’objet MailItem.</description>
+            </item>
+            <item>
+              <description>olFormatRichText</description>
+              <description>Un fichier vCard (.vcd) est créé et ajouté à la collection Attachments de l’objet MailItem.</description>
+            </item>
+            <item>
+              <description>valeur olFormatHTML</description>
+              <description>Une image de carte de visite est générée et incluse dans la propriété Body de l’objet MailItem, tandis qu’un fichier vCard (.vcd) est créé et ajouté à la collection Attachments de l’objet MailItem.</description>
+            </item>
+          </list>
           <para>
             <b>Remarque</b>: le fichier vCard joint contient uniquement les informations de contact incluses dans la carte de visite électronique associée à l’objet <b>ContactItem</b> . Les informations de contact n’affichées ne pas dans la carte de visite électronique sont exclues à partir du fichier vCard.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AlternateRecipientAllowed">
@@ -120,7 +125,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) qui a la <b>valeur True</b> si le message électronique peut être transféré. Lecture/écriture.</summary>
+        <summary>Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) qui a la <b>valeur True</b> si le message électronique peut être transféré. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -207,7 +212,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Une valeur <b>booléenne</b> (<b>bool</b> en c#) qui renvoie <b>la valeur True</b> si l’élément a été transféré automatiquement. Lecture/écriture.</summary>
+        <summary>Une valeur <b>booléenne</b> (<b>bool</b> en c#) qui renvoie <b>la valeur True</b> si l’élément a été transféré automatiquement. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -237,11 +242,9 @@
       <Docs>
         <summary>Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) qui détermine si l’élément est gagné en cas de résolution automatique de conflit. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur <b>False</b> n’indique pas nécessairement que l’élément est une précédence de résolution automatique de conflit. L’élément peut être en conflit avec un autre élément.</para>
-          <para>Si un élément a <see cref="P:Microsoft.Office.Interop.Outlook.Conflicts.Count" /> de son <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.Conflicts" /> propriété supérieure à zéro et si la propriété <b>AutoResolvedWinner</b> a la <b>valeur True</b>, il s’agit d’une résolution de conflit automatique un. En revanche, si l’élément est en conflit et que sa propriété <b>AutoResolvedWinner prend la</b><b>valeur False</b>, il est une précédence en cas de résolution automatique de conflit.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur <b>False</b> n'indique pas forcément que l'élément est un élément perdant dans une résolution automatique de conflit. L'élément peut être en conflit avec un autre élément.</para>
+          <para>Si un élément a <see cref="P:Microsoft.Office.Interop.Outlook.Conflicts.Count" /> de son <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.Conflicts" /> propriété supérieure à zéro et si la propriété <b>AutoResolvedWinner</b> a la <b>valeur True</b>, il s’agit d’une résolution de conflit automatique un. En revanche, si l’élément est en conflit et que sa propriété <b>AutoResolvedWinner prend la</b> <b>valeur False</b>, il est une précédence en cas de résolution automatique de conflit.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BCC">
@@ -270,12 +273,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant la liste des noms de copie carbone invisible (Cci) pour un <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />. Lecture/écriture.</summary>
+        <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant la liste des noms de copie carbone invisible (Cci) pour un <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété contient uniquement les noms complets. Le <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> collection doit être utilisée pour modifier les destinataires Cci.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété contient uniquement les noms complets. Le <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> collection doit être utilisée pour modifier les destinataires Cci. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BillingInformation">
@@ -304,12 +305,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente les informations de facturation associées à l’élément Outlook. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente les informations de facturation associées à l’élément Outlook. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Il s’agit d’un champ de texte de forme libre.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est un champ texte en forme libre.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Body">
@@ -338,12 +337,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le corps de texte en clair de l’élément Outlook. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le corps de texte en clair de l’élément Outlook. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.BodyFormat" /> propriété vous permet de modifier par programme l’éditeur utilisé pour le corps d’un élément.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.BodyFormat" /> propriété vous permet de modifier par programme l’éditeur utilisé pour le corps d’un élément.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BodyFormat">
@@ -372,13 +369,11 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlBodyFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlBodyFormat" /> constante indiquant le format du corps de texte.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlBodyFormat" /> constante indiquant le format du corps de texte.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le format de texte du corps détermine la norme utilisée pour afficher le texte du message. Microsoft Outlook propose trois options de format du corps de texte : texte brut, texte enrichi (RTF) et HTML.</para>
-          <para>La mise en forme tout le texte sera perdu lorsque la propriété <b>BodyFormat</b> est commutée de RTF en HTML et vice versa.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le format de texte du corps détermine la norme utilisée pour afficher le texte du message. Microsoft Outlook propose trois options de format du corps de texte : texte brut, texte enrichi (RTF) et HTML.</para>
+          <para>Toute la mise en forme du texte est perdue quand la propriété <b>BodyFormat</b> est commutée de RTF en HTML, et inversement.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Categories">
@@ -407,13 +402,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente les catégories affectées à l’élément Outlook. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente les catégories affectées à l’élément Outlook. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>Categories</b> est une chaîne délimitée des noms de catégories qui ont été attribués à un élément Outlook. Cette propriété utilise le caractère spécifié dans le nom de la valeur, sList, sous HKEY_CURRENT_USER\Control Panel\International dans le Registre Windows, comme délimiteur de plusieurs valeurs de catégorie. Pour convertir la chaîne de noms de catégories à un tableau de noms de catégorie, utilisez la fonction Microsoft Visual Basic <b>Split</b>.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CC">
@@ -442,12 +435,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant la liste complète des noms en copie carbone (CC) d’un <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />. Lecture/écriture.</summary>
+        <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant la liste complète des noms en copie carbone (CC) d’un <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété contient uniquement les noms complets. Le <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> collection doit être utilisée pour modifier les destinataires CC.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété contient uniquement les noms complets. Le <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> collection doit être utilisée pour modifier les destinataires CC. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Class">
@@ -525,10 +516,8 @@
       <Parameters />
       <Docs>
         <summary>Efface le <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> objet en tant que tâche.</summary>
-        <remarks>
-          <para>Appel de cette méthode définit la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.IsMarkedAsTask" /> propriété la <b>valeur False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Appel de cette méthode définit la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.IsMarkedAsTask" /> propriété la <b>valeur False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -585,12 +574,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant les noms des sociétés associées à l’élément Outlook. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant les noms des sociétés associées à l’élément Outlook. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Il s’agit d’un champ de texte de forme libre.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est un champ texte en forme libre. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Conflicts">
@@ -646,12 +633,10 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) qui identifie de manière unique un <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> objet qui le <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> objet appartient. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété associe des éléments à une conversation. Tous ces éléments et la conversation ont la même valeur dans leur propriété <b>ConversationID</b> .</para>
+        <remarks><para>Cette propriété associe les éléments à une conversation. Ces éléments et la conversation ont la même valeur dans leur propriété <b>ConversationID</b>.</para>
           <para>Cette propriété correspond à la propriété MAPI <b>PidTagConversationId</b>.</para>
           <para>Si l’objet <b>MailItem</b> est créé dans une version antérieure de Microsoft Outlook 2010 de Microsoft Outlook, ou si Outlook est exécuté en mode en ligne par rapport à une version antérieure à Microsoft Exchange Server 2010, cette propriété de Microsoft Exchange Server Renvoie la même valeur que la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.ConversationTopic" /> propriété.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ConversationIndex">
@@ -761,10 +746,8 @@
       <Docs>
         <summary>Retourne un <b>DateTime</b> indiquant l’heure de création de l’élément Outlook. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagCreationTime</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagCreationTime</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DeferredDeliveryTime">
@@ -793,12 +776,10 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>DateTime</b> qui indique la date et l’heure à laquelle que le message électronique doit être remis.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>DateTime</b> qui indique la date et l’heure à laquelle que le message électronique doit être remis.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagDeferredDeliveryTime</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagDeferredDeliveryTime</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -823,11 +804,9 @@
       <Parameters />
       <Docs>
         <summary>Supprime l’élément à partir du dossier qui contient l’élément.</summary>
-        <remarks>
-          <para>La méthode <b>Delete</b> supprime un seul élément dans une collection. Pour supprimer tous les éléments de la <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> collection d’un dossier, vous devez supprimer chaque élément commençant par le dernier élément dans le dossier. Par exemple, dans la collection items d’un dossier, AllItems, s’il y a n le nombre d’éléments dans le dossier, démarrez la suppression de l’élément situé à AllItems.Item(n), décrémenter l’index de chaque fois que vous supprimez AllItems.Item(1).</para>
-          <para>Supprimer la méthode déplace l’élément à partir du dossier contenant vers le dossier éléments supprimés. Si le dossier conteneur est le dossier éléments supprimés, la méthode <b>Delete</b> supprime l’élément définitivement.</para>
-          <para />
-        </remarks>
+        <remarks><para>La méthode <b>Delete</b> supprime un seul élément dans une collection. Pour supprimer tous les éléments de la <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> collection d’un dossier, vous devez supprimer chaque élément commençant par le dernier élément dans le dossier. Par exemple, dans la collection items d’un dossier, AllItems, s’il y a n le nombre d’éléments dans le dossier, démarrez la suppression de l’élément situé à AllItems.Item(n), décrémenter l’index de chaque fois que vous supprimez AllItems.Item(1).</para>
+          <para>La méthode Delete déplace l’élément à partir du dossier contenant vers le dossier éléments supprimés. Si le dossier conteneur est le dossier éléments supprimés, la méthode <b>Delete</b> supprime définitivement l’élément.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteAfterSubmit">
@@ -856,7 +835,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui a la <b>valeur True</b> si une copie du message électronique n’est pas enregistrée lors de l’envoi et la <b>valeur False</b> si une copie est enregistrée. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui a la <b>valeur True</b> si une copie du message électronique n’est pas enregistrée lors de l’envoi et la <b>valeur False</b> si une copie est enregistrée. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -883,14 +862,11 @@
         <Parameter Name="Modal" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Modal">
-          <b>True</b> pour que la fenêtre soit modale. La valeur par défaut est <b>False</b>.</param>
+        <param name="Modal"><b>True</b> pour que la fenêtre soit modale. La valeur par défaut est <b>False</b>.</param>
         <summary>Affiche un nouvel <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> objet pour l’élément.</summary>
-        <remarks>
-          <para>La méthode <b>Display</b> est prise en charge pour les fenêtres d’Explorateur et inspecteur pour des raisons de compatibilité descendante. Pour activer une fenêtre d’Explorateur ou d’inspecteur, utilisez la <see cref="M:Microsoft.Office.Interop.Outlook._Inspector.Activate" /> méthode.</para>
-          <para>Si vous essayez d’ouvrir un objet système de fichiers « dangereux » (ou un fichier « freedoc ») à l’aide du modèle objet Microsoft Outlook, vous recevez le code de retour E_FAIL dans les langages de programmation C ou C++. Dans Outlook 2000 et versions antérieures, vous pouviez ouvrir un objet de système fichier « non » à l’aide de la méthode <b>Display</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>La méthode <b>Display</b> est prise en charge pour les fenêtres d’Explorateur et inspecteur pour des raisons de compatibilité descendante. Pour activer une fenêtre d’Explorateur ou d’inspecteur, utilisez la <see cref="M:Microsoft.Office.Interop.Outlook._Inspector.Activate" /> méthode.</para>
+          <para>Si vous essayez d’ouvrir un objet système de fichiers « dangereux » (ou un fichier « freedoc ») à l’aide du modèle objet Microsoft Outlook, vous recevez le code de retour E_FAIL dans les langages de programmation C ou C++. Dans Outlook 2000 et versions antérieures, vous pouviez ouvrir un objet de système de fichiers qui n’était « pas sûr » à l’aide de la méthode <b>Display</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DownloadState">
@@ -983,9 +959,9 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) qui représente l’identificateur d’entrée unique de l’objet.  En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagEntryId</b>.</para> Fournisseur de banque 
-          <para>MAPI A assigne une chaîne d’ID unique lorsqu’un élément est créé dans son magasin. Par conséquent, la propriété <b>EntryID</b> n’est pas définie pour un élément Outlook jusqu'à ce qu’il est enregistré ou envoyé. L’identificateur d’entrée change lorsqu’un élément est déplacé vers une autre banque, par exemple, à partir de votre boîte de réception à un dossier public Microsoft Exchange Server, ou d’un fichier de dossiers personnels (.pst) vers un autre fichier .pst. Solutions ne doivent pas dépendre de la propriété <b>EntryID</b> pour être uniques, sauf si les éléments ne seront pas déplacées. La propriété <b>EntryID</b> renvoie un identificateur d’entrée à long terme MAPI. Pour plus d’informations sur les identificateurs d’entrée à long et à court terme, recherchez http://msdn.microsoft.com pour <b>PidTagEntryId</b>. </para><para /></remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagEntryId</b>.</para>
+          <para>Un fournisseur de banque MAPI affecte une chaîne d’ID unique lorsqu’un élément est créé dans son magasin. Par conséquent, la propriété <b>EntryID</b> n’est pas définie pour un élément Outlook jusqu'à ce qu’il est enregistré ou envoyé. L’ID d’entrée est modifié lorsqu’un élément est déplacé vers une autre banque, par exemple, depuis votre boîte de réception vers un dossier public Microsoft Exchange Server ou depuis un fichier Dossier personnel (.pst) vers un autre fichier .pst. Les solutions ne doivent pas dépendre du fait que la propriété <b>EntryID</b> soit unique, sauf si les éléments ne sont pas déplacés. La propriété <b>EntryID</b> renvoie un ID d’entrée à long terme MAPI. Pour plus d’informations sur les identificateurs d’entrée à long et à court terme, recherchez http://msdn.microsoft.com pour <b>PidTagEntryId</b>. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExpiryTime">
@@ -1014,7 +990,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>DateTime</b> qui indique la date et l’heure à laquelle l’élément n’est plus valide et peut être supprimée. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>DateTime</b> qui indique la date et l’heure à laquelle l’élément n’est plus valide et peut être supprimée. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1119,12 +1095,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui indique l’action requise pour un élément de courrier. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui indique l’action requise pour un élément de courrier. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Par défaut, un élément de courrier n’est pas marqué avec un indicateur et la valeur par défaut de cette propriété est une chaîne vide. Vous pouvez définir la valeur de <b>FlagRequest</b> via l’interface utilisateur ou par programme. Lorsque vous marquez un élément de courrier avec un indicateur via l’interface utilisateur, la valeur par défaut de <b>FlagRequest</b> est « Suivi ».</para>
-          <para />
-        </remarks>
+        <remarks><para>Par défaut, un élément de messagerie ne porte aucun indicateur et la valeur par défaut de cette propriété est une chaîne vide. Vous pouvez définir la valeur de <b>FlagRequest</b> via l'interface utilisateur ou par programmation. Lorsque vous affectez un indicateur à un élément de messagerie via l'interface utilisateur, la valeur par défaut de <b>FlagRequest</b> est « Suivi ».</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FlagStatus">
@@ -1241,25 +1215,23 @@
       <Docs>
         <summary>Obtient un <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> object qui représente la conversation à laquelle cet élément appartient.</summary>
         <returns>Renvoie un objet <b>Conversation</b> représentant la conversation à laquelle cet élément appartient.</returns>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>GetConversation</b> renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) si aucune conversation n’existe pour l’élément. Aucune conversation n’existe pour un élément dans les scénarios suivants :</para>
           <list type="bullet">
             <item>
-              <para>l’élément n’a pas été enregistré. Un élément peut être enregistré par un programme, par une action de l’utilisateur, ou à l’enregistrement automatique.</para>
+              <para>L’élément n’a pas été enregistré. Un élément peut être enregistré par programme, par une action de l’utilisateur ou par l’enregistrement automatique.</para>
             </item>
             <item>
-              <para>Pour un élément qui peut être envoyé (par exemple, un élément de courrier, élément de rendez-vous ou élément de contact), l’élément n’a pas été envoyé.</para>
+              <para>Un élément qui peut être envoyé (par exemple, un élément de courrier, de rendez-vous ou de contact) n’a pas été envoyé.</para>
             </item>
             <item>
-              <para>Conversations ont été désactivées via le Registre Windows.</para>
+              <para>Les conversations ont été désactivées via le Registre Windows.</para>
             </item>
             <item>
-              <para>Le magasin ne gère pas l’affichage de conversation (par exemple, Outlook s’exécute en mode en ligne classique par rapport à une version de Microsoft Exchange antérieure à Microsoft Exchange Server 2010). Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._Store.IsConversationEnabled" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> objet afin de déterminer si la banque prend en charge l’affichage conversation.</para>
+              <para>Le magasin ne gère pas l’affichage de conversation (par exemple, Outlook s’exécute en mode en ligne classique par rapport à une version de Microsoft Exchange antérieure à Microsoft Exchange Server 2010). Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._Store.IsConversationEnabled" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> objet afin de déterminer si la banque prend en charge l’affichage de la conversation.</para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetInspector">
@@ -1287,10 +1259,8 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> object qui représente un inspecteur initialisé pour contenir l’élément spécifié. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est particulièrement utile pour renvoyer un nouvel objet <b>Inspector</b> dans lequel afficher l’élément, par opposition à l’aide de la <see cref="M:Microsoft.Office.Interop.Outlook._Application.ActiveInspector" /> méthode et la définition du <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.CurrentItem" /> propriété.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est particulièrement utile pour renvoyer un nouvel objet <b>Inspector</b> dans lequel afficher l’élément, par opposition à l’aide de la <see cref="M:Microsoft.Office.Interop.Outlook._Application.ActiveInspector" /> méthode et la définition du <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.CurrentItem" /> propriété. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasCoverSheet">
@@ -1356,13 +1326,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le corps HTML de l’élément spécifié.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le corps HTML de l’élément spécifié.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>HTMLBody</b> doit être une chaîne de syntaxe HTML.</para>
-          <para>Définissant le <b>HTMLBody</b> propriété toujours à jour la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.Body" /> propriété immédiatement.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>HTMLBody</b> doit être une chaîne de syntaxe HTML.</para>
+          <para>Définition de la <b>HTMLBody</b> propriété toujours à jour la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.Body" /> propriété immédiatement.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Importance">
@@ -1391,12 +1359,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlImportance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlImportance" /> constante indiquant le niveau d’importance relative de l’élément Outlook. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlImportance" /> constante indiquant le niveau d’importance relative de l’élément Outlook. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagImportance</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagImportance</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InternetCodepage">
@@ -1425,12 +1391,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui détermine la page de codes Internet utilisée par l’élément. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui détermine la page de codes Internet utilisée par l’élément. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La page de codes Internet définit le schéma de codage de texte utilisé par l’élément.</para>
-          <para />
-        </remarks>
+        <remarks><para>La page de codes Internet définit le schéma de codage de texte utilisé par l'élément.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsConflict">
@@ -1458,11 +1422,9 @@
       <Docs>
         <summary>Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) qui détermine si l’élément est en conflit. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si un élément est en conflit est déterminée par l’état de l’application. Par exemple, lorsqu’un utilisateur est en mode hors connexion et tente d’accéder à un dossier en ligne l’action échoue. Dans ce scénario, la propriété <b>IsConflict</b> renvoie <b>la valeur True</b>.</para>
-          <para>Si <b>la valeur True</b>, l’élément spécifié est en conflit.</para>
-          <para />
-        </remarks>
+        <remarks><para>C'est l'état de l'application qui permet de déterminer si un élément est en conflit ou non. Par exemple, lorsqu'un utilisateur travaille en mode hors connexion et essaie d'accéder à un dossier en ligne, l'action échoue. Dans ce scénario, la propriété <b>IsConflict</b> renvoie la valeur <b>True</b>.</para>
+          <para>Si la valeur est <b>True</b>, l'élément spécifié est en conflit.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsIPFax">
@@ -1555,10 +1517,10 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.ItemProperties" /> collection qui représente toutes les propriétés standard et définies par l’utilisateur associées à l’élément Outlook. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La collection <b>ItemProperties</b> est une collection de base zéro, ce qui signifie que le premier objet de la collection est référencé par la valeur 0.</para>
-          <para />
-        </remarks>
+        <remarks><para>La collection <b>ItemProperties</b> est basée sur le zéro. En d’autres termes, l’index 0 fait référence au premier objet de la collection.
+
+</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LastModificationTime">
@@ -1586,10 +1548,8 @@
       <Docs>
         <summary>Retourne un <b>DateTime</b> spécifiant la date et l’heure de dernière modification de l’élément Outlook.  En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagLastModificationTime</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagLastModificationTime</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Links">
@@ -1679,10 +1639,8 @@
       <Docs>
         <param name="MarkInterval">Intervalle de tâche pour l' <b>objet MailItem</b>.</param>
         <summary>Marque un <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> objet en tant que tâche et affecte un intervalle de tâche pour l’objet.</summary>
-        <remarks>
-          <para>L’appel de cette méthode définit la valeur de plusieurs autres propriétés, en fonction de la valeur fournie dans <paramref name="MarkInterval" />. Pour plus d’informations sur les propriétés définies en spécifiant <paramref name="MarkInterval" />, voir <see cref="T:Microsoft.Office.Interop.Outlook.OlMarkInterval" />.</para>
-          <para />
-        </remarks>
+        <remarks><para>L’appel de cette méthode définit la valeur de plusieurs autres propriétés, en fonction de la valeur fournie dans <paramref name="MarkInterval" />. Pour plus d’informations sur les propriétés définies en spécifiant <paramref name="MarkInterval" />, voir <see cref="T:Microsoft.Office.Interop.Outlook.OlMarkInterval" />.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MarkForDownload">
@@ -1711,12 +1669,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlRemoteStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlRemoteStatus" /> constante qui détermine l’état d’un élément une fois qu’il est reçu par un utilisateur distant. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlRemoteStatus" /> constante qui détermine l’état d’un élément une fois qu’il est reçu par un utilisateur distant. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété donne aux utilisateurs distants avec moins idéales transfert de données fonctionnalités messagerie une souplesse accrue.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété donne plus de souplesse de messagerie aux utilisateurs distants qui ne disposent pas de capacités de transfert idéales.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MessageClass">
@@ -1745,12 +1701,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant la classe de message de l’élément Outlook. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant la classe de message de l’élément Outlook. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagMessageClass</b>. La propriété <b>MessageClass</b> lie l’élément au formulaire sur lequel il est basé. Lorsqu’un élément est sélectionné, Outlook utilise la classe de message pour localiser le formulaire et exposer ses propriétés, telles que des commandes répondre.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagMessageClass</b>. La propriété <b>MessageClass</b> lie l’élément au formulaire sur lequel il est basé. Lorsqu’un élément est sélectionné, Outlook se sert de la classe de message pour localiser le formulaire et exposer ses propriétés, comme les commandes Répondre.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Mileage">
@@ -1779,12 +1733,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant la mileage pour un élément. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant la mileage pour un élément. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Ceci est un champ de chaîne de la forme libre et peut servir à stocker les informations mileage associées à des fins de remboursement à l’élément (par exemple, 100 miles documentés pour un rendez-vous, contact ou tâche).</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est un champ de type chaîne forme libre qui permet de stocker les informations de kilométrage associées à l'élément (par exemple, 160 kilomètres indiqués pour un rendez-vous, un contact ou une tâche) en vue d'obtenir le remboursement des frais. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Move">
@@ -1842,7 +1794,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui a la <b>valeur True</b> pour ne pas dater l’élément Outlook. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui a la <b>valeur True</b> pour ne pas dater l’élément Outlook. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1873,9 +1825,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui détermine si l’expéditeur de l’élément de réunion ou une messagerie message vont recevoir un rapport de remise. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui détermine si l’expéditeur de l’élément de réunion ou une messagerie message vont recevoir un rapport de remise. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>Chaque fournisseur de transport qui gère votre message <para>envoie une notification de remise unique contenant les noms et les adresses de chaque destinataire auquel il a été remis. Remise n’implique pas que le message a été lu. True si l’expéditeur a demandé un accusé de réception du message. </para><para>La propriété <b>OriginatorDeliveryReportRequested</b> correspond à la propriété MAPI <b>PidTagOriginatorDeliveryReportRequested</b>.</para><para /></remarks>
+        <remarks><para>Chacun des fournisseurs de transport qui traite votre message vous envoie une seule notification de remise avec le nom et l’adresse de chaque destinataire ayant reçu le message. La remise d’un message n’implique pas qu’il a été lu. Cette propriété a la valeur True si l’expéditeur a demandé une confirmation de réception du message.</para>
+          <para>La propriété <b>OriginatorDeliveryReportRequested</b> correspond à la propriété MAPI <b>PidTagOriginatorDeliveryReportRequested</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OutlookInternalVersion">
@@ -1988,14 +1942,12 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlPermission</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Définit ou renvoie une <see cref="T:Microsoft.Office.Interop.Outlook.OlPermission" /> constante qui détermine les autorisations que les destinataires auront sur l’élément de courrier électronique. Lecture/écriture.</summary>
+        <summary>Définit ou renvoie une <see cref="T:Microsoft.Office.Interop.Outlook.OlPermission" /> constante qui détermine les autorisations que les destinataires auront sur l’élément de courrier électronique. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Permission</b> doit être synchronisée avec le <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.PermissionTemplateGuid" /> propriété précisément l’état de l’autorisation de l' <b>objet SharingItem</b>. Définition de la propriété <b>PermissionTemplateGuid</b> à un GUID valide doit également entraîner la définition de la propriété <b>Permission</b> sur <see cref="F:Microsoft.Office.Interop.Outlook.OlPermission.olPermissionTemplate" />. </para>
-          <para>Lorsqu’aucune Information Rights Management (IRM) a été configuré (dans ce cas la propriété <b>Permission</b> est <see cref="F:Microsoft.Office.Interop.Outlook.OlPermission.olUnrestricted" />), ou la restriction ne doit ne pas transférer l' <b>objet SharingItem</b> (dans ce cas la propriété <b>Permission</b> est <see cref="F:Microsoft.Office.Interop.Outlook.OlPermission.olDoNotForward" />), la valeur de la propriété <b>PermissionTemplateGuid</b> doit être une chaîne vide.</para>
-          <para>Bien que vous pouvez afficher le contenu protégé par IRM sur tout ordinateur exécutant Microsoft Office system 2007 ou une version ultérieure, vous devez disposer de Microsoft Office Professionnel 2003, Microsoft Office Outlook 2007 ou une version ultérieure de Microsoft Outlook pour créer ou envoyer un message électronique qui est protégé par IRM.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>Permission</b> doit être synchronisée avec le <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.PermissionTemplateGuid" /> propriété précisément l’état de l’autorisation de l' <b>objet SharingItem</b>. Définition de la propriété <b>PermissionTemplateGuid</b> à un GUID valide doit également entraîner la définition de la propriété <b>Permission</b> sur <see cref="F:Microsoft.Office.Interop.Outlook.OlPermission.olPermissionTemplate" />. </para>
+          <para>Lorsque aucune Information Rights Management (IRM) a été configuré (dans ce cas la propriété <b>Permission</b> est <see cref="F:Microsoft.Office.Interop.Outlook.OlPermission.olUnrestricted" />), ou la restriction ne doit ne pas transférer l' <b>objet SharingItem</b> (dans ce cas la propriété <b>Permission</b> est <see cref="F:Microsoft.Office.Interop.Outlook.OlPermission.olDoNotForward" />), la valeur de la propriété <b>PermissionTemplateGuid</b> doit être une chaîne vide.</para>
+          <para>Bien que vous pouvez afficher le contenu protégé par IRM sur tout ordinateur exécutant Microsoft Office system 2007 ou une version ultérieure, vous devez disposer de Microsoft Office Professionnel 2003, Microsoft Office Outlook 2007 ou une version ultérieure de Microsoft Outlook pour créer et envoyer un message électronique qui est protégé par IRM.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PermissionService">
@@ -2024,13 +1976,11 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlPermissionService</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Définit ou renvoie une <see cref="T:Microsoft.Office.Interop.Outlook.OlPermissionService" /> constante qui détermine le service d’autorisation qui sera utilisé lors de l’envoi d’un message protégé par Information Rights Management (IRM). Lecture/écriture.</summary>
+        <summary>Définit ou renvoie une <see cref="T:Microsoft.Office.Interop.Outlook.OlPermissionService" /> constante qui détermine le service d’autorisation qui sera utilisé lors de l’envoi d’un message protégé par Information Rights Management (IRM). Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est utile uniquement si vous possédez plusieurs identités d’autorisation pour une adresse SMTP donnée.</para>
-          <para>Alors que vous pouvez afficher le contenu protégé par IRM sur tout ordinateur exécutant Microsoft Office system 2007 ou une version ultérieure, vous devez disposer Microsoft Office Professionnel 2003, Microsoft Office Outlook 2007 ou une version ultérieure de Microsoft Outlook pour créer et envoyer un message électronique qui est protégé par IRM.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est utile uniquement si vous possédez plusieurs identités d'autorisation pour une adresse SMTP donnée. </para>
+          <para>Alors que vous pouvez afficher le contenu protégé par IRM sur tout ordinateur exécutant Microsoft Office system 2007 ou une version ultérieure, vous devez disposer de Microsoft Office Professionnel 2003, Microsoft Office Outlook 2007 ou une version ultérieure de Microsoft Outlook pour créer et envoyer un courrier électronique qui est protégé par IRM.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PermissionTemplateGuid">
@@ -2059,12 +2009,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le GUID du fichier de modèle à appliquer à la <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> afin de spécifier des autorisations d’Information Rights Management (IRM). Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le GUID du fichier de modèle à appliquer à la <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> afin de spécifier des autorisations d’Information Rights Management (IRM). Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété vient s’ajouter aux propriétés IRM sur un objet <b>MailItem</b> ; Autrement dit, le <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.Permission" /> propriété et la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.PermissionService" /> propriétés.</para>
-          <para>En particulier, la propriété <b>PermissionTemplateGuid</b> doit être synchronisée avec la propriété <b>Permission</b> pour refléter l’état de l’autorisation de l' <b>objet MailItem</b>. Définition de la propriété <b>PermissionTemplateGuid</b> à un GUID valide doit également entraîner la définition de la propriété <b>Permission</b> sur <see cref="F:Microsoft.Office.Interop.Outlook.OlPermission.olPermissionTemplate" />.</para> Propriété 
-          <para>une valeur de chaîne vide pour le <b>PermissionTemplateGuid</b> signifie qu’il n’existe aucun fichier de modèle d’autorisation spécifiée pour l' <b>objet MailItem</b>. Par exemple, si aucune IRM n’a été configuré (dans ce cas la propriété <b>Permission</b> est <see cref="F:Microsoft.Office.Interop.Outlook.OlPermission.olUnrestricted" />), ou la restriction ne doit ne pas transférer de l' <b>objet MailItem</b> (dans ce cas la propriété <b>Permission</b> est <see cref="F:Microsoft.Office.Interop.Outlook.OlPermission.olDoNotForward" />).</para><para>Si vous tentez de définir la propriété <b>PermissionTemplateGuid</b> pour un message reçu (autrement dit, le <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.Sent" /> propriété de l' <b>objet MailItem</b> a la <b>valeur True</b>), Microsoft Outlook renvoie une erreur.</para><para /></remarks>
+        <remarks><para>Cette propriété vient s’ajouter aux propriétés IRM sur un objet <b>MailItem</b> ; Autrement dit, le <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.Permission" /> propriété et la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.PermissionService" /> propriétés.</para>
+          <para>En particulier, la propriété <b>PermissionTemplateGuid</b> doit être synchronisée avec la propriété <b>Permission</b> pour refléter l’état de l’autorisation de l' <b>objet MailItem</b>. Définition de la propriété <b>PermissionTemplateGuid</b> à un GUID valide doit également entraîner la définition de la propriété <b>Permission</b> sur <see cref="F:Microsoft.Office.Interop.Outlook.OlPermission.olPermissionTemplate" />.</para>
+          <para>Une valeur de chaîne vide pour la propriété <b>PermissionTemplateGuid</b> signifie qu’il n’existe aucun fichier de modèle d’autorisation spécifiée pour l' <b>objet MailItem</b>. Par exemple, si aucune IRM n’a été configuré (dans ce cas la propriété <b>Permission</b> est <see cref="F:Microsoft.Office.Interop.Outlook.OlPermission.olUnrestricted" />), ou la restriction ne doit ne pas transférer de l' <b>objet MailItem</b> (dans ce cas la propriété <b>Permission</b> est <see cref="F:Microsoft.Office.Interop.Outlook.OlPermission.olDoNotForward" />).</para>
+          <para>Si vous tentez de définir la propriété <b>PermissionTemplateGuid</b> pour un message reçu (autrement dit, le <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.Sent" /> propriété de l' <b>objet MailItem</b> a la <b>valeur True</b>), Microsoft Outlook renvoie une erreur.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintOut">
@@ -2148,10 +2099,8 @@
       <Docs>
         <summary>Renvoie une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique <b>True</b> si une confirmation de lecture a été demandée par l’expéditeur.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagReadReceiptRequested</b>. En lecture/écriture pour les éléments de messagerie qui ont été créés mais pas envoyés ou publiés ; en lecture seule pour les éléments de courrier électronique envoyé.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété correspond à la propriété  MAPI <b>PidTagReadReceiptRequested</b>. En lecture-écriture pour les éléments de messagerie qui ont été créés mais pas encore envoyés ni publiés et en lecture seule pour les éléments de messagerie envoyés.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReceivedByEntryID">
@@ -2179,10 +2128,8 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant la <see cref="P:Microsoft.Office.Interop.Outlook.Recipient.EntryID" /> vrai destinataire, tel que défini par le fournisseur de transport remise du message. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagReceivedByEntryId</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagReceivedByEntryId</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReceivedByName">
@@ -2210,10 +2157,8 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant le nom complet du vrai destinataire du message. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagReceivedByName</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagReceivedByName</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReceivedOnBehalfOfEntryID">
@@ -2241,10 +2186,8 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant la <see cref="P:Microsoft.Office.Interop.Outlook.Recipient.EntryID" /> de l’utilisateur délégué pour représenter le destinataire du message. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagReceivedRepresentingEntryId</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagReceivedRepresentingEntryId</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReceivedOnBehalfOfName">
@@ -2272,10 +2215,8 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant le nom complet de l’utilisateur délégué pour représenter le destinataire du message. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagReceivedRepresentingName</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagReceivedRepresentingName</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReceivedTime">
@@ -2332,7 +2273,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) qui indique <b>True</b> si le destinataire ne peut pas transférer le message électronique. Lecture/écriture.</summary>
+        <summary>Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) qui indique <b>True</b> si le destinataire ne peut pas transférer le message électronique. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2362,10 +2303,8 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> collection qui représente tous les destinataires de l’élément Outlook. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Un destinataire peut être spécifié par une chaîne représentant le nom complet, l’alias ou adresse de messagerie SMTP complète.</para>
-          <para />
-        </remarks>
+        <remarks><para>Un destinataire peut être spécifié par une chaîne représentant le nom complet, l’alias ou adresse de messagerie SMTP complète.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReminderOverrideDefault">
@@ -2394,12 +2333,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui a la <b>valeur True</b> si le rappel remplace le comportement de rappel par défaut pour l’élément. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui a la <b>valeur True</b> si le rappel remplace le comportement de rappel par défaut pour l’élément. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Vous devez définir la propriété <b>ReminderOverrideDefault</b> pour valider la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.ReminderPlaySound" /> et <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.ReminderSoundFile" /> propriétés.</para>
-          <para />
-        </remarks>
+        <remarks><para>Vous devez définir la propriété <b>ReminderOverrideDefault</b> pour valider la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.ReminderPlaySound" /> et <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.ReminderSoundFile" /> propriétés.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReminderPlaySound">
@@ -2428,12 +2365,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui a la <b>valeur True</b> si le rappel doit émettre un signal sonore lorsqu’il se produit pour cet élément. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui a la <b>valeur True</b> si le rappel doit émettre un signal sonore lorsqu’il se produit pour cet élément. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>ReminderPlaySound</b> doit être définie pour valider la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.ReminderSoundFile" /> propriété.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>ReminderPlaySound</b> doit être définie pour valider la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.ReminderSoundFile" /> propriété. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReminderSet">
@@ -2462,7 +2397,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui a la <b>valeur True</b> si un rappel a été défini pour cet élément. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui a la <b>valeur True</b> si un rappel a été défini pour cet élément. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2493,12 +2428,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) indiquant le chemin d’accès et le nom du fichier audio à lire quand le rappel se déclenche pour l’élément Outlook. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) indiquant le chemin d’accès et le nom du fichier audio à lire quand le rappel se déclenche pour l’élément Outlook. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété n’est valide que si la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.ReminderOverrideDefault" /> et <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.ReminderPlaySound" /> propriétés est définie à <b>True</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété n’est valide que si la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.ReminderOverrideDefault" /> et <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.ReminderPlaySound" /> propriétés est définie à <b>True</b>. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReminderTime">
@@ -2527,7 +2460,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>DateTime</b> indiquant la date et l’heure à laquelle le rappel doit avoir lieu pour l’élément spécifié. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>DateTime</b> indiquant la date et l’heure à laquelle le rappel doit avoir lieu pour l’élément spécifié. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2558,7 +2491,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlRemoteStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlRemoteStatus" /> constante qui spécifie l’état distant du message électronique. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlRemoteStatus" /> constante qui spécifie l’état distant du message électronique. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2640,10 +2573,8 @@
       <Docs>
         <summary>Renvoie une liste de <b>chaîne</b> (<b>string</b> en c#) délimité par des points-virgules des destinataires du message de réponse.  En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété contient uniquement les noms complets pour les destinataires de la réponse. La liste doit être définie à l’aide de la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.ReplyRecipients" /> collection.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété contient uniquement les noms complets pour les destinataires de la réponse. La liste doit être définie à l’aide de la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.ReplyRecipients" /> collection.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReplyRecipients">
@@ -2699,8 +2630,23 @@
       <Docs>
         <summary>Renvoie un <see cref="T:System.DateTime" /> valeur qui spécifie la date lors de la <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> objet expire, après lequel l’Assistant de gestion des enregistrements de messagerie (MRM) supprime l’élément. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>Stratégie de rétention A <para>est activée et désactivée par un administrateur de Microsoft Exchange Server sur un niveau de boîte aux lettres. Cette fonctionnalité est disponible uniquement dans une boîte aux lettres Exchange Server 2010 avec MRM 2.0 activé. </para><para>Microsoft Outlook calcule la valeur de cette propriété en fonction de la date de début de rétention et la période de rétention, si Outlook est en mode hors connexion ou de cache. Le serveur Exchange spécifie la valeur si Outlook est en mode en ligne.</para><para>En général, la rétention date de début de l’élément est déterminée comme suit :</para><list type="bullet"><item><para>Reçu ou éléments envoyés : la date de début de rétention est la date de réception.</para></item><item><para>Des éléments de calendrier non périodiques : la date de début de rétention correspond à la date de fin du rendez-vous.</para></item> Éléments de calendrier périodique 
-            <item><para>: la date de début de rétention correspond à la date de fin de la dernière récurrence. S’il n’existe aucune date de fin, l’élément n’expire jamais.</para></item></list><para /><para /></remarks>
+        <remarks><para>Une stratégie de rétention est activée et désactivée par un administrateur de Microsoft Exchange Server sur un niveau de boîte aux lettres. Cette fonctionnalité est disponible uniquement dans une boîte aux lettres Exchange Server 2010 avec MRM 2.0 activé. </para>
+          <para>Microsoft Outlook calcule la valeur de cette propriété en fonction de la date de début de rétention et la période de rétention, si Outlook est en mode hors connexion ou de cache. Le serveur Exchange spécifie la valeur si Outlook est en mode en ligne.</para>
+          <para>
+En règle générale, la date de début de rétention de l’élément est déterminée de la façon suivante :</para>
+          <list type="bullet">
+            <item>
+              <para>Éléments envoyés ou reçus : la date de début de rétention correspond à la date de réception.</para>
+            </item>
+            <item>
+              <para>Éléments de calendrier non périodiques : la date de début de rétention correspond à la date de fin du rendez-vous.</para>
+            </item>
+            <item>
+              <para>Éléments de calendrier périodiques : la date de début de rétention correspond à la date de fin de la dernière périodicité. En l’absence de date de fin, l’élément n’expire jamais.</para>
+            </item>
+          </list>
+          <para> </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RetentionPolicyName">
@@ -2728,10 +2674,8 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) qui spécifie le nom de la stratégie de rétention. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Rétention est activée et désactivée par un administrateur de Microsoft Exchange Server sur un niveau de boîte aux lettres. La fonctionnalité est disponible uniquement dans une boîte aux lettres Exchange Server 2010 avec la messagerie enregistrements Management (MRM) 2.0 activé. Un exemple de nom d’une stratégie de rétention est « Intervalle de temps définir pour l’expiration recherche rapide ».</para>
-          <para />
-        </remarks>
+        <remarks><para>Rétention est activée et désactivée par un administrateur de Microsoft Exchange Server sur un niveau de boîte aux lettres. La fonctionnalité est disponible uniquement dans une boîte aux lettres Exchange Server 2010 avec la messagerie enregistrements Management (MRM) 2.0 activé. Un exemple de nom d’une stratégie de rétention est « Intervalle de temps définir pour l’expiration recherche rapide ».</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RTFBody">
@@ -2760,12 +2704,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un tableau d’octets qui représente le corps de l’élément Microsoft Outlook au Format RTF. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un tableau d’octets qui représente le corps de l’élément Microsoft Outlook au Format RTF. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Vous pouvez utiliser la méthode System.Text.Encoding.ASCIIEncoding.GetString () en c# ou Visual Basic pour convertir un tableau d’octets en une chaîne.</para>
-          <para />
-        </remarks>
+        <remarks><para>Vous pouvez utiliser la méthode System.Text.Encoding.ASCIIEncoding.GetString () en c# ou Visual Basic pour convertir un tableau d’octets en une chaîne.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -2790,10 +2732,8 @@
       <Parameters />
       <Docs>
         <summary>Enregistre l’élément Outlook dans le dossier actif ou, s’il s’agit d’un nouvel élément, dans le dossier Outlook par défaut pour le type d’élément.</summary>
-        <remarks>
-          <para>Si un élément de courrier est une réponse en ligne, l’appel à <b>Enregistrer</b> sur cet élément de messagerie peut-être échouer et entraîner un comportement inattendu.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si un élément de courrier est une réponse en ligne, l’appel à <b>Enregistrer</b> sur cet élément de messagerie peut-être échouer et entraîner un comportement inattendu.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveAs">
@@ -2819,13 +2759,11 @@
         <Parameter Name="Type" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Path">Chemin d'accès sur lequel l'élément doit être enregistré.</param>
-        <param name="Type">Le type de fichier à enregistrer. Peut être une des constantes dans le <see cref="T:Microsoft.Office.Interop.Outlook.OlSaveAsType" /> énumération.</param>
-        <summary>Enregistre l’élément Microsoft Outlook sur le chemin d’accès spécifié et le format du type de fichier spécifié. Si le type de fichier n’est pas spécifié, le format MSG (.msg) est utilisé.</summary>
-        <remarks>
-          <para>Notez que même si <b>olDoc</b> est une constante <b>OlSaveAsType</b> valide, les messages au format HTML ne peut pas être enregistrés au format de Document et la constante <b>olDoc</b> fonctionne uniquement si Microsoft Word est défini comme éditeur de messagerie par défaut.</para>
-          <para />
-        </remarks>
+        <param name="Path">Le chemin d’accès dans lequel enregistrer l’élément.</param>
+        <param name="Type">Type de fichier à enregistrer. Peut être une des constantes dans le <see cref="T:Microsoft.Office.Interop.Outlook.OlSaveAsType" /> énumération.</param>
+        <summary>Enregistre l’élément Microsoft Outlook dans le chemin d’accès spécifié et dans le format du type de fichier spécifié. Si le type de fichier n’est pas spécifié, le format message (.msg) est utilisé.</summary>
+        <remarks><para>Notez que même si <b>olDoc</b> est une constante <b>OlSaveAsType</b> valide, les messages au format HTML ne peut pas être enregistrés au format de Document et la constante <b>olDoc</b> fonctionne uniquement si Microsoft Word est défini comme éditeur de messagerie par défaut.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Saved">
@@ -2882,7 +2820,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.MAPIFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> objet qui représente le dossier dans lequel une copie du message électronique est enregistrée après l’envoi. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> objet qui représente le dossier dans lequel une copie du message électronique est enregistrée après l’envoi. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2909,10 +2847,8 @@
       <Parameters />
       <Docs>
         <summary>Envoie le message électronique.</summary>
-        <remarks>
-          <para>La méthode <b>Send</b> envoie un élément en utilisant le compte par défaut spécifié pour la session. Dans une session où plusieurs comptes Microsoft Exchange sont définis dans le profil, le premier compte Exchange ajouté au profil est le compte Exchange principal et est également le compte par défaut pour la session. Pour spécifier un autre compte pour envoyer un élément, définissez la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.SendUsingAccount" /> propriété souhaité <see cref="T:Microsoft.Office.Interop.Outlook.Account" /> objet, puis appelez la méthode <b>Send</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>La méthode <b>Send</b> envoie un élément en utilisant le compte par défaut spécifié pour la session. Dans une session où plusieurs comptes Microsoft Exchange sont définis dans le profil, le premier compte Exchange ajouté au profil est le compte Exchange principal. Il s’agit également du compte par défaut pour la session. Pour spécifier un autre compte pour envoyer un élément, définissez la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.SendUsingAccount" /> propriété souhaité <see cref="T:Microsoft.Office.Interop.Outlook.Account" /> objet, puis appelez la méthode <b>Send</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Sender">
@@ -2941,13 +2877,11 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.AddressEntry</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> objet qui correspond à l’utilisateur du compte à partir de laquelle la <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> est envoyée. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> objet qui correspond à l’utilisateur du compte à partir de laquelle la <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> est envoyée. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Dans une session où plusieurs comptes sont définis dans le profil, vous pouvez définir cette propriété pour spécifier le compte à partir de laquelle envoyer un élément de messagerie. Définir cette propriété à l’objet <b>AddressEntry</b> de l’utilisateur qui est représenté par le <see cref="P:Microsoft.Office.Interop.Outlook._Account.CurrentUser" /> propriété d’un compte spécifique.</para>
+        <remarks><para>Dans une session où plusieurs comptes sont définis dans le profil, vous pouvez définir cette propriété pour spécifier le compte à partir duquel envoyer un élément de messagerie. Définir cette propriété à l’objet <b>AddressEntry</b> de l’utilisateur qui est représenté par le <see cref="P:Microsoft.Office.Interop.Outlook._Account.CurrentUser" /> propriété d’un compte spécifique.</para>
           <para>Si vous définissez la propriété <b>expéditeur</b> sur un <b>objet AddressEntry</b> qui ne dispose pas d’autorisations pour envoyer des messages de ce compte, Outlook génère une erreur.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SenderEmailAddress">
@@ -2975,10 +2909,8 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) qui représente l’adresse de messagerie de l’expéditeur de l’élément Outlook.   En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagSenderEmailAddress</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagSenderEmailAddress</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SenderEmailType">
@@ -3034,11 +2966,9 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) indiquant le nom complet de l’expéditeur de l’élément Outlook.  En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagSenderName</b>.</para>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagSenderName</b>.</para>
           <para>Si vous souhaitez récupérer l’adresse de messagerie complète de l’expéditeur, utilisez la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.SenderEmailAddress" /> propriété.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SendUsingAccount">
@@ -3067,12 +2997,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Account</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.Account" /> object qui représente le compte sous lequel le <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> doit être envoyé. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.Account" /> object qui représente le compte sous lequel le <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> doit être envoyé. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>SendUsingAccount</b> peut être utilisée pour spécifier le compte doit être utilisé pour envoyer l' <b>objet MailItem</b> lorsque la <see cref="M:Microsoft.Office.Interop.Outlook._MailItem.Send" /> méthode est appelée. Cette propriété renvoie <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) si le compte spécifié pour l' <b>objet MailItem</b> n’existe plus.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>SendUsingAccount</b> peut être utilisée pour spécifier le compte doit être utilisé pour envoyer l' <b>objet MailItem</b> lorsque la <see cref="M:Microsoft.Office.Interop.Outlook._MailItem.Send" /> méthode est appelée. Cette propriété renvoie <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) si le compte spécifié pour l' <b>objet MailItem</b> n’existe plus.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Sensitivity">
@@ -3101,12 +3029,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlSensitivity</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une constante de le <see cref="T:Microsoft.Office.Interop.Outlook.OlSensitivity" /> énumération indiquant la sensibilité de l’élément Outlook. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une constante de le <see cref="T:Microsoft.Office.Interop.Outlook.OlSensitivity" /> énumération indiquant la sensibilité de l’élément Outlook. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagSensitivity</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagSensitivity</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Sent">
@@ -3134,10 +3060,8 @@
       <Docs>
         <summary>Renvoie une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si un message a été envoyé. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>En règle générale, il existe trois différents types de messages : envoyé, publié et enregistré. Messages envoyés sont des éléments envoyés à un destinataire ou un dossier public. Les messages publiés sont créés dans un dossier public. Messages enregistrés sont créés et enregistrés sans envoyer ou validation.</para>
-          <para />
-        </remarks>
+        <remarks><para>En règle générale, il existe trois types de messages différents : les messages envoyés, les messages publiés et les messages enregistrés. Les messages envoyés sont des éléments envoyés à un destinataire ou à un dossier public. Les messages publiés sont créés dans un dossier public. Les messages enregistrés sont créés et enregistrés sans être envoyés ou publiés.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SentOn">
@@ -3165,10 +3089,8 @@
       <Docs>
         <summary>Retourne un <b>DateTime</b> qui indique la date et l’heure d’envoi de l’élément Outlook. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagClientSubmitTime</b>. Lorsque vous envoyez un élément à l’aide de l’objet <see cref="M:Microsoft.Office.Interop.Outlook._MailItem.Send" /> méthode, le fournisseur de transport affecte la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.ReceivedTime" /> et propriétés <b>SentOn</b> pour vous.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagClientSubmitTime</b>. Lorsque vous envoyez un élément à l’aide de l’objet <see cref="M:Microsoft.Office.Interop.Outlook._MailItem.Send" /> méthode, le fournisseur de transport affecte la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.ReceivedTime" /> et propriétés <b>SentOn</b> pour vous. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SentOnBehalfOfName">
@@ -3197,12 +3119,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) indiquant le nom complet de l’expéditeur initial du message électronique. Lecture/écriture.</summary>
+        <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) indiquant le nom complet de l’expéditeur initial du message électronique. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagSentRepresentingName</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagSentRepresentingName</b>. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -3230,16 +3150,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowCategoriesDialog">
@@ -3321,12 +3239,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui indique l’objet de l’élément Outlook. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui indique l’objet de l’élément Outlook. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagSubject</b>. La propriété <b>Subject</b> est la propriété par défaut pour les éléments Outlook.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagSubject</b>. La propriété <b>Subject</b> est la propriété par défaut des éléments Outlook.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Submitted">
@@ -3354,10 +3270,8 @@
       <Docs>
         <summary>Renvoie une valeur <b>booléenne</b> (<b>bool</b> en c#) qui a la <b>valeur True</b> si l’élément a été soumis. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Un message est toujours créé et soumis dans un dossier, généralement la boîte d’envoi.</para>
-          <para />
-        </remarks>
+        <remarks><para>Un message est toujours créé et soumis dans un dossier, qui est généralement la Boîte d'envoi. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TaskCompletedDate">
@@ -3386,12 +3300,10 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>DateTime</b> qui représente la date de fin de la tâche pour cet <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>DateTime</b> qui représente la date de fin de la tâche pour cet <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) si le <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.IsMarkedAsTask" /> propriété est définie sur <b>False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) si le <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.IsMarkedAsTask" /> propriété est définie sur <b>False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TaskDueDate">
@@ -3420,12 +3332,10 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>DateTime</b> qui représente la date d’échéance de la tâche pour ce <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>DateTime</b> qui représente la date d’échéance de la tâche pour ce <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) si le <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.IsMarkedAsTask" /> propriété est définie sur <b>False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) si le <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.IsMarkedAsTask" /> propriété est définie sur <b>False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TaskStartDate">
@@ -3454,12 +3364,10 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>DateTime</b> qui représente la date de début de la tâche pour ce <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>DateTime</b> qui représente la date de début de la tâche pour ce <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> objet. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) si le <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.IsMarkedAsTask" /> propriété est définie sur <b>False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) si le <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.IsMarkedAsTask" /> propriété est définie sur <b>False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TaskSubject">
@@ -3488,12 +3396,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente l’objet de la tâche pour le <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente l’objet de la tâche pour le <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> objet. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie la valeur de la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.Subject" /> propriété si la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.IsMarkedAsTask" /> propriété est définie sur <b>False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie la valeur de la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.Subject" /> propriété si la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.IsMarkedAsTask" /> propriété est définie sur <b>False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="To">
@@ -3522,12 +3428,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une liste délimitée par des points-virgules de <b>chaîne</b> (<b>string</b> en c#) des noms complets des destinataires de l’élément Outlook. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une liste délimitée par des points-virgules de <b>chaîne</b> (<b>string</b> en c#) des noms complets des destinataires de l’élément Outlook. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété contient uniquement les noms complets. La propriété To correspond à la propriété MAPI <b>PidTagDisplayTo</b>. Le <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> collection doit être utilisée pour modifier cette propriété.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété contient uniquement les noms complets. La propriété To correspond à la propriété MAPI <b>PidTagDisplayTo</b>. Le <see cref="T:Microsoft.Office.Interop.Outlook.Recipients" /> collection doit être utilisée pour modifier cette propriété. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ToDoTaskOrdinal">
@@ -3556,13 +3460,11 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>DateTime</b> qui représente la valeur ordinale de la tâche pour le <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>DateTime</b> qui représente la valeur ordinale de la tâche pour le <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) si le <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.IsMarkedAsTask" /> propriété est définie sur <b>False</b>.</para>
+        <remarks><para>Cette propriété renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) si le <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.IsMarkedAsTask" /> propriété est définie sur <b>False</b>.</para>
           <para>Cette propriété est utilisée pour indiquer la façon dont la tâche doit être classée dans les groupes parents, comme le groupe aujourd'hui ou le groupe demain de la barre des tâches. La valeur utilisée dans cette propriété n’a pas de n’importe quelle relation aux valeurs de le <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.TaskStartDate" />, <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.TaskDueDate" />, ou <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.TaskCompletedDate" /> propriétés.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UnRead">
@@ -3591,7 +3493,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui est <b>la valeur True</b> si l’élément Outlook n'a pas été ouvert (lu). Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui est <b>la valeur True</b> si l’élément Outlook n'a pas été ouvert (lu). Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3650,12 +3552,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui spécifie une chaîne délimitée contenant le vote options du message. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui spécifie une chaîne délimitée contenant le vote options du message. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété utilise le caractère spécifié dans le nom de la valeur, sList, sous HKEY_CURRENT_USER\Control Panel\International dans le Registre Windows, comme délimiteur de plusieurs options de vote.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété utilise le caractère spécifié dans le nom de la valeur, sList, sous HKEY_CURRENT_USER\Control Panel\International dans le Registre de Windows, en tant que séparateur pour les options de vote multiples.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VotingResponse">
@@ -3684,12 +3584,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui spécifie la réponse de vote du message électronique. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui spécifie la réponse de vote du message électronique. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété se voit généralement affecter une des valeurs délimitées renvoyées par la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.VotingOptions" /> propriété sur une réponse au message d’origine.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété se voit généralement affecter une des valeurs délimitées renvoyées par la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.VotingOptions" /> propriété sur une réponse au message d’origine. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

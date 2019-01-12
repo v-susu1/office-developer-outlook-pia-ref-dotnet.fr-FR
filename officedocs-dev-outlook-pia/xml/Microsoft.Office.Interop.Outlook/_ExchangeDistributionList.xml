@@ -1,13 +1,5 @@
 <Type Name="_ExchangeDistributionList" FullName="Microsoft.Office.Interop.Outlook._ExchangeDistributionList">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3175efc5bfb7f609655b29eeb8a6e763f74a99de" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633869" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _ExchangeDistributionList" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3175efc5bfb7f609655b29eeb8a6e763f74a99de" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27900954" /></Metadata><TypeSignature Language="C#" Value="public interface _ExchangeDistributionList" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _ExchangeDistributionList" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._ExchangeDistributionList" />
   <TypeSignature Language="VB.NET" Value="Public Interface _ExchangeDistributionList" />
@@ -56,13 +48,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant la X400 adresse électronique de le <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant la X400 adresse électronique de le <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété suppose la X400 adresse de la liste de distribution. Pour déterminer l’adresse Internet principale, utilisez la <see cref="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.PrimarySmtpAddress" /> propriété.</para>
-          <para>La propriété <b>Address</b> doit être définie avant d’appeler le <see cref="M:Microsoft.Office.Interop.Outlook._ExchangeUser.Details(System.Object)" /> méthode.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété suppose la X400 adresse de la liste de distribution. Pour déterminer l’adresse Internet principale, utilisez la <see cref="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.PrimarySmtpAddress" /> propriété.</para>
+          <para>La propriété <b>Address</b> doit être définie avant d’appeler le <see cref="M:Microsoft.Office.Interop.Outlook._ExchangeUser.Details(System.Object)" /> méthode. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddressEntryUserType">
@@ -90,10 +80,8 @@
       <Docs>
         <summary>Renvoie <b>olExchangeDistributionListAddressEntry</b> qui est une constante à partir de la <see cref="T:Microsoft.Office.Interop.Outlook.OlAddressEntryUserType" /> type d’énumération qui représente l’utilisateur de la <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>L’objet <b>ExchangeDistributionList</b> est dérivé de le <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> objet. Il hérite de la propriété <b>AddressEntryUserType</b> de l’objet <b>AddressEntry</b> . Dans le cas <b>ExchangeDistributionList</b>, <b>AddressEntryUserType</b> doit toujours renvoyer <b>olExchangeDistributionListAddressEntry</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>L’objet <b>ExchangeDistributionList</b> est dérivé de le <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> objet. Il hérite de la propriété <b>AddressEntryUserType</b> de l’objet <b>AddressEntry</b> . Dans le cas <b>ExchangeDistributionList</b>, <b>AddressEntryUserType</b> doit toujours renvoyer <b>olExchangeDistributionListAddressEntry</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Alias">
@@ -121,11 +109,9 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant l’alias de le <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagAccount</b>.</para>
-          <para>Renvoie une chaîne vide si cette propriété n’a pas été implémentée ou n’existe pas pour l’objet <b>ExchangeDistributionList</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagAccount</b>.</para>
+          <para>Renvoie une chaîne vide si cette propriété n’a pas été implémentée ou n’existe pas pour l’objet <b>ExchangeDistributionList</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -210,13 +196,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant les commentaires pour le <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. Lecture/écriture.</summary>
+        <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant les commentaires pour le <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagComment</b>.</para>
-          <para>Renvoie une chaîne vide si cette propriété n’a pas été implémentée ou n’existe pas pour l’objet <b>ExchangeDistributionList</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagComment</b>.</para>
+          <para> Renvoie une chaîne vide si cette propriété n’a pas été implémentée ou n’existe pas pour l’objet <b>ExchangeDistributionList</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -241,10 +225,8 @@
       <Parameters />
       <Docs>
         <summary>Supprime le <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> d’objet à partir de la <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> objet de la collection à laquelle elle appartient.</summary>
-        <remarks>
-          <para>L’objet <b>ExchangeDistributionList</b> est dérivé de le <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> objet. Un objet <b>ExchangeDistributionList</b> est un objet <b>AddressEntry</b> qui a <b>olExchangeDistributionListAddressEntry</b> comme le <see cref="P:Microsoft.Office.Interop.Outlook.AddressEntry.AddressEntryUserType" />; l’appel <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntry.GetExchangeDistributionList" /> renvoie l’objet <b>ExchangeDistributionList</b> correspondant.</para>
-          <para />
-        </remarks>
+        <remarks><para>L’objet <b>ExchangeDistributionList</b> est dérivé de le <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> objet. Un objet <b>ExchangeDistributionList</b> est un objet <b>AddressEntry</b> qui a <b>olExchangeDistributionListAddressEntry</b> comme le <see cref="P:Microsoft.Office.Interop.Outlook.AddressEntry.AddressEntryUserType" />; l’appel <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntry.GetExchangeDistributionList" /> renvoie l’objet <b>ExchangeDistributionList</b> correspondant.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Details">
@@ -272,11 +254,11 @@
         <param name="HWnd">Descripteur de la fenêtre parente de la boîte de dialogue Détails. La valeur zéro (par défaut) spécifie une boîte de dialogue modale.
 </param>
         <summary>Affiche la boîte de dialogue modale qui fournit des informations détaillées sur un <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> objet.</summary>
-        <remarks>
-          <para>La méthode <b>Details</b> échoue si la <see cref="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.Name" /> propriété est vide. Vous devez utiliser la gestion des erreurs pour traiter les erreurs d’exécution et lorsque l’utilisateur clique sur Annuler dans la boîte de dialogue. </para>
-          <para>Les <b>Détails</b> de la méthode arrête le code en cours d’exécution alors que la boîte de dialogue s’affiche.   </para>
-          <para />
-        </remarks>
+        <remarks><para>La méthode <b>Details</b> échoue si la <see cref="P:Microsoft.Office.Interop.Outlook._ExchangeDistributionList.Name" /> propriété est vide. Vous devez utiliser la gestion des erreurs pour traiter les erreurs d’exécution et lorsque l’utilisateur clique sur Annuler dans la boîte de dialogue. </para>
+          <para>La méthode <b>Details</b> empêche l'exécution du code lorsque la boîte de dialogue est affichée.
+
+</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayType">
@@ -304,9 +286,9 @@
       <Docs>
         <summary>Renvoie <b>olDistList</b> qui est une constante à partir de la <see cref="T:Microsoft.Office.Interop.Outlook.OlDisplayType" /> énumération représentant la nature de le <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagDisplayType</b>.</para> Objet 
-          <para>l' <b>objet ExchangeDistributionList</b> est dérivé de le <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> objet. Il hérite de la propriété <b>DisplayType (TypeAffichage)</b> de l’objet <b>AddressEntry</b> . Dans le cas <b>ExchangeDistributionList</b>, <b>DisplayType</b> doit toujours renvoyer <b>olDistList</b>.</para><para /></remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagDisplayType</b>.</para>
+          <para>L’objet <b>ExchangeDistributionList</b> est dérivé de le <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> objet. Il hérite de la propriété <b>DisplayType (TypeAffichage)</b> de l’objet <b>AddressEntry</b> . Dans le cas <b>ExchangeDistributionList</b>, <b>DisplayType</b> doit toujours renvoyer <b>olDistList</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetContact">
@@ -331,12 +313,9 @@
       <Parameters />
       <Docs>
         <summary>Renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#), car le <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> objet ne correspond pas à un contact dans un carnet d’adresses de Contacts.</summary>
-        <returns>
-          <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#), car l’objet <b>ExchangeDistributionList</b> ne correspond pas à un contact dans un carnet d’adresses de Contacts.</returns>
-        <remarks>
-          <para>L’objet <b>ExchangeDistributionList</b> est dérivé de le <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> objet. Il hérite de la méthode <b>GetContact</b> de l’objet <b>AddressEntry</b> , et dans le cas <b>ExchangeDistributionList</b>, cette méthode renvoie toujours la <b>valeur Nothing</b>.</para>
-          <para />
-        </remarks>
+        <returns><b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#), car l’objet <b>ExchangeDistributionList</b> ne correspond pas à un contact dans un carnet d’adresses de Contacts.</returns>
+        <remarks><para>L’objet <b>ExchangeDistributionList</b> est dérivé de le <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> objet. Il hérite de la méthode <b>GetContact</b> de l’objet <b>AddressEntry</b> , et dans le cas <b>ExchangeDistributionList</b>, cette méthode renvoie toujours la <b>valeur Nothing</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetExchangeDistributionList">
@@ -413,12 +392,9 @@
       <Parameters />
       <Docs>
         <summary>Renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#), car le <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> objet ne correspond pas à un <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeUser" /> objet.</summary>
-        <returns>
-          <b>Null</b> (<b>Nothing</b> dans Visual Basic), car l'objet <b>ExchangeDistributionList</b> ne correspond à aucun objet <b>ExchangeUser</b>.</returns>
-        <remarks>
-          <para>L’objet <b>ExchangeDistributionList</b> est dérivé de le <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> objet. Il hérite de la méthode <b>GetExchangeUser</b> de l’objet <b>AddressEntry</b> , et dans le cas <b>ExchangeDistributionList</b>, cette méthode renvoie toujours la <b>valeur Nothing</b>.</para>
-          <para />
-        </remarks>
+        <returns><b>Null</b> (<b>Nothing</b> dans Visual Basic), car l'objet <b>ExchangeDistributionList</b> ne correspond à aucun objet <b>ExchangeUser</b>.</returns>
+        <remarks><para>L’objet <b>ExchangeDistributionList</b> est dérivé de le <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> objet. Il hérite de la méthode <b>GetExchangeUser</b> de l’objet <b>AddressEntry</b> , et dans le cas <b>ExchangeDistributionList</b>, cette méthode renvoie toujours la <b>valeur Nothing</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetFreeBusy">
@@ -450,11 +426,9 @@
         <param name="CompleteFormat">To be added.</param>
         <summary>Renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#), car les informations de disponibilité sont disponibles uniquement à des utilisateurs individuels et pas <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> objets.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>L’objet <b>ExchangeDistributionList</b> est dérivé de le <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> objet. Il hérite de la méthode <b>GetFreeBusy</b> de l’objet <b>AddressEntry</b> , et dans le cas <b>ExchangeDistributionList</b>, quel que soit les valeurs des paramètres, cette méthode renvoie toujours <b>Nothing</b>.</para>
-          <para>Cette méthode ne renvoie pas les informations de disponibilité des membres individuels d’un <b>objet ExchangeDistributionList</b>. Pour obtenir les informations de disponibilité pour une demande de réunion, envoyez la demande à des utilisateurs individuels. Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook.AddressEntry.AddressEntryUserType" /> provenant de la propriété de l’objet <b>AddressEntry</b><see cref="P:Microsoft.Office.Interop.Outlook.Recipient.AddressEntry" /> pour déterminer si une <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> représente un <b>objet ExchangeDistributionList</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>L’objet <b>ExchangeDistributionList</b> est dérivé de le <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> objet. Il hérite de la méthode <b>GetFreeBusy</b> de l’objet <b>AddressEntry</b> , et dans le cas <b>ExchangeDistributionList</b>, quel que soit les valeurs des paramètres, cette méthode renvoie toujours <b>Nothing</b>.</para>
+          <para> Cette méthode ne renvoie pas les informations de disponibilité des membres individuels d’un <b>objet ExchangeDistributionList</b>. Pour obtenir les informations de disponibilité pour une demande de réunion, envoyez la demande à des utilisateurs individuels. Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook.AddressEntry.AddressEntryUserType" /> provenant de la propriété de l’objet <b>AddressEntry</b> <see cref="P:Microsoft.Office.Interop.Outlook.Recipient.AddressEntry" /> pour déterminer si une <see cref="T:Microsoft.Office.Interop.Outlook.Recipient" /> représente un <b>objet ExchangeDistributionList</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetMemberOfList">
@@ -480,11 +454,9 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> objet de collection qui contient toutes les le <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> objets représentant les listes de Distribution Exchange dont le <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> est un membre.</summary>
         <returns>Un objet de collection <b>AddressEntries</b> qui représente les listes de distribution dont cet objet <b>ExchangeDistributionList</b> est membre. Renvoie un objet <b>AddressEntries</b> avec une valeur zéro (0) si l'objet <b>ExchangeDistributionList</b> n'est pas membre d'une liste de distribution Exchange.</returns>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>GetMemberOfList</b> est coûteux en termes de performances, s’il existe une connexion lente à Exchange Server.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetOwners">
@@ -510,11 +482,9 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> objet de collection qui contient tous les propriétaires de la <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />.</summary>
         <returns>Un objet de collection <b>AddressEntries</b> qui contient <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> objets représentant tous les propriétaires de l' <b>objet ExchangeDistributionList</b>. Renvoie un objet <b>AddressEntries</b> avec la valeur zéro (0) si aucun propriétaire n’est trouvé pour l' <b>objet ExchangeDistributionList</b> dans la session active.</returns>
-        <remarks>
-          <para>
-            <b>GetOwners</b> est coûteux en termes de performances, s’il existe une connexion lente à Exchange Server.</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>GetOwners</b> nuit aux performances si la connexion au serveur Exchange est lente.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -542,10 +512,8 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) qui représente l’identificateur unique de la <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>L’objet <b>ExchangeDistributionList</b> est dérivé de le <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> objet. Il hérite de la propriété <b>ID</b> de l’objet <b>AddressEntry</b> . Le fournisseur de transport affecte un ID de chaîne permanent et unique lors de la création d’un objet <b>AddressEntry</b> . Ces identificateurs ne changent pas d’une session à l’autre.</para>
-          <para />
-        </remarks>
+        <remarks><para> L’objet <b>ExchangeDistributionList</b> est dérivé de le <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> objet. Il hérite de la propriété <b>ID</b> de l’objet <b>AddressEntry</b> . Le fournisseur de transport affecte un ID de chaîne permanent et unique lors de la création d’un objet <b>AddressEntry</b> . Ces identificateurs ne changent pas d’une session à l’autre.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Manager">
@@ -673,7 +641,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le nom complet de le <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le nom complet de le <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> objet. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -731,11 +699,9 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant l’adresse SMTP Simple Mail Transfer Protocol () principale pour le <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagEmailAddress</b>.</para>
-          <para>Renvoie une chaîne vide si cette propriété n’a pas été implémentée ou n’existe pas pour l’objet <b>ExchangeDistributionList</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagEmailAddress</b>.</para>
+          <para>Renvoie une chaîne vide si cette propriété n’a pas été implémentée ou n’existe pas pour l’objet <b>ExchangeDistributionList</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PropertyAccessor">
@@ -791,16 +757,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -829,12 +793,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant le type d’entrée pour le <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. Lecture/écriture.</summary>
+        <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant le type d’entrée pour le <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" />. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>L’objet <b>ExchangeDistributionList</b> est dérivé de le <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> objet. Il hérite de la propriété <b>Type</b> de l’objet <b>AddressEntry</b> . Dans le cas <b>ExchangeDistributionList</b>, le type est toujours la chaîne « EX ».</para>
-          <para />
-        </remarks>
+        <remarks><para>L’objet <b>ExchangeDistributionList</b> est dérivé de le <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> objet. Il hérite de la propriété <b>Type</b> de l’objet <b>AddressEntry</b> . Dans le cas <b>ExchangeDistributionList</b>, le type est toujours la chaîne « EX ».</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -861,13 +823,11 @@
       </Parameters>
       <Docs>
         <param name="MakePermanent">La valeur <b>True</b> indique que le cache de propriété est vidé et toutes les modifications sont validées dans le carnet d’adresses sous-jacent. La valeur <b>False</b> indique que le cache de propriété est vidé mais pas enregistrée de façon permanente. La valeur par défaut est <b>True</b>.</param>
-        <param name="Refresh">La valeur <b>True</b> indique que le cache des propriétés est rechargé à partir des valeurs dans le carnet d’adresses sous-jacent. La valeur <b>False</b> indique que le cache de la propriété n’est pas rechargé. <b>False</b> est la valeur par défaut.</param>
+        <param name="Refresh">La valeur <b>True</b> indique que le cache des propriétés est rechargé à partir des valeurs dans le carnet d’adresses sous-jacent. La valeur <b>False</b> indique que le cache de la propriété n’est pas rechargé. La valeur par défaut est <b>False</b>.</param>
         <summary>Publie une modification apportée à la <see cref="T:Microsoft.Office.Interop.Outlook.ExchangeDistributionList" /> objet dans le système de messagerie.</summary>
-        <remarks>
-          <para>Les nouvelles entrées ou les modifications apportées aux entrées existantes ne sont pas conservées dans la collection jusqu'à ce que la méthode de <b>mise à jour</b> a été appelée avec ses <paramref name="MakePermanent" /> paramètre défini sur <b>True</b>.  </para>
-          <para>Pour vider le cache et puis recharger les valeurs à partir du carnet d’adresses, appelez la méthode de <b>mise à jour</b> avec la <paramref name="MakePermanent" /> paramètre la valeur <b>False</b> et la <paramref name="Refresh" /> paramètre défini sur <b>True</b>.  </para>
-          <para />
-        </remarks>
+        <remarks><para> Les nouvelles entrées ou les modifications apportées aux entrées existantes ne sont pas conservées dans la collection jusqu'à ce que la méthode de <b>mise à jour</b> a été appelée avec ses <paramref name="MakePermanent" /> paramètre défini sur <b>True</b>.  </para>
+          <para>Pour vider le cache, puis recharger les valeurs à partir du carnet d’adresses, appelez la méthode de <b>mise à jour</b> avec la <paramref name="MakePermanent" /> paramètre la valeur <b>False</b> et la <paramref name="Refresh" /> paramètre défini sur <b>True</b>.  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateFreeBusy">

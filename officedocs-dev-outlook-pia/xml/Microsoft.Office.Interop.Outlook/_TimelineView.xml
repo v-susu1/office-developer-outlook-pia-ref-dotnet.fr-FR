@@ -1,13 +1,5 @@
 <Type Name="_TimelineView" FullName="Microsoft.Office.Interop.Outlook._TimelineView">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d8782cb760e1337c679a6b41fe4b7c59d4c1ea3c" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20635253" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _TimelineView" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d8782cb760e1337c679a6b41fe4b7c59d4c1ea3c" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27905441" /></Metadata><TypeSignature Language="C#" Value="public interface _TimelineView" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _TimelineView" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._TimelineView" />
   <TypeSignature Language="VB.NET" Value="Public Interface _TimelineView" />
@@ -167,7 +159,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlDefaultExpandCollapseSetting</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlDefaultExpandCollapseSetting" /> constante qui détermine le paramètre d’extension par défaut pour les groupes dans le <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlDefaultExpandCollapseSetting" /> constante qui détermine le paramètre d’extension par défaut pour les groupes dans le <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> objet. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -223,12 +215,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le nom de la propriété qui termine la durée des éléments Outlook affichés dans le <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le nom de la propriété qui termine la durée des éléments Outlook affichés dans le <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> objet. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Les valeurs de la <see cref="P:Microsoft.Office.Interop.Outlook._TimelineView.StartField" /> et propriétés <b>EndField</b> indiquent les propriétés d’élément Outlook sont utilisées par l’objet <b>TimelineView</b> pour représenter la durée d’un élément Outlook. Propriétés personnalisées et prédéfinies peuvent être spécifiées, mais seules les propriétés de date/heure sont autorisées.</para>
-          <para />
-        </remarks>
+        <remarks><para>Les valeurs de la <see cref="P:Microsoft.Office.Interop.Outlook._TimelineView.StartField" /> et propriétés <b>EndField</b> indiquent les propriétés d’élément Outlook sont utilisées par l’objet <b>TimelineView</b> pour représenter la durée d’un élément Outlook. Propriétés personnalisées et prédéfinies peuvent être spécifiées, mais seules les propriétés de date/heure sont autorisées.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Filter">
@@ -257,12 +247,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le filtre d’un affichage.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le filtre d’un affichage.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur de cette propriété est une chaîne, dans la syntaxe DAV Searching and Locating (DASL), qui représente le filtre actif de la vue. Pour plus d’informations sur l’utilisation de la syntaxe DASL pour filtrer les éléments dans un affichage, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Filtrage des éléments</a></para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur de cette propriété est une chaîne, dans la syntaxe DAV Searching and Locating (DASL), qui représente le filtre actif de la vue. Pour plus d’informations sur l’utilisation de la syntaxe DASL pour filtrer les éléments dans un affichage, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Filtrage des éléments</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GoToDate">
@@ -375,13 +363,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le paramètre de langue pour l’affichage. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le paramètre de langue pour l’affichage. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La <b>langue</b> de la propriété utilise une <b>chaîne</b> (<b>string</b> en c#) pour représenter une balise de langue ISO. Par exemple, la chaîne « EN-US » représente le code ISO « États-Unis - anglais. »</para>
-          <para>Si un code de langue valide est spécifié, l’objet ne seront disponible dans le menu Affichage pour le type de la langue spécifiée. Si aucune valeur n’est pas spécifié, l’élément objet est disponible pour tous les types de langue. La valeur par défaut de cette propriété est une chaîne vide.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>Language</b> utilise une <b>chaîne</b> (<b>string</b> en c#) pour représenter une balise de langue ISO. Par exemple, la chaîne « EN-US » représente le code ISO « Aux États-Unis - anglais ».</para>
+          <para>Si un code de langue valide est spécifié, l'objet est uniquement disponible dans le menu Affichage pour le type de langue spécifié. Si aucune valeur n'est spécifiée, l'élément objet est disponible pour tous les types de langues. La valeur par défaut de cette propriété est une chaîne vide.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LockUserChanges">
@@ -410,12 +396,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si un utilisateur peut modifier les paramètres de l’affichage. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si un utilisateur peut modifier les paramètres de l’affichage. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si la <b>valeur True</b>, l’utilisateur peut modifier les paramètres de la vue spécifiée. Toutefois, les modifications apportées à l’interface ne seront pas enregistrées. Si la <b>valeur False</b> (valeur par défaut), les modifications seront enregistrées.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si la valeur est <b>True</b>, l'utilisateur peut modifier les paramètres de l'affichage spécifié. En revanche, les modifications apportées à l'interface ne sont pas enregistrées. Si la valeur est <b>False</b> (valeur par défaut), toutes les modifications sont enregistrées.
+
+</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LowerScaleFont">
@@ -472,13 +458,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui représente la longueur maximale (en caractères) pour l’étiquette d’un élément Outlook dans le <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui représente la longueur maximale (en caractères) pour l’étiquette d’un élément Outlook dans le <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> objet. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété peut être définie sur une valeur comprise entre 0 et 132. Si cette propriété est définie sur une valeur inférieure à 0, elle est définie sur 0. Si cette propriété est définie sur une valeur supérieure à 132, la propriété est définie à 132. La valeur par défaut de cette propriété est 80.</para>
-          <para>Si cette propriété est définie sur 0, les étiquettes des éléments Outlook ne sont pas affichées dans l’affichage.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété peut être définie sur une valeur comprise entre 0 et 132. Si cette propriété est définie sur une valeur inférieure à 0, elle est définie sur 0. Si cette propriété est définie sur une valeur supérieure à 132, la propriété est définie à 132. La valeur par défaut de cette propriété est 80.</para>
+          <para>Si cette propriété prend la valeur 0, les étiquettes pour les éléments Outlook ne sont pas affichées dans l'affichage.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -507,7 +491,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le nom complet de l’objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le nom complet de l’objet. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -562,10 +546,8 @@
       <Parameters />
       <Docs>
         <summary>Rétablit les paramètres d’origine d’un affichage prédéfini de Microsoft Outlook.</summary>
-        <remarks>
-          <para>Cette méthode fonctionne uniquement sur les affichages d’Outlook intégrés.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette méthode n'est valable que pour les affichages prédéfinis de Microsoft Outlook.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -618,10 +600,8 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlViewSaveOption" /> constante qui spécifie les dossiers dans lesquels l’affichage spécifié est disponible et les autorisations de lecture associées à cet affichage. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur de la propriété <b>SaveOption</b> est définie lorsque le <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> objet est créé à l’aide de la <see cref="M:Microsoft.Office.Interop.Outlook._Views.Add(System.String,Microsoft.Office.Interop.Outlook.OlViewType,Microsoft.Office.Interop.Outlook.OlViewSaveOption)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Outlook.Views" /> collection.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur de la propriété <b>SaveOption</b> est définie lorsque le <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> objet est créé à l’aide de la <see cref="M:Microsoft.Office.Interop.Outlook._Views.Add(System.String,Microsoft.Office.Interop.Outlook.OlViewType,Microsoft.Office.Interop.Outlook.OlViewSaveOption)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Outlook.Views" /> collection. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -649,16 +629,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowLabelWhenViewingByMonth">
@@ -687,12 +665,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui détermine si les étiquettes des éléments Outlook sont affichées lors de l’affichage par mois dans le <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui détermine si les étiquettes des éléments Outlook sont affichées lors de l’affichage par mois dans le <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> objet. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété s’applique uniquement si la <see cref="P:Microsoft.Office.Interop.Outlook._TimelineView.TimelineViewMode" /> propriété a la valeur <b>olTimelineViewMonth</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété s’applique uniquement si la <see cref="P:Microsoft.Office.Interop.Outlook._TimelineView.TimelineViewMode" /> propriété a la valeur <b>olTimelineViewMonth</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowWeekNumbers">
@@ -721,15 +697,34 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si les étiquettes de numéro de semaine sont affichent dans l’échelle de chronologie pour le <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si les étiquettes de numéro de semaine sont affichent dans l’échelle de chronologie pour le <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> objet. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si cette propriété est définie sur <b>True</b>, l’emplacement dans la semaine numéros sont affichés dans l’échelle de chronologie de l’objet <b>TimelineView</b> dépend de la valeur de la <see cref="P:Microsoft.Office.Interop.Outlook._TimelineView.TimelineViewMode" /> propriété.</para>
-          <item>
-            <description>Valeur de la propriété</description>
-            <description>emplacement de l’étiquette</description>
-          </item>de 
-          <list type="table"><item><description><b>olTimelineViewDay</b></description><description>affiché dans la partie supérieure de l’échelle de chronologie, avant l’étiquette de date.</description></item><item><description><b>olTimelineViewWeek</b></description><description>affiché dans la partie supérieure de l’échelle de chronologie, avant l’étiquette de semaine.</description></item><item><description><b>olTimelineViewMonth</b></description><description>affiché dans la partie inférieure de l’échelle de chronologie, en remplaçant les étiquettes de jour et de date.</description></item></list><para /></remarks>
+        <remarks><para>Si cette propriété est définie sur <b>True</b>, l’emplacement dans la semaine numéros sont affichés dans l’échelle de chronologie de l’objet <b>TimelineView</b> dépend de la valeur de la <see cref="P:Microsoft.Office.Interop.Outlook._TimelineView.TimelineViewMode" /> propriété.</para>
+          <list type="table">
+            <item>
+              <description>Valeur de propriété</description>
+              <description>Emplacement de l'étiquette</description>
+            </item>
+            <item>
+              <description>
+                <b>olTimelineViewDay</b>
+              </description>
+              <description>Affichée dans la partie supérieure de l'échelle de chronologie, avant l'étiquette de date.</description>
+            </item>
+            <item>
+              <description>
+                <b>olTimelineViewWeek</b>
+              </description>
+              <description>Affichée dans la partie supérieure de l'échelle de chronologie, avant l'étiquette de semaine.</description>
+            </item>
+            <item>
+              <description>
+                <b>olTimelineViewMonth</b>
+              </description>
+              <description>Affichée dans la partie inférieure de l'échelle de chronologie, à la place des étiquettes de jour et de date.</description>
+            </item>
+          </list>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Standard">
@@ -757,10 +752,8 @@
       <Docs>
         <summary>Renvoie une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si le <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> objet est un affichage Outlook intégré. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le <see cref="M:Microsoft.Office.Interop.Outlook.View.Reset" /> méthode peut être utilisée dans un affichage que si la valeur de cette propriété est définie sur <b>True</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le <see cref="M:Microsoft.Office.Interop.Outlook.View.Reset" /> méthode peut être utilisée dans un affichage que si la valeur de cette propriété est définie sur <b>True</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StartField">
@@ -789,12 +782,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le nom de la propriété qui commence la durée des éléments Outlook affichés dans le <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le nom de la propriété qui commence la durée des éléments Outlook affichés dans le <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> objet. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Les valeurs de la <b>StartField</b> et <see cref="P:Microsoft.Office.Interop.Outlook._TimelineView.EndField" /> propriétés indiquent les propriétés d’élément Outlook sont utilisées par l’objet <b>TimelineView</b> pour représenter la durée d’un élément Outlook. Propriétés personnalisées et prédéfinies peuvent être spécifiées, mais seules les propriétés de date/heure sont autorisées.</para>
-          <para />
-        </remarks>
+        <remarks><para>Les valeurs de la <b>StartField</b> et <see cref="P:Microsoft.Office.Interop.Outlook._TimelineView.EndField" /> propriétés indiquent les propriétés d’élément Outlook sont utilisées par l’objet <b>TimelineView</b> pour représenter la durée d’un élément Outlook. Propriétés personnalisées et prédéfinies peuvent être spécifiées, mais seules les propriétés de date/heure sont autorisées.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TimelineViewMode">
@@ -823,7 +814,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlTimelineViewMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlTimelineViewMode" /> constante qui indique le mode d’affichage pour le <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlTimelineViewMode" /> constante qui indique le mode d’affichage pour le <see cref="T:Microsoft.Office.Interop.Outlook.TimelineView" /> objet. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -910,9 +901,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) spécifiant la définition XML de l’affichage. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) spécifiant la définition XML de l’affichage. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>Définition de <para>le XML décrit le type d’affichage à l’aide d’une série de balises et de mots clés correspondant aux différentes propriétés de l’affichage lui-même. Lorsque la vue est créée, la définition XML est analysée pour fournir les paramètres pour le nouvel affichage.</para><para>Afin de déterminer comment le code XML doit être structuré lors de la création de vues, vous pouvez créer un affichage à l’aide de l’interface utilisateur Outlook et puis vous pouvez récupérer la propriété <b>XML</b> pour cet affichage.  </para><para /></remarks>
+        <remarks><para>La définition XML décrit le type d'affichage à l'aide d'un ensemble d'indicateurs et mots clés correspondant aux différentes propriétés de l'affichage lui-même. Une fois l'affichage créé, la définition XML est analysée pour fournir les paramètres du nouvel affichage.</para>
+          <para>Pour déterminer la structuration XML lors de la création d'affichages, vous pouvez créer un affichage en utilisant l'interface utilisateur Outlook, puis extraire la propriété <b>XML</b> de cet affichage.
+
+</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

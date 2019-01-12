@@ -1,13 +1,5 @@
 <Type Name="_OlkFrameHeader" FullName="Microsoft.Office.Interop.Outlook._OlkFrameHeader">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="80ea7261ca8c917e5107fde1b844bf7e7b71d2e4" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633849" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _OlkFrameHeader" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="80ea7261ca8c917e5107fde1b844bf7e7b71d2e4" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27904041" /></Metadata><TypeSignature Language="C#" Value="public interface _OlkFrameHeader" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _OlkFrameHeader" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._OlkFrameHeader" />
   <TypeSignature Language="VB.NET" Value="Public Interface _OlkFrameHeader" />
@@ -56,12 +48,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlAlignment" /> constante qui indique la position d’un contrôle par rapport à sa légende.    Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlAlignment" /> constante qui indique la position d’un contrôle par rapport à sa légende.    Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut est <b>olAlignmentLeft</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut est <b>olAlignmentLeft</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Caption">
@@ -90,12 +80,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui s’affiche sur un objet pour identifier ou le décrire.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui s’affiche sur un objet pour identifier ou le décrire.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut est une chaîne vide. Le Concepteur de formulaires définit cette propriété sur le nom du contrôle par défaut.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut est une chaîne vide. Le concepteur de formulaires donne pour valeur à cette propriété le nom par défaut du contrôle.  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -124,13 +112,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si le contrôle est autorisé à fonctionner.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si le contrôle est autorisé à fonctionner.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut est <b>False</b>.</para>
-          <para>Lorsque le contrôle est désactivé, le contenu du contrôle apparaître estompé.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut est <b>False</b>.</para>
+          <para>Lorsque le contrôle est désactivé, son contenu apparaît estompé.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -190,13 +176,11 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>UInteger</b> (<b>uint</b> en c#) qui indique la couleur de premier plan du contrôle. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>UInteger</b> (<b>uint</b> en c#) qui indique la couleur de premier plan du contrôle. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est de type <b>OLE_COLOR</b> , qui est une valeur <b>UInteger</b> (<b>uint</b> en c#). La valeur par défaut de cette propriété est 0 x 80000008, « Texte de la fenêtre ».  </para>
-          <para>Le contrôle en-tête de cadre a uniquement la couleur de premier plan et non la couleur d’arrière-plan.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est de type <b>OLE_COLOR</b> , qui est une valeur <b>UInteger</b> (<b>uint</b> en c#). La valeur par défaut de cette propriété est 0 x 80000008, « Texte de la fenêtre ».  </para>
+          <para>Le contrôle d'en-tête de cadre a seulement une couleur de premier plan. Il n'a pas de couleur d'arrière-plan.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseIcon">
@@ -225,12 +209,10 @@
         <ReturnType>stdole.StdPicture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>StdPicture</b> qui représente l’image personnalisée pour le curseur de la souris pour ce contrôle. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>StdPicture</b> qui représente l’image personnalisée pour le curseur de la souris pour ce contrôle. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut est <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#).</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut est <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MousePointer">
@@ -259,12 +241,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlMousePointer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> constante qui spécifie le type de pointeur affiché lorsque l’utilisateur place la souris sur le contrôle.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> constante qui spécifie le type de pointeur affiché lorsque l’utilisateur place la souris sur le contrôle.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut est <b>olMousePointerDefault</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut est <b>olMousePointerDefault</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

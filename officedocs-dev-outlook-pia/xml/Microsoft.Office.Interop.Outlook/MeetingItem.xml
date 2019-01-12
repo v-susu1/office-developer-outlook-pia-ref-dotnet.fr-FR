@@ -1,13 +1,5 @@
 <Type Name="MeetingItem" FullName="Microsoft.Office.Interop.Outlook.MeetingItem">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="34eab5654ab96af922059da1346bbb0bbeb90464" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633506" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MeetingItem : Microsoft.Office.Interop.Outlook._MeetingItem, Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a519f177e19a587888ee73b9e44d8933e51cec00" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27904762" /></Metadata><TypeSignature Language="C#" Value="public interface MeetingItem : Microsoft.Office.Interop.Outlook._MeetingItem, Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MeetingItem implements class Microsoft.Office.Interop.Outlook._MeetingItem, class Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.MeetingItem" />
   <TypeSignature Language="VB.NET" Value="Public Interface MeetingItem&#xA;Implements _MeetingItem, ItemEvents_10_Event" />
@@ -34,12 +26,10 @@
   </Attributes>
   <Docs>
     <summary>Représente une modification apportée au dossier Calendrier du destinataire, à l'initiative d'un tiers ou à la suite d'une action de groupe.</summary>
-    <remarks>
-      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._MeetingItem" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />.</para>
-      <para>Contrairement à d’autres objets Microsoft Outlook, vous ne pouvez pas créer cet objet. Il est créé automatiquement lorsque vous définissez la <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.MeetingStatus" /> propriété d’un <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> objet <b>olMeeting</b> et l’envoyer à un ou plusieurs utilisateurs. Ils reçoivent dans leur boîte de réception en tant qu’un <b>objet MeetingItem</b>.</para>
+    <remarks><para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._MeetingItem" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />.</para>
+      <para>Contrairement à d’autres objets Microsoft Outlook, vous ne pouvez pas créer cet objet. Il est créé automatiquement lorsque vous définissez la <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.MeetingStatus" /> propriété d’un <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> objet <b>olMeeting</b> et l’envoyer à un ou plusieurs utilisateurs. Ils le reçoivent dans leur boîte de réception en tant qu’un <b>objet MeetingItem</b>.</para>
       <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._MeetingItem.GetAssociatedAppointment(System.Boolean)" /> méthode pour renvoyer l’objet <b>AppointmentItem</b> associé à un objet <b>MeetingItem</b> et de travailler directement avec l' <b>objet AppointmentItem</b> objet pour répondre à la demande.</para>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

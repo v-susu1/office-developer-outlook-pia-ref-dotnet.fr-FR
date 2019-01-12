@@ -1,13 +1,5 @@
 <Type Name="_ViewFont" FullName="Microsoft.Office.Interop.Outlook._ViewFont">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="dce221fa9294212037ac54a826838b60f072a320" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20635278" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _ViewFont" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dce221fa9294212037ac54a826838b60f072a320" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27903593" /></Metadata><TypeSignature Language="C#" Value="public interface _ViewFont" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _ViewFont" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._ViewFont" />
   <TypeSignature Language="VB.NET" Value="Public Interface _ViewFont" />
@@ -84,7 +76,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si la police est en gras dans les <see cref="T:Microsoft.Office.Interop.Outlook.ViewFont" /> objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si la police est en gras dans les <see cref="T:Microsoft.Office.Interop.Outlook.ViewFont" /> objet. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -143,7 +135,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlColor" /> constante qui indique la couleur de la police dans le <see cref="T:Microsoft.Office.Interop.Outlook.ViewFont" /> objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlColor" /> constante qui indique la couleur de la police dans le <see cref="T:Microsoft.Office.Interop.Outlook.ViewFont" /> objet. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -174,12 +166,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlCategoryColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlCategoryColor" /> constante comme couleur de police de l’affichage. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlCategoryColor" /> constante comme couleur de police de l’affichage. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Outlook._ViewFont.Color" /> propriété ou la propriété <b>ExtendedColor</b> pour définir la couleur de police dans un affichage. Pour un affichage Calendrier, en particulier, vous devez utiliser la propriété <b>ExtendedColor</b> pour définir la couleur de police.</para>
-          <para />
-        </remarks>
+        <remarks><para>Vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Outlook._ViewFont.Color" /> propriété ou la propriété <b>ExtendedColor</b> pour définir la couleur de police dans un affichage. Pour un affichage Calendrier, en particulier, vous devez utiliser la propriété <b>ExtendedColor</b> pour définir la couleur de police.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Italic">
@@ -208,7 +198,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si la police est en italique dans les <see cref="T:Microsoft.Office.Interop.Outlook.ViewFont" /> objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si la police est en italique dans les <see cref="T:Microsoft.Office.Interop.Outlook.ViewFont" /> objet. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -239,7 +229,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le nom complet de l’objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le nom complet de l’objet. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -297,16 +287,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -337,11 +325,9 @@
       <Docs>
         <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui représente la taille (en points) de la police dans l’affichage. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété peut être définie sur une valeur comprise entre 1 et 127. Si cette propriété est définie sur une valeur inférieure à 1, la propriété est définie sur 1. Si cette propriété est définie sur une valeur supérieure à 127, la propriété est définie à 127.</para>
-          <para>La valeur par défaut de cette propriété est déterminée par le système d’exploitation.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété peut être définie sur une valeur comprise entre 1 et 127. Si cette propriété est définie sur une valeur inférieure à 1, la propriété prend la valeur 1. Si la propriété prend une valeur supérieure à 127, la propriété prend la valeur 127.</para>
+          <para>La valeur par défaut de cette propriété est déterminée par le système d'exploitation.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Strikethrough">
@@ -370,7 +356,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si la police est barrée par une ligne horizontale dans le <see cref="T:Microsoft.Office.Interop.Outlook.ViewFont" /> objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si la police est barrée par une ligne horizontale dans le <see cref="T:Microsoft.Office.Interop.Outlook.ViewFont" /> objet. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

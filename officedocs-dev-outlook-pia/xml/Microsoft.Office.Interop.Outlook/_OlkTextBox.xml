@@ -1,13 +1,5 @@
 <Type Name="_OlkTextBox" FullName="Microsoft.Office.Interop.Outlook._OlkTextBox">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ea16e71e0adb9193ceb69aaf07bb2a77be1fda2b" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633688" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _OlkTextBox" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ea16e71e0adb9193ceb69aaf07bb2a77be1fda2b" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27903075" /></Metadata><TypeSignature Language="C#" Value="public interface _OlkTextBox" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _OlkTextBox" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._OlkTextBox" />
   <TypeSignature Language="VB.NET" Value="Public Interface _OlkTextBox" />
@@ -56,14 +48,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui redimensionne automatiquement le contrôle pour afficher tout le contenu.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui redimensionne automatiquement le contrôle pour afficher tout le contenu.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut de cette propriété a la <b>valeur False</b>.</para>
-          <para>Pour une zone de texte à ligne unique, définition <b>AutoSize</b> sur <b>True</b> détermine automatiquement la largeur de la zone d’affichage à la longueur du texte dans la zone de texte.</para>
-          <para>D’une zone de texte multiligne qui ne contient aucun texte, <b>propriété AutoSize sur <b>True</b> automatiquement</b> affiche le texte en tant que colonne. La largeur de la colonne de texte est définie pour prendre en charge la lettre la plus large de cette taille de police. La hauteur de la colonne de texte est définie sur Afficher tout le texte de la zone de texte. Pour une zone de texte multiligne contenant du texte, la <b>propriété AutoSize sur <b>True</b> automatiquement</b> étend la zone de texte verticalement pour afficher l’intégralité du texte. La largeur de la zone de texte ne change pas.</para>
-          <para />
-        </remarks>
+        <remarks><para>  La valeur par défaut de cette propriété est <b>False</b>.</para>
+          <para>Pour les zones de texte à ligne unique, la définition de la propriété <b>AutoSize</b> sur <b>True</b> détermine automatiquement la largeur de la zone d’affichage pour correspondre à la longueur du texte de la zone de texte.</para>
+          <para>Pour une zone de texte multiligne qui ne contient aucun texte, la <b>propriété AutoSize sur <b>True</b> automatiquement</b> affiche le texte en tant que colonne. The width of the text column is set to accommodate the widest letter of that font size. La hauteur de la colonne de texte est définie sur Afficher tout le texte de la zone de texte. Pour une zone de texte multiligne contenant du texte, la <b>propriété AutoSize sur <b>True</b> automatiquement</b> étend la zone de texte verticalement pour afficher l’intégralité du texte. La largeur de la zone de texte ne change pas.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoTab">
@@ -92,12 +82,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui spécifie si une tabulation est insérée automatiquement lorsque le contrôle atteint la longueur maximale spécifiée. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui spécifie si une tabulation est insérée automatiquement lorsque le contrôle atteint la longueur maximale spécifiée. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut de cette propriété a la <b>valeur False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>  La valeur par défaut de cette propriété est <b>False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoWordSelect">
@@ -126,12 +114,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si un mot ou un caractère est l’unité de base utilisée pour étendre une sélection.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si un mot ou un caractère est l’unité de base utilisée pour étendre une sélection.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut est <b>True</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut est <b>True</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -163,12 +149,10 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>UInteger</b> (<b>uint</b> en c#) qui indique la couleur d’arrière-plan du contrôle. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>UInteger</b> (<b>uint</b> en c#) qui indique la couleur d’arrière-plan du contrôle. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est de type <b>OLE_COLOR</b> , qui est une valeur <b>UInteger</b> (<b>uint</b> en c#). La valeur par défaut de cette propriété est 0 x 80000005, « Fenêtre ».</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est de type <b>OLE_COLOR</b> , qui est une valeur <b>UInteger</b> (<b>uint</b> en c#). La valeur par défaut de cette propriété est 0 x 80000005, « Fenêtre ». </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BorderStyle">
@@ -197,12 +181,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlBorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlBorderStyle" /> constante qui définit le style de la bordure autour du contrôle.   Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlBorderStyle" /> constante qui définit le style de la bordure autour du contrôle.   Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut est <b>olBorderStyleSingle</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut est <b>olBorderStyleSingle</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -252,10 +234,8 @@
       <Parameters />
       <Docs>
         <summary>Copie le contenu du contrôle vers le Presse-papiers.</summary>
-        <remarks>
-          <para>Les données sont copiées au format texte sans mise en forme, en remplaçant le contenu existant dans le Presse-papiers.</para>
-          <para />
-        </remarks>
+        <remarks><para>Les données sont copiées au format texte sans mise en forme et remplacent le contenu existant dans le Presse-papiers.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -280,10 +260,8 @@
       <Parameters />
       <Docs>
         <summary>Supprime le contenu du contrôle et copie le contenu vers le Presse-papiers.</summary>
-        <remarks>
-          <para>Les données sont copiées dans le Presse-papiers au format texte sans mise en forme, en remplaçant le contenu existant dans le Presse-papiers.</para>
-          <para />
-        </remarks>
+        <remarks><para>Les données sont copiées vers le Presse-papiers au format texte sans mise en forme et remplacent le contenu existant dans le Presse-papiers.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DragBehavior">
@@ -312,12 +290,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlDragBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlDragBehavior" /> constante qui indique si le système Active la fonctionnalité de glisser-déplacer pour ce contrôle.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlDragBehavior" /> constante qui indique si le système Active la fonctionnalité de glisser-déplacer pour ce contrôle.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut est <b>olDragDropDisabled</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut est <b>olDragDropDisabled</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -346,12 +322,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si le contrôle est autorisé à fonctionner.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si le contrôle est autorisé à fonctionner.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut est <b>True</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut est <b>True</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableRichText">
@@ -417,12 +391,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlEnterFieldBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlEnterFieldBehavior" /> constante qui spécifie le comportement de la sélection lors de la saisie du contrôle. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlEnterFieldBehavior" /> constante qui spécifie le comportement de la sélection lors de la saisie du contrôle. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut est <b>olEnterFieldBehaviorSelectAll</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut est <b>olEnterFieldBehaviorSelectAll</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnterKeyBehavior">
@@ -451,12 +423,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui définit le comportement de la touche entrée dans le contrôle.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui définit le comportement de la touche entrée dans le contrôle.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Lorsque cette propriété a la <b>valeur True</b>, en appuyant sur ENTRÉE crée une nouvelle ligne.  Lorsque cette propriété a la <b>valeur False</b>, en appuyant sur ENTRÉE déplace le focus vers le contrôle suivant dans l’ordre de tabulation. La valeur par défaut de cette propriété a la <b>valeur False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si cette propriété a la valeur <b>True</b>, le fait d’appuyer sur Entrée crée une ligne. Si elle a la valeur <b>False</b>, le fait d’appuyer sur Entrée déplace le focus vers le contrôle suivant dans l’ordre de tabulation. La valeur par défaut de cette propriété est <b>False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -516,12 +486,10 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>UInteger</b> (<b>uint</b> en c#) qui indique la couleur de premier plan du contrôle. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>UInteger</b> (<b>uint</b> en c#) qui indique la couleur de premier plan du contrôle. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est de type <b>OLE_COLOR</b> , qui est une valeur <b>UInteger</b> (<b>uint</b> en c#). La valeur par défaut de cette propriété est 0 x 80000008, « Texte de la fenêtre ».</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est de type <b>OLE_COLOR</b> , qui est une valeur <b>UInteger</b> (<b>uint</b> en c#). La valeur par défaut de cette propriété est 0 x 80000008, « Texte de la fenêtre ».  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HideSelection">
@@ -550,12 +518,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui spécifie si une sélection est affichée ou masquée dans le contrôle lorsque le contrôle perd le focus.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui spécifie si une sélection est affichée ou masquée dans le contrôle lorsque le contrôle perd le focus.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut de cette propriété a la <b>valeur True</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut de cette propriété est <b>True</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IntegralHeight">
@@ -584,12 +550,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si ce contrôle affiche les lignes de texte complètes. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si ce contrôle affiche les lignes de texte complètes. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si cette propriété a <b>la valeur True</b>, le contrôle affiche les lignes de remplissage de texte ; dans le cas contraire, elle affiche des lignes partielles.  La valeur par défaut est <b>True</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si cette propriété a la valeur <b>True</b>, le contrôle affiche des lignes de texte entières ; sinon les lignes apparaissent tronquées.  La valeur par défaut est <b>True</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Locked">
@@ -618,13 +582,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui spécifie si le contrôle est verrouillé contre toute modification.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui spécifie si le contrôle est verrouillé contre toute modification.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut est <b>False</b>.</para>
-          <para>Lorsque le contrôle est verrouillé, le contrôle ne dispose pas d’une apparence « désactivé », mais l’utilisateur ne peut pas modifier le contenu du contrôle.  </para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut est <b>False</b>.</para>
+          <para>Lorsque le contrôle est verrouillé, il n'apparaît pas comme désactivé mais l'utilisateur ne peut pas en modifier le contenu.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxLength">
@@ -653,12 +615,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui spécifie le nombre maximal de caractères pour le <see cref="P:Microsoft.Office.Interop.Outlook._OlkTextBox.Value" /> de ce contrôle.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui spécifie le nombre maximal de caractères pour le <see cref="P:Microsoft.Office.Interop.Outlook._OlkTextBox.Value" /> de ce contrôle.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut est zéro, ce qui signifie simplement qu’aucune longueur maximale de la valeur n’a été définie pour ce contrôle. Longueur maximale peut toujours être en fonction de la mémoire disponible ou d’autres facteurs.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut est zéro. Cette valeur signifie qu'aucune longueur maximale n'a été définie pour la valeur de ce contrôle. Il se peut néanmoins qu'une longueur maximale soit appliquée en fonction de la mémoire disponible ou d'autres facteurs.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseIcon">
@@ -687,12 +647,10 @@
         <ReturnType>stdole.StdPicture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>StdPicture</b> qui représentent l’image personnalisée pour le curseur de la souris pour ce contrôle. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>StdPicture</b> qui représentent l’image personnalisée pour le curseur de la souris pour ce contrôle. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut est <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#).</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut est <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MousePointer">
@@ -721,12 +679,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlMousePointer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> constante qui spécifie le type de pointeur affiché lorsque l’utilisateur place la souris sur le contrôle.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> constante qui spécifie le type de pointeur affiché lorsque l’utilisateur place la souris sur le contrôle.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut est <b>olMousePointerDefault</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut est <b>olMousePointerDefault</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MultiLine">
@@ -755,12 +711,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si un contrôle peut accepter et afficher plusieurs lignes de texte.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si un contrôle peut accepter et afficher plusieurs lignes de texte.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut est <b>False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut est <b>False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PasswordChar">
@@ -789,13 +743,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui spécifie un caractère d’espace réservé à afficher de façon répétée sous forme de chaîne au lieu des caractères entrés dans la zone de texte.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui spécifie un caractère d’espace réservé à afficher de façon répétée sous forme de chaîne au lieu des caractères entrés dans la zone de texte.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Une application courantes de définir cette propriété sur <b>True</b> est entrée de mot de passe, où vous pouvez pas afficher les caractères du mot de passe que l’utilisateur entre dans la zone de texte. La valeur par défaut est une chaîne vide.</para>
-          <para>Qu’un seul caractère est accepté pour la valeur de cette propriété.  Si une chaîne de plusieurs caractères est définie, seul le premier caractère servira le caractère d’espace réservé et le reste sera ignoré.</para>
-          <para />
-        </remarks>
+        <remarks><para>Il existe un exemple d'application courante supposant d'affecter la valeur <b>True</b> à cette propriété : la saisie d'un mot de passe, lorsque vous ne souhaitez pas afficher les caractères réellements entrés par l'utilisateur dans la zone de texte. La valeur par défaut est une zone vide.</para>
+          <para>Qu’un seul caractère est accepté pour la valeur de cette propriété.  Si la valeur de chaîne de plusieurs caractères, seul le premier caractère servira le caractère d’espace réservé et le reste sera ignoré.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Paste">
@@ -820,10 +772,8 @@
       <Parameters />
       <Docs>
         <summary>Colle le contenu du Presse-papiers dans le contrôle.</summary>
-        <remarks>
-          <para>Le contenu du Presse-papiers est collé le texte non formaté.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le contenu du Presse-papiers est collé au format texte sans mise en forme.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Scrollbars">
@@ -852,12 +802,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlScrollBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlScrollBars" /> constante qui spécifie si le contrôle possède une barre de défilement verticale, barre de défilement horizontale ou les deux.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlScrollBars" /> constante qui spécifie si le contrôle possède une barre de défilement verticale, barre de défilement horizontale ou les deux.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut est <b>olScrollBarsNone</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut est <b>olScrollBarsNone</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionMargin">
@@ -886,12 +834,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui spécifie si l’utilisateur peut sélectionner une ligne de texte en cliquant dans la zone à gauche du texte.   Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui spécifie si l’utilisateur peut sélectionner une ligne de texte en cliquant dans la zone à gauche du texte.   Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si <b>la valeur True</b>, en cliquant dans la marge entraîne la sélection de texte.  Si la <b>valeur False</b>, cette action ne sélectionne pas n’importe quel texte. La valeur par défaut est <b>False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para><b>True</b> indique que le fait de cliquer dans la marge entraîne la sélection du texte.  <b>False</b> indique que cette action n'entraîne aucune sélection de texte. La valeur par défaut est <b>False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SelLength">
@@ -920,15 +866,15 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui spécifie le nombre de caractères dans la sélection actuelle.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui spécifie le nombre de caractères dans la sélection actuelle.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La sélection en cours est spécifiée par <see cref="P:Microsoft.Office.Interop.Outlook._OlkTextBox.SelText" />, qui est une partie du contrôle <see cref="P:Microsoft.Office.Interop.Outlook._OlkTextBox.Value" />. Le nombre maximal de caractères pouvant être pris en charge pour la <b>valeur</b> est <see cref="P:Microsoft.Office.Interop.Outlook._OlkTextBox.MaxLength" />.</para>
-          <para>La valeur par défaut est zéro, signifie qu’aucun texte n’est actuellement sélectionné.</para>
-          <para>à la propriété <b>SelLength</b> est toujours valide, même lorsque le contrôle n’a pas le focus.</para>
-          <para>Paramètre <b>SelLength</b> une valeur inférieure à zéro provoque une erreur.   Essayez de définir la valeur supérieure à <b>MaxLength</b> à <b>SelLength <b>MaxLength</b></b> .  </para>
-          <para />
-        </remarks>
+        <remarks><para>La sélection en cours est spécifiée par <see cref="P:Microsoft.Office.Interop.Outlook._OlkTextBox.SelText" />, qui est une partie du contrôle <see cref="P:Microsoft.Office.Interop.Outlook._OlkTextBox.Value" />. Le nombre maximal de caractères pouvant être pris en charge pour la <b>valeur</b> est <see cref="P:Microsoft.Office.Interop.Outlook._OlkTextBox.MaxLength" />.</para>
+          <para>La valeur par défaut, zéro, signifie qu'aucun texte n'est actuellement sélectionné.
+</para>
+          <para>La propriété <b>SelLength</b> est toujours valide, même si le contrôle n'est pas actif.</para>
+          <para>Le fait d'affecter à <b>SelLength</b> une valeur inférieure à zéro génère une erreur. Toute tentative d'affecter à <b>SelLength</b> une valeur supérieure à <b>MaxLength</b> revient à lui attribuer la valeur <b>MaxLength</b>. 
+</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SelStart">
@@ -957,12 +903,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>nombre entier</b> (<b>int</b> en c#) qui spécifie le point de départ du texte sélectionné ou le point d’insertion si aucun texte n’a été sélectionné.    Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>nombre entier</b> (<b>int</b> en c#) qui spécifie le point de départ du texte sélectionné ou le point d’insertion si aucun texte n’a été sélectionné.    Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La sélection en cours est spécifiée par <see cref="P:Microsoft.Office.Interop.Outlook._OlkTextBox.SelText" />, qui est une partie du contrôle <see cref="P:Microsoft.Office.Interop.Outlook._OlkTextBox.Value" />. Le nombre maximal de caractères pouvant être pris en charge pour la <b>valeur</b> est <see cref="P:Microsoft.Office.Interop.Outlook._OlkTextBox.MaxLength" />.</para>
-          <para>La valeur par défaut est zéro, signifie qu’aucun texte n’est sélectionné et le point d’insertion se trouve au début.</para> Propriété 
-          <para>le <b>SelStart</b> est toujours valide, même lorsque le contrôle n’a pas le focus.  Affecter à <b>SelStart</b> une valeur inférieure à zéro génère une erreur.  Affecter à <b>SelStart</b> une valeur supérieure à <b>MaxLength</b> , <b>SelStart</b> est réinitialisées à <b>MaxLength</b>.  Modification de la valeur de <b>SelStart</b> annule toute sélection existante, place le point d’insertion dans le texte et définit la propriété <b>SelLength</b> sur zéro. </para><para /></remarks>
+        <remarks><para>La sélection en cours est spécifiée par <see cref="P:Microsoft.Office.Interop.Outlook._OlkTextBox.SelText" />, qui est une partie du contrôle <see cref="P:Microsoft.Office.Interop.Outlook._OlkTextBox.Value" />. Le nombre maximal de caractères pouvant être pris en charge pour la <b>valeur</b> est <see cref="P:Microsoft.Office.Interop.Outlook._OlkTextBox.MaxLength" />.</para>
+          <para>La valeur par défaut est zéro. Cette valeur signifie qu'aucun texte n'est sélectionné et que le point d'insertion se trouve au début.</para>
+          <para>La propriété <b>SelStart</b> est toujours valide, même si le contrôle n'est pas actif. Le fait d'affecter à <b>SelStart</b> une valeur inférieure à zéro génère une erreur.  Si une valeur supérieure à <b>MaxLength</b> est attribuée à <b>SelStart</b>, <b>SelStart</b> restaure la valeur <b>MaxLength</b>. Si la valeur de <b>SelStart</b> est modifiée, toute sélection active est annulée, le point d'insertion est placé dans le texte et <b>SelLength</b> prend la valeur zéro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SelText">
@@ -990,12 +936,10 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie sélectionnée de la valeur de la zone de texte.    En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>SelText</b> représente la sélection active, qui est une partie du contrôle <see cref="P:Microsoft.Office.Interop.Outlook._OlkTextBox.Value" />. Le nombre maximal de caractères pouvant être pris en charge pour la <b>valeur</b> est <see cref="P:Microsoft.Office.Interop.Outlook._OlkTextBox.MaxLength" />.</para>
           <para>La valeur par défaut est une chaîne vide.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TabKeyBehavior">
@@ -1024,13 +968,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui spécifie la façon dont le contrôle répond à la touche TAB.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui spécifie la façon dont le contrôle répond à la touche TAB.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si cette propriété a <b>la valeur True</b>, en appuyant sur TAB insère un caractère de tabulation dans la zone de texte.  Si cette propriété a la <b>valeur False</b>, le focus se déplace vers le contrôle suivant dans l’ordre de tabulation.</para>
+        <remarks><para>Si cette propriété a la valeur <b>True</b>, le fait d’appuyer sur Tab insère un caractère de tabulation dans la zone de texte. Si cette propriété a la valeur <b>False</b>, le focus est déplacé vers le contrôle suivant dans l’ordre de tabulation.</para>
           <para>La valeur par défaut est <b>False</b>.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -1059,13 +1001,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui correspond au texte affiché dans le contrôle. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui correspond au texte affiché dans le contrôle. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut de la propriété <b>Text</b> est une chaîne vide.</para>
+        <remarks><para>La valeur par défaut de la propriété <b>Text</b> est une chaîne vide.</para>
           <para>La propriété <b>Text</b> fournit la même valeur que la <see cref="P:Microsoft.Office.Interop.Outlook._OlkTextBox.Value" /> propriété, mais la valeur est fortement typée en tant que <b>chaîne</b> (<b>string</b> en c#).</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextAlign">
@@ -1094,12 +1034,10 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlTextAlign</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlTextAlign" /> constante qui spécifie l’alignement du texte dans le contrôle.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlTextAlign" /> constante qui spécifie l’alignement du texte dans le contrôle.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut est <b>olTextAlignLeft</b> dans les langues de droite à gauche comme anglais.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut est <b>olTextAlignLeft</b> dans les langues qui s'écrivent de gauche à droite comme le français.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -1128,12 +1066,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>objet</b> qui représente le contenu du contrôle. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>objet</b> qui représente le contenu du contrôle. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur est identique à la valeur de <see cref="P:Microsoft.Office.Interop.Outlook._OlkTextBox.Text" />, sauf que cette propriété est <b>l’objet</b> et de <b>Text</b> est fortement typée en tant que <b>chaîne</b> (<b>string</b> en c#).</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur est identique à la valeur de <see cref="P:Microsoft.Office.Interop.Outlook._OlkTextBox.Text" />, sauf que cette propriété est <b>l’objet</b> et de <b>Text</b> est fortement typée en tant que <b>chaîne</b> (<b>string</b> en c#).  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WordWrap">
@@ -1162,12 +1098,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui spécifie si le contenu d’un contrôle est renvoyé automatiquement à la fin d’une ligne.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui spécifie si le contenu d’un contrôle est renvoyé automatiquement à la fin d’une ligne.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut est <b>True</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut est <b>True</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
