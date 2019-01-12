@@ -1,13 +1,5 @@
 <Type Name="_DDocSiteControl" FullName="Microsoft.Office.Interop.Outlook._DDocSiteControl">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="12a286b8e35832938e6762766814ade975f518fd" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634837" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _DDocSiteControl" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="12a286b8e35832938e6762766814ade975f518fd" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27905224" /></Metadata><TypeSignature Language="C#" Value="public interface _DDocSiteControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _DDocSiteControl" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._DDocSiteControl" />
   <TypeSignature Language="VB.NET" Value="Public Interface _DDocSiteControl" />
@@ -30,10 +22,8 @@
   </Attributes>
   <Docs>
     <summary>Un contrôle qui affiche le corps d’un élément Outlook.</summary>
-    <remarks>
-      <para>Il s’agit d’une interface principale dans une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface pour accéder à l’objet et ses membres ; reportez-vous à cette interface pour plus d’informations sur les.</para>
-      <para />
-    </remarks>
+    <remarks><para>Il s’agit d’une interface principale dans une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface pour accéder à l’objet et ses membres ; reportez-vous à cette interface pour plus d’informations sur les.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="ReadOnly">
@@ -62,13 +52,11 @@
         <ReturnType>System.SByte</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si le corps affiché dans le contrôle peut uniquement être affiché et ne peut pas être modifié. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si le corps affiché dans le contrôle peut uniquement être affiché et ne peut pas être modifié. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>True</b> pour indiquer que le contrôle affiche le corps uniquement et ne prend pas en charge sa modification ; <b>False</b> pour indiquer que le contrôle prend en charge à la fois affichage et modification du corps de l’élément.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SuppressAttachments">
@@ -97,14 +85,12 @@
         <ReturnType>System.SByte</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui spécifié si les pièces jointes de l’élément Outlook ne doivent pas être affichées dans le contrôle. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui spécifié si les pièces jointes de l’élément Outlook ne doivent pas être affichées dans le contrôle. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété s’applique uniquement aux fichiers joints à l’élément Outlook dans la zone des pièces jointes et ne s’applique pas aux fichiers joints insérée en tant qu’éléments incorporés dans l’élément Outlook.</para>
+        <remarks><para>Cette propriété s’applique uniquement aux fichiers joints à l’élément Outlook dans la zone des pièces jointes et ne s’applique pas aux fichiers joints insérée en tant qu’éléments incorporés dans l’élément Outlook. </para>
           <para>
-            <b>La valeur true</b> pour indiquer que le contrôle n’affiche pas les pièces jointes de l’élément ; <b>False</b> pour indiquer que le contrôle prend en charge l’affichage des pièces jointes de l’élément.</para>
-          <para />
-        </remarks>
+            <b>True</b> pour indiquer que le contrôle n’affiche pas les pièces jointes de l’élément ; <b>False</b> pour indiquer que le contrôle prend en charge l’affichage des pièces jointes de l’élément.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

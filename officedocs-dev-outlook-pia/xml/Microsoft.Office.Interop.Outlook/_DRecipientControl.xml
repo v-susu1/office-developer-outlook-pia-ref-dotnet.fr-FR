@@ -1,13 +1,5 @@
 <Type Name="_DRecipientControl" FullName="Microsoft.Office.Interop.Outlook._DRecipientControl">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="91463f2529a6dfcee01b73552457d2058180496f" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634279" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _DRecipientControl" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="91463f2529a6dfcee01b73552457d2058180496f" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27903082" /></Metadata><TypeSignature Language="C#" Value="public interface _DRecipientControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _DRecipientControl" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._DRecipientControl" />
   <TypeSignature Language="VB.NET" Value="Public Interface _DRecipientControl" />
@@ -30,10 +22,8 @@
   </Attributes>
   <Docs>
     <summary>Un contrôle qui affiche les destinataires d’un élément Outlook.</summary>
-    <remarks>
-      <para>Il s’agit d’une interface principale dans une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface pour accéder à l’objet et ses membres ; reportez-vous à cette interface pour plus d’informations sur les.</para>
-      <para />
-    </remarks>
+    <remarks><para>Il s’agit d’une interface principale dans une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface pour accéder à l’objet et ses membres ; reportez-vous à cette interface pour plus d’informations sur les.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="BackColor">
@@ -62,12 +52,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>entier</b> qui indique la couleur d’arrière-plan du contrôle. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>entier</b> qui indique la couleur d’arrière-plan du contrôle. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est de type <b>OLE_COLOR</b> , qui est une valeur <b>entière</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est de type <b>OLE_COLOR</b> , qui est une valeur <b>entière</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -96,12 +84,10 @@
         <ReturnType>System.SByte</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si le contrôle est autorisé à fonctionner. Lecture/écriture.</summary>
+        <summary>Renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si le contrôle est autorisé à fonctionner. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur par défaut est <b>True</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur par défaut est <b>True</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -161,12 +147,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>entier</b> qui indique la couleur de premier plan du contrôle. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>entier</b> qui indique la couleur de premier plan du contrôle. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est de type <b>OLE_COLOR</b> , qui est une valeur <b>entière</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété est de type <b>OLE_COLOR</b> , qui est une valeur <b>entière</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -195,13 +179,11 @@
         <ReturnType>System.SByte</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui spécifie si les destinataires affichés dans le contrôle peuvent uniquement être affichés et ne peut pas être modifiées. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui spécifie si les destinataires affichés dans le contrôle peuvent uniquement être affichés et ne peut pas être modifiées. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>True</b> pour indiquer que le contrôle affiche les destinataires uniquement et ne prend en charge la modification des destinataires ; <b>False</b> pour indiquer que le contrôle prend en charge à la fois visualiser et modifier des destinataires.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SpecialEffect">
@@ -230,24 +212,22 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>entier</b> qui spécifie l’apparence visuelle d’un objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>entier</b> qui spécifie l’apparence visuelle d’un objet. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Les paramètres de <b>l’argument SpecialEffect</b> sont :</para>
+        <remarks><para>Les paramètres de l'argument <b>SpecialEffect</b> sont les suivants :</para>
           <list type="table">
             <item>
               <description>0</description>
-              <description>objet semble plat et se distingue du formulaire qui entoure par une bordure, une couleur différente ou les deux.</description>
+              <description>L'objet semble plat et se distingue du formulaire qui l'entoure par un contour ou une couleur différente, ou les deux à la fois.</description>
             </item>
             <item>
               <description>2</description>
-              <description>objet a une ombre sur le haut et la gauche et une surbrillance sur le bas et la droite. Le contrôle et sa bordure semblent être constitué dans le formulaire qui contient les. Par défaut pour <b>_DRecipientControl</b>.</description>
+              <description>Objet comporte une ombre sur le haut et la gauche et une surbrillance sur le bas et la droite. Le contrôle et sa bordure semblent être constitué dans le formulaire qui contient les. La valeur par défaut de <b>_DRecipientControl</b>.</description>
             </item>
           </list>
           <para>
-            <b>La propriété SpecialEffect</b> utilise les couleurs système pour définir ses bordures.</para>
-          <para />
-        </remarks>
+            <b>SpecialEffect</b> utilise les couleurs système pour la définition de ses contours.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

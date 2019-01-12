@@ -1,13 +1,5 @@
 <Type Name="UserProperties" FullName="Microsoft.Office.Interop.Outlook.UserProperties">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d3a7c0f8bc2420670a3ec194bc7e78528d011617" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20635114" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface UserProperties : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a015e90dd8fce2e19aee37071f10dc87ff9382a4" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27902704" /></Metadata><TypeSignature Language="C#" Value="public interface UserProperties : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UserProperties implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.UserProperties" />
   <TypeSignature Language="VB.NET" Value="Public Interface UserProperties&#xA;Implements IEnumerable" />
@@ -31,9 +23,12 @@
   </Attributes>
   <Docs>
     <summary>Contient <see cref="T:Microsoft.Office.Interop.Outlook.UserProperty" /> objets qui représentent les propriétés personnalisées d’un élément Outlook.</summary>
-    <remarks>
-      <para>Utilisez la propriété <b>UserProperties</b> pour renvoyer l’objet <b>UserProperties</b> d’un élément Outlook. Cela s’applique à tous les éléments Outlook à l’exception de la <see cref="T:Microsoft.Office.Interop.Outlook.NoteItem" />.</para> Utilisation de 
-      <para>les <see cref="M:Microsoft.Office.Interop.Outlook.UserProperties.Add(System.String,Microsoft.Office.Interop.Outlook.OlUserPropertyType,System.Object,System.Object)" /> méthode pour créer un nouveau <b>UserProperty</b> pour un élément et l’ajouter à l’objet <b>UserProperties</b> . La méthode <b>Add</b> permet de spécifier le nom et le type de la nouvelle propriété. Lorsque vous créez une nouvelle propriété, peut également être ajouté à un champ personnalisé dans le dossier qui contient l’élément (en utilisant le même nom que la propriété) en définissant le <paramref name="AddToFolderFields" /> paramètre sur <b>True</b> lorsque vous appelez la méthode <b>Add</b> . Ce champ puis peut être utilisé en tant que colonne dans les affichages de dossier. </para><para>Utilisez <b>UserProperties</b>(<paramref name="index" />), où <paramref name="index" /> est un nom ou un basé sur un numéro d’index pour renvoyer un seul <see cref="T:Microsoft.Office.Interop.Outlook.UserProperty" /> objet.</para><para>Que vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.UserDefinedProperties" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> objet pour extraire et examiner les définitions de propriétés personnalisées au niveau élément susceptible d’afficher un dossier dans un affichage.</para><para>Pour obtenir ou définir plusieurs propriétés personnalisées, utilisez l’objet <b>PropertyAccessor</b> au lieu de la <see cref="T:Microsoft.Office.Interop.Outlook.UserProperties" /> objet pour améliorer les performances.</para><para /></remarks>
+    <remarks><para>Utilisez la propriété <b>UserProperties</b> pour renvoyer l’objet <b>UserProperties</b> d’un élément Outlook. Cela s’applique à tous les éléments Outlook à l’exception de la <see cref="T:Microsoft.Office.Interop.Outlook.NoteItem" />.</para>
+      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook.UserProperties.Add(System.String,Microsoft.Office.Interop.Outlook.OlUserPropertyType,System.Object,System.Object)" /> méthode pour créer un nouveau <b>UserProperty</b> pour un élément et l’ajouter à l’objet <b>UserProperties</b> . La méthode <b>Add</b> vous permet de spécifier un nom et un type pour la nouvelle propriété. Lorsque vous créez une nouvelle propriété, peut également être ajouté à un champ personnalisé dans le dossier qui contient l’élément (en utilisant le même nom que la propriété) en définissant le <paramref name="AddToFolderFields" /> paramètre sur <b>True</b> lorsque vous appelez la méthode <b>Add</b> . Ce champ peut ensuite être utilisé comme colonne dans les affichages de dossiers. </para>
+      <para>Utilisez <b>UserProperties</b>(<paramref name="index" />), où <paramref name="index" /> est un nom ou un basé sur un numéro d’index pour renvoyer un seul <see cref="T:Microsoft.Office.Interop.Outlook.UserProperty" /> objet.</para>
+      <para>Vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.UserDefinedProperties" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> objet pour extraire et examiner les définitions de propriétés personnalisées au niveau élément susceptible d’afficher un dossier dans un affichage.</para>
+      <para>Pour obtenir ou définir plusieurs propriétés personnalisées, utilisez l’objet <b>PropertyAccessor</b> au lieu de la <see cref="T:Microsoft.Office.Interop.Outlook.UserProperties" /> objet pour améliorer les performances.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,19 +58,16 @@
       <Docs>
         <param name="Name">Nom de la propriété. La longueur maximale est de 64 caractères. Les caractères ' [', ']', '_' et '#', ne sont pas autorisés dans le nom.</param>
         <param name="Type">Type de la nouvelle propriété.</param>
-        <param name="AddToFolderFields">
-          <b>True</b> si la propriété est ajoutée à un champ personnalisé pour l’élément se trouve dans le dossier. Ce champ peut être affiché dans l’affichage du dossier. <b>False</b> si la propriété est ajoutée à un champ personnalisé pour l’élément mais pas pour le dossier. La valeur par défaut est <b>True</b>.</param>
+        <param name="AddToFolderFields"><b>True</b> si la propriété est ajoutée à un champ personnalisé pour l’élément se trouve dans le dossier. Ce champ peut être affiché dans l’affichage du dossier. <b>False</b> si la propriété est ajoutée à un champ personnalisé pour l’élément mais pas pour le dossier. La valeur par défaut est <b>True</b>.</param>
         <param name="DisplayFormat">Spécifie le mode d’affichage de la propriété dans l’interface utilisateur Outlook. Ce paramètre peut être défini sur une valeur parmi plusieurs énumérations différentes, déterminées par le type de propriété spécifié dans le <paramref name="Type" /> paramètre. Pour plus d’informations sur la façon de <paramref name="Type" /> et <paramref name="DisplayFormat" /> interagir, voir <see cref="P:Microsoft.Office.Interop.Outlook._UserDefinedProperty.DisplayFormat" />.</param>
         <summary>Crée une propriété utilisateur dans le <see cref="T:Microsoft.Office.Interop.Outlook.UserProperties" /> collection.</summary>
         <returns>A <see cref="T:Microsoft.Office.Interop.Outlook.UserProperty" /> object qui représente la nouvelle propriété.</returns>
-        <remarks>
-          <para>Vous pouvez définir des propriétés personnalisées en appelant la méthode <b>UserProperties.Add</b> pour un élément Outlook ou d’un dossier, ou <see cref="M:Microsoft.Office.Interop.Outlook._UserDefinedProperties.Add(System.String,Microsoft.Office.Interop.Outlook.OlUserPropertyType,System.Object,System.Object)" /> pour un dossier.</para>
+        <remarks><para>Vous pouvez définir des propriétés personnalisées en appelant la méthode <b>UserProperties.Add</b> pour un élément Outlook ou d’un dossier, ou <see cref="M:Microsoft.Office.Interop.Outlook._UserDefinedProperties.Add(System.String,Microsoft.Office.Interop.Outlook.OlUserPropertyType,System.Object,System.Object)" /> pour un dossier.</para>
           <para>Vous pouvez créer une propriété d’un type défini par le <see cref="T:Microsoft.Office.Interop.Outlook.OlUserPropertyType" /> énumération, à l’exception des types suivants : <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olEnumeration" />, <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olOutlookInternal" />, et <see cref="F:Microsoft.Office.Interop.Outlook.OlUserPropertyType.olSmartFrom" />.</para>
           <para>Pour définir pour la première fois une propriété créée par la méthode <b>Add</b> , utilisez la <see cref="P:Microsoft.Office.Interop.Outlook.UserProperty.Value" /> propriété de la <see cref="T:Microsoft.Office.Interop.Outlook.UserProperty" /> objet au lieu de la <see cref="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.SetProperties(System.Object,System.Object)" /> ou <see cref="M:Microsoft.Office.Interop.Outlook._PropertyAccessor.SetProperty(System.String,System.Object)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> objet.</para>
           <para>Si vous souhaitez afficher une propriété personnalisée sur un élément, vous devez utiliser la méthode <b>UserProperties.Add</b> pour créer cette propriété. Les propriétés personnalisées créées par le <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> ne sont pas pris en charge dans un affichage personnalisé.</para>
           <para>Vous ne pouvez pas ajouter des propriétés personnalisées à des éléments de document Office tels que des fichiers Word, Excel et PowerPoint. Vous recevrez une erreur lorsque vous essayez d’ajouter par programme un champ défini par l’utilisateur à un <see cref="T:Microsoft.Office.Interop.Outlook.DocumentItem" /> objet.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -186,14 +178,11 @@
       </Parameters>
       <Docs>
         <param name="Name">Nom de la propriété demandée.</param>
-        <param name="Custom">
-          <b>True</b> si les propriétés personnalisées sur l'élément doivent faire l'objet de recherches, <b>False</b> si les propriétés intégrées doivent faire l'objet de recherches.</param>
+        <param name="Custom"><b>True</b> si les propriétés personnalisées sur l'élément doivent faire l'objet de recherches, <b>False</b> si les propriétés intégrées doivent faire l'objet de recherches.</param>
         <summary>Localise et renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.UserProperty" /> objet pour le nom de la propriété demandée, si elle existe.</summary>
         <returns>Si vous utilisez <b>UserProperties.Find</b> pour rechercher une propriété personnalisée et l’appel réussit, elle renvoie un objet <b>UserProperty</b> . Si elle échoue, elle renvoie <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#). Si vous utilisez <b>UserProperties.Find</b> pour rechercher une propriété intégrée, spécifiez <b>False</b> pour le <paramref name="Custom" /> paramètre. Si l’appel réussit, la propriété est renvoyée sous forme d’un objet <b>UserProperty</b> . En cas d’échec de l’appel, elle renvoie <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#). Si vous spécifiez <b>la valeur True</b> pour <paramref name="Custom" />, l’appel ne trouve pas la propriété intégrée et renvoie <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#).</returns>
-        <remarks>
-          <para>Si <paramref name="Custom" /> paramètre a la <b>valeur True</b>, seules les propriétés utilisateur personnalisées portera. La valeur par défaut est <b>True</b>. Pour trouver une propriété non personnalisée comme <b>Subject</b>, spécifiez <paramref name="Custom" /> paramètre comme <b>faux</b>, sinon renvoie <b>Nothing</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si <paramref name="Custom" /> paramètre a la <b>valeur True</b>, seules les propriétés utilisateur personnalisées portera. La valeur par défaut est <b>True</b>. Pour trouver une propriété non personnalisée comme <b>Subject</b>, spécifiez <paramref name="Custom" /> paramètre comme <b>faux</b>, sinon renvoie <b>Nothing</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -309,16 +298,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

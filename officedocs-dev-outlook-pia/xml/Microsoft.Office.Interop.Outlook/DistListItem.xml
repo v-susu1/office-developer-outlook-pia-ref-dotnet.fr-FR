@@ -1,13 +1,5 @@
 <Type Name="DistListItem" FullName="Microsoft.Office.Interop.Outlook.DistListItem">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="adb8e85e50726f0603be884b011e75ea2e5bceed" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20635353" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DistListItem : Microsoft.Office.Interop.Outlook._DistListItem, Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="01090b5675442cf20f0bcdbf0677aa0da4a0fb46" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27906477" /></Metadata><TypeSignature Language="C#" Value="public interface DistListItem : Microsoft.Office.Interop.Outlook._DistListItem, Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DistListItem implements class Microsoft.Office.Interop.Outlook._DistListItem, class Microsoft.Office.Interop.Outlook.ItemEvents_10_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.DistListItem" />
   <TypeSignature Language="VB.NET" Value="Public Interface DistListItem&#xA;Implements _DistListItem, ItemEvents_10_Event" />
@@ -34,11 +26,11 @@
   </Attributes>
   <Docs>
     <summary>Représente une liste de distribution dans un dossier Contacts.</summary>
-    <remarks>
-      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._DistListItem" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.DistListItemClass" />. </para>
-      <para>Une liste de distribution peut contenir plusieurs destinataires et est utilisée pour envoyer des messages à tout le monde dans la liste.</para>
-      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._Application.CreateItem(Microsoft.Office.Interop.Outlook.OlItemType)" /> méthode pour créer un objet <b>DistListItem</b> qui représente une nouvelle liste de distribution.</para> Utilisation de 
-      <para><see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.Items" />(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index d’un élément dans un dossier contacts ou une valeur correspondant à la propriété par défaut d’un élément dans le dossier, pour renvoyer un seul objet <b>DistListItem</b> d’un dossier contacts (autrement dit, un dossier dont type d’élément par défaut est <b>olContactItem</b>).</para><para /></remarks>
+    <remarks><para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._DistListItem" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.DistListItemClass" />. </para>
+      <para>Une liste de distribution peut contenir plusieurs destinataires et permet d'envoyer des messages à toutes les personnes de la liste.</para>
+      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._Application.CreateItem(Microsoft.Office.Interop.Outlook.OlItemType)" /> méthode pour créer un objet <b>DistListItem</b> qui représente une nouvelle liste de distribution.</para>
+      <para>Utilisez <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.Items" />(<paramref name="index" />), où <paramref name="index" /> est le numéro d’index d’un élément dans un dossier contacts ou une valeur correspondant à la propriété par défaut d’un élément dans le dossier, pour renvoyer un seul objet <b>DistListItem</b> d’un dossier contacts (c'est-à-dire un dossier dont par défaut type d’élément est <b>olContactItem</b>).</para>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>
