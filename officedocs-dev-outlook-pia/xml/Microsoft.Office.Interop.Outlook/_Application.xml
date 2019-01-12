@@ -1,13 +1,5 @@
 <Type Name="_Application" FullName="Microsoft.Office.Interop.Outlook._Application">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3a1a76725d5ad1aff125d99fcb70c41ea0bd31ed" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633665" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _Application" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3a1a76725d5ad1aff125d99fcb70c41ea0bd31ed" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27904048" /></Metadata><TypeSignature Language="C#" Value="public interface _Application" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Application" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._Application" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Application" />
@@ -53,10 +45,8 @@
       <Docs>
         <summary>Renvoie le tout premier <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> objet sur le bureau.</summary>
         <returns>Objet <b>Explorer</b> qui représente l’Explorateur de niveau supérieur sur le bureau. Renvoie la <b>valeur Nothing</b> si aucun explorateur n’est actif.</returns>
-        <remarks>
-          <para>Utilisez cette méthode pour renvoyer l’objet <b>Explorer</b> que l’utilisateur est le plus vraisemblablement affiché. Cette méthode est également utile pour déterminer à quel moment il n’existe aucun explorateur actif, une autre peut être ouvert.</para>
-          <para />
-        </remarks>
+        <remarks><para> Utilisez cette méthode pour renvoyer l'objet <b>Explorer</b> que l'utilisateur est très probablement en train d'utiliser. Cette méthode est également utile pour déterminer qu'aucun explorateur n'est actif, ce qui permet d'en ouvrir un.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveInspector">
@@ -82,11 +72,9 @@
       <Docs>
         <summary>Renvoie le tout premier <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> objet sur le bureau.</summary>
         <returns>Un <b>Inspecteur</b> qui représente le tout premier inspecteur du bureau.</returns>
-        <remarks>
-          <para>Utilisez cette méthode pour accéder à l’objet <b>Inspector</b> dont l’utilisateur est le plus vraisemblablement affiché.</para>
+        <remarks><para> Utilisez cette méthode pour accéder à l’objet <b>Inspector</b> qui est le plus vraisemblablement affiché par l’utilisateur.</para>
           <para>Si aucun inspecteur n’est actif, renvoie <b>Nothing</b>.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveWindow">
@@ -111,7 +99,7 @@
       <Parameters />
       <Docs>
         <summary>Renvoie un objet représentant la fenêtre Microsoft Outlook de niveau supérieur sur le bureau, soit une <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> ou <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> objet.</summary>
-        <returns>Objet qui représente la fenêtre Microsoft Outlook de niveau supérieur sur le bureau. Renvoie la <b>valeur Nothing</b> si aucun explorateur ou inspecteur Outlook n’est ouvert.</returns>
+        <returns>Objet qui représente la fenêtre Microsoft Outlook de niveau supérieur sur le bureau. Renvoie <b>Aucun</b> si aucun explorateur ou inspecteur Outlook n’est ouvert.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,18 +131,24 @@
         <param name="Scope">Portée de la recherche. Par exemple, le chemin d'accès à un dossier. Il est recommandé d'écrire le chemin entre des guillemets simples. Sinon, la recherche risque de ne pas renvoyer de résultats corrects si le chemin contient des caractères spéciaux, y compris des caractères Unicode. Pour spécifier plusieurs chemins, encadrez chacun d'eux par des guillemets simples et séparez-les par une virgule.</param>
         <param name="Filter">Filtre de recherche DASL qui définit les paramètres de la recherche.</param>
         <param name="SearchSubFolders">Détermine si la recherche inclut certains ou tous les sous-dossiers du dossier.</param>
-        <param name="Tag">Nom donné en tant qu'identificateur pour la recherche.</param>
+        <param name="Tag">Nom donné en tant qu’identificateur pour la recherche.</param>
         <summary>Effectue une recherche basée sur une chaîne de recherche DASL (DAV Searching and Locating) spécifiée.</summary>
         <returns>A <see cref="T:Microsoft.Office.Interop.Outlook.Search" /> objet qui représente les résultats de la recherche.</returns>
-        <remarks>
-          <para>Vous pouvez effectuer simultanément plusieurs recherches en appelant la méthode <b>AdvancedSearch</b> sur plusieurs lignes de code. Toutefois, sachez que la création par programme un grand nombre de dossiers de recherche peut entraîner des activités de recherche simultanés significative susceptible d’affecter les performances d’Outlook, surtout si Outlook effectue la recherche en mode Exchange en ligne.</para> Méthode 
-          <para><b>AdvancedSearch</b> et les fonctions associées dans le modèle objet Outlook ne créent pas un dossier de recherche qui apparaîtra dans l’interface utilisateur Outlook. Toutefois, vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Outlook.Search.Save(System.String)" /> méthode de l’objet Search qui est renvoyé pour créer un dossier de recherche qui apparaîtra dans la liste des dossiers de recherche dans l’interface utilisateur Outlook.</para><para>à l’aide du <paramref name="Scope" /> paramètre, vous pouvez spécifier un ou plusieurs dossiers dans le même magasin, mais vous ne pouvez pas spécifier plusieurs dossiers dans plusieurs magasins. Pour spécifier plusieurs dossiers pour la <paramref name="Scope" /> paramètre, utilisez une virgule entre chaque chemin d’accès du dossier et mettez-le entre guillemets simples chaque chemin d’accès du dossier. Pour les dossiers par défaut tels que la boîte de réception ou éléments envoyés, vous pouvez utiliser le nom du dossier simple au lieu du chemin d’accès complet du dossier. Par exemple, les lignes de code suivantes représentent valide <paramref name="Scope" /> paramètres :</para><code>Dim Scope As String = "'Inbox', 'Sent Items'"</code><code>string Scope = "'Inbox', 'Sent Items'";</code><code>Dim Scope1 As String = "'" &amp;amp; Application.Session.GetDefaultFolder( _
+        <remarks><para>Vous pouvez effectuer simultanément plusieurs recherches en appelant la méthode <b>AdvancedSearch</b> sur plusieurs lignes de code. Toutefois, sachez que lorsque vous créez par programme un grand nombre de dossiers de recherche, l’activité générée par les recherches simultanées peut avoir des répercussions négatives sur les performances d’Outlook, surtout si Outlook effectue les recherches en mode Exchange en ligne.</para>
+          <para>La méthode <b>AdvancedSearch</b> et les fonctions associées dans le modèle objet Outlook ne créent pas un dossier de recherche qui apparaîtra dans l’interface utilisateur Outlook. Toutefois, vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Outlook.Search.Save(System.String)" /> méthode de l’objet Search qui est renvoyé pour créer un dossier de recherche qui apparaîtra dans la liste des dossiers de recherche dans l’interface utilisateur Outlook.</para>
+          <para>À l’aide de la <paramref name="Scope" /> paramètre, vous pouvez spécifier un ou plusieurs dossiers dans le même magasin, mais vous ne pouvez pas spécifier plusieurs dossiers dans plusieurs magasins. Pour spécifier plusieurs dossiers pour la <paramref name="Scope" /> paramètre, utilisez une virgule entre chaque chemin d’accès du dossier et mettez-le entre guillemets simples chaque chemin d’accès du dossier. Pour les dossiers par défaut tels que Boîte de réception ou Éléments envoyés, vous pouvez utiliser simplement le nom du dossier au lieu de saisir l’intégralité du chemin d’accès. Par exemple, les lignes de code suivantes représentent valide <paramref name="Scope" /> paramètres :</para>
+          <code>Dim Scope As String = "'Inbox', 'Sent Items'"</code>
+          <code>string Scope = "'Inbox', 'Sent Items'";</code>
+          <code>Dim Scope1 As String = "'" &amp;amp; Application.Session.GetDefaultFolder( _
     Outlook.OlDefaultFolders.olFolderInbox).FolderPath &amp;amp; _
     "','" &amp;amp; Application.Session.GetDefaultFolder( _
-    Outlook.OlDefaultFolders.olFolderSentMail).FolderPath</code><code>string Scope1 = "'" + Application.Session.GetDefaultFolder( 
+    Outlook.OlDefaultFolders.olFolderSentMail).FolderPath</code>
+          <code>string Scope1 = "'" + Application.Session.GetDefaultFolder( 
     Outlook.OlDefaultFolders.olFolderInbox).FolderPath + 
     "','" + Application.Session.GetDefaultFolder( 
-    Outlook.OlDefaultFolders.olFolderSentMail).FolderPath;</code><para>le <paramref name="Filter" /> paramètre peut être une requête DASL valide. Pour plus d’informations sur les requêtes DASL, voir filtrage des éléments et référencer les propriétés par Namespace. Notez que vous ne pouvez pas utiliser une requête JET pour les <paramref name="Filter" /> paramètre de recherche avancée. Si la recherche instantanée est activée sur un magasin qui contient un dossier spécifié dans le <paramref name="Scope" /> paramètre, vous pouvez utiliser des mots clés de recherche instantanée pour améliorer les performances de votre recherche. Si vous utilisez des mots clés de recherche instantanée et la recherche instantanée n’est pas activée, Outlook renvoie une erreur et la recherche échouera.</para><para /></remarks>
+    Outlook.OlDefaultFolders.olFolderSentMail).FolderPath;</code>
+          <para>Le <paramref name="Filter" /> paramètre peut être une requête DASL valide. Pour plus d’informations sur les requêtes DASL, reportez-vous aux rubriques relatives au filtrage des éléments et au référencement des propriétés par espace de noms. Notez que vous ne pouvez pas utiliser une requête JET pour les <paramref name="Filter" /> paramètre de recherche avancée. Si la recherche instantanée est activée sur un magasin qui contient un dossier spécifié dans le <paramref name="Scope" /> paramètre, vous pouvez utiliser des mots clés de recherche instantanée pour améliorer les performances de votre recherche. Si vous utilisez des mots clés de recherche instantanée et que la recherche instantanée n’est pas activée, Outlook renvoie une erreur et votre recherche échoue.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AnswerWizard">
@@ -241,10 +235,8 @@
       <Docs>
         <summary>Renvoie un <a href="http://go.microsoft.com/fwlink/?LinkId=87944">IAssistance</a></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour plus d’informations sur <b>IAssistance</b>, voir la référence de bibliothèque d’objets pour Microsoft Office system 2007.</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour plus d’informations sur <b>IAssistance</b>, voir la référence de bibliothèque d’objets pour Microsoft Office system 2007.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Assistant">
@@ -391,10 +383,8 @@
         <param name="ItemType">Le type d’élément Outlook pour le nouvel élément.</param>
         <summary>Crée et renvoie un nouvel élément Microsoft Outlook.</summary>
         <returns>Valeur <b>Object</b> qui représente le nouvel élément Outlook.</returns>
-        <remarks>
-          <para>La méthode <b>CreateItem</b> ne peut créer que des éléments Outlook par défaut. Pour créer de nouveaux éléments à l’aide d’un formulaire personnalisé, utilisez la <see cref="M:Microsoft.Office.Interop.Outlook._Items.Add(System.Object)" /> méthode sur le <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> collection.</para>
-          <para />
-        </remarks>
+        <remarks><para>La méthode <b>CreateItem</b> ne peut créer que des éléments Outlook par défaut. Pour créer de nouveaux éléments à l’aide d’un formulaire personnalisé, utilisez la <see cref="M:Microsoft.Office.Interop.Outlook._Items.Add(System.Object)" /> méthode sur le <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> collection.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateItemFromTemplate">
@@ -424,10 +414,8 @@
         <param name="InFolder">Dossier dans lequel l'élément doit être créé. Si cet argument est omis, c'est le dossier par défaut du type d'élément qui est utilisé.</param>
         <summary>Crée un nouvel élément Microsoft Outlook à partir d'un modèle Outlook (.oft) et le renvoie.</summary>
         <returns>Valeur <b>Object</b> qui représente le nouvel élément Microsoft Outlook.</returns>
-        <remarks>
-          <para>Nouveaux éléments seront ouvrent toujours en mode composition, au lieu de mode lecture, quel que soit le mode dans lequel les éléments ont été enregistrés sur le disque.</para>
-          <para />
-        </remarks>
+        <remarks><para>Les nouveaux éléments s'ouvrent toujours en mode composition, pat opposition au mode lecture, quel que soit le mode dans lequel les éléments ont été enregistrés sur le disque.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateObject">
@@ -453,15 +441,13 @@
         <Parameter Name="ObjectName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="ObjectName">Le nom de classe de l’objet à créer. Pour plus d’informations sur les noms de classe valides, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87946">Identificateurs de programmation OLE</a></param>
+        <param name="ObjectName">Nom de la classe de l’objet à créer. Pour plus d’informations sur les noms de classe valides, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87946">Identificateurs de programmation OLE</a></param>
         <summary>Crée un objet Automation de la classe spécifiée.</summary>
         <returns>Valeur <b>Object</b> qui représente la nouvelle instance d’objet Automation. Si l’application est déjà en cours d’exécution, <b>CreateObject</b> crée une nouvelle instance.</returns>
-        <remarks>
-          <para>Cette méthode est fournie afin que les autres applications peuvent être automatisées à partir de Microsoft Visual Basic Scripting Edition (VBScript) 1.0, qui n’incluait pas de méthode <b>CreateObject</b> . <b>CreateObject</b> a été incluse dans VBScript version 2.0 et versions ultérieure. Cette méthode ne doit pas être utilisée pour automatiser Microsoft Outlook depuis VBScript.</para>
+        <remarks><para>Cette méthode permet d'automatiser d'autres applications à l'aide de Microsoft Visual Basic Scripting Edition (VBScript) 1.0, qui n'incluait pas de méthode  <b>CreateObject</b>. La méthode <b>CreateObject</b> a été incluse dans VBScript version 2.0 et ultérieure. Cette méthode ne doit pas être utilisée pour automatiser Microsoft Outlook depuis VBScript.</para>
           <para>
             <b>Remarque</b>: les méthodes <b>CreateObject</b> couramment utilisées dans l’exemple de code dans ce fichier d’aide (disponible lorsque vous cliquez sur « Exemple ») sont accessibles via Microsoft Visual Basic ou Microsoft Visual Basic pour Applications (VBA). Ces exemples ne <paramref name="not" /> utiliser la méthode <b>CreateObject</b> qui est implémentée dans le cadre du modèle d’objet dans Outlook.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultProfileName">
@@ -489,10 +475,8 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant le nom du profil par défaut. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Renvoie une chaîne vide si aucun profil n’a été configuré ou s’il n’existe aucun profil par défaut pour Outlook.</para>
-          <para />
-        </remarks>
+        <remarks><para>Renvoie une chaîne vide si aucun profil n'a été configuré ou si Outlook n'a aucun profil par défaut.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Explorers">
@@ -586,10 +570,8 @@
         <param name="Type">Type d'espace de noms à renvoyer.</param>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet du type spécifié.</summary>
         <returns>Objet <b>espace de noms</b>  qui représente l'espace de noms spécifié.</returns>
-        <remarks>
-          <para>Le seul espace de noms pris en charge le type est « MAPI ». La méthode <b>GetNameSpace</b> est fonctionnellement équivalente à la propriété <b>Session</b> , ce qui a été introduite dans Microsoft Outlook 98.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le seul espace de noms pris en charge le type est « MAPI ». La méthode <b>GetNameSpace</b> est fonctionnellement équivalente à la propriété <b>Session</b> , ce qui a été introduite dans Microsoft Outlook 98.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNewNickNames">
@@ -651,12 +633,10 @@
         <param name="ReferenceType">Type de référence d'objet.</param>
         <summary>Crée une référence d'objet forte ou faible pour un objet Outlook spécifique.</summary>
         <returns>Un <b>objet</b> qui représente un nom fort ou la référence d’objet faible de l’objet spécifié.</returns>
-        <remarks>
-          <para>Cette méthode renvoie une référence d’objet faible ou forte pour l’objet spécifié dans <paramref name="Item" />.</para>
+        <remarks><para>Cette méthode renvoie une référence d’objet faible ou forte pour l’objet spécifié dans <paramref name="Item" />.</para>
           <para>
-            <b>Remarque</b>: Outlook peut échouer fermer correctement si un complément conserve des références d’objet fortes. Toujours supprimer la référence une référence d’objet forte une fois qu’il n’est plus nécessaire par le complément et</para>
-          <para />
-        </remarks>
+            <b>Remarque</b>: Outlook peut échouer fermer correctement si un complément conserve des références d’objet fortes. Toujours supprimer la référence une référence d’objet forte une fois qu’il n’est plus nécessaire par le complément.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Inspectors">
@@ -713,10 +693,8 @@
         <param name="LookInFolders">Nom du chemin d’accès aux dossiers concernés par la recherche. Vous devez mettre le chemin d’accès au dossier entre guillemets simples.</param>
         <summary>Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) indiquant si une recherche est synchrone ou asynchrone.</summary>
         <returns>Renvoie <b>True</b> si la recherche est synchrone ; sinon, renvoie <b>False</b>.</returns>
-        <remarks>
-          <para>Si la recherche est synchrone, la <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> méthode ne retourne pas jusqu'à ce que la recherche est terminée. Inversement, si la recherche est asynchrone, la méthode <b>AdvancedSearch</b> renverra immédiatement. Pour obtenir des résultats pertinents à partir d’une recherche asynchrone, utilisez la <see cref="E:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.AdvancedSearchComplete" /> événement pour vous avertir lors de la recherche est terminée.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si la recherche est synchrone, la <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> méthode ne retourne pas jusqu'à ce que la recherche est terminée. Inversement, si la recherche est asynchrone, la méthode <b>AdvancedSearch</b> renverra immédiatement. Pour obtenir des résultats pertinents à partir d’une recherche asynchrone, utilisez la <see cref="E:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.AdvancedSearchComplete" /> événement pour vous avertir lors de la recherche est terminée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsTrusted">
@@ -744,10 +722,8 @@
       <Docs>
         <summary>Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) pour indiquer si un complément ou appelant externe est considéré comme étant approuvé par Outlook. Lecture seule</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour les appelants out-of-process qui ont instancié la <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> objet, <b>IsTrusted</b> renvoie toujours <b>False</b>.   Pour les compléments Outlook, <b>IsTrusted</b> renvoie <b>la valeur True</b> si et seulement si le complément est considéré comme étant approuvé par Outlook.</para>
-          <para />
-        </remarks>
+        <remarks><para>Pour les appelants out-of-process qui ont instancié la <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> objet, <b>IsTrusted</b> renvoie toujours <b>False</b>.   Pour les compléments Outlook, <b>IsTrusted</b> renvoie <b>la valeur True</b> si et seulement si le complément est considéré comme étant approuvé par Outlook.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageSettings">
@@ -859,8 +835,7 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Core.PickerDialog" /> objet qui fournit les fonctionnalités pour sélectionner des personnes ou des données dans une boîte de dialogue. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>L’objet <b>PickerDialog</b> est disponible dans la bibliothèque de type Microsoft Office. Pour plus d’informations, voir les objets suivants et leurs membres :</para>
+        <remarks><para>L'objet <b>PickerDialog</b> est disponible dans la bibliothèque de type Microsoft Office. Pour plus d'informations, voir les objets suivants et leurs membres :</para>
           <list type="bullet">
             <item>
               <para>
@@ -892,9 +867,13 @@
                 <see cref="T:Microsoft.Office.Core.PickerResult" />
               </para>
             </item>
+            <item>
+              <para>
+                <see cref="T:Microsoft.Office.Core.PickerResults" />
+              </para>
+            </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ProductCode">
@@ -947,10 +926,10 @@
       <Parameters />
       <Docs>
         <summary>Ferme toutes les fenêtres actuellement ouvertes.</summary>
-        <remarks>
-          <para>La session Outlook associée est totalement ; fermée. l’utilisateur est déconnecté du système de messagerie et les modifications apportées aux éléments pas été enregistrées sont supprimées.</para>
-          <para />
-        </remarks>
+        <remarks><para>La session Outlook associée est totalement fermée : l'utilisateur est déconnecté du système de messagerie et les modifications apportées aux éléments qui n'ont pas été enregistrées sont perdues.
+
+  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshFormRegionDefinition">
@@ -978,12 +957,10 @@
       <Docs>
         <param name="RegionName">Le nom interne de la zone dont vous souhaitez actualiser dans le cache de la définition de formulaire. Pour actualiser toutes les définitions de zone de formulaire, spécifiez une chaîne vide.</param>
         <summary>Actualise le cache en obtenant la définition actuelle à partir du Registre de Windows pour une ou toutes les zones de formulaire définies pour l’ordinateur local et l’utilisateur actif.</summary>
-        <remarks>
-          <para>Lorsque Microsoft Outlook démarre, il lit le Registre Windows pour obtenir une liste de zones de formulaire et leurs définitions, puis met en cache les données. Les définitions sont stockées dans le Registre sous la clé d’ordinateur locale (sous HKEY_LOCAL_MACHINE\Software\Microsoft\Office\Outlook\FormRegions) et sous la clé utilisateur actif (sous HKEY_CURRENT_USER\Software\Microsoft\Office\Outlook\FormRegions). Les définitions de décrivent la mise en page, le comportement et autres caractéristiques de chaque zone de formulaire. Si vous enregistrez une zone de formulaire ou modifiez la définition d’une zone de formulaire après le démarrage d’Outlook, vous pouvez utiliser la <b>refreshformregiondefinition,</b> méthode pour indiquer à Outlook pour obtenir les informations mises à jour.</para>
-          <para>La <paramref name="RegionName" /> argument doit correspondre à la <see cref="P:Microsoft.Office.Interop.Outlook._FormRegion.InternalName" /> propriété de la zone de formulaire dont vous êtes l’actualisation de la définition. Le nom interne d’une zone de formulaire prend en charge uniquement des caractères ASCII. Si vous spécifiez une chaîne vide, il lit le Registre Windows pour obtenir des définitions pour toutes les zones de formulaire qui sont définis pour l’ordinateur local et l’utilisateur actuel.</para>
-          <para>Pour plus d’informations sur l’inscription des zones de formulaire, voir Spécification de zones de formulaire dans le Registre Windows.</para>
-          <para />
-        </remarks>
+        <remarks><para>Lorsque Microsoft Outlook démarre, il lit le Registre Windows pour obtenir une liste de zones de formulaire et leurs définitions, puis met en cache les données. Les définitions sont stockées dans le Registre sous la clé d’ordinateur locale (sous HKEY_LOCAL_MACHINE\Software\Microsoft\Office\Outlook\FormRegions) et sous la clé utilisateur actif (sous HKEY_CURRENT_USER\Software\Microsoft\Office\Outlook\FormRegions). Les définitions de décrivent la mise en page, le comportement et autres caractéristiques de chaque zone de formulaire. Si vous enregistrez une zone de formulaire ou modifiez la définition d’une zone de formulaire après le démarrage d’Outlook, vous pouvez utiliser la <b>refreshformregiondefinition,</b> méthode pour indiquer à Outlook pour obtenir les informations mises à jour.</para>
+          <para>Le <paramref name="RegionName" /> argument doit correspondre à la <see cref="P:Microsoft.Office.Interop.Outlook._FormRegion.InternalName" /> propriété de la zone de formulaire dont vous êtes l’actualisation de la définition. Le nom interne d’une zone de formulaire prend en charge uniquement des caractères ASCII. Si vous spécifiez une chaîne vide, il lit le Registre Windows pour obtenir des définitions pour toutes les zones de formulaire qui sont définis pour l’ordinateur local et l’utilisateur actuel.</para>
+          <para>Pour plus d’informations sur l’inscription des zones de formulaire, voir Spécification de zones de formulaire dans le Registre de Windows.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Reminders">
@@ -1039,16 +1016,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TimeZones">
@@ -1076,10 +1051,9 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.TimeZones" /> collection qui représente le jeu de fuseaux horaires pris en charge par Outlook. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le jeu de fuseaux horaires pris en charge par Outlook est basé sur les données stockées dans la clé de Registre Windows HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Time Zones.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le jeu de fuseaux horaires pris en charge par Outlook dépend des données stockées dans la clé de Registre Windows HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Time Zones.
+ </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Version">

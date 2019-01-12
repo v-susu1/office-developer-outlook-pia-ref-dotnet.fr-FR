@@ -1,13 +1,5 @@
 <Type Name="_Stores" FullName="Microsoft.Office.Interop.Outlook._Stores">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="1140b6b1b491b9b987703c19f7175944985e3b9b" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633695" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _Stores : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1140b6b1b491b9b987703c19f7175944985e3b9b" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27903229" /></Metadata><TypeSignature Language="C#" Value="public interface _Stores : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Stores implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._Stores" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Stores&#xA;Implements IEnumerable" />
@@ -147,11 +139,9 @@
         <param name="Index">Un <b>entier</b> qui spécifie un index de base 1 dans la collection <b>Stores</b> ou une valeur de <b>chaîne</b> (<b>string</b> en c#) qui spécifie le <see cref="P:Microsoft.Office.Interop.Outlook._Store.DisplayName" /> d’un <b>magasin</b> de la collection <b>Stores</b> .</param>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> objet qui est spécifiée par <paramref name="Index" />. En lecture seule.</summary>
         <value>Objet <b>Store</b> de l’objet parent <see cref="T:Microsoft.Office.Interop.Outlook.Stores" /> collection, tel que spécifié par <paramref name="Index" />.</value>
-        <remarks>
-          <para>La propriété <b>Store.DisplayName</b> est la propriété par défaut d’un <b>magasin</b>.</para>
+        <remarks><para>La propriété <b>Store.DisplayName</b> est la propriété par défaut d'un objet <b>Store</b>.</para>
           <para>Si <paramref name="Index" /> est une chaîne et vous pouvez trouver aucun élément portant ce nom, une erreur est renvoyée.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -179,10 +169,8 @@
       <Docs>
         <summary>Renvoie la valeur de type <b>Object</b> parent de l’objet spécifié. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le parent d’un <see cref="T:Microsoft.Office.Interop.Outlook.Stores" /> objet est la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le parent d’un <see cref="T:Microsoft.Office.Interop.Outlook.Stores" /> objet est la <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -210,16 +198,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

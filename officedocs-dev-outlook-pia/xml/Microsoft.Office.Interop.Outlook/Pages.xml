@@ -1,13 +1,5 @@
 <Type Name="Pages" FullName="Microsoft.Office.Interop.Outlook.Pages">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3a39316f31c31dd7d14073362c6ea96a307b3e63" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634823" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Pages : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ee2ae6b5fa0a95a49e5a94e7b8a64a924c28cab9" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27905616" /></Metadata><TypeSignature Language="C#" Value="public interface Pages : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Pages implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.Pages" />
   <TypeSignature Language="VB.NET" Value="Public Interface Pages&#xA;Implements IEnumerable" />
@@ -31,10 +23,11 @@
   </Attributes>
   <Docs>
     <summary>Contient des pages qui représentent les pages d'une fenêtre d'inspecteur.</summary>
-    <remarks>
-      <para>Chaque <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> objet a un objet <b>Pages</b> défini, qui est vide (nombre 0) si l’élément Outlook n’a jamais été personnalisé avant.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.ModifiedFormPages" /> propriété permet de renvoyer l’objet <b>Pages</b> à partir d’un objet <b>Inspector</b> .</para> Utilisation de 
-      <para>les <see cref="M:Microsoft.Office.Interop.Outlook.Pages.Add(System.Object)" /> méthode pour créer une page personnalisée (vous pouvez ajouter jusqu'à 5 pages personnalisables). Utilisez l’argument nom de la méthode <b>Add</b> pour définir le nom complet de la page renvoyée. Outre l’ajout de pages personnalisées, vous pouvez utiliser la <paramref name="Name" /> argument afin de renvoyer la page principale d’un objet <b>Inspector</b> pour modification.</para><para>Utilisez <b>ModifiedFormPages</b>(<paramref name="index" />), où <paramref name="index" /> est le nom ou le numéro d’index, pour renvoyer une page unique d’un objet <b>Pages</b> .</para><para /></remarks>
+    <remarks><para>Chaque <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> objet a un objet <b>Pages</b> défini, qui est vide (nombre 0) si l’élément Outlook n’a jamais été personnalisé avant.</para>
+      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._Inspector.ModifiedFormPages" /> propriété permet de renvoyer l’objet <b>Pages</b> à partir d’un objet <b>Inspector</b> .</para>
+      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook.Pages.Add(System.Object)" /> méthode pour créer une page personnalisée (vous pouvez ajouter jusqu'à 5 pages personnalisables). Utilisez l’argument nom de la méthode <b>Add</b> pour définir le nom complet de la page renvoyée. Outre l’ajout de pages personnalisées, vous pouvez utiliser la <paramref name="Name" /> argument afin de renvoyer la page principale d’un objet <b>Inspector</b> pour modification.</para>
+      <para>Utilisez la <b>propriété ModifiedFormPages</b>(<paramref name="index" />), où <paramref name="index" /> est le nom ou le numéro d’index, pour renvoyer une page unique d’un objet <b>Pages</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,10 +56,8 @@
 						Nom de la page.</param>
         <summary>Crée une nouvelle page dans le <see cref="T:Microsoft.Office.Interop.Outlook.Pages" /> collection.</summary>
         <returns>Une <a href="http://go.microsoft.com/fwlink/?LinkId=87950">Page</a></returns>
-        <remarks>
-          <para>La collection <b>Pages</b> est initialement vide et il existe une limite de 5 pages personnalisables par collection.</para>
-          <para />
-        </remarks>
+        <remarks><para>La collection <b>Pages</b> est initialement vide et comporte une limite de 5 pages personnalisables par collection</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -266,16 +257,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

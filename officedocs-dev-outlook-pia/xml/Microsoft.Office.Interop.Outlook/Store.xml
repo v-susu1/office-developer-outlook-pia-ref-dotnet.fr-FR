@@ -1,13 +1,5 @@
 <Type Name="Store" FullName="Microsoft.Office.Interop.Outlook.Store">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6445374782d0b4add1312b6169f01fab8b0ba475" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634792" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Store : Microsoft.Office.Interop.Outlook._Store" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="80f18cf084b45ff5e3b2a810c96deb110c412178" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27903138" /></Metadata><TypeSignature Language="C#" Value="public interface Store : Microsoft.Office.Interop.Outlook._Store" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Store implements class Microsoft.Office.Interop.Outlook._Store" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.Store" />
   <TypeSignature Language="VB.NET" Value="Public Interface Store&#xA;Implements _Store" />
@@ -31,14 +23,12 @@
   </Attributes>
   <Docs>
     <summary>Représente un fichier sur l’ordinateur local ou un lecteur réseau qui stocke des messages électroniques et autres éléments pour un compte dans le profil actuel.</summary>
-    <remarks>
-      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._Store" />. </para>
-      <para>A profil définit un ou plusieurs comptes de messagerie, et chaque compte de messagerie est associé à un serveur d’un type spécifique. Pour un serveur Exchange, un magasin peut être sur le serveur, dans un dossier Public Exchange, ou dans un local fichier de dossiers personnels (.pst) ou un fichier de dossiers en mode hors connexion (.ost). Pour un serveur de messagerie POP3, IMAP ou HTTP, un objet store est un fichier .pst.</para>
-      <para>Que vous pouvez utiliser la <see cref="T:Microsoft.Office.Interop.Outlook.Stores" /> et objets <b>Store</b> pour énumérer tous les dossiers et dossiers de recherche de toutes les banques de la session en cours.  Dans la mesure où obtenir le dossier racine ou les dossiers de recherche dans une banque doit être ouvert et l’ouverture d’un magasin impose une surcharge sur les performances, vous pouvez vérifier le <see cref="P:Microsoft.Office.Interop.Outlook._Store.IsOpen" /> propriété avant de décider de poursuivre l’opération. </para>
+    <remarks><para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._Store" />. </para>
+      <para>Un profil définit un ou plusieurs comptes de messagerie, chacun étant associé à un serveur d'un type spécifique. Pour un serveur Exchange, une banque peut être un dossier public Exchange, un fichier de dossiers personnels local (.pst) ou un fichier de dossiers en mode hors connexion. Pour un serveur de messagerie électronique POP3, IMAP ou HTTP une banque est un fichier .pst.</para>
+      <para>Vous pouvez utiliser la <see cref="T:Microsoft.Office.Interop.Outlook.Stores" /> et objets <b>Store</b> pour énumérer tous les dossiers et dossiers de recherche de toutes les banques de la session en cours.  Dans la mesure où obtenir le dossier racine ou les dossiers de recherche dans une banque doit être ouvert et l’ouverture d’un magasin impose une surcharge sur les performances, vous pouvez vérifier le <see cref="P:Microsoft.Office.Interop.Outlook._Store.IsOpen" /> propriété avant de décider de poursuivre l’opération. </para>
       <para>Si vous utilisez un serveur Exchange, vous pouvez accéder à autres intégrées explicites <b>stocker</b> les propriétés pour stockent des caractéristiques telles que <see cref="P:Microsoft.Office.Interop.Outlook._Store.ExchangeStoreType" />, <see cref="P:Microsoft.Office.Interop.Outlook._Store.IsCachedExchange" />, et <see cref="P:Microsoft.Office.Interop.Outlook._Store.IsDataFileStore" />. Utiliser le <see cref="T:Microsoft.Office.Interop.Outlook.PropertyAccessor" /> objet renvoyé par <see cref="P:Microsoft.Office.Interop.Outlook._Store.PropertyAccessor" /> pour accéder aux autres propriétés store qui ne sont pas exposées dans le modèle objet Outlook.</para>
       <para>Pour plus d’informations sur le stockage des éléments Outlook dans des dossiers et banques d’informations, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87932">Stockage des éléments Outlook</a></para>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

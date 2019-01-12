@@ -1,13 +1,5 @@
 <Type Name="_NotesModule" FullName="Microsoft.Office.Interop.Outlook._NotesModule">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ebc4287210418a68730f457aa86043d15231919e" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20635086" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _NotesModule" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ebc4287210418a68730f457aa86043d15231919e" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27903033" /></Metadata><TypeSignature Language="C#" Value="public interface _NotesModule" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _NotesModule" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._NotesModule" />
   <TypeSignature Language="VB.NET" Value="Public Interface _NotesModule" />
@@ -83,10 +75,8 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constante indiquant la classe de l’objet. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>olNotesModule</b> pour le <see cref="T:Microsoft.Office.Interop.Outlook.NotesModule" /> objet.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie <b>olNotesModule</b> pour le <see cref="T:Microsoft.Office.Interop.Outlook.NotesModule" /> objet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -170,10 +160,8 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlNavigationModuleType" /> constante représentant le type de module de navigation de l’objet. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>olModuleNotes</b> pour le <see cref="T:Microsoft.Office.Interop.Outlook.NotesModule" /> objet.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie <b>olModuleNotes</b> pour le <see cref="T:Microsoft.Office.Interop.Outlook.NotesModule" /> objet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -230,21 +218,19 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui représente la position ordinale de le <see cref="T:Microsoft.Office.Interop.Outlook.NotesModule" /> objet affiché dans le volet de Navigation. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui représente la position ordinale de le <see cref="T:Microsoft.Office.Interop.Outlook.NotesModule" /> objet affiché dans le volet de Navigation. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété peut uniquement être définie sur une valeur comprise entre 1 et 8. Une erreur se produit si vous tentez de définir cette propriété sur une valeur en dehors de cette plage.</para>
-          <para>Modification de la valeur de cette propriété pour un objet <b>NotesModule</b> modifie les valeurs <b>Position</b> des autres modules de navigation par une <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModules" /> collection, en fonction de la modification relative entre la nouvelle valeur et la valeur d’origine de la Propriété <b>position</b> de l’objet <b>NotesModule</b> :</para>
+        <remarks><para>Cette propriété n'accepte que les valeurs comprises entre 1 et 8. Une erreur survient si vous tentez de lui attribuer une valeur en dehors de cette plage.</para>
+          <para>Modification de la valeur de cette propriété pour un objet <b>NotesModule</b> modifie les valeurs <b>Position</b> des autres modules de navigation par une <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModules" /> collection, en fonction de la modification relative entre la nouvelle valeur et la valeur d’origine de la <b> Position</b> propriété de l’objet <b>NotesModule</b> :</para>
           <list type="bullet">
             <item>
-              <para>Si la nouvelle valeur est inférieure à la valeur d’origine, alors l’objet <b>NotesModule</b> spécifié se déplace vers le haut et pousse les autres modules de navigation déjà à ou sous cette position vers le bas.</para>
+              <para>Si la nouvelle valeur est inférieure à la valeur d’origine, l’objet <b>NotesModule</b> spécifié se déplace vers le haut et pousse les autres modules de navigation déjà à ou en dessous de cette position vers le bas.</para>
             </item>
             <item>
-              <para>Si la nouvelle valeur est supérieure à la valeur d’origine, alors l’objet <b>NotesModule</b> spécifié se déplace vers le bas et pousse les autres modules de navigation entre l’ancienne position et la nouvelle configuration, remplir l’ancienne position.</para>
+              <para>Si la nouvelle valeur est supérieure à la valeur d’origine, l’objet <b>NotesModule</b> spécifié se déplace vers le bas et pousse les autres modules de navigation entre l’ancienne position et la nouvelle en prenant l’ancienne position.</para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -272,16 +258,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">

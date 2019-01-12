@@ -1,13 +1,5 @@
 <Type Name="Explorers" FullName="Microsoft.Office.Interop.Outlook.Explorers">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c3e0ee32632a3aea89a4447d2fd7620ea1f1fa3a" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634817" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Explorers : Microsoft.Office.Interop.Outlook._Explorers, Microsoft.Office.Interop.Outlook.ExplorersEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bed52770d4f7f86e0cef534623012f2be2f6e0c0" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27905343" /></Metadata><TypeSignature Language="C#" Value="public interface Explorers : Microsoft.Office.Interop.Outlook._Explorers, Microsoft.Office.Interop.Outlook.ExplorersEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Explorers implements class Microsoft.Office.Interop.Outlook._Explorers, class Microsoft.Office.Interop.Outlook.ExplorersEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.Explorers" />
   <TypeSignature Language="VB.NET" Value="Public Interface Explorers&#xA;Implements _Explorers, ExplorersEvents_Event" />
@@ -34,12 +26,10 @@
   </Attributes>
   <Docs>
     <summary>Contient un ensemble de <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> objets représentant tous les explorateurs.</summary>
-    <remarks>
-      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._Explorers" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.ExplorersEvents_Event" />. </para>
-      <para>Un Explorateur pas besoin d’être visible pour être inclus dans la collection <b>Explorers</b> .</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._Application.Explorers" /> propriété permet de renvoyer l’objet <b>Explorers</b> à partir de la <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> objet.</para>
-      <para />
-    </remarks>
+    <remarks><para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._Explorers" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.ExplorersEvents_Event" />. </para>
+      <para>Il n'est pas nécessaire qu'un explorateur soit visible pour être inclus dans la collection <b>Explorers</b>.</para>
+      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._Application.Explorers" /> propriété permet de renvoyer l’objet <b>Explorers</b> à partir de la <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> objet. </para>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

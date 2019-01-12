@@ -1,13 +1,5 @@
 <Type Name="StoresEvents_12_Event" FullName="Microsoft.Office.Interop.Outlook.StoresEvents_12_Event">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b7130da689629b3854734549d3eea36f219b10b1" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634538" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface StoresEvents_12_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1da25ba77d55a14d75d64b193c88a0a25d516efe" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27903817" /></Metadata><TypeSignature Language="C#" Value="public interface StoresEvents_12_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract StoresEvents_12_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.StoresEvents_12_Event" />
   <TypeSignature Language="VB.NET" Value="Public Interface StoresEvents_12_Event" />
@@ -49,37 +41,38 @@
       </ReturnValue>
       <Docs>
         <summary>Cet événement se produit lorsqu’un <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> doit être supprimé de la session actuelle par programme ou par l’utilisateur.</summary>
-        <remarks>
-          <para>Outlook doit être en cours d’exécution dans l’ordre pour que cet événement se déclenche. Cet événement se déclenche lorsque une des actions suivantes se produit : </para>
+        <remarks><para>Pour que cet événement puisse se déclencher, Outlook doit être en cours d’exécution. L’événement se déclenchera dans les situations suivantes :
+
+</para>
           <list type="bullet">
             <item>
-              <para>une banque est supprimée par l’utilisateur en cliquant sur la commande Fermer dans le menu contextuel.</para>
+              <para>Une banque est supprimée par un utilisateur qui a cliqué sur la commande Fermer du menu contextuel.</para>
             </item>
             <item>
               <para>Une banque est supprimée par programme en appelant <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.RemoveStore(Microsoft.Office.Interop.Outlook.MAPIFolder)" />.</para>
             </item>
           </list>
-          <para>Cet événement se déclenche pas lorsque une des actions suivantes se produit :</para>
+          <para>Cet événement ne se déclenchera pas dans les situations suivantes :
+ </para>
           <list type="bullet">
             <item>
-              <para>Quand Outlook se ferme et ferme principale ou déléguée stocker.</para>
+              <para>Outlook se ferme et ferme la banque principale ou déléguée.</para>
             </item>
             <item>
-              <para>Si une banque est supprimée via l’applet Courrier du Panneau de configuration Microsoft Windows et Outlook n’est pas en cours d’exécution.</para>
+              <para>Une banque est supprimée via l’applet Courrier du Panneau de configuration Microsoft Windows et Outlook n’est pas en cours d’exécution.</para>
             </item>
             <item>
-              <para>Une banque déléguée est supprimée sous l’onglet Avancé de la boîte de dialogue Microsoft Exchange Server.</para>
+              <para>Une banque déléguée est supprimée sous l’onglet Avancé de la boîte de dialogue Microsoft Exchange Server .</para>
             </item>
             <item>
-              <para>Une banque est supprimée par le biais de l’onglet fichiers de données de la boîte de dialogue Gestionnaire de comptes lorsque Outlook n’est pas en cours d’exécution.</para>
+              <para>Une banque est supprimée sous l’onglet Fichiers de données de la boîte de dialogue Paramètres du compte et Outlook n’est pas en cours d’exécution.</para>
             </item>
             <item>
               <para>Une banque IMAP est supprimée du profil.</para>
             </item>
           </list>
           <para>Vous pouvez utiliser cet événement pour déterminer qu’une banque a été supprimée et prendre des mesures appropriées si le magasin est requis pour votre application (par exemple, reconstituer la banque). Sinon, vous devez interroger la <see cref="T:Microsoft.Office.Interop.Outlook.Stores" /> collection.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StoreAdd">
@@ -98,34 +91,36 @@
       </ReturnValue>
       <Docs>
         <summary>Cet événement se produit lorsqu’un <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> a été ajouté à la session active par programmation ou par l’utilisateur.</summary>
-        <remarks>
-          <para>Outlook doit être en cours d’exécution dans l’ordre pour que cet événement se déclenche. Cet événement se déclenche lorsqu’une des opérations suivantes se produisent : </para>
+        <remarks><para>Pour que cet événement puisse se déclencher, Outlook doit être en cours d’exécution. L’événement se déclenchera dans les situations suivantes :
+
+</para>
           <list type="bullet">
             <item>
-              <para>une banque est ajoutée par le biais de la boîte de dialogue Ouvrir le fichier données Outlook en sélectionnant Ouvrir, puis fichier de données Outlook dans le menu fichier.</para>
+              <para>Une banque est ajoutée à l’aide de la boîte de dialogue Ouvrir le fichier de données Outlook, qui s’affiche si vous sélectionnez Ouvrir, puis Fichier de données Outlook dans le menu Fichier.</para>
             </item>
             <item>
-              <para>Une banque est ajoutée sous l’onglet fichiers de données de la boîte de dialogue Gestionnaire de comptes.</para>
+              <para>Une banque est ajoutée sous l’onglet Fichiers de données de la boîte de dialogue Paramètres du compte.</para>
             </item>
             <item>
               <para>Une banque est ajoutée avec succès en appelant le <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.AddStore(System.Object)" /> méthode.</para>
             </item>
           </list>
-          <para>Cet événement se déclenche pas lorsque une des actions suivantes se produit :</para>
+          <para>Cet événement ne se déclenchera pas dans les situations suivantes :
+ </para>
           <list type="bullet">
             <item>
-              <para>Quand Outlook démarre et ouvre principale ou déléguée stocker.</para>
+              <para>Outlook démarre et ouvre une banque principale ou déléguée.</para>
             </item>
             <item>
-              <para>Si une banque est ajoutée via l’applet Courrier du Panneau de configuration Microsoft Windows et Outlook n’est pas en cours d’exécution.</para>
+              <para>Une banque est ajoutée via l’applet Courrier du Panneau de configuration Microsoft Windows et Outlook n’est pas en cours d’exécution.</para>
             </item>
             <item>
-              <para>Une banque déléguée est ajoutée sous l’onglet Avancé de la boîte de dialogue Microsoft Exchange Server.</para>
+              <para>Une banque déléguée est ajoutée sous l’onglet Avancé de la boîte de dialogue Microsoft Exchange Server .
+</para>
             </item>
           </list>
-          <para>, Vous pouvez utiliser cet événement pour déterminer si une banque a été ajoutée et prendre des mesures appropriées sur les éléments de cette banque. Dans le cas contraire, vous devez interroger la <see cref="T:Microsoft.Office.Interop.Outlook.Stores" /> collection.</para>
-          <para />
-        </remarks>
+          <para>Vous pouvez utiliser cet événement pour déterminer si une banque a été ajoutée et prendre des mesures appropriées sur les éléments de cette banque. Dans le cas contraire, vous devez interroger la <see cref="T:Microsoft.Office.Interop.Outlook.Stores" /> collection.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

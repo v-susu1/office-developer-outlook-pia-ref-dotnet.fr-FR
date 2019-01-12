@@ -1,13 +1,5 @@
 <Type Name="ItemProperty" FullName="Microsoft.Office.Interop.Outlook.ItemProperty">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8b9cd8e1046b3e3fb1b3f1e72a9158303acba7bb" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634701" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ItemProperty" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="867107e667467cf1af12c042db1fe1725a1f331e" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27905609" /></Metadata><TypeSignature Language="C#" Value="public interface ItemProperty" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ItemProperty" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.ItemProperty" />
   <TypeSignature Language="VB.NET" Value="Public Interface ItemProperty" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Représente des informations sur une propriété d’élément donnée pour un objet Microsoft Outlook.</summary>
-    <remarks>
-      <para>Chaque propriété d’élément définit un attribut particulier de l’élément, telles que le nom, le type ou la valeur de l’élément. L’objet <b>ItemProperty</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Outlook.ItemProperties" /> collection.</para>
-      <para>Utilisez <b>ItemProperties.Item</b>(<paramref name="index" />), où <paramref name="index" /> est la position numérique de l’objet dans la collection ou il a name pour renvoyer un seul objet <b>ItemProperty</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para> Chaque propriété d’élément définit un attribut particulier de l’élément, telles que le nom, le type ou la valeur de l’élément. L’objet <b>ItemProperty</b> est un membre de la <see cref="T:Microsoft.Office.Interop.Outlook.ItemProperties" /> collection.</para>
+      <para>Utilisez <b>ItemProperties.Item</b>(<paramref name="index" />), où <paramref name="index" /> est la position numérique de l’objet dans la collection ou il a name pour renvoyer un objet <b>ItemProperty</b> unique.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -264,16 +254,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -404,12 +392,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>objet</b> indiquant la valeur de la propriété intégrée explicite ou personnalisée spécifiée. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>objet</b> indiquant la valeur de la propriété intégrée explicite ou personnalisée spécifiée. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Bien que <b>ItemProperty.Value</b> vous permet d’obtenir ou définir une propriété intégrée explicite ou une propriété personnalisée, vous pouvez référencer les propriétés intégrées explicites directement à partir de l’objet parent, par exemple, ContactItem.Body. Pour plus d’informations sur l’accès aux propriétés dans Outlook, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87861">Présentation des propriétés</a></para>
-          <para />
-        </remarks>
+        <remarks><para>Bien que <b>ItemProperty.Value</b> vous permet d’obtenir ou définir une propriété intégrée explicite ou une propriété personnalisée, vous pouvez référencer les propriétés intégrées explicites directement à partir de l’objet parent, par exemple, ContactItem.Body. Pour plus d’informations sur l’accès aux propriétés dans Outlook, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87861">Présentation des propriétés</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

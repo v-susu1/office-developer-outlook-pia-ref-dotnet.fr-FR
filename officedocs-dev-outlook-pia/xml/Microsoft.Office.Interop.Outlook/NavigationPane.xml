@@ -1,13 +1,5 @@
 <Type Name="NavigationPane" FullName="Microsoft.Office.Interop.Outlook.NavigationPane">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d3c5a11a93d132b99135088c4f284cf16e2dd2c5" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20635199" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface NavigationPane : Microsoft.Office.Interop.Outlook._NavigationPane, Microsoft.Office.Interop.Outlook.NavigationPaneEvents_12_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="605b928699843ba2dbfb61a2517029cc5be68043" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27906456" /></Metadata><TypeSignature Language="C#" Value="public interface NavigationPane : Microsoft.Office.Interop.Outlook._NavigationPane, Microsoft.Office.Interop.Outlook.NavigationPaneEvents_12_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract NavigationPane implements class Microsoft.Office.Interop.Outlook._NavigationPane, class Microsoft.Office.Interop.Outlook.NavigationPaneEvents_12_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.NavigationPane" />
   <TypeSignature Language="VB.NET" Value="Public Interface NavigationPane&#xA;Implements _NavigationPane, NavigationPaneEvents_12_Event" />
@@ -34,13 +26,11 @@
   </Attributes>
   <Docs>
     <summary>Représente le volet de Navigation affiché par l’active <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> objet.</summary>
-    <remarks>
-      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._NavigationPane" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPaneEvents_12_Event" />.</para>
+    <remarks><para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._NavigationPane" />. Pour plus d’informations sur les membres de l’événement de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.NavigationPaneEvents_12_Event" />.</para>
       <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.NavigationPane" /> propriété de l’objet <b>Explorer</b> pour extraire un objet <b>NavigationPane</b> , s’il en existe pour l’Explorateur. Remarque Certains objets <b>Explorer</b> peut-être pas une Pane.Use Navigation le <see cref="P:Microsoft.Office.Interop.Outlook._NavigationPane.IsCollapsed" /> propriété pour renvoyer ou définir le mode d’affichage du volet de Navigation.</para>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._NavigationPane.Modules" /> propriété permet de renvoyer un <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModules" /> objet qui représente la collection de modules de navigation contenus dans le volet de Navigation. Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._NavigationPane.DisplayedModuleCount" /> pour renvoyer le nombre de <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModule" /> objets actuellement affichées dans le volet de Navigation et la <see cref="P:Microsoft.Office.Interop.Outlook._NavigationPane.CurrentModule" /> propriété pour renvoyer ou définir l’objet <b>NavigationModule</b> sélectionné.</para>
+      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._NavigationPane.Modules" /> propriété permet de renvoyer un <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModules" /> objet qui représente la collection de modules de navigation contenus dans le volet de Navigation. Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._NavigationPane.DisplayedModuleCount" /> pour renvoyer le nombre de <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModule" /> objets actuellement affichées dans le volet de Navigation et la <see cref="P:Microsoft.Office.Interop.Outlook._NavigationPane.CurrentModule" /> propriété pour renvoyer ou définir l’objet <b>NavigationModule</b> actuellement sélectionné.</para>
       <para>Utiliser le <see cref="E:Microsoft.Office.Interop.Outlook.NavigationPaneEvents_12_Event.ModuleSwitch" /> événement à détecter le moment où l’objet <b>NavigationModule</b> sélectionné change dans le volet de Navigation.</para>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

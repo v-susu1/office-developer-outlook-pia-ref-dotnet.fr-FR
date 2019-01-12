@@ -1,13 +1,5 @@
 <Type Name="AddressEntries" FullName="Microsoft.Office.Interop.Outlook.AddressEntries">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4bda78f2cfac522b2c9037bd4e14d0b6b1213f6c" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634366" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AddressEntries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="934ec4a81165b2002ddbd25cdf69cfc08184863b" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27903152" /></Metadata><TypeSignature Language="C#" Value="public interface AddressEntries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AddressEntries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.AddressEntries" />
   <TypeSignature Language="VB.NET" Value="Public Interface AddressEntries&#xA;Implements IEnumerable" />
@@ -31,10 +23,8 @@
   </Attributes>
   <Docs>
     <summary>Contient une collection d’adresses pour un <see cref="T:Microsoft.Office.Interop.Outlook.AddressList" /> objet.</summary>
-    <remarks>
-      <para>Cet objet peut contenir zéro ou plusieurs <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> objets et donne accès aux entrées situées dans le conteneur de carnet d’adresses d’un fournisseur de transport.</para>
-      <para />
-    </remarks>
+    <remarks><para>Cet objet peut contenir zéro ou plusieurs <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> objets et donne accès aux entrées situées dans le conteneur de carnet d’adresses d’un fournisseur de transport.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -66,10 +56,8 @@
         <param name="Address">Adresse.</param>
         <summary>Ajoute une nouvelle entrée à la <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> collection.</summary>
         <returns>Un <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> object qui représente la nouvelle entrée.</returns>
-        <remarks>
-          <para>Les nouvelles entrées ou les modifications apportées aux entrées existantes ne sont pas conservées dans la collection tant que la <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntry.Update(System.Object,System.Object)" /> méthode.</para>
-          <para />
-        </remarks>
+        <remarks><para>Les nouvelles entrées ou les modifications apportées aux entrées existantes ne sont pas conservées dans la collection tant que la <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntry.Update(System.Object,System.Object)" /> méthode.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -179,10 +167,8 @@
       <Docs>
         <summary>Renvoie le premier objet dans le <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> collection.</summary>
         <returns>Un <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> object qui représente le premier objet contenu dans la collection.</returns>
-        <remarks>
-          <para>Renvoie <b>Nothing</b> si aucun objet premier existe, par exemple, s’il n’y a aucuns objets dans la collection. Pour garantir le bon fonctionnement de la <b>GetFirst</b>, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetNext" />, et <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetPrevious" /> dans une collection volumineuse, appelez <b>GetFirst</b> avant <b>cette collection GetNext</b> et <b>GetLast</b> avant d’appeler <b>GetPrevious </b>. Pour vous assurer que vous sont toujours vos appels sur la même collection, créez une variable explicite qui fait référence à la collection avant d’entrer dans la boucle.</para>
-          <para />
-        </remarks>
+        <remarks><para>Renvoie <b>Nothing</b> si aucun objet premier existe, par exemple, s’il n’y a aucuns objets dans la collection. Pour garantir le bon fonctionnement de la <b>GetFirst</b>, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetNext" />, et <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetPrevious" /> dans une collection volumineuse, appelez <b>GetFirst</b> avant <b>cette collection GetNext</b> et <b>GetLast</b> avant d’appeler <b>GetPrevious </b>. Pour vous assurer que vous sont toujours vos appels sur la même collection, créez une variable explicite qui fait référence à la collection avant d’entrer dans la boucle.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetLast">
@@ -208,10 +194,8 @@
       <Docs>
         <summary>Renvoie le dernier objet de la <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> collection.</summary>
         <returns>Un <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> object qui représente le dernier objet contenu dans la collection.</returns>
-        <remarks>
-          <para>Elle renvoie la <b>valeur Nothing</b> si aucun objet n’existe, par exemple, si la collection est vide. Pour garantir le bon fonctionnement de le <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetFirst" />, <b>GetLast</b>, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetNext" />, et <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetPrevious" /> dans une collection volumineuse, appelez <b>GetFirst</b> avant d’appeler <b>GetNext</b> dans cette collection et appelez <b>GetLast</b> avant d’appeler <b>GetPrevious </b>. Pour vous assurer que vous sont toujours vos appels sur la même collection, créez une variable explicite qui fait référence à la collection avant d’entrer dans la boucle.</para>
-          <para />
-        </remarks>
+        <remarks><para>Elle renvoie la <b>valeur Nothing</b> si aucun objet n’existe, par exemple, si la collection est vide. Pour garantir le bon fonctionnement de le <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetFirst" />, <b>GetLast</b>, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetNext" />, et <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetPrevious" /> dans une collection volumineuse, appelez <b>GetFirst</b> avant d’appeler <b>GetNext</b> dans cette collection et appelez <b>GetLast</b> avant d’appeler <b>GetPrevious </b>. Pour vous assurer que vous sont toujours vos appels sur la même collection, créez une variable explicite qui fait référence à la collection avant d’entrer dans la boucle.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetNext">
@@ -237,10 +221,8 @@
       <Docs>
         <summary>Renvoie l’objet suivant dans le <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> collection.</summary>
         <returns>Un <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> object qui représente l’objet suivant contenu dans la collection.</returns>
-        <remarks>
-          <para>Elle renvoie la <b>valeur Nothing</b> si aucun objet suivant n’existe, par exemple, si déjà placé à la fin de la collection. Pour garantir le bon fonctionnement de le <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetLast" />, <b>GetNext</b>, et <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetPrevious" /> dans une collection volumineuse, appelez <b>GetFirst</b> avant d’appeler <b>GetNext</b> dans cette collection et appelez <b>GetLast</b> avant d’appeler <b>GetPrevious </b>. Pour vous assurer que vous sont toujours vos appels sur la même collection, créez une variable explicite qui fait référence à la collection avant d’entrer dans la boucle.</para>
-          <para />
-        </remarks>
+        <remarks><para>Elle renvoie la <b>valeur Nothing</b> si aucun objet suivant n’existe, par exemple, si déjà placé à la fin de la collection. Pour garantir le bon fonctionnement de le <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetLast" />, <b>GetNext</b>, et <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetPrevious" /> dans une collection volumineuse, appelez <b>GetFirst</b> avant d’appeler <b>GetNext</b> dans cette collection et appelez <b>GetLast</b> avant d’appeler <b>GetPrevious </b>. Pour vous assurer que vous sont toujours vos appels sur la même collection, créez une variable explicite qui fait référence à la collection avant d’entrer dans la boucle.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPrevious">
@@ -266,10 +248,8 @@
       <Docs>
         <summary>Renvoie l’objet précédent dans le <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntries" /> collection.</summary>
         <returns>Un <see cref="T:Microsoft.Office.Interop.Outlook.AddressEntry" /> object qui représente l’objet précédent contenu dans la collection.</returns>
-        <remarks>
-          <para>Elle renvoie la <b>valeur Nothing</b> si aucun objet précédent n’existe, par exemple, si le début de la collection. Pour garantir le bon fonctionnement de le <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetNext" />, et les méthodes <b>GetPrevious</b> dans une collection volumineuse, appelez <b>GetFirst</b> avant d’appeler <b>GetNext</b> dans cette collection et appelez <b>GetLast</b> avant d’appeler <b> GetPrevious</b>. Pour vous assurer que vous sont toujours vos appels sur la même collection, créez une variable explicite qui fait référence à la collection avant d’entrer dans la boucle.</para>
-          <para />
-        </remarks>
+        <remarks><para>Elle renvoie la <b>valeur Nothing</b> si aucun objet précédent n’existe, par exemple, si le début de la collection. Pour garantir le bon fonctionnement de le <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook.AddressEntries.GetNext" />, et les méthodes <b>GetPrevious</b> dans une collection volumineuse, appelez <b>GetFirst</b> avant d’appeler <b>GetNext</b> dans cette collection et appelez <b>GetLast</b> avant d’appeler <b> GetPrevious</b>. Pour vous assurer que vous sont toujours vos appels sur la même collection, créez une variable explicite qui fait référence à la collection avant d’entrer dans la boucle.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -388,16 +368,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -426,11 +404,10 @@
         <param name="Property">Nom de la propriété utilisée pour le tri. Il peut être indiqué entre crochets (par exemple, [CompanyName]). Il ne peut pas s'agir d'un champ défini par l'utilisateur, ni d'une propriété contenant plusieurs valeurs, telle qu'une catégorie.</param>
         <param name="Order">Ordre des entrées d'adresses spécifiées. Les constantes <b>OlSortOrder</b> possibles sont les suivantes : <b>olAscending</b>, <b>olDescending</b> ou <b>olSortNone</b>.</param>
         <summary>Trie la collection d'éléments en fonction de la propriété spécifiée. L'index de cette collection est ramené à 1 après exécution de cette méthode.</summary>
-        <remarks>
-          <para>
-            <b>Tri</b> n’affecte que l’ordre des éléments dans une collection. Il n’affecte pas l’ordre des éléments dans un affichage de l’Explorateur de solutions.</para>
-          <para />
-        </remarks>
+        <remarks><para>La méthode 
+            <b>Sort</b> affecte uniquement l'ordre des éléments d'une collection. Elle n'affecte pas l'ordre des éléments dans un affichage d'explorateur.
+</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

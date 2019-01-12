@@ -1,13 +1,5 @@
 <Type Name="RuleCondition" FullName="Microsoft.Office.Interop.Outlook.RuleCondition">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c8dcd68641587fe09b73c2039f1d0b10882d45a6" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634611" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface RuleCondition : Microsoft.Office.Interop.Outlook._RuleCondition" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b497b7a43bb4f0fee9ed02fcaf15e50d044a1a57" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27902396" /></Metadata><TypeSignature Language="C#" Value="public interface RuleCondition : Microsoft.Office.Interop.Outlook._RuleCondition" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract RuleCondition implements class Microsoft.Office.Interop.Outlook._RuleCondition" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.RuleCondition" />
   <TypeSignature Language="VB.NET" Value="Public Interface RuleCondition&#xA;Implements _RuleCondition" />
@@ -31,10 +23,9 @@
   </Attributes>
   <Docs>
     <summary>L’objet <b>RuleCondition</b> représente soit une condition qui doit être remplie avant l’exécution d’une règle, soit une condition d’exception qui ne doit pas être remplie avant l’exécution d’une règle.</summary>
-    <remarks>
-      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._RuleCondition" />. </para>
+    <remarks><para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._RuleCondition" />. </para>
       <para>
-        <b>RuleCondition</b> est la classe de base pour les conditions de règle prises en charge de la création de règles par programmation. Les classes dérivées de <b>RuleCondition</b> incluent :</para>
+        <b>RuleCondition</b> est la classe de base des conditions de règle prises en charge par le processus de création de règles par programmation. Les classes dérivées de <b>RuleCondition</b> sont notamment :</para>
       <list type="bullet">
         <item>
           <para>
@@ -76,11 +67,15 @@
             <see cref="T:Microsoft.Office.Interop.Outlook.TextRuleCondition" />
           </para>
         </item>
+        <item>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Outlook.ToOrFromRuleCondition" />
+          </para>
+        </item>
       </list>
-      <para>règles le modèle d’objet fournit une parité partielle avec l’Assistant règles et alertes dans l’interface utilisateur d’Outlook. Il prend en charge les actions de règle couramment utilisées. Bien qu’il ne prend pas en charge la création de règles avec chaque action ou une condition de règle qui prend en charge de l’Assistant, vous pouvez énumérer et activer ces actions de règle et les conditions dans les règles existantes. </para>
+      <para>Le modèle objet Rules fournit une parité partielle avec l’Assistant Règles et alertes de l’interface utilisateur Outlook. Il prend en charge les actions et conditions de règle les plus courantes. Bien qu’il ne prenne pas en charge la création de règles avec chaque action ou condition de règle prise en charge par l’Assistant, vous pouvez toujours énumérer et activer ces actions et conditions dans les règles existantes.</para>
       <para>Pour plus d’informations sur les conditions de règle, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87803">Spécification de Conditions de règle</a><a href="http://go.microsoft.com/fwlink/?LinkId=87859">Comment : créer une règle pour déplacer des messages électroniques spécifiques dans un dossier</a></para>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

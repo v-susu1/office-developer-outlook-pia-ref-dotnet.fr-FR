@@ -1,13 +1,5 @@
 <Type Name="_AutoFormatRule" FullName="Microsoft.Office.Interop.Outlook._AutoFormatRule">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="19dc5ad8c7bc39e582d4a0b17fb3ef3ffbb0ac86" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634836" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _AutoFormatRule" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="19dc5ad8c7bc39e582d4a0b17fb3ef3ffbb0ac86" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27904552" /></Metadata><TypeSignature Language="C#" Value="public interface _AutoFormatRule" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _AutoFormatRule" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._AutoFormatRule" />
   <TypeSignature Language="VB.NET" Value="Public Interface _AutoFormatRule" />
@@ -112,7 +104,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si la règle de mise en forme est représenté par le <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRule" /> objet est activé. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si la règle de mise en forme est représenté par le <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRule" /> objet est activé. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -143,14 +135,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le filtre d’une règle de mise en forme personnalisée.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le filtre d’une règle de mise en forme personnalisée.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur de cette propriété est une chaîne qui représente le filtre actif de la règle de mise en forme personnalisée DAV Searching and Locating (DASL). Pour plus d’informations sur l’utilisation de DASL pour filtrer les éléments mis en forme par la règle de mise en forme, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Filtrage des éléments</a></para>
+        <remarks><para>La valeur de cette propriété est une chaîne qui représente le filtre actif de la règle de mise en forme personnalisée DAV Searching and Locating (DASL). Pour plus d’informations sur l’utilisation de DASL pour filtrer les éléments mis en forme par la règle de mise en forme, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Filtrage des éléments</a></para>
           <para>
-            <b>Remarque</b>: cette propriété renvoie une chaîne vide pour une règle de mise en forme standard (un <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRule" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Standard" /> propriété la valeur <b>True</b>). Une erreur se produit si vous essayez d’assigner une valeur à cette propriété pour une règle de mise en forme standard.</para>
-          <para />
-        </remarks>
+            <b>Remarque</b>: cette propriété renvoie une chaîne vide pour une règle de mise en forme standard (un <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRule" /> objet avec un <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Standard" /> valeur de la propriété la valeur <b>True</b>). Une erreur se produit si vous essayez d’assigner une valeur à cette propriété pour une règle de mise en forme standard.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -210,7 +200,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le nom complet de l’objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le nom complet de l’objet. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -268,16 +258,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Standard">
@@ -305,10 +293,8 @@
       <Docs>
         <summary>Renvoie une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si le <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRule" /> objet représente une règle de mise en forme Outlook intégrée. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si la valeur de cette propriété est définie sur <b>True</b>, la <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Filter" /> et <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Name" /> propriétés de l’objet <b>AutoFormatRule</b> ne peut pas être modifiées. De même, vous ne pouvez pas utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._AutoFormatRules.Remove(System.Object)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRules" /> collection pour supprimer une mise en forme Outlook intégrée de la règle, ni utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._AutoFormatRules.Insert(System.String,System.Object)" /> méthode de la collection <b>AutoFormatRules</b> pour insérer une règle de mise en forme personnalisée au-dessus ou entre le Outlook intégrée dans cette collection de règles de mise en forme.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si la valeur de cette propriété est définie sur <b>True</b>, la <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Filter" /> et <see cref="P:Microsoft.Office.Interop.Outlook._AutoFormatRule.Name" /> propriétés de l’objet <b>AutoFormatRule</b> ne peut pas être modifiées. De même, vous ne pouvez pas utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._AutoFormatRules.Remove(System.Object)" /> méthode de la <see cref="T:Microsoft.Office.Interop.Outlook.AutoFormatRules" /> collection pour supprimer une mise en forme Outlook intégrée de la règle, ni utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._AutoFormatRules.Insert(System.String,System.Object)" /> méthode de la collection <b>AutoFormatRules</b> pour insérer une règle de mise en forme personnalisée au-dessus ou entre le Outlook intégrée dans cette collection de règles de mise en forme.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="View" FullName="Microsoft.Office.Interop.Outlook.View">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b10e73e5691c861b2adb03a1f9002fa391a33274" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634320" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface View" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="87b0e2f941bfdd33517182275daf75a85449684a" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27903166" /></Metadata><TypeSignature Language="C#" Value="public interface View" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract View" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.View" />
   <TypeSignature Language="VB.NET" Value="Public Interface View" />
@@ -27,18 +19,38 @@
   </Attributes>
   <Docs>
     <summary>Représente un affichage personnalisable utilisé pour trier, grouper et afficher des données.</summary>
-    <remarks>
-      <para>L’objet <b>View</b> vous permet de créer des affichages personnalisables qui vous permettent de mieux trier, grouper et afficher tous les différents types de données. Il existe différents types d’affichage différents qui fournissent la souplesse nécessaire pour créer et gérer vos données importantes.</para>
+    <remarks><para>L'objet <b>View</b> vous permet de créer des affichages personnalisables, qui vous donnent la possibilité de mieux trier, grouper puis afficher tous les différents types de données. Il existe plusieurs types d'affichages différents qui offrent la souplesse nécessaire pour créer et gérer vos données importantes.</para>
       <list type="bullet">
         <item>
-          <para>Le type d’affichage tableau (olTableView) vous permet de visualiser les données dans un simple tableau à champs.</para>
+          <para>Le type d'affichage Tableau (olTableView) vous permet de visualiser les données dans un simple tableau à champs.
+</para>
         </item>
         <item>
-          <para>Type d’affichage du calendrier (olCalendarView) vous permet de visualiser les données dans un format calendrier.</para>
-        </item> Type 
-        <item><para>l’affichage carte (olCardView) vous permet de visualiser les données dans une série de cartes. Chaque carte affiche les informations contenues dans l’élément et peut être trié. </para></item>Type 
-        <item><para>l’affichage icône (olIconView) vous permet de visualiser les données sous forme d’icônes, similaires à un dossier ou Explorateur Windows.  </para></item><item><para>Le type d’affichage Chronologie (olTimelineView) vous permet de visualiser les données reçues d’une ligne du temps linéaire et personnalisable.</para></item></list> Affichages 
-      <para>sont définies et personnalisées à l’aide de l’objet <b>View</b><see cref="P:Microsoft.Office.Interop.Outlook.View.XML" /> propriété. La propriété <b>XML</b> vous permet de créer et définir un schéma XML personnalisé qui définit les différentes fonctionnalités d’un affichage.</para><para>Utilisation des <b>affichages</b>(<paramref name="index" />), où <paramref name="index" /> est le nom de l’objet <b>View</b> ou sa valeur ordinale, pour renvoyer un objet <b>View</b> unique.</para><para>Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._Views.Add(System.String,Microsoft.Office.Interop.Outlook.OlViewType,Microsoft.Office.Interop.Outlook.OlViewSaveOption)" /> méthode de la collection <b>Views</b> pour créer un nouvel affichage.</para><para>Toujours utiliser <see cref="M:Microsoft.Office.Interop.Outlook.View.Save" /> pour enregistrer une vue après avoir modifié une propriété de l’affichage.</para><para /></remarks>
+          <para> 
+				Le type d'affichage Calendrier (olCalendarView) vous permet de visualiser les données sous la forme d'un calendrier.
+</para>
+        </item>
+        <item>
+          <para> 
+				Le type d'affichage Carte (olCardView) vous permet de visualiser les données sous la forme d'une suite de cartes. Chaque carte présente les informations contenues dans l'élément et toutes les cartes peuvent être triées.
+</para>
+        </item>
+        <item>
+          <para> 
+				Le type d'affichage Icône (olIconView) vous permet de visualiser les données sous forme d'icônes similaires à celles d'un dossier ou explorateur Windows.  
+</para>
+        </item>
+        <item>
+          <para> 
+				Le type d'affichage Chronologie (olTimelineView) vous permet de visualiser les données telles que vous les avez reçues, sous la forme d'une chronologie linéaire personnalisable.
+</para>
+        </item>
+      </list>
+      <para>Affichages sont définies et personnalisées à l’aide de l’objet <b>View</b> <see cref="P:Microsoft.Office.Interop.Outlook.View.XML" /> propriété. La propriété <b>XML</b> vous permet de créer et définir un schéma XML personnalisé qui définit les différentes fonctionnalités d’un affichage.</para>
+      <para>Utilisez <b>Views</b>(<paramref name="index" />), où <paramref name="index" /> est le nom de l’objet <b>View</b> ou sa valeur ordinale, pour renvoyer un objet <b>View</b> unique.</para>
+      <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._Views.Add(System.String,Microsoft.Office.Interop.Outlook.OlViewType,Microsoft.Office.Interop.Outlook.OlViewSaveOption)" /> méthode de la collection <b>Views</b> pour créer un nouvel affichage. </para>
+      <para>Toujours utiliser <see cref="M:Microsoft.Office.Interop.Outlook.View.Save" /> pour enregistrer une vue après avoir modifié une propriété de l’affichage.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -91,8 +103,7 @@
       <Parameters />
       <Docs>
         <summary>Applique l’affichage de l’interface utilisateur de Microsoft Outlook.</summary>
-        <remarks>
-          <para>Pour réinitialiser correctement l’affichage actuel, vous devez effectuer une <see cref="M:Microsoft.Office.Interop.Outlook.View.Reset" /> et ensuite une <b>View.Apply</b>. L’exemple de code ci-dessous illustre l’ordre des appels :</para>
+        <remarks><para>Pour réinitialiser correctement l’affichage actuel, vous devez effectuer une <see cref="M:Microsoft.Office.Interop.Outlook.View.Reset" /> et ensuite une <b>View.Apply</b>. L’exemple de code ci-dessous illustre l’ordre des appels :</para>
           <code>Sub ResetView()
     Dim v As Outlook.View
     ' Save a reference to the current view object
@@ -111,8 +122,7 @@ End Sub</code>
     v.Reset();
     v.Apply();
 }</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Class">
@@ -224,12 +234,10 @@ End Sub</code>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le filtre d’un affichage.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le filtre d’un affichage.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La valeur de cette propriété est une chaîne, dans la syntaxe DAV Searching and Locating (DASL), qui représente le filtre actif de la vue. Pour plus d’informations sur l’utilisation de la syntaxe DASL pour filtrer les éléments dans un affichage, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Filtrage des éléments</a></para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur de cette propriété est une chaîne, dans la syntaxe DAV Searching and Locating (DASL), qui représente le filtre actif de la vue. Pour plus d’informations sur l’utilisation de la syntaxe DASL pour filtrer les éléments dans un affichage, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Filtrage des éléments</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GoToDate">
@@ -257,8 +265,7 @@ End Sub</code>
       <Docs>
         <param name="Date">Date à laquelle l'affichage doit être modifié.</param>
         <summary>Modifie la date utilisée par l’affichage actuel pour afficher les informations.</summary>
-        <remarks>
-          <para>Pour spécifier une date pour accéder à un affichage en cours, comme un <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> d’objet, vous devez d’abord obtenir un <see cref="T:Microsoft.Office.Interop.Outlook.View" /> objet pour la vue active à l’aide de <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentView" /> au lieu de <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.CurrentView" />. L’exemple de code suivant montre comment effectuer cette action.</para>
+        <remarks><para>Pour spécifier une date pour accéder à un affichage en cours, comme un <see cref="T:Microsoft.Office.Interop.Outlook.CalendarView" /> d’objet, vous devez d’abord obtenir un <see cref="T:Microsoft.Office.Interop.Outlook.View" /> objet pour la vue active à l’aide de <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentView" /> au lieu de <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.CurrentView" />. L’exemple de code suivant montre comment effectuer cette action. </para>
           <code>Sub TestGoToDate()
     Dim oCV As Outlook.CalendarView
     Dim oExpl As Outlook.Explorer
@@ -313,8 +320,7 @@ End Sub</code>
     // for which information is displayed in the view.
     oCV.GoToDate(datGoTo);
 }</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Language">
@@ -343,13 +349,11 @@ End Sub</code>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le paramètre de langue pour l’objet qui définit la langue utilisée dans le menu. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le paramètre de langue pour l’objet qui définit la langue utilisée dans le menu. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La <b>langue</b> de la propriété utilise une <b>chaîne</b> (<b>string</b> en c#) pour représenter une balise de langue ISO. Par exemple, la chaîne « EN-US » représente le code ISO « États-Unis - anglais. »</para>
-          <para>Si un code de langue valide est spécifié, l’objet ne seront disponible dans le menu Affichage pour le type de la langue spécifiée. Si aucune valeur n’est pas spécifié, l’élément objet est disponible pour tous les types de langue. La valeur par défaut de cette propriété est une chaîne vide.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>Language</b> utilise une <b>chaîne</b> (<b>string</b> en c#) pour représenter une balise de langue ISO. Par exemple, la chaîne « EN-US » représente le code ISO « Aux États-Unis - anglais ».</para>
+          <para>Si un code de langue valide est spécifié, l'objet est uniquement disponible dans le menu Affichage pour le type de langue spécifié. Si aucune valeur n'est spécifiée, l'élément objet est disponible pour tous les types de langues. La valeur par défaut de cette propriété est une chaîne vide.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LockUserChanges">
@@ -378,12 +382,10 @@ End Sub</code>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si un utilisateur peut modifier les paramètres de l’affichage actuel. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique si un utilisateur peut modifier les paramètres de l’affichage actuel. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si la <b>valeur True</b>, l’utilisateur peut modifier les paramètres de l’affichage actuel. Toutefois, les modifications apportées à l’interface ne seront pas enregistrées. Si la <b>valeur False</b> (valeur par défaut), les modifications seront enregistrées.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si la valeur est <b>True</b>, l'utilisateur peut modifier les paramètres de l'affichage actif. En revanche, les modifications apportées à l'interface ne sont pas enregistrées. Si la valeur est <b>False</b> (valeur par défaut), toutes les modifications sont enregistrées.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -412,7 +414,7 @@ End Sub</code>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le nom complet de l’objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le nom complet de l’objet. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -467,8 +469,7 @@ End Sub</code>
       <Parameters />
       <Docs>
         <summary>Rétablit les paramètres d’origine d’un affichage prédéfini de Microsoft Outlook.</summary>
-        <remarks>
-          <para>Cette méthode ne fonctionne que sur les affichages d’Outlook intégrés.</para>
+        <remarks><para>Cette méthode n'est valable que pour les affichages prédéfinis de Microsoft Outlook.</para>
           <para>Pour réinitialiser correctement l’affichage actuel, vous devez effectuer une <b>View.Reset</b> , puis un <see cref="M:Microsoft.Office.Interop.Outlook.View.Apply" />. L’exemple de code ci-dessous illustre l’ordre des appels :</para>
           <code>Sub ResetView()
     Dim v as Outlook.View
@@ -488,8 +489,7 @@ End Sub</code>
     v.Reset();
     v.Apply();
 }</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -514,10 +514,8 @@ End Sub</code>
       <Parameters />
       <Docs>
         <summary>Enregistre l'affichage ou les modifications apportées à un affichage.</summary>
-        <remarks>
-          <para>Utilisez toujours <b>Enregistrer</b> pour enregistrer une vue après avoir modifié une propriété de l’affichage.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilisez toujours la méthode <b>Save</b> pour enregistrer une vue après avoir en avoir modifié une propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveOption">
@@ -545,10 +543,8 @@ End Sub</code>
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlViewSaveOption" /> constante qui spécifie les dossiers dans lesquels l’affichage spécifié est disponible et les autorisations de lecture associées à cet affichage.  En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>SaveOption</b> est définie lorsque le <see cref="T:Microsoft.Office.Interop.Outlook.View" /> objet est créé à l’aide de la <see cref="M:Microsoft.Office.Interop.Outlook._Views.Add(System.String,Microsoft.Office.Interop.Outlook.OlViewType,Microsoft.Office.Interop.Outlook.OlViewSaveOption)" /> méthode.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>SaveOption</b> est définie lorsque le <see cref="T:Microsoft.Office.Interop.Outlook.View" /> objet est créé à l’aide de la <see cref="M:Microsoft.Office.Interop.Outlook._Views.Add(System.String,Microsoft.Office.Interop.Outlook.OlViewType,Microsoft.Office.Interop.Outlook.OlViewSaveOption)" /> méthode.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -576,16 +572,14 @@ End Sub</code>
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Standard">
@@ -641,10 +635,8 @@ End Sub</code>
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlViewType" /> type de constante représentant l’affichage d’un <see cref="T:Microsoft.Office.Interop.Outlook.View" /> objet. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété n’a pas d’effet sur les icônes affichées dans le volet Raccourcis. Grandes icônes ont été supprimées et si cette propriété est définie sur <b>olLargeIcon</b>, elle n’aura aucun effet.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété n'a aucune incidence sur les icônes affichées dans le volet de raccourcis. Les icônes de grande taille ont été supprimées et si cette propriété est définie sur <b>olLargeIcon</b>, elle n'aura aucun effet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="XML">
@@ -673,9 +665,12 @@ End Sub</code>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) spécifiant la définition XML de l’affichage actuel.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) spécifiant la définition XML de l’affichage actuel.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>Définition de <para>le XML décrit le type d’affichage à l’aide d’une série de balises et de mots clés correspondant aux différentes propriétés de l’affichage lui-même. Lorsque la vue est créée, la définition XML est analysée pour fournir les paramètres pour le nouvel affichage.</para><para>Afin de déterminer comment le code XML doit être structuré lors de la création de vues, vous pouvez créer un affichage à l’aide de l’interface utilisateur Outlook et puis vous pouvez récupérer la propriété XML pour cet affichage.</para><para>Pour ajouter par programme un champ personnalisé à un affichage, utilisez la <see cref="M:Microsoft.Office.Interop.Outlook._ViewFields.Add(System.String)" /> méthode. Il s’agit de la méthode recommandée pour modifier l’affichage de façon dynamique sur la définition de la propriété <b>View.XML</b> .</para><para /></remarks>
+        <remarks><para>La définition XML décrit le type d'affichage à l'aide d'un ensemble d'indicateurs et mots clés correspondant aux différentes propriétés de l'affichage lui-même. Une fois l'affichage créé, la définition XML est analysée pour fournir les paramètres du nouvel affichage.</para>
+          <para>Pour déterminer la structuration XML lors de la création d'affichages, vous pouvez créer un affichage en utilisant l'interface utilisateur Outlook, puis extraire la propriété XML de cet affichage.</para>
+          <para>Pour ajouter par programme un champ personnalisé à un affichage, utilisez la <see cref="M:Microsoft.Office.Interop.Outlook._ViewFields.Add(System.String)" /> méthode. Il s’agit de la méthode recommandée pour modifier l’affichage de façon dynamique sur la définition de la propriété <b>View.XML</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

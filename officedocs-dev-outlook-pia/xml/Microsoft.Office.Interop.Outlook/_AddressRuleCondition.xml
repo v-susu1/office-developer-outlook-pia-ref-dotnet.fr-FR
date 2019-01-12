@@ -1,13 +1,5 @@
 <Type Name="_AddressRuleCondition" FullName="Microsoft.Office.Interop.Outlook._AddressRuleCondition">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="84f193c25f7f01534bbcd631f87bc3b9044e6e05" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634297" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _AddressRuleCondition" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="84f193c25f7f01534bbcd631f87bc3b9044e6e05" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27905105" /></Metadata><TypeSignature Language="C#" Value="public interface _AddressRuleCondition" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _AddressRuleCondition" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._AddressRuleCondition" />
   <TypeSignature Language="VB.NET" Value="Public Interface _AddressRuleCondition" />
@@ -56,13 +48,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un tableau d’éléments de <b>chaîne</b> (<b>string</b> en c#) pour évaluer la condition de règle d’adresse. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un tableau d’éléments de <b>chaîne</b> (<b>string</b> en c#) pour évaluer la condition de règle d’adresse. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Vous pouvez assigner un tableau avec un seul élément pour évaluer une seule adresse ou un tableau de plusieurs chaînes pour évaluer plusieurs adresses. Plusieurs chaînes d’adresses affectées dans un tableau sont évaluées à l’aide de l’opération OR logique.</para>
-          <para>Si une chaîne spécifiée par <b>Address</b> est contenue dans l’adresse du destinataire ou de l’expéditeur, la condition renvoie <b>la valeur True</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Vous pouvez affecter un tableau comportant un seul élément pour évaluer une seule adresse ou un tableau de plusieurs chaînes pour évaluer plusieurs adresses. Les différentes chaînes d'adresses affectées dans un tableau sont évaluées avec l'opérateur logique OR.</para>
+          <para>Si une chaîne spécifiée par <b>Address</b> est contenue dans l'adresse du destinataire ou de l'expéditeur, la condition renvoie <b>True</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -146,11 +136,9 @@
       <Docs>
         <summary>Renvoie une constante de le <see cref="T:Microsoft.Office.Interop.Outlook.OlRuleConditionType" /> énumération qui indique le type de condition de règle. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le <see cref="T:Microsoft.Office.Interop.Outlook.AddressRuleCondition" /> objet est utilisé par les règles du type <b>olRuleSend</b> et <b>olRuleReceive</b>. Si la règle est créée comme une règle <b>olRuleSend</b> , le type de l’objet <b>AddressRuleCondition</b> associé sera <b>alors olConditionSenderAddress</b>. Si la règle est créée comme une règle <b>olRuleReceive</b> , le type de l’objet <b>AddressRuleCondition</b> associé sera <b>alors olConditionRecipientAddress</b>. </para>
+        <remarks><para>Le <see cref="T:Microsoft.Office.Interop.Outlook.AddressRuleCondition" /> objet est utilisé par les règles du type <b>olRuleSend</b> et <b>olRuleReceive</b>. Si la règle est créée comme une règle <b>olRuleSend</b> , le type de l’objet <b>AddressRuleCondition</b> associé sera <b>alors olConditionSenderAddress</b>. Si la règle est créée comme une règle <b>olRuleReceive</b> , le type de l’objet <b>AddressRuleCondition</b> associé sera <b>alors olConditionRecipientAddress</b>. </para>
           <para>Cela toutefois ne signifie pas que la règle possède toujours une condition de règle définie pour les adresses d’expéditeur ou destinataire. Il se trouve ou non cette condition de règle définie ou activée, la propriété <b>AddressRuleCondition.ConditionType</b> est toujours initialisée une fois la règle associée est créée. Pour plus d’informations sur les conditions de règle, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87803">Spécification de Conditions de règle</a></para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -179,12 +167,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui détermine si la condition de règle est activée. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui détermine si la condition de règle est activée. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Une fois que vous activez une condition de règle, vous devez également enregistrer la règle à l’aide de <see cref="M:Microsoft.Office.Interop.Outlook._Rules.Save(System.Object)" /> afin que la condition de règle et son état seront conservés au-delà de la session en cours.  Une condition de règle est activée uniquement après son ont été enregistrés avec succès.</para>
-          <para />
-        </remarks>
+        <remarks><para>Une fois que vous activez une condition de règle, vous devez également enregistrer la règle à l’aide de <see cref="M:Microsoft.Office.Interop.Outlook._Rules.Save(System.Object)" /> afin que la condition de règle et son état seront conservés au-delà de la session en cours.  Une condition de règle est activée uniquement après son ont été enregistrés avec succès.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -212,10 +198,8 @@
       <Docs>
         <summary>Renvoie la valeur de type <b>Object</b> parent de l’objet spécifié. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>L’objet parent est la <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet.</para>
-          <para />
-        </remarks>
+        <remarks><para>L’objet parent est la <see cref="T:Microsoft.Office.Interop.Outlook.RuleCondition" /> objet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -243,16 +227,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

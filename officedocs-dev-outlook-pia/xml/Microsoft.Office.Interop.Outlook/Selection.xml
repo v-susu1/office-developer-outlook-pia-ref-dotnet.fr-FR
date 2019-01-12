@@ -1,13 +1,5 @@
 <Type Name="Selection" FullName="Microsoft.Office.Interop.Outlook.Selection">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c546cacfd6888cac8506d614c46b0204cc42399d" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20635057" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Selection : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c7af77512ef69a2ad810f96955f3537afca082e8" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27902571" /></Metadata><TypeSignature Language="C#" Value="public interface Selection : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Selection implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.Selection" />
   <TypeSignature Language="VB.NET" Value="Public Interface Selection&#xA;Implements IEnumerable" />
@@ -31,10 +23,8 @@
   </Attributes>
   <Docs>
     <summary>Contient l’ensemble des éléments Outlook actuellement sélectionnés dans un explorateur.</summary>
-    <remarks>
-      <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.Selection" /> propriété permet de renvoyer la collection <b>Selection</b> à partir de la <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> objet.</para>
-      <para />
-    </remarks>
+    <remarks><para>Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.Selection" /> propriété permet de renvoyer la collection <b>Selection</b> à partir de la <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> objet.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -147,11 +137,9 @@
         <param name="SelectionContents">Spécifie le type d’objets de la sélection à renvoyer.</param>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Selection" /> objet qui contient le type d’objets spécifiés par le <paramref name="SelectionContents" /> paramètre et qui sont actuellement sélectionnés dans l’Explorateur actif.</summary>
         <returns>Renvoie un objet <b>Selection</b> qui contient le type spécifié d’objets sélectionnés dans l’Explorateur actif.</returns>
-        <remarks>
-          <para>Appel de <b>GetSelection</b> avec <see cref="F:Microsoft.Office.Interop.Outlook.OlSelectionContents.olConversationHeaders" /> comme l’argument renvoie un objet <b>Selection</b> dont la <see cref="P:Microsoft.Office.Interop.Outlook.Selection.Location" /> propriété est égale à <see cref="F:Microsoft.Office.Interop.Outlook.OlSelectionLocation.olViewList" />.</para>
-          <para>Si l’affichage actuel n’est pas un affichage conversation ou, si <b>l’emplacement</b> n’est pas égale à <b>OlSelectionLocation.olViewList</b>, l’appel de <b>GetSelection</b> avec <b>olConversationHeaders</b> comme argument renvoie une <b>sélection</b> objet <see cref="P:Microsoft.Office.Interop.Outlook.Selection.Count" /> égale à 0.</para>
-          <para />
-        </remarks>
+        <remarks><para>Appel de <b>GetSelection</b> avec <see cref="F:Microsoft.Office.Interop.Outlook.OlSelectionContents.olConversationHeaders" /> comme l’argument renvoie un objet <b>Selection</b> dont la <see cref="P:Microsoft.Office.Interop.Outlook.Selection.Location" /> propriété est égale à <see cref="F:Microsoft.Office.Interop.Outlook.OlSelectionLocation.olViewList" />.</para>
+          <para>Si l’affichage actuel n’est pas un affichage conversation ou, si <b>l’emplacement</b> n’est pas égale à <b>OlSelectionLocation.olViewList</b>, l’appel de <b>GetSelection</b> avec <b>olConversationHeaders</b> comme argument renvoie un objet <b>Selection</b> avec <see cref="P:Microsoft.Office.Interop.Outlook.Selection.Count" /> égale à 0.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -211,11 +199,9 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlSelectionLocation" /> constante qui spécifie l’emplacement dans l’interface utilisateur de Microsoft Outlook la sélection actuelle. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Avec la valeur de la propriété <b>Location</b><see cref="F:Microsoft.Office.Interop.Outlook.OlSelectionLocation.olViewList" /> signifie que la sélection actuelle se trouve dans une liste d’éléments dans un Explorateur. L’appel <see cref="M:Microsoft.Office.Interop.Outlook.Selection.GetSelection(Microsoft.Office.Interop.Outlook.OlSelectionContents)" /> avec <see cref="F:Microsoft.Office.Interop.Outlook.OlSelectionContents.olConversationHeaders" /> comme l’argument renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Selection" /> objet <see cref="P:Microsoft.Office.Interop.Outlook.Selection.Count" /> égale au nombre d’en-têtes de conversation dans la sélection en cours.</para>
-          <para>Si la propriété <b>Location</b> n’est pas égale à <b>olViewList</b>, appel de <b>GetSelection</b> avec <b>olConversationHeaders</b> comme l’argument renvoie un objet <b>Selection</b> avec un <b>nombre</b> égal à 0.</para>
-          <para />
-        </remarks>
+        <remarks><para>Avec la valeur de la propriété <b>Location</b> <see cref="F:Microsoft.Office.Interop.Outlook.OlSelectionLocation.olViewList" /> signifie que la sélection actuelle se trouve dans une liste d’éléments dans un Explorateur. L’appel <see cref="M:Microsoft.Office.Interop.Outlook.Selection.GetSelection(Microsoft.Office.Interop.Outlook.OlSelectionContents)" /> avec <see cref="F:Microsoft.Office.Interop.Outlook.OlSelectionContents.olConversationHeaders" /> comme l’argument renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Selection" /> objet <see cref="P:Microsoft.Office.Interop.Outlook.Selection.Count" /> égale au nombre d’en-têtes de conversation dans la sélection actuelle.</para>
+          <para>Si la propriété <b>Location</b> n’est pas égale à <b>olViewList</b>, l’appel de <b>GetSelection</b> avec <b>olConversationHeaders</b> comme argument renvoie un objet <b>Selection</b> avec un <b>nombre</b> égal à 0.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -271,16 +257,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

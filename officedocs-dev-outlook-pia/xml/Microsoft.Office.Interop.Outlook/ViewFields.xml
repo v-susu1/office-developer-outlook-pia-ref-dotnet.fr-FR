@@ -1,13 +1,5 @@
 <Type Name="ViewFields" FullName="Microsoft.Office.Interop.Outlook.ViewFields">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6c5bf900d2618884c0ebd49cc59733155a2c46db" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634808" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ViewFields : Microsoft.Office.Interop.Outlook._ViewFields" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e67dc4b790fef67a336ce6e85e74c95d5ed28f92" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27906463" /></Metadata><TypeSignature Language="C#" Value="public interface ViewFields : Microsoft.Office.Interop.Outlook._ViewFields" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ViewFields implements class Microsoft.Office.Interop.Outlook._ViewFields" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.ViewFields" />
   <TypeSignature Language="VB.NET" Value="Public Interface ViewFields&#xA;Implements _ViewFields" />
@@ -31,9 +23,8 @@
   </Attributes>
   <Docs>
     <summary>Représente la collection de <see cref="T:Microsoft.Office.Interop.Outlook.ViewField" /> objets dans un affichage.</summary>
-    <remarks>
-      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._ViewFields" />. </para>
-      <para>La collection <b>ViewFields</b> représente les propriétés d’élément Outlook available afficher dans la vue.</para>
+    <remarks><para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._ViewFields" />. </para>
+      <para>La collection <b>ViewFields</b> représente les propriétés d’élément Outlook available afficher dans l’affichage. </para>
       <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook._ViewFields.Add(System.String)" /> méthode de la collection <b>ViewFields</b> pour ajouter un champ d’affichage pour les objets ci-dessous dérivés de le <see cref="T:Microsoft.Office.Interop.Outlook.View" /> objet :</para>
       <list type="bullet">
         <item>
@@ -41,10 +32,14 @@
             <see cref="T:Microsoft.Office.Interop.Outlook.CardView" />
           </para>
         </item>
+        <item>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Outlook.TableView" />
+          </para>
+        </item>
       </list>
-      <para>Dans un affichage tableau, l’ordre des objets <b>ViewField</b> dans la collection <b>ViewFields</b> n’est pas identique à l’ordre de ce champ colonnes sont affichés dans l’affichage tableau. Une solution de contournement pour obtenir l’ordre des colonnes est d’analyser la chaîne renvoyée par la <see cref="P:Microsoft.Office.Interop.Outlook.View.XML" /> propriété.</para>
-      <para />
-    </remarks>
+      <para>Dans un affichage tableau, l’ordre des objets <b>ViewField</b> dans la collection <b>ViewFields</b> n’est pas le même que l’ordre que les colonnes de champs sont affichés dans l’affichage tableau. Une solution de contournement pour obtenir l’ordre des colonnes est d’analyser la chaîne renvoyée par la <see cref="P:Microsoft.Office.Interop.Outlook.View.XML" /> propriété.</para>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

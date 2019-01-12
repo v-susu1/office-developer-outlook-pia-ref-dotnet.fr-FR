@@ -1,13 +1,5 @@
 <Type Name="_SimpleItems" FullName="Microsoft.Office.Interop.Outlook._SimpleItems">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d86021a7f901451e7d4f548b758b4fb5fb10168e" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634326" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _SimpleItems : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d86021a7f901451e7d4f548b758b4fb5fb10168e" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27903362" /></Metadata><TypeSignature Language="C#" Value="public interface _SimpleItems : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _SimpleItems implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._SimpleItems" />
   <TypeSignature Language="VB.NET" Value="Public Interface _SimpleItems&#xA;Implements IEnumerable" />
@@ -147,10 +139,8 @@
         <param name="Index">Valeur d’index de base 0 de l’objet dans la collection <b>SimpleItems</b>.</param>
         <summary>Renvoie un <see cref="T:System.Object" /> (<b>objet</b> en c#) dans le <see cref="T:Microsoft.Office.Interop.Outlook.SimpleItems" /> collection.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si cette propriété échoue renvoyer un objet dans la collection spécifiée par la <paramref name="Index" /> paramètre, la méthode renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#).</para>
-          <para />
-        </remarks>
+        <remarks><para>Si cette propriété échoue renvoyer un objet dans la collection spécifiée par la <paramref name="Index" /> paramètre, la méthode renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -178,10 +168,8 @@
       <Docs>
         <summary>Renvoie l’objet parent <see cref="T:System.Object" /> (<b>objet</b> en c#) de le <see cref="T:Microsoft.Office.Interop.Outlook.SimpleItems" /> objet. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>L’objet parent d’un objet <b>SimpleItems</b> est un <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> objet.</para>
-          <para />
-        </remarks>
+        <remarks><para>L’objet parent d’un objet <b>SimpleItems</b> est un <see cref="T:Microsoft.Office.Interop.Outlook.Conversation" /> objet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -209,11 +197,9 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) s’il n’existe aucune session active.</para>
-          <para>, Vous pouvez utiliser la propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode interchangeable pour obtenir le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. Les deux membres ont la même fonction.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) s’il n’existe aucune session active.</para>
+          <para>Vous pouvez utiliser la propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode interchangeable pour obtenir le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. Les deux membres ont la même fonction.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

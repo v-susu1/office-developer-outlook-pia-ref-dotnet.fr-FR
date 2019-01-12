@@ -1,13 +1,5 @@
 <Type Name="RuleAction" FullName="Microsoft.Office.Interop.Outlook.RuleAction">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5743cd73382d3ab8101df11cb011aba2ef07f771" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634527" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface RuleAction : Microsoft.Office.Interop.Outlook._RuleAction" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="132f27cc744a51b00f4dfbd300f92e64bf1697d0" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27903957" /></Metadata><TypeSignature Language="C#" Value="public interface RuleAction : Microsoft.Office.Interop.Outlook._RuleAction" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract RuleAction implements class Microsoft.Office.Interop.Outlook._RuleAction" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.RuleAction" />
   <TypeSignature Language="VB.NET" Value="Public Interface RuleAction&#xA;Implements _RuleAction" />
@@ -31,10 +23,9 @@
   </Attributes>
   <Docs>
     <summary>Représente une action qui est exécutée lorsqu’un <see cref="T:Microsoft.Office.Interop.Outlook.Rule" /> objet s’exécute.</summary>
-    <remarks>
-      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._RuleAction" />. </para>
+    <remarks><para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._RuleAction" />. </para>
       <para>
-        <b>RuleAction</b> est la classe de base pour les actions de règle prises en charge de la création de règles par programmation. Les classes dérivées de <b>RuleAction</b> incluent : </para>
+        <b>RuleAction</b> est la classe de base des actions de règle prises en charge par le processus de création de règles par programmation. Les classes dérivées de <b>RuleAction</b> sont notamment :</para>
       <list type="bullet">
         <item>
           <para>
@@ -61,11 +52,15 @@
             <see cref="T:Microsoft.Office.Interop.Outlook.PlaySoundRuleAction" />
           </para>
         </item>
+        <item>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Outlook.SendRuleAction" />
+          </para>
+        </item>
       </list>
-      <para>règles le modèle d’objet fournit une parité partielle avec l’Assistant règles et alertes dans l’interface utilisateur Outlook. Il prend en charge les actions de règle couramment utilisées. Bien qu’il ne prend pas en charge la création de règles avec chaque action ou une condition de règle qui prend en charge de l’Assistant, vous pouvez énumérer et activer ces actions de règle et les conditions dans les règles existantes. </para>
+      <para>Le modèle objet Rules fournit une parité partielle avec l’Assistant Règles et alertes de l’interface utilisateur Outlook. Il prend en charge les actions et conditions de règle les plus courantes. Bien qu’il ne prenne pas en charge la création de règles avec chaque action ou condition de règle prise en charge par l’Assistant, vous pouvez toujours énumérer et activer ces actions et conditions dans les règles existantes.</para>
       <para>Pour plus d’informations sur les actions de règle, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87797">Spécification d’Actions de règle</a><a href="http://go.microsoft.com/fwlink/?LinkId=87859">Comment : créer une règle pour déplacer des messages électroniques spécifiques dans un dossier</a></para>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

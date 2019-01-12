@@ -1,13 +1,5 @@
 <Type Name="Attachment" FullName="Microsoft.Office.Interop.Outlook.Attachment">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="bca3de4ee3e1766193a9380a2d4dcee5344f4ba1" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633814" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Attachment" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="eadbaac7ca2fb1ea21fb2b4899e303c68daea5b3" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27904216" /></Metadata><TypeSignature Language="C#" Value="public interface Attachment" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Attachment" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.Attachment" />
   <TypeSignature Language="VB.NET" Value="Public Interface Attachment" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Représente un document ou un lien vers un document contenu dans un élément Outlook.</summary>
-    <remarks>
-      <para>Utilisez <see cref="P:Microsoft.Office.Interop.Outlook.Attachments.Item(System.Object)" /> (<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>Attachment</b> .</para>
+    <remarks><para>Utilisez <see cref="P:Microsoft.Office.Interop.Outlook.Attachments.Item(System.Object)" /> (<paramref name="index" />), où <paramref name="index" /> est le numéro d’index, pour renvoyer un seul objet <b>Attachment</b> .</para>
       <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook.Attachments.Add(System.Object,System.Object,System.Object,System.Object)" /> pour ajouter une pièce jointe à un élément.</para>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -87,10 +77,8 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlAttachmentBlockLevel" /> constante qui spécifie s’il existe des restrictions sur la pièce jointe en fonction de son extension de fichier. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette valeur de cette propriété reflète si une pièce jointe est bloquée en fonction de son extension de fichier et la sécurité des pièces jointes a été configurée sur l’ordinateur client. Pour plus d’informations sur la sécurité des pièces jointes dans Outlook, consultez le site Web Office Resource Kit.</para>
-          <para />
-        </remarks>
+        <remarks><para>La valeur de cette propriété permet de savoir si un fichier joint est bloqué sur la base de son extension et la manière avec laquelle la sécurité vis-à-vis des pièces jointes a été configurée sur l’ordinateur client. Pour plus d’informations sur la sécurité vis-à-vis des pièces jointes dans Outlook, voir le site Web du Kit de ressources d’Office.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Class">
@@ -172,12 +160,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le nom, qui n’a pas besoin d’être le nom réel du fichier, affiché sous l’icône représentant la pièce jointe incorporée. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le nom, qui n’a pas besoin d’être le nom réel du fichier, affiché sous l’icône représentant la pièce jointe incorporée. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagDisplayName</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagDisplayName</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FileName">
@@ -205,10 +191,8 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant le nom de fichier de la pièce jointe.  En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Utilisez cette propriété en association avec la <see cref="P:Microsoft.Office.Interop.Outlook.Attachment.PathName" /> propriété.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilisez cette propriété en association avec la <see cref="P:Microsoft.Office.Interop.Outlook.Attachment.PathName" /> propriété.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTemporaryFilePath">
@@ -234,9 +218,7 @@
       <Docs>
         <summary>Renvoie le chemin d’accès complet du fichier joint se trouve dans un dossier de fichiers temporaires. En lecture seule.</summary>
         <returns>Renvoie un <see cref="T:System.String" /> qui représente le chemin d’accès complet au fichier joint temporaire.</returns>
-        <remarks>
-          <para>
-            <b>Gettemporaryfilepath,</b> de la méthode est valide uniquement pour les pièces jointes dont <see cref="P:Microsoft.Office.Interop.Outlook.Attachment.Type" /> propriété est <see cref="F:Microsoft.Office.Interop.Outlook.OlAttachmentType.olByValue" />. Cela signifie que la pièce jointe est une copie et que la copie est accessible même si le fichier d’origine est supprimé. Pour d’autres types de pièce jointe, <b>gettemporaryfilepath,</b> de la méthode renvoie une erreur. </para>
+        <remarks><para><b>Gettemporaryfilepath,</b> de la méthode est valide uniquement pour les pièces jointes dont <see cref="P:Microsoft.Office.Interop.Outlook.Attachment.Type" /> propriété est <see cref="F:Microsoft.Office.Interop.Outlook.OlAttachmentType.olByValue" />. Cela signifie que la pièce jointe est une copie et que la copie est accessible même si le fichier d’origine est supprimé. Pour d’autres types de pièce jointe, <b>gettemporaryfilepath,</b> de la méthode renvoie une erreur. </para>
           <para>
             <b>GetTemporaryFilePath</b> renvoie également une erreur lorsque vous accédez à un <see cref="T:Microsoft.Office.Interop.Outlook.Attachment" /> objet dans un <see cref="T:Microsoft.Office.Interop.Outlook.Attachments" /> collection ou dans le <see cref="T:Microsoft.Office.Interop.Outlook.AttachmentSelection" /> objet. Utilisez <b>GetTemporaryFilePath</b> uniquement dans les rappels d’événement de pièce jointe répertoriées ci-dessous pour différents éléments Microsoft Outlook :</para>
           <list type="bullet">
@@ -281,8 +263,7 @@
               </para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -310,10 +291,8 @@
       <Docs>
         <summary>Renvoie une valeur d' <b>entier</b> (<b>int</b> en c#) indiquant la position de l’objet au sein de la collection.  En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Index</b> n’est valide que pendant la session en cours et peut changer lorsque les objets sont ajoutés au et supprimés de la collection. Le premier objet de la collection a une valeur <b>d’Index</b> 1.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>Index</b> n'est valide que pendant la session en cours et peut être modifiée à mesure que des objets sont ajoutés à la collection et supprimés. La propriété <b>Index</b> du premier objet de la collection a la valeur 1.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MAPIOBJECT">
@@ -400,10 +379,8 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant le chemin d’accès complet à le lié le fichier joint. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété est uniquement valide pour les fichiers liés.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété n'est valide que pour les fichiers liés.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Position">
@@ -432,14 +409,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) indiquant la position de la pièce jointe dans le corps de l’élément. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) indiquant la position de la pièce jointe dans le corps de l’élément. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Position</b> fonctionne uniquement sur une pièce jointe d’un élément dont le format du corps est texte enrichi (RTF). Si le format du corps n’est pas au format RTF, la propriété <b>Position</b> est ignorée pour une opération définie et renvoie toujours la valeur zéro (0) pour une opération get.</para>
-          <para>Si vous définissez la propriété <b>Position</b> 0 pour un élément dont le corps du format RTF, la pièce jointe est masquée dans l’interface utilisateur d’Outlook. La pièce jointe n’est pas visible dans un affichage, et l’utilisateur ne peut pas supprimer la pièce jointe dans le corps de l’élément. La pièce jointe est toujours accessible par le biais de la <see cref="T:Microsoft.Office.Interop.Outlook.Attachments" /> collection sur l’élément.</para>
+        <remarks><para>La propriété <b>Position</b> ne s'applique qu'aux pièces jointes d'éléments dont le corps est au format Rich Text (RTF). Si le corps n'est pas au format RTF, la propriété <b>Position</b> est ignorée dans le cas d'une opération définie et renvoie toujours la valeur zéro (0) s'il s'agit d'une opération Get.</para>
+          <para>Si vous définissez la propriété <b>Position</b> 0 pour un élément dont le corps est au format RTF, la pièce jointe sera masquée dans l’interface utilisateur d’Outlook. La pièce jointe n’est pas visible dans un affichage, et l’utilisateur ne peut pas supprimer la pièce jointe dans le corps de l’élément. La pièce jointe est toujours accessible par le biais de la <see cref="T:Microsoft.Office.Interop.Outlook.Attachments" /> collection sur l’élément.</para>
           <para>Le seul élément qui permette une définition par programme de la propriété BodyFormat est un <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />. Autres types d’éléments tels que des rendez-vous, contacts et tâches sont au format RTF par défaut. </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PropertyAccessor">
@@ -523,16 +498,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -560,10 +533,9 @@
       <Docs>
         <summary>Renvoie une valeur d' <b>entier</b> (<b>int</b> en c#) qui indique la taille (en octets) de la pièce jointe. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Ces informations ne peuvent pas toujours être disponibles pour les pièces jointes.  Par exemple, un message S/MIME, la taille des pièces jointes réelles est inconnue jusqu'à ce que la pièce jointe est extrait. Dans le cas où la taille de pièce jointe ne peut pas être déterminée, cette propriété renvoie 0.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette information n'est pas toujours disponible pour les pièces jointes.  Par exemple, pour un message S/MIME, les tailles réelles des pièces jointes sont inconnues tant que la pièce jointe n'a pas été extraite. Dans les cas où il est impossible de déterminer la taille de la pièce jointe, cette propriété renvoie 0. 
+  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">

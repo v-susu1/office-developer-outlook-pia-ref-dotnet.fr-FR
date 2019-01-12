@@ -1,13 +1,5 @@
 <Type Name="FormDescription" FullName="Microsoft.Office.Interop.Outlook.FormDescription">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="474138c677b1667c78f8bf4160d0107458af0554" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634417" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface FormDescription" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1625d2c4b84142438b141ea8a9cc465c8ebceaf7" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27904468" /></Metadata><TypeSignature Language="C#" Value="public interface FormDescription" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FormDescription" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.FormDescription" />
   <TypeSignature Language="VB.NET" Value="Public Interface FormDescription" />
@@ -27,13 +19,11 @@
   </Attributes>
   <Docs>
     <summary>Cet objet, ce membre ou cette énumération est déconseillé et n'est pas destiné à être utilisé dans votre code.</summary>
-    <remarks>
-      <para>Représente les propriétés générales d’un formulaire Outlook.</para>
-      <para>Les propriétés d’un formulaire Outlook s’affichent dans la page Propriétés d’un formulaire au moment du design.</para>
-      <para>Pour afficher la page de propriétés au moment du design, ouvrez l’élément Outlook, sélectionnez formulaires dans le menu Outils, cliquez sur Modifier ce formulaire, puis cliquez sur l’onglet Propriétés dans la fenêtre de l’élément.</para>
+    <remarks><para>Représente les propriétés générales d’un formulaire Outlook.</para>
+      <para>Les propriétés d'un formulaire Outlook s'affichent dans la page Propriétés de ce formulaire au moment de la création.</para>
+      <para>Pour afficher la page Propriétés en phase de création, ouvrez l'élément Outlook, sélectionnez Formulaires dans le menu Outils, cliquez sur Modifier ce formulaire, puis cliquez sur l'onglet Propriétés dans la fenêtre de l'élément.</para>
       <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.FormDescription" /> propriété permet de renvoyer l’objet <b>FormDescription</b> associé à un élément Outlook.</para>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -90,7 +80,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant la catégorie affectée à la description du formulaire. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant la catégorie affectée à la description du formulaire. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,7 +111,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la sous-catégorie attribuée à la description du formulaire. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente la sous-catégorie attribuée à la description du formulaire. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -180,7 +170,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le texte d’un commentaire attribué à la description du formulaire. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le texte d’un commentaire attribué à la description du formulaire. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -211,7 +201,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le nom de la personne à contacter pour plus d’informations sur le formulaire personnalisé pour ce <see cref="T:Microsoft.Office.Interop.Outlook.FormDescription" /> objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le nom de la personne à contacter pour plus d’informations sur le formulaire personnalisé pour ce <see cref="T:Microsoft.Office.Interop.Outlook.FormDescription" /> objet. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -242,12 +232,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le nom du formulaire, qui s’affiche dans la boîte de dialogue Choisir des formulaires. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le nom du formulaire, qui s’affiche dans la boîte de dialogue Choisir des formulaires. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si la <see cref="P:Microsoft.Office.Interop.Outlook.FormDescription.Name" /> et propriétés <b>FormDescription.DisplayName</b> sont vides, une sera définie l’autre. S’il a été précédemment défini, la définition de l’autre ne modifie pas la valeur.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si la <see cref="P:Microsoft.Office.Interop.Outlook.FormDescription.Name" /> et propriétés <b>FormDescription.DisplayName</b> sont vides, une sera définie l’autre. S’il a été précédemment défini, la définition de l’autre ne modifie pas la valeur.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Hidden">
@@ -276,12 +264,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique <b>la valeur True</b> pour que le formulaire personnalisé spécifié est masqué.  Lecture/écriture.</summary>
+        <summary>Renvoie une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique <b>la valeur True</b> pour que le formulaire personnalisé spécifié est masqué.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le formulaire personnalisé n’apparaît pas dans le menu ou dans la boîte de dialogue Choisir un formulaire et sera utilisé uniquement s’il est désigné comme formulaire de réponse à partir d’un autre formulaire personnalisé. La valeur par défaut est <b>False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le formulaire personnalisé n'apparaît alors ni dans le menu ni dans la boîte de dialogue Choisir un formulaire et il n'est utilisé que s'il est désigné comme formulaire de réponse à partir d'un autre formulaire personnalisé. La valeur par défaut est <b>False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Icon">
@@ -310,7 +296,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le nom de fichier de l’icône à afficher pour le formulaire. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le nom de fichier de l’icône à afficher pour le formulaire. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -341,7 +327,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique <b>True</b> si le formulaire ne peut pas être modifié. Lecture/écriture.</summary>
+        <summary>Renvoie une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique <b>True</b> si le formulaire ne peut pas être modifié. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -371,10 +357,8 @@
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant la classe de message pour le <see cref="T:Microsoft.Office.Interop.Outlook.FormDescription" /> objet.  En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagMessageClass</b>. La propriété <b>MessageClass</b> lie l’élément au formulaire sur lequel il est basé. Lorsqu’un élément est sélectionné, Outlook utilise la classe de message pour localiser le formulaire et exposer ses propriétés, telles que des commandes répondre.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagMessageClass</b>. La propriété <b>MessageClass</b> lie l’élément au formulaire sur lequel il est basé. Lorsqu’un élément est sélectionné, Outlook se sert de la classe de message pour localiser le formulaire et exposer ses propriétés, comme les commandes Répondre.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MiniIcon">
@@ -403,7 +387,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le nom de fichier de la petite icône à afficher pour le formulaire. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant le nom de fichier de la petite icône à afficher pour le formulaire. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -434,12 +418,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le nom complet d’un formulaire. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le nom complet d’un formulaire. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le <b>nom</b> est également la légende d’un formulaire. Cette propriété doit être définie avant de pouvoir utiliser le <see cref="M:Microsoft.Office.Interop.Outlook.FormDescription.PublishForm(Microsoft.Office.Interop.Outlook.OlFormRegistry,System.Object)" /> méthode.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le <b>nom</b> est également la légende d’un formulaire. Cette propriété doit être définie avant de pouvoir utiliser le <see cref="M:Microsoft.Office.Interop.Outlook.FormDescription.PublishForm(Microsoft.Office.Interop.Outlook.OlFormRegistry,System.Object)" /> méthode. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Number">
@@ -468,7 +450,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) correspondant au numéro pour le formulaire spécifié. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) correspondant au numéro pour le formulaire spécifié. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -499,7 +481,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique <b>True</b> si le formulaire doit être détruit après une seule utilisation (uniques) et <b>False</b> si le formulaire est conservé comme un formulaire personnalisé. Lecture/écriture.</summary>
+        <summary>Renvoie une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique <b>True</b> si le formulaire doit être détruit après une seule utilisation (uniques) et <b>False</b> si le formulaire est conservé comme un formulaire personnalisé. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -595,10 +577,10 @@
         <param name="Registry">Classe de formulaires.</param>
         <param name="Folder">Expression qui renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> objet. Utilisé uniquement avec la base de registres de formulaires dossier. L’objet folder à partir de laquelle les formulaires doivent être accessible.</param>
         <summary>Enregistre la définition de la <see cref="T:Microsoft.Office.Interop.Outlook.FormDescription" /> objet dans le Registre (bibliothèque) de formulaire spécifié.</summary>
-        <remarks>
-          <para>
-            <b>Remarque</b>: le <see cref="P:Microsoft.Office.Interop.Outlook.FormDescription.Name" /> propriété doit être définie avant de pouvoir utiliser la méthode <b>PublishForm</b> .</para> Formulaires 
-          <para>sont enregistrés en tant qu’une des trois catégories : dossier, organisation ou personnel. La base de registres des formulaires dossier conserve un ensemble de formulaires qui ne sont accessibles à partir de ce dossier spécifique, public ou privé. La base de registres des formulaires organisation conserve des formulaires partagés au sein d’un ensemble de l’entreprise, qui sont accessibles à tout le monde. Le Registre des formulaires personnels conserve des formulaires sont accessibles uniquement à l’utilisateur en cours.</para><para /></remarks>
+        <remarks><para>
+            <b>Remarque</b>: le <see cref="P:Microsoft.Office.Interop.Outlook.FormDescription.Name" /> propriété doit être définie avant de pouvoir utiliser la méthode <b>PublishForm</b> .</para>
+          <para>Il existe trois classes de formulaires : Dossier, Organisation ou Personnels. La base de registres des formulaires Dossier contient un ensemble de formulaires uniquement accessibles à partir de ce dossier particulier, qu'il soit public ou privé. La base de registres des formulaires Organisation contient des formulaires partagés au sein d'une entreprise entière, qui sont accessibles par tout le monde. La base de registres des formulaires Personnels contient des formulaires uniquement accessibles par l'utilisateur en cours.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScriptText">
@@ -654,16 +636,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Template">
@@ -692,12 +672,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui indique le nom du modèle de formulaire. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui indique le nom du modèle de formulaire. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété fait référence à un serveur Microsoft Office Word. POINT de fichier de modèle et aux formulaires avec <see cref="P:Microsoft.Office.Interop.Outlook.FormDescription.UseWordMail" />   =  <b>la valeur True</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété fait référence à un serveur Microsoft Office Word. POINT de fichier de modèle et aux formulaires avec <see cref="P:Microsoft.Office.Interop.Outlook.FormDescription.UseWordMail" />   =  <b>la valeur True</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UseWordMail">
@@ -726,7 +704,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) qui indique <b>la valeur True</b> pour utiliser Microsoft Office Word comme éditeur par défaut pour le formulaire. Lecture/écriture.</summary>
+        <summary>Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) qui indique <b>la valeur True</b> pour utiliser Microsoft Office Word comme éditeur par défaut pour le formulaire. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="Accounts" FullName="Microsoft.Office.Interop.Outlook.Accounts">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="dabd111d67875448e925763c0eedfe7670198aac" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20635333" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Accounts : Microsoft.Office.Interop.Outlook._Accounts, Microsoft.Office.Interop.Outlook.AccountsEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="126c66dfc0128c6458fcc66e2b655055bc4817a4" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27903313" /></Metadata><TypeSignature Language="C#" Value="public interface Accounts : Microsoft.Office.Interop.Outlook._Accounts, Microsoft.Office.Interop.Outlook.AccountsEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Accounts implements class Microsoft.Office.Interop.Outlook._Accounts, class Microsoft.Office.Interop.Outlook.AccountsEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.Accounts" />
   <TypeSignature Language="VB.NET" Value="Public Interface Accounts&#xA;Implements _Accounts, AccountsEvents_Event" />
@@ -34,9 +26,9 @@
   </Attributes>
   <Docs>
     <summary>L’objet de collection <b>Accounts</b> contient un ensemble de <see cref="T:Microsoft.Office.Interop.Outlook.Account" /> objets représentant les comptes disponibles pour le profil actuel.</summary>
-    <remarks>
-      <para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._Accounts" />.</para> Objet 
-      <para>l’objectif de la collection de <b>comptes</b> et l’objet <b>Account</b> est de permettre l’énumération des objets <b>Account</b> dans un profil donné, l’identification du type d’un <b>compte</b>et l’utilisation d’un compte de <b>spécifique </b>objet à envoyer du courrier électronique.</para><para /></remarks>
+    <remarks><para>Il s’agit d’une interface .NET dérivée une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface dérivée pour accéder à tous les membres de méthode, propriétés et événements de l’objet COM. Toutefois, si une méthode ou l’événement que vous souhaitez utiliser partage le même nom sous le même objet COM, effectuer un cast à l’interface principale correspondant pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Reportez-vous à cette rubrique pour plus d’informations sur l’objet COM. Pour plus d’informations sur les membres des méthodes et des propriétés de l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook._Accounts" />.</para>
+      <para>L'objectif de l'objet de collection <b>Accounts</b> et de l'objet <b>Account</b> est de permettre l'énumération des objets <b>Account</b> dans un profil spécifique, l'identification du type d'un objet <b>Account</b>, ainsi que l'utilisation d'un objet <b>Account</b>spécifique pour l'envoi de courrier électronique.</para>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

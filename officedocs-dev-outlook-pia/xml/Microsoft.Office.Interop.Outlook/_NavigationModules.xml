@@ -1,13 +1,5 @@
 <Type Name="_NavigationModules" FullName="Microsoft.Office.Interop.Outlook._NavigationModules">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2b605678aa84d5032637c1f8c758db42293f3b02" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633847" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _NavigationModules : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2b605678aa84d5032637c1f8c758db42293f3b02" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27904706" /></Metadata><TypeSignature Language="C#" Value="public interface _NavigationModules : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _NavigationModules implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._NavigationModules" />
   <TypeSignature Language="VB.NET" Value="Public Interface _NavigationModules&#xA;Implements IEnumerable" />
@@ -87,10 +79,8 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constante indiquant la classe de l’objet. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie <b>olNavigationModules</b> pour le <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModules" /> objet.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie <b>olNavigationModules</b> pour le <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModules" /> objet.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -179,10 +169,8 @@
         <param name="Index">Soit l'index d'entier de la position du module de navigation dans le volet de navigation, soit la valeur utilisée pour la correspondance avec la propriété par défaut d'un objet dans la collection.</param>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.NavigationModule" /> objet de la collection.</summary>
         <value>Objet <b>NavigationModule</b> qui représente l'objet spécifié.</value>
-        <remarks>
-          <para>Le <see cref="P:Microsoft.Office.Interop.Outlook._NavigationModule.Name" /> propriété est la propriété par défaut de l’objet <b>NavigationModule</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Le <see cref="P:Microsoft.Office.Interop.Outlook._NavigationModule.Name" /> propriété est la propriété par défaut de l’objet <b>NavigationModule</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -238,16 +226,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

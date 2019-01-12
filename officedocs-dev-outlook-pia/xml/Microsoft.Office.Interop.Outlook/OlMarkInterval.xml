@@ -1,13 +1,5 @@
 <Type Name="OlMarkInterval" FullName="Microsoft.Office.Interop.Outlook.OlMarkInterval">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7c9e49df717ce3ddf0f27eb4d29b64b4f9d7e205" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634940" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public enum OlMarkInterval" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5d866ab7681d12730bf668c858772b7531129236" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27904972" /></Metadata><TypeSignature Language="C#" Value="public enum OlMarkInterval" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OlMarkInterval extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.OlMarkInterval" />
   <TypeSignature Language="VB.NET" Value="Public Enum OlMarkInterval" />
@@ -21,8 +13,7 @@
   </Base>
   <Docs>
     <summary>Spécifie la période pendant laquelle un élément Outlook est marqué comme tâche.</summary>
-    <remarks>
-      <para>Cette énumération est utilisée par la méthode <b>MarkAsTask</b> pour les éléments Outlook suivants :</para>
+    <remarks><para>Cette énumération est utilisée par la méthode <b>MarkAsTask</b> pour les éléments Outlook suivants :</para>
       <list type="bullet">
         <item>
           <para>
@@ -44,13 +35,62 @@
             <see cref="T:Microsoft.Office.Interop.Outlook.PostItem" />
           </para>
         </item>
+        <item>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Outlook.SharingItem" />
+          </para>
+        </item>
       </list>
-      <para>selon la valeur choisie, les propriétés suivantes sont définies sur les valeurs par défaut spécifié.</para>
-      <list type="table">Les 
-        <item><description>valeurs de propriété</description>de la 
-          <description>valeur d’énumération</description></item><item><description><b>olMarkComplete</b></description><description><b>TaskCompletedDate</b> est définie sur la date et l’heure (<b>maintenant</b> dans Visual Basic) si l’élément a été marqué en tant que tâche. <b>TaskCompletedDate</b> est définie à la valeur de date vide (#1/1/4501 #) si l’élément n’a pas été marquée en tant que tâche, ou si la tâche a déjà été marquée complet.</description></item><item><description><b>olMarkNoDate</b></description><description><b>IsMarkedAsTask</b> est définie sur <b>True</b>. <b>TaskSubject prend la valeur de la propriété <b>Subject</b> de l’élément Outlook.</b><b>TaskStartDate</b>, <b>TaskDueDate</b>et <b>TaskCompletedDate</b> sont définie sur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#). <b>ToDoTaskOrdinal</b> est définie à la date et l’heure (<b>maintenant</b> dans Visual Basic).  </description></item><item><description><b>olMarkNextWeek</b></description><description><b>IsMarkedAsTask</b> est définie sur <b>True</b>. <b>TaskSubject prend la valeur de la propriété <b>Subject</b> de l’élément Outlook.</b><b>La valeur de TaskStartDate correspond au premier jour ouvré de la semaine suivante.</b><b>La valeur de TaskDueDate correspond au dernier jour ouvré de la semaine suivante.</b><b>TaskCompletedDate</b> est définie sur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#). <b>ToDoTaskOrdinal</b> est définie à la date et l’heure (<b>maintenant</b> dans Visual Basic). </description></item><item><description><b>olMarkThisWeek</b></description><description><b>IsMarkedAsTask</b> est définie sur <b>True</b>. <b>TaskSubject prend la valeur de la propriété <b>Subject</b> de l’élément Outlook.</b><b>TaskStartDate</b> est définie sur une date deux jours ouvrés avant la date actuelle. Si cette valeur dépasse la valeur de <b>TaskDueDate</b>, <b>TaskStartDate</b> est définie à la valeur de <b>TaskDueDate</b>.   <b>La valeur de TaskDueDate correspond au dernier jour ouvré de la semaine en cours.</b><b>TaskCompletedDate</b> est définie sur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#). <b>ToDoTaskOrdinal</b> est définie à la date et l’heure (<b>maintenant</b> dans Visual Basic). </description></item><item><description><b>olMarkToday</b></description><description><b>IsMarkedAsTask</b> est définie sur <b>True</b>. <b>TaskSubject prend la valeur de la propriété <b>Subject</b> de l’élément Outlook.</b><b>TaskStartDate</b> et <b>TaskDueDate</b> sont définies à la date actuelle.  <b>TaskCompletedDate</b> est définie sur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#). <b>ToDoTaskOrdinal</b> est définie à la date et l’heure (<b>maintenant</b> dans Visual Basic). </description></item><item><description><b>olMarkTomorrow</b></description><description><b>IsMarkedAsTask</b> est définie sur <b>True</b>. <b>TaskSubject prend la valeur de la propriété <b>Subject</b> de l’élément Outlook.</b><b>TaskStartDate</b> et <b>TaskDueDate</b> sont définis sur un jour après la date actuelle.  <b>TaskCompletedDate</b> est définie sur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#). <b>ToDoTaskOrdinal</b> est définie à la date et l’heure (<b>maintenant</b> dans Visual Basic). </description></item></list>
-      <para />
-    </remarks>
+      <para>Selon la valeur choisie, les propriétés suivantes sont affectées des valeurs par défaut spécifiées.</para>
+      <list type="table">
+        <item>
+          <description>Valeur de l’énumération</description>
+          <description>Valeurs des propriétés</description>
+        </item>
+        <item>
+          <description>
+            <b>olMarkComplete</b>
+          </description>
+          <description>
+            <b>TaskCompletedDate</b> est définie à la date et l’heure (<b>maintenant</b> dans Visual Basic) si l’élément a été marqué en tant que tâche. <b>TaskCompletedDate</b> est définie à la valeur de date vide (#1/1/4501 #) si l’élément n’a pas été marquée en tant que tâche, ou si la tâche a déjà été marquée complet.</description>
+        </item>
+        <item>
+          <description>
+            <b>olMarkNoDate</b>
+          </description>
+          <description>						La valeur de 
+            <b>IsMarkedAsTask</b> est définie à <b>True</b>. <b>TaskSubject</b> prend la valeur de la propriété <b>Subject</b> de l’élément Outlook. <b>TaskStartDate</b>, <b>TaskDueDate</b>et <b>TaskCompletedDate</b> sont définie sur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#). <b>ToDoTaskOrdinal</b> est définie à la date et l’heure (<b>maintenant</b> dans Visual Basic).  </description>
+        </item>
+        <item>
+          <description>
+            <b>olMarkNextWeek</b>
+          </description>
+          <description>						La valeur de 
+            <b>IsMarkedAsTask</b> est définie à <b>True</b>. <b>TaskSubject</b> prend la valeur de la propriété <b>Subject</b> de l’élément Outlook. La valeur de <b>TaskStartDate</b> correspond au premier jour ouvré de la semaine suivante.   La valeur de <b>TaskDueDate</b> correspond au dernier jour ouvré de la semaine suivante. <b>TaskCompletedDate</b> est définie sur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#). <b>ToDoTaskOrdinal</b> est définie à la date et l’heure (<b>maintenant</b> dans Visual Basic). </description>
+        </item>
+        <item>
+          <description>
+            <b>olMarkThisWeek</b>
+          </description>
+          <description>						La valeur de 
+            <b>IsMarkedAsTask</b> est définie à <b>True</b>. <b>TaskSubject</b> prend la valeur de la propriété <b>Subject</b> de l’élément Outlook. <b>TaskStartDate</b> est définie sur une date deux jours ouvrés avant la date actuelle. Si cette valeur dépasse la valeur de <b>TaskDueDate</b>, <b>TaskStartDate</b> est définie à la valeur de <b>TaskDueDate</b>.   La valeur de <b>TaskDueDate</b> correspond au dernier jour ouvré de la semaine en cours. <b>TaskCompletedDate</b> est définie sur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#). <b>ToDoTaskOrdinal</b> est définie à la date et l’heure (<b>maintenant</b> dans Visual Basic). </description>
+        </item>
+        <item>
+          <description>
+            <b>olMarkToday</b>
+          </description>
+          <description>						La valeur de 
+            <b>IsMarkedAsTask</b> est définie à <b>True</b>. <b>TaskSubject</b> prend la valeur de la propriété <b>Subject</b> de l’élément Outlook. La valeur de <b>TaskStartDate</b> et <b>TaskDueDate</b> correspond à la date du jour.  <b>TaskCompletedDate</b> est définie sur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#). La valeur de <b>ToDoTaskOrdinal</b> est définie à la date et à l’heure actuelles (<b>Now</b> dans le cas de Visual Basic). </description>
+        </item>
+        <item>
+          <description>
+            <b>olMarkTomorrow</b>
+          </description>
+          <description>						La valeur de 
+            <b>IsMarkedAsTask</b> est définie à <b>True</b>. <b>TaskSubject</b> prend la valeur de la propriété <b>Subject</b> de l’élément Outlook. La valeur de <b>TaskStartDate</b> et de <b>TaskDueDate</b> correspond à la date du jour plus un jour.  <b>TaskCompletedDate</b> est définie sur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#). La valeur de <b>ToDoTaskOrdinal</b> est définie à la date et à l’heure actuelles (<b>Now</b> dans le cas de Visual Basic). </description>
+        </item>
+      </list>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="olMarkComplete">

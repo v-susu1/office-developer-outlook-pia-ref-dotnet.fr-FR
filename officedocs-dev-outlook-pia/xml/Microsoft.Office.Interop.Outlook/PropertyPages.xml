@@ -1,13 +1,5 @@
 <Type Name="PropertyPages" FullName="Microsoft.Office.Interop.Outlook.PropertyPages">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5237bc6a45d38ec6e0488ec2710e9fb461c25713" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20635052" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PropertyPages : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d29275fcc6b6bb29b318766feffc0ab499f0f994" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27903040" /></Metadata><TypeSignature Language="C#" Value="public interface PropertyPages : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PropertyPages implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.PropertyPages" />
   <TypeSignature Language="VB.NET" Value="Public Interface PropertyPages&#xA;Implements IEnumerable" />
@@ -31,12 +23,10 @@
   </Attributes>
   <Docs>
     <summary>Contient les pages de propriétés personnalisées qui ont été ajoutés à la boîte de dialogue Options de Microsoft Outlook ou à la boîte de dialogue Propriétés.</summary>
-    <remarks>
-      <para>Vous recevez un objet <b>PropertyPages</b> en tant que paramètre de la <see cref="E:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.OptionsPagesAdd" /> événement. Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook.PropertyPages.Add(System.Object,System.String)" /> pour ajouter un <see cref="T:Microsoft.Office.Interop.Outlook.PropertyPage" /> objet à l’objet <b>PropertyPages</b> .</para>
+    <remarks><para>Vous recevez un objet <b>PropertyPages</b> en tant que paramètre de la <see cref="E:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.OptionsPagesAdd" /> événement. Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook.PropertyPages.Add(System.Object,System.String)" /> pour ajouter un <see cref="T:Microsoft.Office.Interop.Outlook.PropertyPage" /> objet à l’objet <b>PropertyPages</b> .</para>
       <para>
         <b>Remarque</b>: Si plusieurs programmes gèrent l’événement <b>OptionsPagesAdd</b> , l’ordre dans lequel les programmes reçoivent l’événement (et par conséquent, l’ordre dans lequel les pages sont ajoutées à l’objet <b>PropertyPages</b> ) ne peut pas être garanti.</para>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -265,16 +255,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
