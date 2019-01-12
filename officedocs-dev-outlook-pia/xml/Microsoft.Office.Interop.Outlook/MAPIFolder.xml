@@ -1,13 +1,5 @@
 <Type Name="MAPIFolder" FullName="Microsoft.Office.Interop.Outlook.MAPIFolder">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d8a333f159d3a63a23c2b19913ea1f7e5b666bcb" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633555" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MAPIFolder" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5ff194f3b28d1408ede7525b7b91a1471bd5eb41" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901086" /></Metadata><TypeSignature Language="C#" Value="public interface MAPIFolder" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MAPIFolder" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.MAPIFolder" />
   <TypeSignature Language="VB.NET" Value="Public Interface MAPIFolder" />
@@ -56,12 +48,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui indique le nom du carnet d’adresses pour le <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> objet représentant un dossier Contacts. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui indique le nom du carnet d’adresses pour le <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> objet représentant un dossier Contacts. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si vous tentez de définir la propriété <b>AddressBookName</b> dans un dossier autre que Contacts, une erreur sera renvoyée.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si vous tentez de définir la propriété <b>AddressBookName</b> dans un dossier autre que le dossier Contacts, une erreur est renvoyée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddToFavorites">
@@ -203,10 +193,8 @@
         <param name="DestinationFolder">Objet <b>Folder</b> requis qui représente le dossier de destination.</param>
         <summary>Copie l'intégralité du dossier actif dans le dossier de destination.</summary>
         <returns>Objet <b>Folder</b> qui représente la nouvelle copie du dossier actif.</returns>
-        <remarks>
-          <para>Définir la valeur REG_MULTI_SZ, DisableCrossAccountCopy, dans HKCU\Software\Microsoft\Office\14.0\Outlook dans le Registre Windows a pour effet secondaire de la désactivation de cette méthode.</para>
-          <para />
-        </remarks>
+        <remarks><para>Définir la valeur REG_MULTI_SZ, DisableCrossAccountCopy, dans HKCU\Software\Microsoft\Office\14.0\Outlook dans le Registre Windows a pour effet secondaire de la désactivation de cette méthode.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentView">
@@ -234,9 +222,8 @@
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.View" /> représentant l’affichage actuel. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Pour obtenir un objet <b>View</b> pour l’affichage de le <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" />, utilisez <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentView" /> au lieu de la propriété <b>CurrentView</b> de l’actuel <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> objet renvoyé par <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" />. </para>
-          <para>Vous devez enregistrer une référence à l’objet <b>View</b> renvoyé par <b>CurrentView</b> avant de continuer à utiliser à des fins.</para>
+        <remarks><para>Pour obtenir un objet <b>View</b> pour l’affichage de le <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" />, utilisez <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentView" /> au lieu de la propriété <b>CurrentView</b> de l’actuel <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> objet renvoyé par <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" />. </para>
+          <para>Vous devez enregistrer une référence à l'objet <b>View</b> renvoyé par <b>CurrentView</b> avant de commencer à l'utiliser pour quelque fonction que ce soit.</para>
           <para>Pour réinitialiser correctement l’affichage actuel, vous devez effectuer une <see cref="M:Microsoft.Office.Interop.Outlook.View.Reset" /> , puis un <see cref="M:Microsoft.Office.Interop.Outlook.View.Apply" />. L’exemple de code ci-dessous illustre l’ordre des appels :</para>
           <code>Sub ResetView()
     Dim v as Outlook.View
@@ -256,8 +243,7 @@ End Sub</code>
     v.Reset();
     v.Apply();
 }</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomViewsOnly">
@@ -286,13 +272,11 @@ End Sub</code>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui détermine quels affichages apparaissent dans le menu Affichage d’un dossier donné. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui détermine quels affichages apparaissent dans le menu Affichage d’un dossier donné. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si la valeur <b>True</b>, seuls les affichages créés par l’utilisateur apparaissent dans le menu.</para>
-          <para>Cette propriété a un effet uniquement dans le menu Affichage. Il n’affecte pas l’affichage des vues dans le volet de Navigation.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si cette propriété prend la valeur <b>True</b>, seuls les affichages créés par l'utilisateur apparaissent dans le menu.</para>
+          <para>Cette propriété fonctionne uniquement sur le menu Affichage. Elle n'affecte pas les affichages dans le volet de navigation.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultItemType">
@@ -402,12 +386,10 @@ End Sub</code>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant la description du dossier.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) représentant la description du dossier.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagComment</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagComment</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Display">
@@ -460,9 +442,9 @@ End Sub</code>
       <Docs>
         <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) qui représente l’identificateur d’entrée unique de l’objet.  En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété correspond à la propriété MAPI <b>PidTagEntryId</b>.</para> Fournisseur de banque 
-          <para>MAPI A assigne une chaîne d’ID unique lorsqu’un élément est créé dans son magasin. Par conséquent, la propriété <b>EntryID</b> n’est pas définie pour un élément Outlook jusqu'à ce qu’il est enregistré ou envoyé. L’identificateur d’entrée change lorsqu’un élément est déplacé vers une autre banque, par exemple, à partir de votre boîte de réception à un dossier public Microsoft Exchange Server, ou d’un fichier de dossiers personnels (.pst) vers un autre fichier .pst. Solutions ne doivent pas dépendre de la propriété <b>EntryID</b> pour être uniques, sauf si les éléments ne seront pas déplacées. La propriété <b>EntryID</b> renvoie un identificateur d’entrée à long terme MAPI. Pour plus d’informations sur les identificateurs d’entrée à long et à court terme, recherchez http://msdn.microsoft.com pour <b>PidTagEntryId</b>. </para><para /></remarks>
+        <remarks><para>Cette propriété correspond à la propriété MAPI <b>PidTagEntryId</b>.</para>
+          <para>Un fournisseur de banque MAPI affecte une chaîne d’ID unique lorsqu’un élément est créé dans son magasin. Par conséquent, la propriété <b>EntryID</b> n’est pas définie pour un élément Outlook jusqu'à ce qu’il est enregistré ou envoyé. L’ID d’entrée est modifié lorsqu’un élément est déplacé vers une autre banque, par exemple, depuis votre boîte de réception vers un dossier public Microsoft Exchange Server ou depuis un fichier Dossier personnel (.pst) vers un autre fichier .pst. Les solutions ne doivent pas dépendre du fait que la propriété <b>EntryID</b> soit unique, sauf si les éléments ne sont pas déplacés. La propriété <b>EntryID</b> renvoie un ID d’entrée à long terme MAPI. Pour plus d’informations sur les identificateurs d’entrée à long et à court terme, recherchez http://msdn.microsoft.com pour <b>PidTagEntryId</b>. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FolderPath">
@@ -518,10 +500,8 @@ End Sub</code>
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> qui représente tous les dossiers contenus dans la collection <see cref="T:Microsoft.Office.Interop.Outlook.Folder" />. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet est la racine de tous les dossiers pour l’espace de nom donné.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet est la racine de tous les dossiers pour l’espace de nom donné. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FullFolderPath">
@@ -578,12 +558,10 @@ End Sub</code>
       <Docs>
         <summary>Crée un <see cref="T:Microsoft.Office.Interop.Outlook.CalendarSharing" /> objet spécifié <see cref="T:Microsoft.Office.Interop.Outlook.Folder" />.</summary>
         <returns>Objet <b>CalendarSharing</b> pour le dossier spécifié.</returns>
-        <remarks>
-          <para>La méthode <b>GetCalendarExporter</b> définit automatiquement les valeurs par défaut de la classe <b>CalendarSharing</b> aux options par défaut standard utilisées par l’objet <b>Folder</b> . La méthode <b>GetCalendarExporter</b> peut uniquement être utilisée sur dossiers de calendrier. Une erreur se produit si vous utilisez la méthode avec des objets <b>Folder</b> qui représentent les autres types de dossiers.</para>
+        <remarks><para>La méthode <b>GetCalendarExporter</b> affecte automatiquement les valeurs par défaut de la classe <b>CalendarSharing</b> aux options par défaut standard utilisées par l'objet <b>Folder</b>. La méthode <b>GetCalendarExporter</b> ne peut être utilisée qu'avec des dossiers de calendrier. Une erreur se produit si vous l'utilisez avec des objets <b>Folder</b> représentant d'autres types de dossier.</para>
           <para>
             <b>Remarque</b>: l’objet <b>CalendarSharing</b> prend uniquement en charge l’exportation de format de fichier iCalendar (.ics).</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCustomIcon">
@@ -609,21 +587,28 @@ End Sub</code>
       <Docs>
         <summary>Renvoie un <see cref="T:stdole.StdPicture" /> object qui représente l’icône personnalisée pour le dossier.</summary>
         <returns>Renvoie un objet <b>StdPicture</b> qui représente une icône personnalisée pour le dossier.</returns>
-        <remarks>
-          <para>L’objet <b>StdPicture</b> renvoyé possède une propriété de <b>Type</b> égale à <b>PICTYPE_ICON</b> ou <b>PICTYPE_BITMAP</b>.</para>
+        <remarks><para>L’objet <b>StdPicture</b> renvoyé possède une propriété de <b>Type</b> égale à <b>PICTYPE_ICON</b> ou <b>PICTYPE_BITMAP</b>.</para>
           <para>
-            <b>GetCustomIcon</b> renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) si le dossier ne dispose pas d’une icône de dossier personnalisée, ou si le dossier appartienne à l’un des groupes de dossiers suivants :</para>
+            <b>GetCustomIcon</b> renvoie <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) si le dossier ne dispose pas d’une icône de dossier personnalisée, ou si le dossier appartienne à l’un des groupes de dossiers suivants :</para>
           <list type="bullet">
             <item>
               <para>Dossiers par défaut (comme indiqué par le <see cref="T:Microsoft.Office.Interop.Outlook.OlDefaultFolders" /> énumération)</para>
             </item>
             <item>
-              <para>dossiers spéciaux (tels que répertoriés par le <see cref="T:Microsoft.Office.Interop.Outlook.OlSpecialFolders" /> énumération)</para>
-            </item>du
-            <item><para>dossier racine d’une boîte aux lettres Exchange</para></item><item><para>des dossiers publics Exchange</para></item><item><para>dossiers cachés</para></item></list>
-          <para>Vous ne pouvez appeler <b>GetCustomIcon</b> à partir de code que s’exécute dans le processus Outlook. Un objet <b>StdPicture</b> ne peut être assemblée au-delà des frontières du processus. Si vous essayez d’appeler <b>GetCustomIcon</b> à partir du code out-of-process, une exception se produit. Pour plus d’informations, voir <a href="http://support.microsoft.com/kb/150034">un serveur d’automatisation ne peuvent pas transmettre un pointeur vers l’image implémentation l’objet IPictureDisp au-delà des frontières du processus</a></para>
-          <para />
-        </remarks>
+              <para>Dossiers spéciaux (tels que répertoriés par le <see cref="T:Microsoft.Office.Interop.Outlook.OlSpecialFolders" /> énumération)</para>
+            </item>
+            <item>
+              <para>Dossiers publics Exchange</para>
+            </item>
+            <item>
+              <para>Dossier racine d’une boîte aux lettres Exchange</para>
+            </item>
+            <item>
+              <para>Dossiers cachés</para>
+            </item>
+          </list>
+          <para>Vous pouvez uniquement appeler <b>GetCustomIcon</b> à partir de code que s’exécute dans le processus Outlook. Un objet <b>StdPicture</b> ne peut être assemblée au-delà des frontières du processus. Si vous essayez d’appeler <b>GetCustomIcon</b> à partir du code out-of-process, une exception se produit. Pour plus d’informations, voir <a href="http://support.microsoft.com/kb/150034">un serveur d’automatisation ne peuvent pas transmettre un pointeur vers l’image implémentation l’objet IPictureDisp au-delà des frontières du processus</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetExplorer">
@@ -651,15 +636,13 @@ End Sub</code>
         <param name="DisplayMode">Le mode d’affichage du dossier. Peut être une des constantes dans le <see cref="T:Microsoft.Office.Interop.Outlook.OlFolderDisplayMode" /> énumération.</param>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> object qui représente un nouvel objet <b>Explorer</b> inactif initialisé avec le dossier spécifié comme dossier actif.</summary>
         <returns>Un objet <b>Explorer</b> qui représente un nouvel explorateur inactif initialisé à l’aide du dossier spécifié comme dossier actif.</returns>
-        <remarks>
-          <para>Cette méthode est particulièrement utile pour renvoyer un nouvel objet <b>Explorer</b> dans lequel afficher le dossier, par opposition à l’aide de la <see cref="M:Microsoft.Office.Interop.Outlook._Application.ActiveExplorer" /> méthode et la définition du <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" /> propriété.</para>
-          <para>La <see cref="M:Microsoft.Office.Interop.Outlook._Explorer.Display" /> méthode peut être utilisée pour activer ou d’afficher l' <b>Explorateur de solutions</b>.</para>
-          <para>La méthode <b>GetExplorer</b> prend un argument facultatif d’une <b>OlFolderDisplayMode</b> constante.</para>
-          <para>Par défaut, nouvel <b>Explorateur</b> s’affiche en mode Normal (<b>olFolderDisplayNormal</b>) avec tous les éléments d’interface : un panneau de messages à droite et le volet de Navigation de gauche. L’exception à cette règle est lorsque vous appelez <b>GetExplorer</b> sur des dossiers délégués, qui sont en mode No-Navigation (<b>olFolderDisplayNoNavigation</b> ) par défaut. Vous pouvez appliquer des restrictions plus à un mode par défaut, mais vous ne pouvez pas réduire les restrictions en modifiant <b>OlFolderDisplayMode</b>.</para>
-          <para>L’Explorateur de solutions peuvent également être affichées en mode dossier uniquement (<b>olFolderDisplayFolderOnly</b>). Ce mode est presque identique au mode Normal (<b>olFolderDisplayNormal</b> ) en ce sens qu’elle affiche également le volet de Navigation à gauche.</para>
-          <para>Que vous pouvez utiliser le mode le plus restrictif est le mode No-Navigation (<b>olFolderDisplayNoNavigation</b>). Dans ce mode, l' <b>Explorateur de solutions</b> s’affiche sans liste de dossiers, aucune liste déroulante et toute barre de menu/commande de type « OK » options doivent être désactivées. En fait, l’utilisateur ne doit pas être en mesure d’accéder à n’importe quel autre dossier dans cette fenêtre <b>d’Explorateur</b> . Par défaut, un dossier délégué (partagé) s’affiche en mode No-Navigation.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette méthode est particulièrement utile pour renvoyer un nouvel objet <b>Explorer</b> dans lequel afficher le dossier, par opposition à l’aide de la <see cref="M:Microsoft.Office.Interop.Outlook._Application.ActiveExplorer" /> méthode et la définition du <see cref="P:Microsoft.Office.Interop.Outlook._Explorer.CurrentFolder" /> propriété.</para>
+          <para>Le <see cref="M:Microsoft.Office.Interop.Outlook._Explorer.Display" /> méthode peut être utilisée pour activer ou d’afficher l' <b>Explorateur de solutions</b>.</para>
+          <para>La méthode <b>GetExplorer</b> utilise l’argument facultatif d’une constante <b>OlFolderDisplayMode</b>.</para>
+          <para>Par défaut, le nouvel objet <b>Explorer</b> s’affiche en mode Normal (<b>olFolderDisplayNormal</b>) avec tous les éléments d’interface : un panneau de messages à droite et le volet de navigation à gauche. Il existe une exception à cette règle : lorsque vous appelez <b>GetExplorer</b> sur des dossiers délégués, qui sont par défaut en mode No-navigation (<b>olFolderDisplayNoNavigation</b>). Vous pouvez appliquer d’autres restrictions à un mode par défaut, mais vous n’avez pas la possibilité de diminuer les restrictions existantes en modifiant la valeur de <b>OlFolderDisplayMode</b>.</para>
+          <para>Vous pouvez aussi afficher l’explorateur en mode Dossier uniquement (<b>olFolderDisplayFolderOnly</b>). Ce mode est presque identique au mode Normal (<b>olFolderDisplayNormal</b>), car il affiche également le volet de navigation à gauche.</para>
+          <para> Le mode No-Navigation (<b>olFolderDisplayNoNavigation</b>) est le mode le plus restrictif que vous puissiez utiliser. Dans ce mode, l’objet <b>Explorer</b> s’affiche sans liste de dossiers, ni liste déroulante, et toutes les options de type « Aller à » de la barre de menus/commandes doivent être désactivées. En fait, l’utilisateur ne doit pas pouvoir naviguer vers un autre dossier dans cette fenêtre de l’objet <b>Explorer</b>. Par défaut, un dossier délégué (partagé) s’affiche en mode No-Navigation.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetStorage">
@@ -690,28 +673,32 @@ End Sub</code>
         <param name="StorageIdentifierType">Spécifie le type d'identificateur de l'objet <b>StorageItem</b>.</param>
         <summary>Obtient un <see cref="T:Microsoft.Office.Interop.Outlook.StorageItem" /> objet parent <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> pour stocker les données d’une solution Outlook.</summary>
         <returns>Objet <b>StorageItem</b> utilisé pour stocker les données d'une solution.</returns>
-        <remarks>
-          <para>La méthode <b>GetStorage</b> Obtient un <b>objet StorageItem</b> dans un objet <b>Folder</b> à l’aide de l’identificateur spécifié par <paramref name="StorageIdentifier" /> et a le type d’identificateur spécifié par <paramref name="StorageIdentifierType" />.    L' <b>objet StorageItem</b> est un élément masqué dans le <b>dossier</b>, qui se déplace avec le compte et est disponible en ligne et hors connexion.</para>
-          <para>Si vous spécifiez le <see cref="P:Microsoft.Office.Interop.Outlook._StorageItem.EntryID" /> pour l' <b>objet StorageItem</b> à l’aide de la valeur <b>olIdentifyByEntryID</b> pour <paramref name="StorageIdentifierType" />, puis la méthode <b>GetStorage</b> renvoie l' <b>objet StorageItem</b> avec <b>EntryID</b>spécifié. Si aucun <b>objet StorageItem</b> se trouvent à l’aide de <b>propriété EntryID</b> ou si l' <b>objet StorageItem</b> n’existe pas, la méthode <b>GetStorage</b> génère une erreur.</para>
+        <remarks><para>La méthode <b>GetStorage</b> Obtient un <b>objet StorageItem</b> dans un objet <b>Folder</b> à l’aide de l’identificateur spécifié par <paramref name="StorageIdentifier" /> et a le type d’identificateur spécifié par <paramref name="StorageIdentifierType" />.    L' <b>objet StorageItem</b> est un élément masqué dans le <b>dossier</b>qui se déplace avec le compte et est disponible en ligne et hors connexion.</para>
+          <para>Si vous spécifiez le <see cref="P:Microsoft.Office.Interop.Outlook._StorageItem.EntryID" /> pour l' <b>objet StorageItem</b> à l’aide de la valeur <b>olIdentifyByEntryID</b> pour <paramref name="StorageIdentifierType" />, puis la méthode <b>GetStorage</b> renvoie l' <b>objet StorageItem</b> avec <b>EntryID</b>spécifié. Si aucun <b>objet StorageItem</b> est introuvable à l’aide de <b>propriété EntryID</b> ou si l' <b>objet StorageItem</b> n’existe pas, la méthode <b>GetStorage</b> génère une erreur.</para>
           <para>Si vous spécifiez la classe de message de l' <b>objet StorageItem</b> à l’aide de la valeur <b>olIdentifyByMessageClass</b> pour <paramref name="StorageIdentifierType" />, puis la méthode <b>GetStorage</b> renvoie l' <b>objet StorageItem</b> avec la classe de message spécifié. S’il existe plusieurs éléments avec la même classe de message, la méthode <b>GetStorage</b> renvoie l’élément dont le plus récent <b>PidTagLastModificationTime</b>. Si aucun <b>objet StorageItem</b> existe avec la classe de message spécifiée, puis la méthode <b>GetStorage</b> crée un nouvel <b>objet StorageItem</b> avec la classe de message spécifiée par <paramref name="StorageIdentifier" />.</para>
           <para>Si vous spécifiez le <see cref="P:Microsoft.Office.Interop.Outlook._StorageItem.Subject" /> de l' <b>objet StorageItem</b>, puis le <b>GetStorage</b> méthode renvoie l' <b>objet StorageItem</b> avec l' <b>objet</b> spécifié dans l’appel <b>GetStorage</b> . S’il existe plusieurs éléments avec le même <b>objet</b>, la méthode <b>GetStorage</b> retournera l’élément avec la plus récente <b>PidTagLastModificationTime</b>. Si aucun <b>objet StorageItem</b> existe à l' <b>objet</b>spécifié, puis la méthode <b>GetStorage</b> crée un nouvel <b>objet StorageItem</b> avec l' <b>objet</b> spécifié par <paramref name="StorageIdentifier" />.</para>
           <para>
-            <b>GetStorage</b> renvoie une erreur si le type de stockage du dossier n’est pas pris en charge. Les magasins suivants renvoient une erreur lorsque <b>GetStorage</b> est appelée :</para>
+            <b>GetStorage</b> renvoie une erreur si le type de banque du dossier n’est pas pris en charge. Les banques suivantes renvoient une erreur lorsque la méthode <b>GetStorage</b> est appelée :
+
+</para>
           <list type="bullet">
             <item>
-              <para>Hotmail stocker</para>
+              <para>banques Hotmail ;</para>
             </item>
             <item>
-              <para>stocke Internet Message Access Protocol (IMAP)</para>
+              <para>banques IMAP (Internet Message Access Protocol) ;</para>
             </item>
             <item>
-              <para>stocke</para>
-            </item>les
-            <item><para>banques de dossiers publics</para></item></list>
-          <para>le <see cref="P:Microsoft.Office.Interop.Outlook._StorageItem.Size" />d’un <b>objet StorageItem</b> nouvellement créé est zéro (0) tant que vous n’appelez pas explicitement sur la <see cref="M:Microsoft.Office.Interop.Outlook._StorageItem.Save" /> méthode de l’élément.</para>
+              <para>Banques de délégué</para>
+            </item>
+            <item>
+              <para>
+banques de dossiers publics.</para>
+            </item>
+          </list>
+          <para>Le <see cref="P:Microsoft.Office.Interop.Outlook._StorageItem.Size" /> d’un <b>objet StorageItem</b> nouvellement créé est zéro (0) tant que vous n’appelez pas explicitement sur la <see cref="M:Microsoft.Office.Interop.Outlook._StorageItem.Save" /> méthode de l’élément.</para>
           <para>Pour plus d’informations sur le stockage des données d’une solution, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87931">Stockage des données pour les Solutions</a></para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTable">
@@ -741,14 +728,12 @@ End Sub</code>
         <param name="TableContents">Spécifie le type d’éléments dans le dossier par <b>GetTable</b> . La valeur par défaut est <b>olUserItems</b>.</param>
         <summary>Obtient un <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> objet qui contient des éléments filtrés par <paramref name="Filter" />.</summary>
         <returns>Un <b>tableau</b> qui contient des éléments dans l’objet parent <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> qui répondent aux critères dans <paramref name="Filter" />. Par défaut, <paramref name="TableContents" /> est <b>olUserItems</b> et l’objet <b>Table</b> renvoyé contient uniquement les éléments filtrés non masqués.</returns>
-        <remarks>
-          <para>Si <paramref name="Filter" /> est une chaîne vide ou la <paramref name="Filter" /> paramètre est omis, <b>GetTable</b> renvoie un <b>tableau</b> avec des lignes représentant tous les éléments dans le <b>dossier</b>. Si <paramref name="Filter" /> est une chaîne vide ou la <paramref name="Filter" /> paramètre est omis et <paramref name="TableContents" /> est <b>olHiddenItems</b>, <b>GetTable</b> cette propriété renvoie un <b>tableau</b> avec des lignes représentant tous les éléments masqués dans le <b>dossier</b>.</para>
+        <remarks><para>Si <paramref name="Filter" /> est une chaîne vide ou la <paramref name="Filter" /> paramètre est omis, <b>GetTable</b> renvoie un <b>tableau</b> avec des lignes représentant tous les éléments dans le <b>dossier</b>. Si <paramref name="Filter" /> est une chaîne vide ou la <paramref name="Filter" /> paramètre est omis et <paramref name="TableContents" /> est <b>olHiddenItems</b>, <b>GetTable</b> cette propriété renvoie un <b>tableau</b> avec des lignes représentant tous les éléments masqués dans le <b>dossier</b>.</para>
           <para>Pour plus d’informations sur les filtres, voir filtrage des éléments et référencer les propriétés par Namespace.</para>
           <para>
             <b>GetTable</b> renvoie un <b>tableau</b> avec la colonne par défaut pour le type de dossier du <b>dossier</b>parent. Pour modifier l’ensemble de colonnes par défaut, utilisez la <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Add(System.String)" />, <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Remove(System.Object)" />, ou <see cref="M:Microsoft.Office.Interop.Outlook._Columns.RemoveAll" /> méthodes de le <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> objet de la collection.  Lorsque <paramref name="TableContents" /> est <b>olHiddenItems</b>, la colonne par défaut définie est toujours la colonne par défaut d’un dossier de messagerie même si l’objet <b>Folder</b> parent est, par exemple, un dossier Contacts.  Pour plus d’informations sur les jeux de colonnes par défaut, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87925">Propriétés par défaut affichées dans un objet Table</a></para>
-          <para>que vous pouvez utiliser <see cref="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" /> pour appliquer d’autres filtres à un <b>tableau</b> qui repose sur l’objet <b>Folder</b> .</para>
-          <para />
-        </remarks>
+          <para>Vous pouvez utiliser <see cref="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" /> pour appliquer d’autres filtres à un <b>tableau</b> qui repose sur l’objet <b>Folder</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InAppFolderSyncObject">
@@ -777,14 +762,12 @@ End Sub</code>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui détermine si le dossier spécifié sera synchronisé avec le serveur de messagerie. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui détermine si le dossier spécifié sera synchronisé avec le serveur de messagerie. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si la <b>valeur True</b>, ce dossier sera synchronisé lorsque les dossiers d’applications » » <see cref="T:Microsoft.Office.Interop.Outlook.SyncObject" /> est synchronisé. Si la <b>valeur False</b>, le dossier ne sera pas synchronisé. </para>
-          <para>Cela équivaut à sélectionner la case à cocher pour ce dossier dans le groupe de dossiers d’applications dans la boîte de dialogue Envoyer/recevoir.</para>
-          <para>Si cette propriété est définie sur <b>True</b>, et le « Dossiers d’applications » <b>SyncObject</b> n’existe pas, un <b>objet SyncObject</b> est automatiquement créé. La « Dossiers d’applications » <b>SyncObject</b> est le seul groupe d’envoi/réception qui peut être modifié par programme.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si la <b>valeur True</b>, ce dossier sera synchronisé lorsque les dossiers d’applications » » <see cref="T:Microsoft.Office.Interop.Outlook.SyncObject" /> est synchronisé. Si la <b>valeur False</b>, le dossier ne sera pas synchronisé. </para>
+          <para>Cela équivaut à activer la case à cocher correspondant au dossier dans le groupe « Dossiers d'applications » de la boîte de dialogue Envoyer/recevoir.</para>
+          <para>Si cette propriété prend la valeur <b>True</b> et que l'objet <b>SyncObject</b> « Dossiers d'applications » n'existe pas, un objet <b>SyncObject</b> est automatiquement créé. L'objet <b>SyncObject</b> « Dossiers d'applications » est le seul groupe Envoyer/Recevoir qui peut être modifié par un programme.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSharePointFolder">
@@ -812,8 +795,11 @@ End Sub</code>
       <Docs>
         <summary>Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) qui détermine si le dossier est un dossier Microsoft SharePoint Foundation. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>Dossier <para>A SharePoint Foundation est un dossier personnalisé dans Outlook qui contient une copie active de la liste de contacts ou de la liste des événements qui se trouve sur un site Web SharePoint Foundation. La liste des contacts est mappé à un dossier Contacts dans Outlook et la liste des événements correspond à un dossier de calendrier. </para><para>SharePoint Foundation dossiers sont automatiquement créés sous le nœud dossiers SharePoint dans le volet de Navigation lorsqu’une liste de contacts ou une liste d’événements est exportée à partir du site Web SharePoint Foundation.</para> Dossiers 
-          <para>Si Windows SharePoint Services fonctionnent de la même manière que les autres dossiers, il existe quelques exceptions près. Dossiers SharePoint Foundation sont en lecture seule et toute tentative de modifier les propriétés d’un dossier ou d’ajout, de modification ou suppression des éléments existants échouera. </para><para>Un dossier dans un dossier Microsoft Exchange server de l’utilisateur ne sera jamais un dossier Windows SharePoint Services et aucun dossier dans le fichier des dossiers personnels (.pst) de l’utilisateur ne sera jamais un dossier Windows SharePoint Services. Généralement les dossiers de Windows SharePoint Services se trouvent sous le nœud dossiers SharePoint dans le volet de Navigation.</para><para /></remarks>
+        <remarks><para>Un dossier SharePoint Foundation est un dossier personnalisé dans Outlook qui contient une copie active de la liste des contacts ou de la liste des événements sur un site Web SharePoint Foundation. La liste des contacts est associée au dossier Contacts dans Outlook et la liste des événements est associée au dossier Calendrier. </para>
+          <para>Les dossiers SharePoint Foundation sont créés automatiquement sous le nœud Dossiers SharePoint dans le volet de navigation lorsqu’une liste de contacts ou une liste d’événements est exportée depuis le site Web SharePoint Foundation.</para>
+          <para>Bien que les dossiers SharePoint Foundation fonctionnent de la même manière que les autres dossiers, il existe quelques exceptions. Les dossiers SharePoint Foundation sont en lecture seule et toute tentative de modification des propriétés des dossiers ou d’ajout, de modification ou de suppression des éléments existants échouera. </para>
+          <para>Un dossier dans un dossier de serveur Microsoft Exchange de l’utilisateur ne sera jamais un dossier SharePoint Foundation et aucun dossier dans le fichier des dossiers personnels de l’utilisateur (.pst) ne sera jamais un dossier SharePoint Foundation. En général, les dossiers SharePoint Foundation se trouvent sous le nœud Dossiers SharePoint dans le volet de navigation.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Items">
@@ -841,10 +827,8 @@ End Sub</code>
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> objet collection comme une collection d’éléments Outlook dans le dossier spécifié. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>L’index de la collection <b>Items</b> commence à 1, et ne sont pas garantis que les éléments de l’objet de collection <b>d’éléments</b> dans un ordre particulier.</para>
-          <para />
-        </remarks>
+        <remarks><para>L’index de la collection <b>Items</b> commence à 1, et ne sont pas garantis que les éléments de l’objet de collection <b>d’éléments</b> dans un ordre particulier.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MAPIOBJECT">
@@ -903,10 +887,8 @@ End Sub</code>
       <Docs>
         <param name="DestinationFolder">Objet <b>Folder</b> de destination de l’objet <b>Folder</b>  déplacé.</param>
         <summary>Déplace un dossier vers le dossier de destination spécifié.</summary>
-        <remarks>
-          <para>Définir la valeur REG_MULTI_SZ, DisableCrossAccountCopy, dans HKCU\Software\Microsoft\Office\14.0\Outlook dans le Registre Windows a pour effet secondaire de la désactivation de cette méthode.</para>
-          <para />
-        </remarks>
+        <remarks><para>Définir la valeur REG_MULTI_SZ, DisableCrossAccountCopy, dans HKCU\Software\Microsoft\Office\14.0\Outlook dans le Registre Windows a pour effet secondaire de la désactivation de cette méthode.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -935,7 +917,7 @@ End Sub</code>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le nom complet de l’objet. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente le nom complet de l’objet. Lecture-écriture.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -965,10 +947,8 @@ End Sub</code>
       <Docs>
         <summary>Renvoie la valeur de type <b>Object</b> parent de l’objet spécifié. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Le parent de le <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> objet est la <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> objet de la collection.</para>
-          <para />
-        </remarks>
+        <remarks><para>Le parent de le <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> objet est la <see cref="T:Microsoft.Office.Interop.Outlook.Folders" /> objet de la collection.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PropertyAccessor">
@@ -1024,16 +1004,14 @@ End Sub</code>
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetCustomIcon">
@@ -1061,12 +1039,29 @@ End Sub</code>
       <Docs>
         <param name="Picture">Spécifie l’icône personnalisée du dossier.</param>
         <summary>Définit une icône personnalisée spécifiée par <paramref name="Picture" /> pour le dossier.</summary>
-        <remarks>
-          <para>Le <see cref="T:stdole.StdPicture" /> objet spécifié par <paramref name="Picture" /> doit avoir sa propriété <b>Type</b> égale à <b>PICTYPE_ICON</b> ou <b>PICTYPE_BITMAP</b>. La ressource image bitmap ou une icône peut avoir une taille maximale de 32 x 32. Icônes de 16 x 16 ou 24 h/24 également pris en charge et Microsoft Outlook capable de s’adapter une icône de 16 x 16 si Outlook est exécuté en mode élevé de points par pouce (PPP). Icônes d’autres formats provoquent <b>SetCustomIcon</b> renvoyer une erreur.</para> Vous pouvez définir une icône personnalisée pour un dossier de recherche et pour tous les dossiers qui ne représentent pas une valeur par défaut ou un dossier spécial de 
-          <para>. Si vous tentez de définir une icône personnalisée pour un dossier qui appartienne à l’un des groupes suivants de dossiers, <b>SetCustomIcon</b> renvoie une erreur :</para><list type="bullet"><item><para>dossiers par défaut (comme indiqué par le <see cref="T:Microsoft.Office.Interop.Outlook.OlDefaultFolders" /> énumération)</para></item>dossiers
-            <item><para>spéciaux (tels que répertoriés par le <see cref="T:Microsoft.Office.Interop.Outlook.OlSpecialFolders" /> énumération)</para></item>du
-            <item><para>dossier racine d’une boîte aux lettres Exchange</para></item><item><para>des dossiers publics Exchange</para></item><item><para>dossiers cachés</para></item></list><para>vous ne pouvez appeler <b>GetCustomIcon</b> à partir de code que s’exécute dans le processus Outlook. Un objet <b>StdPicture</b> ne peut être assemblée au-delà des frontières du processus. Si vous essayez d’appeler <b>GetCustomIcon</b> à partir du code out-of-process, une exception se produit. Pour plus d’informations, voir <a href="http://support.microsoft.com/kb/150034">un serveur d’automatisation ne peuvent pas transmettre un pointeur vers l’image implémentation l’objet IPictureDisp au-delà des frontières du processus</a></para>icône
-          <para>le dossier personnalisé qui fournit cette méthode ne conserve pas au-delà de l’exécution Session Outlook. Compléments doivent donc définir l’icône du dossier personnalisé chaque fois qu’Outlook démarre. </para><para>L’icône de dossier personnalisée n’apparaît pas dans d’autres clients Exchange tels que Microsoft Outlook Web Access, ni lorsqu’Outlook s’exécute sur un appareil Windows Mobile.</para><para /></remarks>
+        <remarks><para>Le <see cref="T:stdole.StdPicture" /> objet spécifié par <paramref name="Picture" /> doit avoir sa propriété <b>Type</b> égale à <b>PICTYPE_ICON</b> ou <b>PICTYPE_BITMAP</b>. La ressource image bitmap ou une icône peut avoir une taille maximale de 32 x 32. Icônes de 16 x 16 ou 24 h/24 également pris en charge et Microsoft Outlook capable de s’adapter une icône de 16 x 16 si Outlook est exécuté en mode élevé de points par pouce (PPP). Icônes d’autres formats provoquent <b>SetCustomIcon</b> renvoyer une erreur.</para>
+          <para>Vous pouvez définir une icône personnalisée pour un dossier de recherche et pour tous les dossiers qui ne représentent pas une valeur par défaut ou un dossier spécial. Si vous tentez de définir une icône personnalisée pour un dossier qui appartienne à l’un des groupes suivants de dossiers, <b>SetCustomIcon</b> renvoie une erreur :</para>
+          <list type="bullet">
+            <item>
+              <para>Dossiers par défaut (comme indiqué par le <see cref="T:Microsoft.Office.Interop.Outlook.OlDefaultFolders" /> énumération)</para>
+            </item>
+            <item>
+              <para>Dossiers spéciaux (tels que répertoriés par le <see cref="T:Microsoft.Office.Interop.Outlook.OlSpecialFolders" /> énumération)</para>
+            </item>
+            <item>
+              <para>Dossiers publics Exchange</para>
+            </item>
+            <item>
+              <para>Dossier racine d’une boîte aux lettres Exchange</para>
+            </item>
+            <item>
+              <para>Dossiers cachés</para>
+            </item>
+          </list>
+          <para>Vous pouvez uniquement appeler <b>GetCustomIcon</b> à partir de code que s’exécute dans le processus Outlook. Un objet <b>StdPicture</b> ne peut être assemblée au-delà des frontières du processus. Si vous essayez d’appeler <b>GetCustomIcon</b> à partir du code out-of-process, une exception se produit. Pour plus d’informations, voir <a href="http://support.microsoft.com/kb/150034">un serveur d’automatisation ne peuvent pas transmettre un pointeur vers l’image implémentation l’objet IPictureDisp au-delà des frontières du processus</a></para>
+          <para>L’icône de dossier personnalisée que cette méthode fournit n’existe plus une fois terminée la session Outlook en cours. Par conséquent, les compléments doivent définir cette icône à chaque démarrage d’Outlook.</para>
+          <para>L’icône de dossier personnalisée n’apparaît pas dans les autres clients Exchange tels qu’Outlook Web Access, ni lorsqu’Outlook s’exécute sur un appareil Windows Mobile.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowAsOutlookAB">
@@ -1095,14 +1090,12 @@ End Sub</code>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui spécifie si le dossier des éléments de contact sera affiché en tant que liste d’adresses dans le carnet d’adresses. Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>booléenne</b> (<b>bool</b> en c#) qui spécifie si le dossier des éléments de contact sera affiché en tant que liste d’adresses dans le carnet d’adresses. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si vous définissez la propriété <b>ShowAsOutlookAB</b> d’un dossier d’éléments de contact sur <b>False</b>, il ne sera pas disponible dans la liste déroulante sous Carnet d’adresses dans la boîte de dialogue Carnet d’adresses.</para>
+        <remarks><para>Si vous attribuez la valeur <b>ShowAsOutlookAB</b> à la propriété <b>False</b> d’un dossier d’éléments de contact, celui-ci ne sera pas disponible dans la liste déroulante sous Carnet d’adresses dans la boîte de dialogue Carnet d’adresses.</para>
           <para>
-            <b>ShowAsOutlookAB</b> ne gère pas les dossiers de boîte aux lettres d’un autre utilisateur Exchange, par exemple, un dossier Contacts partagé par un autre utilisateur. L’obtention ou la définition de cette propriété sur un tel dossier généreront pas les résultats escomptés.</para>
-          <para />
-        </remarks>
+            <b>ShowAsOutlookAB</b> ne gère pas les dossiers de boîte aux lettres d’un autre utilisateur Exchange, par exemple, un dossier Contacts partagé par un autre utilisateur. L’obtention ou la définition de cette propriété sur un dossier de ce type ne produit pas les résultats souhaités.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowItemCount">
@@ -1131,12 +1124,10 @@ End Sub</code>
         <ReturnType>Microsoft.Office.Interop.Outlook.OlShowItemCount</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Définit ou renvoie une constante dans la <see cref="T:Microsoft.Office.Interop.Outlook.OlShowItemCount" /> énumération qui indique s’il faut afficher le nombre de messages non lus dans le dossier ou le nombre total d’éléments dans le dossier dans le volet de Navigation. Lecture/écriture.</summary>
+        <summary>Définit ou renvoie une constante dans la <see cref="T:Microsoft.Office.Interop.Outlook.OlShowItemCount" /> énumération qui indique s’il faut afficher le nombre de messages non lus dans le dossier ou le nombre total d’éléments dans le dossier dans le volet de Navigation. Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>ShowItemCount</b> ne fonctionne pas avec les dossiers publics.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propriété <b>ShowItemCount</b> ne fonctionne pas avec les dossiers publics.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Store">
@@ -1164,10 +1155,8 @@ End Sub</code>
       <Docs>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Store" /> représentant le magasin qui contient le <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> objet. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cette propriété renvoie un objet <b>Store</b> sauf dans le cas où le <b>dossier</b> est un dossier partagé (renvoyé par <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.GetSharedDefaultFolder(Microsoft.Office.Interop.Outlook.Recipient,Microsoft.Office.Interop.Outlook.OlDefaultFolders)" />). Dans ce cas, un utilisateur a délégué l’accès à un dossier par défaut à un autre utilisateur. un appel à la <b>méthode Folder.Store</b> renvoie <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#).</para>
-          <para />
-        </remarks>
+        <remarks><para>Cette propriété renvoie un objet <b>Store</b> sauf dans le cas où le <b>dossier</b> est un dossier partagé (renvoyé par <see cref="M:Microsoft.Office.Interop.Outlook._NameSpace.GetSharedDefaultFolder(Microsoft.Office.Interop.Outlook.Recipient,Microsoft.Office.Interop.Outlook.OlDefaultFolders)" />). Dans ce cas, un utilisateur a délégué l’accès à un dossier par défaut à un autre utilisateur. un appel à la <b>méthode Folder.Store</b> renvoie <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StoreID">
@@ -1376,15 +1365,13 @@ End Sub</code>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) indiquant l’état d’affichage pour un dossier Web.  Lecture/écriture.</summary>
+        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) indiquant l’état d’affichage pour un dossier Web.  Lecture-écriture.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Renvoie <b>la valeur True</b> pour afficher la page Web spécifiée par le <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.WebViewURL" /> propriété.</para>
+        <remarks><para>Renvoie <b>la valeur True</b> pour afficher la page Web spécifiée par le <see cref="P:Microsoft.Office.Interop.Outlook.MAPIFolder.WebViewURL" /> propriété.</para>
           <para>Microsoft Outlook utilise le moteur de rendu de la version de Windows Internet Explorer est installé sur l’ordinateur client pour afficher la page web. Si Internet Explorer n’est pas installé sur l’ordinateur client, Outlook n’affichera pas la page web.</para>
-          <para>Cette propriété est toujours <b>False</b> si la valeur de la propriété <b>WebViewURL</b> est vide.</para>
-          <para>, Définition de la propriété <b>WebViewOn</b> sur <b>True</b> avant de définir la propriété <b>WebViewURL</b> pas affichera également la page d’accueil spécifiée dans la propriété <b>WebViewURL</b> .</para>
-          <para />
-        </remarks>
+          <para>Cette propriété prend toujours la valeur <b>False</b> si la valeur de la propriété <b>WebViewURL</b> est vide.</para>
+          <para>Par ailleurs, si vous affectez à la propriété <b>WebViewOn</b>, la valeur <b>True</b> avant de définir la propriété <b>WebViewURL</b>, la page d'accueil spécifiée dans la propriété <b>WebViewURL</b> ne s'affiche pas.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WebViewURL">

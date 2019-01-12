@@ -1,13 +1,5 @@
 <Type Name="OlkDateControlEvents_Event" FullName="Microsoft.Office.Interop.Outlook.OlkDateControlEvents_Event">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ce6fb2fb512a3d0e9f567eac67bcb059c48bf782" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20635038" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OlkDateControlEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e19ed8dedf00a18027f65e337ab8374d2c4047fe" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901591" /></Metadata><TypeSignature Language="C#" Value="public interface OlkDateControlEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OlkDateControlEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.OlkDateControlEvents_Event" />
   <TypeSignature Language="VB.NET" Value="Public Interface OlkDateControlEvents_Event" />
@@ -49,12 +41,11 @@
       </ReturnValue>
       <Docs>
         <summary>Se produit après modification des données du contrôle via l'interface utilisateur.</summary>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>BeforeUpdate</b> et <b>AfterUpdate</b> peuvent survenir chaque fois que les données dans le contrôle sont enregistrées à l’élément.  Voici la séquence d’événements impliquant <b>AfterUpdate</b> pour ce contrôle est la suivante :</para>
           <list type="number">
             <item>
-              <description>utilisateur Active le contrôle</description>
+              <description>L'utilisateur active le contrôle.</description>
             </item>
             <item>
               <description>
@@ -62,7 +53,7 @@
               </description>
             </item>
             <item>
-              <description>sont mise à jour des données du contrôle</description>
+              <description>Les données du contrôle sont mises à jour.</description>
             </item>
             <item>
               <description>
@@ -71,11 +62,10 @@
             </item>
             <item>
               <description>
-                <b>Exit</b>: utilisateur désactive le contrôle</description>
+                <b>Exit</b> : l'utilisateur désactive le contrôle.</description>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BeforeUpdate">
@@ -94,13 +84,12 @@
       </ReturnValue>
       <Docs>
         <summary>Se produit lorsque les données du contrôle sont modifiées via l'interface utilisateur et sont sur le point d'être enregistrées dans l'élément.</summary>
-        <remarks>
-          <para>L’annulation de cette propriété sera rétablir le contrôle à la valeur actuelle de la propriété et retourner le focus au contrôle.</para>
+        <remarks><para>L'annulation de cette propriété rétablit la valeur actuelle de la propriété du contrôle et réactive le contrôle.</para>
           <para>
             <b>BeforeUpdate</b> et <b>AfterUpdate</b> peuvent survenir chaque fois que les données dans le contrôle sont enregistrées à l’élément.  Voici la séquence d’événements impliquant <b>BeforeUpdate</b> pour ce contrôle est la suivante :</para>
           <list type="number">
             <item>
-              <description>utilisateur Active le contrôle</description>
+              <description>L'utilisateur active le contrôle.</description>
             </item>
             <item>
               <description>
@@ -108,7 +97,7 @@
               </description>
             </item>
             <item>
-              <description>sont mise à jour des données du contrôle</description>
+              <description>Les données du contrôle sont mises à jour.</description>
             </item>
             <item>
               <description>
@@ -117,11 +106,10 @@
             </item>
             <item>
               <description>
-                <b>Exit</b>: utilisateur désactive le contrôle</description>
+                <b>Exit</b> : l'utilisateur désactive le contrôle.</description>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Change">
@@ -254,10 +242,8 @@
       </ReturnValue>
       <Docs>
         <summary>Se produit lorsque l’utilisateur appuie sur une touche.</summary>
-        <remarks>
-          <para>L’état des touches de modification (MAJ, CTRL ou ALT) enfoncées pendant l’événement <b>KeyDown</b> est accessible via la <paramref name="Shift" /> paramètre.</para>
-          <para />
-        </remarks>
+        <remarks><para>L’état des touches de modification (MAJ, CTRL ou ALT) enfoncées pendant l’événement <b>KeyDown</b> est accessible via la <paramref name="Shift" /> paramètre.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyPress">
@@ -276,25 +262,23 @@
       </ReturnValue>
       <Docs>
         <summary>Se produit lorsque l’utilisateur appuie sur une touche ANSI.</summary>
-        <remarks>
-          <para>Une touche ANSI est celui qui génère un caractère de frappe lorsque l’utilisateur appuie dessus. L’événement <b>KeyPress</b> se produit lorsque l’utilisateur appuie sur une touche ANSI dans un formulaire en cours d’exécution pendant que le formulaire ou un contrôle a le focus. L’événement peut se produire avant ou après la publication de la clé.</para>
-          <para>L’événement <b>KeyPress</b> ne se produit pas dans les conditions suivantes :</para>
+        <remarks><para>Une touche ANSI est une touche qui génère un caractère de frappe lorsque l'utilisateur appuie dessus. L'événement <b>KeyPress</b> se produit lorsque l'utilisateur appuie sur une touche ANSI dans un formulaire en cours d'exécution alors que le formulaire ou un contrôle figurant dans ce formulaire est actif. L'événement peut se produire avant ou après le relâchement de la touche.</para>
+          <para>L'événement <b>KeyPress</b> ne se produit pas dans les conditions suivantes :</para>
           <list type="bullet">
             <item>
-              <para>En appuyant sur un onglet</para>
+              <para>Si la touche Tab est enfoncée.</para>
             </item>
             <item>
-              <para>En appuyant sur entrer</para>
+              <para>Si la touche Entrée est enfoncée.</para>
             </item>
             <item>
-              <para>en appuyant sur une touche de direction</para>
+              <para>Si une touche de direction est enfoncée.</para>
             </item>
             <item>
-              <para>lorsqu’une frappe le focus se déplace d’un contrôle à un autre.</para>
+              <para>lorsque la frappe déplace le focus d’un contrôle à un autre.</para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyUp">
@@ -313,10 +297,8 @@
       </ReturnValue>
       <Docs>
         <summary>Se produit lorsque l’utilisateur relâche une touche.</summary>
-        <remarks>
-          <para>L’état des touches de modification (MAJ, CTRL ou ALT) enfoncées pendant l’événement <b>KeyUp</b> est accessible via la <paramref name="Shift" /> paramètre.</para>
-          <para />
-        </remarks>
+        <remarks><para>L’état des touches de modification (MAJ, CTRL ou ALT) enfoncées pendant l’événement <b>KeyUp</b> est accessible via la <paramref name="Shift" /> paramètre.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseDown">
@@ -354,10 +336,8 @@
       </ReturnValue>
       <Docs>
         <summary>Se produit après enregistrement d’un mouvement de la souris sur le contrôle.</summary>
-        <remarks>
-          <para>La touche ALT déclenche l’événement <b>MouseMove</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Le fait d’appuyer sur la touche Alt déclenche l’événement <b>MouseMove</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MouseUp">

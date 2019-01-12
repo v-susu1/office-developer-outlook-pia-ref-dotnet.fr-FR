@@ -1,13 +1,5 @@
 <Type Name="_Categories" FullName="Microsoft.Office.Interop.Outlook._Categories">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ea42ac39cad667a54dbf4c84adf7f13ad84a7dd4" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633683" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _Categories : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ea42ac39cad667a54dbf4c84adf7f13ad84a7dd4" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27902130" /></Metadata><TypeSignature Language="C#" Value="public interface _Categories : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Categories implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._Categories" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Categories&#xA;Implements IEnumerable" />
@@ -179,10 +171,8 @@
         <param name="Index">Soit une valeur d' <b>entier</b> (<b>int</b> en c#) représentant le numéro d’index de l’objet, soit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente la <see cref="P:Microsoft.Office.Interop.Outlook._Category.Name" /> ou <see cref="P:Microsoft.Office.Interop.Outlook._Category.CategoryID" /> valeur de la propriété d’un objet dans la collection.</param>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Category" /> objet de la collection.</summary>
         <value>Objet <b>Category</b> qui représente l’objet spécifié.</value>
-        <remarks>
-          <para>Si le nom d’une catégorie est spécifié dans <paramref name="Index" />, cette méthode retourne le premier objet <b>Category</b> qui correspond à la valeur spécifiée. Si une correspondance est introuvable, la méthode renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#)</para>
-          <para />
-        </remarks>
+        <remarks><para>Si le nom d’une catégorie est spécifié dans <paramref name="Index" />, cette méthode retourne le premier objet <b>Category</b> qui correspond à la valeur spécifiée. Si une correspondance est introuvable, la méthode renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#)</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -238,10 +228,8 @@
       <Docs>
         <param name="Index">Soit une valeur d' <b>entier</b> (<b>int</b> en c#) représentant le numéro d’index de l’objet, soit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente la <see cref="P:Microsoft.Office.Interop.Outlook._Category.Name" /> ou <see cref="P:Microsoft.Office.Interop.Outlook._Category.CategoryID" /> valeur de la propriété d’un objet dans la collection.</param>
         <summary>Supprime un objet de la collection.</summary>
-        <remarks>
-          <para>Si le nom d’une catégorie est spécifié dans <paramref name="Index" />, cette méthode supprime le premier objet <b>Category</b> qui correspond à la valeur spécifiée.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si le nom d’une catégorie est spécifié dans <paramref name="Index" />, cette méthode supprime le premier objet <b>Category</b> qui correspond à la valeur spécifiée.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -269,16 +257,14 @@
       <Docs>
         <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
           <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
           <code>Outlook.NameSpace objSession = Application.Session;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
