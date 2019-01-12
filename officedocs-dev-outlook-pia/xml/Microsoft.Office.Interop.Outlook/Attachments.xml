@@ -1,13 +1,5 @@
 <Type Name="Attachments" FullName="Microsoft.Office.Interop.Outlook.Attachments">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2b8b26dcc7340ad097dbcab31fa6b4722b3b19e2" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20633884" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Attachments : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6f34c001cfd4c3278473ca2d66f73650667d3c4b" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27898731" /></Metadata><TypeSignature Language="C#" Value="public interface Attachments : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Attachments implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.Attachments" />
   <TypeSignature Language="VB.NET" Value="Public Interface Attachments&#xA;Implements IEnumerable" />
@@ -30,28 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="8c7c4-101">Contient un ensemble de <see cref="T:Microsoft.Office.Interop.Outlook.Attachment" /> objets qui représentent les pièces jointes d’un élément Outlook.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="8c7c4-101">Contains a set of <see cref="T:Microsoft.Office.Interop.Outlook.Attachment" />  objects that represent the attachments in an Outlook item.</span>
-      </span>
-    </summary>
-    <remarks>
-      <span data-ttu-id="8c7c4-102">
-        <para>Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook.Attachments.Item(System.Object)" /> propriété permet de renvoyer la collection <b>Attachments</b> de tout élément Outlook (à l’exception des notes).</para>
-        <para>Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook.Attachments.Add(System.Object,System.Object,System.Object,System.Object)" /> pour ajouter une pièce jointe à un élément.</para>
-        <para>Pour garantir des résultats cohérents, enregistrez toujours un élément avant d’ajouter ou supprimer des objets dans la collection <b>Attachments</b> de l’élément.</para>
-        <para />
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="8c7c4-102">
-          <para>Use the <see cref="P:Microsoft.Office.Interop.Outlook.Attachments.Item(System.Object)" />  property to return the <b>Attachments</b> collection for any Outlook item (except notes).</para>
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Outlook.Attachments.Add(System.Object,System.Object,System.Object,System.Object)" />  method to add an attachment to an item.</para>
-          <para>To ensure consistent results, always save an item before adding or removing objects in the <b>Attachments</b> collection of the item.</para>
-          <para />
-        </span>
-      </span>
-    </remarks>
+    <summary><span data-ttu-id="1e95b-101">Contient un ensemble de <see cref="T:Microsoft.Office.Interop.Outlook.Attachment" /> objets qui représentent les pièces jointes d’un élément Outlook.</span><span class="sxs-lookup"><span data-stu-id="1e95b-101">Contains a set of <see cref="T:Microsoft.Office.Interop.Outlook.Attachment" />  objects that represent the attachments in an Outlook item.</span></span></summary>
+    <remarks><para><span data-ttu-id="1e95b-102">Utiliser le <see cref="P:Microsoft.Office.Interop.Outlook.Attachments.Item(System.Object)" /> propriété permet de renvoyer la collection <b>Attachments</b> de tout élément Outlook (à l’exception des notes).</span><span class="sxs-lookup"><span data-stu-id="1e95b-102">Use the <see cref="P:Microsoft.Office.Interop.Outlook.Attachments.Item(System.Object)" />  property to return the <b>Attachments</b> collection for any Outlook item (except notes).</span></span></para>
+      <para><span data-ttu-id="1e95b-103">Utiliser le <see cref="M:Microsoft.Office.Interop.Outlook.Attachments.Add(System.Object,System.Object,System.Object,System.Object)" /> pour ajouter une pièce jointe à un élément.</span><span class="sxs-lookup"><span data-stu-id="1e95b-103">Use the <see cref="M:Microsoft.Office.Interop.Outlook.Attachments.Add(System.Object,System.Object,System.Object,System.Object)" />  method to add an attachment to an item.</span></span></para>
+      <para><span data-ttu-id="1e95b-104">Pour garantir des résultats cohérents, vous devez toujours enregistrer un élément avant d’ajouter ou supprimer des objets dans la collection <b>Attachments</b> de l’élément.</span><span class="sxs-lookup"><span data-stu-id="1e95b-104">To ensure consistent results, always save an item before adding or removing objects in the <b>Attachments</b> collection of the item.</span></span></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -79,74 +54,14 @@
         <Parameter Name="DisplayName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Source">
-          <span data-ttu-id="8c7c4-p101">Source de la pièce jointe. Il peut s’agir d’un fichier (représenté par le chemin d’accès au système de fichiers avec un nom de fichier) ou d’un élément Outlook qui constitue la pièce jointe.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c7c4-p101">The source of the attachment. This can be a file (represented by the full file system path with a file name) or an Outlook item that constitutes the attachment.</span>
-          </span>
-        </param>
-        <param name="Type">
-          <span data-ttu-id="8c7c4-105">Le type de la pièce jointe.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c7c4-105">The type of the attachment.</span>
-          </span>
-          <span data-ttu-id="8c7c4-106">Peut être une de le <see cref="T:Microsoft.Office.Interop.Outlook.OlAttachmentType" /> constantes.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c7c4-106">Can be one of the <see cref="T:Microsoft.Office.Interop.Outlook.OlAttachmentType" /> constants.</span>
-          </span>
-        </param>
-        <param name="Position">
-          <span data-ttu-id="8c7c4-107">Ce paramètre s’applique uniquement à vos messages électroniques à l’aide de Microsoft Outlook Rich Text format : il s’agit de l’emplacement où la pièce jointe doit être placée dans le corps du texte du message.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c7c4-107">This parameter applies only to e-mail messages using Microsoft Outlook Rich Text format: it is the position where the attachment should be placed within the body text of the message.</span>
-          </span>
-          <span data-ttu-id="8c7c4-108">Une valeur de 1 pour le <paramref name="Position" /> paramètre spécifie que la pièce jointe doit être positionnée au début du corps du message.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c7c4-108">A value of 1 for the <paramref name="Position" /> parameter specifies that the attachment should be positioned at the beginning of the message body.</span>
-          </span>
-          <span data-ttu-id="8c7c4-109">Une valeur « n » supérieure au nombre de caractères dans le corps de l’élément de courrier électronique indique que la pièce jointe doit être placée à la fin.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c7c4-109">A value 'n' greater than the number of characters in the body of the e-mail item specifies that the attachment should be placed at the end.</span>
-          </span>
-          <span data-ttu-id="8c7c4-110">La valeur 0 rend la pièce jointe.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c7c4-110">A value of 0 makes the attachment hidden.</span>
-          </span>
-        </param>
-        <param name="DisplayName">
-          <span data-ttu-id="8c7c4-111">Ce paramètre s’applique uniquement si l’élément de messagerie est Rich Text format et de Type valeur <b>olByValue</b>: le nom est affiché dans un objet <b>Inspector</b> pour la pièce jointe, ou lorsque vous affichez les propriétés de la pièce jointe.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c7c4-111">This parameter applies only if the mail item is in Rich Text format and Type is set to <b>olByValue</b>: the name is displayed in an <b>Inspector</b> object for the attachment or when viewing the properties of the attachment.</span>
-          </span>
-          <span data-ttu-id="8c7c4-112">Si l’élément de messagerie est au format texte brut ou HTML, puis la pièce jointe est affichée en utilisant le nom de fichier dans le <paramref name="Source" /> paramètre.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c7c4-112">If the mail item is in Plain Text or HTML format, then the attachment is displayed using the file name in the <paramref name="Source" /> parameter.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="8c7c4-113">Crée une pièce jointe dans le <see cref="T:Microsoft.Office.Interop.Outlook.Attachments" /> collection.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c7c4-113">Creates a new attachment in the <see cref="T:Microsoft.Office.Interop.Outlook.Attachments" />  collection.</span>
-          </span>
-        </summary>
-        <returns>
-          <span data-ttu-id="8c7c4-114">Un <see cref="T:Microsoft.Office.Interop.Outlook.Attachment" /> object qui représente la nouvelle pièce jointe.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c7c4-114">An  <see cref="T:Microsoft.Office.Interop.Outlook.Attachment" />   object that represents the new attachment.</span>
-          </span>
-        </returns>
-        <remarks>
-          <span data-ttu-id="8c7c4-115">
-            <para>Lorsqu’une <b>pièce jointe</b> est ajouté à la collection <b>Attachments</b> d’un élément, la propriété <b>Type</b> de la <b>pièce jointe</b> renverra toujours <b>olOLE</b> (6) jusqu'à ce que l’élément est enregistré. Pour garantir des résultats cohérents, vous devez toujours enregistrer un élément avant d’ajouter ou supprimer des objets dans la collection <b>Attachments</b> .</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c7c4-115">
-              <para>When an <b>Attachment</b> is added to the <b>Attachments</b> collection of an item, the <b>Type</b> property of the <b>Attachment</b> will always return <b>olOLE</b> (6) until the item is saved. To ensure consistent results, always save an item before adding or removing objects in the <b>Attachments</b> collection.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <param name="Source"><span data-ttu-id="1e95b-p101">Source de la pièce jointe. Il peut s’agir d’un fichier (représenté par le chemin d’accès au système de fichiers avec un nom de fichier) ou d’un élément Outlook qui constitue la pièce jointe.</span><span class="sxs-lookup"><span data-stu-id="1e95b-p101">The source of the attachment. This can be a file (represented by the full file system path with a file name) or an Outlook item that constitutes the attachment.</span></span></param>
+        <param name="Type"><span data-ttu-id="1e95b-107">Le type de la pièce jointe.</span><span class="sxs-lookup"><span data-stu-id="1e95b-107">The type of the attachment.</span></span> <span data-ttu-id="1e95b-108">Peut être une de le <see cref="T:Microsoft.Office.Interop.Outlook.OlAttachmentType" /> constantes.</span><span class="sxs-lookup"><span data-stu-id="1e95b-108">Can be one of the <see cref="T:Microsoft.Office.Interop.Outlook.OlAttachmentType" /> constants.</span></span></param>
+        <param name="Position"><span data-ttu-id="1e95b-109">Ce paramètre s’applique uniquement à vos messages électroniques à l’aide de Microsoft Outlook Rich Text format : il s’agit de l’emplacement où la pièce jointe doit être placée dans le corps du texte du message.</span><span class="sxs-lookup"><span data-stu-id="1e95b-109">This parameter applies only to e-mail messages using Microsoft Outlook Rich Text format: it is the position where the attachment should be placed within the body text of the message.</span></span> <span data-ttu-id="1e95b-110">Une valeur de 1 pour le <paramref name="Position" /> paramètre spécifie que la pièce jointe doit être positionnée au début du corps du message.</span><span class="sxs-lookup"><span data-stu-id="1e95b-110">A value of 1 for the <paramref name="Position" /> parameter specifies that the attachment should be positioned at the beginning of the message body.</span></span> <span data-ttu-id="1e95b-111">Une valeur « n » supérieure au nombre de caractères dans le corps de l’élément de courrier électronique indique que la pièce jointe doit être placée à la fin.</span><span class="sxs-lookup"><span data-stu-id="1e95b-111">A value 'n' greater than the number of characters in the body of the e-mail item specifies that the attachment should be placed at the end.</span></span> <span data-ttu-id="1e95b-112">La valeur 0 rend la pièce jointe.</span><span class="sxs-lookup"><span data-stu-id="1e95b-112">A value of 0 makes the attachment hidden.</span></span></param>
+        <param name="DisplayName"><span data-ttu-id="1e95b-113">Ce paramètre s’applique uniquement si l’élément de messagerie est Rich Text format et de Type valeur <b>olByValue</b>: le nom est affiché dans un objet <b>Inspector</b> pour la pièce jointe, ou lorsque vous affichez les propriétés de la pièce jointe.</span><span class="sxs-lookup"><span data-stu-id="1e95b-113">This parameter applies only if the mail item is in Rich Text format and Type is set to <b>olByValue</b>: the name is displayed in an <b>Inspector</b> object for the attachment or when viewing the properties of the attachment.</span></span> <span data-ttu-id="1e95b-114">Si l’élément de messagerie est au format texte brut ou HTML, puis la pièce jointe est affichée en utilisant le nom de fichier dans le <paramref name="Source" /> paramètre.</span><span class="sxs-lookup"><span data-stu-id="1e95b-114">If the mail item is in Plain Text or HTML format, then the attachment is displayed using the file name in the <paramref name="Source" /> parameter.</span></span></param>
+        <summary><span data-ttu-id="1e95b-115">Crée une pièce jointe dans le <see cref="T:Microsoft.Office.Interop.Outlook.Attachments" /> collection.</span><span class="sxs-lookup"><span data-stu-id="1e95b-115">Creates a new attachment in the <see cref="T:Microsoft.Office.Interop.Outlook.Attachments" />  collection.</span></span></summary>
+        <returns><span data-ttu-id="1e95b-116">Un <see cref="T:Microsoft.Office.Interop.Outlook.Attachment" /> object qui représente la nouvelle pièce jointe.</span><span class="sxs-lookup"><span data-stu-id="1e95b-116">An  <see cref="T:Microsoft.Office.Interop.Outlook.Attachment" />   object that represents the new attachment.</span></span></returns>
+        <remarks><para><span data-ttu-id="1e95b-p105">Lorsqu’une <b>pièce jointe</b> est ajoutée à la collection <b>Attachments</b> d’un élément, la propriété <b>Type</b> de la <b>pièce jointe</b> renvoie toujours <b>olOLE</b> (6) jusqu’à ce que l’élément soit enregistré. Pour obtenir des résultats cohérents, enregistrez toujours un élément avant d’ajouter ou de supprimer des objets de la collection <b>Attachments</b>.</span><span class="sxs-lookup"><span data-stu-id="1e95b-p105">When an <b>Attachment</b> is added to the <b>Attachments</b> collection of an item, the <b>Type</b> property of the <b>Attachment</b> will always return <b>olOLE</b> (6) until the item is saved. To ensure consistent results, always save an item before adding or removing objects in the <b>Attachments</b> collection.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -172,16 +87,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="8c7c4-116">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> object qui représente l’application Outlook de l’objet parent.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c7c4-116">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object that represents the parent Outlook application for the  object.</span>
-          </span>
-          <span data-ttu-id="8c7c4-117">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c7c4-117">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="1e95b-119">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> object qui représente l’application Outlook de l’objet parent.</span><span class="sxs-lookup"><span data-stu-id="1e95b-119">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object that represents the parent Outlook application for the  object.</span></span> <span data-ttu-id="1e95b-120">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="1e95b-120">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -209,16 +115,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="8c7c4-118">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constante indiquant la classe de l’objet.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c7c4-118">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constant indicating the object's class.</span>
-          </span>
-          <span data-ttu-id="8c7c4-119">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c7c4-119">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="1e95b-121">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constante indiquant la classe de l’objet.</span><span class="sxs-lookup"><span data-stu-id="1e95b-121">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constant indicating the object's class.</span></span> <span data-ttu-id="1e95b-122">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="1e95b-122">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -246,16 +143,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="8c7c4-120">Renvoie une valeur d' <b>entier</b> (<b>int</b> en c#) indiquant le nombre d’objets dans la collection spécifiée.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c7c4-120">Returns an <b>Integer</b> (<b>int</b> in C#) value indicating the count of objects in the specified collection.</span>
-          </span>
-          <span data-ttu-id="8c7c4-121">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c7c4-121">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="1e95b-123">Renvoie une valeur d' <b>entier</b> (<b>int</b> en c#) indiquant le nombre d’objets dans la collection spécifiée.</span><span class="sxs-lookup"><span data-stu-id="1e95b-123">Returns an <b>Integer</b> (<b>int</b> in C#) value indicating the count of objects in the specified collection.</span></span> <span data-ttu-id="1e95b-124">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="1e95b-124">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -286,24 +174,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="8c7c4-122">Numéro d'index de l'objet ou valeur utilisée pour établir une correspondance avec la propriété par défaut d'un objet de la collection.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c7c4-122">Either the index number of the object, or a value used to match the default property of an object in the collection.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="8c7c4-123">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Attachment" /> objet de la collection.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c7c4-123">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Attachment" /> object from the collection.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="8c7c4-124">Objet <b>Attachment</b> qui représente l'objet spécifié.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c7c4-124">An <b>Attachment</b> object that represents the specified object.</span>
-          </span>
-        </value>
+        <param name="Index"><span data-ttu-id="1e95b-125">Numéro d'index de l'objet ou valeur utilisée pour établir une correspondance avec la propriété par défaut d'un objet de la collection.</span><span class="sxs-lookup"><span data-stu-id="1e95b-125">Either the index number of the object, or a value used to match the default property of an object in the collection.</span></span></param>
+        <summary><span data-ttu-id="1e95b-126">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Attachment" /> objet de la collection.</span><span class="sxs-lookup"><span data-stu-id="1e95b-126">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Attachment" /> object from the collection.</span></span></summary>
+        <value><span data-ttu-id="1e95b-127">Objet <b>Attachment</b> qui représente l'objet spécifié.</span><span class="sxs-lookup"><span data-stu-id="1e95b-127">An <b>Attachment</b> object that represents the specified object.</span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -330,12 +203,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="8c7c4-p108">Renvoie la valeur de type <b>Object</b> parent de l’objet spécifié. En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c7c4-p108">Returns the parent <b>Object</b> of the specified object. Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="1e95b-p109">Renvoie la valeur de type <b>Object</b> parent de l’objet spécifié. En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="1e95b-p109">Returns the parent <b>Object</b> of the specified object. Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -363,18 +231,8 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="8c7c4-127">Valeur d’index à base 1 de l’objet dans la collection.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c7c4-127">The 1-based index value of the object within the collection.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="8c7c4-128">Supprime un objet de la collection.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c7c4-128">Removes an object from the collection.</span>
-          </span>
-        </summary>
+        <param name="Index"><span data-ttu-id="1e95b-130">Valeur d’index à base 1 de l’objet dans la collection.</span><span class="sxs-lookup"><span data-stu-id="1e95b-130">The 1-based index value of the object within the collection.</span></span></param>
+        <summary><span data-ttu-id="1e95b-131">Supprime un objet de la collection.</span><span class="sxs-lookup"><span data-stu-id="1e95b-131">Removes an object from the collection.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -401,41 +259,16 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="8c7c4-129">Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c7c4-129">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  object for the current session.</span>
-          </span>
-          <span data-ttu-id="8c7c4-130">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c7c4-130">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="1e95b-132">Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active.</span><span class="sxs-lookup"><span data-stu-id="1e95b-132">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  object for the current session.</span></span> <span data-ttu-id="1e95b-133">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="1e95b-133">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="8c7c4-131">
-            <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
-            <code>Dim objNamespace As Outlook.NameSpace = _
+        <remarks><para><span data-ttu-id="1e95b-134">La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active.</span><span class="sxs-lookup"><span data-stu-id="1e95b-134">The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session.</span></span> <span data-ttu-id="1e95b-135">Les deux membres ont la même fonction.</span><span class="sxs-lookup"><span data-stu-id="1e95b-135">Both members serve the same purpose.</span></span> <span data-ttu-id="1e95b-136">Par exemple, les paires d’instructions suivantes effectuent la même fonction :</span><span class="sxs-lookup"><span data-stu-id="1e95b-136">For example, the following pairs of statements perform the same function:</span></span></para>
+          <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
-            <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
-            <code>Outlook.NameSpace objNamespace = 
+          <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
+          <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
-            <code>Outlook.NameSpace objSession = Application.Session;</code>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="8c7c4-131">
-              <para>The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session. Both members serve the same purpose. For example, the following pairs of statements perform the same function:</para>
-              <code>Dim objNamespace As Outlook.NameSpace = _
-    Application.GetNamespace("MAPI")</code>
-              <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
-              <code>Outlook.NameSpace objNamespace = 
-    Application.GetNamespace("MAPI");</code>
-              <code>Outlook.NameSpace objSession = Application.Session;</code>
-              <para />
-            </span>
-          </span>
-        </remarks>
+          <code>Outlook.NameSpace objSession = Application.Session;</code>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
