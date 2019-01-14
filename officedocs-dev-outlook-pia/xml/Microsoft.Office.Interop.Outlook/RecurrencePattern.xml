@@ -1,13 +1,5 @@
 <Type Name="RecurrencePattern" FullName="Microsoft.Office.Interop.Outlook.RecurrencePattern">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f0d4b4e4bfa2975577306ca466d47c09c5f4fad3" />
-    <Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="fr-FR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20634283" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface RecurrencePattern" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c7f2e8222b642280c67d4061aabd05caa9199818" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27896785" /></Metadata><TypeSignature Language="C#" Value="public interface RecurrencePattern" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract RecurrencePattern" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" />
   <TypeSignature Language="VB.NET" Value="Public Interface RecurrencePattern" />
@@ -26,124 +18,76 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="be95e-101">Représente le schéma d’incidence des rendez-vous périodiques et des tâches pour le <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> et <see cref="T:Microsoft.Office.Interop.Outlook.TaskItem" /> objet.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="be95e-101">Represents the pattern of incidence of recurring appointments and tasks for the associated <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />  and <see cref="T:Microsoft.Office.Interop.Outlook.TaskItem" />  object.</span>
-      </span>
-    </summary>
-    <remarks>
-      <span data-ttu-id="be95e-102">
-        <para>Utilisez la méthode <b>GetRecurrencePattern</b> pour renvoyer l’objet <b>RecurrencePattern</b> associé à un objet <b>AppointmentItem</b> ou <b>TaskItem</b> .</para>
-        <para>Appel <b>GetRecurrencePattern</b> ou <b>ClearRecurrencePattern</b> a pour effet secondaire de la définition de la propriété <b>IsRecurring</b> de l’élément en conséquence. Cette propriété peut être utilisée pour le filtrage efficace de le <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> objet.</para>
-        <para>Le type de périodicité est indiqué par le <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.RecurrenceType" /> propriété. La propriété <b>RecurrenceType</b> est la première propriété, vous devez définir.</para>
-        <para>Les propriétés suivantes sont valides pour toutes les périodicités : <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.EndTime" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Occurrences" />, <b>StartDate</b>, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.StartTime" />, ou un <b>Type de</b>.</para>
-        <para>Le tableau suivant présente les propriétés qui sont valides pour chaque type de périodicité. Une erreur se produit si l’élément est enregistré et la propriété est nulle ou contient une valeur non valide. Les périodicités mensuelles et annuelles ne sont valides que pour un seul jour. Les périodicités hebdomadaires ne sont valides que l' <b>ou</b> de le <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.DayOfWeekMask" /> .</para>
-        <list type="table">
-          <item>
-            <description>
-              <b>olRecursDaily</b>
-            </description>
-            <description>
-              <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Duration" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.EndTime" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Interval" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.NoEndDate" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Occurrences" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternStartDate" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternEndDate" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.StartTime" /></description>
-          </item>
-          <item>
-            <description>
-              <b>olRecursWeekly</b>
-            </description>
-            <description>
-              <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.DayOfWeekMask" />, <b>durée</b>, <b>EndTime </b>, <b>Intervalle</b>, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></description>
-          </item>
-          <item>
-            <description>
-              <b>olRecursMonthly</b>
-            </description>
-            <description>
-              <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.DayOfMonth" />, <b>durée</b>, <b>EndTime</b>, <b>intervalle</b>, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></description>
-          </item>
-          <item>
-            <description>
-              <b>olRecursMonthNth</b>
-            </description>
-            <description>
-              <b>DayOfWeekMask </b>, <b>Durée</b>, <b>l’heure de fin</b>, <b>intervalle</b>, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Instance" />, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></description>
-          </item>
-          <item>
-            <description>
-              <b> Fait</b>
-            </description>
-            <description>
-              <b>DayOfMonth</b>, <b>la durée</b>, <b>l’heure de fin</b>, <b>intervalle</b>, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.MonthOfYear" />, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b> StartTime</b></description>
-          </item>
-          <item>
-            <description>
-              <b>olRecursYearNth</b>
-            </description>
-            <description>
-              <b>DayOfWeekMask</b>, <b>durée</b>, <b>l’heure de fin</b>, <b>intervalle</b>, <b>Instance</b>, <b>NoEndDate</b>, <b>Occurrences</b>, <b> PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></description>
-          </item>
-        </list>
-        <para>lorsque vous travaillez avec des éléments de rendez-vous périodiques, vous doit libérer les références préalables, obtenir des références de nouveau à l’élément de rendez-vous périodiques avant de vous accédez ou modifiez l’élément et libérer les références dès que vous avez terminé et que vous avez enregistré les modifications. Cela s’applique à l’abonnement <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> objet et tous <see cref="T:Microsoft.Office.Interop.Outlook.Exception" /> ou <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> objet. Pour libérer une référence dans Visual Basic, définissez existant de cet objet sur <b>Nothing</b>. En c#, libérer explicitement la mémoire pour cet objet. </para>
-        <para>Notez que même après avoir libérer la référence et tenter d’obtenir une référence, s’il existe toujours une référence active, organisée par un autre complément ou Outlook, à un des objets ci-dessus, votre nouvelle référence pointe toujours vers une copie obsolète de la objet. Par conséquent, il est important que vous relâchiez vos références dès que vous avez terminé avec le rendez-vous périodique.</para>
-        <para />
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="be95e-102">
-          <para>Use the <b>GetRecurrencePattern</b>  method to return the <b>RecurrencePattern</b> object associated with an <b>AppointmentItem</b> or <b>TaskItem</b> object.</para>
-          <para>Calling <b>GetRecurrencePattern</b> or <b>ClearRecurrencePattern</b>  has the side effect of setting the <b>IsRecurring</b>  property of the item accordingly. This property can be used as required for efficient filtering of the <see cref="T:Microsoft.Office.Interop.Outlook.Items" />  object.</para>
-          <para>The type of recurrence pattern is indicated by the <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.RecurrenceType" />  property. The <b>RecurrenceType</b> property is the first property you should set.</para>
-          <para>The following properties are valid for all recurrence patterns: <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.EndTime" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Occurrences" />, <b>StartDate</b>, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.StartTime" />, or <b>Type</b>.</para>
-          <para>The following table shows the properties that are valid for the different recurrence types. An error occurs if the item is saved and the property is null or contains an invalid value. Monthly and yearly patterns are only valid for a single day. Weekly patterns are only valid as the <b>Or</b> of the <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.DayOfWeekMask" /> .</para>
-          <list type="table">
-            <item>
-              <description>
-                <b>olRecursDaily</b>
-              </description>
-              <description>
-                <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Duration" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.EndTime" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Interval" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.NoEndDate" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Occurrences" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternStartDate" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternEndDate" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.StartTime" /></description>
-            </item>
-            <item>
-              <description>
-                <b>olRecursWeekly</b>
-              </description>
-              <description>
-                <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.DayOfWeekMask" />, <b>Duration</b>, <b>EndTime</b>, <b>Interval</b>, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></description>
-            </item>
-            <item>
-              <description>
-                <b>olRecursMonthly</b>
-              </description>
-              <description>
-                <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.DayOfMonth" />, <b>Duration</b>, <b>EndTime</b>, <b>Interval</b>, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></description>
-            </item>
-            <item>
-              <description>
-                <b>olRecursMonthNth</b>
-              </description>
-              <description>
-                <b>DayOfWeekMask</b>, <b>Duration</b>, <b>EndTime</b>, <b>Interval</b>, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Instance" />, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></description>
-            </item>
-            <item>
-              <description>
-                <b>olRecursYearly</b>
-              </description>
-              <description>
-                <b>DayOfMonth</b>, <b>Duration</b>, <b>EndTime</b>, <b>Interval</b>, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.MonthOfYear" />, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></description>
-            </item>
-            <item>
-              <description>
-                <b>olRecursYearNth</b>
-              </description>
-              <description>
-                <b>DayOfWeekMask</b>, <b>Duration</b>, <b>EndTime</b>, <b>Interval</b>, <b>Instance</b>, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></description>
-            </item>
-          </list>
-          <para>When you work with recurring appointment items, you should release any prior references, obtain new references to the recurring appointment item before you access or modify the item, and release these references as soon as you are finished and have saved the changes. This practice applies to the recurring <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> object, and any <see cref="T:Microsoft.Office.Interop.Outlook.Exception" /> or <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> object. To release a reference in Visual Basic, set that existing object to <b>Nothing</b>. In C#, explicitly release the memory for that object. </para>
-          <para>Note that even after you release your reference and attempt to obtain a new reference, if there is still an active reference, held by another add-in or Outlook, to one of the above objects, your new reference will still point to an out-of-date copy of the object. Therefore, it is important that you release your references as soon as you are finished with the recurring appointment.</para>
-          <para />
-        </span>
-      </span>
-    </remarks>
+    <summary><span data-ttu-id="6de86-101">Représente le schéma d’incidence des rendez-vous périodiques et des tâches pour le <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> et <see cref="T:Microsoft.Office.Interop.Outlook.TaskItem" /> objet.</span><span class="sxs-lookup"><span data-stu-id="6de86-101">Represents the pattern of incidence of recurring appointments and tasks for the associated <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />  and <see cref="T:Microsoft.Office.Interop.Outlook.TaskItem" />  object.</span></span></summary>
+    <remarks><para><span data-ttu-id="6de86-102">Utilisez la méthode <b>GetRecurrencePattern</b> pour renvoyer l’objet <b>RecurrencePattern</b> associé à un objet <b>AppointmentItem</b> ou <b>TaskItem</b> .</span><span class="sxs-lookup"><span data-stu-id="6de86-102">Use the <b>GetRecurrencePattern</b>  method to return the <b>RecurrencePattern</b> object associated with an <b>AppointmentItem</b> or <b>TaskItem</b> object.</span></span></para>
+      <para><span data-ttu-id="6de86-103">L’appel de la <b>méthode GetRecurrencePattern</b> ou <b>ClearRecurrencePattern</b> a pour effet secondaire de la définition de la propriété <b>IsRecurring</b> de l’élément en conséquence.</span><span class="sxs-lookup"><span data-stu-id="6de86-103">Calling <b>GetRecurrencePattern</b> or <b>ClearRecurrencePattern</b>  has the side effect of setting the <b>IsRecurring</b>  property of the item accordingly.</span></span> <span data-ttu-id="6de86-104">Cette propriété peut être utilisée pour le filtrage efficace de le <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> objet.</span><span class="sxs-lookup"><span data-stu-id="6de86-104">This property can be used as required for efficient filtering of the <see cref="T:Microsoft.Office.Interop.Outlook.Items" />  object.</span></span></para>
+      <para><span data-ttu-id="6de86-105">Le type de périodicité est indiqué par le <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.RecurrenceType" /> propriété.</span><span class="sxs-lookup"><span data-stu-id="6de86-105">The type of recurrence pattern is indicated by the <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.RecurrenceType" />  property.</span></span> <span data-ttu-id="6de86-106">La propriété <b>RecurrenceType</b> est la première propriété, que vous devez définir.</span><span class="sxs-lookup"><span data-stu-id="6de86-106">The <b>RecurrenceType</b> property is the first property you should set.</span></span></para>
+      <para><span data-ttu-id="6de86-107">Les propriétés suivantes sont valides pour toutes les périodicités : <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.EndTime" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Occurrences" />, <b>StartDate</b>, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.StartTime" />, ou un <b>Type</b>.</span><span class="sxs-lookup"><span data-stu-id="6de86-107">The following properties are valid for all recurrence patterns: <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.EndTime" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Occurrences" />, <b>StartDate</b>, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.StartTime" />, or <b>Type</b>.</span></span></para>
+      <para><span data-ttu-id="6de86-108">Le tableau suivant présente les propriétés qui sont valides pour chaque type de périodicité.</span><span class="sxs-lookup"><span data-stu-id="6de86-108">The following table shows the properties that are valid for the different recurrence types.</span></span> <span data-ttu-id="6de86-109">Une erreur se produit si l’élément est enregistré et la propriété est nulle ou contient une valeur non valide.</span><span class="sxs-lookup"><span data-stu-id="6de86-109">An error occurs if the item is saved and the property is null or contains an invalid value.</span></span> <span data-ttu-id="6de86-110">Les périodicités mensuelles et annuelles ne sont valides que pour un seul jour.</span><span class="sxs-lookup"><span data-stu-id="6de86-110">Monthly and yearly patterns are only valid for a single day.</span></span> <span data-ttu-id="6de86-111">Les périodicités hebdomadaires ne sont valides que l' <b>ou</b> de le <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.DayOfWeekMask" /> .</span><span class="sxs-lookup"><span data-stu-id="6de86-111">Weekly patterns are only valid as the <b>Or</b> of the <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.DayOfWeekMask" /> .</span></span></para>
+      <list type="table">
+        <item>
+          <description><span data-ttu-id="6de86-112">
+            <b>olRecursDaily</b>
+          </span><span class="sxs-lookup"><span data-stu-id="6de86-112">
+            <b>olRecursDaily</b>
+          </span></span></description>
+          <description><span data-ttu-id="6de86-113">
+            <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Duration" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.EndTime" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Interval" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.NoEndDate" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Occurrences" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternStartDate" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternEndDate" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.StartTime" /></span><span class="sxs-lookup"><span data-stu-id="6de86-113"></span></span></description>
+        </item>
+        <item>
+          <description><span data-ttu-id="6de86-114">
+            <b>olRecursWeekly</b>
+          </span><span class="sxs-lookup"><span data-stu-id="6de86-114">
+            <b>olRecursWeekly</b>
+          </span></span></description>
+          <description><span data-ttu-id="6de86-115">
+            <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.DayOfWeekMask" />, <b>Durée</b>, <b>l’heure de fin</b>, <b>intervalle</b>, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></span><span class="sxs-lookup"><span data-stu-id="6de86-115">
+            <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.DayOfWeekMask" />, <b>Duration</b>, <b>EndTime</b>, <b>Interval</b>, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></span></span></description>
+        </item>
+        <item>
+          <description><span data-ttu-id="6de86-116">
+            <b>olRecursMonthly</b>
+          </span><span class="sxs-lookup"><span data-stu-id="6de86-116">
+            <b>olRecursMonthly</b>
+          </span></span></description>
+          <description><span data-ttu-id="6de86-117">
+            <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.DayOfMonth" />, <b>Durée</b>, <b>l’heure de fin</b>, <b>intervalle</b>, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></span><span class="sxs-lookup"><span data-stu-id="6de86-117">
+            <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.DayOfMonth" />, <b>Duration</b>, <b>EndTime</b>, <b>Interval</b>, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></span></span></description>
+        </item>
+        <item>
+          <description><span data-ttu-id="6de86-118">
+            <b>olRecursMonthNth</b>
+          </span><span class="sxs-lookup"><span data-stu-id="6de86-118">
+            <b>olRecursMonthNth</b>
+          </span></span></description>
+          <description><span data-ttu-id="6de86-119">
+            <b>DayOfWeekMask</b>, <b>la durée</b>, <b>l’heure de fin</b>, <b>intervalle</b>, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Instance" />, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></span><span class="sxs-lookup"><span data-stu-id="6de86-119">
+            <b>DayOfWeekMask</b>, <b>Duration</b>, <b>EndTime</b>, <b>Interval</b>, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Instance" />, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></span></span></description>
+        </item>
+        <item>
+          <description><span data-ttu-id="6de86-120">
+            <b>Fait</b>
+          </span><span class="sxs-lookup"><span data-stu-id="6de86-120">
+            <b>olRecursYearly</b>
+          </span></span></description>
+          <description><span data-ttu-id="6de86-121">
+            <b>DayOfMonth</b>, <b>la durée</b>, <b>l’heure de fin</b>, <b>intervalle</b>, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.MonthOfYear" />, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></span><span class="sxs-lookup"><span data-stu-id="6de86-121">
+            <b>DayOfMonth</b>, <b>Duration</b>, <b>EndTime</b>, <b>Interval</b>, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.MonthOfYear" />, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></span></span></description>
+        </item>
+        <item>
+          <description><span data-ttu-id="6de86-122">
+            <b>olRecursYearNth</b>
+          </span><span class="sxs-lookup"><span data-stu-id="6de86-122">
+            <b>olRecursYearNth</b>
+          </span></span></description>
+          <description><span data-ttu-id="6de86-123">
+            <b>DayOfWeekMask</b>, <b>la durée</b>, <b>l’heure de fin</b>, <b>intervalle</b>, <b>Instance</b>, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></span><span class="sxs-lookup"><span data-stu-id="6de86-123">
+            <b>DayOfWeekMask</b>, <b>Duration</b>, <b>EndTime</b>, <b>Interval</b>, <b>Instance</b>, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></span></span></description>
+        </item>
+      </list>
+      <para><span data-ttu-id="6de86-124">Lorsque vous travaillez avec des éléments de rendez-vous périodiques, vous devez libérer les références antérieures, obtenir de nouvelles références à l'élément de rendez-vous périodique avant d'accéder à l'élément ou de le modifier, et libérer ces références dès que vous avez terminé et enregistré les modifications.</span><span class="sxs-lookup"><span data-stu-id="6de86-124">When you work with recurring appointment items, you should release any prior references, obtain new references to the recurring appointment item before you access or modify the item, and release these references as soon as you are finished and have saved the changes.</span></span> <span data-ttu-id="6de86-125">Cela s’applique à l’abonnement <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> objet et tous <see cref="T:Microsoft.Office.Interop.Outlook.Exception" /> ou <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> objet.</span><span class="sxs-lookup"><span data-stu-id="6de86-125">This practice applies to the recurring <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> object, and any <see cref="T:Microsoft.Office.Interop.Outlook.Exception" /> or <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> object.</span></span> <span data-ttu-id="6de86-126">Pour libérer une référence dans Visual Basic, définissez cet objet existant sur <b>Nothing</b>.</span><span class="sxs-lookup"><span data-stu-id="6de86-126">To release a reference in Visual Basic, set that existing object to <b>Nothing</b>.</span></span> <span data-ttu-id="6de86-127">Dans C#, libérez explicitement la mémoire pour cet objet.</span><span class="sxs-lookup"><span data-stu-id="6de86-127">In C#, explicitly release the memory for that object.</span></span> </para>
+      <para><span data-ttu-id="6de86-p105">Notez que même après avoir libéré votre référence et tenté d’obtenir une nouvelle référence, s’il existe encore une référence active détenue par un autre complément ou par Outlook vers un des objets mentionnés ci-dessus, votre nouvelle référence pointera encore vers une copie périmée de l’objet. Il est donc important de libérer vos références dès que vous en avez terminé avec le rendez-vous périodique.</span><span class="sxs-lookup"><span data-stu-id="6de86-p105">Note that even after you release your reference and attempt to obtain a new reference, if there is still an active reference, held by another add-in or Outlook, to one of the above objects, your new reference will still point to an out-of-date copy of the object. Therefore, it is important that you release your references as soon as you are finished with the recurring appointment.</span></span></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -169,16 +113,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="be95e-103">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> object qui représente l’application Outlook de l’objet parent.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-103">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object that represents the parent Outlook application for the  object.</span>
-          </span>
-          <span data-ttu-id="be95e-104">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-104">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="6de86-130">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> object qui représente l’application Outlook de l’objet parent.</span><span class="sxs-lookup"><span data-stu-id="6de86-130">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.Application" />  object that represents the parent Outlook application for the  object.</span></span> <span data-ttu-id="6de86-131">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="6de86-131">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -206,16 +141,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="be95e-105">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constante indiquant la classe de l’objet.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-105">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constant indicating the object's class.</span>
-          </span>
-          <span data-ttu-id="be95e-106">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-106">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="6de86-132">Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constante indiquant la classe de l’objet.</span><span class="sxs-lookup"><span data-stu-id="6de86-132">Returns an <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constant indicating the object's class.</span></span> <span data-ttu-id="6de86-133">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="6de86-133">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -246,16 +172,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="be95e-107">Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) indiquant le jour du mois où le rendez-vous ou la tâche se produit.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-107">Returns or sets an <b>Integer</b> (<b>int</b> in C#) value indicating the day of the month on which the recurring appointment or task occurs.</span>
-          </span>
-          <span data-ttu-id="be95e-108">Lecture/écriture.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-108">Read/write.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="6de86-134">Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) indiquant le jour du mois où le rendez-vous ou la tâche se produit.</span><span class="sxs-lookup"><span data-stu-id="6de86-134">Returns or sets an <b>Integer</b> (<b>int</b> in C#) value indicating the day of the month on which the recurring appointment or task occurs.</span></span> <span data-ttu-id="6de86-135">Lecture-écriture.</span><span class="sxs-lookup"><span data-stu-id="6de86-135">Read/write.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -286,29 +203,11 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlDaysOfWeek</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="be95e-109">Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlDaysOfWeek" /> constante représentant le masque des jours de la semaine où le rendez-vous ou la tâche.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-109">Returns or sets an <see cref="T:Microsoft.Office.Interop.Outlook.OlDaysOfWeek" /> constant representing the mask for the days of the week on which the recurring appointment or task occurs.</span>
-          </span>
-          <span data-ttu-id="be95e-110">Lecture/écriture.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-110">Read/write.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="6de86-136">Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlDaysOfWeek" /> constante représentant le masque des jours de la semaine où le rendez-vous ou la tâche.</span><span class="sxs-lookup"><span data-stu-id="6de86-136">Returns or sets an <see cref="T:Microsoft.Office.Interop.Outlook.OlDaysOfWeek" /> constant representing the mask for the days of the week on which the recurring appointment or task occurs.</span></span> <span data-ttu-id="6de86-137">Lecture-écriture.</span><span class="sxs-lookup"><span data-stu-id="6de86-137">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="be95e-111">
-            <para>La <b>propriété DayOfWeekMask</b> doit être définie après la <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.RecurrenceType" /> propriété a été définie et avant la <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternEndDate" /> et <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternStartDate" /> propriétés sont définies. </para>Modèles 
-          <para>mensuelle et annuelle ne sont valides que pour un seul jour. Les périodicités hebdomadaires ne sont valides <b>ou</b> de la <b>propriété DayOfWeekMask</b>. </para><para /></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-111">
-              <para>The <b>DayOfWeekMask</b> should be set after the <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.RecurrenceType" /> property has been set and before the <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternEndDate" /> and <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternStartDate" /> properties are set. </para>
-              <para>Monthly and yearly patterns are only valid for a single day. Weekly patterns are only valid as the <b>Or</b> of the <b>DayOfWeekMask</b>. </para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="6de86-138">La <b>propriété DayOfWeekMask</b> doit être définie après la <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.RecurrenceType" /> propriété a été définie et avant la <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternEndDate" /> et <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternStartDate" /> propriétés sont définies.</span><span class="sxs-lookup"><span data-stu-id="6de86-138">The <b>DayOfWeekMask</b> should be set after the <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.RecurrenceType" /> property has been set and before the <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternEndDate" /> and <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternStartDate" /> properties are set.</span></span> </para>
+          <para><span data-ttu-id="6de86-p111">Les périodicités mensuelles et annuelles ne sont valides que pour un seul jour. Les périodicités hebdomadaires ne sont valides que pour la condition <b>Or</b> de la propriété <b>DayOfWeekMask</b>.</span><span class="sxs-lookup"><span data-stu-id="6de86-p111">Monthly and yearly patterns are only valid for a single day. Weekly patterns are only valid as the <b>Or</b> of the <b>DayOfWeekMask</b>. </span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Duration">
@@ -337,31 +236,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="be95e-112">Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui indique la durée (en minutes) de le <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" />.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-112">Returns or sets an <b>Integer</b> (<b>int</b> in C#) value indicating the duration (in minutes) of the <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" />.</span>
-          </span>
-          <span data-ttu-id="be95e-113">Lecture/écriture.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-113">Read/write.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="6de86-141">Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui indique la durée (en minutes) de le <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" />.</span><span class="sxs-lookup"><span data-stu-id="6de86-141">Returns or sets an <b>Integer</b> (<b>int</b> in C#) value indicating the duration (in minutes) of the <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" />.</span></span> <span data-ttu-id="6de86-142">Lecture-écriture.</span><span class="sxs-lookup"><span data-stu-id="6de86-142">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="be95e-114">
-            <para>Qui concerne les périodicités, cette propriété est uniquement valide pour les rendez-vous.</para>
-            <para>Pour créer une durée d’un jour pour toute la journée, définissez la durée égale à 1440.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-114">
-              <para>For recurrences, this property is only valid for appointments.</para>
-              <para>To create a duration of one day for an all-day event, set the duration equal to 1440. </para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="6de86-143">En ce qui concerne les périodicités, cette propriété est valide uniquement pour les rendez-vous.</span><span class="sxs-lookup"><span data-stu-id="6de86-143">For recurrences, this property is only valid for appointments.</span></span></para>
+          <para><span data-ttu-id="6de86-144">Pour créer une durée d'un jour pour tous les événements d'une journée, définissez la valeur 1440 pour la durée.
+</span><span class="sxs-lookup"><span data-stu-id="6de86-144">To create a duration of one day for an all-day event, set the duration equal to 1440.</span></span> </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EndTime">
@@ -390,33 +270,12 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="be95e-115">Cette propriété renvoie ou définit un <b>DateTime</b> indiquant l’heure de fin d’une périodicité.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-115">Returns or sets a <b>DateTime</b> indicating the end time for a recurrence pattern.</span>
-          </span>
-          <span data-ttu-id="be95e-116">Lecture/écriture.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-116">Read/write.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="6de86-145">Cette propriété renvoie ou définit un <b>DateTime</b> indiquant l’heure de fin d’une périodicité.</span><span class="sxs-lookup"><span data-stu-id="6de86-145">Returns or sets a <b>DateTime</b> indicating the end time for a recurrence pattern.</span></span> <span data-ttu-id="6de86-146">Lecture-écriture.</span><span class="sxs-lookup"><span data-stu-id="6de86-146">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="be95e-117">
-            <para>Cette propriété n’est valide que pour les rendez-vous.</para>
-            <para>Lorsque vous créez un <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> objet et aucun fuseau horaire n’a été spécifié pour le rendez-vous, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.StartTime" /> et <b>l’heure de fin</b> de l’objet <b>RecurrencePattern</b> sont basés sur le fuseau horaire spécifié par <see cref="P:Microsoft.Office.Interop.Outlook._TimeZones.CurrentTimeZone" />.</para>
-            <para>Si vous souhaitez créer un rendez-vous périodique pour un fuseau horaire particulier, vous devez d’abord créer un <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />, définissez <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.StartTimeZone" />, puis appelez <see cref="M:Microsoft.Office.Interop.Outlook._AppointmentItem.GetRecurrencePattern" />. L’objet <b>RecurrencePattern</b> renvoyé aura les deux <b>StartTime</b> et <b>EndTime</b> basés sur le fuseau horaire spécifié par <b>AppointmentItem.StartTimeZone</b>. Notez que dans la boîte de dialogue Périodicité du rendez-vous, l’heure indiquée comme début est <b>RecurrencePattern.StartTime</b> , qui repose sur <b>AppointmentItem.StartTimeZone</b>, mais le temps indiqué comme fin n’est pas toujours identique <b> RecurrencePattern.EndTime</b> qui repose sur <b>AppointmentItem.StartTimeZone</b>; la valeur d’heure affiché est basée sur <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.EndTimeZone" />. </para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-117">
-              <para>This property is only valid for appointments. </para>
-              <para>When you create a <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> object and no time zones have been specified for the appointment, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.StartTime" /> and <b>EndTime</b> of the <b>RecurrencePattern</b> object are based on the time zone specified by <see cref="P:Microsoft.Office.Interop.Outlook._TimeZones.CurrentTimeZone" />. </para>
-              <para>If you want to create a recurring appointment for a particular time zone, you should first create an <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />, set <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.StartTimeZone" />, and then call <see cref="M:Microsoft.Office.Interop.Outlook._AppointmentItem.GetRecurrencePattern" />. The <b>RecurrencePattern</b> object returned will have both <b>StartTime</b> and <b>EndTime</b> based on the time zone specified by <b>AppointmentItem.StartTimeZone</b>. Note that in the Appointment Recurrence dialog box, the time indicated as Start is <b>RecurrencePattern.StartTime</b> which is based on <b>AppointmentItem.StartTimeZone</b>, but the time indicated as End is not always the same as  <b>RecurrencePattern.EndTime</b> which is based on <b>AppointmentItem.StartTimeZone</b>; the displayed time value is based on <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.EndTimeZone" />. </para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="6de86-p114">Cette propriété n'est valide que pour les rendez-vous.</span><span class="sxs-lookup"><span data-stu-id="6de86-p114">This property is only valid for appointments. </span></span></para>
+          <para><span data-ttu-id="6de86-148">Lorsque vous créez un <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> objet et aucun fuseau horaire n’a été spécifié pour le rendez-vous, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.StartTime" /> et <b>l’heure de fin</b> de l’objet <b>RecurrencePattern</b> sont basés sur le fuseau horaire spécifié par <see cref="P:Microsoft.Office.Interop.Outlook._TimeZones.CurrentTimeZone" />.</span><span class="sxs-lookup"><span data-stu-id="6de86-148">When you create a <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> object and no time zones have been specified for the appointment, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.StartTime" /> and <b>EndTime</b> of the <b>RecurrencePattern</b> object are based on the time zone specified by <see cref="P:Microsoft.Office.Interop.Outlook._TimeZones.CurrentTimeZone" />.</span></span> </para>
+          <para><span data-ttu-id="6de86-149">Si vous souhaitez créer un rendez-vous périodique pour un fuseau horaire particulier, vous devez d’abord créer un <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />, définissez <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.StartTimeZone" />, puis appelez <see cref="M:Microsoft.Office.Interop.Outlook._AppointmentItem.GetRecurrencePattern" />.</span><span class="sxs-lookup"><span data-stu-id="6de86-149">If you want to create a recurring appointment for a particular time zone, you should first create an <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />, set <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.StartTimeZone" />, and then call <see cref="M:Microsoft.Office.Interop.Outlook._AppointmentItem.GetRecurrencePattern" />.</span></span> <span data-ttu-id="6de86-150">L’objet <b>RecurrencePattern</b> renvoyé aura les deux <b>StartTime</b> et <b>EndTime</b> basés sur le fuseau horaire spécifié par <b>AppointmentItem.StartTimeZone</b>.</span><span class="sxs-lookup"><span data-stu-id="6de86-150">The <b>RecurrencePattern</b> object returned will have both <b>StartTime</b> and <b>EndTime</b> based on the time zone specified by <b>AppointmentItem.StartTimeZone</b>.</span></span> <span data-ttu-id="6de86-151">Notez que dans la boîte de dialogue Périodicité du rendez-vous, l’heure indiquée comme début est <b>RecurrencePattern.StartTime</b> , qui repose sur <b>AppointmentItem.StartTimeZone</b>, mais le temps indiqué comme fin n’est pas toujours identique <b> RecurrencePattern.EndTime</b> qui repose sur <b>AppointmentItem.StartTimeZone</b>; la valeur d’heure affiché est basée sur <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.EndTimeZone" />.</span><span class="sxs-lookup"><span data-stu-id="6de86-151">Note that in the Appointment Recurrence dialog box, the time indicated as Start is <b>RecurrencePattern.StartTime</b> which is based on <b>AppointmentItem.StartTimeZone</b>, but the time indicated as End is not always the same as  <b>RecurrencePattern.EndTime</b> which is based on <b>AppointmentItem.StartTimeZone</b>; the displayed time value is based on <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.EndTimeZone" />.</span></span> </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Exceptions">
@@ -442,31 +301,11 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Exceptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="be95e-118">Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.Exceptions" /> collection d’une série de rendez-vous périodiques spécifiée.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-118">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.Exceptions" />  collection for a specified series of recurring appointments.</span>
-          </span>
-          <span data-ttu-id="be95e-119">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-119">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="6de86-152">Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.Exceptions" /> collection d’une série de rendez-vous périodiques spécifiée.</span><span class="sxs-lookup"><span data-stu-id="6de86-152">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.Exceptions" />  collection for a specified series of recurring appointments.</span></span> <span data-ttu-id="6de86-153">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="6de86-153">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="be95e-120">
-            <para>Lorsque vous travaillez avec des éléments de rendez-vous périodiques, vous devez libérer tout avant références, obtenir de nouvelles références à l’élément de rendez-vous périodiques avant d’accéder ou modifier l’élément et libérer les références dès que vous avez terminé et que vous avez enregistré le modifications apportées. Cela s’applique à l’abonnement <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> objet et tous <see cref="T:Microsoft.Office.Interop.Outlook.Exception" /> ou <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> objet. Pour libérer une référence dans Visual Basic, définissez existant de cet objet sur <b>Nothing</b>. En c#, libérer explicitement la mémoire pour cet objet. </para>
-            <para>Notez que même après avoir libérer la référence et tenter d’obtenir une référence, s’il existe toujours une référence active, organisée par un autre complément ou Outlook, à un des objets ci-dessus, votre nouvelle référence pointe toujours vers une copie de l’objet obsolète . Par conséquent, il est important que vous relâchiez vos références dès que vous avez terminé avec le rendez-vous périodique.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-120">
-              <para>When you work with recurring appointment items, you should release any prior references, obtain new references to the recurring appointment item before you access or modify the item, and release these references as soon as you are finished and have saved the changes. This practice applies to the recurring <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> object, and any <see cref="T:Microsoft.Office.Interop.Outlook.Exception" /> or <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> object. To release a reference in Visual Basic, set that existing object to <b>Nothing</b>. In C#, explicitly release the memory for that object. </para>
-              <para>Note that even after you release your reference and attempt to obtain a new reference, if there is still an active reference, held by another add-in or Outlook, to one of the above objects, your new reference will still point to an out-of-date copy of the object. Therefore, it is important that you release your references as soon as you are finished with the recurring appointment.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="6de86-154">Lorsque vous travaillez avec des éléments de rendez-vous périodiques, vous devez libérer les références antérieures, obtenir de nouvelles références à l'élément de rendez-vous périodique avant d'accéder à l'élément ou de le modifier, et libérer ces références dès que vous avez terminé et enregistré les modifications.</span><span class="sxs-lookup"><span data-stu-id="6de86-154">When you work with recurring appointment items, you should release any prior references, obtain new references to the recurring appointment item before you access or modify the item, and release these references as soon as you are finished and have saved the changes.</span></span> <span data-ttu-id="6de86-155">Cela s’applique à l’abonnement <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> objet et tous <see cref="T:Microsoft.Office.Interop.Outlook.Exception" /> ou <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> objet.</span><span class="sxs-lookup"><span data-stu-id="6de86-155">This practice applies to the recurring <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> object, and any <see cref="T:Microsoft.Office.Interop.Outlook.Exception" /> or <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> object.</span></span> <span data-ttu-id="6de86-156">Pour libérer une référence dans Visual Basic, définissez cet objet existant sur <b>Nothing</b>.</span><span class="sxs-lookup"><span data-stu-id="6de86-156">To release a reference in Visual Basic, set that existing object to <b>Nothing</b>.</span></span> <span data-ttu-id="6de86-157">Dans C#, libérez explicitement la mémoire pour cet objet.</span><span class="sxs-lookup"><span data-stu-id="6de86-157">In C#, explicitly release the memory for that object.</span></span> </para>
+          <para><span data-ttu-id="6de86-p119">Notez que même après avoir libéré votre référence et tenté d’obtenir une nouvelle référence, s’il existe encore une référence active détenue par un autre complément ou par Outlook vers un des objets mentionnés ci-dessus, votre nouvelle référence pointera encore vers une copie périmée de l’objet. Il est donc important de libérer vos références dès que vous en avez terminé avec le rendez-vous périodique.</span><span class="sxs-lookup"><span data-stu-id="6de86-p119">Note that even after you release your reference and attempt to obtain a new reference, if there is still an active reference, held by another add-in or Outlook, to one of the above objects, your new reference will still point to an out-of-date copy of the object. Therefore, it is important that you release your references as soon as you are finished with the recurring appointment.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetOccurrence">
@@ -492,42 +331,15 @@
         <Parameter Name="StartDate" Type="System.DateTime" />
       </Parameters>
       <Docs>
-        <param name="StartDate">
-          <span data-ttu-id="be95e-121">Valeur <b>Date</b> qui représente l'heure locale.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-121">A <b>Date</b> value that represents local time.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="be95e-122">Renvoie une instance spécifique de la <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> objet à la date spécifiée.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-122">Returns a specific instance of the <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />  object on the specified date.</span>
-          </span>
-        </summary>
-        <returns>
-          <span data-ttu-id="be95e-123">Objet <b>AppointmentItem</b> représentant le rendez-vous spécifique à la date spécifiée.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-123">An <b>AppointmentItem</b> object that represents the specific appointment on the specified date.</span>
-          </span>
-        </returns>
-        <remarks>
-          <span data-ttu-id="be95e-124">
-            <para>
-              <b>Remarque</b>: la méthode <b>GetOccurrence</b> génère une erreur si aucun rendez-vous cette série n’existe sur la date spécifiée.</para>
-            <para>Lorsque vous travaillez avec des éléments de rendez-vous périodiques, vous devez libérer tout avant références, obtenir de nouvelles références à l’élément de rendez-vous périodiques avant d’accéder ou modifier l’élément et libérer les références dès que vous avez terminé et que vous avez enregistré le modifications apportées. Cela s’applique à l’abonnement <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> objet et tous <see cref="T:Microsoft.Office.Interop.Outlook.Exception" /> ou <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> objet. Pour libérer une référence dans Visual Basic, définissez existant de cet objet sur <b>Nothing</b>. En c#, libérer explicitement la mémoire pour cet objet. </para>
-            <para>Notez que même après avoir libérer la référence et tenter d’obtenir une référence, s’il existe toujours une référence active, organisée par un autre complément ou Outlook, à un des objets ci-dessus, votre nouvelle référence pointe toujours vers une copie de l’objet obsolète . Par conséquent, il est important que vous relâchiez vos références dès que vous avez terminé avec le rendez-vous périodique.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-124">
-              <para>
-                <b>Note</b>: The <b>GetOccurrence</b> method generates an error if no appointment of that series exists on the specified date.</para>
-              <para>When you work with recurring appointment items, you should release any prior references, obtain new references to the recurring appointment item before you access or modify the item, and release these references as soon as you are finished and have saved the changes. This practice applies to the recurring <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> object, and any <see cref="T:Microsoft.Office.Interop.Outlook.Exception" /> or <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> object. To release a reference in Visual Basic, set that existing object to <b>Nothing</b>. In C#, explicitly release the memory for that object. </para>
-              <para>Note that even after you release your reference and attempt to obtain a new reference, if there is still an active reference, held by another add-in or Outlook, to one of the above objects, your new reference will still point to an out-of-date copy of the object. Therefore, it is important that you release your references as soon as you are finished with the recurring appointment.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <param name="StartDate"><span data-ttu-id="6de86-160">Valeur <b>Date</b> qui représente l'heure locale.</span><span class="sxs-lookup"><span data-stu-id="6de86-160">A <b>Date</b> value that represents local time.</span></span></param>
+        <summary><span data-ttu-id="6de86-161">Renvoie une instance spécifique de la <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> objet à la date spécifiée.</span><span class="sxs-lookup"><span data-stu-id="6de86-161">Returns a specific instance of the <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />  object on the specified date.</span></span></summary>
+        <returns><span data-ttu-id="6de86-162">Objet <b>AppointmentItem</b> représentant le rendez-vous spécifique à la date spécifiée.</span><span class="sxs-lookup"><span data-stu-id="6de86-162">An <b>AppointmentItem</b> object that represents the specific appointment on the specified date.</span></span></returns>
+        <remarks><para><span data-ttu-id="6de86-163">
+            <b>Remarque</b>: la méthode <b>GetOccurrence</b> génère une erreur si aucun rendez-vous cette série n’existe sur la date spécifiée.</span><span class="sxs-lookup"><span data-stu-id="6de86-163">
+            <b>Note</b>: The <b>GetOccurrence</b> method generates an error if no appointment of that series exists on the specified date.</span></span></para>
+          <para><span data-ttu-id="6de86-164">Lorsque vous travaillez avec des éléments de rendez-vous périodiques, vous devez libérer les références antérieures, obtenir de nouvelles références à l'élément de rendez-vous périodique avant d'accéder à l'élément ou de le modifier, et libérer ces références dès que vous avez terminé et enregistré les modifications.</span><span class="sxs-lookup"><span data-stu-id="6de86-164">When you work with recurring appointment items, you should release any prior references, obtain new references to the recurring appointment item before you access or modify the item, and release these references as soon as you are finished and have saved the changes.</span></span> <span data-ttu-id="6de86-165">Cela s’applique à l’abonnement <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> objet et tous <see cref="T:Microsoft.Office.Interop.Outlook.Exception" /> ou <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> objet.</span><span class="sxs-lookup"><span data-stu-id="6de86-165">This practice applies to the recurring <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" /> object, and any <see cref="T:Microsoft.Office.Interop.Outlook.Exception" /> or <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> object.</span></span> <span data-ttu-id="6de86-166">Pour libérer une référence dans Visual Basic, définissez cet objet existant sur <b>Nothing</b>.</span><span class="sxs-lookup"><span data-stu-id="6de86-166">To release a reference in Visual Basic, set that existing object to <b>Nothing</b>.</span></span> <span data-ttu-id="6de86-167">Dans C#, libérez explicitement la mémoire pour cet objet.</span><span class="sxs-lookup"><span data-stu-id="6de86-167">In C#, explicitly release the memory for that object.</span></span> </para>
+          <para><span data-ttu-id="6de86-p121">Notez que même après avoir libéré votre référence et tenté d’obtenir une nouvelle référence, s’il existe encore une référence active détenue par un autre complément ou par Outlook vers un des objets mentionnés ci-dessus, votre nouvelle référence pointera encore vers une copie périmée de l’objet. Il est donc important de libérer vos références dès que vous en avez terminé avec le rendez-vous périodique.</span><span class="sxs-lookup"><span data-stu-id="6de86-p121">Note that even after you release your reference and attempt to obtain a new reference, if there is still an active reference, held by another add-in or Outlook, to one of the above objects, your new reference will still point to an out-of-date copy of the object. Therefore, it is important that you release your references as soon as you are finished with the recurring appointment.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Instance">
@@ -556,29 +368,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="be95e-125">Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui spécifie le compte pour lequel la périodicité est valide pour un intervalle donné.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-125">Returns or sets an <b>Integer</b> (<b>int</b> in C#) value specifying the count for which the recurrence pattern is valid for a given interval.</span>
-          </span>
-          <span data-ttu-id="be95e-126">Lecture/écriture.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-126">Read/write.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="6de86-170">Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui spécifie le compte pour lequel la périodicité est valide pour un intervalle donné.</span><span class="sxs-lookup"><span data-stu-id="6de86-170">Returns or sets an <b>Integer</b> (<b>int</b> in C#) value specifying the count for which the recurrence pattern is valid for a given interval.</span></span> <span data-ttu-id="6de86-171">Lecture-écriture.</span><span class="sxs-lookup"><span data-stu-id="6de86-171">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="be95e-127">
-            <para>Cette propriété est valide que pour les périodicités de type <b>olRecursMonthNth</b> et <b>olRecursYearNth</b> et permet la définition d’une périodicité qui est valide uniquement pour la nième occurrence, tel que « le 2e dimanche de mars » pattern. Le compte a la valeur numérique : 1 pour le premier, 2 pour le deuxième, et ainsi de suite à 5 pour la dernière. Les valeurs supérieures à 5 génère des erreurs lorsque le modèle est enregistré.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-127">
-              <para>This property is only valid for recurrences of the <b>olRecursMonthNth</b> and <b>olRecursYearNth</b> type and allows the definition of a recurrence pattern that is only valid for the Nth occurrence, such as "the 2nd Sunday in March" pattern. The count is set numerically: 1 for the first, 2 for the second, and so on through 5 for the last. Values greater than 5 will generate errors when the pattern is saved. </para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="6de86-p123">Cette propriété n'est valide que pour les périodicités de type <b>olRecursMonthNth</b> et <b>olRecursYearNth</b>. Elle permet de définir une périodicité valide uniquement pour la nième occurrence, telle que « 2e dimanche de mars ». Le compte est défini de façon numérique : 1 pour le premier, 2 pour le deuxième, et ainsi de suite jusqu'à 5. Les valeurs supérieures à 5 entraînent des erreurs lors de l'enregistrement de la périodicité. Lecture-écriture.</span><span class="sxs-lookup"><span data-stu-id="6de86-p123">This property is only valid for recurrences of the <b>olRecursMonthNth</b> and <b>olRecursYearNth</b> type and allows the definition of a recurrence pattern that is only valid for the Nth occurrence, such as "the 2nd Sunday in March" pattern. The count is set numerically: 1 for the first, 2 for the second, and so on through 5 for the last. Values greater than 5 will generate errors when the pattern is saved. </span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interval">
@@ -607,33 +400,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="be95e-128">Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) spécifiant le nombre d’unités d’un type de périodicité donné entre chaque occurrence.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-128">Returns or sets an <b>Integer</b> (<b>int</b> in C#) value specifying the number of units of a given recurrence type between occurrences.</span>
-          </span>
-          <span data-ttu-id="be95e-129">Lecture/écriture.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-129">Read/write.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="6de86-175">Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) spécifiant le nombre d’unités d’un type de périodicité donné entre chaque occurrence.</span><span class="sxs-lookup"><span data-stu-id="6de86-175">Returns or sets an <b>Integer</b> (<b>int</b> in C#) value specifying the number of units of a given recurrence type between occurrences.</span></span> <span data-ttu-id="6de86-176">Lecture-écriture.</span><span class="sxs-lookup"><span data-stu-id="6de86-176">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="be95e-130">
-            <para>La propriété <b>Interval</b> doit être définie avant le paramètre <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternEndDate" />. </para>
-            <para>, Par exemple, si la propriété <b>Interval</b> à 2 et la <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.RecurrenceType" /> propriété olRecursWeekly entraînerait se produira toutes les deux semaines.</para>
-            <para>Lorsque <b>RecurrenceType</b> est définie sur olRecursYearNth ou olRecursYear, la propriété <b>Interval</b> indique le nombre d’années entre les occurrences. Par exemple, <b>intervalle</b> est égal à 1 indique la périodicité chaque année, un <b>intervalle</b> égal 2 indique la périodicité est chaque 2 ans et ainsi de suite.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-130">
-              <para>The <b>Interval</b> property must be set before setting <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternEndDate" />. </para>
-              <para>For example, setting the <b>Interval</b> property to 2 and the <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.RecurrenceType" />  property to olRecursWeekly would cause the pattern to occur every second week.</para>
-              <para>When <b>RecurrenceType</b> is set to olRecursYearNth or olRecursYear, the <b>Interval</b> property indicates the number of years between occurrences. For example, <b>Interval</b> equals 1 indicates the recurrence is every year, <b>Interval</b> equals 2 indicates the recurrence is every 2 years, and so on.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="6de86-177">La propriété <b>Interval</b> doit être définie avant le paramètre <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternEndDate" />.</span><span class="sxs-lookup"><span data-stu-id="6de86-177">The <b>Interval</b> property must be set before setting <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternEndDate" />.</span></span> </para>
+          <para><span data-ttu-id="6de86-178">Par exemple, si la propriété <b>Interval</b> à 2 et la <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.RecurrenceType" /> propriété olRecursWeekly entraînerait se produira toutes les deux semaines.</span><span class="sxs-lookup"><span data-stu-id="6de86-178">For example, setting the <b>Interval</b> property to 2 and the <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.RecurrenceType" />  property to olRecursWeekly would cause the pattern to occur every second week.</span></span></para>
+          <para><span data-ttu-id="6de86-179">Lorsque <b>RecurrenceType</b> est définie sur olRecursYearNth ou olRecursYear, la propriété <b>Interval</b> indique le nombre d’années entre les occurrences.</span><span class="sxs-lookup"><span data-stu-id="6de86-179">When <b>RecurrenceType</b> is set to olRecursYearNth or olRecursYear, the <b>Interval</b> property indicates the number of years between occurrences.</span></span> <span data-ttu-id="6de86-180">Par exemple, <b>intervalle</b> est égal à 1 indique la périodicité chaque année, un <b>intervalle</b> égal 2 indique la périodicité est chaque 2 ans et ainsi de suite.</span><span class="sxs-lookup"><span data-stu-id="6de86-180">For example, <b>Interval</b> equals 1 indicates the recurrence is every year, <b>Interval</b> equals 2 indicates the recurrence is every 2 years, and so on.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MonthOfYear">
@@ -662,29 +434,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="be95e-131">Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui indique le mois de l’année valide pour la périodicité spécifiée.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-131">Returns or sets an <b>Integer</b> (<b>int</b> in C#) value indicating which month of the year is valid for the specified recurrence pattern.</span>
-          </span>
-          <span data-ttu-id="be95e-132">Lecture/écriture.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-132">Read/write.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="6de86-181">Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui indique le mois de l’année valide pour la périodicité spécifiée.</span><span class="sxs-lookup"><span data-stu-id="6de86-181">Returns or sets an <b>Integer</b> (<b>int</b> in C#) value indicating which month of the year is valid for the specified recurrence pattern.</span></span> <span data-ttu-id="6de86-182">Lecture-écriture.</span><span class="sxs-lookup"><span data-stu-id="6de86-182">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="be95e-133">
-            <para>La valeur peut être un nombre compris entre 1 et 12. Par exemple, si cette propriété à 5 et <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.RecurrenceType" /> propriété <b>RecurrenceType</b> provoque cette périodicité se produise chaque mai. Cette propriété est uniquement valide pour les périodicités dont la propriété <b>RecurrenceType</b> est définie sur <b>olRecursYearly</b> ou <b>olRecursYearNth</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-133">
-              <para>The value can be a number from 1 through 12. For example, setting this property to 5 and the <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.RecurrenceType" />  property to <b>olRecursYearly</b> would cause this recurrence pattern to occur every May. This property is only valid for recurrence patterns whose <b>RecurrenceType</b> property is set to <b>olRecursYearly</b> or <b>olRecursYearNth</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="6de86-183">La valeur peut être un nombre compris entre 1 et 12.</span><span class="sxs-lookup"><span data-stu-id="6de86-183">The value can be a number from 1 through 12.</span></span> <span data-ttu-id="6de86-184">Par exemple, si cette propriété à 5 et <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.RecurrenceType" /> propriété <b>RecurrenceType</b> provoque cette périodicité se produise chaque mai.</span><span class="sxs-lookup"><span data-stu-id="6de86-184">For example, setting this property to 5 and the <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.RecurrenceType" />  property to <b>olRecursYearly</b> would cause this recurrence pattern to occur every May.</span></span> <span data-ttu-id="6de86-185">Cette propriété est uniquement valide pour les périodicités dont la propriété <b>RecurrenceType</b> est définie sur <b>olRecursYearly</b> ou <b>olRecursYearNth</b>.</span><span class="sxs-lookup"><span data-stu-id="6de86-185">This property is only valid for recurrence patterns whose <b>RecurrenceType</b> property is set to <b>olRecursYearly</b> or <b>olRecursYearNth</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NoEndDate">
@@ -713,29 +466,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="be95e-134">Renvoie une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique True si la périodicité n’a aucune date de fin.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-134">Returns a <b>Boolean</b> (<b>bool</b> in C#) value that indicates True if the recurrence pattern has no end date.</span>
-          </span>
-          <span data-ttu-id="be95e-135">Lecture/écriture.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-135">Read/write.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="6de86-186">Renvoie une valeur <b>booléenne</b> (<b>bool</b> en c#) qui indique True si la périodicité n’a aucune date de fin.</span><span class="sxs-lookup"><span data-stu-id="6de86-186">Returns a <b>Boolean</b> (<b>bool</b> in C#) value that indicates True if the recurrence pattern has no end date.</span></span> <span data-ttu-id="6de86-187">Lecture-écriture.</span><span class="sxs-lookup"><span data-stu-id="6de86-187">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="be95e-136">
-            <para>Cette propriété doit être coordonnée avec les autres propriétés lors de la définition d’une périodicité. Si le <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternEndDate" /> propriété ou la <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Occurrences" /> propriété est définie, le modèle est considérée comme étant finie et la propriété <b>NoEndDate</b> a la <b>valeur False</b>. Si ni <b>PatternEndDate</b> ni <b>Occurrences</b> n’est définie, la périodicité est infinie et <b>NoEndDate</b> a la <b>valeur True</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-136">
-              <para>This property must be coordinated with other properties when setting up a recurrence pattern. If the <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternEndDate" />  property or the <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Occurrences" />  property is set, the pattern is considered to be finite and the <b>NoEndDate</b> property is <b>False</b>. If neither <b>PatternEndDate</b> nor <b>Occurrences</b> is set, the pattern is considered infinite and <b>NoEndDate</b> is <b>True</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="6de86-188">Cette propriété doit être coordonnée avec les autres propriétés lors de la définition d’une périodicité.</span><span class="sxs-lookup"><span data-stu-id="6de86-188">This property must be coordinated with other properties when setting up a recurrence pattern.</span></span> <span data-ttu-id="6de86-189">Si le <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternEndDate" /> propriété ou la <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Occurrences" /> propriété est définie, le modèle est considérée comme étant finie et la propriété <b>NoEndDate</b> a la <b>valeur False</b>.</span><span class="sxs-lookup"><span data-stu-id="6de86-189">If the <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternEndDate" />  property or the <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Occurrences" />  property is set, the pattern is considered to be finite and the <b>NoEndDate</b> property is <b>False</b>.</span></span> <span data-ttu-id="6de86-190">Si ni <b>PatternEndDate</b> ni <b>Occurrences</b> n’est définie, la périodicité est infinie et <b>NoEndDate</b> a la <b>valeur True</b>.</span><span class="sxs-lookup"><span data-stu-id="6de86-190">If neither <b>PatternEndDate</b> nor <b>Occurrences</b> is set, the pattern is considered infinite and <b>NoEndDate</b> is <b>True</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Occurrences">
@@ -764,29 +498,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="be95e-137">Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) indiquant le nombre d’occurrences de la périodicité.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-137">Returns or sets an <b>Integer</b> (<b>int</b> in C#) value indicating the number of occurrences of the recurrence pattern.</span>
-          </span>
-          <span data-ttu-id="be95e-138">Lecture/écriture.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-138">Read/write.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="6de86-191">Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) indiquant le nombre d’occurrences de la périodicité.</span><span class="sxs-lookup"><span data-stu-id="6de86-191">Returns or sets an <b>Integer</b> (<b>int</b> in C#) value indicating the number of occurrences of the recurrence pattern.</span></span> <span data-ttu-id="6de86-192">Lecture-écriture.</span><span class="sxs-lookup"><span data-stu-id="6de86-192">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="be95e-139">
-            <para>Cette propriété permet la définition d’une périodicité qui n’est valide pour le nombre spécifié d’occurrences suivantes. Par exemple, vous pouvez définir cette propriété à 10 pour une formation qui aura lieu les dix jeudis. Cette propriété doit être coordonnée avec les autres propriétés lors de la définition d’une périodicité. Si le <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternEndDate" /> propriété ou la propriété <b>Occurrences</b> est définie, le modèle est considérée comme étant finie et la <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.NoEndDate" /> propriété a la <b>valeur False</b>. Si ni <b>PatternEndDate</b> ni <b>Occurrences</b> n’est définie, la périodicité est infinie et <b>NoEndDate</b> a la <b>valeur True</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-139">
-              <para>This property allows the definition of a recurrence pattern that is only valid for the specified number of subsequent occurrences. For example, you can set this property to 10 for a formal training course that will be held on the next ten Thursday evenings. This property must be coordinated with other properties when setting up a recurrence pattern. If the <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternEndDate" />  property or the <b>Occurrences</b> property is set, the pattern is considered to be finite and the <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.NoEndDate" />  property is <b>False</b>. If neither <b>PatternEndDate</b> nor <b>Occurrences</b> is set, the pattern is considered infinite and <b>NoEndDate</b> is <b>True</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="6de86-193">Cette propriété permet la définition d’une périodicité qui n’est valide pour le nombre spécifié d’occurrences suivantes.</span><span class="sxs-lookup"><span data-stu-id="6de86-193">This property allows the definition of a recurrence pattern that is only valid for the specified number of subsequent occurrences.</span></span> <span data-ttu-id="6de86-194">Par exemple, vous pouvez définir cette propriété à 10 pour une formation qui aura lieu les dix jeudis.</span><span class="sxs-lookup"><span data-stu-id="6de86-194">For example, you can set this property to 10 for a formal training course that will be held on the next ten Thursday evenings.</span></span> <span data-ttu-id="6de86-195">Cette propriété doit être coordonnée avec les autres propriétés lors de la définition d’une périodicité.</span><span class="sxs-lookup"><span data-stu-id="6de86-195">This property must be coordinated with other properties when setting up a recurrence pattern.</span></span> <span data-ttu-id="6de86-196">Si le <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternEndDate" /> propriété ou la propriété <b>Occurrences</b> est définie, le modèle est considérée comme étant finie et la <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.NoEndDate" /> propriété a la <b>valeur False</b>.</span><span class="sxs-lookup"><span data-stu-id="6de86-196">If the <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternEndDate" />  property or the <b>Occurrences</b> property is set, the pattern is considered to be finite and the <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.NoEndDate" />  property is <b>False</b>.</span></span> <span data-ttu-id="6de86-197">Si ni <b>PatternEndDate</b> ni <b>Occurrences</b> n’est définie, la périodicité est infinie et <b>NoEndDate</b> a la <b>valeur True</b>.</span><span class="sxs-lookup"><span data-stu-id="6de86-197">If neither <b>PatternEndDate</b> nor <b>Occurrences</b> is set, the pattern is considered infinite and <b>NoEndDate</b> is <b>True</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -812,12 +527,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="be95e-p113">Renvoie la valeur de type <b>Object</b> parent de l’objet spécifié. En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-p113">Returns the parent <b>Object</b> of the specified object. Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="6de86-p133">Renvoie la valeur de type <b>Object</b> parent de l’objet spécifié. En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="6de86-p133">Returns the parent <b>Object</b> of the specified object. Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -848,29 +558,10 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="be95e-142">Cette propriété renvoie ou définit un <b>DateTime</b> qui indique la date de fin de la périodicité.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-142">Returns or sets a <b>DateTime</b> indicating the end date for the recurrence pattern.</span>
-          </span>
-          <span data-ttu-id="be95e-143">Lecture/écriture.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-143">Read/write.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="6de86-200">Cette propriété renvoie ou définit un <b>DateTime</b> qui indique la date de fin de la périodicité.</span><span class="sxs-lookup"><span data-stu-id="6de86-200">Returns or sets a <b>DateTime</b> indicating the end date for the recurrence pattern.</span></span> <span data-ttu-id="6de86-201">Lecture-écriture.</span><span class="sxs-lookup"><span data-stu-id="6de86-201">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="be95e-144">
-            <para>Cette propriété est facultative mais doit être coordonnée avec les autres propriétés lors de la définition d’une périodicité. Si cette propriété ou la <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Occurrences" /> propriété est définie, la périodicité est et <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.NoEndDate" /> propriété a la <b>valeur False</b>. Si ni <b>PatternEndDate</b> ni <b>Occurrences</b> n’est définie, la périodicité est infinie et <b>NoEndDate</b> a la <b>valeur True</b>. Le <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Interval" /> propriété doit être définie avant de définir <b>PatternEndDate</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-144">
-              <para>This property is optional but must be coordinated with other properties when setting up a recurrence pattern. If this property or the <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Occurrences" />  property is set, the pattern is considered to be finite, and the <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.NoEndDate" />  property is <b>False</b>. If neither <b>PatternEndDate</b> nor <b>Occurrences</b> is set, the pattern is considered infinite and <b>NoEndDate</b> is <b>True</b>. The <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Interval" />  property must be set before setting <b>PatternEndDate</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="6de86-202">Cette propriété est facultative mais doit être coordonnée avec les autres propriétés lors de la définition d’une périodicité.</span><span class="sxs-lookup"><span data-stu-id="6de86-202">This property is optional but must be coordinated with other properties when setting up a recurrence pattern.</span></span> <span data-ttu-id="6de86-203">Si cette propriété ou la <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Occurrences" /> propriété est définie, la périodicité est et <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.NoEndDate" /> propriété a la <b>valeur False</b>.</span><span class="sxs-lookup"><span data-stu-id="6de86-203">If this property or the <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Occurrences" />  property is set, the pattern is considered to be finite, and the <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.NoEndDate" />  property is <b>False</b>.</span></span> <span data-ttu-id="6de86-204">Si ni <b>PatternEndDate</b> ni <b>Occurrences</b> n’est définie, la périodicité est infinie et <b>NoEndDate</b> a la <b>valeur True</b>.</span><span class="sxs-lookup"><span data-stu-id="6de86-204">If neither <b>PatternEndDate</b> nor <b>Occurrences</b> is set, the pattern is considered infinite and <b>NoEndDate</b> is <b>True</b>.</span></span> <span data-ttu-id="6de86-205">Le <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Interval" /> propriété doit être définie avant de définir <b>PatternEndDate</b>.</span><span class="sxs-lookup"><span data-stu-id="6de86-205">The <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Interval" />  property must be set before setting <b>PatternEndDate</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PatternStartDate">
@@ -899,16 +590,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="be95e-145">Cette propriété renvoie ou définit un <b>DateTime</b> qui indique la date de début de la périodicité.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-145">Returns or sets a <b>DateTime</b> indicating the start date for the recurrence pattern.</span>
-          </span>
-          <span data-ttu-id="be95e-146">Lecture/écriture.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-146">Read/write.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="6de86-206">Cette propriété renvoie ou définit un <b>DateTime</b> qui indique la date de début de la périodicité.</span><span class="sxs-lookup"><span data-stu-id="6de86-206">Returns or sets a <b>DateTime</b> indicating the start date for the recurrence pattern.</span></span> <span data-ttu-id="6de86-207">Lecture-écriture.</span><span class="sxs-lookup"><span data-stu-id="6de86-207">Read/write.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -939,125 +621,75 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlRecurrenceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="be95e-147">Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlRecurrenceType" /> constante spécifiant la fréquence des occurrences de la périodicité.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-147">Returns or sets an <see cref="T:Microsoft.Office.Interop.Outlook.OlRecurrenceType" /> constant specifying the frequency of occurrences for the recurrence pattern.</span>
-          </span>
-          <span data-ttu-id="be95e-148">Lecture/écriture.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-148">Read/write.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="6de86-208">Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlRecurrenceType" /> constante spécifiant la fréquence des occurrences de la périodicité.</span><span class="sxs-lookup"><span data-stu-id="6de86-208">Returns or sets an <see cref="T:Microsoft.Office.Interop.Outlook.OlRecurrenceType" /> constant specifying the frequency of occurrences for the recurrence pattern.</span></span> <span data-ttu-id="6de86-209">Lecture-écriture.</span><span class="sxs-lookup"><span data-stu-id="6de86-209">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="be95e-149">
-            <para>Vous devez définir la propriété <b>RecurrenceType</b> avant de définir d’autres propriétés pour un <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> objet. Les propriétés <b>RecurrencePattern</b> que vous pouvez définir ensuite dépend de la valeur de <b>RecurrenceType</b>, comme indiqué dans le tableau suivant :</para>
-            <list type="table">
-              <item>
-                <description>OlRecurrenceType</description>
-                <description>Propriétés RecurrencePattern valides</description>
-              </item>
-              <item>
-                <description>
-                  <b>olRecursDaily</b>
-                </description>
-                <description>
-                  <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Duration" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.EndTime" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Interval" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.NoEndDate" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Occurrences" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternStartDate" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternEndDate" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.StartTime" /></description>
-              </item>
-              <item>
-                <description>
-                  <b>olRecursWeekly</b>
-                </description>
-                <description>
-                  <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.DayOfWeekMask" />, <b>durée</b>, <b>l’heure de fin</b>, <b>intervalle</b>, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></description>
-              </item>
-              <item>
-                <description>
-                  <b>olRecursMonthly</b>
-                </description>
-                <description>
-                  <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.DayOfMonth" />, <b>durée</b>, <b>l’heure de fin</b>, <b>intervalle</b>, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b> StartTime</b></description>
-              </item>
-              <item>
-                <description>
-                  <b>olRecursMonthNth</b>
-                </description>
-                <description>
-                  <b>DayOfWeekMask</b>, <b>durée</b>, <b>l’heure de fin</b>, <b>intervalle</b>, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Instance" />, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate </b>, <b>PatternEndDate</b>, <b>StartTime</b></description>
-              </item>
-              <item>
-                <description>
-                  <b>fait</b>
-                </description>
-                <description>
-                  <b>DayOfMonth</b>, <b>durée</b>, <b>l’heure de fin</b>, <b>intervalle</b>, <b>MonthOfYear</b>, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></description>
-              </item>
-              <item>
-                <description>
-                  <b>olRecursYearNth</b>
-                </description>
-                <description>
-                  <b>DayOfWeekMask</b>, <b>durée</b>, <b>EndTime</b>, <b>intervalle </b>, <b>Instance</b>, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></description>
-              </item>
-            </list>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-149">
-              <para>You must set the <b>RecurrenceType</b> property before you set other properties for a <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> object. The <b>RecurrencePattern</b> properties that you can set subsequently depends on the value of  <b>RecurrenceType</b>, as shown in the following table:</para>
-              <list type="table">
-                <item>
-                  <description>OlRecurrenceType</description>
-                  <description>Valid RecurrencePattern Properties</description>
-                </item>
-                <item>
-                  <description>
-                    <b>olRecursDaily</b>
-                  </description>
-                  <description>
-                    <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Duration" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.EndTime" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Interval" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.NoEndDate" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Occurrences" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternStartDate" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternEndDate" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.StartTime" /></description>
-                </item>
-                <item>
-                  <description>
-                    <b>olRecursWeekly</b>
-                  </description>
-                  <description>
-                    <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.DayOfWeekMask" />, <b>Duration</b>, <b>EndTime</b>, <b>Interval</b>, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></description>
-                </item>
-                <item>
-                  <description>
-                    <b>olRecursMonthly</b>
-                  </description>
-                  <description>
-                    <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.DayOfMonth" />, <b>Duration</b>, <b>EndTime</b>, <b>Interval</b>, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></description>
-                </item>
-                <item>
-                  <description>
-                    <b>olRecursMonthNth</b>
-                  </description>
-                  <description>
-                    <b>DayOfWeekMask</b>, <b>Duration</b>, <b>EndTime</b>, <b>Interval</b>, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Instance" />, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></description>
-                </item>
-                <item>
-                  <description>
-                    <b>olRecursYearly</b>
-                  </description>
-                  <description>
-                    <b>DayOfMonth</b>, <b>Duration</b>, <b>EndTime</b>, <b>Interval</b>, <b>MonthOfYear</b>, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></description>
-                </item>
-                <item>
-                  <description>
-                    <b>olRecursYearNth</b>
-                  </description>
-                  <description>
-                    <b>DayOfWeekMask</b>, <b>Duration</b>, <b>EndTime</b>, <b>Interval</b>, <b>Instance</b>, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></description>
-                </item>
-              </list>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="6de86-210">Vous devez définir la propriété <b>RecurrenceType</b> avant de définir d’autres propriétés pour un <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> objet.</span><span class="sxs-lookup"><span data-stu-id="6de86-210">You must set the <b>RecurrenceType</b> property before you set other properties for a <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> object.</span></span> <span data-ttu-id="6de86-211">Les propriétés <b>RecurrencePattern</b> que vous pouvez définir ensuite dépend de la valeur de <b>RecurrenceType</b>, comme indiqué dans le tableau suivant :</span><span class="sxs-lookup"><span data-stu-id="6de86-211">The <b>RecurrencePattern</b> properties that you can set subsequently depends on the value of  <b>RecurrenceType</b>, as shown in the following table:</span></span></para>
+          <list type="table">
+            <item>
+              <description><span data-ttu-id="6de86-212">OlRecurrenceType</span><span class="sxs-lookup"><span data-stu-id="6de86-212">OlRecurrenceType</span></span></description>
+              <description><span data-ttu-id="6de86-213">Propriétés RecurrencePattern valides</span><span class="sxs-lookup"><span data-stu-id="6de86-213">Valid RecurrencePattern Properties</span></span></description>
+            </item>
+            <item>
+              <description><span data-ttu-id="6de86-214">
+                <b>olRecursDaily</b>
+              </span><span class="sxs-lookup"><span data-stu-id="6de86-214">
+                <b>olRecursDaily</b>
+              </span></span></description>
+              <description><span data-ttu-id="6de86-215">
+                <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Duration" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.EndTime" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Interval" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.NoEndDate" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Occurrences" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternStartDate" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.PatternEndDate" />, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.StartTime" /></span><span class="sxs-lookup"><span data-stu-id="6de86-215"></span></span></description>
+            </item>
+            <item>
+              <description><span data-ttu-id="6de86-216">
+                <b>olRecursWeekly</b>
+              </span><span class="sxs-lookup"><span data-stu-id="6de86-216">
+                <b>olRecursWeekly</b>
+              </span></span></description>
+              <description><span data-ttu-id="6de86-217">
+                <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.DayOfWeekMask" />, <b>Durée</b>, <b>l’heure de fin</b>, <b>intervalle</b>, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></span><span class="sxs-lookup"><span data-stu-id="6de86-217">
+                <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.DayOfWeekMask" />, <b>Duration</b>, <b>EndTime</b>, <b>Interval</b>, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></span></span></description>
+            </item>
+            <item>
+              <description><span data-ttu-id="6de86-218">
+                <b>olRecursMonthly</b>
+              </span><span class="sxs-lookup"><span data-stu-id="6de86-218">
+                <b>olRecursMonthly</b>
+              </span></span></description>
+              <description><span data-ttu-id="6de86-219">
+                <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.DayOfMonth" />, <b>Durée</b>, <b>l’heure de fin</b>, <b>intervalle</b>, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></span><span class="sxs-lookup"><span data-stu-id="6de86-219">
+                <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.DayOfMonth" />, <b>Duration</b>, <b>EndTime</b>, <b>Interval</b>, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></span></span></description>
+            </item>
+            <item>
+              <description><span data-ttu-id="6de86-220">
+                <b>olRecursMonthNth</b>
+              </span><span class="sxs-lookup"><span data-stu-id="6de86-220">
+                <b>olRecursMonthNth</b>
+              </span></span></description>
+              <description><span data-ttu-id="6de86-221">
+                <b>DayOfWeekMask</b>, <b>la durée</b>, <b>l’heure de fin</b>, <b>intervalle</b>, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Instance" />, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></span><span class="sxs-lookup"><span data-stu-id="6de86-221">
+                <b>DayOfWeekMask</b>, <b>Duration</b>, <b>EndTime</b>, <b>Interval</b>, <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.Instance" />, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></span></span></description>
+            </item>
+            <item>
+              <description><span data-ttu-id="6de86-222">
+                <b>Fait</b>
+              </span><span class="sxs-lookup"><span data-stu-id="6de86-222">
+                <b>olRecursYearly</b>
+              </span></span></description>
+              <description><span data-ttu-id="6de86-223">
+                <b>DayOfMonth</b>, <b>la durée</b>, <b>l’heure de fin</b>, <b>intervalle</b>, <b>MonthOfYear</b>, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></span><span class="sxs-lookup"><span data-stu-id="6de86-223">
+                <b>DayOfMonth</b>, <b>Duration</b>, <b>EndTime</b>, <b>Interval</b>, <b>MonthOfYear</b>, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></span></span></description>
+            </item>
+            <item>
+              <description><span data-ttu-id="6de86-224">
+                <b>olRecursYearNth</b>
+              </span><span class="sxs-lookup"><span data-stu-id="6de86-224">
+                <b>olRecursYearNth</b>
+              </span></span></description>
+              <description><span data-ttu-id="6de86-225">
+                <b>DayOfWeekMask</b>, <b>la durée</b>, <b>l’heure de fin</b>, <b>intervalle</b>, <b>Instance</b>, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></span><span class="sxs-lookup"><span data-stu-id="6de86-225">
+                <b>DayOfWeekMask</b>, <b>Duration</b>, <b>EndTime</b>, <b>Interval</b>, <b>Instance</b>, <b>NoEndDate</b>, <b>Occurrences</b>, <b>PatternStartDate</b>, <b>PatternEndDate</b>, <b>StartTime</b></span></span></description>
+            </item>
+          </list>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Regenerate">
@@ -1086,31 +718,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="be95e-150">Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) qui indique <b>True</b> si la tâche doit être régénérée après cette étape pour la périodicité.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-150">Returns a <b>Boolean</b> (<b>bool</b> in C#) that indicates <b>True</b> if the task should be regenerated following this pass through the recurrence pattern.</span>
-          </span>
-          <span data-ttu-id="be95e-151">Lecture/écriture.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-151">Read/write.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="6de86-226">Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) qui indique <b>True</b> si la tâche doit être régénérée après cette étape pour la périodicité.</span><span class="sxs-lookup"><span data-stu-id="6de86-226">Returns a <b>Boolean</b> (<b>bool</b> in C#) that indicates <b>True</b> if the task should be regenerated following this pass through the recurrence pattern.</span></span> <span data-ttu-id="6de86-227">Lecture-écriture.</span><span class="sxs-lookup"><span data-stu-id="6de86-227">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="be95e-152">
-            <para>Cette propriété est utilisée pour contrôler la régénération de la tâche que chaque occurrence d’une tâche périodique est terminée. Il est uniquement valide pour les tâches. Il n’est pas valide pour les rendez-vous.</para>
-            <para>Pour créer une périodicité, vous devez d’abord définir la <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.RecurrenceType" /> propriété pour définir la fréquence, puis définissez la propriété <b>Regenerate</b> sur <b>True</b> pour regénérer la tâche. Après avoir <b>Régénérer</b><b>la valeur True</b>, ne le définissez pas sur <b>False</b>. Si vous définissez ensuite <b>Régénérer</b> sur <b>False</b>, alors vous devez définir la périodicité à nouveau en obtenant un nouveau <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> objet. </para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-152">
-              <para>This property is used to control the regeneration of the task as each occurrence of a recurring task is completed. It is only valid for tasks. It is not valid for appointments.</para>
-              <para>To create a recurrence pattern, you must first set the <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.RecurrenceType" /> property to set the frequency, then set the <b>Regenerate</b> property  to <b>True</b> to regenerate the task. After setting <b>Regenerate</b> to <b>True</b>, do not set it to <b>False</b>. If you subsequently set <b>Regenerate</b> to <b>False</b>, then you should set up the recurrence pattern again by getting a new <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> object. </para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="6de86-p140">Cette propriété permet de contrôler la régénération d'une tâche après chaque occurrence d'une tâche périodique. Elle est valide uniquement pour les tâches et non pour les rendez-vous.</span><span class="sxs-lookup"><span data-stu-id="6de86-p140">This property is used to control the regeneration of the task as each occurrence of a recurring task is completed. It is only valid for tasks. It is not valid for appointments.</span></span></para>
+          <para><span data-ttu-id="6de86-231">Pour créer une périodicité, vous devez d’abord définir la <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.RecurrenceType" /> propriété pour définir la fréquence, puis définissez la propriété <b>Regenerate</b> sur <b>True</b> pour regénérer la tâche.</span><span class="sxs-lookup"><span data-stu-id="6de86-231">To create a recurrence pattern, you must first set the <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.RecurrenceType" /> property to set the frequency, then set the <b>Regenerate</b> property  to <b>True</b> to regenerate the task.</span></span> <span data-ttu-id="6de86-232">Après avoir <b>Régénérer</b> <b>la valeur True</b>, ne le définissez pas sur <b>False</b>.</span><span class="sxs-lookup"><span data-stu-id="6de86-232">After setting <b>Regenerate</b> to <b>True</b>, do not set it to <b>False</b>.</span></span> <span data-ttu-id="6de86-233">Si vous définissez ensuite <b>Régénérer</b> sur <b>False</b>, alors vous devez définir la périodicité à nouveau en obtenant un nouveau <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> objet.</span><span class="sxs-lookup"><span data-stu-id="6de86-233">If you subsequently set <b>Regenerate</b> to <b>False</b>, then you should set up the recurrence pattern again by getting a new <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> object.</span></span> </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Session">
@@ -1136,41 +748,16 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="be95e-153">Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-153">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  object for the current session.</span>
-          </span>
-          <span data-ttu-id="be95e-154">En lecture seule.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-154">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="6de86-234">Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active.</span><span class="sxs-lookup"><span data-stu-id="6de86-234">Returns the <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  object for the current session.</span></span> <span data-ttu-id="6de86-235">En lecture seule.</span><span class="sxs-lookup"><span data-stu-id="6de86-235">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="be95e-155">
-            <para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
-            <code>Dim objNamespace As Outlook.NameSpace = _
+        <remarks><para><span data-ttu-id="6de86-236">La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active.</span><span class="sxs-lookup"><span data-stu-id="6de86-236">The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session.</span></span> <span data-ttu-id="6de86-237">Les deux membres ont la même fonction.</span><span class="sxs-lookup"><span data-stu-id="6de86-237">Both members serve the same purpose.</span></span> <span data-ttu-id="6de86-238">Par exemple, les paires d’instructions suivantes effectuent la même fonction :</span><span class="sxs-lookup"><span data-stu-id="6de86-238">For example, the following pairs of statements perform the same function:</span></span></para>
+          <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
-            <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
-            <code>Outlook.NameSpace objNamespace = 
+          <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
+          <code>Outlook.NameSpace objNamespace = 
     Application.GetNamespace("MAPI");</code>
-            <code>Outlook.NameSpace objSession = Application.Session;</code>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-155">
-              <para>The <b>Session</b> property and the <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> method can be used interchangeably to obtain the <b>NameSpace</b> object for the current session. Both members serve the same purpose. For example, the following pairs of statements perform the same function:</para>
-              <code>Dim objNamespace As Outlook.NameSpace = _
-    Application.GetNamespace("MAPI")</code>
-              <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
-              <code>Outlook.NameSpace objNamespace = 
-    Application.GetNamespace("MAPI");</code>
-              <code>Outlook.NameSpace objSession = Application.Session;</code>
-              <para />
-            </span>
-          </span>
-        </remarks>
+          <code>Outlook.NameSpace objSession = Application.Session;</code>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StartTime">
@@ -1199,33 +786,12 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="be95e-156">Cette propriété renvoie ou définit un <b>DateTime</b> indiquant l’heure de début d’une périodicité.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-156">Returns or sets a <b>DateTime</b> indicating the start time for a recurrence pattern.</span>
-          </span>
-          <span data-ttu-id="be95e-157">Lecture/écriture.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-157">Read/write.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="6de86-239">Cette propriété renvoie ou définit un <b>DateTime</b> indiquant l’heure de début d’une périodicité.</span><span class="sxs-lookup"><span data-stu-id="6de86-239">Returns or sets a <b>DateTime</b> indicating the start time for a recurrence pattern.</span></span> <span data-ttu-id="6de86-240">Lecture-écriture.</span><span class="sxs-lookup"><span data-stu-id="6de86-240">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="be95e-158">
-            <para>Cette propriété n’est valide que pour les rendez-vous.</para>
-            <para>Lorsque vous créez un <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> objet et aucun fuseau horaire n’a été spécifié pour le rendez-vous, <b>StartTime</b> et <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.EndTime" /> de l’objet <b>RecurrencePattern</b> sont basés sur le fuseau horaire spécifié par <see cref="P:Microsoft.Office.Interop.Outlook._TimeZones.CurrentTimeZone" />.</para>
-            <para>Si vous souhaitez créer un rendez-vous périodique pour un fuseau horaire particulier, vous devez d’abord créer un <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />, définissez <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.StartTimeZone" />, puis appelez <see cref="M:Microsoft.Office.Interop.Outlook._AppointmentItem.GetRecurrencePattern" />. L’objet <b>RecurrencePattern</b> renvoyé aura les deux <b>StartTime</b> et <b>EndTime</b> basés sur le fuseau horaire spécifié par <b>AppointmentItem.StartTimeZone</b>. Notez que dans la boîte de dialogue Périodicité du rendez-vous, l’heure indiquée comme début est <b>RecurrencePattern.StartTime</b> , qui repose sur <b>AppointmentItem.StartTimeZone</b>, mais le temps indiqué comme fin n’est pas toujours identique <b> RecurrencePattern.EndTime</b> qui repose sur <b>AppointmentItem.StartTimeZone</b>; la valeur d’heure affiché est basée sur <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.EndTimeZone" />. </para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="be95e-158">
-              <para>This property is only valid for appointments.</para>
-              <para>When you create a <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> object and no time zones have been specified for the appointment, <b>StartTime</b> and <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.EndTime" /> of the <b>RecurrencePattern</b> object are based on the time zone specified by <see cref="P:Microsoft.Office.Interop.Outlook._TimeZones.CurrentTimeZone" />. </para>
-              <para>If you want to create a recurring appointment for a particular time zone, you should first create an <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />, set <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.StartTimeZone" />, and then call <see cref="M:Microsoft.Office.Interop.Outlook._AppointmentItem.GetRecurrencePattern" />. The <b>RecurrencePattern</b> object returned will have both <b>StartTime</b> and <b>EndTime</b> based on the time zone specified by <b>AppointmentItem.StartTimeZone</b>. Note that in the Appointment Recurrence dialog box, the time indicated as Start is <b>RecurrencePattern.StartTime</b> which is based on <b>AppointmentItem.StartTimeZone</b>, but the time indicated as End is not always the same as  <b>RecurrencePattern.EndTime</b> which is based on <b>AppointmentItem.StartTimeZone</b>; the displayed time value is based on <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.EndTimeZone" />. </para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="6de86-241">Cette propriété n'est valide que pour les rendez-vous.</span><span class="sxs-lookup"><span data-stu-id="6de86-241">This property is only valid for appointments.</span></span></para>
+          <para><span data-ttu-id="6de86-242">Lorsque vous créez un <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> objet et aucun fuseau horaire n’a été spécifié pour le rendez-vous, <b>StartTime</b> et <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.EndTime" /> de l’objet <b>RecurrencePattern</b> sont basés sur le fuseau horaire spécifié par <see cref="P:Microsoft.Office.Interop.Outlook._TimeZones.CurrentTimeZone" />.</span><span class="sxs-lookup"><span data-stu-id="6de86-242">When you create a <see cref="T:Microsoft.Office.Interop.Outlook.RecurrencePattern" /> object and no time zones have been specified for the appointment, <b>StartTime</b> and <see cref="P:Microsoft.Office.Interop.Outlook.RecurrencePattern.EndTime" /> of the <b>RecurrencePattern</b> object are based on the time zone specified by <see cref="P:Microsoft.Office.Interop.Outlook._TimeZones.CurrentTimeZone" />.</span></span> </para>
+          <para><span data-ttu-id="6de86-243">Si vous souhaitez créer un rendez-vous périodique pour un fuseau horaire particulier, vous devez d’abord créer un <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />, définissez <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.StartTimeZone" />, puis appelez <see cref="M:Microsoft.Office.Interop.Outlook._AppointmentItem.GetRecurrencePattern" />.</span><span class="sxs-lookup"><span data-stu-id="6de86-243">If you want to create a recurring appointment for a particular time zone, you should first create an <see cref="T:Microsoft.Office.Interop.Outlook.AppointmentItem" />, set <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.StartTimeZone" />, and then call <see cref="M:Microsoft.Office.Interop.Outlook._AppointmentItem.GetRecurrencePattern" />.</span></span> <span data-ttu-id="6de86-244">L’objet <b>RecurrencePattern</b> renvoyé aura les deux <b>StartTime</b> et <b>EndTime</b> basés sur le fuseau horaire spécifié par <b>AppointmentItem.StartTimeZone</b>.</span><span class="sxs-lookup"><span data-stu-id="6de86-244">The <b>RecurrencePattern</b> object returned will have both <b>StartTime</b> and <b>EndTime</b> based on the time zone specified by <b>AppointmentItem.StartTimeZone</b>.</span></span> <span data-ttu-id="6de86-245">Notez que dans la boîte de dialogue Périodicité du rendez-vous, l’heure indiquée comme début est <b>RecurrencePattern.StartTime</b> , qui repose sur <b>AppointmentItem.StartTimeZone</b>, mais le temps indiqué comme fin n’est pas toujours identique <b> RecurrencePattern.EndTime</b> qui repose sur <b>AppointmentItem.StartTimeZone</b>; la valeur d’heure affiché est basée sur <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.EndTimeZone" />.</span><span class="sxs-lookup"><span data-stu-id="6de86-245">Note that in the Appointment Recurrence dialog box, the time indicated as Start is <b>RecurrencePattern.StartTime</b> which is based on <b>AppointmentItem.StartTimeZone</b>, but the time indicated as End is not always the same as  <b>RecurrencePattern.EndTime</b> which is based on <b>AppointmentItem.StartTimeZone</b>; the displayed time value is based on <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.EndTimeZone" />.</span></span> </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
