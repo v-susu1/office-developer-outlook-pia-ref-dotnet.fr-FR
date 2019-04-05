@@ -1,5 +1,5 @@
 <Type Name="_Items" FullName="Microsoft.Office.Interop.Outlook._Items">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="7bd8b181e72530f36fac5524b4ed22a89311b9c6" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27898381" /></Metadata><TypeSignature Language="C#" Value="public interface _Items : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="90ccbcb3fe07f548327e1919c5fa54fecbde32ba" /><Meta Name="ms.sourcegitcommit" Value="8bffa304e2953ca61fa94459dd08997552262640" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="04/05/2019" /><Meta Name="ms.locfileid" Value="31479561" /></Metadata><TypeSignature Language="C#" Value="public interface _Items : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Items implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._Items" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Items&#xA;Implements IEnumerable" />
@@ -22,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Il s’agit d’une interface principale dans une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface principale uniquement lorsque la méthode que vous souhaitez utiliser partageant le même nom qu’un événement de l’objet COM ; Dans ce cas, effectuez un cast à cette interface pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Sinon, utilisez l’interface .NET est dérivé de la coclasse COM pour accéder aux méthodes, propriétés et événements de l’objet COM. Pour plus d’informations sur l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.Items" />.</summary>
+    <summary>Il s'agit d'une interface principale dans une coclasse COM qui est requise par du code managé en vue de son interopérabilité avec l'objet COM correspondant. Utilisez cette interface principale uniquement lorsque la méthode que vous voulez utiliser partage le même nom qu'un événement de l'objet COM ; en l'occurrence, effectuez un transtypage vers cette interface pour appeler la méthode et effectuez un transtypage vers la dernière interface d'événements pour vous connecter à l'événement. Sinon, utilisez l'interface .NET qui est dérivée de la coclasse COM pour accéder aux méthodes, propriétés et événements de l'objet COM. Pour plus d'informations sur l'objet COM <see cref="T:Microsoft.Office.Interop.Outlook.Items" />, voir.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,10 +48,10 @@
         <Parameter Name="Type" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">Le type d’élément Outlook pour le nouvel élément. Spécifie une <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.MessageClass" /> pour créer des formulaires personnalisés. Peut être une des constantes <b>OlItemType</b> suivantes : <b>olAppointmentItem</b>, <b>olContactItem</b>, <b>olJournalItem</b>, <b>olMailItem</b>, <b>olNoteItem</b>, <b>olPostItem</b>, ou <b>olTaskItem</b>ou tout message valide classe.</param>
-        <summary>Crée un nouvel élément Outlook dans le <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> collection pour le dossier.</summary>
+        <param name="Type">Type d’élément Outlook du nouvel élément. Spécifie <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.MessageClass" /> un pour créer des formulaires personnalisés. Il peut s’agir des constantes <b>OlItemType</b> suivantes : <b>olAppointmentItem</b>, <b>olContactItem</b>, <b>olJournalItem</b>, <b>olMailItem</b>, <b>olNoteItem</b>, <b>olPostItem</b> ou <b>olTaskItem,</b> ou de toute classe de message valide.</param>
+        <summary>Crée un nouvel élément Outlook dans la <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> collection du dossier.</summary>
         <returns>Valeur Objet qui représente le nouvel élément Outlook.</returns>
-        <remarks><para>Le cas contraire, la propriété <b>Type</b> de l’élément Outlook par défaut pour le type du dossier ou à <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> si le dossier parent n’est pas tapé.</para>
+        <remarks><para>Si ce paramètre n'est pas spécifié, la propriété <b>type</b> de l'élément Outlook prend par défaut le type du <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> dossier ou la valeur si le dossier parent n'est pas tapé.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -78,7 +78,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> object qui représente l’application Outlook de l’objet parent. En lecture seule.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> Object qui représente l'application Outlook parente pour l'objet. Lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -106,7 +106,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constante indiquant la classe de l’objet. En lecture seule.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constante indiquant la classe de l'objet. Lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -134,7 +134,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur d' <b>entier</b> (<b>int</b> en c#) indiquant le nombre d’objets dans la collection spécifiée. En lecture seule.</summary>
+        <summary>Renvoie une valeur de type <b>Integer</b> (<b>int</b> en C#) indiquant le nombre d'objets dans la collection spécifiée. Lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -162,10 +162,10 @@
         <Parameter Name="Filter" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Filter">Une chaîne qui spécifie les critères auxquels l’objet retourné doit correspondre.</param>
-        <summary>Localise et renvoie un objet d’élément Outlook qui satisfait à la donnée <paramref name="Filter" />.</summary>
-        <returns>Valeur Object qui représente un élément Outlook si l’appel réussit ; Renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) en cas d’échec.</returns>
-        <remarks><para>Pour utiliser la recherche d’indexation de contenu dans le <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> collection, utilisez la <see cref="M:Microsoft.Office.Interop.Outlook._Items.Restrict(System.String)" /> méthode. <b>FindRow</b> renvoie une erreur si <paramref name="Filter" /> contient les mots clés d’indexation de contenu. Pour plus d’informations sur les mots clés d’indexation de contenu, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87947">Filtrage d’éléments à l’aide de mots clés de requête</a></para>
+        <param name="Filter">Chaîne qui spécifie les critères auxquels doit correspondre l'objet renvoyé.</param>
+        <summary>Localise et renvoie un objet d'élément Outlook qui correspond aux données <paramref name="Filter" />.</summary>
+        <returns>Valeur Object qui représente un élément Outlook si l'appel réussit; renvoie <b>Nothing</b> (référence null (Nothing en Visual Basic) en C#) si elle échoue.</returns>
+        <remarks><para>Pour utiliser la recherche d'indexation de contenu <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> dans la collection, <see cref="M:Microsoft.Office.Interop.Outlook._Items.Restrict(System.String)" /> utilisez la méthode. <b>FindRow</b> renvoie une erreur si <paramref name="Filter" /> contient des mots clés d'indexation de contenu. Pour plus d'informations sur les mots clés d'indexation de contenu, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87947">filtrage d'éléments à l'aide de mots clés de requête</a></para>
           <para>La méthode renvoie une erreur avec les propriétés suivantes dans le <paramref name="Filter" />: </para>
           <list type="table">
             <item>
@@ -175,68 +175,55 @@
           </list>
           <para>Création de filtre pour les méthodes Rechercher et Restreindre</para>
           <para>La syntaxe du filtre varie selon le type de champ que vous filtrez.</para>
-          <para>Chaîne (pour les champs de texte) </para>
-          <para>Lors de la recherche des champs de texte, vous pouvez utiliser une apostrophe (') ou entre guillemets (« ») pour délimiter les valeurs qui font partie du filtre. Par exemple, toutes les lignes suivantes fonctionnent correctement lorsque le champ est de taper <b>chaîne</b> (<b>string</b> en c#) </para>
-          <para>sFilter = « [NomSociété] = 'Microsoft' » </para>
-          <para>sFilter = « [NomSociété] = « « Microsoft » » » </para>
-          <para>sFilter = « [NomSociété] = « &amp; Chr (34) &amp; « Microsoft » &amp; Chr (34)</para>
+          <para>String (pour les champs de texte) </para>
+          <para>Lors de la recherche de champs de texte, vous pouvez utiliser une apostrophe (') ou des guillemets doubles ("") pour délimiter les valeurs qui font partie du filtre. Par exemple, toutes les lignes suivantes fonctionnent correctement lorsque le champ est de type <b>chaîne</b> (<b>String</b> en C#): </para>
+          <para>sFilter = "[CompanyName] = 'Microsoft'" </para>
+          <para>sFilter = "[CompanyName] =" "Microsoft" "" </para>
+          <para>sFilter = "[CompanyName] =" &amp; Chr (34) &amp; "Microsoft" &amp; Chr (34)</para>
           <para>Lorsqu'il s'agit de spécifier un filtre dans une requête Jet ou DASL, si vous utilisez une paire de guillemets simples pour délimiter une chaîne qui fait partie de ce filtre et que le chaîne contient un autre guillemet simple ou une apostrophe, ajoutez un guillemet simple en guise de caractère d'échappement avant le guillemet simple ou l'apostrophe. Adoptez la même approche si vous utilisez une paire de guillemets doubles pour délimier une chaîne : si la chaîne contient un guillemet double, ajoutez un guillemet double en guise de caractère d'échappement avant le guillemet double.</para>
-          <para>Par exemple, dans le filtre DASL chaîne que des filtres pour la propriété <b>Subject</b> est égal au mot ne peut pas, la chaîne de filtre entière est délimitée par une paire de guillemets et la chaîne imbriquée ne peut pas est délimité par une paire de guillemets simples. Il existe trois caractères dont vous avez besoin d’échappement dans cette chaîne de filtre : le guillemet de début et la fin des guillemets doubles pour la référence de propriété de http://schemas.microsoft.com/mapi/proptag/0x0037001f, et l’apostrophe dans la condition de valeur pour le mot ne peut pas. En appliquant les caractères d’échappement appropriés, vous pouvez exprimer la chaîne de filtre comme suit :</para>
-          <para>filtre = « @SQL = » «http://schemas.microsoft.com/mapi/proptag/0x0037001f» « = » peut '' t' »</para>
-          <para>
-
- 
-
-Vous pouvez également utiliser la fonction chr(34) pour représenter le guillemet double (dont la valeur de caractère ASCII est 34) utilisé comme caractère d’échappement. En utilisant chr(34) à la place d’un caractère d’échappement de type guillemet double, vous pouvez exprimer le dernier exemple comme suit :
-
- 
-
-</para>
-          <para>Filter = « @SQL = » &amp; Chr (34) &amp; «http://schemas.microsoft.com/mapi/proptag/0x0037001f» _</para>
-          <para>    &amp;Chr (34) &amp; « = » &amp; « ' peut « t » »</para>
-          <para>Il est également nécessaire d’utiliser des caractères d’échappement pour les guillemets simples et doubles figurant dans les requêtes DASL à l’aide des opérateurs <b>ci_startswith</b> ou <b>ci_phrasematch</b>. Par exemple, la requête suivante exécute une requête de correspondance d’expression pour can’t dans l’objet du message :
-
- 
-
-</para>
-          <para>Filter = « @SQL = » &amp; Chr (34) &amp; «http://schemas.microsoft.com/mapi/proptag/0x0037001E» _</para>
-          <para>    &amp;Chr (34) &amp; « ci_phrasematch » &amp; » ' peut « t » »</para>
-          <para>Un autre exemple est une chaîne de filtre DASL qui filtre pour la propriété <b>Subject</b> est égale à la mention les éléments de droite, où le document word est placée entre guillemets. Dans ce cas, vous devez échapper par des guillemets doubles englobants comme suit :</para>
-          <para>filtre = « @SQL = » «http://schemas.microsoft.com/mapi/proptag/0x0037001f» « = 'droite « ou « sélections » »' »</para>
+          <para>Par exemple, dans la chaîne de filtre DASL qui filtre la propriété <b>Subject</b> est égale à la valeur de Word not, la chaîne de filtrage entière est délimitée par une paire de guillemets et la chaîne incorporée ne peut pas être délimitée par une paire de guillemets simples. Cette chaîne de filtrage comporte trois caractères que vous devez ignorer: les guillemets de début et de fin pour la référence de propriété de http://schemas.microsoft.com/mapi/proptag/0x0037001f, et l'apostrophe dans la condition de valeur pour le mot est introuvable. En appliquant les caractères d'échappement appropriés, vous pouvez exprimer la chaîne de filtre comme suit :</para>
+          <para>Filter = "@SQL=" "http://schemas.microsoft.com/mapi/proptag/0x0037001f" "=" Can' "</para>
+          <para>Vous pouvez également utiliser la fonction chr(34) pour représenter le guillemet double (dont la valeur de caractère ASCII est 34) utilisé comme caractère d’échappement. En utilisant chr(34) à la place d’un caractère d’échappement de type guillemet double, vous pouvez exprimer le dernier exemple comme suit :</para>
+          <para>Filter = "@SQL=" &amp; Chr (34) &amp; "http://schemas.microsoft.com/mapi/proptag/0x0037001f" _</para>
+          <para>    &amp;Chr (34) &amp; "=" &amp; "' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' '</para>
+          <para>Il est également nécessaire d’utiliser des caractères d’échappement pour les guillemets simples et doubles figurant dans les requêtes DASL à l’aide des opérateurs <b>ci_startswith</b> ou <b>ci_phrasematch</b>. Par exemple, la requête suivante exécute une requête de correspondance d’expression pour can’t dans l’objet du message : </para>
+          <para>Filter = "@SQL=" &amp; Chr (34) &amp; "http://schemas.microsoft.com/mapi/proptag/0x0037001E" _</para>
+          <para>    &amp;Chr (34) &amp; "ci_phrasematch" &amp; "'ne peut pas'</para>
+          <para>Un autre exemple est une chaîne de filtre DASL qui filtre la propriété <b>Subject</b> égale aux mots, où le mot est placé entre guillemets. Dans ce cas, vous devez ajouter des caractères d'échappement pour les guillemets doubles comme suit :</para>
+          <para>Filter = "@SQL=" "http://schemas.microsoft.com/mapi/proptag/0x0037001f" "=" droite "" Stuff "" ' "</para>
           <para>Un ensemble de règles d’échappement différent s’applique à une référence de propriété pour les propriétés nommées contenant l’espace, un guillemet simple, double guillemets ou caractère pourcentage. Pour plus d’informations, voir Référencement des propriétés par Espace de noms.</para>
           <para>Date</para>
-          <para>Bien que les dates et heures sont généralement stockées avec un format de Date, les méthodes Find et Restrict nécessitent que la date et l’heure est convertie en une représentation de chaîne. Pour vous assurer que la date est mise en forme comme prévu dans Microsoft Outlook, utiliser la fonctionFormat. L’exemple suivant crée un filtre pour trouver tous les contacts qui ont été modifiés après le 15 janvier 1999 à 3:30 P.M. </para>
-          <para>sFilter = » [LastModificationTime] &gt; ' » &amp; Format (« 15/1/99 15:30:00 », « ddddd h:nn suffixes ») &amp; » ' »</para>
+          <para>Bien que les dates et heures soient généralement stockées avec un format de date, les méthodes Rechercher et restreindre nécessitent que la date et l'heure soient converties en une représentation de chaîne. Pour vérifier que la date est mise en forme comme prévu dans Microsoft Outlook, utilisez la fonction Format. L'exemple de code suivant montre comment créer un filtre pour rechercher tous les contacts modifiés après le 15 janvier 1999 à 15:30. </para>
+          <para>sFilter = "[LastModificationTime] &gt; '" &amp; format ("1/15/99 3:30pm", "ddddd h:NN AMPM") &amp; "'"</para>
           <para>Opérateurs booléens</para>
           <para>Les opérateurs Boolean, TRUE/FALSE, YES/NO, ON/OFF, etc, ne doivent pas être convertis en chaîne. Par exemple, pour déterminer si la journalisation est activée pour les contacts, utilisez ce filtre :</para>
-          <para>sFilter = « [Journal] = True » </para>
+          <para>sFilter = "[Journal] = true" </para>
           <para>
-            <b>Remarque</b>: Si vous utilisez des guillemets comme séparateurs avec champs booléens, une chaîne vide trouvera les éléments dont les champs comportent la valeur False et toutes les chaînes non vide trouvera les éléments dont les champs comportent la valeur True.</para>
+            <b>Remarque</b>: Si vous utilisez des guillemets comme délimiteurs avec des champs booléens, une chaîne vide trouvera alors les éléments dont les champs ont la valeur false et toutes les chaînes non vides trouveront les éléments dont les champs ont la valeur true.</para>
           <para>Mots clés (ou catégories)</para>
-          <para>Le champ catégories est de type keywords, est conçu pour contenir plusieurs valeurs. Lors de l’accès par programme, le champCatégories se comporte comme un champ de texte et la chaîne doit correspondre exactement. Les valeurs dans la chaîne de texte sont séparées par une virgule et un espace. Cela signifie généralement que vous ne pouvez pas utiliser les méthodes Rechercher et Restreindre sur un champ de mots clés s’il contient plusieurs valeurs. Par exemple, si vous avez un contact dans la catégorie Professionnel et un contact dans catégories Entreprise et Social, vous ne pouvez pas facilement utiliser les méthodes Rechercher et Restreindre pour récupérer tous les éléments qui se trouvent dans la catégorie Professionnel. Au lieu de cela, vous pouvez parcourir tous les contacts dans le dossier et utiliser la fonction Instr pour tester si la chaîne Entreprise est incluse dans l’ensemble du champ mots clés. </para>
+          <para>Le champ catégories est de type Mots clés, qui est conçu pour contenir plusieurs valeurs. Lorsque vous accédez au champ Catégories via un programme, celui-ci se comporte comme un champ de texte, et la chaîne doit correspondre exactement à la valeur recherchée. Les valeurs dans la chaîne de texte sont séparées par une virgule et un espace. Cela signifie généralement que vous ne pouvez pas utiliser les méthodes Find et Restrict sur un champ de mots clés s'il contient plusieurs valeurs. Par exemple, si un contact appartient à la catégorie Business et si un contact appartient aux catégories Business et Social, il n'est pas facile d'utiliser les méthodes Find et Restrict pour extraire tous les éléments qui se trouvent dans la catégorie Business. Il est préférable, dans ce cas, d'effectuer une recherche dans les contacts du dossier et d'utiliser la fonction Instr pour vérifier si la chaîne « Business » est contenue dans le champ des mots clés. </para>
           <para>
-            <b>Remarque</b>: une exception possible est si vous limitez le champ catégories à deux, ou un nombre de valeurs faible. Vous pouvez ensuite utiliser les méthodes Rechercher et Restreindre avec l’opérateur logique OU pour récupérer tous les contacts professionnels. Par exemple (dans pseudocode) : « Entreprise » ou « Entreprise, personnel » ou « Personnel, entreprise. » Les chaînes de catégorie ne sont pas sensibles à la casse.</para>
+            <b>Remarque</b>: une exception possible est si vous limitez le champ catégories à deux ou un petit nombre de valeurs. Vous pouvez ensuite utiliser les méthodes Rechercher et restreindre avec l'opérateur logique ou pour récupérer tous les contacts professionnels. Par exemple (dans pseudocode) : « Entreprise » ou « Entreprise, personnel » ou « Personnel, entreprise. » Les chaînes de catégorie ne sont pas sensibles à la casse.</para>
           <para>Entier</para>
-          <para>Vous pouvez rechercher les champs Integer avec ou sans guillemets comme délimiteurs. Les filtres suivants retrouveront les contacts qui ont été créés avec Outlook 2000 :
-</para>
-          <para>sFilter = « [OutlookInternalVersion] = 92711 » </para>
-          <para>sFilter = « [OutlookInternalVersion] = '92711' »</para>
-          <para>Utilisation des Variables dans le cadre du filtre</para>
-          <para>Comme l’illustre l’exemple de la méthode Restrict, vous pouvez utiliser des valeurs à partir de variables comme partie du filtre. L’exemple de code Microsoft Visual Basic suivant illustre la syntaxe qui utilise les variables comme partie du filtre. </para>
-          <para>sFullName = « Dan Wilson » </para>
-          <para> Cette approche utilise Chr (34) pour délimiter la valeur : sFilter = « [FullName] = « &amp; Chr (34) &amp; sNomComplet &amp; Chr (34) </para>
-          <para> Cette approche utilise des guillemets doubles pour délimiter la valeur : sFilter = « [FullName] = « « « &amp; sNomComplet &amp; » « »</para>
+          <para>Vous pouvez rechercher les champs Integer avec ou sans guillemets comme délimiteurs. Les filtres suivants retrouveront les contacts qui ont été créés avec Outlook 2000 : </para>
+          <para>sFilter = "[OutlookInternalVersion] = 92711" </para>
+          <para>sFilter = "[OutlookInternalVersion] = ' 92711 '"</para>
+          <para>Utilisation de variables comme partie du filtre</para>
+          <para>Comme l'illustre l'exemple de la méthode reStrict, vous pouvez utiliser les valeurs des variables dans le cadre du filtre. L'exemple de code Microsoft Visual Basic suivant illustre la syntaxe qui utilise des variables dans le cadre du filtre. </para>
+          <para>sFullName = "Dan Wilson" </para>
+          <para> Cette approche utilise Chr (34) pour délimiter la valeur: sFilter = "[FullName] &amp; =" Chr ( &amp; 34 &amp; ) sFullName Chr (34) </para>
+          <para> Cette approche utilise des guillemets doubles pour délimiter la valeur: sFilter = "[FullName] = &amp; " &amp; "" sFullName "" ""</para>
           <para>Utilisation d’opérateurs logiques dans le cadre du filtre</para>
-          <para>Les opérateurs logiques qui sont autorisés sont AND, OR, et NOT. Voici des variantes de la clause pour la méthodeRestreindre afin que vous puissiez spécifier plusieurs critères.  </para>
-          <para>OR : Le code suivant renvoie tous les éléments contacts ayant entreprise ou personnel en tant que catégorie.</para>
-          <para>sFilter = « [Catégories] = 'Personal' Or [Catégories] = 'Business' » </para>
-          <para>AND : Le code suivant extrait tous les contacts personnels travaillant à Microsoft.</para>
-          <para>sFilter = « [Catégories] = 'Personal' et [NomSociété] = 'Microsoft' » </para>
-          <para>NOT : Le code suivant extrait tous les contacts personnels qui ne travaillent pas à Microsoft.</para>
-          <para>sFilter = « [Catégories] = 'Personal' et non ([NomSociété] = 'Microsoft') »</para>
+          <para>Les opérateurs logiques qui sont autorisés sont AND, OR, et NOT. Voici des variantes de la clause pour la méthode reStrict, afin que vous puissiez spécifier plusieurs critères.  </para>
+          <para>OR : le code suivant renvoie tous les contacts dont la catégorie est Business ou Personal. </para>
+          <para>sFilter = "[categories] = 'personnel'ou [categories] = 'Business'" </para>
+          <para>AND : Le code suivant extrait tous les contacts personnels travaillant à Microsoft. </para>
+          <para>sFilter = "[categories] = 'Personal'and [CompanyName] = 'Microsoft'" </para>
+          <para>NOT : Le code suivant extrait tous les contacts personnels qui ne travaillent pas à Microsoft. </para>
+          <para>sFilter = "[categories] = 'personnel'et non ([CompanyName] = 'Microsoft')"</para>
           <para>Notes supplémentaires</para>
-          <para>Si vous essayez d’utiliser les méthodes Find et Restrict avec des champs définis par l’utilisateur, les champs doivent être définis dans le dossier, sinon une erreur se produit. Il est impossible d’effectuer une opération « contient ». Par exemple, vous ne pouvez pas utiliser Rechercher ou Restreindre pour rechercher tous les éléments ayant un mot spécifique dans le champobjet. Au lieu de cela, vous pouvez utiliser la méthode RechercheAvancée , ou vous pouvez parcourir tous les éléments dans le dossier et utiliser la fonctionInStr pour effectuer une recherche dans un champ. Vous pouvez utiliser la méthodeRestreindre permettant de rechercher des éléments qui commencent au sein d’une certaine plage de caractères. Par exemple, pour rechercher tous les contacts avec une dernière nom commençant par la lettre M, utilisez ce filtre : </para>
-          <para>sFilter = « [LastName] &gt; 'LZZZ' And [LastName] &lt; n ' »</para>
+          <para>Si vous essayez d'utiliser les méthodes Find ou reStrict avec des champs définis par l'utilisateur, les champs doivent être définis dans le dossier, sinon une erreur se produit. Il n'existe aucun moyen d'effectuer une opération « contains » (contient). Par exemple, vous ne pouvez pas utiliser Find ou Restrict pour rechercher des éléments dont le champ Objet contient un mot particulier. Il est préférable, dans ce cas, d'utiliser la méthode AdvancedSearch ou de parcourir l'ensemble des éléments dans le dossier et d'utiliser la fonction InStr pour effectuer une recherche dans un champ. Vous pouvez utiliser la méthode Restrict pour rechercher des éléments commençant par un caractère particulier. Par exemple, pour rechercher tous les contacts dont le nom de famille commence par la lettre M, utilisez le filtre suivant : </para>
+          <para>sFilter = "[nom] &gt; 'LZZZ'et [nom] &lt; 'N'"</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -261,10 +248,10 @@ Vous pouvez également utiliser la fonction chr(34) pour représenter le guillem
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Après le <see cref="M:Microsoft.Office.Interop.Outlook._Items.Find(System.String)" /> méthode s’exécute, cette méthode recherche et renvoie le prochain élément Outlook dans la collection spécifiée.</summary>
+        <summary>Après l' <see cref="M:Microsoft.Office.Interop.Outlook._Items.Find(System.String)" /> exécution de la méthode, cette méthode recherche et renvoie le prochain élément Outlook dans la collection spécifiée.</summary>
         <returns>Valeur Object qui représente le prochain élément Outlook trouvé dans la collection.</returns>
         <remarks><para> L'opération de recherche part de l'emplacement actuel, qui correspond à l'expression précédemment définie à l'aide de la méthode <b>Find</b>.</para>
-          <para>La méthode renvoie un élément Outlook d’objet si l’appel réussit ; elle renvoie <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) en cas d’échec.</para>
+          <para>La méthode renvoie un objet d'élément Outlook si l'appel réussit; elle renvoie la valeur <b>Nothing</b> (une référence null (Nothing en Visual Basic) en C#) si elle échoue.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -291,7 +278,7 @@ Vous pouvez également utiliser la fonction chr(34) pour représenter le guillem
       <Docs>
         <summary>Renvoie le premier objet de la collection.</summary>
         <returns>Valeur Object qui représente le premier objet contenu dans la collection.</returns>
-        <remarks><para>Renvoie <b>Nothing</b> si aucun objet premier existe, par exemple, s’il n’y a aucuns objets dans la collection. Pour garantir le bon fonctionnement de la <b>GetFirst</b>, <see cref="M:Microsoft.Office.Interop.Outlook._Items.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook._Items.GetNext" />, et <see cref="M:Microsoft.Office.Interop.Outlook._Items.GetPrevious" /> dans une collection volumineuse, appelez <b>GetFirst</b> avant <b>cette collection GetNext</b> et <b>GetLast</b> avant d’appeler <b>GetPrevious </b>. Pour vous assurer que vous sont toujours vos appels sur la même collection, créez une variable explicite qui fait référence à la collection avant d’entrer dans la boucle.</para>
+        <remarks><para>Renvoie la <b>valeur Nothing</b> s'il n'existe pas de premier objet, par exemple, s'il n'y a pas d'objets dans la collection. Pour garantir le bon fonctionnement des <b></b>méthodes GetFirst <see cref="M:Microsoft.Office.Interop.Outlook._Items.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook._Items.GetNext" />, et <see cref="M:Microsoft.Office.Interop.Outlook._Items.GetPrevious" /> dans une collection de grande taille, appelez <b>GetFirst</b> avant d'appeler <b>GetNext</b> sur cette collection et appelez <b>GetLast</b> avant d'appeler <b>GetPrevious. </b>. Pour vous assurer que vos appels portent sur la même collection, créez une variable explicite qui fait référence à la collection avant d’entrer dans la boucle.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -318,7 +305,7 @@ Vous pouvez également utiliser la fonction chr(34) pour représenter le guillem
       <Docs>
         <summary>Renvoie le dernier objet de la collection.</summary>
         <returns>Valeur Object qui représente le dernier objet contenu dans la collection.</returns>
-        <remarks><para>Elle renvoie la <b>valeur Nothing</b> si aucun objet n’existe, par exemple, si la collection est vide. Pour garantir le bon fonctionnement de le <see cref="M:Microsoft.Office.Interop.Outlook._Items.GetFirst" />, <b>GetLast</b>, <see cref="M:Microsoft.Office.Interop.Outlook._Items.GetNext" />, et <see cref="M:Microsoft.Office.Interop.Outlook._Items.GetPrevious" /> dans une collection volumineuse, appelez <b>GetFirst</b> avant d’appeler <b>GetNext</b> dans cette collection et appelez <b>GetLast</b> avant d’appeler <b>GetPrevious </b>. Pour vous assurer que vous sont toujours vos appels sur la même collection, créez une variable explicite qui fait référence à la collection avant d’entrer dans la boucle.</para>
+        <remarks><para>Elle renvoie la <b>valeur Nothing</b> s'il n'existe pas de dernier objet, par exemple, si la collection est vide. Pour garantir le <see cref="M:Microsoft.Office.Interop.Outlook._Items.GetFirst" />bon fonctionnement des méthodes, <b>GetLast</b>, <see cref="M:Microsoft.Office.Interop.Outlook._Items.GetNext" />et <see cref="M:Microsoft.Office.Interop.Outlook._Items.GetPrevious" /> des méthodes dans une grande collection, appelez <b>GetFirst</b> avant d'appeler <b>GetNext</b> sur cette collection, puis appelez <b>GetLast</b> avant l'appel de <b>GetPrevious. </b>. Pour vous assurer que vos appels portent sur la même collection, créez une variable explicite qui fait référence à la collection avant d’entrer dans la boucle.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -345,7 +332,7 @@ Vous pouvez également utiliser la fonction chr(34) pour représenter le guillem
       <Docs>
         <summary>Renvoie l'objet suivant de la collection.</summary>
         <returns>Valeur Object qui représente l'objet suivant contenu dans la collection.</returns>
-        <remarks><para>Elle renvoie la <b>valeur Nothing</b> si aucun objet suivant n’existe, par exemple, si déjà placé à la fin de la collection. Pour garantir le bon fonctionnement de le <see cref="M:Microsoft.Office.Interop.Outlook._Items.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook._Items.GetLast" />, <b>GetNext</b>, et <see cref="M:Microsoft.Office.Interop.Outlook._Items.GetPrevious" /> dans une collection volumineuse, appelez <b>GetFirst</b> avant d’appeler <b>GetNext</b> dans cette collection et appelez <b>GetLast</b> avant d’appeler <b>GetPrevious </b>. Pour vous assurer que vous sont toujours vos appels sur la même collection, créez une variable explicite qui fait référence à la collection avant d’entrer dans la boucle.</para>
+        <remarks><para>Elle renvoie la <b>valeur Nothing</b> s'il n'existe pas d'objet suivant, par exemple, s'il est déjà positionné à la fin de la collection. <see cref="M:Microsoft.Office.Interop.Outlook._Items.GetFirst" />Pour garantir le bon fonctionnement des méthodes <see cref="M:Microsoft.Office.Interop.Outlook._Items.GetLast" />,, <b>GetNext</b>et <see cref="M:Microsoft.Office.Interop.Outlook._Items.GetPrevious" /> méthode dans une grande collection, appelez <b>GetFirst</b> avant d'appeler <b>GetNext</b> sur cette collection, puis appelez <b>GetLast</b> avant l'appel de <b>GetPrevious. </b>. Pour vous assurer que vos appels portent sur la même collection, créez une variable explicite qui fait référence à la collection avant d’entrer dans la boucle.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -372,7 +359,7 @@ Vous pouvez également utiliser la fonction chr(34) pour représenter le guillem
       <Docs>
         <summary>Renvoie l'objet précédent de la collection.</summary>
         <returns>Valeur Object qui représente l'objet précédent contenu dans la collection.</returns>
-        <remarks><para>Elle renvoie la <b>valeur Nothing</b> si aucun objet précédent n’existe, par exemple, si le début de la collection. Pour garantir le bon fonctionnement de le <see cref="M:Microsoft.Office.Interop.Outlook._Items.GetFirst" />, <see cref="M:Microsoft.Office.Interop.Outlook._Items.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook._Items.GetNext" />, et les méthodes <b>GetPrevious</b> dans une collection volumineuse, appelez <b>GetFirst</b> avant d’appeler <b>GetNext</b> dans cette collection et appelez <b>GetLast</b> avant d’appeler <b> GetPrevious</b>. Pour vous assurer que vous sont toujours vos appels sur la même collection, créez une variable explicite qui fait référence à la collection avant d’entrer dans la boucle.</para>
+        <remarks><para>Elle renvoie la <b>valeur Nothing</b> s'il n'existe pas d'objet précédent, par exemple, s'il est déjà positionné au début de la collection. Pour garantir le <see cref="M:Microsoft.Office.Interop.Outlook._Items.GetFirst" />bon fonctionnement des méthodes <see cref="M:Microsoft.Office.Interop.Outlook._Items.GetLast" />, <see cref="M:Microsoft.Office.Interop.Outlook._Items.GetNext" />, et <b>GetPrevious</b> dans une grande collection, appelez <b>GetFirst</b> avant d'appeler <b>GetNext</b> sur cette collection, puis appelez <b>GetLast</b> avant d'appeler <b> GetPrevious</b>. Pour vous assurer que vos appels portent sur la même collection, créez une variable explicite qui fait référence à la collection avant d’entrer dans la boucle.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -402,11 +389,11 @@ Vous pouvez également utiliser la fonction chr(34) pour représenter le guillem
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) qui indique <b>True</b> si le <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> collection inclut des périodicités. Lecture-écriture.</summary>
+        <summary>Renvoie une valeur de <b>type Boolean</b> (<b>bool</b> en C#) qui indique <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> <b>true</b> si la collection doit inclure des périodicités. En lecture/écriture</summary>
         <value>To be added.</value>
-        <remarks><para>Cette propriété n’a d’effet que si la collection <b>Items</b> contient des rendez-vous et n’est pas triée par n’importe quelle propriété autre que <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.Start" /> dans l’ordre croissant. La valeur par défaut est <b>False</b>. Utilisez cette propriété lorsque vous souhaitez récupérer tous les rendez-vous pour une date donnée, où les rendez-vous périodiques n’apparaissant normalement pas, car ils ne sont pas associés à une date spécifique. Si vous avez besoin trier et filtrer les éléments de rendez-vous qui contiennent des rendez-vous périodiques, vous devez le faire dans cet ordre : trier les éléments dans l’ordre croissant, attribuez à <b>IncludeRecurrences</b> <b>la valeur True</b>et puis filtrer les éléments. Pour un exemple de code illustrant cet ordre, voir l’exemple ci-dessous. Si la collection comprend des rendez-vous périodiques sans date de fin, la définition de la propriété sur <b>True</b> peut entraîner la collection être infinie. Veillez à inclure un test pour ce dans les boucles. Vous ne devez pas utiliser la propriété <b>Count</b> de la collection <b>Items</b> lors d’une itération de la collection <b>d’éléments</b> dont la propriété <b>IncludeRecurrence prend</b> la valeur <b>True</b>. La valeur de <b>nombre</b> sera une valeur non définie.</para>
+        <remarks><para>Cette propriété n'a d'effet que si <b></b> la collection Items contient des rendez-vous et n'est <see cref="P:Microsoft.Office.Interop.Outlook._AppointmentItem.Start" /> pas triée par une autre propriété que par ordre croissant. La valeur par défaut est <b>False</b>. Utilisez cette propriété lorsque vous souhaitez récupérer tous les rendez-vous pour une date donnée, où normalement les rendez-vous périodiques ne figureraient pas car ils ne sont pas associés à une date spécifique. Si vous devez trier et filtrer des éléments de rendez-vous qui contiennent des rendez-vous périodiques, vous devez procéder dans cet ordre : triez les éléments par ordre croissant, attribuez à <b>IncludeRecurrences</b> la valeur <b>True</b>, puis filtrez les éléments. Pour un exemple illustrant cet ordre, voir l’exemple ci-dessous. Si la collection comporte des rendez-vous périodiques sans date de fin et que cette propriété a la valeur <b>True</b>, la collection obtenue risque d’être infinie. Pensez à bien tester cette condition dans les boucles. Il est conseillé de ne pas utiliser la propriété <b>Count</b> de la collection <b>Items</b> lorsque vous procédez à une itération de la collection <b>Items</b> alors que la propriété <b>IncludeRecurrence</b> a la valeur <b>True</b>. La valeur de <b>Count</b> sera indéfinie.</para>
           <para>
-            <b>Mise en garde</b>: filtrage sur une liste triée des occurrences entraîne la propriété IncludeRecurrences de fonctionner comme prévu. Par exemple, la séquence suivante renvoie toutes les occurrences du rendez-vous ; périodique et non périodique : (1) trier par propriété Start (2) définir la propriété sur false (3) appeler Restrict (autrement dit, le filtre).</para>
+            <b>Attention</b>: le filtrage sur une liste d'occurrences triée entraîne le fonctionnement de la propriété IncludeRecurrences. Par exemple, la séquence suivante renverra toutes les occurrences de rendez-vous; périodique et non périodique: (1) Trier par propriété de début (2) définir la propriété sur false (3) appel de la propriété reStrict (par exemple, filtre).</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -465,7 +452,7 @@ Vous pouvez également utiliser la fonction chr(34) pour représenter le guillem
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie la valeur de type <b>Object</b> parent de l’objet spécifié. En lecture seule.</summary>
+        <summary>Renvoie la valeur de type <b>Object</b> parent de l’objet spécifié. Lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -496,7 +483,7 @@ Vous pouvez également utiliser la fonction chr(34) pour représenter le guillem
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cet objet, ce membre ou cette énumération est déconseillé et n'est pas destiné à être utilisé dans votre code.</summary>
+        <summary>Cet objet, ce membre ou cette énumération est déconseillé et n’est pas destiné à être utilisé dans votre code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -524,7 +511,7 @@ Vous pouvez également utiliser la fonction chr(34) pour représenter le guillem
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Valeur d’index à base 1 de l’objet dans la collection.</param>
+        <param name="Index">Valeur d'index à base 1 de l'objet dans la collection.</param>
         <summary>Supprime un objet de la collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -550,7 +537,7 @@ Vous pouvez également utiliser la fonction chr(34) pour représenter le guillem
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Efface les propriétés qui ont été mis en cache avec les <see cref="M:Microsoft.Office.Interop.Outlook._Items.SetColumns(System.String)" /> méthode.</summary>
+        <summary>Efface les propriétés qui ont été mises en cache à <see cref="M:Microsoft.Office.Interop.Outlook._Items.SetColumns(System.String)" /> l'aide de la méthode.</summary>
         <remarks><para>Toutes les propriétés demeurent accessibles après l'appel de la méthode <b>ResetColumns</b>. La méthode <b>SetColumns</b> doit être réutilisée pour permettre le stockage de nouvelles propriétés. La méthode <b>ResetColumns</b> n'a aucun effet si la méthode <b>SetColumns</b> n'a pas été appelée au préalable.</para>
           <para> </para></remarks>
       </Docs>
@@ -578,13 +565,13 @@ Vous pouvez également utiliser la fonction chr(34) pour représenter le guillem
         <Parameter Name="Filter" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Filter">Expression de filtre chaîne à appliquer. Pour plus d’informations, voir la <see cref="M:Microsoft.Office.Interop.Outlook._Items.Find(System.String)" /> méthode.</param>
-        <summary>Applique un filtre à la <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> collection, retournant une nouvelle collection contenant tous les éléments d’origine qui correspondant au filtre.</summary>
-        <returns>Une collection <b>Items</b> qui représente les éléments de la collection <b>Items</b> d’origine qui correspond au filtre.</returns>
-        <remarks><para>Cette méthode est une alternative à l’aide de la <see cref="M:Microsoft.Office.Interop.Outlook._Items.Find(System.String)" /> méthode ou <see cref="M:Microsoft.Office.Interop.Outlook._Items.FindNext" /> pour parcourir des éléments spécifiques dans une collection. Les méthodes <b>Rechercher</b> ou <b>RechercherSuivant</b> sont plus rapides s’il existe un petit nombre d’éléments de filtrage. La méthode <b>Restreindre</b> est sensiblement plus rapide s’il y a un grand nombre d’éléments dans la collection, en particulier si seuls quelques éléments dans une grande collection doivent être trouvés.</para>
+        <param name="Filter">Expression de filtre du type Chaîne à appliquer. Pour plus d'informations, <see cref="M:Microsoft.Office.Interop.Outlook._Items.Find(System.String)" /> reportez-vous à la méthode.</param>
+        <summary>Applique un filtre à la <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> collection, en renvoyant une nouvelle collection contenant tous les éléments de l'objet d'origine qui correspondent au filtre.</summary>
+        <returns>Une <b></b> collection Items qui représente les éléments de la <b></b> collection Items d'origine qui correspondent au filtre.</returns>
+        <remarks><para>Cette méthode est une alternative à l'utilisation <see cref="M:Microsoft.Office.Interop.Outlook._Items.Find(System.String)" /> de la <see cref="M:Microsoft.Office.Interop.Outlook._Items.FindNext" /> méthode ou de la méthode pour effectuer une itération sur des éléments spécifiques d'une collection. Les méthodes <b>Find</b> et <b>FindNext</b> sont plus rapides que le filtrage si le nombre d'élément est peu élevé. La méthode <b>Restrict</b> est beaucoup plus rapide si la collection comporte de nombreux éléments et particulièrement, si seuls quelques éléments doivent être renvoyés.</para>
           <para>
-            <b>Remarque</b>: Si vous utilisez des champs définis par l’utilisateur dans le cadre d’une clause <b>Find</b> ou <b>Restrict</b> , les champs définis par l’utilisateur doivent exister dans le dossier. Dans le cas contraire, le code génère une erreur indiquant que le champ est inconnu. Vous pouvez ajouter un champ à un dossier en affichant le Sélecteur de champs et en cliquant sur Nouveau.</para>
-          <para>Cette méthode ne peut pas être utilisée et génère une erreur avec les propriétés suivantes :</para>
+            <b>Remarque</b>: Si vous utilisez des champs définis par l'utilisateur dans le cadre d'une clause <b>Find</b> ou Restrict, les champs définis par l'utilisateur doivent exister dans le dossier. <b></b> Si ce n'est pas le cas, le code générera un message d'erreur indiquant que ces champs sont inconnus. Pour ajouter un champ à un dossier, il suffit d'afficher le  sélecteur de champs et de cliquer sur Nouveau.</para>
+          <para>Cette méthode ne peut pas être utilisée et génère une erreur avec les propriétés suivantes :</para>
           <list type="table">
             <item>
               <description>BodyCategoriesChildrenClassCompaniesCompanyLastFirstNoSpaceCompanyLastFirstSpaceOnlyContactNamesContactsConversationIndexDLNameEmail1EntryIDEmail2EntryIDEmail3EntryIDEntryIDHTMLBodyIsOnlineMeetingLastFirstAndSuffixLastFirstNoSpaceAutoResolvedWinnerBodyFormatInternetCodePagePermission</description>
@@ -593,69 +580,57 @@ Vous pouvez également utiliser la fonction chr(34) pour représenter le guillem
           </list>
           <para>Création de filtre pour les méthodes Rechercher et Restreindre</para>
           <para>La syntaxe du filtre varie selon le type de champ que vous filtrez.</para>
-          <para>Chaîne (pour les champs de texte) </para>
-          <para>Lors de la recherche des champs de texte, vous pouvez utiliser une apostrophe (') ou entre guillemets (« »), pour délimiter les valeurs qui font partie du filtre. Par exemple, toutes les lignes suivantes fonctionnent correctement lorsque le champ est de taper <b>chaîne</b> (<b>string</b> en c#) </para>
-          <para>sFilter = « [NomSociété] = 'Microsoft' » </para>
-          <para>sFilter = « [NomSociété] = « « Microsoft » » » </para>
-          <para>sFilter = « [NomSociété] = « &amp; Chr (34) &amp; « Microsoft » &amp; Chr (34)</para>
+          <para>String (pour les champs de texte) </para>
+          <para>Lors de la recherche de champs de texte, vous pouvez utiliser une apostrophe (') ou des guillemets doubles ("") pour délimiter les valeurs qui font partie du filtre. Par exemple, toutes les lignes suivantes fonctionnent correctement lorsque le champ est de type <b>chaîne</b> (<b>String</b> en C#): </para>
+          <para>sFilter = "[CompanyName] = 'Microsoft'" </para>
+          <para>sFilter = "[CompanyName] =" "Microsoft" "" </para>
+          <para>sFilter = "[CompanyName] =" &amp; Chr (34) &amp; "Microsoft" &amp; Chr (34)</para>
           <para>Lorsqu'il s'agit de spécifier un filtre dans une requête Jet ou DASL, si vous utilisez une paire de guillemets simples pour délimiter une chaîne qui fait partie de ce filtre et que le chaîne contient un autre guillemet simple ou une apostrophe, ajoutez un guillemet simple en guise de caractère d'échappement avant le guillemet simple ou l'apostrophe. Adoptez la même approche si vous utilisez une paire de guillemets doubles pour délimier une chaîne : si la chaîne contient un guillemet double, ajoutez un guillemet double en guise de caractère d'échappement avant le guillemet double.</para>
-          <para>Par exemple, dans le filtre DASL chaîne que des filtres pour la propriété <b>Subject</b> est égal au mot ne peut pas, la chaîne de filtre entière est délimitée par une paire de guillemets et la chaîne imbriquée ne peut pas est délimité par une paire de guillemets simples. Il existe trois caractères dont vous avez besoin d’échappement dans cette chaîne de filtre : le guillemet de début et la fin des guillemets doubles pour la référence de propriété de http://schemas.microsoft.com/mapi/proptag/0x0037001f, et l’apostrophe dans la condition de valeur pour le mot ne peut pas. En appliquant les caractères d’échappement appropriés, vous pouvez exprimer la chaîne de filtre comme suit :</para>
-          <para>filtre = « @SQL = » «http://schemas.microsoft.com/mapi/proptag/0x0037001f» « = » peut '' t' »</para>
-          <para>
-
- 
-
-Vous pouvez également utiliser la fonction chr(34) pour représenter le guillemet double (dont la valeur de caractère ASCII est 34) utilisé comme caractère d’échappement. En utilisant chr(34) à la place d’un caractère d’échappement de type guillemet double, vous pouvez exprimer le dernier exemple comme suit :
-
- 
-
-</para>
-          <para>Filter = « @SQL = » &amp; Chr (34) &amp; «http://schemas.microsoft.com/mapi/proptag/0x0037001f» _</para>
-          <para>    &amp;Chr (34) &amp; « = » &amp; « ' peut « t » »</para>
-          <para>Il est également nécessaire d’utiliser des caractères d’échappement pour les guillemets simples et doubles figurant dans les requêtes DASL à l’aide des opérateurs <b>ci_startswith</b> ou <b>ci_phrasematch</b>. Par exemple, la requête suivante exécute une requête de correspondance d’expression pour can’t dans l’objet du message :
-
- 
-
-</para>
-          <para>Filter = « @SQL = » &amp; Chr (34) &amp; «http://schemas.microsoft.com/mapi/proptag/0x0037001E» _</para>
-          <para>    &amp;Chr (34) &amp; « ci_phrasematch » &amp; » ' peut « t » »</para>
-          <para>Un autre exemple est une chaîne de filtre DASL qui filtre pour la propriété <b>Subject</b> est égale à la mention les éléments de droite, où le document word est placée entre guillemets. Dans ce cas, vous devez échapper par des guillemets doubles englobants comme suit :</para>
-          <para>filtre = « @SQL = » «http://schemas.microsoft.com/mapi/proptag/0x0037001f» « = 'droite « ou « sélections » »' »</para>
+          <para>Par exemple, dans la chaîne de filtre DASL qui filtre la propriété <b>Subject</b> est égale à la valeur de Word not, la chaîne de filtrage entière est délimitée par une paire de guillemets et la chaîne incorporée ne peut pas être délimitée par une paire de guillemets simples. Cette chaîne de filtrage comporte trois caractères que vous devez ignorer: les guillemets de début et de fin pour la référence de propriété de http://schemas.microsoft.com/mapi/proptag/0x0037001f, et l'apostrophe dans la condition de valeur pour le mot est introuvable. En appliquant les caractères d'échappement appropriés, vous pouvez exprimer la chaîne de filtre comme suit :</para>
+          <para>Filter = "@SQL=" "http://schemas.microsoft.com/mapi/proptag/0x0037001f" "=" Can' "</para>
+          <para>Vous pouvez également utiliser la fonction chr(34) pour représenter le guillemet double (dont la valeur de caractère ASCII est 34) utilisé comme caractère d’échappement. En utilisant chr(34) à la place d’un caractère d’échappement de type guillemet double, vous pouvez exprimer le dernier exemple comme suit :</para>
+          <para>Filter = "@SQL=" &amp; Chr (34) &amp; "http://schemas.microsoft.com/mapi/proptag/0x0037001f" _</para>
+          <para>    &amp;Chr (34) &amp; "=" &amp; "' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' '</para>
+          <para>Il est également nécessaire d’utiliser des caractères d’échappement pour les guillemets simples et doubles figurant dans les requêtes DASL à l’aide des opérateurs <b>ci_startswith</b> ou <b>ci_phrasematch</b>. Par exemple, la requête suivante exécute une requête de correspondance d’expression pour can’t dans l’objet du message : </para>
+          <para>Filter = "@SQL=" &amp; Chr (34) &amp; "http://schemas.microsoft.com/mapi/proptag/0x0037001E" _</para>
+          <para>    &amp;Chr (34) &amp; "ci_phrasematch" &amp; "'ne peut pas'</para>
+          <para>Un autre exemple est une chaîne de filtre DASL qui filtre la propriété <b>Subject</b> égale aux mots, où le mot est placé entre guillemets. Dans ce cas, vous devez ajouter des caractères d'échappement pour les guillemets doubles comme suit :</para>
+          <para>Filter = "@SQL=" "http://schemas.microsoft.com/mapi/proptag/0x0037001f" "=" droite "" Stuff "" ' "</para>
           <para>Un ensemble de règles d’échappement différent s’applique à une référence de propriété pour les propriétés nommées contenant l’espace, un guillemet simple, double guillemets ou caractère pourcentage. Pour plus d’informations, voir Référencement des propriétés par Espace de noms.</para>
           <para>Date</para>
-          <para>Bien que les dates et heures sont généralement stockées avec un format de Date, <b>recherchez</b> et méthodes <b>Restrict</b> nécessitent que la date et l’heure être converti en une représentation de chaîne. Pour vous assurer que la date est mise en forme comme prévu dans Microsoft Outlook, utiliser la fonction<b>Format</b>. L’exemple suivant crée un filtre pour trouver tous les contacts qui ont été modifiées après le 15 janvier 1999 à 3:30 P.M. </para>
-          <para>sFilter = » [LastModificationTime] &gt; ' » &amp; Format (« 15/1/99 15:30:00 », « ddddd h:nn suffixes ») &amp; » ' »</para>
+          <para>Bien que les dates et les heures soient généralement stockées à l’aide d’un format Date, les méthodes <b>Find</b> et <b>Restrict</b> nécessitent que la date et l’heure soient converties en une représentation de chaîne. Pour vérifier que la date est mise en forme comme prévu dans Microsoft Outlook, utilisez la fonction <b>Format</b>. L'exemple de code suivant montre comment créer un filtre pour rechercher tous les contacts modifiés après le 15 janvier 1999 à 15:30. </para>
+          <para>sFilter = "[LastModificationTime] &gt; '" &amp; format ("1/15/99 3:30pm", "ddddd h:NN AMPM") &amp; "'"</para>
           <para>Opérateurs booléens</para>
           <para>Les opérateurs Boolean, TRUE/FALSE, YES/NO, ON/OFF, etc, ne doivent pas être convertis en chaîne. Par exemple, pour déterminer si la journalisation est activée pour les contacts, utilisez ce filtre :</para>
-          <para>sFilter = « [Journal] = True » </para>
+          <para>sFilter = "[Journal] = true" </para>
           <para>
-            <b>Remarque</b>: Si vous utilisez des guillemets comme séparateurs avec champs <b>booléens</b> , une chaîne vide trouvera les éléments dont les champs comportent la <b>valeur False</b> et toutes les chaînes non vide trouvera les éléments dont les champs comportent <b>la valeur True</b>. </para>
+            <b>Remarque</b>: Si vous utilisez des guillemets comme délimiteurs <b></b> avec des champs booléens, une chaîne vide trouvera alors les éléments dont les champs ont la <b>valeur false</b> et toutes les chaînes non vides trouveront les éléments dont les champs ont la <b>valeur true</b>. </para>
           <para>Mots clés (ou catégories)</para>
-          <para>Le champ catégories est de type keywords, est conçu pour contenir plusieurs valeurs. Lors de l’accès par programme, le champCatégories se comporte comme un champ de texte et la chaîne doit correspondre exactement. Les valeurs dans la chaîne de texte sont séparées par une virgule et un espace. Cela signifie généralement que vous ne pouvez pas utiliser les méthodes <b>Rechercher</b> et <b>Restreindre</b> sur un champ de mots clés s’il contient plusieurs valeurs. Par exemple, si vous avez un contact dans la catégorie Professionnel et un contact dans catégories Entreprise et Social, vous ne pouvez pas facilement utiliser les méthodes <b>Rechercher</b> et <b>Restreindre</b> pour récupérer tous les éléments qui se trouvent dans la catégorie Professionnel. Au lieu de cela, vous pouvez parcourir tous les contacts dans le dossier et utiliser la fonction <b>Instr</b> pour tester si la chaîne Entreprise est incluse dans l’ensemble du champ mots clés. </para>
+          <para>Le champ catégories est de type Mots clés, qui est conçu pour contenir plusieurs valeurs. Lorsque vous accédez au champ Catégories via un programme, celui-ci se comporte comme un champ de texte, et la chaîne doit correspondre exactement à la valeur recherchée. Les valeurs dans la chaîne de texte sont séparées par une virgule et un espace. Cela signifie généralement que vous ne pouvez pas utiliser les méthodes <b>Find</b> et <b>Restrict</b> sur un champ de mots clés s'il contient plusieurs valeurs. Par exemple, si un contact appartient à la catégorie Business et si un contact appartient aux catégories Business et Social, il n'est pas facile d'utiliser les méthodes <b>Find</b> et <b>Restrict</b> pour extraire tous les éléments qui se trouvent dans la catégorie Business. Il est préférable, dans ce cas, d'effectuer une recherche dans les contacts du dossier et d'utiliser la fonction <b>Instr</b> pour vérifier si la chaîne « Business » est contenue dans le champ des mots clés. </para>
           <para>
-            <b>Remarque</b>: une exception possible est si vous limitez le champ catégories à deux, ou un nombre de valeurs faible. Vous pouvez ensuite utiliser les méthodes <b>Rechercher</b> et <b>Restreindre</b> avec l’opérateur logique OU pour récupérer tous les contacts professionnels. Par exemple (dans pseudocode) : « Entreprise » ou « Entreprise, personnel » ou « Personnel, entreprise. » Les chaînes de catégorie ne sont pas sensibles à la casse. </para>
+            <b>Remarque</b>: une exception possible est si vous limitez le champ catégories à deux ou un petit nombre de valeurs. Vous pouvez alors utiliser les méthodes <b>Find</b> et <b>Restrict</b> avec l’opérateur logique OR pour récupérer tous les contacts de la catégorie Business. Par exemple (en pseudocode) : "Business" OR "Business, Personal" OR "Personal, Business." Les chaînes de catégorie ne sont pas sensibles à la casse. </para>
           <para>Entier</para>
-          <para>Vous pouvez rechercher les champs <b>Integer</b> avec ou sans les guillemets comme séparateurs. Les filtres suivants retrouveront les contacts qui ont été créés à l’aide d’Outlook 2000 : </para>
-          <para>sFilter = « [OutlookInternalVersion] = 92711 » </para>
-          <para>sFilter = « [OutlookInternalVersion] = '92711' »</para>
-          <para>Utilisation des Variables dans le cadre du filtre</para>
-          <para>Comme l’exemple de la méthode <b>Restreindre</b>l’illustre, vous pouvez utiliser des valeurs de variables dans le cadre du filtre. L’exemple de code Microsoft Visual Basic suivant illustre la syntaxe qui utilise les variables comme partie du filtre. </para>
-          <para>sFullName = « Dan Wilson » </para>
-          <para>' Cette approche utilise Chr (34) pour délimiter la valeur. </para>
-          <para>sFilter = « [FullName] = « &amp; Chr (34) &amp; sNomComplet &amp; Chr (34) </para>
-          <para>' Cette approche utilise des guillemets doubles pour délimiter la valeur. </para>
-          <para>sFilter = « [FullName] = « « « &amp; sNomComplet &amp; » « »</para>
+          <para>Vous pouvez rechercher les champs de type <b>Integer</b> avec ou sans guillemets comme délimiteurs. Les filtres suivants retrouveront les contacts qui ont été créés avec Outlook 2000 : </para>
+          <para>sFilter = "[OutlookInternalVersion] = 92711" </para>
+          <para>sFilter = "[OutlookInternalVersion] = ' 92711 '"</para>
+          <para>Utilisation de variables comme partie du filtre</para>
+          <para>Comme l'illustre l'exemple de la méthode <b>Restrict</b>, vous pouvez utiliser des valeurs issues de variables dans le filtre. L'exemple de code Microsoft Visual Basic suivant illustre la syntaxe qui utilise des variables dans le cadre du filtre. </para>
+          <para>sFullName = "Dan Wilson" </para>
+          <para>'Cette approche utilise Chr (34) pour délimiter la valeur. </para>
+          <para>sFilter = "[FullName] =" &amp; Chr (34) &amp; sFullName &amp; Chr (34) </para>
+          <para>'Cette approche utilise des guillemets doubles pour délimiter la valeur. </para>
+          <para>sFilter = "[FullName] =" "" &amp; sFullName &amp; "" ""</para>
           <para>Utilisation d’opérateurs logiques dans le cadre du filtre</para>
-          <para>Les opérateurs logiques qui sont autorisés sont AND, OR, et NOT. Les éléments suivants sont des variantes de la clause pour la méthode <b>Restrict</b> vous pouvez spécifier plusieurs critères.  </para>
-          <para>OR : Le code suivant renvoie tous les éléments contacts ayant entreprise ou personnel en tant que catégorie.</para>
-          <para>sFilter = « [Catégories] = 'Personal' Or [Catégories] = 'Business' » </para>
-          <para>AND : Le code suivant extrait tous les contacts personnels travaillant à Microsoft.</para>
-          <para>sFilter = « [Catégories] = 'Personal' et [NomSociété] = 'Microsoft' » </para>
-          <para>NOT : Le code suivant extrait tous les contacts personnels qui ne travaillent pas à Microsoft.</para>
-          <para>sFilter = « [Catégories] = 'Personal' et non ([NomSociété] = 'Microsoft') »</para>
+          <para>Les opérateurs logiques qui sont autorisés sont AND, OR, et NOT. Voici des variantes de la clause pour la <b></b> méthode Restrict afin que vous puissiez spécifier plusieurs critères.  </para>
+          <para>OR : le code suivant renvoie tous les contacts dont la catégorie est Business ou Personal. </para>
+          <para>sFilter = "[categories] = 'personnel'ou [categories] = 'Business'" </para>
+          <para>AND : Le code suivant extrait tous les contacts personnels travaillant à Microsoft. </para>
+          <para>sFilter = "[categories] = 'Personal'and [CompanyName] = 'Microsoft'" </para>
+          <para>NOT : Le code suivant extrait tous les contacts personnels qui ne travaillent pas à Microsoft. </para>
+          <para>sFilter = "[categories] = 'personnel'et non ([CompanyName] = 'Microsoft')"</para>
           <para>Notes supplémentaires</para>
-          <para>Si vous essayez d’utiliser les méthodes<b>Rechercher</b> ou <b>Restreindre</b> avec des champs définis par l’utilisateur, les champs doivent être définis dans le dossier, sinon une erreur se produit. Il est impossible d’effectuer une opération « contient ». Par exemple, vous ne pouvez pas utiliser <b>Rechercher</b> ou <b>Restreindre</b> pour rechercher tous les éléments ayant un mot spécifique dans le champobjet. Au lieu de cela, vous pouvez utiliser la <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> méthode, ou vous pouvez une boucle sur tous les éléments dans le dossier et utiliser la fonction <b>InStr</b> pour effectuer une recherche dans un champ. Vous pouvez utiliser la méthode<b>Restreindre</b> permettant de rechercher des éléments qui commencent au sein d’une certaine plage de caractères. Par exemple, pour rechercher tous les contacts avec une dernière nom commençant par la lettre M, utilisez ce filtre : </para>
-          <para>sFilter = « [LastName] &gt; 'LZZZ' And [LastName] &lt; n ' »</para>
+          <para>Si vous essayez d'utiliser les méthodes <b>Find</b> ou <b>Restrict</b> avec des champs définis par l'utilisateur, ces champs doivent être définis dans le dossier, sinon, une erreur se produit. Il n'existe aucun moyen d'effectuer une opération « contains (contient) ». Par exemple, vous ne pouvez pas utiliser <b>Find</b> ou <b>Restrict</b> pour rechercher des éléments dont le champ Objet contient un mot particulier. Au lieu de cela, vous <see cref="M:Microsoft.Office.Interop.Outlook._Application.AdvancedSearch(System.String,System.Object,System.Object,System.Object)" /> pouvez utiliser la méthode, ou vous pouvez parcourir tous les éléments du dossier et utiliser la <b></b> fonction InStr pour effectuer une recherche dans un champ. Vous pouvez utiliser la méthode <b>Restrict</b> pour rechercher des éléments commençant par un caractère particulier. Par exemple, pour rechercher tous les contacts dont le nom de famille commence par la lettre M, utilisez le filtre suivant : </para>
+          <para>sFilter = "[nom] &gt; 'LZZZ'et [nom] &lt; 'N'"</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -682,9 +657,9 @@ Vous pouvez également utiliser la fonction chr(34) pour représenter le guillem
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
+        <summary>Renvoie l' <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet de la session en cours. Lecture seule.</summary>
         <value>To be added.</value>
-        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La propriété <b>session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peuvent être utilisées de façon interchangeable pour obtenir l'objet <b>namespace</b> de la session en cours. Les deux membres présentent la même utilité. Par exemple, les paires d'instructions suivantes exécutent la même fonction:</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -719,67 +694,17 @@ Vous pouvez également utiliser la fonction chr(34) pour représenter le guillem
       <Docs>
         <param name="Columns">Chaîne qui contient les noms des propriétés à mettre en chache. Les noms de propriétés sont délimités par des virgules dans cette chaîne.</param>
         <summary>Met en cache certaines propriétés d’un élément de la collection pour permettre d’y accéder très rapidement.</summary>
-        <remarks><para>La méthode <b>SetColumns</b> est utile pour itérer la <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> collection. Si vous n’utilisez pas cette méthode, Microsoft Outlook doit ouvrir chaque élément pour accéder à la propriété. Avec la méthode <b>SetColumns</b> , Outlook vérifie uniquement les propriétés que vous avez mis en cache et fournit un accès rapide et en lecture seule à ces propriétés.</para>
-          <para>Après avoir appliqué la méthode <b>SetColumns</b> sur des propriétés spécifiques de la collection, vous ne peut pas lire d’autres propriétés de cette collection ; les propriétés qui ne sont pas mis en cache sont renvoyées vides. Vous ne peuvent pas écrire soit à une des propriétés de cette collection. Sinon, si vous avez besoin d’un accès en lecture-écriture et rapide à un ensemble d’éléments, utilisez la <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> objet.</para>
-          <para>				La méthode 
-            <b>SetColumns</b> ne peut pas être utilisée avec les propriétés qui renvoient un objet (une erreur sera générée). Elle ne peut pas être utilisée avec les propriétés suivantes :
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-</para>
+        <remarks><para>La méthode <b>SetColumns</b> est utile pour parcourir la <see cref="T:Microsoft.Office.Interop.Outlook.Items" /> collection. Si vous n'utilisez pas cette méthode, Microsoft Outlook doit ouvrir chaque élément pour accéder à la propriété. Avec la méthode <b>SetColumns</b>, Outlook vérifie uniquement les propriétés que vous avez placées en mémoire cache et fournit un accès rapide et en lecture seule à ces propriétés.</para>
+          <para>Après avoir appliqué la méthode <b>SetColumns</b> à des propriétés spécifiques de la collection, vous ne pouvez pas lire les autres propriétés de cette collection ; les propriétés qui ne sont pas mises en cache sont renvoyées vides. Vous n’avez pas non plus la possibilité d’écrire dans les propriétés de cette collection. En guise d'alternative, si vous avez besoin d'un accès en lecture et en écriture rapide à <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> un ensemble d'éléments, utilisez l'objet.</para>
+          <para>La méthode 
+            <b>SetColumns</b> ne peut pas être utilisée avec les propriétés qui renvoient un objet (une erreur sera générée). Elle ne peut pas être utilisée avec les propriétés suivantes :</para>
           <list type="table">
             <item>
               <description>AutoResolvedWinner</description>
               <description>InternetCodePage</description>
             </item>
             <item>
-              <description>Body</description>
+              <description>Corps</description>
               <description>MeetingWorkspaceURL</description>
             </item>
             <item>
@@ -789,7 +714,7 @@ Vous pouvez également utiliser la fonction chr(34) pour représenter le guillem
               </description>
             </item>
             <item>
-              <description>Categories</description>
+              <description>Catégories</description>
               <description>ReceivedByEntryID</description>
             </item>
             <item>
@@ -862,14 +787,13 @@ Vous pouvez également utiliser la fonction chr(34) pour représenter le guillem
         <Parameter Name="Descending" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Property">Le nom de la propriété utilisé pour le tri, qui peut-être être placés entre crochets, par exemple, « [NomSociété] ». Propriétés définies par l’utilisateur qui contiennent des espaces doivent être placés entre crochets. Peut-être pas une propriété de type keywords définies par l’utilisateur, et ne peut pas être une propriété à valeurs multiples, par exemple une catégorie. Pour les propriétés définies par l’utilisateur, la propriété doit figurer dans la collection <b>UserDefinedProperties</b> pour <see cref="P:Microsoft.Office.Interop.Outlook._Items.Parent" />, qui représente le <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> objet qui contient les éléments.</param>
+        <param name="Property">Nom de la propriété à utiliser pour le tri, qui peut être placé entre crochets, par exemple, «[CompanyName]». Les propriétés définies par l'utilisateur qui contiennent des espaces doivent être placées entre crochets. N'est peut-être pas une propriété définie par l'utilisateur de type Mots clés, et peut ne pas être une propriété à valeurs multiples, telle qu'une catégorie. Pour les propriétés définies par l'utilisateur, la propriété doit exister <b></b> dans la collection <see cref="P:Microsoft.Office.Interop.Outlook._Items.Parent" />UserDefinedProperties de, qui <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> représente l'objet contenant les éléments.</param>
         <param name="Descending">Cet argument à la valeur <b>True</b> pour un tri par ordre décroissant. La valeur par défaut est <b>False</b> (croissant).</param>
         <summary>Trie la collection d'éléments en fonction de la propriété spécifiée. L'index de cette collection est ramené à 1 après exécution de cette méthode.</summary>
         <remarks><para>La méthode 
-            <b>Sort</b> affecte uniquement l'ordre des éléments d'une collection. Elle n'affecte pas l'ordre des éléments dans un affichage d'explorateur.
-</para>
-          <para>
-            <b>Tri</b> ne peut pas être utilisée et génère une erreur si le <paramref name="property" /> paramètre est une des propriétés suivantes :                </para>
+            <b>Sort</b> affecte uniquement l'ordre des éléments d'une collection. Elle n'affecte pas l'ordre des éléments dans un affichage d'explorateur.</para>
+          <para>L'opération 
+            <b>sort</b> ne peut pas être utilisée et génère une <paramref name="property" /> erreur si le paramètre est l'une des propriétés suivantes:                </para>
           <list type="table">
             <item>
               <description>
@@ -924,7 +848,7 @@ Vous pouvez également utiliser la fonction chr(34) pour représenter le guillem
                 <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.LastFirstAndSuffix" />
               </description>
               <description>
-                <b>Enregistré</b>
+                <b>Saved</b>
               </description>
             </item>
             <item>
@@ -932,7 +856,7 @@ Vous pouvez également utiliser la fonction chr(34) pour représenter le guillem
                 <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.LastFirstNoSpace" />
               </description>
               <description>
-                <b>Envoyé</b>
+                <b>Messages envoyés</b>
               </description>
             </item>
             <item>

@@ -1,5 +1,5 @@
 <Type Name="OlkTextBoxEvents_KeyUpEventHandler" FullName="Microsoft.Office.Interop.Outlook.OlkTextBoxEvents_KeyUpEventHandler">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="5730eae6c26be5e3e8ea238f1843d96f7e19f016" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27897394" /></Metadata><TypeSignature Language="C#" Value="public delegate void OlkTextBoxEvents_KeyUpEventHandler(ref int KeyCode, OlShiftState Shift);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5730eae6c26be5e3e8ea238f1843d96f7e19f016" /><Meta Name="ms.sourcegitcommit" Value="8bffa304e2953ca61fa94459dd08997552262640" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="04/05/2019" /><Meta Name="ms.locfileid" Value="31479547" /></Metadata><TypeSignature Language="C#" Value="public delegate void OlkTextBoxEvents_KeyUpEventHandler(ref int KeyCode, OlShiftState Shift);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OlkTextBoxEvents_KeyUpEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.OlkTextBoxEvents_KeyUpEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub OlkTextBoxEvents_KeyUpEventHandler(ByRef KeyCode As Integer, Shift As OlShiftState)" />
@@ -28,7 +28,7 @@
   </ReturnValue>
   <Docs>
     <param name="KeyCode">Valeur numérique de la touche enfoncée.</param>
-    <param name="Shift">Un masque de bits OR de constantes dans les <see cref="T:Microsoft.Office.Interop.Outlook.OlShiftState" /> énumération qui spécifie si les touches MAJ, CTRL ou ALT ont été enfoncées.</param>
+    <param name="Shift">Masque de constantes de l'opérateur de manipulation de <see cref="T:Microsoft.Office.Interop.Outlook.OlShiftState" /> bits or dans l'énumération qui spécifie si les touches Maj, CTRL ou Alt ont été enfoncées.</param>
     <summary>Il s’agit d’un délégué pour un événement dans l’objet correspondant. Après avoir implémenté une méthode de rappel pour l’événement, utilisez ce délégué pour connecter la méthode de rappel à l’événement. S’il existe plusieurs versions de l’interface d’événement, ce délégué connecte la méthode de rappel pour l’événement dans la version spécifiée d’Outlook.</summary>
     <remarks>To be added.</remarks>
   </Docs>
