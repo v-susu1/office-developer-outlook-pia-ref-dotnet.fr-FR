@@ -1,5 +1,5 @@
 <Type Name="_Table" FullName="Microsoft.Office.Interop.Outlook._Table">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="158a812340e5870cd83216af795ef455983e655b" /><Meta Name="ms.sourcegitcommit" Value="8bffa304e2953ca61fa94459dd08997552262640" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="04/05/2019" /><Meta Name="ms.locfileid" Value="31479554" /></Metadata><TypeSignature Language="C#" Value="public interface _Table" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="158a812340e5870cd83216af795ef455983e655b" /><Meta Name="ms.sourcegitcommit" Value="9e48edef9d279c87fa2fbd78f150bc92c2332179" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="04/13/2021" /><Meta Name="ms.locfileid" Value="51691741" /></Metadata><TypeSignature Language="C#" Value="public interface _Table" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Table" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._Table" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Table" />
@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Il s'agit d'une interface principale dans une coclasse COM qui est requise par du code managé en vue de son interopérabilité avec l'objet COM correspondant. Utilisez cette interface principale uniquement lorsque la méthode que vous voulez utiliser partage le même nom qu'un événement de l'objet COM ; en l'occurrence, effectuez un transtypage vers cette interface pour appeler la méthode et effectuez un transtypage vers la dernière interface d'événements pour vous connecter à l'événement. Sinon, utilisez l'interface .NET qui est dérivée de la coclasse COM pour accéder aux méthodes, propriétés et événements de l'objet COM. Pour plus d'informations sur l'objet COM <see cref="T:Microsoft.Office.Interop.Outlook.Table" />, voir.</summary>
+    <summary>Il s'agit d'une interface principale dans une coclasse COM qui est requise par du code managé en vue de son interopérabilité avec l'objet COM correspondant. Utilisez cette interface principale uniquement lorsque la méthode que vous voulez utiliser partage le même nom qu'un événement de l'objet COM ; en l'occurrence, effectuez un transtypage vers cette interface pour appeler la méthode et effectuez un transtypage vers la dernière interface d'événements pour vous connecter à l'événement. Sinon, utilisez l'interface .NET qui est dérivée de la coclasse COM pour accéder aux méthodes, propriétés et événements de l'objet COM. Pour plus d'informations sur l'objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> .</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> Object qui représente l'application parente (Outlook) de <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> l'objet. Lecture seule.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> objet qui représente l'application parente (Outlook) pour <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> l'objet. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -73,7 +73,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une constante dans l' <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> énumération indiquant la classe de <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> l'objet. Lecture seule.</summary>
+        <summary>Renvoie une constante dans <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> l'éumération indiquant la classe de <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> l'objet. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -101,11 +101,11 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Columns</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> objet collection qui contient les colonnes définies pour le <see cref="T:Microsoft.Office.Interop.Outlook.Table" />. Lecture seule.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Columns" /> objet de collection qui contient les colonnes définies pour le <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> . En lecture seule.</summary>
         <value>To be added.</value>
         <remarks><para>L'objet de la collection <b>Columns</b> est le membre par défaut de l'objet <b>Table</b>.  </para>
-          <para>Alors que les lignes d'une <b>table</b> correspondent à des éléments <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> dans <see cref="T:Microsoft.Office.Interop.Outlook.Search" /> le parent ou un objet du <b>tableau</b>, les <b>colonnes</b> d'une <b>table</b> correspondent aux propriétés de ces éléments. Les colonnes par défaut sont définies pour tous les dossiers en fonction du dossier parent de l'objet <b>Table</b>. Par exemple, les propriétés par défaut de la Boîte de réception sont les suivantes : <b>EntryID</b>, <b>Subject</b>, <b>CreationTime</b>, <b>LastModificationTime</b> et <b>MessageClass</b>. Pour plus d'informations sur les propriétés par défaut d'un <b>tableau</b>, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87925">propriétés par défaut affichées dans un objet table</a> .</para>
-          <para>Pour ajouter <see cref="T:Microsoft.Office.Interop.Outlook.Column" /> des objets à <b></b> la collection Columns d'un objet <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Add(System.String)" /> <b>table</b>, utilisez. Pour supprimer le jeu de colonnes par défaut <see cref="M:Microsoft.Office.Interop.Outlook._Columns.RemoveAll" />, utilisez. Pour plus d'informations sur l'ajustement des colonnes d'un <b>tableau</b>, voir <a href="http://go.microsoft.com/fwlink/?LinkID=87935">Ajout de colonnes à un objet table</a> .</para>
+          <para>Alors que les lignes d'un <b>tableau</b> correspondent aux éléments du parent ou de l'objet de la table , les colonnes d'un tableau correspondent aux propriétés <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> de ces <see cref="T:Microsoft.Office.Interop.Outlook.Search" /> éléments. <b></b> <b></b> <b></b> Les colonnes par défaut sont définies pour tous les dossiers en fonction du dossier parent de l'objet <b>Table</b>. Par exemple, les propriétés par défaut de la Boîte de réception sont les suivantes : <b>EntryID</b>, <b>Subject</b>, <b>CreationTime</b>, <b>LastModificationTime</b> et <b>MessageClass</b>. Pour plus d'informations sur les propriétés par défaut d'un <b>tableau,</b>voir Propriétés par défaut <a href="http://go.microsoft.com/fwlink/?LinkId=87925">affichées dans un objet Table</a></para>
+          <para>Pour ajouter <see cref="T:Microsoft.Office.Interop.Outlook.Column" /> des objets à la collection <b>Columns</b> d'un <b>tableau,</b>utilisez <see cref="M:Microsoft.Office.Interop.Outlook._Columns.Add(System.String)" /> . Pour supprimer le jeu de colonnes par défaut, utilisez <see cref="M:Microsoft.Office.Interop.Outlook._Columns.RemoveAll" /> . Pour plus d'informations sur l'ajustement des colonnes d'un <b>tableau,</b>voir <a href="http://go.microsoft.com/fwlink/?LinkID=87935">Ajout de colonnes à un objet Table</a></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -132,10 +132,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une <b>valeur de type Boolean</b> (<b>bool</b> en C#) qui indique si la ligne active est positionnée après la <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> dernière ligne de l'objet. Lecture seule.</summary>
+        <summary>Renvoie un <b>booléen</b> <b>(booléen</b> C#) qui indique si la ligne actuelle est positionnée après la dernière ligne de l'objet. <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks><para>Lorsque vous ouvrez une <b>table</b> à <see cref="M:Microsoft.Office.Interop.Outlook.MAPIFolder.GetTable(System.Object,System.Object)" />l' <see cref="M:Microsoft.Office.Interop.Outlook.Search.GetTable" />aide de <see cref="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" />, ou, la valeur de <b>EndOfTable</b> dépend du nombre de lignes dans le <b>tableau</b>. S'il ne contient aucune ligne, <b>EndOfTable</b> renvoie la valeur True. S'il contient des lignes, <b>EndOfTable</b> renvoie la valeur <b>False</b> tant que le curseur n'a pas passé la dernière ligne de l'objet Table.  </para>
-          <para>L'objet <b>Table</b> contient deux lignes virtuelles de valeur <b>Null</b>, l'une située avant la première ligne et l'autre située après la dernière ligne de l'objet <b>Table</b>. Chaque appel pour <see cref="M:Microsoft.Office.Interop.Outlook._Table.GetNextRow" /> déplace la ligne active vers la ligne suivante du <b>tableau</b> et renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> objet qui représente la ligne active.   </para>
+        <remarks><para>Lorsque vous ouvrez une <b>table</b> à l'aide de , ou , la valeur de <see cref="M:Microsoft.Office.Interop.Outlook.MAPIFolder.GetTable(System.Object,System.Object)" /> <see cref="M:Microsoft.Office.Interop.Outlook.Search.GetTable" /> <see cref="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" /> <b>EndOfTable</b> dépend <b></b>du nombre de lignes dans le tableau . S'il ne contient aucune ligne, <b>EndOfTable</b> renvoie la valeur True. S'il contient des lignes, <b>EndOfTable</b> renvoie la valeur <b>False</b> tant que le curseur n'a pas passé la dernière ligne de l'objet Table.  </para>
+          <para>L'objet <b>Table</b> contient deux lignes virtuelles de valeur <b>Null</b>, l'une située avant la première ligne et l'autre située après la dernière ligne de l'objet <b>Table</b>. Chaque appel pour déplacer la ligne actuelle vers la ligne suivante dans le tableau et renvoie un objet qui <see cref="M:Microsoft.Office.Interop.Outlook._Table.GetNextRow" /> représente la ligne <b></b> <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> actuelle.   </para>
           <para>La propriété <b>EndOfTable</b> renvoie <b>True</b> si la ligne active se trouve après la dernière ligne et <b>False</b> si la ligne active se trouve au niveau de la dernière ligne ou avant celle-ci. </para>
           <para> </para></remarks>
       </Docs>
@@ -161,10 +161,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Recherche la ligne suivante dans le <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> qui répond aux critères spécifiés dans un <see cref="M:Microsoft.Office.Interop.Outlook._Table.FindRow(System.String)" />précédent.</summary>
-        <returns>Objet qui représente la ligne suivante dans le <b>tableau</b> qui répond à la condition de filtre dans l'appel précédent à <b>FindRow.</b> <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> Renvoie <b>Nothing</b> (référence null (Nothing en Visual Basic) en C#) si <b>FindNextRow</b> ne peut pas trouver une autre ligne correspondant aux critères spécifiés dans <b>FindRow</b>. Renvoie également <b>Nothing</b> (référence null (Nothing en Visual Basic) en C#) si <b>FindRow</b> n'a pas été appelée avant la méthode <b>FindNextRow</b>.</returns>
+        <summary>Recherche la ligne suivante dans la <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> ligne qui répond aux critères spécifiés dans un précédent  <see cref="M:Microsoft.Office.Interop.Outlook._Table.FindRow(System.String)" /> .</summary>
+        <returns>Objet qui représente la ligne suivante dans le tableau qui répond à la condition de filtre <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> dans l'appel précédent à <b>FindRow</b>. <b></b> Renvoie <b>Nothing</b> (une référence null (Nothing in Visual Basic) dans C#) si <b>FindNextRow</b> ne peut pas trouver une autre ligne qui répond aux critères spécifiés dans <b>FindRow</b>. Renvoie également <b>Nothing</b> (une référence null (Nothing in Visual Basic) dans C#) si <b>FindRow</b> n'a pas été appelé avant <b>FindNextRow</b>.</returns>
         <remarks><para>
-            <b>FindNextRow</b> trouve la ligne suivante en fonction de la ligne renvoyée par la méthode <b>FindRow</b> ou <b>FindNextRow</b> précédente. Il ne dépend pas de la ligne active (comme la ligne active a peut-être été repositionnée depuis le précédent <b>FindRow</b> ou <b>FindNextRow</b>, par exemple <see cref="M:Microsoft.Office.Interop.Outlook._Table.MoveToStart" />par).</para>
+            <b>FindNextRow</b> trouve la ligne suivante en fonction de la ligne renvoyée par la méthode <b>FindRow</b> ou <b>FindNextRow</b> précédente. Elle ne dépend pas de la ligne en cours (car la ligne en cours a peut-être été repositionnée depuis la ligne <b>FindRow</b> ou <b>FindNextRow</b>précédente, par exemple, par <see cref="M:Microsoft.Office.Interop.Outlook._Table.MoveToStart" /> ).</para>
           <para>Si la méthode <b>FindNextRow</b> trouve une ligne, elle place la ligne active sur cette ligne. Si elle ne trouve pas d'autre ligne, elle ne repositionne pas la ligne active.</para>
           <para> </para></remarks>
       </Docs>
@@ -193,15 +193,15 @@
       </Parameters>
       <Docs>
         <param name="Filter">Indique la condition à laquelle une ligne de l'objet <b>Table</b> doit répondre.</param>
-        <summary>Recherche la première ligne du <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> qui répond aux critères spécifiés dans <paramref name="Filter" />.</summary>
-        <returns><see cref="T:Microsoft.Office.Interop.Outlook.Row" /> Objet qui représente la première ligne de la <b>table</b> qui répond aux critères de filtre. Renvoie <b>Nothing</b> (référence null (Nothing en Visual Basic) en C#) si aucune ligne n'est trouvée ou si la <b>table</b> ne contient pas de lignes.</returns>
+        <summary>Recherche la première ligne dans le  <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> qui répond aux critères spécifiés dans <paramref name="Filter" /> .</summary>
+        <returns>Objet <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> qui représente la première <b></b> ligne du tableau qui répond aux critères de filtre. Renvoie <b>Nothing</b> (une référence Null (Nothing in Visual Basic) dans C#) si aucune ligne de ce type n'est trouvée ou si la <b>table</b> ne contient aucune ligne.</returns>
         <remarks><para>
             <b>FindRow</b> commence toujours par la première ligne dans l'objet <b>Table</b>.  </para>
           <para>
-            <b>FindRow</b> renvoie <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en C#) si une propriété dans <paramref name="Filter" /> n'existe pas dans l'espace de noms spécifié. La propriété est considérée comme une propriété nommée dans le jeu de propriétés MAPI, PS_PUBLIC_STRINGS. <b>FindRow</b> ne renvoie pas d'erreur dans ce cas.</para>
+            <b>FindRow</b> renvoie <b>Nothing</b> (une référence Null (Nothing in Visual Basic) dans C#) si aucune propriété n'existe dans l'espace de <paramref name="Filter" /> noms spécifié. La propriété est considérée comme une propriété nommée dans le jeu de propriétés MAPI, PS_PUBLIC_STRINGS. <b>FindRow</b> ne renvoie pas d'erreur dans ce cas.</para>
           <para>
-            <b>FindRow</b> renvoie une erreur si <paramref name="Filter" /> est une chaîne vide ou une restriction incorrecte. Lorsque <b>FindRow</b> ne trouve aucune ligne, la ligne active n'est pas repositionnée à son emplacement antérieur à l'appel de la méthode <b>FindRow</b>.</para>
-          <para>Pour utiliser la recherche d'indexation de contenu dans une <b>table</b>, <see cref="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" /> utilisez la méthode. <b>FindRow</b> renvoie une erreur si <paramref name="Filter" /> contient des mots clés d'indexation de contenu. </para>
+            <b>FindRow</b> renvoie une erreur <paramref name="Filter" /> s'il s'agit d'une chaîne vide ou d'une restriction non valide. Lorsque <b>FindRow</b> ne trouve aucune ligne, la ligne active n'est pas repositionnée à son emplacement antérieur à l'appel de la méthode <b>FindRow</b>.</para>
+          <para>Pour utiliser la recherche d'indexation de contenu dans un <b>tableau,</b>utilisez la <see cref="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" /> méthode. <b>FindRow renvoie</b> une erreur si <paramref name="Filter" /> contient des mots clés d'indexation de contenu. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -229,13 +229,13 @@
       </Parameters>
       <Docs>
         <param name="MaxRows">Spécifie le nombre maximal de lignes à renvoyer de l'objet <b>Table</b>.</param>
-        <summary>Obtient un tableau à deux dimensions qui contient un ensemble de valeurs de ligne et de colonne à <see cref="T:Microsoft.Office.Interop.Outlook.Table" />partir du.</summary>
-        <returns>Valeur <b>Object</b> qui est un tableau à deux dimensions représentant un ensemble de valeurs de ligne et de colonne du <b>tableau</b>. La première ligne du tableau est zéro ; l'indexation du tableau (i, j) s'effectue à partir de la ième ligne et de la jème colonne. Les colonnes du tableau correspondent aux colonnes de l'objet <b>Table</b> et les lignes, aux lignes de l'objet <b>Table</b>. Le nombre de lignes du tableau renvoyé est la valeur inférieure de <paramref name="MaxRows" /> et le nombre réel de lignes dans le <b>tableau</b>.</returns>
+        <summary>Obtient un tableau à deux dimensions qui contient un ensemble de valeurs de ligne et de colonne à partir du <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> .</summary>
+        <returns>Valeur <b>Object</b> qui est un tableau à deux dimensions représentant un ensemble de valeurs de ligne et de colonne de la <b>table</b>. La première ligne du tableau est zéro ; l'indexation du tableau (i, j) s'effectue à partir de la ième ligne et de la jème colonne. Les colonnes du tableau correspondent aux colonnes de l'objet <b>Table</b> et les lignes, aux lignes de l'objet <b>Table</b>. Le nombre de lignes dans le tableau renvoyé est la valeur inférieure de et le nombre réel de lignes <paramref name="MaxRows" /> dans le <b>tableau</b>.</returns>
         <remarks><para>La méthode <b>GetArray</b> propose un moyen conceptuel simple d'obtenir des valeurs de l'objet <b>Table</b> en copiant tout ou partie des données de l'objet <b>Table</b> (en se basant sur la ligne active) dans un tableau et en les indexant dans ce tableau.</para>
           <para>
-            <b>GetArray</b> commence toujours sur la ligne active de l'objet <b>Table</b>. Elle renvoie un tableau avec <paramref name="MaxRows" /> le nombre de lignes s'il y a <paramref name="MaxRows" /> au moins le nombre de lignes dans le <b>tableau</b> en commençant à la position actuelle. Si <paramref name="MaxRows" /> la taille n'est pas supérieure au nombre total de lignes dans le <b>tableau</b> <paramref name="MaxRows" /> et que le nombre d'éléments dans le <b>tableau</b> est inférieur au nombre d'éléments dans la ligne actuelle, le tableau renvoie un tableau qui contient uniquement les lignes restantes dans le <b>tableau</b>. Si la méthode <b>GetArray</b> est appelée et qu'il n'existe aucune ligne restante, alors <b>GetArray</b> renvoie un tableau vide avec zéro élément.</para>
-          <para>Après l’obtention des lignes appropriées auprès de l’objet <b>Table</b> et avant son renvoi, <b>GetArray</b> repositionne toujours la ligne active sur la ligne suivante de l’objet <b>Table</b>, s’il existe une ligne suivante. GetArray (n) fonctionne comme s' <see cref="M:Microsoft.Office.Interop.Outlook._Table.GetNextRow" /> il était appelé n fois.</para>
-          <para>Les valeurs des colonnes correspondent aux colonnes de l’objet <b>Table</b> et sont donc déterminées par le format du nom de propriété utilisé pour la colonne. Pour plus d'informations, consultez <a href="http://go.microsoft.com/fwlink/?LinkId=87858">la rubrique facteurs affectant la représentation des valeurs de propriétés dans les classes table et View</a></para>
+            <b>GetArray</b> commence toujours sur la ligne active de l'objet <b>Table</b>. Elle renvoie un tableau avec le nombre de lignes si le tableau compte au moins un nombre de lignes commençant <paramref name="MaxRows" /> <paramref name="MaxRows" /> à la position actuelle. <b></b> S'il n'est pas supérieur au nombre total de lignes dans le tableau et qu'il y a moins d'éléments dans le tableau à partir de la ligne actuelle, il retourne un tableau qui contient uniquement les lignes restantes du <paramref name="MaxRows" /> <b></b> <paramref name="MaxRows" /> tableau. <b></b> <b></b> Si la méthode <b>GetArray</b> est appelée et qu'il n'existe aucune ligne restante, alors <b>GetArray</b> renvoie un tableau vide avec zéro élément.</para>
+          <para>Après l’obtention des lignes appropriées auprès de l’objet <b>Table</b> et avant son renvoi, <b>GetArray</b> repositionne toujours la ligne active sur la ligne suivante de l’objet <b>Table</b>, s’il existe une ligne suivante. GetArray(n) fonctionne comme s'il <see cref="M:Microsoft.Office.Interop.Outlook._Table.GetNextRow" /> était appelé n fois.</para>
+          <para>Les valeurs des colonnes correspondent aux colonnes de l’objet <b>Table</b> et sont donc déterminées par le format du nom de propriété utilisé pour la colonne. Pour plus d'informations, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87858">Factors Affecting Property Value Representation in the Table and View Classes</a></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -260,8 +260,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Déplace la ligne active vers la ligne suivante dans le <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> et obtient cette ligne dans le <b>tableau</b>.</summary>
-        <returns><see cref="T:Microsoft.Office.Interop.Outlook.Row" /> Objet qui représente la ligne valide suivante dans le <b>tableau</b> s'il y a des lignes supplémentaires disponibles. S'il n'y a pas de lignes supplémentaires <see cref="P:Microsoft.Office.Interop.Outlook._Table.EndOfTable" /> disponibles (où est true), la <b>propriété</b> <b>GetNextRow</b> renvoie la valeur <b>Nothing</b> (une référence null (Nothing en Visual Basic) en C#).</returns>
+        <summary>Déplace la ligne actuelle vers la ligne suivante de l'et <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> obtient cette ligne dans le <b>tableau</b>.</summary>
+        <returns>Objet qui représente la ligne valide suivante dans le Tableau s'il existe des <see cref="T:Microsoft.Office.Interop.Outlook.Row" /> lignes supplémentaires disponibles. <b></b> Si aucune ligne supplémentaire n'est disponible (où est <see cref="P:Microsoft.Office.Interop.Outlook._Table.EndOfTable" /> <b>True),</b> <b>GetNextRow</b> retourne <b>Nothing</b> (une référence null (Nothing in Visual Basic) dans C#).</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -286,8 +286,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Obtient le nombre de lignes dans le <see cref="T:Microsoft.Office.Interop.Outlook.Table" />.</summary>
-        <returns>Valeur <b>entière</b> (<b>int</b> en C#) qui représente le nombre de lignes dans le tableau.</returns>
+        <summary>Obtient le nombre de lignes dans <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> le .</summary>
+        <returns>Valeur <b>integer</b> <b>(int</b> in C#) qui représente le nombre de lignes dans le tableau.</returns>
         <remarks><para>L'appel de la méthode 
             <b>GetRowCount</b> sur un tableau de grande taille aura une incidence sur les performances.  En raison des restrictions MAPI (par exemple les contraintes de mémoire pour les tableaux de grande taille, les opérations simultanées sur l'objet <b>Table</b>), la méthode <b>GetRowCount</b> risque de ne pas pouvoir déterminer le nombre de lignes dans l'objet <b>Table</b> ou risque de renvoyer un nombre de lignes approximatif. Dans ce cas, <b>GetRowCount</b> renvoie une erreur. Utilisez la détection d'erreurs appropriée pour que la méthode <b>GetRowCount</b> puisse déterminer si l'appel doit renvoyer une erreur. </para>
           <para> </para></remarks>
@@ -314,9 +314,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Déplace la ligne active du <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> vers juste avant la première ligne de la <b>table</b>.</summary>
+        <summary>Déplace la ligne actuelle de <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> la à juste avant la première ligne de la <b>table</b>.</summary>
         <remarks><para>L’appel de la méthode 
-            <b>MoveToStart</b> revient à réinitialiser l’objet <b>Table</b>. Si vous appelez <see cref="M:Microsoft.Office.Interop.Outlook._Table.GetNextRow" /> une fois que vous avez appelé la <b>MoveToStart</b>, vous renverra une ligne représentant la première ligne du <b>tableau</b>.</para>
+            <b>MoveToStart</b> revient à réinitialiser l’objet <b>Table</b>. Si vous <see cref="M:Microsoft.Office.Interop.Outlook._Table.GetNextRow" /> appelez après avoir <b>appelé MoveToStart,</b>vous renvoyez une ligne représentant la première ligne du <b>tableau.</b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -343,7 +343,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l' <b>objet</b> parent de l' <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> objet. Lecture seule.</summary>
+        <summary>Renvoie <b>l'objet</b> parent de <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> l'objet. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -372,17 +372,17 @@
       </Parameters>
       <Docs>
         <param name="Filter">Spécifie le critère pour les lignes de l'objet <b>Table</b>.</param>
-        <summary>Applique un filtre aux lignes de l <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> 'et obtient un nouvel objet <b>table</b> .</summary>
-        <returns>Objet <b>table</b> qui est renvoyé en appliquant <paramref name="Filter" /> aux lignes de l'objet <b>table</b> parent.</returns>
-        <remarks><para>Vous ne pouvez utiliser la <b>table. Restrict</b> pour appliquer un autre filtre à ce <b>tableau</b> que si l'objet parent de <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> la <b>table</b> est un objet. Si l'objet parent est un <see cref="T:Microsoft.Office.Interop.Outlook.Search" /> objet, la <b>limite</b> renverra une erreur.</para>
-          <para>Étant donné que le filtre est appliqué aux lignes de l'objet table, cela revient à appliquer un filtre qui est un AND logique and <paramref name="Filter" /> de tous les filtres précédents appliqués au même objet <b>table</b> .</para>
+        <summary>Applique un filtre aux lignes du tableau et <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> obtient un nouvel <b>objet Table.</b></summary>
+        <returns>Objet <b>Table</b> renvoyé en s'appliquant aux lignes de <paramref name="Filter" /> l'objet <b>Table</b> parent.</returns>
+        <remarks><para>Vous pouvez uniquement utiliser <b>Table.Restrict</b> pour <b></b> appliquer un autre filtre à ce tableau si l'objet parent de la <b>table</b> est un <see cref="T:Microsoft.Office.Interop.Outlook.Folder" /> objet. Si l'objet parent est un <see cref="T:Microsoft.Office.Interop.Outlook.Search" /> objet,  <b>Restrict</b> retourne une erreur.</para>
+          <para>Étant donné que le filtre est appliqué aux lignes de l'objet Table, cela équivaut à appliquer un filtre qui est un AND logique et tous les filtres précédents appliqués au même objet <paramref name="Filter" /> <b>Table.</b></para>
           <para>
-            <paramref name="Filter" /> est une requête sur les propriétés spécifiées des éléments qui sont représentés sous forme de lignes dans le <b>tableau</b>parent. Cette requête utilise soit la syntaxe Microsoft Jet, soit la syntaxe DAV Searching and Locating (DASL). Par exemple, le filtre Jet et le filtre DASL suivants spécifient le même critère pour les éléments avec une date et une heure de dernière modification (<b>LastModificationTime</b>) antérieures à 15h30 le 12 juin 2005 :</para>
-          <para>Criteria = "[LastModificationTime &lt; ] ' &amp; " format $ ("6/12/2005 3:30PM", "General date" &amp; ) "'"</para>
-          <para>Criteria =@SQL"= &amp; " Chr (34 &amp; ) "DAV: GetLastModified &amp; " Chr (34 &amp; ) &lt; "' &amp; " format $ ("6/12/2005 3:30PM", "date, général &amp; ") "'" </para>
-          <para>Pour plus d'informations sur la spécification de filtres pour l'objet <b>table</b> , voir <a href="http://go.microsoft.com/fwlink/?LinkId=87855">filtrage des éléments</a></para>
-          <para>Si <paramref name="Filter" /> contient des propriétés personnalisées, ces propriétés doivent exister dans le dossier parent de l'objet <b>table</b> afin que la restriction fonctionne correctement.  Certaines propriétés ne sont pas prises en charge dans le filtre d’un objet <b>Table</b>, notamment les propriétés binaires, les propriétés calculées et le contenu du corps HTML ou RTF. Pour plus d'informations, consultez <a href="http://go.microsoft.com/fwlink/?LinkId=87926">la rubrique Propriétés non prises en charge dans un objet table ou un filtre table</a> .</para>
-          <para>Si <paramref name="Filter" /> est une chaîne vide, <b></b> la fonction Restrict renvoie un objet <b>table</b> qui est identique à l'objet <b>table</b> parent.  </para>
+            <paramref name="Filter" /> est une requête sur les propriétés spécifiées des éléments qui sont représentés en tant que lignes dans la table <b>parente</b>. Cette requête utilise soit la syntaxe Microsoft Jet, soit la syntaxe DAV Searching and Locating (DASL). Par exemple, le filtre Jet et le filtre DASL suivants spécifient le même critère pour les éléments avec une date et une heure de dernière modification (<b>LastModificationTime</b>) antérieures à 15h30 le 12 juin 2005 :</para>
+          <para>criteria = « [LastModificationTime] &lt; ' » &amp; Format$(« 6/12/2005 3:30PM »,"General Date ») &amp; « ' »</para>
+          <para>criteria = « @SQL= » &amp; Chr(34) &amp; « DAV:getlastmodified » &amp; Chr(34)          &amp; " &lt; ' » &amp; Format$(« 6/12/2005 3:30PM »,"General Date ») &amp; « ' » </para>
+          <para>Pour plus d'informations sur la spécification de filtres pour l'objet <b>Table,</b> voir <a href="http://go.microsoft.com/fwlink/?LinkId=87855">Filtrage des éléments</a></para>
+          <para>Si elles contiennent des propriétés personnalisées, ces propriétés doivent exister dans le dossier parent de l'objet Table afin que la <paramref name="Filter" /> restriction fonctionne correctement. <b></b>  Certaines propriétés ne sont pas prises en charge dans le filtre d’un objet <b>Table</b>, notamment les propriétés binaires, les propriétés calculées et le contenu du corps HTML ou RTF. Pour plus d'informations, <a href="http://go.microsoft.com/fwlink/?LinkId=87926">voir Propriétés nonupportées dans un</a> objet table ou un filtre Table</para>
+          <para>S'il s'agit d'une chaîne vide, Restrict renvoie un objet Table identique <paramref name="Filter" /> à l'objet <b>Table</b> parent. <b></b> <b></b>  </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -409,9 +409,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie l' <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet de la session en cours. Lecture seule.</summary>
+        <summary>Renvoie <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> l'objet de la session en cours. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks><para>La propriété <b>session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peuvent être utilisées de façon interchangeable pour obtenir l'objet <b>namespace</b> de la session en cours. Les deux membres présentent la même utilité. Par exemple, les paires d'instructions suivantes exécutent la même fonction:</para>
+        <remarks><para>La <b>propriété Session</b> et la méthode peuvent être utilisées indifféremment pour obtenir l'objet <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> <b>NameSpace</b> de la session en cours. Les deux membres présentent la même utilité. Par exemple, les paires d'instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -446,11 +446,11 @@
       <Docs>
         <param name="SortProperty">Indique la propriété à utiliser pour trier les lignes de l'objet <b>Table</b>.</param>
         <param name="Descending">Trier ou non l'objet <b>Table</b> par ordre décroissant.</param>
-        <summary>Trie les lignes de la <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> par la propriété spécifiée dans <paramref name="SortProperty" /> et rétablit la ligne active juste avant la première ligne du <b>tableau</b>.</summary>
+        <summary>Trie les lignes de la propriété spécifiée dans et réinitialise la ligne actuelle juste avant la <see cref="T:Microsoft.Office.Interop.Outlook.Table" /> première ligne du <paramref name="SortProperty" /> <b>tableau</b>.</summary>
         <remarks><para>
-            <paramref name="SortProperty" /> peut être n'importe quelle propriété intégrée explicite ou propriété personnalisée, à l'exception des propriétés binaires et à valeurs multiples. La propriété doit être référencée par son nom de chaîne explicite ; elle ne peut pas être référencée par un espace de noms. Pour plus d'informations sur la spécification des propriétés de tri, consultez <a href="http://go.microsoft.com/fwlink/?LinkId=87936">la rubrique tri des éléments d'un dossier</a> .</para>
-          <para>Trier le tableau revient à appeler une <see cref="M:Microsoft.Office.Interop.Outlook._Table.MoveToStart" /> méthode. Le curseur est placé au début du tableau.  </para>
-          <para>Si la méthode <b>table. sort</b> <see cref="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" /> est appelée, les éléments filtrés dans le nouveau <b>tableau</b> sont triés par les mêmes <paramref name="SortProperty" /> éléments <paramref name="SortOrder" />et.</para>
+            <paramref name="SortProperty" /> peut être n'importe quelle propriété intégrée explicite ou propriété personnalisée, à l'exception des propriétés binaires et à valeurs multiples. La propriété doit être référencée par son nom de chaîne explicite ; elle ne peut pas être référencée par un espace de noms. Pour plus d'informations sur la spécification des propriétés de tri, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87936">Tri des éléments dans un dossier</a></para>
+          <para>Le tri du tableau équivaut à appeler une <see cref="M:Microsoft.Office.Interop.Outlook._Table.MoveToStart" /> méthode. Le curseur est placé au début du tableau.  </para>
+          <para>Si <b>Table.Sort,</b> puis sont appelés, les éléments filtrés dans la nouvelle table sont triés <see cref="M:Microsoft.Office.Interop.Outlook._Table.Restrict(System.String)" /> de la même manière et <b></b> <paramref name="SortProperty" /> <paramref name="SortOrder" /> .</para>
           <para>
             <b>Table.Sort</b> prend uniquement en charge le tri sur une seule colonne.</para>
           <para> </para></remarks>
