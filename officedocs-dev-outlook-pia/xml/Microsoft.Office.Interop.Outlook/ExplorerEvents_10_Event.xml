@@ -1,5 +1,5 @@
 <Type Name="ExplorerEvents_10_Event" FullName="Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="1284170d4c7d7e9f8115cbb6aa1c5cae9ad00511" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27896799" /></Metadata><TypeSignature Language="C#" Value="public interface ExplorerEvents_10_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c3a3195e08f69bc1e2baf898bd2129a95216031f" /><Meta Name="ms.sourcegitcommit" Value="edbc1e709f796342c771b5226636c7e9dde40a82" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/25/2021" /><Meta Name="ms.locfileid" Value="53139487" /></Metadata><TypeSignature Language="C#" Value="public interface ExplorerEvents_10_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ExplorerEvents_10_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event" />
   <TypeSignature Language="VB.NET" Value="Public Interface ExplorerEvents_10_Event" />
@@ -40,7 +40,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_ActivateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Survient lorsqu'un explorateur devient la fenêtre active à la suite d'une action de l'utilisateur ou par le biais d'un code de programme.</summary>
+        <summary>Survient lorsqu’un explorateur devient la fenêtre active à la suite d’une action de l’utilisateur ou par le biais d’un code de programme.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,8 +79,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeFolderSwitchEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Survient avant que l'explorateur accède à un nouveau dossier, à la suite d'une action de l'utilisateur ou par le biais d'un code de programme.</summary>
-        <remarks><para>Si le dossier se trouve dans un espace de noms qui ne gère pas automation (par exemple, le système de fichiers), <paramref name="NewFolder" /> a la <b>valeur Nothing</b>.</para>
+        <summary>Survient avant que l’explorateur accède à un nouveau dossier, à la suite d’une action de l’utilisateur ou par le biais d’un code de programme.</summary>
+        <remarks><para>Si le dossier commuté se trouve dans un espace de noms qui ne prend pas en charge l’automatisation (par exemple, le système de <paramref name="NewFolder" /> fichiers), est <b>Nothing</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -119,7 +119,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeItemCutEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Survient lorsqu'un élément Outlook est coupé dans un dossier.</summary>
+        <summary>Survient lorsqu’un élément Outlook est coupé dans un dossier.</summary>
         <remarks><para>Cet événement peut être annulé après son déclenchement. Si l’événement est annulé, l’élément n’est pas supprimé.</para>
           <para> </para></remarks>
       </Docs>
@@ -139,7 +139,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeItemPasteEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Survient lorsqu'un élément Outlook est collé.</summary>
+        <summary>Survient lorsqu’un élément Outlook est collé.</summary>
         <remarks><para>Cet événement peut être annulé après son déclenchement.</para>
           <para> </para></remarks>
       </Docs>
@@ -199,7 +199,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeMoveEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cet événement se produit lorsque le <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> est déplacé par l’utilisateur.</summary>
+        <summary>Se produit lorsque  <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> l’utilisateur le déplace.</summary>
         <remarks><para>Cet événement peut être annulé après son déclenchement.</para>
           <para> </para></remarks>
       </Docs>
@@ -219,7 +219,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeSizeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cet événement se produit lorsque l’utilisateur dimensionne actuel <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" />.</summary>
+        <summary>Se produit lorsque l’utilisateur dimensionnait la valeur <see cref="T:Microsoft.Office.Interop.Outlook.Explorer" /> actuelle.</summary>
         <remarks><para>Cet événement peut être annulé après son déclenchement. Cet événement peut être annulé après son déclencement. Dans ce cas, la fenêtre n’est pas redimensionnée.</para>
           <para> </para></remarks>
       </Docs>
@@ -239,7 +239,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_BeforeViewSwitchEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Survient avant que l'explorateur bascule vers un nouvel affichage, à la suite d'une action de l'utilisateur ou par le biais d'un code de programme.</summary>
+        <summary>Survient avant que l’explorateur bascule vers un nouvel affichage, à la suite d’une action de l’utilisateur ou par le biais d’un code de programme.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -259,7 +259,7 @@
       </ReturnValue>
       <Docs>
         <summary>Survient lors de la fermeture d’un explorateur.</summary>
-        <remarks><para>Si vous utilisez le <see cref="M:Microsoft.Office.Interop.Outlook._Explorer.Close" /> méthode pour déclencher cet événement, il peut être annulé uniquement si la méthode <b>Close</b> utilise l’argument <b>olPromptForSave</b> .</para>
+        <remarks><para>Si vous utilisez la méthode pour tirer cet événement, il ne peut être annulé que si la méthode Close utilise <see cref="M:Microsoft.Office.Interop.Outlook._Explorer.Close" /> l’argument <b>olPromptForSave.</b> <b></b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -278,7 +278,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_DeactivateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Survient lorsqu’un explorsteur cesse d’être la fenêtre active, à la suite d’une action de l’utilisateur ou par le biais d’un code de programme.</summary>
+        <summary>Survient lorsqu’un explorateur cesse d’être la fenêtre active, à la suite d’une action de l’utilisateur ou par le biais d’un code de programme.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -297,7 +297,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_FolderSwitchEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Survient lorsque l'explorateur accède à un nouveau dossier, à la suite d'une action de l'utilisateur ou par le biais d'un code de programme.</summary>
+        <summary>Survient lorsque l’explorateur accède à un nouveau dossier, à la suite d’une action de l’utilisateur ou par le biais d’un code de programme.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -317,7 +317,7 @@
       </ReturnValue>
       <Docs>
         <summary>Se produit lorsque l'utilisateur effectue une action qui entraîne l'affichage d'une réponse incorporée dans le volet de lecture.</summary>
-        <remarks><para>Cet événement retourne un objet représentant l’élément de réponse en ligne.</para>
+        <remarks><para>Cet événement renvoie un objet d’élément représentant l’élément de réponse en ligne.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -336,17 +336,17 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_InlineResponseCloseEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produit lorsque l’utilisateur effectue une action qui entraîne la réponse inline active Fermer dans le volet de lecture.</summary>
-        <remarks><para>Cet événement se déclenche lorsqu’une nouvelle réponse incorporé ou réponse incorporée de brouillon est fermé pour les raisons suivantes :</para>
+        <summary>Se produit lorsque l’utilisateur effectue une action qui entraîne la fermeture de la réponse en ligne active dans le volet de lecture.</summary>
+        <remarks><para>Cet événement se déclenche lorsqu’une nouvelle réponse inline ou une nouvelle réponse inline brouillon est fermée pour les raisons suivantes :</para>
           <list type="bullet">
             <item>
-              <para>L’utilisateur sélectionne la commande <b>Intégrée sortant</b> .</para>
+              <para>L’utilisateur sélectionne la <b>commande Pop Out.</b></para>
             </item>
             <item>
-              <para>L’utilisateur sélectionne la commande <b>Annuler</b> .</para>
+              <para>L’utilisateur sélectionne la <b>commande Ignorer.</b></para>
             </item>
             <item>
-              <para>L’utilisateur envoie la réponse incorporée.</para>
+              <para>L’utilisateur envoie la réponse en ligne.</para>
             </item>
             <item>
               <para>L’utilisateur navigue vers un autre message dans la liste des messages.</para>
@@ -355,7 +355,7 @@
               <para>L’utilisateur navigue vers un autre dossier.</para>
             </item>
             <item>
-              <para>L’utilisateur bascule modules, par exemple dans le module de messagerie vers le module Calendrier.</para>
+              <para>L’utilisateur bascule les modules, par exemple du module de messagerie vers le module Calendrier.</para>
             </item>
           </list>
           <para> </para></remarks>
@@ -376,8 +376,8 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.ExplorerEvents_10_SelectionChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cet événement se produit lorsque l’utilisateur passe à un autre élément dans un dossier à l’aide de l’interface utilisateur (IU) ou par programme.</summary>
-        <remarks><para>Cet événement se produit également lorsque l’utilisateur, soit par programme ou à l’aide de l’IU, clique sur ou bascule vers un autre dossier qui contient les éléments Outlook sélectionne automatiquement le premier élément dans ce dossier. Toutefois, cet événement ne se produit pas si le dossier est un dossier de système de fichiers ou tout dossier présentant un affichage Web en cours s’affiche. </para>
+        <summary>Se produit lorsque l’utilisateur bascule vers un autre élément dans un dossier à l’aide de l’interface utilisateur (IU) ou par programme.</summary>
+        <remarks><para>Cet événement se produit également lorsque l’utilisateur, par programme ou à l’aide de l’interface utilisateur, clique ou bascule vers un autre dossier qui contient des éléments sous la forme Outlook sélectionne automatiquement le premier élément de ce dossier. Cependant, cet événement ne survient pas s’il s’agit d’un dossier de système de fichiers ou si tout dossier comportant un affichage Web en cours est affiché. </para>
           <para> </para></remarks>
       </Docs>
     </Member>

@@ -1,5 +1,5 @@
 <Type Name="_FormRegion" FullName="Microsoft.Office.Interop.Outlook._FormRegion">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="170a1d134f5a487d0a43dde3247d20e4b029e8bb" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27902270" /></Metadata><TypeSignature Language="C#" Value="public interface _FormRegion" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1f5e36d15647c1ebf020041822306c7c220b912e" /><Meta Name="ms.sourcegitcommit" Value="edbc1e709f796342c771b5226636c7e9dde40a82" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/25/2021" /><Meta Name="ms.locfileid" Value="53139676" /></Metadata><TypeSignature Language="C#" Value="public interface _FormRegion" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _FormRegion" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._FormRegion" />
   <TypeSignature Language="VB.NET" Value="Public Interface _FormRegion" />
@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Il s’agit d’une interface principale dans une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface principale uniquement lorsque la méthode que vous souhaitez utiliser partageant le même nom qu’un événement de l’objet COM ; Dans ce cas, effectuez un cast à cette interface pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Sinon, utilisez l’interface .NET est dérivé de la coclasse COM pour accéder aux méthodes, propriétés et événements de l’objet COM. Pour plus d’informations sur l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.FormRegion" />.</summary>
+    <summary>Il s'agit d'une interface principale dans une coclasse COM qui est requise par du code managé en vue de son interopérabilité avec l'objet COM correspondant. Utilisez cette interface principale uniquement lorsque la méthode que vous voulez utiliser partage le même nom qu'un événement de l'objet COM ; en l'occurrence, effectuez un transtypage vers cette interface pour appeler la méthode et effectuez un transtypage vers la dernière interface d'événements pour vous connecter à l'événement. Sinon, utilisez l'interface .NET qui est dérivée de la coclasse COM pour accéder aux méthodes, propriétés et événements de l'objet COM. Pour plus d’informations sur l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.FormRegion" /> .</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> object qui représente l’application Outlook de l’objet parent. En lecture seule.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> objet qui représente l’application Outlook parent pour l’objet. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -73,7 +73,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constante indiquant la classe de l’objet. En lecture seule.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constante indiquant la classe de l’objet. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -104,7 +104,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui représente le texte affiché à l’exécution dans l’en-tête après le nom complet d’une zone de formulaire adjacente. Lecture-écriture.</summary>
+        <summary>Renvoie ou définit <b>une</b> chaîne<b>(chaîne</b> en C#) qui représente le texte affiché à l’runtime dans l’en-tête après le nom complet d’une zone de formulaire adjacente. En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks><para>La propriété <b>Detail</b> s'affiche uniquement pour les zones de formulaire adjacentes. Elle est ignorée pour les zones de formulaires séparées.</para>
           <para>La propriété <b>Detail</b> est facultative pour une zone de formulaire adjacente.</para>
@@ -134,10 +134,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) représentant le nom complet de la zone de formulaire. En lecture seule.</summary>
+        <summary>Renvoie une <b>chaîne</b> <b>(en C#)</b> qui représente le nom complet de la zone de formulaire. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks><para>Le nom complet est facultatif pour une zone de formulaire. Si vous avez défini une valeur pour le &lt;formRegionName&gt; balise dans le formulaire région manifeste XML fichier correspondant, cette valeur correspondra à la valeur de la propriété <b>DisplayName</b> . Pour plus d’informations sur le schéma XML pour les zones de formulaire, voir la référence de schéma XML de Microsoft Outlook 2010 dans la <a href="http://msdn.microsoft.com/en-us/library/default.aspx">Bibliothèque MSDN</a></para>
-          <para>La valeur de la propriété <b>DisplayName</b> est affichée à l’exécution dans l’onglet Affichage du ruban Microsoft Office Fluent pour une zone de formulaire séparée ou dans l’en-tête d’une zone de formulaire adjacente.  Il est utilisé pour les paramètres régionaux par défaut et peut être remplacé par le &lt;stringOverride&gt; balise dans le fichier XML de manifeste de zone de formulaire correspondant. La chaîne respecte la casse, et sa longueur maximale est de 256 caractères.</para>
+        <remarks><para>Le nom d’affichage est facultatif pour une zone de formulaire. Si vous avez défini une valeur pour la balise formRegionName dans le fichier XML de manifeste de zone de formulaire correspondant, cette valeur correspondra à la valeur de la &lt; &gt; propriété <b>DisplayName.</b> Pour plus d’informations sur le schéma XML pour les zones de formulaire, voir la Microsoft Outlook 2010 de schéma XML dans <a href="http://msdn.microsoft.com/en-us/library/default.aspx">la bibliothèque MSDN</a></para>
+          <para>La valeur de la <b>propriété DisplayName</b> est affichée lors de l’utilisation dans l’onglet Afficher du ruban Microsoft Office Fluent pour une zone de formulaire distincte ou dans l’en-tête d’une zone de formulaire adjacente.  Il est utilisé pour les paramètres régionaux par défaut et peut être remplacer par la balise stringOverride dans le fichier XML de manifeste de zone &lt; &gt; de formulaire correspondant. La chaîne ne fait pas l’affaire et sa longueur maximale est de 256 caractères.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -167,10 +167,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui spécifie s’il faut utiliser la fonctionnalité de redimensionnement lors de la conception de zones de formulaire dans le Concepteur de formulaires de disposition automatique. En lecture-écriture.</summary>
+        <summary>Renvoie ou définit une type <b>Boolean</b> <b>(booléen</b> dans C#) qui spécifie s’il faut utiliser la fonctionnalité de re ressingage de disposition automatique lors de la conception de zones de formulaire dans le concepteur de formulaires. Lecture/écriture</summary>
         <value>To be added.</value>
         <remarks><para>La fonctionnalité de redimensionnement de disposition automatique dans le concepteur de formulaires recalcule la disposition du formulaire de manière dynamique lors du redimensionnement du formulaire. Cette fonctionnalité est disponible uniquement pour les zones de formulaires dans le concepteur de formulaires.</para>
-          <para>Lorsque cette propriété a la <b>valeur True</b>, le Concepteur de formulaires redimensionne la disposition automatique.  Lorsque cette propriété a la <b>valeur False</b>, le Concepteur de formulaires n’effectue pas de redimensionnement de disposition automatique.  La valeur par défaut est <b>True</b>.</para>
+          <para>Lorsque cette propriété a la valeur <b>True</b>, le concepteur de formulaires effectue un redimensionnement de disposition automatique.  Lorsque cette propriété a la valeur <b>False</b>, le concepteur de formulaires n’effectue pas de redimensionnement de disposition automatique.  La valeur par défaut est <b>True</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -227,7 +227,7 @@
       <Docs>
         <summary>Renvoie une constante <b>OlFormRegionMode</b> qui indique si la zone de formulaire est dans une page de lecture, de rédaction ou dans le volet de lecture. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks><para>Si l’utilisateur a un élément de courrier dans le volet de lecture, vous pouvez utiliser la <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.Sent" /> propriété pour déterminer si l’utilisateur est en mode d’édition et le mode de lecture du volet de lecture. Un élément de courrier s’affiche différemment dans le volet de lecture si elle est en mode d’édition (l’élément de messagerie est dans le dossier Draft) que si elle est en mode lecture (le message est dans le dossier boîte de réception ou envoyé).</para>
+        <remarks><para>Si l’utilisateur a un élément de courrier dans le volet de lecture, vous pouvez utiliser la propriété pour déterminer plus en détail si l’utilisateur est en mode édition ou en mode lecture du <see cref="P:Microsoft.Office.Interop.Outlook._MailItem.Sent" /> volet de lecture. Un élément de courrier s'affiche différemment dans le Volet de lecture selon qu'il est en mode d'édition (le message est dans le dossier Brouillon) ou en mode de lecture (le message est dans la Boîte de réception ou le dossier Éléments envoyés).</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -254,9 +254,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Inspector</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> objet représentant l’inspecteur qui héberge la zone de formulaire. En lecture seule.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> objet représentant l’Inspecteur qui héberge la zone de formulaire. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks><para>Renvoie la valeur <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#) si la zone de formulaire est affichée dans le volet de lecture.</para>
+        <remarks><para>Renvoie <b>Nothing</b> (une référence Null (Nothing in Visual Basic) dans C#) si la zone de formulaire est affichée dans le volet de lecture.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -283,10 +283,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) qui représente le nom de programmation interne de la zone de formulaire tel que défini dans le manifeste de la zone de formulaire. En lecture seule.</summary>
+        <summary>Renvoie une <b>chaîne</b> <b>(en</b> C#) qui représente le nom programmatique interne de la zone de formulaire tel que défini dans le manifeste de la zone de formulaire. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks><para>Le nom interne est requis pour une zone de formulaire. Le &lt;nom&gt; balise dans le fichier XML de manifeste de zone de formulaire correspondant correspond à la valeur de la propriété <b>InternalName</b> . Pour plus d’informations sur le schéma XML pour les zones de formulaire, voir la référence de schéma XML de Microsoft Outlook 2010 dans la <a href="http://msdn.microsoft.com/en-us/library/default.aspx">Bibliothèque MSDN</a></para>
-          <para>La valeur de la propriété <b>InternalName</b> est utilisée par le complément ou Microsoft Outlook pour faire référence à la zone de formulaire, par exemple, pour déterminer quelle zone de formulaire est en cours de chargement ou charger des chaînes de ressources de chaînes localisées. La propriété <b>InternalName</b> prend en charge uniquement des caractères ASCII. La chaîne respecte la casse, et sa longueur maximale est de 256 caractères.</para>
+        <remarks><para>Le nom interne est obligatoire pour une zone de formulaire. La balise de nom dans le fichier XML de manifeste de zone de formulaire correspondant correspond à la &lt; valeur de la propriété &gt; <b>InternalName.</b> Pour plus d’informations sur le schéma XML pour les zones de formulaire, voir la Microsoft Outlook 2010 de schéma XML dans <a href="http://msdn.microsoft.com/en-us/library/default.aspx">la bibliothèque MSDN</a></para>
+          <para>La valeur de la propriété <b>InternalName</b> est utilisée par le add-in ou Microsoft Outlook pour faire référence à la zone de formulaire, par exemple, pour déterminer quelle zone de formulaire est chargée ou pour charger des chaînes à partir des ressources de chaîne localisées. La propriété <b>InternalName</b> ne prend en charge que les caractères ASCII. La chaîne ne fait pas l’affaire et sa longueur maximale est de 256 caractères.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -313,10 +313,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si la zone de formulaire est développée. En lecture seule.</summary>
+        <summary>Renvoie un <b>type Boolean</b> <b>(booléen</b> C#) qui indique si la zone de formulaire est étendue. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks><para>Cette propriété s'applique uniquement aux zones de formulaires adjacentes et est ignorée pour les zones séparées.</para>
-          <para>Toujours tout d’abord, Outlook charge une zone de formulaire dans un état développé et affecte la <b>valeur True</b> <b>IsExpanded</b> . Si l’état initial de la zone de formulaire doit être réduite, puis Outlook ferme immédiatement la zone de formulaire se déclenche la <see cref="E:Microsoft.Office.Interop.Outlook.FormRegionEvents_Event.Expanded" /> événement avec le <paramref name="Expand" /> paramètre en cours <b>et affecte <b>IsExpanded</b> sur <b>False</b></b>. </para>
+          <para>Outlook charge toujours une zone de formulaire dans un état développé et affecte à <b>IsExpanded</b> la valeur <b>True</b>. Si l’état initial de la zone de formulaire doit être réduire, Outlook ferme immédiatement la zone de formulaire, déclenche l’événement avec le paramètre false et définit <see cref="E:Microsoft.Office.Interop.Outlook.FormRegionEvents_Event.Expanded" /> <paramref name="Expand" /> <b>IsExpanded sur</b> <b>False</b>. <b></b> </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -371,7 +371,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur <b>entière</b> (<b>int</b> en c#) qui indique le LCID de la langue en cours. En lecture seule.</summary>
+        <summary>Renvoie une <b>valeur integer</b> <b>(int</b> in C#) qui indique le LCID de la langue actuelle. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -452,7 +452,7 @@
       <Parameters />
       <Docs>
         <summary>Transforme la zone de formulaire en zone de formulaire active, de manière à ce qu’elle devienne visible.</summary>
-        <remarks><para>Si la zone de formulaire est une zone de formulaire adjacente, <b>Select</b> développe ensuite la zone de formulaire (si elle n'a pas déjà été développée) et place en avant le premier contrôle de la page. Si la zone de formulaire est une zone de formulaire distincte et qu'il ne s'agit pas déjà de la page active, <b>Select</b> bascule vers la page de zone de formulaire et met en avant le premier contrôle sur cette page. Si la zone de formulaire est une zone distincte et constitue déjà la page active, alors rien ne se produit.</para>
+        <remarks><para>Si la zone de formulaire est une zone de formulaire adjacente, <b>Select</b> développe ensuite la zone de formulaire (si elle n'a pas déjà été développée) et place en avant le premier contrôle de la page. Si la zone de formulaire est une zone de <b></b> formulaire distincte et n’est pas déjà la page active, select bascule vers la page de zone de formulaire et définisse le focus sur le premier contrôle de cette page. Si la zone de formulaire est une zone distincte et constitue déjà la page active, alors rien ne se produit.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -479,9 +479,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
+        <summary>Renvoie <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  l’objet de la session en cours. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La <b>propriété Session</b> et la méthode peuvent être utilisées indifféremment pour obtenir l’objet <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> <b>NameSpace</b> de la session en cours. Les deux membres présentent la même utilité. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>
@@ -515,12 +515,12 @@
         <Parameter Name="PropertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Control">Un contrôle dans la zone de formulaire à laquelle la propriété spécifiée par <paramref name="PropertyName" /> sera liée.</param>
+        <param name="Control">Contrôle dans la zone de formulaire à laquelle la propriété spécifiée <paramref name="PropertyName" /> sera liée.</param>
         <param name="PropertyName">Nom de la propriété qui sera liée au contrôle.</param>
         <summary>Lie une propriété prédéfinie explicite ou une propriété personnalisée à un contrôle dans la zone de formulaire.</summary>
-        <remarks><para>Vous pouvez utiliser cette méthode pour lier une propriété intégrée explicite ou une propriété personnalisée à un contrôle. Vous devez faire référence la propriété par son nom de chaîne, par exemple, <b>Subject</b>et non par espace de noms, par exemple, http://schemas.microsoft.com/mapi/proptag/0x0037001E.</para>
-          <para>Le <paramref name="PropertyName" /> paramètre n’est pas la casse. Par exemple, <b>SetControlItemProperty</b> interprète un argument, <b>CustomerId</b>, soit identique à <b>CustomerID</b> et lie le contrôle spécifié à l’intégré <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.CustomerID" /> propriété.</para>
-          <para>Lieu d’utiliser la méthode <b>SetControlItemProperty</b> d’un <see cref="T:Microsoft.Office.Interop.Outlook.FormRegion" /> objet, vous pouvez également utiliser le code similaire à ce qui suit pour lier une propriété telle que <b>Subject</b> à un contrôle :</para>
+        <remarks><para>Vous pouvez utiliser cette méthode pour lier une propriété prédéfinie explicite ou une propriété personnalisée à un contrôle. Vous devez référencer la propriété par son nom de chaîne, par exemple, <b>Objet</b>et non par espace de noms, par exemple. http://schemas.microsoft.com/mapi/proptag/0x0037001E</para>
+          <para>Le <paramref name="PropertyName" /> paramètre n’est pas sensible à la cas. Par exemple, <b>SetControlItemProperty</b> interprète un argument, <b>CustomerId,</b>comme étant identique à <b>CustomerID</b> et lie le contrôle spécifié à la propriété <see cref="P:Microsoft.Office.Interop.Outlook._ContactItem.CustomerID" /> intégrée.</para>
+          <para>Outre la méthode <b>SetControlItemProperty</b> d’un objet, vous pouvez également utiliser un code semblable à ce qui suit pour lier une propriété telle que la propriété Subject à <see cref="T:Microsoft.Office.Interop.Outlook.FormRegion" /> un contrôle : <b></b></para>
           <code>myPage.Controls("bar").ItemProperty = "subject"</code>
           <code>myPage.Controls("bar").ItemProperty = "subject";</code>
           <para> </para></remarks>
@@ -552,9 +552,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui empêche Outlook de remplacer automatiquement un contrôle Forms 2.0 par un contrôle à thèmes Outlook au runtime et le moment du design. Lecture-écriture.</summary>
+        <summary>Renvoie ou <b></b> définit un booléen<b>(booléen</b> en C#) qui désactive Outlook de remplacer automatiquement un contrôle Forms 2.0 par un contrôle Outlook à la conception et à l’runtime. En lecture/écriture</summary>
         <value>To be added.</value>
-        <remarks><para>Pour plus d’informations sur le remplacement automatique des contrôles Forms 2.0 par un contrôle Outlook équivalent à thème, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87823">contrôles dans un formulaire personnalisé</a></para>
+        <remarks><para>Pour plus d’informations Outlook le remplacement automatique d’un contrôle Forms 2.0 par un contrôle Outlook, voir <a href="http://go.microsoft.com/fwlink/?LinkId=87823">Contrôles</a> dans un formulaire personnalisé</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -584,7 +584,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:System.Boolean" /> valeur (<b>bool</b> en c#) qui indique si la zone de formulaire est visible ou masqué. Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une <see cref="T:System.Boolean" /> valeur<b>(bool</b> C#) qui indique si la zone de formulaire est visible ou masquée. En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks><para>
             <b>True</b> si la zone de formulaire est visible ; <b>False</b> si elle est masquée. La valeur par défaut est <b>True</b>.</para>

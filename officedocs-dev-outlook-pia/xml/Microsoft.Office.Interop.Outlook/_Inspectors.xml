@@ -1,5 +1,5 @@
 <Type Name="_Inspectors" FullName="Microsoft.Office.Interop.Outlook._Inspectors">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="64c88b63d85d9a7cd53e89ad828726e610da1b42" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27900660" /></Metadata><TypeSignature Language="C#" Value="public interface _Inspectors : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e4b758f01e7a68d5f7d00c56ae8e3035d38de9c7" /><Meta Name="ms.sourcegitcommit" Value="edbc1e709f796342c771b5226636c7e9dde40a82" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/25/2021" /><Meta Name="ms.locfileid" Value="53139571" /></Metadata><TypeSignature Language="C#" Value="public interface _Inspectors : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Inspectors implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._Inspectors" />
   <TypeSignature Language="VB.NET" Value="Public Interface _Inspectors&#xA;Implements IEnumerable" />
@@ -22,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Il s’agit d’une interface principale dans une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface principale uniquement lorsque la méthode que vous souhaitez utiliser partageant le même nom qu’un événement de l’objet COM ; Dans ce cas, effectuez un cast à cette interface pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Sinon, utilisez l’interface .NET est dérivé de la coclasse COM pour accéder aux méthodes, propriétés et événements de l’objet COM. Pour plus d’informations sur l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.Inspectors" />.</summary>
+    <summary>Il s'agit d'une interface principale dans une coclasse COM qui est requise par du code managé en vue de son interopérabilité avec l'objet COM correspondant. Utilisez cette interface principale uniquement lorsque la méthode que vous voulez utiliser partage le même nom qu'un événement de l'objet COM ; en l'occurrence, effectuez un transtypage vers cette interface pour appeler la méthode et effectuez un transtypage vers la dernière interface d'événements pour vous connecter à l'événement. Sinon, utilisez l'interface .NET qui est dérivée de la coclasse COM pour accéder aux méthodes, propriétés et événements de l'objet COM. Pour plus d’informations sur l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.Inspectors" /> .</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -50,9 +50,9 @@
       </Parameters>
       <Docs>
         <param name="Item">Élément à afficher dans la fenêtre d'inspecteur lors de sa création.</param>
-        <summary>Crée une fenêtre d'inspecteur.</summary>
-        <returns>Un <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> objet qui représente une nouvelle fenêtre d’inspecteur.</returns>
-        <remarks><para>Cette méthode est pratiquement identique à la propriété <b>GetInspector</b> d’un élément Outlook, tel que <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" />.</para>
+        <summary>Crée une fenêtre d’inspecteur.</summary>
+        <returns>Objet <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> qui représente une nouvelle fenêtre d’inspecteur.</returns>
+        <remarks><para>Cette méthode est essentiellement identique à la <b>propriété GetInspector</b> d’un Outlook, tel que <see cref="T:Microsoft.Office.Interop.Outlook.MailItem" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -79,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> object qui représente l’application Outlook de l’objet parent. En lecture seule.</summary>
+        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Application" /> objet qui représente l’application Outlook parent pour l’objet. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -107,7 +107,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlObjectClass</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constante indiquant la classe de l’objet. En lecture seule.</summary>
+        <summary>Renvoie une <see cref="T:Microsoft.Office.Interop.Outlook.OlObjectClass" /> constante indiquant la classe de l’objet. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -135,7 +135,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur d' <b>entier</b> (<b>int</b> en c#) indiquant le nombre d’objets dans la collection spécifiée. En lecture seule.</summary>
+        <summary>Renvoie une <b>valeur integer</b> <b>(int</b> in C#) indiquant le nombre d’objets de la collection spécifiée. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -168,7 +168,7 @@
       <Docs>
         <param name="Index">Numéro d'index de l'objet ou valeur utilisée pour établir une correspondance avec la propriété par défaut d'un objet de la collection.</param>
         <summary>Renvoie un <see cref="T:Microsoft.Office.Interop.Outlook.Inspector" /> objet de la collection.</summary>
-        <value>Objet <b>Inspector</b>r qui représente l’objet spécifié.</value>
+        <value>Objet <b>Inspector</b> qui représente l’objet spécifié.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -223,9 +223,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.NameSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie le <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" /> objet pour la session active. En lecture seule.</summary>
+        <summary>Renvoie <see cref="T:Microsoft.Office.Interop.Outlook.NameSpace" />  l’objet de la session en cours. En lecture seule.</summary>
         <value>To be added.</value>
-        <remarks><para>La propriété <b>Session</b> et la <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> méthode peut être utilisée de façon interchangeable pour obtenir l’objet <b>NameSpace</b> pour la session active. Les deux membres ont la même fonction. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
+        <remarks><para>La <b>propriété Session</b> et la méthode peuvent être utilisées indifféremment pour obtenir l’objet <see cref="M:Microsoft.Office.Interop.Outlook._Application.GetNamespace(System.String)" /> <b>NameSpace</b> de la session en cours. Les deux membres présentent la même utilité. Par exemple, les paires d’instructions suivantes effectuent la même fonction :</para>
           <code>Dim objNamespace As Outlook.NameSpace = _
     Application.GetNamespace("MAPI")</code>
           <code>Dim objSession As Outlook.NameSpace = Application.Session</code>

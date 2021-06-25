@@ -1,5 +1,5 @@
 <Type Name="_OlkCommandButton" FullName="Microsoft.Office.Interop.Outlook._OlkCommandButton">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="341bad149d45b4c5c3e83478e06e67918652fecd" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27899186" /></Metadata><TypeSignature Language="C#" Value="public interface _OlkCommandButton" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="514c2b47aad5e0f65ed9fb8a30338a93e30048b4" /><Meta Name="ms.sourcegitcommit" Value="edbc1e709f796342c771b5226636c7e9dde40a82" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/25/2021" /><Meta Name="ms.locfileid" Value="53139610" /></Metadata><TypeSignature Language="C#" Value="public interface _OlkCommandButton" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _OlkCommandButton" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._OlkCommandButton" />
   <TypeSignature Language="VB.NET" Value="Public Interface _OlkCommandButton" />
@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Il s’agit d’une interface principale dans une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface principale uniquement lorsque la méthode que vous souhaitez utiliser partageant le même nom qu’un événement de l’objet COM ; Dans ce cas, effectuez un cast à cette interface pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Sinon, utilisez l’interface .NET est dérivé de la coclasse COM pour accéder aux méthodes, propriétés et événements de l’objet COM. Pour plus d’informations sur l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.OlkCommandButton" />.</summary>
+    <summary>Il s'agit d'une interface principale dans une coclasse COM qui est requise par du code managé en vue de son interopérabilité avec l'objet COM correspondant. Utilisez cette interface principale uniquement lorsque la méthode que vous voulez utiliser partage le même nom qu'un événement de l'objet COM ; en l'occurrence, effectuez un transtypage vers cette interface pour appeler la méthode et effectuez un transtypage vers la dernière interface d'événements pour vous connecter à l'événement. Sinon, utilisez l'interface .NET qui est dérivée de la coclasse COM pour accéder aux méthodes, propriétés et événements de l'objet COM. Pour plus d’informations sur l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.OlkCommandButton" /> .</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,7 +48,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente l’accélérateur ou une touche d’accès rapide pour le contrôle. Lecture-écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une<b>valeur</b> <b>de</b> chaîne (C#) qui représente le accélérateur ou la touche d’accélération du contrôle. En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks><para>La valeur par défaut est une chaîne vide. Elle signifie qu'il n'y a pas de touche de raccourci. Si la propriété a pour valeur une chaîne de plusieurs caractères, la valeur est tronquée au premier caractère.  </para>
           <para>Vous ne pouvez pas utiliser de chiffres dans une touche d'accès rapide.</para>
@@ -81,7 +81,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui redimensionne automatiquement le contrôle pour afficher tout le contenu. Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une <b>booléen</b> <b>(booléen</b> C#) qui dimensionne automatiquement le contrôle pour afficher l’intégralité du contenu. En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks><para>  La valeur par défaut de cette propriété est <b>False</b>.</para>
           <para>Pour un contrôle de bouton, cette propriété spécifie si le contrôle est automatiquement redimensionné de façon à afficher la valeur complète de la légende.</para>
@@ -114,7 +114,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui s’affiche sur un objet pour identifier ou le décrire.  Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une <b>chaîne</b> <b>(chaîne en</b> C#) qui apparaît sur un objet pour l’identifier ou le décrire.  En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks><para>La valeur par défaut est une chaîne vide. Le concepteur de formulaires donne pour valeur à cette propriété le nom par défaut du contrôle.  </para>
           <para> </para></remarks>
@@ -146,9 +146,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui permet le rendu d’une flèche pointant vers le bas sur le bouton. Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une <b>booléen</b> <b>(booléen</b> dans C#) qui permet le rendu d’une flèche pointant vers le bas sur le bouton. En lecture/écriture</summary>
         <value>To be added.</value>
-        <remarks><para>Cette flèche s’affiche à droite du bouton pour les langues écrites de gauche à droite et gauche pour les langues écrites de droite à gauche. <b>True</b> pour rendre la flèche sur le bouton, <b>False</b> pour désactiver le rendu.</para>
+        <remarks><para>Cette flèche est restituer à droite sur le bouton dans les langues écrites de gauche à droite et de gauche dans les langues écrites de droite à gauche. Renvoie
+<b>True</b> pour rendre la flèche sur le bouton, <b>False</b> pour désactiver le rendu.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -178,9 +179,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si le contrôle est autorisé à fonctionner.  Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une <b>booléen</b> <b>(booléen</b> C#) qui indique si le contrôle est autorisé à fonctionner.  En lecture/écriture</summary>
         <value>To be added.</value>
-        <remarks><para>La valeur par défaut est <b>False</b>.</para>
+        <remarks><para>La valeur par défaut est <b>Faux</b>.</para>
           <para>Lorsque le contrôle est désactivé, son contenu apparaît estompé.</para>
           <para> </para></remarks>
       </Docs>
@@ -208,7 +209,7 @@
         <ReturnType>stdole.StdFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <b>StdFont</b> qui représente la police utilisée pour afficher le texte dans le contrôle.  En lecture seule.</summary>
+        <summary>Renvoie un <b>StdFont</b> qui représente la police utilisée pour restituer le texte à l’intérieur du contrôle.  En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -239,9 +240,9 @@
         <ReturnType>stdole.StdPicture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>StdPicture</b> qui représente une image personnalisée pour le curseur de la souris pour ce contrôle. Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une <b>stdPicture</b> qui représente une image personnalisée sur le curseur de la souris pour ce contrôle. En lecture/écriture</summary>
         <value>To be added.</value>
-        <remarks><para>La valeur par défaut est <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#).</para>
+        <remarks><para>La valeur par défaut <b>est Nothing</b> (une référence null (Nothing in Visual Basic) dans C#).</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -271,7 +272,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlMousePointer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> constante qui spécifie le type de pointeur affiché lorsque l’utilisateur place la souris sur le contrôle.  Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une constante qui spécifie le type de pointeur affiché lorsque l’utilisateur place la <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> souris sur le contrôle.  En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks><para>La valeur par défaut est <b>olMousePointerDefault</b>.</para>
           <para> </para></remarks>
@@ -303,9 +304,9 @@
         <ReturnType>stdole.StdPicture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>StdPicture</b> qui représente l’image qui est affichée sur le contrôle.    Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une <b>stdPicture</b> qui représente l’image affichée sur le contrôle.    En lecture/écriture</summary>
         <value>To be added.</value>
-        <remarks><para>La valeur par défaut est <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#).</para>
+        <remarks><para>La valeur par défaut <b>est Nothing</b> (une référence null (Nothing in Visual Basic) dans C#).</para>
           <para>Il est impossible d'afficher en même temps une image et du texte sur le contrôle. Par conséquent, lorsque la propriété d'image est définie, la propriété de texte est ignorée.</para>
           <para>L'image est toujours affichée au centre du contrôle de bouton.  Elle sera tronquée si nécessaire pour entrer dans ll'espace disponible.</para>
           <para> </para></remarks>
@@ -337,7 +338,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlPictureAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlPictureAlignment" /> constante qui spécifie l’alignement de l’image et le texte du bouton. Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlPictureAlignment" /> constante qui spécifie l’alignement de l’image et du texte sur le bouton. En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -368,7 +369,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlTextAlign</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlTextAlign" /> constante qui spécifie l’alignement du texte dans le contrôle.  Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlTextAlign" /> constante qui spécifie la façon dont le texte est aligné dans le contrôle.  En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks><para>La valeur par défaut est <b>olTextAlignLeft</b> dans les langues qui s'écrivent de gauche à droite comme le français.</para>
           <para>Pour le contrôle de bouton de commande, lorsque <b>TextAlign</b> a pour valeur <b>olTextAlignLeft</b>, la marge gauche se situe à un pixel seulement de la bordure du contrôle.</para>
@@ -401,7 +402,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui spécifie si le contenu d’un contrôle est renvoyé automatiquement à la fin d’une ligne.  Lecture-écriture.</summary>
+        <summary>Renvoie ou définit <b>une</b> booléen<b>(booléen</b> en C#) qui spécifie si le contenu d’un contrôle est automatiquement encapsulé à la fin d’une ligne.  En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks><para>La valeur par défaut est <b>True</b>.</para>
           <para> </para></remarks>

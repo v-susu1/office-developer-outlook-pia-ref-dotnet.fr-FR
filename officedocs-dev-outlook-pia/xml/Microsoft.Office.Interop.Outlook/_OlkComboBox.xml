@@ -1,5 +1,5 @@
 <Type Name="_OlkComboBox" FullName="Microsoft.Office.Interop.Outlook._OlkComboBox">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="89f18877a1a25c0c409aacc28f213dc09a4b2fad" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27901430" /></Metadata><TypeSignature Language="C#" Value="public interface _OlkComboBox" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c820bf50404a80db164080f3f14e21ad21d54c4c" /><Meta Name="ms.sourcegitcommit" Value="edbc1e709f796342c771b5226636c7e9dde40a82" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/25/2021" /><Meta Name="ms.locfileid" Value="53139608" /></Metadata><TypeSignature Language="C#" Value="public interface _OlkComboBox" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _OlkComboBox" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._OlkComboBox" />
   <TypeSignature Language="VB.NET" Value="Public Interface _OlkComboBox" />
@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Il s’agit d’une interface principale dans une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface principale uniquement lorsque la méthode que vous souhaitez utiliser partageant le même nom qu’un événement de l’objet COM ; Dans ce cas, effectuez un cast à cette interface pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Sinon, utilisez l’interface .NET est dérivé de la coclasse COM pour accéder aux méthodes, propriétés et événements de l’objet COM. Pour plus d’informations sur l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.OlkComboBox" />.</summary>
+    <summary>Il s'agit d'une interface principale dans une coclasse COM qui est requise par du code managé en vue de son interopérabilité avec l'objet COM correspondant. Utilisez cette interface principale uniquement lorsque la méthode que vous voulez utiliser partage le même nom qu'un événement de l'objet COM ; en l'occurrence, effectuez un transtypage vers cette interface pour appeler la méthode et effectuez un transtypage vers la dernière interface d'événements pour vous connecter à l'événement. Sinon, utilisez l'interface .NET qui est dérivée de la coclasse COM pour accéder aux méthodes, propriétés et événements de l'objet COM. Pour plus d’informations sur l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.OlkComboBox" /> .</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,7 +48,7 @@
         <param name="ItemText">Valeur à ajouter à la liste de la zone de liste déroulante.</param>
         <param name="Index">Valeur de base 0 qui spécifie l'ordre du nouvel élément dans la liste.</param>
         <summary>Ajoute un élément à la liste en spécifiant éventuellement un index pour faire apparaître ce nouvel élément dans la liste.</summary>
-        <remarks><para>Si la valeur de <paramref name="Index" /> est égal ou supérieur au nombre d’éléments dans la liste, le nouvel élément sont additionnée à la fin de la liste.</para>
+        <remarks><para>Si la valeur est égale ou supérieure au nombre d’éléments de la liste, le nouvel élément est ajouté à la fin  <paramref name="Index" /> de la liste.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -78,7 +78,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui redimensionne automatiquement le contrôle pour afficher tout le contenu.  Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une <b>booléen</b> <b>(booléen</b> C#) qui dimensionne automatiquement le contrôle pour afficher l’intégralité du contenu.  En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks><para>  La valeur par défaut de cette propriété est <b>False</b>.</para>
           <para>Si <b>AutoSize</b> a la valeur <b>True</b>, la largeur de la zone affichée s'ajuste automatiquement sur la longueur du texte dans la zone de liste déroulante. Ce comportement est similaire à celui d'une zone de texte à une seule ligne.</para>
@@ -111,7 +111,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui spécifie si une tabulation est insérée automatiquement lorsque le contrôle atteint la longueur maximale spécifiée. Lecture-écriture.</summary>
+        <summary>Renvoie ou définit un <b>booléen</b> <b>(booléen</b> dans C#) qui spécifie si un onglet est inséré automatiquement lorsque le contrôle a été rempli à la longueur maximale spécifiée. En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks><para>  La valeur par défaut de cette propriété est <b>False</b>.</para>
           <para> </para></remarks>
@@ -143,7 +143,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si un mot ou un caractère est l’unité de base utilisée pour étendre une sélection.  Lecture-écriture.</summary>
+        <summary>Renvoie ou définit un <b>booléen</b> <b>(booléen</b> en C#) qui spécifie si un mot ou un caractère est l’unité de base utilisée pour étendre une sélection.  En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks><para>La valeur par défaut est <b>True</b>.</para>
           <para> </para></remarks>
@@ -178,9 +178,9 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>UInteger</b> (<b>uint</b> en c#) qui indique la couleur d’arrière-plan du contrôle. Lecture-écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>UInteger</b> <b>(interface</b> utilisateur C#) qui indique la couleur d’arrière-plan du contrôle. En lecture/écriture</summary>
         <value>To be added.</value>
-        <remarks><para>Cette propriété est de type <b>OLE_COLOR</b> , qui est une valeur <b>UInteger</b> (<b>uint</b> en c#). La valeur par défaut de cette propriété est 0 x 80000005, « Fenêtre ». </para>
+        <remarks><para>Cette propriété est du <b>type</b> OLE_COLOR qui est une valeur <b>UInteger</b> <b>(interface</b> utilisateur C#). La valeur par défaut de cette propriété est 0x80000008, "Texte de la fenêtre". </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -210,7 +210,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlBorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlBorderStyle" /> constante qui définit le style de la bordure autour du contrôle.   Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlBorderStyle" /> constante qui définit le style de la bordure autour du contrôle.   En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks><para>La valeur par défaut est <b>olBorderStyleSingle</b>.</para>
           <para> </para></remarks>
@@ -321,7 +321,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlDragBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlDragBehavior" /> constante qui indique si le système Active la fonctionnalité de glisser-déplacer pour ce contrôle.  Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une constante qui indique si le système active la fonctionnalité <see cref="T:Microsoft.Office.Interop.Outlook.OlDragBehavior" /> glisser-déposer pour ce contrôle.  En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks><para>La valeur par défaut est <b>olDragDropDisabled</b>.</para>
           <para> </para></remarks>
@@ -349,7 +349,7 @@
       <Parameters />
       <Docs>
         <summary>Développe la liste déroulante dans la zone de liste déroulante.</summary>
-        <remarks><para>Simule l’utilisateur clique sur le bouton déroulant sur le contrôle. Cette méthode provoque la <see cref="E:Microsoft.Office.Interop.Outlook.OlkComboBoxEvents_Event.DropButtonClick" /> l’événement.</para>
+        <remarks><para>Simule un clic de l’utilisateur sur le bouton de développement du contrôle. Cette méthode entraîne le tir <see cref="E:Microsoft.Office.Interop.Outlook.OlkComboBoxEvents_Event.DropButtonClick" /> de l’événement.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -379,7 +379,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si le contrôle est autorisé à fonctionner.  Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une <b>booléen</b> <b>(booléen</b> C#) qui indique si le contrôle est autorisé à fonctionner.  En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks><para>La valeur par défaut est <b>True</b>.</para>
           <para> </para></remarks>
@@ -411,7 +411,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlEnterFieldBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlEnterFieldBehavior" /> constante qui spécifie le comportement de la sélection lors de la saisie du contrôle. Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlEnterFieldBehavior" /> constante qui spécifie le comportement de la sélection lors de la saisie du contrôle. En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks><para>La valeur par défaut est <b>olEnterFieldBehaviorSelectAll</b>.</para>
           <para> </para></remarks>
@@ -440,7 +440,7 @@
         <ReturnType>stdole.StdFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <b>StdFont</b> qui représente la police utilisée pour afficher le texte dans le contrôle.  En lecture seule.</summary>
+        <summary>Renvoie un <b>StdFont</b> qui représente la police utilisée pour restituer le texte à l’intérieur du contrôle.  En lecture seule.</summary>
         <value>To be added.</value>
         <remarks><para>La police est exprimée en tant que type Microsoft Windows <b>stdfont</b>.</para>
           <para> </para></remarks>
@@ -475,9 +475,9 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>UInteger</b> (<b>uint</b> en c#) qui indique la couleur de premier plan du contrôle. Lecture-écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>UInteger</b> <b>(interface</b> utilisateur C#) qui indique la couleur de premier plan du contrôle. En lecture/écriture</summary>
         <value>To be added.</value>
-        <remarks><para>Cette propriété est de type <b>OLE_COLOR</b> , qui est une valeur <b>UInteger</b> (<b>uint</b> en c#). La valeur par défaut de cette propriété est 0 x 80000008, « Texte de la fenêtre ».  </para>
+        <remarks><para>Cette propriété est du <b>type</b> OLE_COLOR qui est une valeur <b>UInteger</b> <b>(interface</b> utilisateur C#). La valeur par défaut de cette propriété est 0x80000008, "Texte de la fenêtre".  </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -505,9 +505,9 @@
       </Parameters>
       <Docs>
         <param name="Index">Valeur de base 0 qui spécifie l'emplacement d'un élément dans la liste.</param>
-        <summary>Obtient une <b>chaîne</b> (<b>string</b> en c#) qui représente un élément situé à l’emplacement spécifié dans la liste du contrôle de zone de liste déroulante.</summary>
-        <returns>Une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente l’élément situé à l’emplacement spécifié dans la liste.</returns>
-        <remarks><para>Si <paramref name="Index" /> est en dehors de la plage de valeurs autorisées (entre 0 et <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.ListCount" />-1), une erreur hors limites est renvoyée.</para>
+        <summary>Obtient <b>une</b> chaîne<b>(chaîne en</b> C#) qui représente un élément à l’emplacement spécifié dans la liste du contrôle de zone de liste déroulante.</summary>
+        <returns>Valeur <b>de</b> chaîne<b>(en</b> C#) qui représente l’élément à l’emplacement spécifié dans la liste.</returns>
+        <remarks><para>Si elle se trouve en dehors de la plage des valeurs autorisées (entre zéro et -1), une erreur hors <paramref name="Index" /> <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.ListCount" /> limites est renvoyée.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -537,7 +537,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui spécifie si une sélection est affichée ou masquée dans le contrôle lorsque le contrôle perd le focus.  Lecture-écriture.</summary>
+        <summary>Renvoie ou définit <b>une</b> booléen<b>(booléen</b> dans C#) qui spécifie si une sélection est affichée ou masquée pour le contrôle lorsque le contrôle perd le focus.  En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks><para>La valeur par défaut de cette propriété est <b>True</b>.</para>
           <para> </para></remarks>
@@ -566,7 +566,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur d' <b>entier</b> (<b>int</b> en c#) qui spécifie le nombre d’éléments dans la liste déroulante de la liste déroulante contrôle de zone. En lecture seule.</summary>
+        <summary>Renvoie une valeur de nombre <b>integer</b> (en<b>C#)</b> qui spécifie le nombre d’éléments dans la liste déroulante du contrôle de zone de liste déroulante. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks><para>La valeur par défaut est zéro. Elle indique qu'il n'y a aucun élément dans la liste.</para>
           <para> </para></remarks>
@@ -598,7 +598,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui indique l’emplacement de l’élément actuellement sélectionné dans la liste de la zone de liste déroulante contrôle. Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une valeur de nombre <b>integer</b> <b>(int</b> in C#) qui indique l’emplacement de l’élément actuellement sélectionné dans la liste du contrôle de zone de liste déroulante. En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks><para>
             <b>ListIndex</b> est un index commençant à la valeur zéro dans le tableau des éléments de la liste. La valeur par défaut est  -1. Elle indique qu'aucun élément n'est sélectionné.</para>
@@ -631,9 +631,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui spécifie si le contrôle est verrouillé contre toute modification.  Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une <b>booléen</b> <b>(booléen</b> dans C#) qui spécifie si le contrôle est verrouillé et ne peut pas être modifié.  En lecture/écriture</summary>
         <value>To be added.</value>
-        <remarks><para>La valeur par défaut est <b>False</b>.</para>
+        <remarks><para>La valeur par défaut est <b>Faux</b>.</para>
           <para>Lorsque le contrôle est verrouillé, il n'apparaît pas comme désactivé mais l'utilisateur ne peut pas en modifier le contenu.</para>
           <para> </para></remarks>
       </Docs>
@@ -664,7 +664,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui spécifie le nombre maximal de caractères pour le <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Value" /> de ce contrôle.  Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une valeur de nombre <b>integer</b> <b>(int</b> in C#) qui spécifie le nombre maximal de caractères <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Value" /> pour ce contrôle.  En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks><para>La valeur par défaut est zéro. Cette valeur signifie qu'aucune longueur maximale n'a été définie pour la valeur de ce contrôle. Il se peut néanmoins qu'une longueur maximale soit appliquée en fonction de la mémoire disponible ou d'autres facteurs.</para>
           <para> </para></remarks>
@@ -696,9 +696,9 @@
         <ReturnType>stdole.StdPicture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>StdPicture</b> qui représente une image personnalisée pour le curseur de la souris pour ce contrôle. Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une <b>stdPicture</b> qui représente une image personnalisée sur le curseur de la souris pour ce contrôle. En lecture/écriture</summary>
         <value>To be added.</value>
-        <remarks><para>La valeur par défaut est <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#).</para>
+        <remarks><para>La valeur par défaut <b>est Nothing</b> (une référence null (Nothing in Visual Basic) dans C#).</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -728,7 +728,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlMousePointer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> constante qui spécifie le type de pointeur affiché lorsque l’utilisateur place la souris sur le contrôle.  Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une constante qui spécifie le type de pointeur affiché lorsque l’utilisateur place la <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> souris sur le contrôle.  En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks><para>La valeur par défaut est <b>olMousePointerDefault</b>.</para>
           <para> </para></remarks>
@@ -757,7 +757,7 @@
       <Docs>
         <summary>Colle le contenu du Presse-papiers dans le contrôle.</summary>
         <remarks><para>Le contenu du Presse-papiers est collé au format texte sans mise en forme.</para>
-          <para>Cette méthode ne peut rien colle lors du contrôle <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Style" /> est <b>olComboBoxStyleListBox</b>.</para>
+          <para>Cette méthode ne colle rien lorsque le contrôle <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Style" /> est <b>olComboBoxStyleListBox</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -786,7 +786,7 @@
       <Docs>
         <param name="Index">Index commençant à la valeur zéro dans le tableau des éléments de la liste.</param>
         <summary>Supprime l'élément spécifié de la liste.</summary>
-        <remarks><para>Si <paramref name="Index" /> est en dehors de la plage de valeurs autorisées (entre 0 et <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.ListCount" />-1), une erreur hors limites est renvoyée. </para>
+        <remarks><para>Si elle se trouve en dehors de la plage des valeurs autorisées (entre zéro et -1), une erreur hors <paramref name="Index" /> <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.ListCount" /> limites est renvoyée. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -816,7 +816,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui spécifie si l’utilisateur peut sélectionner une ligne de texte en cliquant dans la zone à gauche du texte.   Lecture-écriture.</summary>
+        <summary>Renvoie ou <b></b> définit une booléen<b>(booléen</b> en C#) qui spécifie si l’utilisateur peut sélectionner une ligne de texte en cliquant dans la zone à gauche du texte.   En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks><para><b>True</b> indique que le fait de cliquer dans la marge entraîne la sélection du texte.  <b>False</b> indique que cette action n'entraîne aucune sélection de texte. La valeur par défaut est <b>False</b>.</para>
           <para> </para></remarks>
@@ -848,11 +848,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui spécifie le nombre de caractères dans la sélection actuelle.  Lecture-écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur de nombre <b>integer</b> <b>(int</b> in C#) qui spécifie le nombre de caractères dans la sélection actuelle.  En lecture/écriture</summary>
         <value>To be added.</value>
-        <remarks><para>La sélection en cours est spécifiée par <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.SelText" />, qui est une partie du contrôle <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Value" />. Le nombre maximal de caractères pouvant être pris en charge pour la <b>valeur</b> est <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.MaxLength" />.</para>
-          <para>La valeur par défaut, zéro, signifie qu'aucun texte n'est actuellement sélectionné.
-</para>
+        <remarks><para>La sélection actuelle est spécifiée par <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.SelText" /> , qui est une partie du contrôle <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Value" /> . Le nombre maximal de caractères qui peuvent être pris en charge pour <b>la</b> valeur est <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.MaxLength" /> .</para>
+          <para>La valeur par défaut, zéro, signifie qu'aucun texte n'est actuellement sélectionné.</para>
           <para>La propriété <b>SelLength</b> est toujours valide, même si le contrôle n'est pas actif.</para>
           <para>Le fait d'affecter à <b>SelLength</b> une valeur inférieure à zéro génère une erreur. Toute tentative d'affecter à <b>SelLength</b> une valeur supérieure à <b>MaxLength</b> revient à lui attribuer la valeur <b>MaxLength</b>. 
 </para>
@@ -885,9 +884,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>nombre entier</b> (<b>int</b> en c#) qui spécifie le point de départ du texte sélectionné ou le point d’insertion si aucun texte n’a été sélectionné.    Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une valeur <b>integer</b> <b>(int</b> en C#) qui spécifie le point de départ du texte sélectionné ou le point d’insertion si aucun texte n’a été sélectionné.    En lecture/écriture</summary>
         <value>To be added.</value>
-        <remarks><para>La sélection en cours est spécifiée par <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.SelText" />, qui est une partie du contrôle <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Value" />. Le nombre maximal de caractères pouvant être pris en charge pour la <b>valeur</b> est <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.MaxLength" />.</para>
+        <remarks><para>La sélection actuelle est spécifiée par <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.SelText" /> , qui est une partie du contrôle <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Value" /> . Le nombre maximal de caractères qui peuvent être pris en charge pour <b>la</b> valeur est <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.MaxLength" /> .</para>
           <para>La valeur par défaut est zéro. Cette valeur signifie qu'aucun texte n'est sélectionné et que le point d'insertion se trouve au début.</para>
           <para>La propriété <b>SelStart</b> est toujours valide, même si le contrôle n'est pas actif. Le fait d'affecter à <b>SelStart</b> une valeur inférieure à zéro génère une erreur.  Si une valeur supérieure à <b>MaxLength</b> est attribuée à <b>SelStart</b>, <b>SelStart</b> restaure la valeur <b>MaxLength</b>. Si la valeur de <b>SelStart</b> est modifiée, toute sélection active est annulée, le point d'insertion est placé dans le texte et <b>SelLength</b> prend la valeur zéro.</para>
           <para> </para></remarks>
@@ -916,10 +915,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une <b>chaîne</b> (<b>string</b> en c#) qui représente la partie sélectionnée de la valeur de la zone de liste déroulante.    En lecture seule.</summary>
+        <summary>Renvoie une <b>chaîne</b> <b>(en C#)</b> qui représente la partie sélectionnée de la valeur de la zone de liste déroulante.    En lecture seule.</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>SelText</b> représente la sélection active, qui est une partie du contrôle <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Value" />. Le nombre maximal de caractères pouvant être pris en charge pour la <b>valeur</b> est <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.MaxLength" />.</para>
+            <b>SelText</b> représente la sélection actuelle, qui est une partie du <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Value" /> contrôle. Le nombre maximal de caractères qui peuvent être pris en charge pour <b>la</b> valeur est <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.MaxLength" /> .</para>
           <para>La valeur par défaut est une chaîne vide.</para>
           <para> </para></remarks>
       </Docs>
@@ -951,7 +950,7 @@
         <param name="Index">Valeur de base 0 qui spécifie l'emplacement d'un élément dans la liste.</param>
         <param name="Item">Valeur à utiliser pour mettre à jour la liste à l'emplacement spécifié.</param>
         <summary>Affecte la valeur spécifiée à l’élément situé à l’emplacement spécifié de la liste dans la zone de liste déroulante.</summary>
-        <remarks><para>Si <paramref name="Index" /> est en dehors de la plage de valeurs autorisées (entre 0 et <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />-1), une erreur hors limites est renvoyée. </para>
+        <remarks><para>Si elle se trouve en dehors de la plage des valeurs autorisées (entre zéro et -1), une erreur hors <paramref name="Index" /> <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" /> limites est renvoyée. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -981,10 +980,9 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlComboBoxStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlComboBoxStyle" /> constante pour spécifier la façon dont l’utilisateur peut choisir ou définir la valeur du contrôle.  Lecture-écriture.</summary>
+        <summary>Cette propriété renvoie ou définit <see cref="T:Microsoft.Office.Interop.Outlook.OlComboBoxStyle" /> une constante pour spécifier comment l’utilisateur peut choisir ou définir la valeur du contrôle.  En lecture/écriture</summary>
         <value>To be added.</value>
-        <remarks><para>La valeur par défaut est <b>olComboBoxStyleCombo</b>.
-</para>
+        <remarks><para>La valeur par défaut est <b>olComboBoxStyleCombo</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1014,10 +1012,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui correspond au texte affiché dans le contrôle. Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une <b>chaîne</b> <b>(en</b> C#) qui est le texte affiché dans le contrôle. En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks><para>La valeur par défaut de la propriété <b>Text</b> est une chaîne vide.</para>
-          <para>La propriété <b>Text</b> fournit la même valeur que la <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Value" /> propriété, mais la valeur est fortement typée en tant que <b>chaîne</b> (<b>string</b> en c#).</para>
+          <para>La <b>propriété Text</b> fournit la même valeur que la propriété, mais la valeur est fortement typée sous la forme d’une chaîne <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Value" /> (chaîne C#). <b></b> <b></b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1047,7 +1045,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlTextAlign</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlTextAlign" /> constante qui spécifie l’alignement du texte dans le contrôle.  Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlTextAlign" /> constante qui spécifie la façon dont le texte est aligné dans le contrôle.  En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks><para>La valeur par défaut est <b>olTextAlignLeft</b> dans les langues qui s'écrivent de gauche à droite comme le français.</para>
           <para> </para></remarks>
@@ -1079,7 +1077,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui représente l’index de l’élément en haut de la partie affichée de la liste dans la zone de liste déroulante. Lecture-écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur de nombre <b>integer</b> <b>(int</b> en C#) qui représente l’index de l’élément en haut de la partie affichée de la liste dans la zone de liste déroulante. En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks><para>Au fur et à mesure du défilement de la liste, l'élément situé en haut de la liste change et la valeur de cette propriété change en fonction de cet élément.</para>
           <para>L'index commence à la valeur zéro. La valeur par défaut -1 indique qu'aucun ordre spécial ne doit être appliqué.</para>
@@ -1112,9 +1110,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>objet</b> qui représente le contenu sélectionné dans la liste affichée par le contrôle. Lecture-écriture.</summary>
+        <summary>Renvoie ou définit un <b>Object</b> qui représente le contenu sélectionné dans la liste affichée par le contrôle. En lecture/écriture</summary>
         <value>To be added.</value>
-        <remarks><para>La valeur est identique à la valeur de <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Text" />, sauf que cette propriété est <b>l’objet</b> et de <b>Text</b> est fortement typée en tant que <b>chaîne</b> (<b>string</b> en c#).  </para>
+        <remarks><para>La valeur est identique à la valeur de, sauf que cette propriété est Object et que Text est fortement typé en tant que <see cref="P:Microsoft.Office.Interop.Outlook._OlkComboBox.Text" /> <b>Chaîne</b> (chaîne dans C#). <b></b> <b></b> <b></b>  </para>
           <para> </para></remarks>
       </Docs>
     </Member>

@@ -1,5 +1,5 @@
 <Type Name="_OlkListBox" FullName="Microsoft.Office.Interop.Outlook._OlkListBox">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="7e9053f372be4d8cf569cbaf4b62f4d812bf11d7" /><Meta Name="ms.sourcegitcommit" Value="372abf58b21f4fab503d106f0e8c8a2ac45f9332" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="01/12/2019" /><Meta Name="ms.locfileid" Value="27902760" /></Metadata><TypeSignature Language="C#" Value="public interface _OlkListBox" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dd4cabcd74beddff828cef036c5ec61d24db9ffb" /><Meta Name="ms.sourcegitcommit" Value="edbc1e709f796342c771b5226636c7e9dde40a82" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="fr-FR" /><Meta Name="ms.lasthandoff" Value="06/25/2021" /><Meta Name="ms.locfileid" Value="53139627" /></Metadata><TypeSignature Language="C#" Value="public interface _OlkListBox" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _OlkListBox" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Outlook._OlkListBox" />
   <TypeSignature Language="VB.NET" Value="Public Interface _OlkListBox" />
@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Il s’agit d’une interface principale dans une coclasse COM qui est requis par le code managé pour l’interopérabilité avec l’objet COM correspondant. Utilisez cette interface principale uniquement lorsque la méthode que vous souhaitez utiliser partageant le même nom qu’un événement de l’objet COM ; Dans ce cas, effectuez un cast à cette interface pour appeler la méthode et dans l’interface d’événements le plus récent pour se connecter à l’événement. Sinon, utilisez l’interface .NET est dérivé de la coclasse COM pour accéder aux méthodes, propriétés et événements de l’objet COM. Pour plus d’informations sur l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.OlkListBox" />.</summary>
+    <summary>Il s'agit d'une interface principale dans une coclasse COM qui est requise par du code managé en vue de son interopérabilité avec l'objet COM correspondant. Utilisez cette interface principale uniquement lorsque la méthode que vous voulez utiliser partage le même nom qu'un événement de l'objet COM ; en l'occurrence, effectuez un transtypage vers cette interface pour appeler la méthode et effectuez un transtypage vers la dernière interface d'événements pour vous connecter à l'événement. Sinon, utilisez l'interface .NET qui est dérivée de la coclasse COM pour accéder aux méthodes, propriétés et événements de l'objet COM. Pour plus d’informations sur l’objet COM, voir <see cref="T:Microsoft.Office.Interop.Outlook.OlkListBox" /> .</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,7 +48,7 @@
         <param name="ItemText">Valeur à ajouter à la liste du contrôle de zone de liste déroulante.</param>
         <param name="Index">Valeur de base 0 qui spécifie l'ordre du nouvel élément dans la liste.</param>
         <summary>Ajoute un élément à la liste en spécifiant éventuellement un index pour faire apparaître ce nouvel élément dans la liste.</summary>
-        <remarks><para>Si la valeur de <paramref name="Index" /> est égal ou supérieur au nombre d’éléments dans la liste, le nouvel élément sont additionnée à la fin de la liste.</para>
+        <remarks><para>Si la valeur est égale ou supérieure au nombre d’éléments de la liste, le nouvel élément est ajouté à la fin  <paramref name="Index" /> de la liste.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -81,9 +81,9 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>UInteger</b> (<b>uint</b> en c#) qui indique la couleur d’arrière-plan du contrôle. Lecture-écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>UInteger</b> <b>(interface</b> utilisateur C#) qui indique la couleur d’arrière-plan du contrôle. En lecture/écriture</summary>
         <value>To be added.</value>
-        <remarks><para>Cette propriété est de type <b>OLE_COLOR</b> , qui est une valeur <b>UInteger</b> (<b>uint</b> en c#). La valeur par défaut de cette propriété est 0 x 80000005, « Fenêtre ». </para>
+        <remarks><para>Cette propriété est du <b>type</b> OLE_COLOR qui est une valeur <b>UInteger</b> <b>(interface</b> utilisateur C#). La valeur par défaut de cette propriété est 0x80000008, "Texte de la fenêtre". </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -113,7 +113,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlBorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlBorderStyle" /> constante qui définit le style de la bordure autour du contrôle.   Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlBorderStyle" /> constante qui définit le style de la bordure autour du contrôle.   En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks><para>La valeur par défaut est <b>olBorderStyleSingle</b>.</para>
           <para> </para></remarks>
@@ -195,7 +195,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si le contrôle est autorisé à fonctionner.  Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une <b>booléen</b> <b>(booléen</b> C#) qui indique si le contrôle est autorisé à fonctionner.  En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks><para>La valeur par défaut est <b>True</b>.</para>
           <para> </para></remarks>
@@ -224,7 +224,7 @@
         <ReturnType>stdole.StdFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie un <b>StdFont</b> qui représente la police utilisée pour afficher le texte dans le contrôle.  En lecture seule.</summary>
+        <summary>Renvoie un <b>StdFont</b> qui représente la police utilisée pour restituer le texte à l’intérieur du contrôle.  En lecture seule.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -258,9 +258,9 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur <b>UInteger</b> (<b>uint</b> en c#) qui indique la couleur de premier plan du contrôle. Lecture-écriture.</summary>
+        <summary>Cette propriété renvoie ou définit une valeur <b>UInteger</b> <b>(interface</b> utilisateur C#) qui indique la couleur de premier plan du contrôle. En lecture/écriture</summary>
         <value>To be added.</value>
-        <remarks><para>Cette propriété est de type <b>OLE_COLOR</b> , qui est une valeur <b>UInteger</b> (<b>uint</b> en c#). La valeur par défaut de cette propriété est 0 x 80000008, « Texte de la fenêtre ».  </para>
+        <remarks><para>Cette propriété est du <b>type</b> OLE_COLOR qui est une valeur <b>UInteger</b> <b>(interface</b> utilisateur C#). La valeur par défaut de cette propriété est 0x80000008, "Texte de la fenêtre".  </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -288,9 +288,9 @@
       </Parameters>
       <Docs>
         <param name="Index">Valeur de base 0 qui spécifie l'emplacement d'un élément dans la liste.</param>
-        <summary>Obtient une <b>chaîne</b> (<b>string</b> en c#) qui représente un élément situé à l’emplacement spécifié dans la liste.</summary>
-        <returns>Une valeur de <b>chaîne</b> (<b>string</b> en c#) qui représente l’élément situé à l’emplacement spécifié dans la liste.</returns>
-        <remarks><para>Si <paramref name="Index" /> est en dehors de la plage de valeurs autorisées (entre 0 et <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />-1), une erreur hors limites est renvoyée.</para>
+        <summary>Obtient une <b>chaîne</b> <b>(chaîne C#)</b> qui représente un élément à l’emplacement spécifié dans la liste.</summary>
+        <returns>Valeur <b>de</b> chaîne<b>(en</b> C#) qui représente l’élément à l’emplacement spécifié dans la liste.</returns>
+        <remarks><para>Si elle se trouve en dehors de la plage des valeurs autorisées (entre zéro et -1), une erreur hors <paramref name="Index" /> <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" /> limites est renvoyée.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -318,9 +318,9 @@
       </Parameters>
       <Docs>
         <param name="Index">Valeur de base 0 qui spécifie l'emplacement d'un élément dans la liste.</param>
-        <summary>Renvoie un <b>type Boolean</b> (<b>bool</b> en c#) qui indique si l’élément indexé est actuellement sélectionné.</summary>
-        <returns>Une valeur booléenne (<b>bool</b> en c#) qui a la <b>valeur True</b> si l’élément spécifié est actuellement sélectionné, <b>False</b> dans le cas contraire.</returns>
-        <remarks><para>Si <paramref name="Index" /> est en dehors de la plage de valeurs autorisées (entre 0 et <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />-1), une erreur hors limites est renvoyée. </para>
+        <summary>Renvoie un <b>booléen</b> <b>(booléen</b> C#) qui indique si l’élément indexé est actuellement sélectionné.</summary>
+        <returns>Valeur boolé européenne<b>(booléen</b> C#) qui a la valeur <b>True</b> si l’élément spécifié est actuellement sélectionné, <b>False</b> dans le cas contraire.</returns>
+        <remarks><para>Si elle se trouve en dehors de la plage des valeurs autorisées (entre zéro et -1), une erreur hors <paramref name="Index" /> <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" /> limites est renvoyée. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -347,7 +347,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie une valeur d' <b>entier</b> (<b>int</b> en c#) qui spécifie le nombre d’éléments dans la liste déroulante du contrôle zone de liste. En lecture seule.</summary>
+        <summary>Renvoie une valeur de nombre <b>integer</b> <b>(int</b> en C#) qui spécifie le nombre d’éléments dans la liste de listes du contrôle de zone de liste. En lecture seule.</summary>
         <value>To be added.</value>
         <remarks><para>La valeur par défaut est zéro. Elle indique qu'il n'y a aucun élément dans la liste.</para>
           <para> </para></remarks>
@@ -379,7 +379,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui indique l’emplacement de l’élément actuellement sélectionné dans la liste de la zone de liste déroulante contrôle. Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une valeur de nombre <b>integer</b> <b>(int</b> in C#) qui indique l’emplacement de l’élément actuellement sélectionné dans la liste du contrôle de zone de liste déroulante. En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks><para>
             <b>ListIndex</b> est un index commençant à la valeur zéro dans le tableau des éléments de la liste. La valeur par défaut est  -1. Elle indique qu'aucun élément n'est sélectionné.</para>
@@ -412,9 +412,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>type Boolean</b> (<b>bool</b> en c#) qui spécifie si le contrôle est verrouillé contre toute modification.  Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une <b>booléen</b> <b>(booléen</b> C#) qui spécifie si le contrôle est verrouillé et ne peut pas être modifié.  En lecture/écriture</summary>
         <value>To be added.</value>
-        <remarks><para>La valeur par défaut est <b>False</b>.</para>
+        <remarks><para>La valeur par défaut est <b>Faux</b>.</para>
           <para>Lorsque le contrôle est verrouillé, il n'apparaît pas comme désactivé mais l'utilisateur ne peut pas en modifier le contenu.</para>
           <para> </para></remarks>
       </Docs>
@@ -445,7 +445,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlMatchEntry</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlMatchEntry" /> constante qui indique comment le contrôle recherche dans sa liste par l’utilisateur. Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une constante qui indique comment le contrôle recherche sa liste à mesure que <see cref="T:Microsoft.Office.Interop.Outlook.OlMatchEntry" /> l’utilisateur tape des données. En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks><para>La valeur par défaut est <b>olMatchEntryComplete</b>.</para>
           <para> </para></remarks>
@@ -477,9 +477,9 @@
         <ReturnType>stdole.StdPicture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>StdPicture</b> qui représente l’image personnalisée pour le curseur de la souris pour ce contrôle. Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une <b>stdPicture</b> qui représente l’image personnalisée sur le curseur de la souris pour ce contrôle. En lecture/écriture</summary>
         <value>To be added.</value>
-        <remarks><para>La valeur par défaut est <b>Nothing</b> (une référence null (Nothing dans Visual Basic) en c#).</para>
+        <remarks><para>La valeur par défaut <b>est Nothing</b> (une référence null (Nothing in Visual Basic) dans C#).</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -509,7 +509,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlMousePointer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> constante qui spécifie le type de pointeur affiché lorsque l’utilisateur place la souris sur le contrôle.  Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une constante qui spécifie le type de pointeur affiché lorsque l’utilisateur place la <see cref="T:Microsoft.Office.Interop.Outlook.OlMousePointer" /> souris sur le contrôle.  En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks><para>La valeur par défaut est <b>olMousePointerDefault</b>.</para>
           <para> </para></remarks>
@@ -541,7 +541,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlMultiSelect</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlMultiSelect" /> constante qui spécifie la plage d’éléments qui peuvent être sélectionnés dans le contrôle de zone de liste. Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une constante qui spécifie la plage d’éléments qui peuvent <see cref="T:Microsoft.Office.Interop.Outlook.OlMultiSelect" /> être sélectionnés dans le contrôle de zone de liste. En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -571,7 +571,7 @@
       <Docs>
         <param name="Index">Index commençant à la valeur zéro dans le tableau des éléments de la liste.</param>
         <summary>Supprime l'élément spécifié de la liste.</summary>
-        <remarks><para>Si <paramref name="Index" /> est en dehors de la plage de valeurs autorisées (entre 0 et <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />-1), une erreur hors limites est renvoyée. </para>
+        <remarks><para>Si elle se trouve en dehors de la plage des valeurs autorisées (entre zéro et -1), une erreur hors <paramref name="Index" /> <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" /> limites est renvoyée. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -601,8 +601,8 @@
       <Docs>
         <param name="Index">Valeur de base 0 qui spécifie l'emplacement d'un élément dans la liste.</param>
         <param name="Item">Valeur à utiliser pour mettre à jour la liste à l'emplacement spécifié.</param>
-        <summary>Affecte la valeur spécifiée à l’élément situé à l’emplacement spécifié de la liste.</summary>
-        <remarks><para>Si <paramref name="Index" /> est en dehors de la plage de valeurs autorisées (entre 0 et <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />-1), une erreur hors limites est renvoyée. </para>
+        <summary>Affecte la valeur spécifiée à l'élément situé à l'emplacement spécifié de la liste.</summary>
+        <remarks><para>Si elle se trouve en dehors de la plage des valeurs autorisées (entre zéro et -1), une erreur hors <paramref name="Index" /> <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" /> limites est renvoyée. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -632,8 +632,8 @@
       <Docs>
         <param name="Index">Valeur de base 0 qui spécifie l'emplacement d'un élément dans la liste.</param>
         <param name="Selected"><b>True</b> indique que l'élément doit être sélectionné, <b>False</b> indique que l'élément ne doit pas être sélectionné.</param>
-        <summary>Définit l’état sélectionné d’un élément à l’emplacement spécifié dans la liste pour la donnée <paramref name="Selected" /> valeur.</summary>
-        <remarks><para>Si <paramref name="Index" /> est en dehors de la plage de valeurs autorisées (entre 0 et <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" />-1), une erreur hors limites est renvoyée. </para>
+        <summary>Définit l’état sélectionné d’un élément à l’emplacement spécifié dans la liste sur la valeur <paramref name="Selected" /> donnée.</summary>
+        <remarks><para>Si elle se trouve en dehors de la plage des valeurs autorisées (entre zéro et -1), une erreur hors <paramref name="Index" /> <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.ListCount" /> limites est renvoyée. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -663,10 +663,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <b>chaîne</b> (<b>string</b> en c#) qui correspond au texte affiché dans le contrôle. Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une <b>chaîne</b> <b>(en</b> C#) qui est le texte affiché dans le contrôle. En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks><para>La valeur par défaut de la propriété <b>Text</b> est une chaîne vide.</para>
-          <para>La propriété <b>Text</b> fournit la même valeur que la <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.Value" /> propriété, mais la valeur est fortement typée en tant que <b>chaîne</b> (<b>string</b> en c#).</para>
+          <para>La <b>propriété Text</b> fournit la même valeur que la propriété, mais la valeur est fortement typée sous la forme d’une chaîne <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.Value" /> (chaîne C#). <b></b> <b></b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -696,7 +696,7 @@
         <ReturnType>Microsoft.Office.Interop.Outlook.OlTextAlign</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlTextAlign" /> constante qui spécifie l’alignement du texte dans le contrôle.  Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une <see cref="T:Microsoft.Office.Interop.Outlook.OlTextAlign" /> constante qui spécifie la façon dont le texte est aligné dans le contrôle.  En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks><para>La valeur par défaut est <b>olTextAlignLeft</b> dans les langues qui s'écrivent de gauche à droite comme le français.</para>
           <para> </para></remarks>
@@ -728,7 +728,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit une valeur d' <b>entier</b> (<b>int</b> en c#) qui représente l’index de l’élément dans la partie supérieure de la partie de la liste affichée. Lecture-écriture.</summary>
+        <summary>Renvoie ou définit une valeur de nombre <b>integer</b> <b>(int</b> en C#) qui représente l’index de l’élément en haut de la partie affichée de la liste. En lecture/écriture</summary>
         <value>To be added.</value>
         <remarks><para>Au fur et à mesure du défilement de la liste, l'élément situé en haut de la liste change et la valeur de cette propriété change en fonction de cet élément.</para>
           <para>L'index commence à la valeur zéro. La valeur par défaut -1 indique qu'aucun ordre spécial ne doit être appliqué.</para>
@@ -761,9 +761,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cette propriété renvoie ou définit un <b>objet</b> qui représente le contenu sélectionné dans la liste affichée par le contrôle. Lecture-écriture.</summary>
+        <summary>Renvoie ou définit un <b>Object</b> qui représente le contenu sélectionné dans la liste affichée par le contrôle. En lecture/écriture</summary>
         <value>To be added.</value>
-        <remarks><para>La valeur est identique à la valeur de <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.Text" />, sauf que cette propriété est <b>l’objet</b> et de <b>Text</b> est fortement typée en tant que <b>chaîne</b> (<b>string</b> en c#).  </para>
+        <remarks><para>La valeur est identique à la valeur de, sauf que cette propriété est Object et que Text est fortement typé en tant que <see cref="P:Microsoft.Office.Interop.Outlook._OlkListBox.Text" /> <b>Chaîne</b> (chaîne dans C#). <b></b> <b></b> <b></b>  </para>
           <para> </para></remarks>
       </Docs>
     </Member>
